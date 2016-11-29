@@ -158,6 +158,29 @@ hr {
     top: 10px;
     left: 10px;
 }
+.open_cam {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    right: 0;
+    bottom: 10%;
+    z-index: 999;
+    border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+    background: #630460;
+    font-size: 45px;
+    line-height: 240%;
+    text-align: center;
+    -webkit-box-shadow: -6px 16px 20px -13px rgba(99,4,96,0.86);
+-moz-box-shadow: -6px 16px 20px -13px rgba(99,4,96,0.86);
+box-shadow: -6px 16px 20px -13px rgba(99,4,96,0.86);
+    border: solid 1px #7c2479;
+}
+.open_cam,
+.open_cam:hover {
+    color: #FFF;
+}
 @media only screen and (max-width: 992px) {
     .container {
         font-size: 70%;
