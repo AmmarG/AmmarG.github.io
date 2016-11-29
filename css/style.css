@@ -40,6 +40,7 @@ a {
 }
 body {
     font-size: 40px;
+    background: #f1f1f1;
 }
 @font-face {
     font-family: "Cairo";
@@ -53,7 +54,6 @@ body {
 }
 .container {
     direction: rtl;
-    background: #f1f1f1;
     padding-top: 15px;
     padding-bottom: 15px;
     font-family: Cairo;
