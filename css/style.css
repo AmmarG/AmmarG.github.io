@@ -195,6 +195,7 @@ hr {
 }
 .nav-tabs {
     border-bottom: solid 4px #FFF;
+    margin-bottom: 5%;
 }
 .tab-content h3 {
     padding: 3%;
@@ -277,6 +278,7 @@ border-bottom-left-radius: 10px;
 .tab-content h3 {
     font-size: 100%;
     font-family: CairoBold;
+    background: #e8e7e7;
 }
 .tab-content .now h3 {
     background: #630460;
@@ -330,6 +332,12 @@ p .topic .social {
 }
 p .topic .social a {
     margin-bottom: 20%;
+}
+.nav-tabs>li>a {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    margin: 0;
 }
 @media only screen and (max-width: 992px) {
     .container {
