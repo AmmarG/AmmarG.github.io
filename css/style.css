@@ -205,7 +205,7 @@ hr {
 p time {
     float: right;
     padding: 4% 0 5% 0;
-    width: 30%;
+    width: 25%;
     background: url(../gfx/timeline.png) left 10px no-repeat;
 }
 p time * {
@@ -296,13 +296,13 @@ p .topic * {
     overflow: hidden;
 }
 p .topic {
-    width: 70%;
+    width: 75%;
     float: left;
 }
 p .topic .avatar {
     float: right;
     width: 25%;
-    margin: 3% 2% 0 0;
+    margin: 0 2% 0 0;
 }
 p .topic .avatar img {
     width: 100%;
@@ -326,10 +326,10 @@ p .topic .info .ttl {
 p .topic .social {
     float: left;
     width: 15%;
-    padding: 4% 0% 0 0;
+    padding: 4% 0% 0 5%;
 }
 p .topic .social a {
-    margin-bottom: 10%;
+    margin-bottom: 20%;
 }
 @media only screen and (max-width: 992px) {
     .container {
