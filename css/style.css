@@ -310,7 +310,7 @@ p .topic .avatar img {
 }
 p .topic .info {
     float: right;
-    width: 46%;
+    width: 56%;
     padding: 4% 3% 0 0;
 }
 p .topic .info .name {
@@ -318,12 +318,15 @@ p .topic .info .name {
 }
 p .topic .info .ttl {
     color: #c2bebe;
-    font-size: 90%;
+    font-size: 75%;
 }
 p .topic .social {
     float: left;
-    width: 25%;
-    padding: 6% 0% 0 0;
+    width: 15%;
+    padding: 4% 0% 0 0;
+}
+p .topic .social a {
+    margin-bottom: 10%;
 }
 @media only screen and (max-width: 992px) {
     .container {
