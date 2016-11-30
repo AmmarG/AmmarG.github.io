@@ -196,9 +196,11 @@ hr {
 .nav-tabs {
     border-bottom: solid 4px #FFF;
 }
-.tab-content h3,
-.tab-content p {
+.tab-content h3 {
     padding: 3%;
+}
+.tab-content p {
+    padding: 2%;
 }
 p time {
     float: right;
@@ -217,7 +219,7 @@ p time .clock,
 p time .mins,
 p time .lbl {
     float: right;
-    width: 100%;
+    width: 90%;
     font-size: 90%;
 }
 p time .clock {
