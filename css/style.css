@@ -362,4 +362,7 @@ p .topic .social a {
     p .topic .info {
         font-size: 100%;
     }
+    p .topic .avatar {
+        width: 27%;
+    }
 }
