@@ -200,7 +200,7 @@ hr {
     padding: 3%;
 }
 .tab-content p {
-    padding: 2%;
+    padding: 2% 2% 0 0;
 }
 p time {
     float: right;
@@ -221,6 +221,9 @@ p time .lbl {
     float: right;
     width: 90%;
     font-size: 90%;
+}
+p time .mins {
+    font-size: 110%;
 }
 p time .clock {
     direction: ltr;
