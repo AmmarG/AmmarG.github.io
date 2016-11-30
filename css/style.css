@@ -162,7 +162,7 @@ hr {
     position: fixed;
     width: 80px;
     height: 80px;
-    right: 7px;
+    right: 5px;
     bottom: 10%;
     z-index: 999;
     border-radius: 40px;
@@ -172,9 +172,9 @@ hr {
     font-size: 35px;
     line-height: 240%;
     text-align: center;
-    -webkit-box-shadow: 0px 0px 25px -5px rgba(99,4,96,1);
--moz-box-shadow: 0px 0px 25px -5px rgba(99,4,96,1);
-box-shadow: 0px 0px 25px -5px rgba(99,4,96,1);
+    -webkit-box-shadow: 0px 0px 25px -5px rgba(99, 4, 96, 1);
+    -moz-box-shadow: 0px 0px 25px -5px rgba(99, 4, 96, 1);
+    box-shadow: 0px 0px 25px -5px rgba(99, 4, 96, 1);
     border: solid 1px #7c2479;
 }
 .open_cam,
@@ -197,10 +197,10 @@ box-shadow: 0px 0px 25px -5px rgba(99,4,96,1);
     border-bottom: solid 4px #FFF;
     margin-bottom: 5%;
 }
-.tab-content h3 {
+.session h3 {
     padding: 3%;
 }
-.tab-content p {
+.session p {
     padding: 2% 2% 1% 0;
 }
 p time {
@@ -230,7 +230,7 @@ p time .clock {
     direction: ltr;
 }
 p time .clock,
-.tab-content h3 {
+.session h3 {
     color: #630460;
 }
 p time .mins {
@@ -241,50 +241,51 @@ p time .mins {
     -moz-border-radius: 10px;
     border-radius: 10px;
     color: #FFF;
-    padding: 0;
-    width: 20%;
-    margin-right: 3%;
-    font-family: CairoBold;
+    padding: 2% 2% 2% 0;
 }
 .now p time .clock {
     background: #f1f1f1;
     -webkit-border-top-left-radius: 10px;
--webkit-border-top-right-radius: 10px;
--moz-border-radius-topleft: 10px;
--moz-border-radius-topright: 10px;
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     padding: 5% 0;
+    font-family: CairoBold;
 }
 .now p time .lbl {
     -webkit-border-bottom-right-radius: 10px;
--webkit-border-bottom-left-radius: 10px;
--moz-border-radius-bottomright: 10px;
--moz-border-radius-bottomleft: 10px;
-border-bottom-right-radius: 10px;
-border-bottom-left-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     line-height: 100%;
     padding-bottom: 7%;
 }
-.now p time .clock, .now p time .mins, .now p time .lbl {
-    width: 100%;
+.now p time .clock,
+.now p time .mins,
+.now p time .lbl {
+    width: 75%;
 }
 .now p time .mins {
     padding-top: 4%;
 }
-.now p time .mins, .now p time .lbl {
+.now p time .mins,
+.now p time .lbl {
     background: #630460;
 }
-.tab-content h3 {
+.session h3 {
     font-size: 100%;
     font-family: CairoBold;
     background: #e8e7e7;
 }
-.tab-content .now h3 {
+.session.now h3 {
     background: #630460;
     color: #FFF;
 }
-.tab-content p {
+.session p {
     background: #FFF;
     overflow: hidden;
     -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
@@ -339,10 +340,36 @@ p .topic .social a {
     -moz-border-radius: 0;
     margin: 0;
 }
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
     border-right: none;
     border-left: none;
 }
+.live_stream {
+    margin-top: 3%;
+}
+.comment_form textarea.form-control {
+    width: 78%;
+    float: right;
+    font-size: 50%;
+}
+.comment_form button {
+    float: left;
+    width: 20%;
+    border: none;
+    background: #630460;
+    color: #FFF;
+    font-size: 80%;
+}
+.comment_form textarea.form-control,
+.comment_form button {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    height: 100px;
+}
+
 @media only screen and (max-width: 992px) {
     .container {
         font-size: 70%;
@@ -372,7 +399,7 @@ p .topic .social a {
         font-size: 100%;
     }
     p time {
-        background: url(../gfx/timeline_mob.png) left top no-repeat;
+        background: url(../gfx/timeline_mob.png) 4px 5px no-repeat;
     }
     p .topic .info {
         font-size: 100%;
@@ -381,4 +408,9 @@ p .topic .social a {
         width: 27%;
         padding-top: 0;
     }
+    .comment_form textarea.form-control,
+.comment_form button {
+    height: 60px;
+    font-size: 110%;
+}
 }
