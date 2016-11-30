@@ -364,5 +364,6 @@ p .topic .social a {
     }
     p .topic .avatar {
         width: 27%;
+        padding-top: 0;
     }
 }
