@@ -166,24 +166,174 @@ hr {
     bottom: 10%;
     z-index: 999;
     border-radius: 40px;
-	-webkit-border-radius: 40px;
-	-moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
     background: #630460;
     font-size: 35px;
     line-height: 240%;
     text-align: center;
-    -webkit-box-shadow: -6px 16px 20px -13px rgba(99,4,96,0.86);
--moz-box-shadow: -6px 16px 20px -13px rgba(99,4,96,0.86);
-box-shadow: -6px 16px 20px -13px rgba(99,4,96,0.86);
+    -webkit-box-shadow: -6px 16px 20px -13px rgba(99, 4, 96, 0.86);
+    -moz-box-shadow: -6px 16px 20px -13px rgba(99, 4, 96, 0.86);
+    box-shadow: -6px 16px 20px -13px rgba(99, 4, 96, 0.86);
     border: solid 1px #7c2479;
 }
 .open_cam,
 .open_cam:hover {
     color: #FFF;
 }
+.nav-tabs>li {
+    float: right;
+}
+.nav-tabs li a {
+    color: #c2bebe;
+}
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus {
+    color: #630460;
+    border-bottom: solid 4px #630460;
+    margin-bottom: -4px;
+}
+.nav-tabs {
+    border-bottom: solid 4px #FFF;
+}
+.tab-content h3,
+.tab-content p {
+    padding: 3%;
+}
+p time {
+    float: right;
+    padding: 4% 0 5% 0;
+    width: 28%;
+    background: url(../gfx/timeline.png) left 10px no-repeat;
+}
+p time * {
+    text-align: center;
+    display: block;
+}
+p time img {
+    float: left;
+}
+p time .clock,
+p time .mins,
+p time .lbl {
+    float: right;
+    width: 90%;
+    font-size: 90%;
+}
+p time .clock {
+    direction: ltr;
+}
+p time .clock,
+.tab-content h3 {
+    color: #630460;
+}
+p time .mins {
+    font-family: CairoBold;
+}
+.now p time {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: #FFF;
+    padding: 0;
+    width: 20%;
+    margin-right: 3%;
+}
+.now p time .clock {
+    background: #f1f1f1;
+    -webkit-border-top-left-radius: 10px;
+-webkit-border-top-right-radius: 10px;
+-moz-border-radius-topleft: 10px;
+-moz-border-radius-topright: 10px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+    padding: 5% 0;
+}
+.now p time .lbl {
+    -webkit-border-bottom-right-radius: 10px;
+-webkit-border-bottom-left-radius: 10px;
+-moz-border-radius-bottomright: 10px;
+-moz-border-radius-bottomleft: 10px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+    line-height: 100%;
+    padding-bottom: 7%;
+}
+.now p time .clock, .now p time .mins, .now p time .lbl {
+    width: 100%;
+}
+.now p time .mins {
+    padding-top: 4%;
+}
+.now p time .mins, .now p time .lbl {
+    background: #630460;
+}
+.tab-content h3 {
+    font-size: 100%;
+    font-family: CairoBold;
+}
+.tab-content .now h3 {
+    background: #630460;
+    color: #FFF;
+}
+.tab-content p {
+    background: #FFF;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 3%;
+}
+p .topic,
+p .topic * {
+    display: block;
+    overflow: hidden;
+}
+p .topic {
+    width: 70%;
+    float: left;
+}
+p .topic .avatar {
+    float: right;
+    width: 25%;
+    margin-top: 3%;
+}
+p .topic .avatar img {
+    width: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border: solid 5px #e8e7e7;
+}
+p .topic .info {
+    float: right;
+    width: 46%;
+    padding: 4% 4% 0 0;
+}
+p .topic .info .name {
+    color: #630460;
+}
+p .topic .info .ttl {
+    color: #c2bebe;
+    font-size: 90%;
+}
+p .topic .social {
+    float: left;
+    width: 25%;
+    padding: 6% 0% 0 0;
+}
 @media only screen and (max-width: 992px) {
     .container {
         font-size: 70%;
+    }
+    .nav-tabs li a {
+        font-size: 80%;
+    }
+    p time {
+        background: url(../gfx/timeline_tablet.png) left top no-repeat;
+    }
+    p .topic .info {
+        font-size: 90%;
     }
 }
 @media only screen and (max-width: 480px) {
@@ -196,5 +346,14 @@ box-shadow: -6px 16px 20px -13px rgba(99,4,96,0.86);
     ul.multimedia li .by,
     ul.multimedia li .user {
         border-right: solid 3px #630460;
+    }
+    .nav-tabs li a {
+        font-size: 100%;
+    }
+    p time {
+        background: url(../gfx/timeline_mob.png) left top no-repeat;
+    }
+    p .topic .info {
+        font-size: 100%;
     }
 }
