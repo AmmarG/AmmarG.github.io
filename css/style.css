@@ -203,7 +203,7 @@ hr {
 p time {
     float: right;
     padding: 4% 0 5% 0;
-    width: 28%;
+    width: 30%;
     background: url(../gfx/timeline.png) left 10px no-repeat;
 }
 p time * {
@@ -297,7 +297,7 @@ p .topic {
 p .topic .avatar {
     float: right;
     width: 25%;
-    margin-top: 3%;
+    margin: 3% 2% 0 0;
 }
 p .topic .avatar img {
     width: 100%;
@@ -309,7 +309,7 @@ p .topic .avatar img {
 p .topic .info {
     float: right;
     width: 46%;
-    padding: 4% 4% 0 0;
+    padding: 4% 3% 0 0;
 }
 p .topic .info .name {
     color: #630460;
