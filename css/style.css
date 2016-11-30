@@ -339,6 +339,10 @@ p .topic .social a {
     -moz-border-radius: 0;
     margin: 0;
 }
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    border-right: none;
+    border-left: none;
+}
 @media only screen and (max-width: 992px) {
     .container {
         font-size: 70%;
