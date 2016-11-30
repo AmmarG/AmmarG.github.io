@@ -217,7 +217,7 @@ p time .clock,
 p time .mins,
 p time .lbl {
     float: right;
-    width: 90%;
+    width: 100%;
     font-size: 90%;
 }
 p time .clock {
