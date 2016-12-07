@@ -430,7 +430,7 @@ hr {
 }
 .rating-container .star {
     display: inline-block;
-    margin: 0 3px;
+    margin: 0 1px;
     text-align: center;
 }
 .rating-container .empty-stars {
@@ -477,13 +477,13 @@ hr {
     display: inline-block;
     vertical-align: middle;
     font-size: 60%;
-    margin-top: -3%;
+    margin-top: -2%;
     margin-right: 10px;
     margin-left: 2%;
     width: 21%;
 }
 .rating-container .label {
-    padding: 0px 7px 3px 7px;
+    padding: 0px 7px 0 7px;
 }
 .top form {
     display: inline;
