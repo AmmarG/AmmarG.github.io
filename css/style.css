@@ -54,10 +54,10 @@ body {
 }
 header .user_name,
 ul.multimedia li .by,
-p time .mins,
-.now p time .clock,
+.paragraph time .mins,
+.now .paragraph time .clock,
 .session h3,
-p .topic .info .name,
+.paragraph .topic .info .name,
 .longin_form button {
     font-family: CairoBold;
 }
@@ -66,15 +66,15 @@ p .topic .info .name,
 
 header .user_name,
 ul.sections li,
-.session p,
+.session .paragraph,
 .longin_form button {
     background: #FFF;
 }
 header .log_in,
-.play,
+.paragraphlay,
 .open_cam,
 .open_cam:hover,
-.now p time,
+.now .paragraph time,
 .session.now h3,
 .comment_form button,
 .longin_form input {
@@ -82,8 +82,8 @@ header .log_in,
 }
 header,
 .open_cam,
-.now p time .mins,
-.now p time .lbl,
+.now .paragraph time .mins,
+.now .paragraph time .lbl,
 .session.now h3,
 .comment_form button,
 body.login,
@@ -94,15 +94,15 @@ header .user_name,
 ul.multimedia li .by,
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:focus,
-p time .clock,
+.paragraph time .clock,
 .session h3,
-p .topic .info .name,
+.paragraph .topic .info .name,
 .longin_form button,
 .longin_form button a {
     color: #630460;
 }
 .nav-tabs li a,
-p .topic .info .ttl {
+.paragraph .topic .info .ttl {
     color: #c2bebe;
 }
 .container {
@@ -193,7 +193,7 @@ footer .container {
 hr {
     margin-bottom: 10px;
 }
-.play {
+.paragraphlay {
     display: block;
     text-align: center;
     position: absolute;
@@ -235,42 +235,42 @@ hr {
 .session h3 {
     padding: 3%;
 }
-.session p {
+.session .paragraph {
     padding: 2% 2% 1% 0;
 }
-p time {
+.paragraph time {
     float: right;
     padding: 4% 0 5% 0;
     width: 25%;
     background: url(../gfx/timeline.png) left 10px no-repeat;
 }
-p time * {
+.paragraph time * {
     text-align: center;
     display: block;
 }
-p time img {
+.paragraph time img {
     float: left;
 }
-p time .clock,
-p time .mins,
-p time .lbl {
+.paragraph time .clock,
+.paragraph time .mins,
+.paragraph time .lbl {
     float: right;
     width: 90%;
     font-size: 90%;
 }
-p time .mins {
+.paragraph time .mins {
     font-size: 110%;
 }
-p time .clock {
+.paragraph time .clock {
     direction: ltr;
 }
-.now p time {
+.now .paragraph time {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     padding: 1% 2% 3% 0;
 }
-.now p time .clock {
+.now .paragraph time .clock {
     background: #f1f1f1;
     -webkit-border-top-left-radius: 10px;
     -webkit-border-top-right-radius: 10px;
@@ -280,7 +280,7 @@ p time .clock {
     border-top-right-radius: 10px;
     padding: 5% 0;
 }
-.now p time .lbl {
+.now .paragraph time .lbl {
     -webkit-border-bottom-right-radius: 10px;
     -webkit-border-bottom-left-radius: 10px;
     -moz-border-radius-bottomright: 10px;
@@ -290,60 +290,60 @@ p time .clock {
     line-height: 100%;
     padding-bottom: 7%;
 }
-.now p time .clock,
-.now p time .mins,
-.now p time .lbl {
+.now .paragraph time .clock,
+.now .paragraph time .mins,
+.now .paragraph time .lbl {
     width: 75%;
 }
-.now p time .mins {
+.now .paragraph time .mins {
     padding-top: 4%;
 }
 .session h3 {
     font-size: 100%;
     background: #e8e7e7;
 }
-.session p {
+.session .paragraph {
     overflow: hidden;
     -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
     margin-bottom: 3%;
 }
-p .topic,
-p .topic * {
+.paragraph .topic,
+.paragraph .topic * {
     display: block;
     overflow: hidden;
 }
-p .topic {
+.paragraph .topic {
     width: 75%;
     float: left;
 }
-p .topic .avatar {
+.paragraph .topic .avatar {
     float: right;
-    width: 25%;
+    width: 22%;
     margin: 0 2% 0 0;
 }
-p .topic .avatar img {
+.paragraph .topic .avatar img {
     width: 100%;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border: solid 5px #e8e7e7;
 }
-p .topic .info {
+.paragraph .topic .info {
     float: right;
     width: 56%;
     padding: 4% 3% 0 0;
 }
-p .topic .info .ttl {
+.paragraph .topic .info .ttl {
     font-size: 75%;
 }
-p .topic .social {
+.paragraph .topic .social {
     float: left;
     width: 15%;
     padding: 4% 0% 0 5%;
 }
-p .topic .social a {
+.paragraph .topic .social a {
     margin-bottom: 20%;
 }
 .nav-tabs>li>a {
@@ -415,14 +415,17 @@ p .topic .social a {
     .nav-tabs li a {
         font-size: 80%;
     }
-    p time {
+    .paragraph time {
         background: url(../gfx/timeline_tablet.png) 3px 10px no-repeat;
     }
-    p .topic .info {
+    .paragraph .topic .info {
         font-size: 90%;
     }
     body.login .img-responsive {
         width: 40%;
+    }
+    .paragraph .topic .avatar {
+        width: 26%;
     }
 }
 @media only screen and (max-width: 480px) {
@@ -439,14 +442,13 @@ p .topic .social a {
     .nav-tabs li a {
         font-size: 95%;
     }
-    p time {
+    .paragraph time {
         background: url(../gfx/timeline_mob.png) 4px 5px no-repeat;
     }
-    p .topic .info {
+    .paragraph .topic .info {
         font-size: 100%;
     }
-    p .topic .avatar {
-        width: 27%;
+    .paragraph .topic .avatar {
         padding-top: 0;
     }
     .comment_form textarea.form-control,
@@ -510,10 +512,6 @@ p .topic .social a {
     border: none;
 }
 
-.rating-container {
-    padding: 3%;
-}
-
 /*
  * Stars
  */
@@ -524,6 +522,7 @@ p .topic .social a {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
+    float: right;
 }
 
 .rating-disabled .rating {
@@ -545,15 +544,19 @@ p .topic .social a {
     left: 0;
     top: 0;
     margin: auto;
-    color: #fde16d;
+    color: #630460;
     white-space: nowrap;
     overflow: hidden;
-    -webkit-text-stroke: 1px #777;
-    text-shadow: 1px 1px #999;
+    text-shadow: 1px 1px #e1e1e1;
+}
+
+.rating-container .label-default {
+    background: #630460;
 }
 
 .rating-rtl {
-    float: right;
+    float: left;
+    width: 74%;
 }
 
 .rating-animate .filled-stars {
@@ -583,15 +586,10 @@ p .topic .social a {
     display: inline-block;
     vertical-align: middle;
     font-size: 60%;
-    margin-top: 6%;
-    float: left;
-    margin-left: 5px;
-    margin-right: 0;
-}
-
-.rating-rtl .caption {
-    margin-right: 5px;
-    margin-left: 0;
+    margin-top: -2%;
+    margin-right: 10px;
+    margin-left: 2%;
+    width: 21%;
 }
 
 .top form {
