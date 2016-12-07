@@ -61,7 +61,6 @@ ul.multimedia li .by,
 .longin_form button {
     font-family: CairoBold;
 }
-
 /*************** Colors & BGcolor Groups ***************/
 
 header .user_name,
@@ -408,6 +407,87 @@ hr {
     border: none;
     padding: 3% 0;
 }
+/**** Rating ****/
+.rating-loading {
+    width: 25px;
+    height: 25px;
+    font-size: 0;
+    color: #fff;
+    background: transparent url('../img/loading.gif') top left no-repeat;
+    border: none;
+}
+.rating-container .rating {
+    cursor: default;
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    float: right;
+}
+.rating-disabled .rating {
+    cursor: not-allowed;
+}
+.rating-container .star {
+    display: inline-block;
+    margin: 0 3px;
+    text-align: center;
+}
+.rating-container .empty-stars {
+    color: #aaa;
+}
+.rating-container .filled-stars {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: auto;
+    color: #630460;
+    white-space: nowrap;
+    overflow: hidden;
+    text-shadow: 1px 1px #e1e1e1;
+}
+.rating-container .label-default {
+    background: #630460;
+}
+.rating-rtl {
+    float: left;
+    width: 74%;
+}
+.rating-animate .filled-stars {
+    transition: width 0.25s ease;
+    -o-transition: width 0.25s ease;
+    -moz-transition: width 0.25s ease;
+    -webkit-transition: width 0.25s ease;
+}
+.rating-rtl .filled-stars {
+    left: auto;
+    right: 0;
+}
+.rating-rtl.is-star .filled-stars {
+    right: 0.00em;
+}
+.rating-rtl.is-heart .empty-stars {
+    margin-right: 0.07em;
+}
+.rating-container .clear-rating {
+    display: none;
+}
+.rating-container .caption {
+    color: #999;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 60%;
+    margin-top: -3%;
+    margin-right: 10px;
+    margin-left: 2%;
+    width: 21%;
+}
+.rating-container .label {
+    padding: 0px 7px 3px 7px;
+}
+.top form {
+    display: inline;
+}
 @media only screen and (max-width: 992px) {
     .container {
         font-size: 70%;
@@ -456,142 +536,4 @@ hr {
         height: 60px;
         font-size: 110%;
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*!
- * bootstrap-star-rating v4.0.2
- * http://plugins.krajee.com/star-rating
- *
- * Author: Kartik Visweswaran
- * Copyright: 2014 - 2016, Kartik Visweswaran, Krajee.com
- *
- * Licensed under the BSD 3-Clause
- * https://github.com/kartik-v/bootstrap-star-rating/blob/master/LICENSE.md
- */
-.rating-loading {
-    width: 25px;
-    height: 25px;
-    font-size: 0;
-    color: #fff;
-    background: transparent url('../img/loading.gif') top left no-repeat;
-    border: none;
-}
-
-/*
- * Stars
- */
-.rating-container .rating {
-    cursor: default;
-    position: relative;
-    vertical-align: middle;
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    float: right;
-}
-
-.rating-disabled .rating {
-    cursor: not-allowed;
-}
-
-.rating-container .star {
-    display: inline-block;
-    margin: 0 3px;
-    text-align: center;
-}
-
-.rating-container .empty-stars {
-    color: #aaa;
-}
-
-.rating-container .filled-stars {
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: auto;
-    color: #630460;
-    white-space: nowrap;
-    overflow: hidden;
-    text-shadow: 1px 1px #e1e1e1;
-}
-
-.rating-container .label-default {
-    background: #630460;
-}
-
-.rating-rtl {
-    float: left;
-    width: 74%;
-}
-
-.rating-animate .filled-stars {
-    transition: width 0.25s ease;
-    -o-transition: width 0.25s ease;
-    -moz-transition: width 0.25s ease;
-    -webkit-transition: width 0.25s ease;
-}
-
-.rating-rtl .filled-stars {
-    left: auto;
-    right: 0;
-}
-
-.rating-rtl.is-star .filled-stars {
-    right: 0.00em;
-}
-
-.rating-rtl.is-heart .empty-stars {
-    margin-right: 0.07em;
-}
-.rating-container .clear-rating {
-    display: none;
-}
-.rating-container .caption {
-    color: #999;
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 60%;
-    margin-top: -2%;
-    margin-right: 10px;
-    margin-left: 2%;
-    width: 21%;
-}
-
-.top form {
-    display: inline;
 }
