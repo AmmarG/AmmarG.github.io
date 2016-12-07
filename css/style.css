@@ -87,7 +87,7 @@ header,
 .comment_form button,
 body.login,
 .longin_form input {
-    background: #630460;
+    background: #7d2b6c;
 }
 header .user_name,
 ul.multimedia li .by,
@@ -98,7 +98,7 @@ ul.multimedia li .by,
 .paragraph .topic .info .name,
 .longin_form button,
 .longin_form button a {
-    color: #630460;
+    color: #7f2a6c;
 }
 .nav-tabs li a,
 .paragraph .topic .info .ttl {
@@ -179,7 +179,7 @@ ul.multimedia li .user {
 }
 ul.multimedia li .by,
 ul.multimedia li .user {
-    border-right: solid 8px #630460;
+    border-right: solid 8px #7d2b6c;
 }
 footer .container {
     background: none;
@@ -188,6 +188,12 @@ footer .container {
     padding: 0;
     color: #666;
     text-align: left;
+}
+ul.multimedia li a .play {
+    position: absolute;
+    color: #FFF;
+    top: 10px;
+    left: 13px;
 }
 hr {
     margin-bottom: 10px;
@@ -224,7 +230,7 @@ hr {
 }
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:focus {
-    border-bottom: solid 4px #630460;
+    border-bottom: solid 4px #7d2b6c;
     margin-bottom: -4px;
 }
 .nav-tabs {
@@ -441,13 +447,13 @@ hr {
     left: 0;
     top: 0;
     margin: auto;
-    color: #630460;
+    color: #7d2b6c;
     white-space: nowrap;
     overflow: hidden;
     text-shadow: 1px 1px #e1e1e1;
 }
 .rating-container .label-default {
-    background: #630460;
+    background: #7d2b6c;
 }
 .rating-rtl {
     float: left;
@@ -517,7 +523,7 @@ hr {
     }
     ul.multimedia li .by,
     ul.multimedia li .user {
-        border-right: solid 3px #630460;
+        border-right: solid 3px #7d2b6c;
     }
     .nav-tabs li a {
         font-size: 95%;
