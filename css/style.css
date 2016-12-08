@@ -69,6 +69,9 @@ ul.sections li,
 .longin_form button {
     background: #FFF;
 }
+a {
+    color: #40545e;
+}
 header .log_in,
 .paragraphlay,
 .open_cam,
@@ -76,7 +79,9 @@ header .log_in,
 .now .paragraph time,
 .session.now h3,
 .comment_form button,
-.longin_form input {
+.longin_form input,
+.comment.me,
+.comments_box .comment.me .head time {
     color: #FFF;
 }
 header,
@@ -97,7 +102,8 @@ ul.multimedia li .by,
 .session h3,
 .paragraph .topic .info .name,
 .longin_form button,
-.longin_form button a {
+.longin_form button a,
+.comments_box .comment .head time {
     color: #7f2a6c;
 }
 .nav-tabs li a,
@@ -111,7 +117,7 @@ ul.multimedia li .by,
     font-family: Cairo;
 }
 header {
-    padding: 4% 4%;
+    padding: 4% 4% 1% 4%;
     overflow: hidden;
 }
 header h1 {
@@ -131,6 +137,7 @@ header .log_in {
     float: left;
     clear: both;
     padding: 0 2%;
+    line-height: 250%;
 }
 ul.multimedia {
     display: -webkit-box;
@@ -414,6 +421,7 @@ hr {
     padding: 3% 0;
 }
 /**** Rating ****/
+
 .rating-loading {
     width: 25px;
     height: 25px;
@@ -493,6 +501,51 @@ hr {
 }
 .top form {
     display: inline;
+}
+.comment_form {
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+.comments_box {
+    margin-top: 20px;
+    clear: both;
+    overflow: hidden;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    background: #FFF;
+}
+.comments_box .comment {
+    border-bottom: solid 1px #e8e8e8;
+    padding: 2%;
+}
+.comments_box .comment .head {
+    clear: both;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+.comments_box .comment .head .user {
+    float: right;
+    font-family: CairoBold;
+}
+.comments_box .comment .head time {
+    float: left;
+    font-size: 70%;
+    line-height: 220%;
+}
+.comments_box .comment p {
+    font-size: 70%;
+}
+.comments_box .comment:last-child {
+    border: none;
+}
+.comments_box .comment:nth-child(even) {
+    background: #f9f9f9;
+}
+.comment.me {
+    background: #630460;
+    color: #FFF;
 }
 @media only screen and (max-width: 992px) {
     .container {
