@@ -69,21 +69,6 @@ ul.sections li,
 .longin_form button {
     background: #FFF;
 }
-a {
-    color: #40545e;
-}
-header .log_in,
-.paragraphlay,
-.open_cam,
-.open_cam:hover,
-.now .paragraph time,
-.session.now h3,
-.comment_form button,
-.longin_form input,
-.comment.me,
-.comments_box .comment.me .head time {
-    color: #FFF;
-}
 header,
 .open_cam,
 .now .paragraph time .mins,
@@ -91,7 +76,8 @@ header,
 .session.now h3,
 .comment_form button,
 body.login,
-.longin_form input {
+.longin_form input,
+.comment.me {
     background: #7d2b6c;
 }
 header .user_name,
@@ -109,6 +95,21 @@ ul.multimedia li .by,
 .nav-tabs li a,
 .paragraph .topic .info .ttl {
     color: #c2bebe;
+}
+a {
+    color: #40545e;
+}
+header .log_in,
+.paragraphlay,
+.open_cam,
+.open_cam:hover,
+.now .paragraph time,
+.session.now h3,
+.comment_form button,
+.longin_form input,
+.comment.me,
+.comments_box .comment.me .head time {
+    color: #FFF;
 }
 .container {
     direction: rtl;
@@ -544,7 +545,6 @@ hr {
     background: #f9f9f9;
 }
 .comment.me {
-    background: #630460;
     color: #FFF;
 }
 @media only screen and (max-width: 992px) {
