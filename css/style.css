@@ -69,6 +69,21 @@ ul.sections li,
 .longin_form button {
     background: #FFF;
 }
+a {
+    color: #40545e;
+}
+header .log_in,
+.paragraphlay,
+.open_cam,
+.open_cam:hover,
+.now .paragraph time,
+.session.now h3,
+.comment_form button,
+.longin_form input,
+.comment.me,
+.comments_box .comment.me .head time {
+    color: #FFF;
+}
 header,
 .open_cam,
 .now .paragraph time .mins,
@@ -76,8 +91,7 @@ header,
 .session.now h3,
 .comment_form button,
 body.login,
-.longin_form input,
-.comment.me {
+.longin_form input {
     background: #7d2b6c;
 }
 header .user_name,
@@ -95,21 +109,6 @@ ul.multimedia li .by,
 .nav-tabs li a,
 .paragraph .topic .info .ttl {
     color: #c2bebe;
-}
-a {
-    color: #40545e;
-}
-header .log_in,
-.paragraphlay,
-.open_cam,
-.open_cam:hover,
-.now .paragraph time,
-.session.now h3,
-.comment_form button,
-.longin_form input,
-.comment.me,
-.comments_box .comment.me .head time {
-    color: #FFF;
 }
 .container {
     direction: rtl;
@@ -311,6 +310,11 @@ hr {
 .now .paragraph time .mins {
     padding-top: 4%;
 }
+.session {
+    margin: 2% 0;
+    clear:both;
+    overflow: hidden;
+}
 .session h3 {
     font-size: 100%;
     background: #e8e7e7;
@@ -320,7 +324,6 @@ hr {
     -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
-    margin-bottom: 3%;
 }
 .paragraph .topic,
 .paragraph .topic * {
@@ -507,6 +510,7 @@ hr {
     display: block;
     clear: both;
     overflow: hidden;
+    padding-top: 2%;
 }
 .comments_box {
     margin-top: 20px;
@@ -545,6 +549,7 @@ hr {
     background: #f9f9f9;
 }
 .comment.me {
+    background: #630460;
     color: #FFF;
 }
 @media only screen and (max-width: 992px) {
