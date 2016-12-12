@@ -81,7 +81,8 @@ header .log_in,
 .comment_form button,
 .longin_form input,
 .comment.me,
-.comments_box .comment.me .head time {
+.comments_box .comment.me .head time,
+.comments_box.onscreen_comments .comment .head time {
     color: #FFF;
 }
 header,
@@ -550,9 +551,21 @@ hr {
 .comments_box .comment:nth-child(even) {
     background: #f9f9f9;
 }
-.comment.me {
+.comment.me,
+.comments_box.onscreen_comments .comment {
     background: #7d2b6c !important;
     color: #FFF !important;
+}
+.comments_box.onscreen_comments .comment:nth-child(even) {
+    background: #8b3e7b !important;
+}
+.comments_box.onscreen_comments .comment {
+    border-bottom: solid 1px #9b5d8e;
+    font-size: 190%;
+    padding: 1%;
+}
+.comments_box.onscreen_comments .comment .head {
+    padding-bottom: 1%;
 }
 @media only screen and (max-width: 992px) {
     .container {
