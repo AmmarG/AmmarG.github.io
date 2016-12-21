@@ -87,7 +87,7 @@ b,
 }
 .box h3 {
     font-size: 150%;
-    padding:2% 0 5% 0;
+    padding: 2% 0 5% 0;
 }
 hr {
     border-top: dashed 1px #515151;
@@ -170,7 +170,8 @@ hr {
 .box.overview .nav-tabs>li.active>a:hover {
     cursor: pointer;
     background-color: #e7ddc4;
-    border: solid 1px #e7ddc4;;
+    border: solid 1px #e7ddc4;
+    ;
 }
 .tab-content {
     padding-top: 3%;
@@ -181,13 +182,47 @@ hr {
 .current_info li {
     clear: both;
     overflow: hidden;
-    padding: 2% 0;
+    padding: 1% 0;
 }
 .current_info li img {
     width: 4%;
     float: right;
     margin-left: 3%;
 }
+.current ul.multimedia li {
+    width: 49%;
+    float: right;
+    margin-top: 2%;
+}
+.current ul.multimedia li:nth-child(even) {
+    margin-right: 2%;
+}
+.current ul.multimedia li a {
+    position: relative;
+}
+.current ul.multimedia li a .play {
+    position: absolute;
+    top: 39%;
+    left: 42%;
+    width: 15%;
+    display: block;
+}
+/**
+.maps {
+        position: relative;
+        padding-bottom: 260%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+    .maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+**/
+
 @media (min-width: 1200px) {
     .container {
         width: 1570px;
