@@ -87,7 +87,7 @@ b,
 }
 .box h3 {
     font-size: 150%;
-    padding: 2% 0 5% 0;
+    padding: 20px 0 30px 0;
 }
 hr {
     border-top: dashed 1px #515151;
@@ -207,6 +207,39 @@ hr {
     width: 15%;
     display: block;
 }
+
+
+ul.multimedia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.multimedia ul.multimedia li {
+    width: 19%;
+    float: right;
+    margin-bottom: 1%;
+    margin-right: 1%;
+}
+.multimedia ul.multimedia li:first-child,
+.multimedia ul.multimedia li:nth-child(5n+1) {
+    margin-right: 0;
+}
+.multimedia ul.multimedia li a {
+    position: relative;
+}
+.multimedia ul.multimedia li a .play {
+    position: absolute;
+    top: 39%;
+    left: 42%;
+    width: 15%;
+    display: block;
+}
+
+
 /**
 .maps {
         position: relative;
