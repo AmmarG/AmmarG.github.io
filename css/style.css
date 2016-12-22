@@ -95,9 +95,7 @@ hr {
     border-top: dashed 1px #515151;
     margin-bottom: 30px;
 }
-.col-md-3,
-.col-md-6,
-.col-md-9 {
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
     float: right;
 }
 .box.overview .nav-tabs>li {
@@ -139,7 +137,7 @@ hr {
     padding: 1% 0;
 }
 .current_info li img {
-    width: 4%;
+    width: 8%;
     float: right;
     margin-left: 3%;
 }
@@ -264,10 +262,6 @@ ul.multimedia {
     width: 45px;
     margin-right: 10px;
 }
-.map_tab,
-.map_mob {
-    display: none;
-}
 .overview .panel {
     background: #f6f0e7;
     -webkit-box-shadow: none;
@@ -284,6 +278,13 @@ ul.multimedia {
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
+}
+.panel-group .panel-heading+.panel-collapse>.list-group,
+.panel-group .panel-heading+.panel-collapse>.panel-body {
+    border: none;
+}
+.modal-header .close {
+    padding-bottom: 10px;
 }
 @media (min-width: 1200px) {
     .container {
@@ -319,12 +320,6 @@ ul.multimedia {
     .multimedia ul.multimedia li:nth-child(odd) {
         margin-right: 0;
     }
-    .map_desktop {
-        display: none;
-    }
-    .map_tab {
-        display: block;
-    }
     .current {
         padding-bottom: 20px;
     }
@@ -336,8 +331,8 @@ ul.multimedia {
         display: none;
     }
     .overview .panel-group {
-    display: block;
-}
+        display: block;
+    }
     .overview .panel-body {
         padding: 0 15px;
     }
@@ -351,12 +346,6 @@ ul.multimedia {
     }
     .logo .img-responsive {
         width: 50%;
-    }
-    .map_tab {
-        display: none;
-    }
-    .map_mob {
-        display: block;
     }
     .twitter_feed {
         padding-top: 20px;
