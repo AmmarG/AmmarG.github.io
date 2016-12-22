@@ -63,7 +63,8 @@ body {
 b,
 .slogan,
 .box h3,
-.box.overview .nav-tabs>li>a {
+.box.overview .nav-tabs>li>a,
+.comment_form button {
     font-family: CairoBold;
 }
 .slogan {
@@ -203,7 +204,7 @@ hr {
 .current ul.multimedia li a .play {
     position: absolute;
     top: 39%;
-    left: 42%;
+    left: 43%;
     width: 15%;
     display: block;
 }
@@ -238,6 +239,84 @@ ul.multimedia {
     width: 15%;
     display: block;
 }
+
+
+
+
+
+
+
+.comment_form textarea.form-control {
+    width: 100%;
+    font-size: 100%;
+    background: #ede4d9;
+    border: none;
+    height: 200px;
+    margin-bottom: 2%;
+}
+.comment_form button {
+    float: right;
+    width: 15%;
+    border: none;
+    font-size: 140%;
+    line-height: 200%;
+    background: #9ed9d5;
+    color: #FFF;
+}
+.comment_form textarea.form-control,
+.comment_form button {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+.comment_form {
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+.comments_box {
+    margin-top: 20px;
+    clear: both;
+}
+.comments_box .comment {
+    border-top: dashed 1px #e7d6c4;
+    padding: 2% 0;
+    overflow: hidden;
+    clear: both;
+}
+.comments_box .comment:first-child {
+    border: none;
+}
+.comments_box .comment .head {
+    clear: both;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+.comments_box .comment .head .user {
+    float: right;
+    font-family: CairoBold;
+}
+.comments_box .comment .head time {
+    float: left;
+    line-height: 220%;
+}
+.comments_box .comment:last-child {
+    border: none;
+}
+.comments_box .comment .cmnt_rply {
+    font-size: 80%;
+}
+.comments_box .comment.level01 {
+    width: 95%;
+    float: left;
+    background: #f6f0e7;
+    border: none;
+    margin: 1% 0 3% 0;
+    padding: 1%;
+}
+
+
+
 
 
 /**
