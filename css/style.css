@@ -342,7 +342,7 @@ ul.multimedia {
 }
 @media only screen and (max-width: 480px) {
     .container {
-        font-size: 60%;
+        font-size: 70%;
     }
     .logo .img-responsive {
         width: 50%;
