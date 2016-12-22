@@ -144,12 +144,7 @@ hr {
     margin-left: 3%;
 }
 .current ul.multimedia li {
-    width: 49%;
-    float: right;
-    margin-top: 2%;
-}
-.current ul.multimedia li:nth-child(even) {
-    margin-right: 2%;
+    margin-top: 5%;
 }
 .current ul.multimedia li a {
     position: relative;
@@ -212,6 +207,7 @@ ul.multimedia {
     display: block;
     clear: both;
     overflow: hidden;
+    width: 100%;
 }
 .comments_box {
     margin-top: 20px;
@@ -239,12 +235,13 @@ ul.multimedia {
     float: left;
     line-height: 220%;
 }
-.comments_box .comment:last-child {
-    border: none;
-}
 .comments_box .comment .cmnt_rply {
     font-size: 90%;
-    float: right;
+    cursor: pointer;
+    color: #127bc4;
+}
+.comments_box .comment .comment_form {
+    margin-top: 10px;
 }
 .comments_box .comment.level01 {
     width: 95%;
@@ -272,7 +269,7 @@ ul.multimedia {
     display: none;
 }
 .overview .panel {
-    background: #e7ddc4;
+    background: #f6f0e7;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
@@ -282,6 +279,11 @@ ul.multimedia {
 }
 .overview .panel-group {
     display: none;
+}
+.modal-content {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
 }
 @media (min-width: 1200px) {
     .container {
@@ -343,6 +345,9 @@ ul.multimedia {
 @media only screen and (max-width: 480px) {
     .container {
         font-size: 70%;
+    }
+    .current_info li img {
+        width: 6%;
     }
     .logo .img-responsive {
         width: 50%;
