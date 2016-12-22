@@ -64,16 +64,17 @@ b,
 .slogan,
 .box h3,
 .box.overview .nav-tabs>li>a,
-.comment_form button {
+.comment_form button,
+.panel-title {
     font-family: CairoBold;
 }
 .slogan {
     font-size: 250%;
     text-align: center;
-    padding-top: 2%;
+    padding-top: 3%;
 }
 .general_info {
-    padding: 15% 0 5% 0;
+    padding: 10% 0 5% 0;
     overflow: hidden;
 }
 .general_info li {
@@ -88,63 +89,16 @@ b,
 }
 .box h3 {
     font-size: 150%;
-    padding: 20px 0 30px 0;
+    padding: 20px 0;
 }
 hr {
     border-top: dashed 1px #515151;
+    margin-bottom: 30px;
 }
-.col-lg-1,
-.col-lg-10,
-.col-lg-11,
-.col-lg-12,
-.col-lg-2,
-.col-lg-3,
-.col-lg-4,
-.col-lg-5,
-.col-lg-6,
-.col-lg-7,
-.col-lg-8,
-.col-lg-9,
-.col-md-1,
-.col-md-10,
-.col-md-11,
-.col-md-12,
-.col-md-2,
 .col-md-3,
-.col-md-4,
-.col-md-5,
 .col-md-6,
-.col-md-7,
-.col-md-8,
-.col-md-9,
-.col-sm-1,
-.col-sm-10,
-.col-sm-11,
-.col-sm-12,
-.col-sm-2,
-.col-sm-3,
-.col-sm-4,
-.col-sm-5,
-.col-sm-6,
-.col-sm-7,
-.col-sm-8,
-.col-sm-9,
-.col-xs-1,
-.col-xs-10,
-.col-xs-11,
-.col-xs-12,
-.col-xs-2,
-.col-xs-3,
-.col-xs-4,
-.col-xs-5,
-.col-xs-6,
-.col-xs-7,
-.col-xs-8,
-.col-xs-9 {
+.col-md-9 {
     float: right;
-}
-.box.overview {
-    padding-bottom: 6%;
 }
 .box.overview .nav-tabs>li {
     width: 25%;
@@ -158,12 +112,11 @@ hr {
     border-bottom: none;
 }
 .box.overview .nav-tabs>li>a {
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
     color: #515151;
     text-align: center;
-    margin: 0 6%;
 }
 .box.overview .nav-tabs>li>a:hover,
 .box.overview .nav-tabs>li.active>a,
@@ -208,8 +161,6 @@ hr {
     width: 15%;
     display: block;
 }
-
-
 ul.multimedia {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -218,16 +169,11 @@ ul.multimedia {
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
 }
-
 .multimedia ul.multimedia li {
     width: 19%;
     float: right;
     margin-bottom: 1%;
     margin-right: 1%;
-}
-.multimedia ul.multimedia li:first-child,
-.multimedia ul.multimedia li:nth-child(5n+1) {
-    margin-right: 0;
 }
 .multimedia ul.multimedia li a {
     position: relative;
@@ -239,13 +185,6 @@ ul.multimedia {
     width: 15%;
     display: block;
 }
-
-
-
-
-
-
-
 .comment_form textarea.form-control {
     width: 100%;
     font-size: 100%;
@@ -265,9 +204,9 @@ ul.multimedia {
 }
 .comment_form textarea.form-control,
 .comment_form button {
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
 }
 .comment_form {
     display: block;
@@ -304,7 +243,8 @@ ul.multimedia {
     border: none;
 }
 .comments_box .comment .cmnt_rply {
-    font-size: 80%;
+    font-size: 90%;
+    float: right;
 }
 .comments_box .comment.level01 {
     width: 95%;
@@ -312,31 +252,145 @@ ul.multimedia {
     background: #f6f0e7;
     border: none;
     margin: 1% 0 3% 0;
-    padding: 1%;
+    padding: 10px;
 }
-
-
-
-
-
-/**
-.maps {
-        position: relative;
-        padding-bottom: 260%; // This is the aspect ratio
-        height: 0;
-        overflow: hidden;
-    }
-    .maps iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100% !important;
-        height: 100% !important;
-    }
-**/
-
+.comments_box .comment .walker {
+    float: left;
+    color: #9c9b9b;
+    direction: ltr;
+}
+.comments_box .comment .walker img {
+    float: left;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    width: 45px;
+    margin-right: 10px;
+}
+.map_tab,
+.map_mob {
+    display: none;
+}
+.overview .panel {
+    background: #e7ddc4;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.overview .panel-title {
+    font-size: 120%;
+}
+.overview .panel-group {
+    display: none;
+}
 @media (min-width: 1200px) {
     .container {
         width: 1570px;
+    }
+    .multimedia ul.multimedia li:nth-child(5n+1) {
+        margin-right: 0;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .container {
+        font-size: 90%;
+    }
+    .logo .img-responsive {
+        width: 40%;
+    }
+    .slogan {
+        font-size: 200%;
+    }
+    .general_info li {
+        font-size: 90%;
+        font-family: CairoBold;
+    }
+    hr {
+        margin-bottom: 20px;
+    }
+    .killer {
+        display: none;
+    }
+    .multimedia ul.multimedia li {
+        width: 49%;
+    }
+    .multimedia ul.multimedia li:nth-child(odd) {
+        margin-right: 0;
+    }
+    .map_desktop {
+        display: none;
+    }
+    .map_tab {
+        display: block;
+    }
+    .current {
+        padding-bottom: 20px;
+    }
+    .comment_form button {
+        width: 35%;
+    }
+    .overview .nav,
+    .overview .tab-content {
+        display: none;
+    }
+    .overview .panel-group {
+    display: block;
+}
+    .overview .panel-body {
+        padding: 0 15px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .container {
+        font-size: 60%;
+    }
+    .logo .img-responsive {
+        width: 50%;
+    }
+    .map_tab {
+        display: none;
+    }
+    .map_mob {
+        display: block;
+    }
+    .twitter_feed {
+        padding-top: 20px;
+    }
+    .comment_form button {
+        width: 100%;
+    }
+    .comments_box .comment .walker {
+        float: right;
+        line-height: 240%;
+        margin-top: 10px;
+    }
+    .comments_box .comment .walker img {
+        float: right;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        width: 30px;
+        margin-right: 0;
+        margin-left: 10px;
+    }
+    .general_info li {
+        text-align: center;
+    }
+    .general_info img {
+        width: 60%;
+        margin: 0 auto;
+        clear: both;
+        float: none;
+    }
+    .general_info li span {
+        display: block;
+        padding-top: 20px;
+        font-size: 120%
+    }
+    hr {
+        margin-bottom: 10px;
+    }
+    .box h3 {
+        padding: 10px 0;
     }
 }
