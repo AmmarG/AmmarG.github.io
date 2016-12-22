@@ -193,7 +193,7 @@ ul.multimedia {
 }
 .comment_form button {
     float: right;
-    width: 15%;
+    width: 25%;
     border: none;
     font-size: 140%;
     line-height: 200%;
@@ -272,6 +272,9 @@ ul.multimedia {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
 }
 .overview .panel-title {
     font-size: 120%;
@@ -338,6 +341,9 @@ ul.multimedia {
     float: right;
     padding-left: 10px;
 }
+.modal-header {
+    padding: 5px;
+}
 @media (min-width: 1200px) {
     .container {
         width: 1570px;
@@ -392,8 +398,8 @@ ul.multimedia {
         float: none;
     }
     .killer {
-    margin-top: 0;
-}
+        margin-top: 0;
+    }
 }
 @media only screen and (max-width: 480px) {
     .container {
