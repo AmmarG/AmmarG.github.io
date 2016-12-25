@@ -362,9 +362,6 @@ ul.multimedia {
 	margin-left: 3%;
 }
 @media (min-width: 1200px) {
-    .container {
-        width: 1570px;
-    }
     .multimedia ul.multimedia li:nth-child(5n+1) {
         margin-right: 0;
     }
