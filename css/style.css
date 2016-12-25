@@ -136,7 +136,7 @@ hr {
     margin-top: 20%;
     text-align: center;
 }
-.current_info li {
+.box.current li {
     clear: both;
     overflow: hidden;
     padding: 1% 0;
@@ -149,10 +149,16 @@ hr {
 .current ul.multimedia li {
     margin-top: 5%;
 }
-.current ul.multimedia li a {
-    position: relative;
+.box.current ul.multimedia li img {
+    width: 100%;
+    margin-left: 0;
+    float: none;
 }
-.current ul.multimedia li a .play {
+.box.current ul.multimedia li a {
+    position: relative;
+    height: 100%;
+}
+.box.current ul.multimedia li a .play {
     position: absolute;
     top: 39%;
     left: 43%;
@@ -344,6 +350,17 @@ ul.multimedia {
 .modal-header {
     padding: 5px;
 }
+
+.box.current img {
+	width: 100%;
+	height: auto;
+	float: none;
+}
+.box.current ul li img {
+	width: 8%;
+	float: right;
+	margin-left: 3%;
+}
 @media (min-width: 1200px) {
     .container {
         width: 1570px;
@@ -457,4 +474,7 @@ ul.multimedia {
     .box.social h4 {
         font-size: 150%;
     }
+    .box.current ul li img {
+	width: 6%;
+	}
 }
