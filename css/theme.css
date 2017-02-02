@@ -2243,6 +2243,7 @@ article .videoWithPoster .article-image-video {
 #feedback input[type=text],
 #feedback input[type=password],
 #feedback textarea,
+#feedback select,
 #feedback .captcha {
     border-width: 2px;
     background: #2d2e30;
@@ -2251,6 +2252,10 @@ article .videoWithPoster .article-image-video {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+}
+#feedback select {
+    height: 30px;
+    width: 226px;
 }
 #feedback {
     -webkit-transform: scale(0.8);
@@ -2264,6 +2269,7 @@ article .videoWithPoster .article-image-video {
     -moz-border-radius: 5px;
     border-radius: 5px;
     border: solid 1px #373b3e;
+    direction: rtl;
 }
 .popup_visible #feedback {
     -webkit-transform: scale(1);
