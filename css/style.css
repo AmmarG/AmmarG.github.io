@@ -1,0 +1,228 @@
+/**** Cairo Font Include ****/
+
+@font-face {
+    font-family: 'CairoRegular';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Cairo-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'CairoBold';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/Cairo-SemiBold.ttf) format('truetype');
+}
+/**** Cairo Font Include ****/
+
+* {
+    padding: 0px;
+    margin: 0 auto;
+    text-decoration: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
+}
+input,
+select,
+option,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    outline: none;
+    resize: none;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+    display: block;
+    outline: none;
+    text-decoration: none;
+}
+ol,
+ul,
+li {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    text-align: right;
+}
+img {
+    max-width: 100%;
+}
+p {
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: CairoBold;
+}
+body {
+    background-color: #000;
+    font-family: CairoRegular;
+    font-size: 20px;
+    color: #e1e1e1;
+    margin: 0;
+}
+header {
+    text-align: center;
+    padding-top: 20px;
+}
+figure {
+    margin: 0 auto;
+}
+.container {
+    direction: rtl;
+    max-width: 1024px;
+    width: auto;
+    padding: 10px;
+}
+header h1 {
+    margin: 20px 3% 40px 3%;
+    font-size: 230%;
+}
+section {
+    padding: 20px 0;
+}
+section.iphone_ipad {
+    background: #111;
+}
+section h3 {
+    font-size: 42px;
+    line-height: 150%;
+    margin: 10px 0;
+    float: right;
+}
+.store {
+    float: left;
+    text-align: left;
+}
+.store img {
+    width: 80%;
+}
+.sec_header {
+    overflow: hidden;
+}
+figure {
+    text-align: center;
+    padding: 15px 0;
+    overflow: hidden;
+    position: relative;
+}
+figure ul {
+    padding: 30px;
+    overflow: hidden;
+}
+figure ul li {
+    overflow: hidden;
+}
+figure li img {
+    float: right;
+    max-width: 20%;
+}
+figure li span {
+    display: block;
+    float: left;
+    padding-top: 4%;
+    width: 81%;
+    font-size: 85%;
+}
+.iphone_ipad p {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 110%;
+}
+.iphone_ipad figure .li01 img {
+    margin-top: 2%;
+}
+.apple_tv .container {
+    padding: 10px 0;
+}
+.apple_tv .app_tv {
+    max-width: 107%;
+    margin-right: -7%;
+}
+.apple_tv .shape01 {
+    position: absolute;
+    left: 9%;
+    top: 90px;
+    display: block;
+    max-width: 31%;
+}
+.apple_tv figure ul {
+    padding-top: 50px;
+}
+.apple_tv figure li {
+    padding: 15px 0;
+}
+.apple_tv figure li span {
+    padding: 0;
+    width: 93%;
+}
+.apple_tv figure img {
+    margin-top: 4px;
+}
+.apple_tv p {
+    display: none;
+}
+#myCarousel {
+    direction: ltr;
+}
+#myCarousel .item img {
+    min-height: 100%;
+}
+.carousel-control {
+    width: 10%;
+    background-image: url(../gfx/slider_controls.png) !important;
+    background-repeat: no-repeat !important;
+}
+.carousel-control.right {
+    background-position: -87px 48%;
+}
+.carousel-control.left {
+    background-position: 41px 48%;
+}
+.carousel-indicators li,
+.carousel-indicators .active {
+    width: 15px;
+    height: 15px;
+    border: none;
+    margin: 0 1px;
+}
+.carousel-indicators li {
+    background-color: #212121;
+}
+.carousel-fade .item {
+    transition-property: opacity;
+}
+.carousel-fade .item,
+.carousel-fade .active.left,
+.carousel-fade .active.right {
+    opacity: 0;
+}
+.carousel-fade .active,
+.carousel-fade .next.left,
+.carousel-fade .prev.right {
+    opacity: 1;
+}
+.carousel-fade .next,
+.carousel-fade .prev,
+.carousel-fade .active.left,
+.carousel-fade .active.right {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+    z-index: 2;
+}

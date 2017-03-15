@@ -1,0 +1,221 @@
+@media only screen and (min-width: 1024px) {
+    /**** Desktop ****/
+    .hide_in_desktop {
+        display: none !important;
+    } 
+    .hide_in_device {
+        display: block;
+    }
+    .iphone_ipad figure {
+        padding: 50px 0 50px 0;
+    }
+    .iphone_ipad .ipad {
+        float: right;
+        max-width: 60%;
+        z-index: 0;
+    }
+    .iphone_ipad .iphone {
+        float: left;
+        max-width: 30%;
+        z-index: 0;
+        margin-top: 80px;
+    }
+    .iphone_ipad .shape01 {
+        position: absolute;
+        left: 34px;
+        top: 81px;
+    }
+    .iphone_ipad ul {
+        position: relative;
+        z-index: 1;
+        padding: 0;
+        overflow: visible;
+    }
+    .iphone_ipad ul li {
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+    }
+    .iphone_ipad ul li img,
+    .iphone_ipad ul li span {
+        float: none;
+        clear: both;
+        width: auto;
+        font-size: 58%;
+        text-align: center;
+    }
+    .iphone_ipad ul li img {
+        min-width: 40%;
+    }
+    .iphone_ipad ul .li02 {
+        top: -35px;
+        left: 76px;
+        width: 140px;
+    }
+    .iphone_ipad ul .li02 span {
+        margin-top: -15px;
+    }
+    .iphone_ipad ul .li01 {
+        top: 100px;
+        left: 322px;
+        width: 120px;
+    }
+    .iphone_ipad ul .li03 {
+        top: 305px;
+        left: 322px;
+        width: 120px;
+    }
+    .iphone_ipad ul .li04 {
+        top: 710px;
+        left: 86px;
+        width: 128px;
+    }
+    .iphone_ipad ul .li04 img {
+        min-width: 30%;
+    }
+    .iphone_ipad ul .li04 span {
+        margin-top: -2px;
+    }
+    .iphone_ipad ul .li01 img,
+    .iphone_ipad ul .li03 img {
+        display: none;
+    }
+    .iphone_ipad p {
+        text-align: right;
+        width: 50%;
+        float: right;
+    }
+    .app_tv.hide_in_device {
+        width: 100%;
+        margin: 0;
+    }
+}
+@media only screen and (min-width: 992px) {
+    /****Ipad Landscape 1024 Container 970 ****/
+    figure li span {
+        padding-top: 4%;
+        width: 86%;
+        font-size: 110%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /****Ipad Portrait 768 Container 991 ****/
+    .carousel-control {
+        display: none;
+    }
+    section h3,
+    .store {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        clear: both;
+        padding-bottom: 30px;
+    }
+    .store img {
+        width: 40%;
+    }
+    figure .full {
+        width: 40%;
+    }
+    figure li span {
+        padding-top: 4%;
+        width: 80%;
+        font-size: 92%;
+    }
+    .apple_tv figure li span {
+        width: 96%;
+    }
+    .apple_tv figure li img {
+        margin-top: 4px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    /****Mobile Landscape 480 Container 767 ****/
+    .carousel-control {
+        display: none;
+    }
+    header figure {
+        width: 70%;
+    }
+    header h1 {
+        font-size: 170%;
+        line-height: 140%;
+    }
+    section h3,
+    .store {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        clear: both;
+        padding-bottom: 30px;
+    }
+    .store img {
+        width: 40%;
+    }
+    figure li span {
+        width: 77%;
+    }
+    .iphone_ipad p {
+        font-size: 100%;
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 479px) {
+    /**** Mobile Portrait 479 ****/
+    .carousel-control {
+        display: none;
+    }
+    header h1 {
+        font-size: 140%;
+        line-height: 130%;
+        margin: 15px 0;
+    }
+    #myCarousel .carousel-indicators {
+        bottom: 10%;
+    }
+    section h3,
+    .store {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        clear: both;
+        padding-bottom: 30px;
+        font-size: 180%;
+    }
+    .store img {
+        width: 60%;
+    }
+    #myCarousel .carousel-indicators {
+        bottom: -3%;
+    }
+    figure .full {
+        width: 70%;
+    }
+    figure li img {
+        width: 26%;
+    }
+    figure li span {
+        padding-top: 5%;
+        width: 74%;
+        font-size: 53%;
+        line-height: 160%;
+    }
+    .apple_tv figure li img {
+        width: 4%;
+    }
+    .apple_tv figure li span {
+        width: 92%;
+    }
+    .iphone_ipad p {
+        font-size: 70%;
+        width: 90%;
+    }
+    figure ul li {
+        padding: 5px 0;
+    }
+}
+@media only screen and (max-width: 1023px) {
+    .hide_in_device {
+        display: none !important;
+    }   
+}
