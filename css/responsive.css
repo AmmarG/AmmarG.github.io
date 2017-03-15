@@ -2,7 +2,7 @@
     /**** Desktop ****/
     .hide_in_desktop {
         display: none !important;
-    } 
+    }
     .hide_in_device {
         display: block;
     }
@@ -89,6 +89,57 @@
         width: 100%;
         margin: 0;
     }
+    .apple_tv figure {
+        padding: 90px 0 150px 0;
+    }
+    .apple_tv figure ul {
+        padding: 0;
+    }
+    .apple_tv figure ul li {
+        position: absolute;
+        font-size: 58%;
+    }
+    .apple_tv figure ul li img {
+        display: none;
+    }
+    .apple_tv figure ul .li01 {
+        top: 25px;
+        left: 276px;
+        width: 250px;
+        text-align: center;
+    }
+    .apple_tv figure .li02 {
+        top: 350px;
+    right: 0px;
+    width: 140px;
+    }
+    .apple_tv figure .li02 span {
+        text-align: right;
+    }
+    .apple_tv figure .li03 {
+        top: 865px;
+    left: 0px;
+    width: 170px;
+    }
+    .apple_tv figure .li03 span {
+        text-align: left;
+    }
+    .apple_tv figure .li04 {
+        top: 1000px;
+    right: 0px;
+    width: 650px;
+        font-size: 110%;
+    }
+    .apple_tv figure .li04 span {
+        text-align: right;
+    }
+    .apple_tv figure .li05 {
+        display: block;
+        top: 40px;
+        right: 3px;
+        width: 200px;
+    }
+    
 }
 @media only screen and (min-width: 992px) {
     /****Ipad Landscape 1024 Container 970 ****/
@@ -217,5 +268,5 @@
 @media only screen and (max-width: 1023px) {
     .hide_in_device {
         display: none !important;
-    }   
+    }
 }

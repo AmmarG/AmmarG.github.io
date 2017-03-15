@@ -176,6 +176,9 @@ figure li span {
 .apple_tv p {
     display: none;
 }
+.apple_tv figure .li05 {
+    display: none;
+}
 #myCarousel {
     direction: ltr;
 }
