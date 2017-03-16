@@ -85,7 +85,7 @@
         width: 50%;
         float: right;
     }
-    .app_tv.hide_in_device {
+    .apple_tv .hide_in_device {
         width: 100%;
         margin: 0;
     }
@@ -110,24 +110,24 @@
     }
     .apple_tv figure .li02 {
         top: 350px;
-    right: 0px;
-    width: 140px;
+        right: 0px;
+        width: 140px;
     }
     .apple_tv figure .li02 span {
         text-align: right;
     }
     .apple_tv figure .li03 {
         top: 865px;
-    left: 0px;
-    width: 170px;
+        left: 0px;
+        width: 170px;
     }
     .apple_tv figure .li03 span {
         text-align: left;
     }
     .apple_tv figure .li04 {
         top: 1000px;
-    right: 0px;
-    width: 650px;
+        right: 0px;
+        width: 650px;
         font-size: 110%;
     }
     .apple_tv figure .li04 span {
@@ -139,7 +139,6 @@
         right: 3px;
         width: 200px;
     }
-    
 }
 @media only screen and (min-width: 992px) {
     /****Ipad Landscape 1024 Container 970 ****/
