@@ -172,10 +172,12 @@
         width: 80%;
         font-size: 92%;
     }
-    .apple_tv figure li span {
+    .apple_tv figure li span,
+    .iwatch figure li span {
         width: 96%;
     }
-    .apple_tv figure li img {
+    .apple_tv figure li img,
+    .iwatch figure li img {
         margin-top: 4px;
     }
 }
@@ -250,10 +252,12 @@
         font-size: 53%;
         line-height: 160%;
     }
-    .apple_tv figure li img {
+    .apple_tv figure li img,
+    .iwatch figure li img {
         width: 4%;
     }
-    .apple_tv figure li span {
+    .apple_tv figure li span,
+    .iwatch figure li span {
         width: 92%;
     }
     .iphone_ipad p {

@@ -156,22 +156,26 @@ figure li span {
 }
 .apple_tv .shape01 {
     position: absolute;
-    left: 9%;
-    top: 90px;
+    left: 8%;
+    top: 6%;
     display: block;
     max-width: 31%;
+    padding: 0;
 }
 .apple_tv figure ul {
     padding-top: 50px;
 }
-.apple_tv figure li {
+.apple_tv figure li,
+.iwatch figure li {
     padding: 15px 0;
 }
-.apple_tv figure li span {
+.apple_tv figure li span,
+.iwatch figure li span {
     padding: 0;
     width: 93%;
 }
-.apple_tv figure img {
+.apple_tv figure li img,
+.iwatch figure li img {
     margin-top: 4px;
 }
 .apple_tv p {
@@ -183,7 +187,7 @@ figure li span {
 .iwatch .shape01 {
     position: absolute;
     left: 61%;
-    top: 3%;
+    top: 0%;
     max-width: 38%;
 }
 .iwatch .faces {
@@ -204,7 +208,7 @@ figure li span {
 }
 .iwatch .main_img {
     max-width: 50%;
-    margin-top: 11%;
+    margin-top: 5%;
 }
 #myCarousel {
     direction: ltr;
