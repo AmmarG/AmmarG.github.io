@@ -210,6 +210,39 @@ figure li span {
     max-width: 50%;
     margin-top: 5%;
 }
+
+.android_devices .container {
+    padding: 10px 0;
+}
+.android_devices .android_tab {
+    position: absolute;
+    right: -40%;
+    top: 70%
+}
+.android_devices .android_phone {
+    width: 60%;
+}
+.android_devices .android_blackberry {
+    xposition: absolute;
+    xright: -40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #myCarousel {
     direction: ltr;
 }

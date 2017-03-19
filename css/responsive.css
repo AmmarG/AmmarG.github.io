@@ -189,7 +189,8 @@
         font-size: 64%;
     }
     .iwatch figure li img,
-    .iwatch figure li.li01 {
+    .iwatch figure li.li01,
+    .android_devices li img {
         display: none;
     }
     .iwatch figure ul {
@@ -200,8 +201,67 @@
     }
     section p {
         width: 60% !important;
-        font-size: 25px !important;
+        font-size: 22px !important;
     }
+    .android_devices .android_tab {
+       width: 61%;
+    float: right;
+    margin-top: 39px;
+        margin-right: 0;
+        position: relative;
+        right: 0;
+    }
+    .android_devices .android_phone {
+       width: 15.7%;
+    float: left;
+    margin: 37px 0px 0 20px;
+    }
+    .android_devices .blackberry {
+       width: 18%;
+    float: left;
+    }
+    .android_devices .shape01 {
+        position: absolute;
+    top: 120px;
+    right: 587px;
+    }
+    .android_devices ul {
+        clear: both;
+    }
+    .android_devices li {
+        position: absolute;
+        font-size: 64%;
+    }
+    .android_devices li.li01 {
+        top: 500px;
+    right: 0px;
+    text-align: right;
+    width: 240px;
+    }
+    .android_devices li.li01 span {
+        float: none;
+    }
+    .android_devices li.li02 {
+        top: 580px;
+    left: 194px;
+    text-align: center;
+    width: 180px;
+    }
+    .android_devices li.li03 {
+        top: 628px;
+    left: 32px;
+    text-align: center;
+    width: 170px;
+    }
+    .android_devices figure {
+        padding: 40px 0 0 0;
+    }
+    .android_devices .container {
+    padding: 10px;
+}
+    section .store img {
+    width: 80%;
+}
 }
 @media only screen and (min-width: 992px) {
     /****Ipad Landscape 1024 Container 970 ****/
@@ -210,22 +270,14 @@
         width: 86%;
         font-size: 110%;
     }
+    .store img {
+        width: 30%;
+    }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     /****Ipad Portrait 768 Container 991 ****/
     .carousel-control {
         display: none;
-    }
-    section h3,
-    .store {
-        float: none;
-        margin: 0 auto;
-        text-align: center;
-        clear: both;
-        padding-bottom: 30px;
-    }
-    .store img {
-        width: 40%;
     }
     figure .full {
         width: 40%;
@@ -242,6 +294,9 @@
     .apple_tv figure li img,
     .iwatch figure li img {
         margin-top: 4px;
+    }
+    .store img {
+        width: 30%;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -265,7 +320,7 @@
         padding-bottom: 30px;
     }
     .store img {
-        width: 40%;
+        width: 50%;
     }
     figure li span {
         width: 77%;
@@ -334,5 +389,13 @@
 @media only screen and (max-width: 1023px) {
     .hide_in_device {
         display: none !important;
+    }
+    section h3,
+    .store {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        clear: both;
+        padding-bottom: 30px;
     }
 }
