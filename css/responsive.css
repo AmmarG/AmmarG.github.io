@@ -1,6 +1,7 @@
 @media only screen and (min-width: 1024px) {
     /**** Desktop ****/
-    .hide_in_desktop {
+    .hide_in_desktop,
+    .iwatch .main_img {
         display: none !important;
     }
     .hide_in_device {
@@ -132,12 +133,74 @@
     }
     .apple_tv figure .li04 span {
         text-align: right;
+        float: right
     }
     .apple_tv figure .li05 {
         display: block;
         top: 40px;
         right: 3px;
         width: 200px;
+    }
+    .iwatch .faces {
+    padding: 60px 0;
+}
+    .iwatch .faces img {
+        float: right;
+        margin: 0 20px 0 0;
+        width: 17%;
+    }
+    .iwatch .shape01.hide_in_device {
+        right: 0%;
+        left: auto;
+        top: 17%;
+        max-width: 30%;
+    }
+    .iwatch .faces img.hide_in_device {
+        margin-right: 260px;
+    }
+    .iwatch .faces .shape01 {
+        margin: 0;
+        max-width: 94%;
+        top: 72%;
+        right: 444px;
+    }
+    .iwatch figure li.li02 {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        text-align: left;
+        width: 200px;
+    }
+    .iwatch figure li.li03 {
+        position: absolute;
+        top: 330px;
+        left: 400px;
+        text-align: center;
+        width: 150px;
+    }
+    .iwatch figure li.li04 {
+       position: absolute;
+    top: 257px;
+    right: 0;
+    text-align: center;
+    width: 155px;
+    }
+    .iwatch figure li span {
+        font-size: 64%;
+    }
+    .iwatch figure li img,
+    .iwatch figure li.li01 {
+        display: none;
+    }
+    .iwatch figure ul {
+        padding: 0;
+    }
+    .iwatch p {
+        padding-top: 40px;
+    }
+    section p {
+        width: 60% !important;
+        font-size: 25px !important;
     }
 }
 @media only screen and (min-width: 992px) {
