@@ -96,7 +96,8 @@ section {
 }
 section.iphone_ipad,
 section.iwatch,
-section.samsung_tv {
+section.samsung_tv,
+section.chrome_ext {
     background: #111;
 }
 section h3 {
@@ -211,7 +212,6 @@ figure li span {
     max-width: 50%;
     margin-top: 5%;
 }
-
 .android_devices .container {
     padding: 10px 0;
 }
@@ -248,22 +248,6 @@ figure li span {
 .android_watch figure img {
     max-width: 60%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #myCarousel {
     direction: ltr;
 }
