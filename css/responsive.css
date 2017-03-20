@@ -262,6 +262,12 @@
     section .store img {
     width: 80%;
 }
+    .android_devices p {
+        padding: 0;
+        float: right;
+        text-align: right;
+        width: 50%;
+    }
 }
 @media only screen and (min-width: 992px) {
     /****Ipad Landscape 1024 Container 970 ****/
@@ -329,6 +335,9 @@
         font-size: 100%;
         width: 70%;
     }
+    .android_devices p {
+        font-size: 100%;
+    }
 }
 @media only screen and (max-width: 479px) {
     /**** Mobile Portrait 479 ****/
@@ -381,6 +390,9 @@
     .iphone_ipad p {
         font-size: 70%;
         width: 90%;
+    }
+    .android_devices p {
+        font-size: 70%;
     }
     figure ul li {
         padding: 5px 0;
