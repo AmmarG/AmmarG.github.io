@@ -95,7 +95,8 @@ section {
     padding: 20px 0;
 }
 section.iphone_ipad,
-section.iwatch {
+section.iwatch,
+section.samsung_tv {
     background: #111;
 }
 section h3 {
@@ -230,8 +231,10 @@ figure li span {
 .android_devices li.hide_in_desktop {
     padding: 7px 0;
 }
-.android_devices p {
-    padding: 0 35px;
+.android_devices p,
+.samsung_tv p,
+.android_watch p {
+    padding: 15px 35px;
     font-size: 110%;
     float: none;
     text-align: center;
@@ -242,7 +245,9 @@ figure li span {
 .android_devices figure {
     padding-bottom: 0;
 }
-
+.android_watch figure img {
+    max-width: 60%;
+}
 
 
 

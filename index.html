@@ -12,6 +12,7 @@
     <script type="text/javascript" src="js/jquery-2-1-4-min.js"></script>
     <script type="text/javascript" src="js/bootstrap-min.js"></script>
     <script type="text/javascript" src="js/wow.js"></script>
+    <script type="text/javascript" src="js/jquery-mobile-custom-min.js"></script>
     <!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -34,7 +35,7 @@
     <!-- Section Slider -->
     <section class="slider wow animated fadeInUp delay-04s">
         <div class="container">
-            <div id="myCarousel" class="carousel slide carousel-fade animated fadeInUp delay-04s" data-ride="carousel">
+            <div id="myCarousel" class="carousel slide carousel-fade animated fadeInUp delay-04s" data-ride="carousel" data-interval="false">
                 <!-- Carousel indicators -->
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0"></li>
@@ -48,18 +49,18 @@
                 <!-- Wrapper for carousel items -->
                 <div class="carousel-inner">
                     <div class="item">
-                        <a href="#" title="">
+                        <a href="#chrome_ext" title="">
                             <img src="gfx/chrome_ext.png" alt="" />
                         </a>
                     </div>
                     <div class="item">
-                        <a href="#" title="">
-                            <img src="gfx/samsung_tv.png" alt="" />
+                        <a href="#android_watch" title="">
+                            <img src="gfx/android_watch.png" alt="" />
                         </a>
                     </div>
                     <div class="item">
-                        <a href="#" title="">
-                            <img src="gfx/android_watch.png" alt="" />
+                        <a href="#samsung_tv" title="">
+                            <img src="gfx/samsung_tv.png" alt="" />
                         </a>
                     </div>
                     <div class="item">
@@ -235,12 +236,60 @@
             <p class="wow animated fadeInDown delay-01s">يتيح تطبيق "قناة العربية" خدمة الاطلاع على آخر الأخبار العاجلة وأهم الأحداث العربية والعالمية فور حدوثها، بالاضافة الى مشاهدة برامج القناة وتقارير أخرى</p>
         </div>
     </section>
+    <!-- Section Samsung Smart TV -->
+    <section id="samsung_tv" class="samsung_tv">
+        <div class="container">
+            <div class="sec_header">
+                <h3 class="wow animated zoomIn delay-04s">Samsung Smart TV</h3>
+                <a class="store wow animated zoomIn delay-04s" href="#" title="">
+                    <img src="gfx/samsung_store.png" alt="" />
+                </a>
+            </div>
+            <figure>
+                <img class="iphone wow animated fadeInDown delay-04s" src="gfx/samsung_tv_sec.png" alt="" />
+            </figure>
+            <p class="wow animated fadeInDown delay-01s">يتيح تطبيق "قناة العربية" خدمة الاطلاع على آخر الأخبار
+العاجلة وأهم الأحداث العربية والعالمية فور حدوثها، بالاضافة
+الى مشاهدة برامج القناة وتقارير أخرى</p>
+        </div>
+    </section>
+    <!-- Section Android Watch -->
+    <section id="android_watch" class="android_watch">
+        <div class="container">
+            <div class="sec_header">
+                <h3 class="wow animated zoomIn delay-04s">ساعة آندرويد</h3>
+                <a class="store wow animated zoomIn delay-04s" href="#" title="">
+                    <img src="gfx/google_play.png" alt="" />
+                </a>
+            </div>
+            <figure>
+                <img class="iphone wow animated fadeInDown delay-04s" src="gfx/android_watch_sec.png" alt="" />
+            </figure>
+            <p class="wow animated fadeInDown delay-01s">يتيح تطبيق "قناة العربية" خدمة الاطلاع على آخر الأخبار العاجلة وأهم الأحداث العربية والعالمية فور حدوثها، بالاضافة الى مشاهدة برامج القناة وتقارير أخرى</p>
+        </div>
+    </section>
+    <!-- Section Chrome Extention -->
+    <section id="chrome_ext" class="chrome_ext">
+        <div class="container">
+            <div class="sec_header">
+                <h3 class="wow animated zoomIn delay-04s">إضافات متصفح كروم</h3>
+                <a class="store wow animated zoomIn delay-04s" href="#" title="">
+                    <img src="gfx/google_play.png" alt="" />
+                </a>
+            </div>
+            <figure>
+                <img class="iphone wow animated fadeInDown delay-04s" src="gfx/android_watch_sec.png" alt="" />
+            </figure>
+            <p class="wow animated fadeInDown delay-01s">يتيح تطبيق "قناة العربية" خدمة الاطلاع على آخر الأخبار العاجلة وأهم الأحداث العربية والعالمية فور حدوثها، بالاضافة الى مشاهدة برامج القناة وتقارير أخرى</p>
+        </div>
+    </section>
     <script>
         wow = new WOW({
             animateClass: 'animated',
             offset: 100
         });
         wow.init();
+        $('.carousel').carousel('pause');
     </script>
 </body>
 

@@ -263,10 +263,16 @@
     width: 80%;
 }
     .android_devices p {
-        padding: 0;
+        padding: 60px 0 20px 0;
         float: right;
         text-align: right;
         width: 50%;
+    }
+    .samsung_tv p,
+    .android_watch p
+    {
+        padding: 30px 0 20px 0;
+        margin: 0 auto;
     }
 }
 @media only screen and (min-width: 992px) {
@@ -335,7 +341,9 @@
         font-size: 100%;
         width: 70%;
     }
-    .android_devices p {
+    .android_devices p,
+    .samsung_tv p,
+    .android_watch p {
         font-size: 100%;
     }
 }
@@ -391,7 +399,9 @@
         font-size: 70%;
         width: 90%;
     }
-    .android_devices p {
+    .android_devices p,
+    .samsung_tv p,
+    .android_watch p {
         font-size: 70%;
     }
     figure ul li {
