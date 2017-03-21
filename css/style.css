@@ -146,8 +146,8 @@ figure li span {
     margin: 0 auto;
     font-size: 110%;
 }
-.iphone_ipad figure .li01 img {
-    margin-top: 2%;
+.iphone_ipad .iphone {
+    width: 60%;
 }
 .apple_tv .container {
     padding: 10px 0;
@@ -189,7 +189,7 @@ figure li span {
 .iwatch .shape01 {
     position: absolute;
     left: 61%;
-    top: 0%;
+    top: 1%;
     max-width: 38%;
 }
 .iwatch .faces {
