@@ -251,9 +251,6 @@ figure li span {
 #myCarousel {
     direction: ltr;
 }
-#myCarousel .item img {
-    min-height: 100%;
-}
 .carousel-control {
     width: 10%;
     background-image: url(../gfx/slider_controls.png) !important;
