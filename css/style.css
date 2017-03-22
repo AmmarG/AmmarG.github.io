@@ -247,6 +247,9 @@ figure li span {
 .android_watch figure img {
     max-width: 60%;
 }
+.chrome_ext {
+    padding-bottom: 50px;
+}
 #myCarousel {
     direction: ltr;
 }
