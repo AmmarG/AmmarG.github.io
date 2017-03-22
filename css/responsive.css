@@ -19,7 +19,7 @@
         float: left;
         max-width: 30%;
         z-index: 0;
-        margin-top: 80px;
+        margin-top: 100px;
     }
     .iphone_ipad .shape01 {
         position: absolute;
@@ -49,7 +49,7 @@
         min-width: 40%;
     }
     .iphone_ipad ul .li02 {
-        top: -35px;
+        top: -10px;
         left: 76px;
         width: 140px;
     }
@@ -67,7 +67,7 @@
         width: 120px;
     }
     .iphone_ipad ul .li04 {
-        top: 710px;
+        top: 700px;
         left: 86px;
         width: 128px;
     }
@@ -254,7 +254,7 @@
         width: 170px;
     }
     .android_devices figure {
-        padding: 40px 0 0 0;
+        padding: 40px 0 27px 0;
     }
     .android_devices .container,
     .apple_tv .container {
