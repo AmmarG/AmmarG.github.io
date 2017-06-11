@@ -1,0 +1,22 @@
+.navbar>.container .navbar-brand {
+    margin: 10px auto;
+    float: none;
+}
+.navbar {
+    height: auto;
+    min-height: auto;
+}
+time.op-published,
+time.op-modified {
+    display: block;
+    clear: both;
+    color: #828181;
+    font-size: 12px;
+    padding: 2px;
+}
+address.source {
+    margin-bottom: 0;
+}
+video {
+    width: 100%;
+}
