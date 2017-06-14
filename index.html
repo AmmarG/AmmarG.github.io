@@ -1,967 +1,1472 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html>
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>العربية.نت | الصفحة الرئيسية</title>
-    <link href="css/bootstrap-min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/hotFix.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+    <title>aaRevamb</title>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=description content="لعربية.نت">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/structure.css">
+    <link rel="stylesheet" href="css/theme-default.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" type="image/png" href="gfx/favicon.ico" />
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="العربية">
+    <link rel="icon" sizes="192x192" href="gfx/touch/chrome-touch-icon-192x192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="العربية">
+    <link rel="apple-touch-icon" href="gfx/touch/apple-touch-icon.png">
+    <meta name="msapplication-TileImage" content="gfx/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#ff0505">
+    <meta name="theme-color" content="#73337d">
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button id="ChangeToggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                    <div id="navbar-hamburger" class="">
-                        <span class="sr-only">القائمة</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </div>
-                    <div id="navbar-close" class="hidden">
-                        <span class="glyphicon glyphicon-remove"></span>
-                    </div>
-                </button>
-
-                <h1 class="navbar-brand"><a href="#" title="">العربية</a></h1>
-                <!-- Live Stream -->
-                <a href="#" class="live"></a>
+    <!-- Breaking News -->
+    <div class="breaking-news">
+        <div class="main-content">
+            <div class="lbl">عاجل</div>
+            <p>شبكة شام: قصف عنيف بالمدفعية الثقيلة على أحياء برزة والقابون ومخيم اليرموك</p>
+            <span class="close">x</span>
+        </div>
+    </div>
+    <!-- Extra Wrapper Top -->
+    <div class="extra-wrapper-top"></div>
+    <!-- Overlay -->
+    <div class="overlay"></div>
+    <!-- Takeover -->
+    <div class="takeover-outer"></div>
+    <!-- Header -->
+    <header>
+        <!-- Top Info -->
+        <div class="top-info">
+            <div class="main-content">
+                <!-- Date / Time -->
+                <div class="date-time">
+                    <time datetime="2017-04-17">الأحد 12 شوال 143٧ه - ١٧ يوليو 2017 م</time>
+                </div>
+                <!-- Trending Topics -->
+                <div class="hashtags">
+                    <a href="#" title="">#تركيا</a>
+                    <a href="#" title="">#يورو2016</a>
+                    <a href="#" title="">#العربية</a>
+                    <a href="#" title="">#العربية</a>
+                </div>
+                <!-- Languages -->
+                <div class="lang"><a href="#" title="">English</a>
+                    <a href="#" title="">فارسي</a>
+                    <a href="#" title="">عربي</a>
+                </div>
             </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Search -->
-                    <form class="navbar-form navbar-left" role="search">
-                        <div id='search-form' class="form-group">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="إبحث في العربية">
-                                <input type="image" src="gfx/srch.png" class="icon" alt="بحث">
-                            </div>
-                        </div>
-                    </form>
-                    <li>
-                        <a href="#">الرئيسية</a>
+        </div>
+        <!-- Main Header -->
+        <div class="main-header">
+            <div class="main-content">
+                <!-- Mobile Menu Icon -->
+                <div class="mobile-menu"></div>
+                <!-- Logo -->
+                <h1 class="logo">
+                    <a href="#" title="">
+                   العربية
+                </a>
+                </h1>
+                <!-- Mobile Search Icon -->
+                <div class="mobile-searh"></div>
+                <!-- Weather Widget -->
+                <div class="weather">
+                    <img src="temp/weather.png" alt="" />
+                </div>
+                <!-- Live -->
+                <a href="#" class="live-streaming" title="">
+                    <span>البث المباشر</span>
+                </a>
+            </div>
+        </div>
+        <!-- Main Navigation -->
+        <nav>
+            <div class="main-content">
+                <ul>
+
+
+                    <li><a href="#" class="active" title="">الرئيسية</a>
                     </li>
-                    <!-- Sub Menu -->
-                    <li class="dropdown">
-                        <a href="#">أخبار</a>
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle"><b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">السعودية</a>
-                            </li>
-                            <li><a href="#">رياضة</a>
-                            </li>
-                            <li><a href="#">الحدث</a>
-                            </li>
-                            <li><a href="#">صحة</a>
-                            </li>
+                    <li><a href="#" title="">الشرق الأوسط</a>
+                    </li>
+                    <li class="submenu"><a href="#" title="">العالم <span class="arrow"></span></a>
+                        <ul>
+                            <li>صحة</li>
+                            <li>رياظة</li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#">السعودية</a>
+                    <li><a href="#" title="">السعودية</a>
                     </li>
-                    <li>
-                        <a href="#">رياضة</a>
+                    <li><a href="#" title="">أسواق</a>
                     </li>
-                    <li>
-                        <a href="#">الحدث</a>
+                    <li><a href="#" title="">رياضة</a>
                     </li>
-                    <li>
-                        <a href="#">فيديو</a>
+                    <li><a href="#" title="">تكنولوجيا</a>
                     </li>
+                    <li><a href="#" title="">آراء</a>
+                    </li>
+                    <li><a href="#" title="">ستايل</a>
+                    </li>
+                    <li><a href="#" title="">منوعات</a>
+                    </li>
+                    <li><a href="#" title="">البرامج</a>
+                    </li>
+                    <li><a href="#" title="">أنا أرى</a>
+                    </li>
+                    <li><a href="#" title="">أنا أرى</a>
+                    </li>
+                    <!-- Search -->
                     <li>
-                        <a href="#">أسواق</a>
+                        <a class="btn-search" href="#"></a>
                     </li>
                 </ul>
             </div>
-        </div>
-    </nav>
-    <!-- Page Content -->
-    <div class="container">
-        <!-- Article -->
-        <div class="row">
-            <article class="box">
-                <div class="col-md-12">
-                    <!-- Article Content -->
-                    <div class="article-content">
-                        <h3>الطائرة الروسية.. تضارب دولي حول "عبوة" داعش</h3>
-                        <h4>مصر وروسيا تعتبران التصريحات البريطانية</h4>
-                        <div class="teaser-wrapper">
-                            <img class="img-responsive" src="temp/news10.jpg" alt="" />
-                            <span>الملك سلمان بن عبدالعزيز</span>
-                        </div>
-                        <div class="caption">آخر تحديث: الأربعاء 28 محرم 1437هـ - 11 نوفمبر 2015م KSA 15:43 - GMT 12:43</div>
-                        <div class="caption">الأربعاء 28 محرم 1437هـ - 11 نوفمبر 2015م</div>
-                        <hr>
-                        <p>
-                            <span class="sharable need_tooltip">يوجه المهتمون بالفلك أنظارهم إلى السماء يومي الثلاثاء والأربعاء
-												لمتابعة واحد من أندر الأحداث الفلكية، وهو مرور كوكب الزهرة</span>
-                            بشكل مباشر بين الشمس والأرض</p>
-                        <div class="tooltip">
-                            <a class="whatsapp" href="#">Whatsapp</a>
-                            <a class="fb" href="#">Facebook</a>
-                            <a class="twtr" href="#">Twitter</a>
-                            <a class="telegram" href="#">Telegram</a>
-                        </div>
-                        <p>أعلن خادم الحرمين الشريفين <a href="">الملك سلمان بن عبدالعزيز</a> انتهاء القمة الرابعة بين الدول العربية ودول أميركا اللاتينية الأربعاء، بعد أن انطلقت أمس الثلاثاء بحضور مجموعة من الرؤساء العرب ودول أميركا اللاتينية.</p>
-                        <div class="box carecature">
-                            <div class="col-md-12">
-                                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                                    <!-- Carousel indicators -->
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#myCarousel" data-slide-to="12"></li>
-                                        <li data-target="#myCarousel" data-slide-to="11"></li>
-                                        <li data-target="#myCarousel" data-slide-to="10"></li>
-                                        <li data-target="#myCarousel" data-slide-to="9"></li>
-                                        <li data-target="#myCarousel" data-slide-to="8"></li>
-                                        <li data-target="#myCarousel" data-slide-to="7"></li>
-                                        <li data-target="#myCarousel" data-slide-to="6"></li>
-                                        <li data-target="#myCarousel" data-slide-to="5"></li>
-                                        <li data-target="#myCarousel" data-slide-to="4"></li>
-                                        <li data-target="#myCarousel" data-slide-to="3"></li>
-                                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                                        <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-                                    </ol>
-                                    <!-- Wrapper for carousel items -->
-                                    <div class="carousel-inner">
-                                        <div class="item">
-                                            <img src="temp/gallery/12.jpg" alt="" />
-                                        </div>
-                                        <div class="item">
-                                            <img src="temp/gallery/11.jpg" alt="" />
-                                        </div>
-                                        <div class="item">
-                                            <img src="temp/gallery/10.jpg" alt="" />
-                                        </div>
-                                        <div class="item">
-                                            <img src="temp/gallery/9.jpg" alt="" />
-                                        </div>
-                                        <div class="item">
-                                            <img src="temp/gallery/8.jpg" alt="" />
-                                        </div>
-                                        <div class="item">
-                                            <img src="temp/gallery/7.jpg" alt="" />
-                                        </div>
-                                        <div class="item">
-                                            <img src="temp/gallery/6.jpg" alt="" />
-                                        </div>
-                                        <div class="item">
-                                            <img src="temp/gallery/5.jpg" alt="" />
-                                        </div>
-                                        <div class="item">
-                                            <img src="temp/gallery/4.jpg" alt="" />
-                                        </div>
-                                        <div class="item">
-                                            <img src="temp/gallery/3.jpg" alt="" />
-                                        </div>
-                                        <div class="item">
-                                            <img src="temp/gallery/2.jpg" alt="" />
-                                        </div>
-                                        <div class="item active">
-                                            <img src="temp/gallery/1.jpg" alt="" />
-                                        </div>
-                                    </div>
-                                    <!-- Carousel controls -->
-                                    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>
+        </nav>
+        <form class="global-search">
+            <div class="main-content">
+                <input type="search" class="fld" name="ابحث" autocomplete="off" placeholder="ابحث في العربية!" />
+                <button type="submit" class="submit-btn"></button>
+            </div>
+        </form>
+    </header>
+    <!-- Gobal Wrapper -->
+    <div class="global-wrapper">
+        <div class="full-wrapper">
+            <div class="main-content">
+                <!-- Page Section -->
+                <section>
+                    <!-- Area 75 -->
+                    <div class="area-75">
+                        <!-- Main News Slider 100/75/50 -->
+                        <div class="box news">
+                            <ul>
+                                <!-- Main Article -->
+                                <li>
+                                    <!-- Aspect Ration Change on mobile -->
+                                    <picture>
+                                        <source media="(max-width: 480px)" srcset="temp/temp18_4x3.jpg">
+                                            <img src="temp/temp17_4x3.jpg" alt="">
+                                    </picture>
+                                    <a class="cover" href="#" title="">
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                        <span class="caption">مند 13 ساعة</span>
                                     </a>
-                                    <a class="carousel-control right" href="#myCarousel" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                    <!-- Section Title -->
+                                    <a href="#" class="section-ttl">إقتصاد</a>
+                                </li>
+                                <li>
+                                    <img src="temp/temp02.jpg" alt="" />
+                                    <a class="cover" href="#" title="">
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                        <span class="video-icon"></span>
+                                    </a>
+                                    <!-- Section Title -->
+                                    <a href="#" class="section-ttl">رياضة</a>
+                                </li>
+                                <li>
+                                    <img src="temp/temp03.jpg" alt="" />
+                                    <a class="cover" href="#" title="">
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                    </a>
+                                    <!-- Section Title -->
+                                    <a href="#" class="section-ttl">العالم العربي</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Area 25 -->
+                    <div class="area-25">
+                        <!-- Latest News Only for 25 -->
+                        <div class="box latest-news">
+                            <h2>
+                            <a href="#" title="">آخر الأخبار</a>
+                        </h2>
+                            <ul>
+                                <li>
+                                    <a href="#" title="">
+                                        <!-- Time -->
+                                        <span class="time">
+                                    <span>20:20</span>
+                                        <span class="region">GMT</span>
+                                        </span>
+                                        <!-- Title -->
+                                        <span class="ttl">
+                                           معتقلو حماة المركزي : هكذا أسرنا خادم
+الحرمين يعزي رئيس فرنس
+                                </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <!-- Time -->
+                                        <span class="time">
+                                    <span>20:20</span>
+                                        <span class="region">GMT</span>
+                                        </span>
+                                        <!-- Title -->
+                                        <span class="ttl">
+                                           معتقلو حماة المركزي : هكذا أسرنا خادم
+الحرمين يعزي رئيس فرنس
+                                </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <!-- Time -->
+                                        <span class="time">
+                                    <span>20:20</span>
+                                        <span class="region">GMT</span>
+                                        </span>
+                                        <!-- Title -->
+                                        <span class="ttl">
+                                           معتقلو حماة المركزي : هكذا أسرنا خادم
+الحرمين يعزي رئيس فرنس
+                                </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <!-- Time -->
+                                        <span class="time">
+                                    <span>20:20</span>
+                                        <span class="region">GMT</span>
+                                        </span>
+                                        <!-- Title -->
+                                        <span class="ttl">
+                                           معتقلو حماة المركزي : هكذا أسرنا خادم
+الحرمين يعزي رئيس فرنس
+                                </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <!-- Time -->
+                                        <span class="time">
+                                    <span>20:20</span>
+                                        <span class="region">GMT</span>
+                                        </span>
+                                        <!-- Title -->
+                                        <span class="ttl">
+                                           معتقلو حماة المركزي : هكذا أسرنا خادم
+الحرمين يعزي رئيس فرنس
+                                </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <!-- Time -->
+                                        <span class="time">
+                                    <span>20:20</span>
+                                        <span class="region">GMT</span>
+                                        </span>
+                                        <!-- Title -->
+                                        <span class="ttl">
+                                           معتقلو حماة المركزي : هكذا أسرنا خادم
+الحرمين يعزي رئيس فرنس
+                                </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- Page Section -->
+                <section>
+                    <!-- Area 50 -->
+                    <div class="area-50">
+                        <!-- News Articles 100/75/50/25 -->
+                        <div class="box news-articles">
+                            <h2><a href="#">الأخبار</a></h2>
+                            <ul>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                    <img src="temp/temp04.jpg" alt="" />
+                                    </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                    </a>
+                                    <!-- Section Title -->
+                                    <a href="#" class="section-ttl">رياضة</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                    <img src="temp/temp05.jpg" alt="" />
+                                    </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                    </a>
+                                    <!-- Section Title -->
+                                    <a href="#" class="section-ttl">إقتصاد</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                    <img src="temp/temp06.jpg" alt="" />
+                                    </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                    </a>
+                                    <!-- Section Title -->
+                                    <a href="#" class="section-ttl">العالم العربي</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                    <img src="temp/temp07.jpg" alt="" />
+                                    <span class="video-icon"></span>
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                    </a>
+                                    <!-- Section Title -->
+                                    <a href="#" class="section-ttl">السعودية</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                    <img src="temp/temp11.jpg" alt="" />
+                                    <span class="video-icon"></span>
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                    </a>
+                                    <!-- Section Title -->
+                                    <a href="#" class="section-ttl">أسواق</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                    <img src="temp/temp12.jpg" alt="" />
+                                    </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                    </a>
+                                    <!-- Section Title -->
+                                    <a href="#" class="section-ttl">ستايل</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Area 25 -->
+                    <div class="area-25">
+                        <!-- Photo Gallery 100/75/50/25 -->
+                        <div class="box gallery">
+                            <h2><a href="#">بالصور</a></h2>
+                            <ul>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                    <img src="temp/temp08.jpg" alt="" />
+                                    <span class="photo-icon"></span>
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                    <img src="temp/temp09.jpg" alt="" />
+                                    <span class="photo-icon"></span>
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                    <img src="temp/temp10.jpg" alt="" />
+                                    <span class="photo-icon"></span>
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Area 25 -->
+                    <div class="area-25">
+                        <!-- killer only for 25 -->
+                        <div class="box ad25">
+                            <h2>إعلانات</h2>
+                            <!-- Always Keep this 'wrapper' on ads25 -->
+                            <div class="wrapper">
+                                <img src="temp/killer.jpg" alt="">
+                            </div>
+                        </div>
+                        <!-- Top Content only for 25 -->
+                        <div class="box top-content">
+                            <h2><a href="#" title="">الأكثر قراءة</a></h2>
+                            <ul>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                        <img src="temp/temp13.jpg" alt="" />
+                                        <span class="video-icon"></span>
+                                        </span>
+                                        <span class="ttl">
+                                           معتقلو حماة المركزي : هكذا أسرنا خادم
+الحرمين</span>
+                                        <span class="caption">1,885,311  مشاهدة</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                        <img src="temp/temp14.jpg" alt="" />
+                                        </span>
+                                        <span class="ttl">
+                                           معتقلو حماة المركزي : هكذا أسرنا خادم
+الحرمين يعزي رئي</span>
+                                        <span class="caption">1,885,311  مشاهدة</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                        <img src="temp/temp15.jpg" alt="" />
+                                        <span class="video-icon"></span>
+                                        </span>
+                                        <span class="ttl">
+                                           معتقلو حماة المركزي : هكذا أسرنا خادم
+الحرمين</span>
+                                        <span class="caption">1,885,311  مشاهدة</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                        <img src="temp/temp16.jpg" alt="" />
+                                        <span class="video-icon"></span>
+                                        </span>
+                                        <span class="ttl">
+                                           معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد</span>
+                                        <span class="caption">1,885,311  مشاهدة</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                        <img src="temp/temp06.jpg" alt="" />
+                                        </span>
+                                        <span class="ttl">
+                                           معتقلو حماة المركزي : هكذا أسرنا خادم
+</span>
+                                        <span class="caption">1,885,311  مشاهدة</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- Dark Area Full -->
+        <div class="full-wrapper dark">
+            <div class="main-content">
+                <section>
+                    <!-- Area 100 -->
+                    <div class="area-100">
+                        <!-- News Articles 100/75/50/25 -->
+                        <div class="box news-articles">
+                            <h2><a href="#">فيديو العربية</a></h2>
+                            <ul>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                        <!-- Aspect Ration Change on mobile -->
+                                    <picture>
+                                        <source media="(max-width: 480px)" srcset="temp/temp20_4x3.jpg">
+                                            <img src="temp/temp11.jpg" alt="">
+                                    </picture>
+                                    <span class="video-icon"></span>
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                        <!-- Aspect Ration Change on mobile -->
+                                    <picture>
+                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
+                                    <img src="temp/temp12.jpg" alt="" />
+                                            </picture>
+                                    <span class="video-icon"></span>
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                        <!-- Aspect Ration Change on mobile -->
+                                    <picture>
+                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
+                                    <img src="temp/temp13.jpg" alt="" />
+                                            </picture>
+                                    <span class="video-icon"></span>
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                        <!-- Aspect Ration Change on mobile -->
+                                    <picture>
+                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
+                                    <img src="temp/temp14.jpg" alt="" />
+                                            </picture>
+                                    <span class="video-icon"></span>
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                        <!-- Aspect Ration Change on mobile -->
+                                    <picture>
+                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
+                                    <img src="temp/temp15.jpg" alt="" />
+                                            </picture>
+                                    <span class="video-icon"></span>
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                        <!-- Aspect Ration Change on mobile -->
+                                    <picture>
+                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
+                                    <img src="temp/temp16.jpg" alt="" />
+                                            </picture>
+                                    <span class="video-icon"></span>
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                        <!-- Aspect Ration Change on mobile -->
+                                    <picture>
+                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
+                                    <img src="temp/temp04.jpg" alt="" />
+                                            </picture>
+                                    <span class="video-icon"></span>
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                        <!-- Aspect Ration Change on mobile -->
+                                    <picture>
+                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
+                                    <img src="temp/temp05.jpg" alt="" />
+                                            </picture>
+                                    <span class="video-icon"></span>
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="full-wrapper">
+            <div class="main-content">
+                <!-- Page Section -->
+                <section>
+                    <!-- Area 50 -->
+                    <div class="area-50">
+                        <!-- News Articles 100/75/50/25 -->
+                        <div class="box news-articles">
+                            <h2><a href="#">العرب و العالم</a></h2>
+                            <ul>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                    <img src="temp/temp06.jpg" alt="" />
+                                    </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                    </a>
+                                    <!-- Section Title -->
+                                    <a href="#" class="section-ttl">العالم العربي</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                    <img src="temp/temp07.jpg" alt="" />
+                                    <span class="video-icon"></span>
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                    </a>
+                                    <!-- Section Title -->
+                                    <a href="#" class="section-ttl">العالم العربي</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                    <img src="temp/temp13.jpg" alt="" />
+                                    <span class="video-icon"></span>
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                    </a>
+                                    <!-- Section Title -->
+                                    <a href="#" class="section-ttl">العالم العربي</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                    <img src="temp/temp14.jpg" alt="" />
+                                    </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                    </a>
+                                    <!-- Section Title -->
+                                    <a href="#" class="section-ttl">العالم العربي</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Area 25 -->
+                    <div class="area-25">
+                        <!-- Photo Gallery 100/75/50/25 -->
+                        <div class="box gallery">
+                            <h2><a href="#">بالصور</a></h2>
+                            <ul>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                    <img src="temp/temp09.jpg" alt="" />
+                                    <span class="photo-icon"></span>
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                    <img src="temp/temp10.jpg" alt="" />
+                                    <span class="photo-icon"></span>
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Area 25 -->
+                    <div class="area-25">
+                        <!-- Skyscraper only for 25 -->
+                        <div class="box ad25">
+                            <h2>إعلانات</h2>
+                            <!-- Always Keep this 'wrapper' on ads25 -->
+                            <div class="wrapper">
+                                <img src="temp/skyscraper.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Page Section -->
+                <section>
+                    <!-- Area 50 -->
+                    <div class="area-50">
+                        <!-- News Mode 02 Only 50 / For Other Variations, Use the 'news-articles' Component for 25/50/75/100 -->
+                        <div class="box news-mod02">
+                            <h2><a href="#" title="">الأسواق العربية</a></h2>
+                            <ul>
+                                <!-- Main Article -->
+                                <li>
+                                    <!-- Aspect Ration Change on mobile -->
+                                    <picture>
+                                        <source media="(max-width: 480px)" srcset="temp/temp18_4x3.jpg">
+                                            <img src="temp/temp00.jpg" alt="" />
+                                    </picture>
+                                    <a class="cover" href="#" title="">
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
+                                        <span class="video-icon"></span>
+                                    </a>
+                                    <!-- Section Title -->
+                                    <a href="#" class="section-ttl">إقتصاد</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                    <img src="temp/temp15.jpg" alt="" />
+                                      <span class="video-icon"></span>
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                    <img src="temp/temp16.jpg" alt="" />
+                                    </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Area 25 -->
+                    <div class="area-25">
+                        <!-- Whatever External Content -->
+                        <div class="box external">
+                            <!-- Dummy iFrame Component -->
+                            <script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
+                            <script type="text/javascript">
+                                new TradingView.widget({
+                                    "width": 340,
+                                    "height": 450,
+                                    "symbol": "NASDAQ:AAPL",
+                                    "interval": "D",
+                                    "timezone": "Etc/UTC",
+                                    "theme": "White",
+                                    "style": "1",
+                                    "locale": "en",
+                                    "toolbar_bg": "#f1f3f6",
+                                    "enable_publishing": false,
+                                    "allow_symbol_change": true,
+                                    "hideideas": true
+                                });
+                            </script>
+                        </div>
+
+                    </div>
+                    <!-- Area 25 -->
+                    <div class="area-25">
+                        <!-- Video Gallery 100/75/50/25 / The Second Class Name is Only for Visual Bottom Alignement -->
+                        <div class="box gallery custome-video-home">
+                            <h2><a href="#">الأسواق فيديو</a></h2>
+                            <ul>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                        <!-- Aspect Ration Change on mobile -->
+                                    <picture>
+                                        <source media="(max-width: 480px)" srcset="temp/temp20_4x3.jpg">
+                                            <img src="temp/temp11.jpg" alt="">
+                                    </picture>
+                                    <span class="video-icon"></span>
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                        <!-- Aspect Ration Change on mobile -->
+                                    <picture>
+                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
+                                    <img src="temp/temp12.jpg" alt="" />
+                                            </picture>
+                                    <span class="video-icon"></span>
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- Page Section -->
+                <section>
+                    <!-- Area 75 -->
+                    <div class="area-75">
+                        <!-- Main News Slider 100/75/50 -->
+                        <div class="box news">
+                            <h2><a href="#" title="">أخبار الرياضة</a></h2>
+                            <ul>
+                                <!-- Main Article -->
+                                <li>
+                                    <img src="temp/temp20_4x3.jpg" alt="" />
+                                    <a class="cover" href="#" title="">
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                        <span class="video-icon"></span>
+                                    </a>
+                                    <!-- Section Title -->
+                                    <a href="#" class="section-ttl">إقتصاد</a>
+                                </li>
+                                <li>
+                                    <img src="temp/temp21_4x3.jpg" alt="" />
+                                    <a class="cover" href="#" title="">
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                    </a>
+                                    <!-- Section Title -->
+                                    <a href="#" class="section-ttl">رياضة</a>
+                                </li>
+                                <li>
+                                    <img src="temp/temp22_4x3.jpg" alt="" />
+                                    <a class="cover" href="#" title="">
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                    </a>
+                                    <!-- Section Title -->
+                                    <a href="#" class="section-ttl">العالم العربي</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Area 25 -->
+                    <div class="area-25">
+                        <!-- Video Gallery 100/75/50/25 / The Second Class Name is Only for Visual Bottom Alignement -->
+                        <div class="box gallery custome-video-home">
+                            <h2><a href="#">الرياضة فيديو</a></h2>
+                            <ul>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                        <!-- Aspect Ration Change on mobile -->
+                                    <picture>
+                                        <source media="(max-width: 480px)" srcset="temp/temp20_4x3.jpg">
+                                            <img src="temp/temp11.jpg" alt="">
+                                    </picture>
+                                    <span class="video-icon"></span>
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                        <!-- Aspect Ration Change on mobile -->
+                                    <picture>
+                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
+                                    <img src="temp/temp12.jpg" alt="" />
+                                            </picture>
+                                    <span class="video-icon"></span>
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- Page Section -->
+                <section>
+                    <!-- Area 75 -->
+                    <div class="area-75">
+                        <!-- Main News Slider 100/75/50 -->
+                        <div class="box news">
+                            <h2><a href="#" title="">أخبار السعودية</a></h2>
+                            <ul>
+                                <!-- Main Article -->
+                                <li>
+                                    <img src="temp/temp01.jpg" alt="" />
+                                    <a class="cover" href="#" title="">
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                        <span class="caption">مند 13 ساعة</span>
+                                    </a>
+                                    <!-- Section Title -->
+                                    <a href="#" class="section-ttl">إقتصاد</a>
+                                </li>
+                                <li>
+                                    <img src="temp/temp18_4x3.jpg" alt="" />
+                                    <a class="cover" href="#" title="">
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                        <span class="video-icon"></span>
+                                    </a>
+                                    <!-- Section Title -->
+                                    <a href="#" class="section-ttl">رياضة</a>
+                                </li>
+                                <li>
+                                    <img src="temp/temp19_4x3.jpg" alt="" />
+                                    <a class="cover" href="#" title="">
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                    </a>
+                                    <!-- Section Title -->
+                                    <a href="#" class="section-ttl">العالم العربي</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Area 25 -->
+                    <div class="area-25">
+                        <!-- Video Gallery 100/75/50/25, The Second Class Name is Only for Visual Bottom Alignement -->
+                        <div class="box gallery custome-video-home">
+                            <h2><a href="#">السعودية فيديو</a></h2>
+                            <ul>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                        <!-- Aspect Ration Change on mobile -->
+                                    <picture>
+                                        <source media="(max-width: 480px)" srcset="temp/temp20_4x3.jpg">
+                                            <img src="temp/temp11.jpg" alt="">
+                                    </picture>
+                                    <span class="video-icon"></span>
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                        <!-- Aspect Ration Change on mobile -->
+                                    <picture>
+                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
+                                    <img src="temp/temp12.jpg" alt="" />
+                                            </picture>
+                                    <span class="video-icon"></span>
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- Page Section -->
+                <section>
+                    <!-- Programs Slider -->
+                    <div class="box programs-times">
+                        <h2>
+                        <a href="#">جدول البرامج</a>
+                    </h2>
+                        <!-- Slider -->
+                        <div class="Nwoslider" id="slider">
+
+                            <div class="slider">
+                                <!-- Item -->
+                                <div class="item">
+                                    <a href="#">
+                                        <span class="time">
+                                             <time class="start">10<em>:00</em></time>
+                                            <time class="end">11<em>:00</em></time>
+                                        </span>
+                                        <span class="label">
+                                        <span class="ttl">صناعة الموت</span>
+                                        <span class="caption">الإرهابية في وسائل</span>
+                                        </span>
+                                        <img src="temp/auth01.jpg">
+                                    </a>
+                                </div>
+                                <!-- Item -->
+                                <div class="item">
+                                    <a href="">
+                                        <span class="time">
+                                            <time class="start">10<em>:00</em></time>
+                                            <time class="end">11<em>:00</em></time>
+                                        </span>
+                                        <span class="label">
+                                        <span class="ttl">صناعة الموت</span>
+                                        <span class="caption">شاهد الآن</span>
+                                        </span>
+                                        <img src="temp/program01.jpg">
+                                    </a>
+                                </div>
+                                <!-- Item -->
+                                <div class="item">
+                                    <a href="#">
+                                        <span class="time">
+                                            <time class="start">10<em>:00</em></time>
+                                            <time class="end">11<em>:00</em></time>
+                                        </span>
+                                        <span class="label">
+                                        <span class="ttl">صناعة الموت</span>
+                                        <span class="caption">متوفر على ONAA</span>
+                                        </span>
+                                        <img src="temp/temp17_4x3.jpg">
+                                    </a>
+                                </div>
+                                <!-- Item -->
+                                <div class="item">
+                                    <a href="#" title="">
+                                        <span class="time">
+                                            <time class="start">10<em>:00</em></time>
+                                            <time class="end">11<em>:00</em></time>
+                                        </span>
+                                        <span class="label">
+                                        <span class="ttl">صناعة الموت</span>
+                                        <span class="caption">شاهد الآن</span>
+                                        </span>
+                                        <img src="temp/program04.jpg">
+                                    </a>
+                                </div>
+                                <!-- Item -->
+                                <div class="item">
+                                    <a href="#" title="">
+                                        <span class="time">
+                                            <time class="start">10<em>:00</em></time>
+                                            <time class="end">11<em>:00</em></time>
+                                        </span>
+                                        <span class="label">
+                                        <span class="ttl">صناعة الموت</span>
+                                        <span class="caption">الإرهابية في وسائل</span>
+                                        </span>
+                                        <img src="temp/killer.jpg">
+                                    </a>
+                                </div>
+                                <!-- Item -->
+                                <div class="item active">
+                                    <a href="#">
+                                        <span class="time">
+                                            <time class="start">10<em>:00</em></time>
+                                            <time class="end">11<em>:00</em></time>
+                                        </span>
+                                        <span class="label">
+                                        <span class="ttl">صناعة الموت</span>
+                                        <span class="caption">شاهد الآن</span>
+                                        </span>
+                                        <img src="temp/program02.jpg">
+                                    </a>
+                                </div>
+                                <!-- Item -->
+                                <div class="item">
+                                    <a href="#" title="">
+                                        <span class="time">
+                                            <time class="start">10<em>:00</em></time>
+                                            <time class="end">11<em>:00</em></time>
+                                        </span>
+                                        <span class="label">
+                                        <span class="ttl">صناعة الموت</span>
+                                        <span class="caption">متوفر على ONAA</span>
+                                        </span>
+                                        <img src="temp/temp00.jpg">
+                                    </a>
+                                </div>
+                                <!-- Item -->
+                                <div class="item">
+                                    <a href="#" title="">
+                                        <span class="time">
+                                             <time class="start">10<em>:00</em></time>
+                                            <time class="end">11<em>:00</em></time>
+                                        </span>
+                                        <span class="label">
+                                            <span class="ttl">صناعة الموت</span>
+                                        <span class="caption">الإرهابية في وسائل</span>
+                                        </span>
+                                        <img src="temp/program05.jpg">
+                                    </a>
+                                </div>
+                                <!-- Item -->
+                                <div class="item">
+                                    <a href="#" title="">
+                                        <span class="time">
+                                            <time class="start">10<em>:00</em></time>
+                                            <time class="end">11<em>:00</em></time>
+                                        </span>
+                                        <span class="label">
+                                        <span class="ttl">صناعة الموت</span>
+                                        <span class="caption">شاهد الآن</span>
+                                        </span>
+                                        <img src="temp/temp01.jpg">
+                                    </a>
+                                </div>
+                                <!-- Item -->
+                                <div class="item">
+                                    <a href="#" title="">
+                                        <span class="time">
+                                              <time class="start">10<em>:00</em></time>
+                                            <time class="end">11<em>:00</em></time>
+                                        </span>
+                                        <span class="label">
+                                        <span class="ttl">صناعة الموت</span>
+                                        <span class="caption">الإرهابية في وسائل</span>
+                                        </span>
+                                        <img src="temp/temp02.jpg">
+                                    </a>
+                                </div>
+                                <!-- Item -->
+                                <div class="item">
+                                    <a href="#" title="">
+                                        <span class="time">
+                                            <time class="start">10<em>:00</em></time>
+                                            <time class="end">11<em>:00</em></time>
+                                        </span>
+                                        <span class="label">
+                                        <span class="ttl">صناعة الموت</span>
+                                        <span class="caption">متوفر على ONAA</span>
+                                        </span>
+                                        <img src="temp/temp03.jpg">
+                                    </a>
+                                </div>
+                                <!-- Item -->
+                                <div class="item">
+                                    <a href="#" title="">
+                                        <span class="time">
+                                           <time class="start">10<em>:00</em></time>
+                                            <time class="end">11<em>:00</em></time>
+                                        </span>
+                                        <span class="label">
+                                        <span class="ttl">صناعة الموت</span>
+                                        <span class="caption">شاهد الآن</span>
+                                        </span>
+                                        <img src="temp/auth03.jpg">
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#" title="">
+                                        <span class="time">
+                                            <time class="start">10<em>:00</em></time>
+                                            <time class="end">11<em>:00</em></time>
+                                        </span>
+                                        <span class="label">
+                                        <span class="ttl">صناعة الموت</span>
+                                        <span class="caption">الإرهابية في وسائل</span>
+                                        </span>
+                                        <img src="temp/temp05.jpg">
+                                    </a>
+                                </div>
+                                <!-- Item -->
+                                <div class="item">
+                                    <a href="#" title="">
+                                        <span class="time">
+                                              <time class="start">10<em>:00</em></time>
+                                            <time class="end">11<em>:00</em></time>
+                                        </span>
+                                        <span class="label">
+                                        <span class="ttl">صناعة الموت</span>
+                                        <span class="caption">شاهد الآن</span>
+                                        </span>
+                                        <img src="temp/program02.jpg">
+                                    </a>
+                                </div>
+                                <!-- Item -->
+                                <div class="item">
+                                    <a href="#" title="">
+                                        <span class="time">
+                                           <time class="start">10<em>:00</em></time>
+                                            <time class="end">11<em>:00</em></time>
+                                        </span>
+                                        <span class="label">
+                                        <span class="ttl">صناعة الموت</span>
+                                        <span class="caption">شاهد الآن</span>
+                                        </span>
+                                        <img src="temp/program04.jpg">
+                                    </a>
+                                </div>
+                                <!-- Item -->
+                                <div class="item">
+                                    <a href="#" title="">
+                                        <span class="time">
+                                         <time class="start">10<em>:00</em></time>
+                                            <time class="end">11<em>:00</em></time>
+                                        </span>
+                                        <span class="label">
+                                        <span class="ttl">صناعة الموت</span>
+                                        <span class="caption">الإرهابية في وسائل</span>
+                                        </span>
+                                        <img src="temp/auth05.jpg">
+                                    </a>
+                                </div>
+                                <!-- Item -->
+                                <div class="item">
+                                    <a href="#" title="">
+                                        <span class="time">
+                                              <time class="start">10<em>:00</em></time>
+                                            <time class="end">11<em>:00</em></time>
+                                        </span>
+                                        <span class="label">
+                                        <span class="ttl">صناعة الموت</span>
+                                        <span class="caption">شاهد الآن</span>
+                                        </span>
+                                        <img src="temp/temp17_4x3.jpg">
+                                    </a>
+                                </div>
+                                <!-- Item -->
+                                <div class="item">
+                                    <a href="#" title="">
+                                        <span class="time">
+                                         <time class="start">10<em>:00</em></time>
+                                            <time class="end">11<em>:00</em></time>
+                                        </span>
+                                        <span class="label">
+                                        <span class="ttl">صناعة الموت</span>
+                                        <span class="caption">شاهد الآن</span>
+                                        </span>
+                                        <img src="temp/program04.jpg">
+                                    </a>
+                                </div>
+                                <!-- Item -->
+                                <div class="item">
+                                    <a href="#" title="">
+                                        <span class="time">
+                                            <time class="start">10<em>:00</em></time>
+                                            <time class="end">11<em>:00</em></time>
+                                        </span>
+                                        <span class="label">
+                                        <span class="ttl">صناعة الموت</span>
+                                        <span class="caption">متوفر على ONAA</span>
+                                        </span>
+                                        <img src="temp/program03.jpg">
+                                    </a>
+                                </div>
+                                <!-- Item -->
+                                <div class="item">
+                                    <a href="#" title="">
+                                        <span class="time">
+                                             <time class="start">10<em>:00</em></time>
+                                            <time class="end">11<em>:00</em></time>
+                                        </span>
+                                        <span class="label">
+                                        <span class="ttl">صناعة الموت</span>
+                                        <span class="caption">شاهد الآن</span>
+                                        </span>
+                                        <img src="temp/program02.jpg">
+                                    </a>
+                                </div>
+                                <!-- Item -->
+                                <div class="item">
+                                    <a href="#" title="">
+                                        <span class="time">
+                                              <time class="start">10<em>:00</em></time>
+                                            <time class="end">11<em>:00</em></time>
+                                        </span>
+                                        <span class="label">
+                                        <span class="ttl">صناعة الموت</span>
+                                        <span class="caption">متوفر على ONAA</span>
+                                        </span>
+                                        <img src="temp/program03.jpg">
+                                    </a>
+                                </div>
+                                <!-- Item -->
+                                <div class="item">
+                                    <a href="#" title="">
+                                        <span class="time">
+                                              <time class="start">10<em>:00</em></time>
+                                            <time class="end">11<em>:00</em></time>
+                                        </span>
+                                        <span class="label">
+                                        <span class="ttl">صناعة الموت</span>
+                                        <span class="caption">شاهد الآن</span>
+                                        </span>
+                                        <img src="temp/program02.jpg">
+                                    </a>
+                                </div>
+                                <!-- Item -->
+                                <div class="item">
+                                    <a href="#" title="">
+                                        <span class="time">
+                                          <time class="start">10<em>:00</em></time>
+                                            <time class="end">11<em>:00</em></time>
+                                        </span>
+                                        <span class="label">
+                                        <span class="ttl">صناعة الموت</span>
+                                        <span class="caption">شاهد الآن</span>
+                                        </span>
+                                        <img src="temp/program01.jpg">
+                                    </a>
+                                </div>
+                                <!-- Item -->
+                                <div class="item" id="last">
+                                    <a href="">
+                                        <span class="time">
+                                              <time class="start">10<em>:00</em></time>
+                                            <time class="end">11<em>:00</em></time>
+                                        </span>
+                                        <span class="label">
+                                        <span class="ttl">صناعة الموت</span>
+                                        <span class="caption">الإرهابية في وسائل</span>
+                                        </span>
+                                        <img src="temp/program04.jpg">
                                     </a>
                                 </div>
                             </div>
-                        </div>
-                        <p>أعلن خادم الحرمين الشريفين <a href="">الملك سلمان بن عبدالعزيز</a> انتهاء القمة الرابعة بين الدول العربية ودول أميركا اللاتينية الأربعاء، بعد أن انطلقت أمس الثلاثاء بحضور مجموعة من الرؤساء العرب ودول أميركا اللاتينية.</p>
-                    </div>
-                </div>
-            </article>
-            <div>
-                <style>
-                    .celtra-advertisement-message {
-                        color: #7d7b7b !important;
-                        background: #f5f5f5 !important;
-                    }
-                </style>
-                <img src="" onerror="
-        (function(img) {
-            var params = {'clickUrl':'','offsetTop':'36','expandDirection':'undefined','useFullWidth':'1','clickEvent':'advertiser','externalAdServer':'DCM','tagVersion':'4'};
-            [].slice.apply(img.parentNode.childNodes).forEach(function(n) { var decfs = { urldecode: decodeURIComponent, htmldecode: function(v) { var d = document.createElement('div'); d.innerHTML = v; return d.textContent; }, eval: function(v) { return eval(v); }, raw: function(v) { return v; } }; var m; if (n.nodeType == 8 &amp;&amp; (m = n.textContent.match(/^\s+([\w.]+)(\[.+\])?\s+=\s+(\w+)\s+(.*)$/i))) { try { params[m[1]+(m[2] || '')] = decfs[m[3]](m[4].replace(/^\s+|\s+$/g, '')); } catch (e) {} } });
-            var req = document.createElement('script');
-            req.id = params.scriptId = 'celtra-script-' + (window.celtraScriptIndex = (window.celtraScriptIndex||0)+1);
-            params.clientTimestamp = new Date/1000;
-            params.clientTimeZoneOffsetInMinutes = new Date().getTimezoneOffset();
-            params.hostPageLoadId = window.celtraHostPageLoadId = (window.celtraHostPageLoadId || (Math.random()+'').slice(2));
-            var src = (window.location.protocol == 'https:' ? 'https' : 'http') + '://ads.celtra.com/43bd8ddd/web.js?';
-            for (var k in params) {
-                src += '&amp;' + encodeURIComponent(k) + '=' + encodeURIComponent(params[k]);
-            }
-            req.src = src;
-            img.parentNode.insertBefore(req, img.nextSibling);
-        })(this);
-    ">
-
-            </div>
-            <article class="box">
-                <div class="col-md-12">
-                    <!-- Article Content -->
-                    <div class="article-content">
-                        <h5>أميركا اللاتينية</h5>
-                        <p>وفي الشأن اليمني طالب اليمنيين باحترام مخرجات الحوار، وفق المبادرة الخليجية والتأكيد على ضرورة تنفيذ القرار 2216 الصادر عن مجلس الأمن.</p>
-                        <p>فيما رحب إعلان الرياض بإنشاء مركز دولي لمكافحة الإرهاب ودعم السعودية له.</p>
-
-                        <img class="img-responsive" src="temp/twitter.jpg" alt="" />
-                        <p>ودعا إلى تشجيع التجارة والاستثمار بين الدول العريبة ودول أميركا الجنوبية.</p>
-                        <p>وحمل بيان القمة الرابعة في طياته قضايا عدة ساخنة على الساحة السياسية والاقتصادية، حيث أدان التدخل الإيراني في الشؤون الداخلية للدول العربية ويطالبها بالكف عن الأعمال الاستفزازية التي تقوض الثقة وتهدد الأمن والاستقرار في المنطقة.</p>
-                        <blockquote>فيما رحب إعلان الرياض بإنشاء مركز دولي لمكافحة الإرهاب ودعم السعودية له.
-                            <p><small>أميركا اللاتينية</small>
-                            </p>
-                        </blockquote>
-                        <p>وشدد البيان على ضرورة التوصل إلى حل سياسي يضع حدا لمعاناة الشعب السوري. كما يؤكد على حتمية التنفيذ الكامل لقرار مجلس الأمن المتعلق بالأزمة اليمنية، وعبر عن القلق الكبير بشأن تمدد الأعمال الإرهابية في ليبيا، بالإضافة إلى تشجيع المفاوضات الثنائية والاتفاقيات من أجل تشجيع التجارة وتدفق الاستثمارات في المنطقة.</p>
-                        <!-- Table -->
-                        <div class="table_wrapper">
-                            <h4>جدول مباريات المجموعة الثالثة</h4>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <td>&nbsp;</td>
-                                        <th scope="col">العربية</th>
-                                        <th scope="col">العربية</th>
-                                        <th scope="col">العربية</th>
-                                        <th scope="col">العربية</th>
-                                        <th scope="col">العربية</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">العربية</th>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">العربية</th>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">العربية</th>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">العربية</th>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">العربية</th>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <p class="notice">* تم الحصول على هذه الأرقام عن طريق مركز الأبحاث</p>
-                        </div>
-                        <!-- Table -->
-                        <div class="table_wrapper">
-                            <h4>جدول مباريات المجموعة الثالثة</h4>
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">العربية</th>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">العربية</th>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">العربية</th>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">العربية</th>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">العربية</th>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <p class="notice">* تم الحصول على هذه الأرقام عن طريق مركز الأبحاث</p>
-                        </div>
-                        <!-- Table -->
-                        <div class="table_wrapper">
-                            <h4>جدول مباريات المجموعة الثالثة</h4>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th scope="col">العربية</th>
-                                        <th scope="col">العربية</th>
-                                        <th scope="col">العربية</th>
-                                        <th scope="col">العربية</th>
-                                        <th scope="col">العربية</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                    </tr>
-                                    <tr>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                    </tr>
-                                    <tr>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                    </tr>
-                                    <tr>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                    </tr>
-                                    <tr>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                        <td>العربية</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <p class="notice">* تم الحصول على هذه الأرقام عن طريق مركز الأبحاث</p>
-                        </div>
-                        <!-- Article Tags -->
-                        <div class="txt_focus">
-                            <h4>كلمات دالّة</h4>
-                            <div class="tags">
-                                <a title="ليبيا" href="">#ليبيا</a>,
-                                <a title="فايز_السراج" href="">#فايز_السراج</a>,
-                                <a title="#وزارة_الدفاع" href="">#وزارة_الدفاع</a>,
-                                <a title="#حكومة_الوفاق_الليبية" href="">#حكومة_الوفاق_الليبية</a>,
-                                <a title="#الصخيرات" href="">#الصخيرات</a>,
-                                <a title="#الحوار_الليبي" href="">#الحوار_الليبي</a> 
+                            <div class="controls" id="controls">
+                                <button id="prev"></button>
+                                <button id="next"></button>
                             </div>
+
                         </div>
                     </div>
-                </div>
-            </article>
-
-        </div>
-        <!-- Related Articles -->
-        <div class="row">
-            <div class="box related-articles">
-                <div class="col-md-12">
-                    <h5><a href="#">روابط ذات صلة</a></h5>
-                    <a href="#" class="teaser-wrapper">
-                        <img class="img-responsive" src="temp/news07.jpg" alt="" />
-                    </a>
-                    <h3><a href="#">الطائرة الروسية.. تضارب دولي حول "عبوة" داعش</a></h3>
-                    <h4><a href="#">مصر وروسيا تعتبران التصريحات البريطانية والأميركية"مجرد استنتاجات"</a></h4>
-                    <p>وقد قال مصدر مقرب من التحقيقات في الصندوقين الأسودين بمصر إن تحطم الطائرة الروسية يرجع على الأرجح إلى انفجار لم يتضح إن كان سببه قنبلة أو وقود. وأضاف المصدر أن المحققين يفحصون التربة في موقع سقوط حطام الطائرة بحثا.</p>
-
-                    <ul class="news-headlines">
-                        <li><a href="#">لأول مرة.. وزيرة مسلمة في حكومة كندا</a>
-                        </li>
-                        <li><a href="#">جورج حبيقة ضيف شرف في معرض "سواروفسكي"</a>
-                        </li>
-                        <li><a href="#">صمّمي عطرك الخاص من "ديور"</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- Programs Box -->
-        <div class="row">
-            <div class="box programs">
-                <div class="col-md-12">
-                    <h5><a href="#">برامج العربية</a></h5>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="temp/prog01.jpg" class="img-responsive" alt="" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="temp/prog02.jpg" class="img-responsive" alt="" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="temp/prog03.jpg" class="img-responsive" alt="" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="temp/prog04.jpg" class="img-responsive" alt="" />
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- Comments Box -->
-        <div class="row">
-            <!-- Comments Box -->
-            <div class="box readers_comments">
-                <div class="head">
-                    <h2>تعليقات حول الموضوع</h2>
-                    <span class="cmnt_counter">1240</span>  <span>تعليق</span>
-                </div>
-                <div class="content">
-                    <div class="arena">
-                        <div class="tabslbl">رتب حسب</div>
-                        <div class="cmnt_counter">4 تعليقات</div>
-                        <ul class="tabs">
-                            <li class="active"> <a class="newest" href="#" title="">الأحدث</a> 
-                            </li>
-                            <li> <a class="oldest" href="#" title="">الأقدم</a> 
-                            </li>
-                            <li> <a class="most_cmntd" href="#" title="">الأكثر مناقشة</a> 
-                            </li>
-                            <li> <a class="most_like" href="#" title="">الاكثر موافقة</a> 
-                            </li>
-                            <li> <a class="most_dislike" href="#" title="">الاكثر اعتراض</a> 
-                            </li>
-                        </ul>
-                        <!-- Newest Comments -->
-                        <div class="wrapper">
-                            <!-- User Comment -->
-                            <div class="comment">
-                                <div class="user_thumb">
-                                    <img src="temp/cmnt_thumb.jpg" width="48" height="51" alt="" />
-                                </div>
-                                <div class="cmnt_hdr"> <span class="cmnt_no">1-</span><span class="cmnt_ttl">خبر آخر عن سلسلة الخطف بلبنان</span> 
-                                </div>
-                                <div class="cmnt_sender"> <span class="sender_name">خليجية كويتية</span><span class="caption">(زائر)</span> 
-                                </div>
-                                <div class="date">25/08/2012 م، 01:39 مساءً (السعودية) 10:39 صباحاً (جرينتش)</div>
-                                <div class="cmnt_txt">تم وصول خبر الآن من الصحف الكويتية بخطف مواطن كويتي متزوج من لبنانية ببعلبك وعمره يناهز 52 أو 55عاما بمصدر آخر وهذا وقد تم اقتياده لجهة غير معلومة رغم تحذيرات الحكومة بالكويت ومناشدة السفارة الكويتية بضرورة عدم السفر للبنان أو الرجوع للبلد ولكن مازال هناك من يعاند والسبب طبعا الزوجة والأقارب وماذا استفادوا الآن؟؟غير تحميل الحكومة أمرا سياسيا شائكا وبقاء الأولاد دون والدهم</div>
-                                <ul class="cmnt_tools">
-                                    <li class="like"><a>1254</a>
-                                    </li>
-                                    <li class="dislike"><a>452K</a>
-                                    </li>
-                                    <li class="reply"><a>&nbsp;</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Reply Level 01 -->
-                            <div class="comment reply01">
-                                <div class="user_thumb">
-                                    <img src="temp/cmnt_thumb.jpg" width="48" height="51" alt="" />
-                                </div>
-                                <div class="cmnt_hdr"> <span class="cmnt_no">2-</span><span class="cmnt_ttl">خبر آخر عن سلسلة الخطف بلبنان</span> 
-                                </div>
-                                <div class="cmnt_sender"> <span class="sender_name">خليجية كويتية</span><span class="caption">(زائر)</span> 
-                                </div>
-                                <div class="date">25/08/2012 م، 01:39 مساءً (السعودية) 10:39 صباحاً (جرينتش)</div>
-                                <div class="cmnt_txt">تم وصول خبر الآن من الصحف الكويتية بخطف مواطن كويتي متزوج من لبنانية ببعلبك وعمره يناهز 52 أو 55عاما بمصدر آخر وهذا وقد تم اقتياده لجهة غير معلومة رغم تحذيرات الحكومة بالكويت ومناشدة السفارة الكويتية بضرورة عدم السفر للبنان أو الرجوع للبلد ولكن مازال هناك من يعاند والسبب طبعا الزوجة والأقارب وماذا استفادوا الآن؟؟غير تحميل الحكومة أمرا سياسيا شائكا وبقاء الأولاد دون والدهم</div>
-                                <ul class="cmnt_tools">
-                                    <li class="like"><a>1254</a>
-                                    </li>
-                                    <li class="dislike"><a>452K</a>
-                                    </li>
-                                    <li class="reply"><a>&nbsp;</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Reply Level 02 -->
-                            <div class="comment reply02">
-                                <div class="user_thumb">
-                                    <img src="temp/cmnt_thumb.jpg" width="48" height="51" alt="" />
-                                </div>
-                                <div class="cmnt_hdr"> <span class="cmnt_no">3-</span><span class="cmnt_ttl">خبر آخر عن سلسلة الخطف بلبنان</span> 
-                                </div>
-                                <div class="cmnt_sender"> <span class="sender_name">خليجية كويتية</span><span class="caption">(زائر)</span> 
-                                </div>
-                                <div class="date">25/08/2012 م، 01:39 مساءً (السعودية) 10:39 صباحاً (جرينتش)</div>
-                                <div class="cmnt_txt">تم وصول خبر الآن من الصحف الكويتية بخطف مواطن كويتي متزوج من لبنانية ببعلبك وعمره يناهز 52 أو 55عاما بمصدر آخر وهذا وقد تم اقتياده لجهة غير معلومة رغم تحذيرات الحكومة بالكويت ومناشدة السفارة الكويتية بضرورة عدم السفر للبنان أو الرجوع للبلد ولكن مازال هناك من يعاند والسبب طبعا الزوجة والأقارب وماذا استفادوا الآن؟؟غير تحميل الحكومة أمرا سياسيا شائكا وبقاء الأولاد دون والدهم</div>
-                                <ul class="cmnt_tools">
-                                    <li class="like"><a>1254</a>
-                                    </li>
-                                    <li class="dislike"><a>452K</a>
-                                    </li>
-                                    <li class="reply"><a>&nbsp;</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- User Comment -->
-                            <div class="comment">
-                                <div class="user_thumb">
-                                    <img src="temp/cmnt_thumb.jpg" width="48" height="51" alt="" />
-                                </div>
-                                <div class="cmnt_hdr"> <span class="cmnt_no">4-</span><span class="cmnt_ttl">خبر آخر عن سلسلة الخطف بلبنان</span> 
-                                </div>
-                                <div class="cmnt_sender"> <span class="sender_name">خليجية كويتية</span><span class="caption">(زائر)</span> 
-                                </div>
-                                <div class="date">25/08/2012 م، 01:39 مساءً (السعودية) 10:39 صباحاً (جرينتش)</div>
-                                <div class="cmnt_txt">تم وصول خبر الآن من الصحف الكويتية بخطف مواطن كويتي متزوج من لبنانية ببعلبك وعمره يناهز 52 أو 55عاما بمصدر آخر وهذا وقد تم اقتياده لجهة غير معلومة رغم تحذيرات الحكومة بالكويت ومناشدة السفارة الكويتية بضرورة عدم السفر للبنان أو الرجوع للبلد ولكن مازال هناك من يعاند والسبب طبعا الزوجة والأقارب وماذا استفادوا الآن؟؟غير تحميل الحكومة أمرا سياسيا شائكا وبقاء الأولاد دون والدهم</div>
-                                <ul class="cmnt_tools">
-                                    <li class="like"><a>1254</a>
-                                    </li>
-                                    <li class="dislike"><a>452K</a>
-                                    </li>
-                                    <li class="reply"><a>&nbsp;</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- User Comment -->
-                        </div>
-                        <!-- Oldest Comments -->
-                        <div class="wrapper" style="display:none;">
-                            <!-- User Comment -->
-                            <div class="comment">
-                                <div class="user_thumb">
-                                    <img src="temp/cmnt_thumb.jpg" width="48" height="51" alt="" />
-                                </div>
-                                <div class="cmnt_hdr"> <span class="cmnt_no">5-</span><span class="cmnt_ttl">خبر آخر عن سلسلة الخطف بلبنان</span> 
-                                </div>
-                                <div class="cmnt_sender"> <span class="sender_name">خليجية كويتية</span><span class="caption">(زائر)</span> 
-                                </div>
-                                <div class="date">25/08/2012 م، 01:39 مساءً (السعودية) 10:39 صباحاً (جرينتش)</div>
-                                <div class="cmnt_txt">تم وصول خبر الآن من الصحف الكويتية بخطف مواطن كويتي متزوج من لبنانية ببعلبك وعمره يناهز 52 أو 55عاما بمصدر آخر وهذا وقد تم اقتياده لجهة غير معلومة رغم تحذيرات الحكومة بالكويت ومناشدة السفارة الكويتية بضرورة عدم السفر للبنان أو الرجوع للبلد ولكن مازال هناك من يعاند والسبب طبعا الزوجة والأقارب وماذا استفادوا الآن؟؟غير تحميل الحكومة أمرا سياسيا شائكا وبقاء الأولاد دون والدهم</div>
-                                <ul class="cmnt_tools">
-                                    <li class="like"><a>1254</a>
-                                    </li>
-                                    <li class="dislike"><a>452K</a>
-                                    </li>
-                                    <li class="reply"><a>&nbsp;</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Reply Level 01 -->
-                            <div class="comment reply01">
-                                <div class="user_thumb">
-                                    <img src="temp/cmnt_thumb.jpg" width="48" height="51" alt="" />
-                                </div>
-                                <div class="cmnt_hdr"> <span class="cmnt_no">6-</span><span class="cmnt_ttl">خبر آخر عن سلسلة الخطف بلبنان</span> 
-                                </div>
-                                <div class="cmnt_sender"> <span class="sender_name">خليجية كويتية</span><span class="caption">(زائر)</span> 
-                                </div>
-                                <div class="date">25/08/2012 م، 01:39 مساءً (السعودية) 10:39 صباحاً (جرينتش)</div>
-                                <div class="cmnt_txt">تم وصول خبر الآن من الصحف الكويتية بخطف مواطن كويتي متزوج من لبنانية ببعلبك وعمره يناهز 52 أو 55عاما بمصدر آخر وهذا وقد تم اقتياده لجهة غير معلومة رغم تحذيرات الحكومة بالكويت ومناشدة السفارة الكويتية بضرورة عدم السفر للبنان أو الرجوع للبلد ولكن مازال هناك من يعاند والسبب طبعا الزوجة والأقارب وماذا استفادوا الآن؟؟غير تحميل الحكومة أمرا سياسيا شائكا وبقاء الأولاد دون والدهم</div>
-                                <ul class="cmnt_tools">
-                                    <li class="like"><a>1254</a>
-                                    </li>
-                                    <li class="dislike"><a>452K</a>
-                                    </li>
-                                    <li class="reply"><a>&nbsp;</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Reply Level 02 -->
-                            <div class="comment reply02">
-                                <div class="user_thumb">
-                                    <img src="temp/cmnt_thumb.jpg" width="48" height="51" alt="" />
-                                </div>
-                                <div class="cmnt_hdr"> <span class="cmnt_no">7-</span><span class="cmnt_ttl">خبر آخر عن سلسلة الخطف بلبنان</span> 
-                                </div>
-                                <div class="cmnt_sender"> <span class="sender_name">خليجية كويتية</span><span class="caption">(زائر)</span> 
-                                </div>
-                                <div class="date">25/08/2012 م، 01:39 مساءً (السعودية) 10:39 صباحاً (جرينتش)</div>
-                                <div class="cmnt_txt">تم وصول خبر الآن من الصحف الكويتية بخطف مواطن كويتي متزوج من لبنانية ببعلبك وعمره يناهز 52 أو 55عاما بمصدر آخر وهذا وقد تم اقتياده لجهة غير معلومة رغم تحذيرات الحكومة بالكويت ومناشدة السفارة الكويتية بضرورة عدم السفر للبنان أو الرجوع للبلد ولكن مازال هناك من يعاند والسبب طبعا الزوجة والأقارب وماذا استفادوا الآن؟؟غير تحميل الحكومة أمرا سياسيا شائكا وبقاء الأولاد دون والدهم</div>
-                                <ul class="cmnt_tools">
-                                    <li class="like"><a>1254</a>
-                                    </li>
-                                    <li class="dislike"><a>452K</a>
-                                    </li>
-                                    <li class="reply"><a>&nbsp;</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- User Comment -->
-                            <div class="comment">
-                                <div class="user_thumb">
-                                    <img src="temp/cmnt_thumb.jpg" width="48" height="51" alt="" />
-                                </div>
-                                <div class="cmnt_hdr"> <span class="cmnt_no">8-</span><span class="cmnt_ttl">خبر آخر عن سلسلة الخطف بلبنان</span> 
-                                </div>
-                                <div class="cmnt_sender"> <span class="sender_name">خليجية كويتية</span><span class="caption">(زائر)</span> 
-                                </div>
-                                <div class="date">25/08/2012 م، 01:39 مساءً (السعودية) 10:39 صباحاً (جرينتش)</div>
-                                <div class="cmnt_txt">تم وصول خبر الآن من الصحف الكويتية بخطف مواطن كويتي متزوج من لبنانية ببعلبك وعمره يناهز 52 أو 55عاما بمصدر آخر وهذا وقد تم اقتياده لجهة غير معلومة رغم تحذيرات الحكومة بالكويت ومناشدة السفارة الكويتية بضرورة عدم السفر للبنان أو الرجوع للبلد ولكن مازال هناك من يعاند والسبب طبعا الزوجة والأقارب وماذا استفادوا الآن؟؟غير تحميل الحكومة أمرا سياسيا شائكا وبقاء الأولاد دون والدهم</div>
-                                <ul class="cmnt_tools">
-                                    <li class="like"><a>1254</a>
-                                    </li>
-                                    <li class="dislike"><a>452K</a>
-                                    </li>
-                                    <li class="reply"><a>&nbsp;</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- User Comment -->
-                        </div>
-                        <!-- Most Commented Comments -->
-                        <div class="wrapper" style="display:none;">
-                            <!-- User Comment -->
-                            <div class="comment">
-                                <div class="user_thumb">
-                                    <img src="temp/cmnt_thumb.jpg" width="48" height="51" alt="" />
-                                </div>
-                                <div class="cmnt_hdr"> <span class="cmnt_no">9-</span><span class="cmnt_ttl">خبر آخر عن سلسلة الخطف بلبنان</span> 
-                                </div>
-                                <div class="cmnt_sender"> <span class="sender_name">خليجية كويتية</span><span class="caption">(زائر)</span> 
-                                </div>
-                                <div class="date">25/08/2012 م، 01:39 مساءً (السعودية) 10:39 صباحاً (جرينتش)</div>
-                                <div class="cmnt_txt">تم وصول خبر الآن من الصحف الكويتية بخطف مواطن كويتي متزوج من لبنانية ببعلبك وعمره يناهز 52 أو 55عاما بمصدر آخر وهذا وقد تم اقتياده لجهة غير معلومة رغم تحذيرات الحكومة بالكويت ومناشدة السفارة الكويتية بضرورة عدم السفر للبنان أو الرجوع للبلد ولكن مازال هناك من يعاند والسبب طبعا الزوجة والأقارب وماذا استفادوا الآن؟؟غير تحميل الحكومة أمرا سياسيا شائكا وبقاء الأولاد دون والدهم</div>
-                                <ul class="cmnt_tools">
-                                    <li class="like"><a>1254</a>
-                                    </li>
-                                    <li class="dislike"><a>452K</a>
-                                    </li>
-                                    <li class="reply"><a>&nbsp;</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Reply Level 01 -->
-                            <div class="comment reply01">
-                                <div class="user_thumb">
-                                    <img src="temp/cmnt_thumb.jpg" width="48" height="51" alt="" />
-                                </div>
-                                <div class="cmnt_hdr"> <span class="cmnt_no">10-</span><span class="cmnt_ttl">خبر آخر عن سلسلة الخطف بلبنان</span> 
-                                </div>
-                                <div class="cmnt_sender"> <span class="sender_name">خليجية كويتية</span><span class="caption">(زائر)</span> 
-                                </div>
-                                <div class="date">25/08/2012 م، 01:39 مساءً (السعودية) 10:39 صباحاً (جرينتش)</div>
-                                <div class="cmnt_txt">تم وصول خبر الآن من الصحف الكويتية بخطف مواطن كويتي متزوج من لبنانية ببعلبك وعمره يناهز 52 أو 55عاما بمصدر آخر وهذا وقد تم اقتياده لجهة غير معلومة رغم تحذيرات الحكومة بالكويت ومناشدة السفارة الكويتية بضرورة عدم السفر للبنان أو الرجوع للبلد ولكن مازال هناك من يعاند والسبب طبعا الزوجة والأقارب وماذا استفادوا الآن؟؟غير تحميل الحكومة أمرا سياسيا شائكا وبقاء الأولاد دون والدهم</div>
-                                <ul class="cmnt_tools">
-                                    <li class="like"><a>1254</a>
-                                    </li>
-                                    <li class="dislike"><a>452K</a>
-                                    </li>
-                                    <li class="reply"><a>&nbsp;</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Reply Level 02 -->
-                            <div class="comment reply02">
-                                <div class="user_thumb">
-                                    <img src="temp/cmnt_thumb.jpg" width="48" height="51" alt="" />
-                                </div>
-                                <div class="cmnt_hdr"> <span class="cmnt_no">11-</span><span class="cmnt_ttl">خبر آخر عن سلسلة الخطف بلبنان</span> 
-                                </div>
-                                <div class="cmnt_sender"> <span class="sender_name">خليجية كويتية</span><span class="caption">(زائر)</span> 
-                                </div>
-                                <div class="date">25/08/2012 م، 01:39 مساءً (السعودية) 10:39 صباحاً (جرينتش)</div>
-                                <div class="cmnt_txt">تم وصول خبر الآن من الصحف الكويتية بخطف مواطن كويتي متزوج من لبنانية ببعلبك وعمره يناهز 52 أو 55عاما بمصدر آخر وهذا وقد تم اقتياده لجهة غير معلومة رغم تحذيرات الحكومة بالكويت ومناشدة السفارة الكويتية بضرورة عدم السفر للبنان أو الرجوع للبلد ولكن مازال هناك من يعاند والسبب طبعا الزوجة والأقارب وماذا استفادوا الآن؟؟غير تحميل الحكومة أمرا سياسيا شائكا وبقاء الأولاد دون والدهم</div>
-                                <ul class="cmnt_tools">
-                                    <li class="like"><a>1254</a>
-                                    </li>
-                                    <li class="dislike"><a>452K</a>
-                                    </li>
-                                    <li class="reply"><a>&nbsp;</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- User Comment -->
-                            <div class="comment">
-                                <div class="user_thumb">
-                                    <img src="temp/cmnt_thumb.jpg" width="48" height="51" alt="" />
-                                </div>
-                                <div class="cmnt_hdr"> <span class="cmnt_no">12-</span><span class="cmnt_ttl">خبر آخر عن سلسلة الخطف بلبنان</span> 
-                                </div>
-                                <div class="cmnt_sender"> <span class="sender_name">خليجية كويتية</span><span class="caption">(زائر)</span> 
-                                </div>
-                                <div class="date">25/08/2012 م، 01:39 مساءً (السعودية) 10:39 صباحاً (جرينتش)</div>
-                                <div class="cmnt_txt">تم وصول خبر الآن من الصحف الكويتية بخطف مواطن كويتي متزوج من لبنانية ببعلبك وعمره يناهز 52 أو 55عاما بمصدر آخر وهذا وقد تم اقتياده لجهة غير معلومة رغم تحذيرات الحكومة بالكويت ومناشدة السفارة الكويتية بضرورة عدم السفر للبنان أو الرجوع للبلد ولكن مازال هناك من يعاند والسبب طبعا الزوجة والأقارب وماذا استفادوا الآن؟؟غير تحميل الحكومة أمرا سياسيا شائكا وبقاء الأولاد دون والدهم</div>
-                                <ul class="cmnt_tools">
-                                    <li class="like"><a>1254</a>
-                                    </li>
-                                    <li class="dislike"><a>452K</a>
-                                    </li>
-                                    <li class="reply"><a>&nbsp;</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- User Comment -->
-                        </div>
-                        <!-- Most Likes -->
-                        <div class="wrapper" style="display:none;">
-                            <!-- User Comment -->
-                            <div class="comment">
-                                <div class="user_thumb">
-                                    <img src="temp/cmnt_thumb.jpg" width="48" height="51" alt="" />
-                                </div>
-                                <div class="cmnt_hdr"> <span class="cmnt_no">13-</span><span class="cmnt_ttl">خبر آخر عن سلسلة الخطف بلبنان</span> 
-                                </div>
-                                <div class="cmnt_sender"> <span class="sender_name">خليجية كويتية</span><span class="caption">(زائر)</span> 
-                                </div>
-                                <div class="date">25/08/2012 م، 01:39 مساءً (السعودية) 10:39 صباحاً (جرينتش)</div>
-                                <div class="cmnt_txt">تم وصول خبر الآن من الصحف الكويتية بخطف مواطن كويتي متزوج من لبنانية ببعلبك وعمره يناهز 52 أو 55عاما بمصدر آخر وهذا وقد تم اقتياده لجهة غير معلومة رغم تحذيرات الحكومة بالكويت ومناشدة السفارة الكويتية بضرورة عدم السفر للبنان أو الرجوع للبلد ولكن مازال هناك من يعاند والسبب طبعا الزوجة والأقارب وماذا استفادوا الآن؟؟غير تحميل الحكومة أمرا سياسيا شائكا وبقاء الأولاد دون والدهم</div>
-                                <ul class="cmnt_tools">
-                                    <li class="like"><a>1254</a>
-                                    </li>
-                                    <li class="dislike"><a>452K</a>
-                                    </li>
-                                    <li class="reply"><a>&nbsp;</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Reply Level 01 -->
-                            <div class="comment reply01">
-                                <div class="user_thumb">
-                                    <img src="temp/cmnt_thumb.jpg" width="48" height="51" alt="" />
-                                </div>
-                                <div class="cmnt_hdr"> <span class="cmnt_no">14-</span><span class="cmnt_ttl">خبر آخر عن سلسلة الخطف بلبنان</span> 
-                                </div>
-                                <div class="cmnt_sender"> <span class="sender_name">خليجية كويتية</span><span class="caption">(زائر)</span> 
-                                </div>
-                                <div class="date">25/08/2012 م، 01:39 مساءً (السعودية) 10:39 صباحاً (جرينتش)</div>
-                                <div class="cmnt_txt">تم وصول خبر الآن من الصحف الكويتية بخطف مواطن كويتي متزوج من لبنانية ببعلبك وعمره يناهز 52 أو 55عاما بمصدر آخر وهذا وقد تم اقتياده لجهة غير معلومة رغم تحذيرات الحكومة بالكويت ومناشدة السفارة الكويتية بضرورة عدم السفر للبنان أو الرجوع للبلد ولكن مازال هناك من يعاند والسبب طبعا الزوجة والأقارب وماذا استفادوا الآن؟؟غير تحميل الحكومة أمرا سياسيا شائكا وبقاء الأولاد دون والدهم</div>
-                                <ul class="cmnt_tools">
-                                    <li class="like"><a>1254</a>
-                                    </li>
-                                    <li class="dislike"><a>452K</a>
-                                    </li>
-                                    <li class="reply"><a>&nbsp;</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Reply Level 02 -->
-                            <div class="comment reply02">
-                                <div class="user_thumb">
-                                    <img src="temp/cmnt_thumb.jpg" width="48" height="51" alt="" />
-                                </div>
-                                <div class="cmnt_hdr"> <span class="cmnt_no">15-</span><span class="cmnt_ttl">خبر آخر عن سلسلة الخطف بلبنان</span> 
-                                </div>
-                                <div class="cmnt_sender"> <span class="sender_name">خليجية كويتية</span><span class="caption">(زائر)</span> 
-                                </div>
-                                <div class="date">25/08/2012 م، 01:39 مساءً (السعودية) 10:39 صباحاً (جرينتش)</div>
-                                <div class="cmnt_txt">تم وصول خبر الآن من الصحف الكويتية بخطف مواطن كويتي متزوج من لبنانية ببعلبك وعمره يناهز 52 أو 55عاما بمصدر آخر وهذا وقد تم اقتياده لجهة غير معلومة رغم تحذيرات الحكومة بالكويت ومناشدة السفارة الكويتية بضرورة عدم السفر للبنان أو الرجوع للبلد ولكن مازال هناك من يعاند والسبب طبعا الزوجة والأقارب وماذا استفادوا الآن؟؟غير تحميل الحكومة أمرا سياسيا شائكا وبقاء الأولاد دون والدهم</div>
-                                <ul class="cmnt_tools">
-                                    <li class="like"><a>1254</a>
-                                    </li>
-                                    <li class="dislike"><a>452K</a>
-                                    </li>
-                                    <li class="reply"><a>&nbsp;</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- User Comment -->
-                            <div class="comment">
-                                <div class="user_thumb">
-                                    <img src="temp/cmnt_thumb.jpg" width="48" height="51" alt="" />
-                                </div>
-                                <div class="cmnt_hdr"> <span class="cmnt_no">16-</span><span class="cmnt_ttl">خبر آخر عن سلسلة الخطف بلبنان</span> 
-                                </div>
-                                <div class="cmnt_sender"> <span class="sender_name">خليجية كويتية</span><span class="caption">(زائر)</span> 
-                                </div>
-                                <div class="date">25/08/2012 م، 01:39 مساءً (السعودية) 10:39 صباحاً (جرينتش)</div>
-                                <div class="cmnt_txt">تم وصول خبر الآن من الصحف الكويتية بخطف مواطن كويتي متزوج من لبنانية ببعلبك وعمره يناهز 52 أو 55عاما بمصدر آخر وهذا وقد تم اقتياده لجهة غير معلومة رغم تحذيرات الحكومة بالكويت ومناشدة السفارة الكويتية بضرورة عدم السفر للبنان أو الرجوع للبلد ولكن مازال هناك من يعاند والسبب طبعا الزوجة والأقارب وماذا استفادوا الآن؟؟غير تحميل الحكومة أمرا سياسيا شائكا وبقاء الأولاد دون والدهم</div>
-                                <ul class="cmnt_tools">
-                                    <li class="like"><a>1254</a>
-                                    </li>
-                                    <li class="dislike"><a>452K</a>
-                                    </li>
-                                    <li class="reply"><a>&nbsp;</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- User Comment -->
-                        </div>
-                        <!-- Most Dislikes -->
-                        <div class="wrapper" style="display:none;">
-                            <!-- User Comment -->
-                            <div class="comment">
-                                <div class="user_thumb">
-                                    <img src="temp/cmnt_thumb.jpg" width="48" height="51" alt="" />
-                                </div>
-                                <div class="cmnt_hdr"> <span class="cmnt_no">17-</span><span class="cmnt_ttl">خبر آخر عن سلسلة الخطف بلبنان</span> 
-                                </div>
-                                <div class="cmnt_sender"> <span class="sender_name">خليجية كويتية</span><span class="caption">(زائر)</span> 
-                                </div>
-                                <div class="date">25/08/2012 م، 01:39 مساءً (السعودية) 10:39 صباحاً (جرينتش)</div>
-                                <div class="cmnt_txt">تم وصول خبر الآن من الصحف الكويتية بخطف مواطن كويتي متزوج من لبنانية ببعلبك وعمره يناهز 52 أو 55عاما بمصدر آخر وهذا وقد تم اقتياده لجهة غير معلومة رغم تحذيرات الحكومة بالكويت ومناشدة السفارة الكويتية بضرورة عدم السفر للبنان أو الرجوع للبلد ولكن مازال هناك من يعاند والسبب طبعا الزوجة والأقارب وماذا استفادوا الآن؟؟غير تحميل الحكومة أمرا سياسيا شائكا وبقاء الأولاد دون والدهم</div>
-                                <ul class="cmnt_tools">
-                                    <li class="like"><a>1254</a>
-                                    </li>
-                                    <li class="dislike"><a>452K</a>
-                                    </li>
-                                    <li class="reply"><a>&nbsp;</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Reply Level 01 -->
-                            <div class="comment reply01">
-                                <div class="user_thumb">
-                                    <img src="temp/cmnt_thumb.jpg" width="48" height="51" alt="" />
-                                </div>
-                                <div class="cmnt_hdr"> <span class="cmnt_no">18-</span><span class="cmnt_ttl">خبر آخر عن سلسلة الخطف بلبنان</span> 
-                                </div>
-                                <div class="cmnt_sender"> <span class="sender_name">خليجية كويتية</span><span class="caption">(زائر)</span> 
-                                </div>
-                                <div class="date">25/08/2012 م، 01:39 مساءً (السعودية) 10:39 صباحاً (جرينتش)</div>
-                                <div class="cmnt_txt">تم وصول خبر الآن من الصحف الكويتية بخطف مواطن كويتي متزوج من لبنانية ببعلبك وعمره يناهز 52 أو 55عاما بمصدر آخر وهذا وقد تم اقتياده لجهة غير معلومة رغم تحذيرات الحكومة بالكويت ومناشدة السفارة الكويتية بضرورة عدم السفر للبنان أو الرجوع للبلد ولكن مازال هناك من يعاند والسبب طبعا الزوجة والأقارب وماذا استفادوا الآن؟؟غير تحميل الحكومة أمرا سياسيا شائكا وبقاء الأولاد دون والدهم</div>
-                                <ul class="cmnt_tools">
-                                    <li class="like"><a>1254</a>
-                                    </li>
-                                    <li class="dislike"><a>452K</a>
-                                    </li>
-                                    <li class="reply"><a>&nbsp;</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Reply Level 02 -->
-                            <div class="comment reply02">
-                                <div class="user_thumb">
-                                    <img src="temp/cmnt_thumb.jpg" width="48" height="51" alt="" />
-                                </div>
-                                <div class="cmnt_hdr"> <span class="cmnt_no">19-</span><span class="cmnt_ttl">خبر آخر عن سلسلة الخطف بلبنان</span> 
-                                </div>
-                                <div class="cmnt_sender"> <span class="sender_name">خليجية كويتية</span><span class="caption">(زائر)</span> 
-                                </div>
-                                <div class="date">25/08/2012 م، 01:39 مساءً (السعودية) 10:39 صباحاً (جرينتش)</div>
-                                <div class="cmnt_txt">تم وصول خبر الآن من الصحف الكويتية بخطف مواطن كويتي متزوج من لبنانية ببعلبك وعمره يناهز 52 أو 55عاما بمصدر آخر وهذا وقد تم اقتياده لجهة غير معلومة رغم تحذيرات الحكومة بالكويت ومناشدة السفارة الكويتية بضرورة عدم السفر للبنان أو الرجوع للبلد ولكن مازال هناك من يعاند والسبب طبعا الزوجة والأقارب وماذا استفادوا الآن؟؟غير تحميل الحكومة أمرا سياسيا شائكا وبقاء الأولاد دون والدهم</div>
-                                <ul class="cmnt_tools">
-                                    <li class="like"><a>1254</a>
-                                    </li>
-                                    <li class="dislike"><a>452K</a>
-                                    </li>
-                                    <li class="reply"><a>&nbsp;</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- User Comment -->
-                            <div class="comment">
-                                <div class="user_thumb">
-                                    <img src="temp/cmnt_thumb.jpg" width="48" height="51" alt="" />
-                                </div>
-                                <div class="cmnt_hdr"> <span class="cmnt_no">20-</span><span class="cmnt_ttl">خبر آخر عن سلسلة الخطف بلبنان</span> 
-                                </div>
-                                <div class="cmnt_sender"> <span class="sender_name">خليجية كويتية</span><span class="caption">(زائر)</span> 
-                                </div>
-                                <div class="date">25/08/2012 م، 01:39 مساءً (السعودية) 10:39 صباحاً (جرينتش)</div>
-                                <div class="cmnt_txt">تم وصول خبر الآن من الصحف الكويتية بخطف مواطن كويتي متزوج من لبنانية ببعلبك وعمره يناهز 52 أو 55عاما بمصدر آخر وهذا وقد تم اقتياده لجهة غير معلومة رغم تحذيرات الحكومة بالكويت ومناشدة السفارة الكويتية بضرورة عدم السفر للبنان أو الرجوع للبلد ولكن مازال هناك من يعاند والسبب طبعا الزوجة والأقارب وماذا استفادوا الآن؟؟غير تحميل الحكومة أمرا سياسيا شائكا وبقاء الأولاد دون والدهم</div>
-                                <ul class="cmnt_tools">
-                                    <li class="like"><a>1254</a>
-                                    </li>
-                                    <li class="dislike"><a>452K</a>
-                                    </li>
-                                    <li class="reply"><a>&nbsp;</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- User Comment -->
+                </section>
+                <!-- Page Section -->
+                <section>
+                    <!-- Area 75 -->
+                    <div class="area-75">
+                        <!-- Programs 100/75/50/25 -->
+                        <div class="box news programs">
+                            <h2><a href="#" title="">البرامج</a></h2>
+                            <ul>
+                                <li>
+                                    <img src="temp/program01.jpg" alt="" />
+                                    <a class="cover" href="#" title="">
+                                        <span class="ttl">صناعة الموت</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="temp/program02.jpg" alt="" />
+                                    <a class="cover" href="#" title="">
+                                        <span class="ttl">صناعة الموت</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="temp/program03.jpg" alt="" />
+                                    <a class="cover" href="#" title="">
+                                        <span class="ttl">صناعة الموت</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="temp/program04.jpg" alt="" />
+                                    <a class="cover" href="#" title="">
+                                        <span class="ttl">صناعة الموت</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="temp/program05.jpg" alt="" />
+                                    <a class="cover" href="#" title="">
+                                        <span class="ttl">صناعة الموت</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="temp/program06.jpg" alt="" />
+                                    <a class="cover" href="#" title="">
+                                        <span class="ttl">صناعة الموت</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-                <div class="foot"></div>
-            </div>
-            <!-- Add Comment -->
-            <div class="box readers_comments add_comment">
-                <div class="head">
-                    <h2>هل ترغب بالتعليق على الموضوع؟</h2>
-                </div>
-                <div class="content">
-                    <div class="arena">
-                        <div class="reg_box">
-                            <p>حجز اسمكم المستعار سيحفظ لكم شخصيتكم الاعتبارية ويمنع الآخرين من انتحاله في التعليقات</p>
-                            <a class="btn lo_in" href="#" title="">دخول</a><a class="btn reg" href="#" title="">سجل اسمك المستعار</a>
-                        </div>
-                        <div class="aa_form">
-                            <form class="cmnt_form" action="" method="post">
-                                <div class="row">
-                                    <div class="lbl">الاسم:</div>
-                                    <div class="fld">
-                                        <input name="" type="text" class="txt_box">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="lbl">عنوان التعليق:</div>
-                                    <div class="fld">
-                                        <input name="" type="text" class="txt_box">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="lbl">نص التعليق:</div>
-                                    <div class="fld">
-                                        <textarea name="" cols="" rows=""></textarea>
-                                        <div class="caption"><span>تبقى لديك</span>&nbsp;(<span>550</span>)&nbsp;<span>حرف</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="fld">
-                                        <input name="" class="btn" type="button" value="إرسال">
-                                    </div>
-                                </div>
-                            </form>
+                    <!-- Area 25 -->
+                    <div class="area-25">
+                        <!-- Opinions only for 25 -->
+                        <div class="box opinions">
+                            <h2><a href="#" title="">الأراء</a></h2>
+                            <ul>
+                                <li>
+                                    <a class="pic" href="#" title="">
+                                        <img src="temp/auth01.jpg" alt="" />
+                                    </a>
+                                    <a class="ttl" href="#" title="">الهجوم ، في ليلة الكريملن</a>
+                                    <a class="author" href="#" title="">محمد حمدان ، القاهرة</a>
+                                </li>
+                                <li>
+                                    <a class="pic" href="#" title="">
+                                        <img src="temp/auth03.jpg" alt="" />
+                                    </a>
+                                    <a class="ttl" href="#" title="">الهجوم ، في ليلة الكريملن</a>
+                                    <a class="author" href="#" title="">محمد حمدان ، القاهرة</a>
+                                </li>
+                                <li>
+                                    <a class="pic" href="#" title="">
+                                        <img src="temp/auth04.jpg" alt="" />
+                                    </a>
+                                    <a class="ttl" href="#" title="">الهجوم ، في ليلة الكريملن</a>
+                                    <a class="author" href="#" title="">محمد حمدان ، القاهرة</a>
+                                </li>
+                                <li>
+                                    <a class="pic" href="#" title="">
+                                        <img src="temp/auth05.jpg" alt="" />
+                                    </a>
+                                    <a class="ttl" href="#" title="">الهجوم ، في ليلة الكريملن</a>
+                                    <a class="author" href="#" title="">محمد حمدان ، القاهرة</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-                <div class="foot"></div>
+                </section>
             </div>
         </div>
-        <hr>
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>جميع الحقوق محفوظة &copy; لقناة العربية 2015</p>
-                    <a href="#">النسخة الكاملة للموقع</a>
-                </div>
-            </div>
-        </footer>
     </div>
-    <script src="js/jquery-2-1-4-min.js"></script>
-    <script type="text/javascript" src="js/jquery-ui.js"></script>
-    <script src="js/jquery-mobile-custom-min.js"></script>
-    <script src="js/bootstrap-min.js"></script>
-    <script src="js/scripts.js"></script>
+
+    <!-- Footer -->
+    <footer>
+        <div class="main-content">
+            <div class="footer-separator">
+                <!-- Footer Logo -->
+                <a class="logo" href="#">العربية</a>
+                <div class="copywrites">
+                    © جميع الحقوق محفوظة لقناة العربية 2017</div>
+            </div>
+            <ul>
+                <li>العرب والعالم</li>
+                <li><a href="#" title="">اليمن</a>
+                </li>
+                <li><a href="#" title="">سوريا</a>
+                </li>
+                <li><a href="#" title="">العراق</a>
+                </li>
+                <li><a href="#" title="">اوكرانيا</a>
+                </li>
+            </ul>
+            <ul>
+                <li>رياضة</li>
+                <li><a href="#" title="">عربية</a>
+                </li>
+                <li><a href="#" title="">عالمية</a>
+                </li>
+                <li><a href="#" title="">الدوريات</a>
+                </li>
+                <li><a href="#" title="">سعودية</a>
+                </li>
+                <li><a href="#" title="">مباريات اليوم</a>
+                </li>
+            </ul>
+            <ul>
+                <li>أسواق</li>
+                <li><a href="#" title="">عقار</a>
+                </li>
+                <li><a href="#" title="">بنوك</a>
+                </li>
+                <li><a href="#" title="">اقتصاد</a>
+                </li>
+                <li><a href="#" title="">اسواق</a>
+                </li>
+                <li><a href="#" title="">تداول</a>
+                </li>
+                <li><a href="#" title="">سوق دبي</a>
+                </li>
+            </ul>
+            <ul>
+                <li>السعودية</li>
+                <li><a href="#" title="">عقار</a>
+                </li>
+                <li><a href="#" title="">بنوك</a>
+                </li>
+                <li><a href="#" title="">اقتصاد</a>
+                </li>
+                <li><a href="#" title="">اسواق</a>
+                </li>
+                <li><a href="#" title="">تداول</a>
+                </li>
+                <li><a href="#" title="">سوق دبي</a>
+                </li>
+            </ul>
+            <ul>
+                <li>المزيد</li>
+                <li><a href="#" title="">عقار</a>
+                </li>
+                <li><a href="#" title="">بنوك</a>
+                </li>
+                <li><a href="#" title="">اقتصاد</a>
+                </li>
+                <li><a href="#" title="">اسواق</a>
+                </li>
+                <li><a href="#" title="">تداول</a>
+                </li>
+                <li><a href="#" title="">سوق دبي</a>
+                </li>
+            </ul>
+            <ul>
+                <li>رياضة</li>
+                <li><a href="#" title="">عربية</a>
+                </li>
+                <li><a href="#" title="">عالمية</a>
+                </li>
+                <li><a href="#" title="">الدوريات</a>
+                </li>
+                <li><a href="#" title="">سعودية</a>
+                </li>
+                <li><a href="#" title="">مباريات اليوم</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 
 </html>
