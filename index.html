@@ -1,1472 +1,528 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
 
 <head>
     <meta charset="utf-8">
-    <title>aaRevamb</title>
-    <meta http-equiv=X-UA-Compatible content="IE=edge">
-    <meta name=description content="لعربية.نت">
-    <meta name=viewport content="width=device-width, initial-scale=1">
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="css/structure.css">
-    <link rel="stylesheet" href="css/theme-default.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="shortcut icon" type="image/png" href="gfx/favicon.ico" />
-    <meta name="msapplication-tap-highlight" content="no">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="العربية">
-    <link rel="icon" sizes="192x192" href="gfx/touch/chrome-touch-icon-192x192.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="العربية">
-    <link rel="apple-touch-icon" href="gfx/touch/apple-touch-icon.png">
-    <meta name="msapplication-TileImage" content="gfx/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#ff0505">
-    <meta name="theme-color" content="#73337d">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>العربية.نت | الصفحة الرئيسية</title>
+    <link href="css/bootstrap-min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 
+
 <body>
-    <!-- Breaking News -->
-    <div class="breaking-news">
-        <div class="main-content">
-            <div class="lbl">عاجل</div>
-            <p>شبكة شام: قصف عنيف بالمدفعية الثقيلة على أحياء برزة والقابون ومخيم اليرموك</p>
-            <span class="close">x</span>
-        </div>
-    </div>
-    <!-- Extra Wrapper Top -->
-    <div class="extra-wrapper-top"></div>
-    <!-- Overlay -->
-    <div class="overlay"></div>
-    <!-- Takeover -->
-    <div class="takeover-outer"></div>
-    <!-- Header -->
-    <header>
-        <!-- Top Info -->
-        <div class="top-info">
-            <div class="main-content">
-                <!-- Date / Time -->
-                <div class="date-time">
-                    <time datetime="2017-04-17">الأحد 12 شوال 143٧ه - ١٧ يوليو 2017 م</time>
-                </div>
-                <!-- Trending Topics -->
-                <div class="hashtags">
-                    <a href="#" title="">#تركيا</a>
-                    <a href="#" title="">#يورو2016</a>
-                    <a href="#" title="">#العربية</a>
-                    <a href="#" title="">#العربية</a>
-                </div>
-                <!-- Languages -->
-                <div class="lang"><a href="#" title="">English</a>
-                    <a href="#" title="">فارسي</a>
-                    <a href="#" title="">عربي</a>
-                </div>
-            </div>
-        </div>
-        <!-- Main Header -->
-        <div class="main-header">
-            <div class="main-content">
-                <!-- Mobile Menu Icon -->
-                <div class="mobile-menu"></div>
-                <!-- Logo -->
-                <h1 class="logo">
-                    <a href="#" title="">
-                   العربية
-                </a>
-                </h1>
-                <!-- Mobile Search Icon -->
-                <div class="mobile-searh"></div>
-                <!-- Weather Widget -->
-                <div class="weather">
-                    <img src="temp/weather.png" alt="" />
-                </div>
-                <!-- Live -->
-                <a href="#" class="live-streaming" title="">
-                    <span>البث المباشر</span>
-                </a>
-            </div>
-        </div>
-        <!-- Main Navigation -->
-        <nav>
-            <div class="main-content">
-                <ul>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button id="ChangeToggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <div id="navbar-hamburger" class="">
+                        <span class="sr-only">القائمة</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </div>
+                    <div id="navbar-close" class="hidden">
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </div>
+                </button>
 
-
-                    <li><a href="#" class="active" title="">الرئيسية</a>
+                <h1 class="navbar-brand"><a href="#" title="">العربية</a></h1>
+                <!-- Live Stream -->
+                <a href="#" class="live"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Search -->
+                    <form class="navbar-form navbar-left" role="search">
+                        <div id='search-form' class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="إبحث في العربية">
+                                <input type="image" src="gfx/srch.png" class="icon" alt="بحث">
+                            </div>
+                        </div>
+                    </form>
+                    <li>
+                        <a href="#">الرئيسية</a>
                     </li>
-                    <li><a href="#" title="">الشرق الأوسط</a>
-                    </li>
-                    <li class="submenu"><a href="#" title="">العالم <span class="arrow"></span></a>
-                        <ul>
-                            <li>صحة</li>
-                            <li>رياظة</li>
+                    <!-- Sub Menu -->
+                    <li class="dropdown">
+                        <a href="#">أخبار</a>
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle"><b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">السعودية</a>
+                            </li>
+                            <li><a href="#">رياضة</a>
+                            </li>
+                            <li><a href="#">الحدث</a>
+                            </li>
+                            <li><a href="#">صحة</a>
+                            </li>
                         </ul>
                     </li>
-                    <li><a href="#" title="">السعودية</a>
-                    </li>
-                    <li><a href="#" title="">أسواق</a>
-                    </li>
-                    <li><a href="#" title="">رياضة</a>
-                    </li>
-                    <li><a href="#" title="">تكنولوجيا</a>
-                    </li>
-                    <li><a href="#" title="">آراء</a>
-                    </li>
-                    <li><a href="#" title="">ستايل</a>
-                    </li>
-                    <li><a href="#" title="">منوعات</a>
-                    </li>
-                    <li><a href="#" title="">البرامج</a>
-                    </li>
-                    <li><a href="#" title="">أنا أرى</a>
-                    </li>
-                    <li><a href="#" title="">أنا أرى</a>
-                    </li>
-                    <!-- Search -->
                     <li>
-                        <a class="btn-search" href="#"></a>
+                        <a href="#">السعودية</a>
+                    </li>
+                    <li>
+                        <a href="#">رياضة</a>
+                    </li>
+                    <li>
+                        <a href="#">الحدث</a>
+                    </li>
+                    <li>
+                        <a href="#">فيديو</a>
+                    </li>
+                    <li>
+                        <a href="#">أسواق</a>
                     </li>
                 </ul>
             </div>
-        </nav>
-        <form class="global-search">
-            <div class="main-content">
-                <input type="search" class="fld" name="ابحث" autocomplete="off" placeholder="ابحث في العربية!" />
-                <button type="submit" class="submit-btn"></button>
-            </div>
-        </form>
-    </header>
-    <!-- Gobal Wrapper -->
-    <div class="global-wrapper">
-        <div class="full-wrapper">
-            <div class="main-content">
-                <!-- Page Section -->
-                <section>
-                    <!-- Area 75 -->
-                    <div class="area-75">
-                        <!-- Main News Slider 100/75/50 -->
-                        <div class="box news">
-                            <ul>
-                                <!-- Main Article -->
-                                <li>
-                                    <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp18_4x3.jpg">
-                                            <img src="temp/temp17_4x3.jpg" alt="">
-                                    </picture>
-                                    <a class="cover" href="#" title="">
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                        <span class="caption">مند 13 ساعة</span>
-                                    </a>
-                                    <!-- Section Title -->
-                                    <a href="#" class="section-ttl">إقتصاد</a>
-                                </li>
-                                <li>
-                                    <img src="temp/temp02.jpg" alt="" />
-                                    <a class="cover" href="#" title="">
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                        <span class="video-icon"></span>
-                                    </a>
-                                    <!-- Section Title -->
-                                    <a href="#" class="section-ttl">رياضة</a>
-                                </li>
-                                <li>
-                                    <img src="temp/temp03.jpg" alt="" />
-                                    <a class="cover" href="#" title="">
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                    </a>
-                                    <!-- Section Title -->
-                                    <a href="#" class="section-ttl">العالم العربي</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Area 25 -->
-                    <div class="area-25">
-                        <!-- Latest News Only for 25 -->
-                        <div class="box latest-news">
-                            <h2>
-                            <a href="#" title="">آخر الأخبار</a>
-                        </h2>
-                            <ul>
-                                <li>
-                                    <a href="#" title="">
-                                        <!-- Time -->
-                                        <span class="time">
-                                    <span>20:20</span>
-                                        <span class="region">GMT</span>
-                                        </span>
-                                        <!-- Title -->
-                                        <span class="ttl">
-                                           معتقلو حماة المركزي : هكذا أسرنا خادم
-الحرمين يعزي رئيس فرنس
-                                </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <!-- Time -->
-                                        <span class="time">
-                                    <span>20:20</span>
-                                        <span class="region">GMT</span>
-                                        </span>
-                                        <!-- Title -->
-                                        <span class="ttl">
-                                           معتقلو حماة المركزي : هكذا أسرنا خادم
-الحرمين يعزي رئيس فرنس
-                                </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <!-- Time -->
-                                        <span class="time">
-                                    <span>20:20</span>
-                                        <span class="region">GMT</span>
-                                        </span>
-                                        <!-- Title -->
-                                        <span class="ttl">
-                                           معتقلو حماة المركزي : هكذا أسرنا خادم
-الحرمين يعزي رئيس فرنس
-                                </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <!-- Time -->
-                                        <span class="time">
-                                    <span>20:20</span>
-                                        <span class="region">GMT</span>
-                                        </span>
-                                        <!-- Title -->
-                                        <span class="ttl">
-                                           معتقلو حماة المركزي : هكذا أسرنا خادم
-الحرمين يعزي رئيس فرنس
-                                </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <!-- Time -->
-                                        <span class="time">
-                                    <span>20:20</span>
-                                        <span class="region">GMT</span>
-                                        </span>
-                                        <!-- Title -->
-                                        <span class="ttl">
-                                           معتقلو حماة المركزي : هكذا أسرنا خادم
-الحرمين يعزي رئيس فرنس
-                                </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <!-- Time -->
-                                        <span class="time">
-                                    <span>20:20</span>
-                                        <span class="region">GMT</span>
-                                        </span>
-                                        <!-- Title -->
-                                        <span class="ttl">
-                                           معتقلو حماة المركزي : هكذا أسرنا خادم
-الحرمين يعزي رئيس فرنس
-                                </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <!-- Page Section -->
-                <section>
-                    <!-- Area 50 -->
-                    <div class="area-50">
-                        <!-- News Articles 100/75/50/25 -->
-                        <div class="box news-articles">
-                            <h2><a href="#">الأخبار</a></h2>
-                            <ul>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                    <img src="temp/temp04.jpg" alt="" />
-                                    </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                    </a>
-                                    <!-- Section Title -->
-                                    <a href="#" class="section-ttl">رياضة</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                    <img src="temp/temp05.jpg" alt="" />
-                                    </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                    </a>
-                                    <!-- Section Title -->
-                                    <a href="#" class="section-ttl">إقتصاد</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                    <img src="temp/temp06.jpg" alt="" />
-                                    </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                    </a>
-                                    <!-- Section Title -->
-                                    <a href="#" class="section-ttl">العالم العربي</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                    <img src="temp/temp07.jpg" alt="" />
-                                    <span class="video-icon"></span>
-                                        </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                    </a>
-                                    <!-- Section Title -->
-                                    <a href="#" class="section-ttl">السعودية</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                    <img src="temp/temp11.jpg" alt="" />
-                                    <span class="video-icon"></span>
-                                        </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                    </a>
-                                    <!-- Section Title -->
-                                    <a href="#" class="section-ttl">أسواق</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                    <img src="temp/temp12.jpg" alt="" />
-                                    </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                    </a>
-                                    <!-- Section Title -->
-                                    <a href="#" class="section-ttl">ستايل</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Area 25 -->
-                    <div class="area-25">
-                        <!-- Photo Gallery 100/75/50/25 -->
-                        <div class="box gallery">
-                            <h2><a href="#">بالصور</a></h2>
-                            <ul>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                    <img src="temp/temp08.jpg" alt="" />
-                                    <span class="photo-icon"></span>
-                                        </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                    <img src="temp/temp09.jpg" alt="" />
-                                    <span class="photo-icon"></span>
-                                        </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                    <img src="temp/temp10.jpg" alt="" />
-                                    <span class="photo-icon"></span>
-                                        </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Area 25 -->
-                    <div class="area-25">
-                        <!-- killer only for 25 -->
-                        <div class="box ad25">
-                            <h2>إعلانات</h2>
-                            <!-- Always Keep this 'wrapper' on ads25 -->
-                            <div class="wrapper">
-                                <img src="temp/killer.jpg" alt="">
-                            </div>
-                        </div>
-                        <!-- Top Content only for 25 -->
-                        <div class="box top-content">
-                            <h2><a href="#" title="">الأكثر قراءة</a></h2>
-                            <ul>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                        <img src="temp/temp13.jpg" alt="" />
-                                        <span class="video-icon"></span>
-                                        </span>
-                                        <span class="ttl">
-                                           معتقلو حماة المركزي : هكذا أسرنا خادم
-الحرمين</span>
-                                        <span class="caption">1,885,311  مشاهدة</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                        <img src="temp/temp14.jpg" alt="" />
-                                        </span>
-                                        <span class="ttl">
-                                           معتقلو حماة المركزي : هكذا أسرنا خادم
-الحرمين يعزي رئي</span>
-                                        <span class="caption">1,885,311  مشاهدة</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                        <img src="temp/temp15.jpg" alt="" />
-                                        <span class="video-icon"></span>
-                                        </span>
-                                        <span class="ttl">
-                                           معتقلو حماة المركزي : هكذا أسرنا خادم
-الحرمين</span>
-                                        <span class="caption">1,885,311  مشاهدة</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                        <img src="temp/temp16.jpg" alt="" />
-                                        <span class="video-icon"></span>
-                                        </span>
-                                        <span class="ttl">
-                                           معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد</span>
-                                        <span class="caption">1,885,311  مشاهدة</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                        <img src="temp/temp06.jpg" alt="" />
-                                        </span>
-                                        <span class="ttl">
-                                           معتقلو حماة المركزي : هكذا أسرنا خادم
-</span>
-                                        <span class="caption">1,885,311  مشاهدة</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-            </div>
         </div>
-        <!-- Dark Area Full -->
-        <div class="full-wrapper dark">
-            <div class="main-content">
-                <section>
-                    <!-- Area 100 -->
-                    <div class="area-100">
-                        <!-- News Articles 100/75/50/25 -->
-                        <div class="box news-articles">
-                            <h2><a href="#">فيديو العربية</a></h2>
-                            <ul>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp20_4x3.jpg">
-                                            <img src="temp/temp11.jpg" alt="">
-                                    </picture>
-                                    <span class="video-icon"></span>
-                                        </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
-                                    <img src="temp/temp12.jpg" alt="" />
-                                            </picture>
-                                    <span class="video-icon"></span>
-                                        </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
-                                    <img src="temp/temp13.jpg" alt="" />
-                                            </picture>
-                                    <span class="video-icon"></span>
-                                        </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
-                                    <img src="temp/temp14.jpg" alt="" />
-                                            </picture>
-                                    <span class="video-icon"></span>
-                                        </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
-                                    <img src="temp/temp15.jpg" alt="" />
-                                            </picture>
-                                    <span class="video-icon"></span>
-                                        </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
-                                    <img src="temp/temp16.jpg" alt="" />
-                                            </picture>
-                                    <span class="video-icon"></span>
-                                        </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
-                                    <img src="temp/temp04.jpg" alt="" />
-                                            </picture>
-                                    <span class="video-icon"></span>
-                                        </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
-                                    <img src="temp/temp05.jpg" alt="" />
-                                            </picture>
-                                    <span class="video-icon"></span>
-                                        </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-        <div class="full-wrapper">
-            <div class="main-content">
-                <!-- Page Section -->
-                <section>
-                    <!-- Area 50 -->
-                    <div class="area-50">
-                        <!-- News Articles 100/75/50/25 -->
-                        <div class="box news-articles">
-                            <h2><a href="#">العرب و العالم</a></h2>
-                            <ul>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                    <img src="temp/temp06.jpg" alt="" />
-                                    </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                    </a>
-                                    <!-- Section Title -->
-                                    <a href="#" class="section-ttl">العالم العربي</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                    <img src="temp/temp07.jpg" alt="" />
-                                    <span class="video-icon"></span>
-                                        </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                    </a>
-                                    <!-- Section Title -->
-                                    <a href="#" class="section-ttl">العالم العربي</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                    <img src="temp/temp13.jpg" alt="" />
-                                    <span class="video-icon"></span>
-                                        </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                    </a>
-                                    <!-- Section Title -->
-                                    <a href="#" class="section-ttl">العالم العربي</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                    <img src="temp/temp14.jpg" alt="" />
-                                    </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                    </a>
-                                    <!-- Section Title -->
-                                    <a href="#" class="section-ttl">العالم العربي</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Area 25 -->
-                    <div class="area-25">
-                        <!-- Photo Gallery 100/75/50/25 -->
-                        <div class="box gallery">
-                            <h2><a href="#">بالصور</a></h2>
-                            <ul>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                    <img src="temp/temp09.jpg" alt="" />
-                                    <span class="photo-icon"></span>
-                                        </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                    <img src="temp/temp10.jpg" alt="" />
-                                    <span class="photo-icon"></span>
-                                        </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Area 25 -->
-                    <div class="area-25">
-                        <!-- Skyscraper only for 25 -->
-                        <div class="box ad25">
-                            <h2>إعلانات</h2>
-                            <!-- Always Keep this 'wrapper' on ads25 -->
-                            <div class="wrapper">
-                                <img src="temp/skyscraper.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- Page Section -->
-                <section>
-                    <!-- Area 50 -->
-                    <div class="area-50">
-                        <!-- News Mode 02 Only 50 / For Other Variations, Use the 'news-articles' Component for 25/50/75/100 -->
-                        <div class="box news-mod02">
-                            <h2><a href="#" title="">الأسواق العربية</a></h2>
-                            <ul>
-                                <!-- Main Article -->
-                                <li>
-                                    <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp18_4x3.jpg">
-                                            <img src="temp/temp00.jpg" alt="" />
-                                    </picture>
-                                    <a class="cover" href="#" title="">
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
-                                        <span class="video-icon"></span>
-                                    </a>
-                                    <!-- Section Title -->
-                                    <a href="#" class="section-ttl">إقتصاد</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                    <img src="temp/temp15.jpg" alt="" />
-                                      <span class="video-icon"></span>
-                                        </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                    <img src="temp/temp16.jpg" alt="" />
-                                    </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Area 25 -->
-                    <div class="area-25">
-                        <!-- Whatever External Content -->
-                        <div class="box external">
-                            <!-- Dummy iFrame Component -->
-                            <script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
-                            <script type="text/javascript">
-                                new TradingView.widget({
-                                    "width": 340,
-                                    "height": 450,
-                                    "symbol": "NASDAQ:AAPL",
-                                    "interval": "D",
-                                    "timezone": "Etc/UTC",
-                                    "theme": "White",
-                                    "style": "1",
-                                    "locale": "en",
-                                    "toolbar_bg": "#f1f3f6",
-                                    "enable_publishing": false,
-                                    "allow_symbol_change": true,
-                                    "hideideas": true
-                                });
-                            </script>
-                        </div>
-
-                    </div>
-                    <!-- Area 25 -->
-                    <div class="area-25">
-                        <!-- Video Gallery 100/75/50/25 / The Second Class Name is Only for Visual Bottom Alignement -->
-                        <div class="box gallery custome-video-home">
-                            <h2><a href="#">الأسواق فيديو</a></h2>
-                            <ul>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp20_4x3.jpg">
-                                            <img src="temp/temp11.jpg" alt="">
-                                    </picture>
-                                    <span class="video-icon"></span>
-                                        </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
-                                    <img src="temp/temp12.jpg" alt="" />
-                                            </picture>
-                                    <span class="video-icon"></span>
-                                        </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <!-- Page Section -->
-                <section>
-                    <!-- Area 75 -->
-                    <div class="area-75">
-                        <!-- Main News Slider 100/75/50 -->
-                        <div class="box news">
-                            <h2><a href="#" title="">أخبار الرياضة</a></h2>
-                            <ul>
-                                <!-- Main Article -->
-                                <li>
-                                    <img src="temp/temp20_4x3.jpg" alt="" />
-                                    <a class="cover" href="#" title="">
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                        <span class="video-icon"></span>
-                                    </a>
-                                    <!-- Section Title -->
-                                    <a href="#" class="section-ttl">إقتصاد</a>
-                                </li>
-                                <li>
-                                    <img src="temp/temp21_4x3.jpg" alt="" />
-                                    <a class="cover" href="#" title="">
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                    </a>
-                                    <!-- Section Title -->
-                                    <a href="#" class="section-ttl">رياضة</a>
-                                </li>
-                                <li>
-                                    <img src="temp/temp22_4x3.jpg" alt="" />
-                                    <a class="cover" href="#" title="">
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                    </a>
-                                    <!-- Section Title -->
-                                    <a href="#" class="section-ttl">العالم العربي</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Area 25 -->
-                    <div class="area-25">
-                        <!-- Video Gallery 100/75/50/25 / The Second Class Name is Only for Visual Bottom Alignement -->
-                        <div class="box gallery custome-video-home">
-                            <h2><a href="#">الرياضة فيديو</a></h2>
-                            <ul>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp20_4x3.jpg">
-                                            <img src="temp/temp11.jpg" alt="">
-                                    </picture>
-                                    <span class="video-icon"></span>
-                                        </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
-                                    <img src="temp/temp12.jpg" alt="" />
-                                            </picture>
-                                    <span class="video-icon"></span>
-                                        </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <!-- Page Section -->
-                <section>
-                    <!-- Area 75 -->
-                    <div class="area-75">
-                        <!-- Main News Slider 100/75/50 -->
-                        <div class="box news">
-                            <h2><a href="#" title="">أخبار السعودية</a></h2>
-                            <ul>
-                                <!-- Main Article -->
-                                <li>
-                                    <img src="temp/temp01.jpg" alt="" />
-                                    <a class="cover" href="#" title="">
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                        <span class="caption">مند 13 ساعة</span>
-                                    </a>
-                                    <!-- Section Title -->
-                                    <a href="#" class="section-ttl">إقتصاد</a>
-                                </li>
-                                <li>
-                                    <img src="temp/temp18_4x3.jpg" alt="" />
-                                    <a class="cover" href="#" title="">
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                        <span class="video-icon"></span>
-                                    </a>
-                                    <!-- Section Title -->
-                                    <a href="#" class="section-ttl">رياضة</a>
-                                </li>
-                                <li>
-                                    <img src="temp/temp19_4x3.jpg" alt="" />
-                                    <a class="cover" href="#" title="">
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                    </a>
-                                    <!-- Section Title -->
-                                    <a href="#" class="section-ttl">العالم العربي</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Area 25 -->
-                    <div class="area-25">
-                        <!-- Video Gallery 100/75/50/25, The Second Class Name is Only for Visual Bottom Alignement -->
-                        <div class="box gallery custome-video-home">
-                            <h2><a href="#">السعودية فيديو</a></h2>
-                            <ul>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp20_4x3.jpg">
-                                            <img src="temp/temp11.jpg" alt="">
-                                    </picture>
-                                    <span class="video-icon"></span>
-                                        </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
-                                    <img src="temp/temp12.jpg" alt="" />
-                                            </picture>
-                                    <span class="video-icon"></span>
-                                        </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <!-- Page Section -->
-                <section>
-                    <!-- Programs Slider -->
-                    <div class="box programs-times">
-                        <h2>
-                        <a href="#">جدول البرامج</a>
-                    </h2>
-                        <!-- Slider -->
-                        <div class="Nwoslider" id="slider">
-
-                            <div class="slider">
-                                <!-- Item -->
-                                <div class="item">
-                                    <a href="#">
-                                        <span class="time">
-                                             <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
-                                        </span>
-                                        <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">الإرهابية في وسائل</span>
-                                        </span>
-                                        <img src="temp/auth01.jpg">
-                                    </a>
-                                </div>
-                                <!-- Item -->
-                                <div class="item">
-                                    <a href="">
-                                        <span class="time">
-                                            <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
-                                        </span>
-                                        <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">شاهد الآن</span>
-                                        </span>
-                                        <img src="temp/program01.jpg">
-                                    </a>
-                                </div>
-                                <!-- Item -->
-                                <div class="item">
-                                    <a href="#">
-                                        <span class="time">
-                                            <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
-                                        </span>
-                                        <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">متوفر على ONAA</span>
-                                        </span>
-                                        <img src="temp/temp17_4x3.jpg">
-                                    </a>
-                                </div>
-                                <!-- Item -->
-                                <div class="item">
-                                    <a href="#" title="">
-                                        <span class="time">
-                                            <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
-                                        </span>
-                                        <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">شاهد الآن</span>
-                                        </span>
-                                        <img src="temp/program04.jpg">
-                                    </a>
-                                </div>
-                                <!-- Item -->
-                                <div class="item">
-                                    <a href="#" title="">
-                                        <span class="time">
-                                            <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
-                                        </span>
-                                        <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">الإرهابية في وسائل</span>
-                                        </span>
-                                        <img src="temp/killer.jpg">
-                                    </a>
-                                </div>
-                                <!-- Item -->
-                                <div class="item active">
-                                    <a href="#">
-                                        <span class="time">
-                                            <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
-                                        </span>
-                                        <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">شاهد الآن</span>
-                                        </span>
-                                        <img src="temp/program02.jpg">
-                                    </a>
-                                </div>
-                                <!-- Item -->
-                                <div class="item">
-                                    <a href="#" title="">
-                                        <span class="time">
-                                            <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
-                                        </span>
-                                        <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">متوفر على ONAA</span>
-                                        </span>
-                                        <img src="temp/temp00.jpg">
-                                    </a>
-                                </div>
-                                <!-- Item -->
-                                <div class="item">
-                                    <a href="#" title="">
-                                        <span class="time">
-                                             <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
-                                        </span>
-                                        <span class="label">
-                                            <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">الإرهابية في وسائل</span>
-                                        </span>
-                                        <img src="temp/program05.jpg">
-                                    </a>
-                                </div>
-                                <!-- Item -->
-                                <div class="item">
-                                    <a href="#" title="">
-                                        <span class="time">
-                                            <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
-                                        </span>
-                                        <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">شاهد الآن</span>
-                                        </span>
-                                        <img src="temp/temp01.jpg">
-                                    </a>
-                                </div>
-                                <!-- Item -->
-                                <div class="item">
-                                    <a href="#" title="">
-                                        <span class="time">
-                                              <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
-                                        </span>
-                                        <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">الإرهابية في وسائل</span>
-                                        </span>
-                                        <img src="temp/temp02.jpg">
-                                    </a>
-                                </div>
-                                <!-- Item -->
-                                <div class="item">
-                                    <a href="#" title="">
-                                        <span class="time">
-                                            <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
-                                        </span>
-                                        <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">متوفر على ONAA</span>
-                                        </span>
-                                        <img src="temp/temp03.jpg">
-                                    </a>
-                                </div>
-                                <!-- Item -->
-                                <div class="item">
-                                    <a href="#" title="">
-                                        <span class="time">
-                                           <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
-                                        </span>
-                                        <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">شاهد الآن</span>
-                                        </span>
-                                        <img src="temp/auth03.jpg">
-                                    </a>
-                                </div>
-                                <div class="item">
-                                    <a href="#" title="">
-                                        <span class="time">
-                                            <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
-                                        </span>
-                                        <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">الإرهابية في وسائل</span>
-                                        </span>
-                                        <img src="temp/temp05.jpg">
-                                    </a>
-                                </div>
-                                <!-- Item -->
-                                <div class="item">
-                                    <a href="#" title="">
-                                        <span class="time">
-                                              <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
-                                        </span>
-                                        <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">شاهد الآن</span>
-                                        </span>
-                                        <img src="temp/program02.jpg">
-                                    </a>
-                                </div>
-                                <!-- Item -->
-                                <div class="item">
-                                    <a href="#" title="">
-                                        <span class="time">
-                                           <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
-                                        </span>
-                                        <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">شاهد الآن</span>
-                                        </span>
-                                        <img src="temp/program04.jpg">
-                                    </a>
-                                </div>
-                                <!-- Item -->
-                                <div class="item">
-                                    <a href="#" title="">
-                                        <span class="time">
-                                         <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
-                                        </span>
-                                        <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">الإرهابية في وسائل</span>
-                                        </span>
-                                        <img src="temp/auth05.jpg">
-                                    </a>
-                                </div>
-                                <!-- Item -->
-                                <div class="item">
-                                    <a href="#" title="">
-                                        <span class="time">
-                                              <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
-                                        </span>
-                                        <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">شاهد الآن</span>
-                                        </span>
-                                        <img src="temp/temp17_4x3.jpg">
-                                    </a>
-                                </div>
-                                <!-- Item -->
-                                <div class="item">
-                                    <a href="#" title="">
-                                        <span class="time">
-                                         <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
-                                        </span>
-                                        <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">شاهد الآن</span>
-                                        </span>
-                                        <img src="temp/program04.jpg">
-                                    </a>
-                                </div>
-                                <!-- Item -->
-                                <div class="item">
-                                    <a href="#" title="">
-                                        <span class="time">
-                                            <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
-                                        </span>
-                                        <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">متوفر على ONAA</span>
-                                        </span>
-                                        <img src="temp/program03.jpg">
-                                    </a>
-                                </div>
-                                <!-- Item -->
-                                <div class="item">
-                                    <a href="#" title="">
-                                        <span class="time">
-                                             <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
-                                        </span>
-                                        <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">شاهد الآن</span>
-                                        </span>
-                                        <img src="temp/program02.jpg">
-                                    </a>
-                                </div>
-                                <!-- Item -->
-                                <div class="item">
-                                    <a href="#" title="">
-                                        <span class="time">
-                                              <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
-                                        </span>
-                                        <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">متوفر على ONAA</span>
-                                        </span>
-                                        <img src="temp/program03.jpg">
-                                    </a>
-                                </div>
-                                <!-- Item -->
-                                <div class="item">
-                                    <a href="#" title="">
-                                        <span class="time">
-                                              <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
-                                        </span>
-                                        <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">شاهد الآن</span>
-                                        </span>
-                                        <img src="temp/program02.jpg">
-                                    </a>
-                                </div>
-                                <!-- Item -->
-                                <div class="item">
-                                    <a href="#" title="">
-                                        <span class="time">
-                                          <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
-                                        </span>
-                                        <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">شاهد الآن</span>
-                                        </span>
-                                        <img src="temp/program01.jpg">
-                                    </a>
-                                </div>
-                                <!-- Item -->
-                                <div class="item" id="last">
-                                    <a href="">
-                                        <span class="time">
-                                              <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
-                                        </span>
-                                        <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">الإرهابية في وسائل</span>
-                                        </span>
-                                        <img src="temp/program04.jpg">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="controls" id="controls">
-                                <button id="prev"></button>
-                                <button id="next"></button>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-                <!-- Page Section -->
-                <section>
-                    <!-- Area 75 -->
-                    <div class="area-75">
-                        <!-- Programs 100/75/50/25 -->
-                        <div class="box news programs">
-                            <h2><a href="#" title="">البرامج</a></h2>
-                            <ul>
-                                <li>
-                                    <img src="temp/program01.jpg" alt="" />
-                                    <a class="cover" href="#" title="">
-                                        <span class="ttl">صناعة الموت</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <img src="temp/program02.jpg" alt="" />
-                                    <a class="cover" href="#" title="">
-                                        <span class="ttl">صناعة الموت</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <img src="temp/program03.jpg" alt="" />
-                                    <a class="cover" href="#" title="">
-                                        <span class="ttl">صناعة الموت</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <img src="temp/program04.jpg" alt="" />
-                                    <a class="cover" href="#" title="">
-                                        <span class="ttl">صناعة الموت</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <img src="temp/program05.jpg" alt="" />
-                                    <a class="cover" href="#" title="">
-                                        <span class="ttl">صناعة الموت</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <img src="temp/program06.jpg" alt="" />
-                                    <a class="cover" href="#" title="">
-                                        <span class="ttl">صناعة الموت</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Area 25 -->
-                    <div class="area-25">
-                        <!-- Opinions only for 25 -->
-                        <div class="box opinions">
-                            <h2><a href="#" title="">الأراء</a></h2>
-                            <ul>
-                                <li>
-                                    <a class="pic" href="#" title="">
-                                        <img src="temp/auth01.jpg" alt="" />
-                                    </a>
-                                    <a class="ttl" href="#" title="">الهجوم ، في ليلة الكريملن</a>
-                                    <a class="author" href="#" title="">محمد حمدان ، القاهرة</a>
-                                </li>
-                                <li>
-                                    <a class="pic" href="#" title="">
-                                        <img src="temp/auth03.jpg" alt="" />
-                                    </a>
-                                    <a class="ttl" href="#" title="">الهجوم ، في ليلة الكريملن</a>
-                                    <a class="author" href="#" title="">محمد حمدان ، القاهرة</a>
-                                </li>
-                                <li>
-                                    <a class="pic" href="#" title="">
-                                        <img src="temp/auth04.jpg" alt="" />
-                                    </a>
-                                    <a class="ttl" href="#" title="">الهجوم ، في ليلة الكريملن</a>
-                                    <a class="author" href="#" title="">محمد حمدان ، القاهرة</a>
-                                </li>
-                                <li>
-                                    <a class="pic" href="#" title="">
-                                        <img src="temp/auth05.jpg" alt="" />
-                                    </a>
-                                    <a class="ttl" href="#" title="">الهجوم ، في ليلة الكريملن</a>
-                                    <a class="author" href="#" title="">محمد حمدان ، القاهرة</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
+    </nav>
+    <div class="leaderboard">
+        <div id="adSlot-inPage-multipleSize-top"></div>
     </div>
-
-    <!-- Footer -->
-    <footer>
-        <div class="main-content">
-            <div class="footer-separator">
-                <!-- Footer Logo -->
-                <a class="logo" href="#">العربية</a>
-                <div class="copywrites">
-                    © جميع الحقوق محفوظة لقناة العربية 2017</div>
+    <!-- Page Content -->
+    <div class="container">
+        <!-- Popup Box -->
+        <div class="row">
+            <div class="box popup">
+                <div class="col-md-12">
+                    <h5><span class="ttl">الموجز الإخباري</span><a href="#" class="glyphicon glyphicon-remove close"></a><span class="caption">18:30</span><span class="time">GMT</span></h5>
+                    <a href="#" class="teaser-wrapper">
+                        <img class="img-responsive" src="temp/news14.jpg" alt="" />
+                        <span class="vid-icon"><span class="glyphicon glyphicon-play"></span></span>
+                    </a>
+                </div>
             </div>
-            <ul>
-                <li>العرب والعالم</li>
-                <li><a href="#" title="">اليمن</a>
-                </li>
-                <li><a href="#" title="">سوريا</a>
-                </li>
-                <li><a href="#" title="">العراق</a>
-                </li>
-                <li><a href="#" title="">اوكرانيا</a>
-                </li>
-            </ul>
-            <ul>
-                <li>رياضة</li>
-                <li><a href="#" title="">عربية</a>
-                </li>
-                <li><a href="#" title="">عالمية</a>
-                </li>
-                <li><a href="#" title="">الدوريات</a>
-                </li>
-                <li><a href="#" title="">سعودية</a>
-                </li>
-                <li><a href="#" title="">مباريات اليوم</a>
-                </li>
-            </ul>
-            <ul>
-                <li>أسواق</li>
-                <li><a href="#" title="">عقار</a>
-                </li>
-                <li><a href="#" title="">بنوك</a>
-                </li>
-                <li><a href="#" title="">اقتصاد</a>
-                </li>
-                <li><a href="#" title="">اسواق</a>
-                </li>
-                <li><a href="#" title="">تداول</a>
-                </li>
-                <li><a href="#" title="">سوق دبي</a>
-                </li>
-            </ul>
-            <ul>
-                <li>السعودية</li>
-                <li><a href="#" title="">عقار</a>
-                </li>
-                <li><a href="#" title="">بنوك</a>
-                </li>
-                <li><a href="#" title="">اقتصاد</a>
-                </li>
-                <li><a href="#" title="">اسواق</a>
-                </li>
-                <li><a href="#" title="">تداول</a>
-                </li>
-                <li><a href="#" title="">سوق دبي</a>
-                </li>
-            </ul>
-            <ul>
-                <li>المزيد</li>
-                <li><a href="#" title="">عقار</a>
-                </li>
-                <li><a href="#" title="">بنوك</a>
-                </li>
-                <li><a href="#" title="">اقتصاد</a>
-                </li>
-                <li><a href="#" title="">اسواق</a>
-                </li>
-                <li><a href="#" title="">تداول</a>
-                </li>
-                <li><a href="#" title="">سوق دبي</a>
-                </li>
-            </ul>
-            <ul>
-                <li>رياضة</li>
-                <li><a href="#" title="">عربية</a>
-                </li>
-                <li><a href="#" title="">عالمية</a>
-                </li>
-                <li><a href="#" title="">الدوريات</a>
-                </li>
-                <li><a href="#" title="">سعودية</a>
-                </li>
-                <li><a href="#" title="">مباريات اليوم</a>
-                </li>
-            </ul>
         </div>
-    </footer>
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+
+        <!-- Main News Box -->
+        <div class="row">
+            <div class="box main-slider">
+                <div class="col-md-12">
+                    <a href="#" class="teaser-wrapper">
+                        <img class="img-responsive" src="temp/news07.jpg" alt="" />
+                    </a>
+                    <h3><a href="#">الطائرة الروسية.. تضارب دولي حول "عبوة" داعش</a></h3>
+                    <h4><a href="#">مصر وروسيا تعتبران التصريحات البريطانية والأميركية"مجرد استنتاجات"</a></h4>
+                    <p>وقد قال مصدر مقرب من التحقيقات في الصندوقين الأسودين بمصر إن تحطم الطائرة الروسية يرجع على الأرجح إلى انفجار لم يتضح إن كان سببه قنبلة أو وقود. وأضاف المصدر أن المحققين يفحصون التربة في موقع سقوط حطام الطائرة بحثا.</p>
+
+                    <ul class="news-headlines">
+                        <li><a href="#">لأول مرة.. وزيرة مسلمة في حكومة كندا</a>
+                        </li>
+                        <li><a href="#">جورج حبيقة ضيف شرف في معرض "سواروفسكي"</a>
+                        </li>
+                        <li><a href="#">صمّمي عطرك الخاص من "ديور"</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Static Promos -->
+        <div class="row">
+            <div class="box static_promos">
+                <img class="prmo_ttl" src="gfx/promo_ttl.jpg" alt="" />
+                <!-- News Promo Image -->
+                <a class="news_promo" href="#">
+                    <img src="gfx/news_promo.jpg" alt="">
+                </a>
+
+                <!-- Business Promo Image -->
+                <a class="business_promo" href="#">
+                    <img src="gfx/business_promo.jpg" alt="">
+                </a>
+
+                <!-- Sport Promo Image -->
+                <a class="sport_promo" href="#">
+                    <img src="gfx/sport_promo.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- Most Read Box -->
+        <div class="row">
+            <div class="box mod01">
+                <div class="col-md-12">
+                    <h5><a href="#">الأكثر قراءة</a></h5>
+                    <a href="#" class="teaser-wrapper">
+                        <img class="img-responsive" src="temp/news02.jpg" alt="" />
+                        <span class="vid-icon"><span class="glyphicon glyphicon-play"></span></span>
+                    </a>
+                    <h3><a href="#">الطائرة الروسية.. تضارب دولي حول "عبوة" داعش</a></h3>
+                    <p>وقد قال مصدر مقرب من التحقيقات في الصندوقين الأسودين بمصر إن تحطم الطائرة الروسية يرجع على الأرجح إلى انفجار لم يتضح إن كان سببه قنبلة أو وقود. وأضاف المصدر أن المحققين يفحصون التربة في موقع سقوط حطام الطائرة بحثا.</p>
+                    <div class="thumbs">
+                        <div class="col-xs-6">
+                            <a href="#" class="thumbnail">
+                                <img src="temp/news03.jpg" alt="" />
+                                <span class="vid-icon"><span class="glyphicon glyphicon-play"></span></span>
+                                <span class="ttl">جورج ضيف شرف في معرض "سواروفسكي"</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6">
+                            <a href="#" class="thumbnail">
+                                <img src="temp/news04.jpg" alt="" />
+                                <span class="ttl">صمّمي عطرك الخاص من "ديور"</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Alarabiya Screen -->
+        <div class="row">
+            <div class="box mod02">
+                <div class="col-md-12">
+                    <h5><a href="#">شاشة العربية</a></h5>
+                    <div class="thumbs">
+                        <div class="col-xs-6">
+                            <a href="#" class="thumbnail">
+                                <img src="temp/news05.jpg" alt="" />
+                                <span class="vid-icon"><span class='glyphicon glyphicon-play'></span></span>
+                                <span class="duration">18:30</span>
+                                <span class="ttl">جورج ضيف شرف في معرض "سواروفسكي"</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6">
+                            <a href="#" class="thumbnail">
+                                <img src="temp/news06.jpg" alt="" />
+                                <span class="vid-icon"><span class='glyphicon glyphicon-play'></span></span>
+                                <span class="duration">102:30</span>
+                                <span class="ttl">صمّمي عطرك الخاص من "ديور"</span>
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="news-headlines">
+                        <li><a href="#">لأول مرة.. وزيرة مسلمة في حكومة كندا</a>
+                        </li>
+                        <li><a href="#">جورج حبيقة ضيف شرف في معرض "سواروفسكي"</a>
+                        </li>
+                        <li><a href="#">صمّمي عطرك الخاص من "ديور"</a>
+                        </li>
+                    </ul>
+                    <div class="more"><a href="#">المزيد</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- Opinions Box -->
+        <div class="row">
+            <div class="box mod01">
+                <div class="col-md-12">
+                    <h5><a href="#">آراء</a></h5>
+
+                    <!-- Item -->
+                    <div class="media">
+                        <a href="#" class="pull-right">
+                            <img src="temp/auth01.jpg" class="media-object" alt="" />
+                        </a>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">القاهرة ومعالجة أزمة الطائرة</a>
+                            <a href="#" class="auth">إسلام أباد</a>
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <div class="media odd">
+                        <a href="#" class="pull-right">
+                            <img src="temp/auth02.jpg" class="media-object" alt="" />
+                        </a>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">القاهرة ومعالجة أزمة الطائرة</a>
+                            <a href="#" class="auth">إسلام أباد</a>
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <div class="media">
+                        <a href="#" class="pull-right">
+                            <img src="temp/auth03.jpg" class="media-object" alt="" />
+                        </a>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">القاهرة ومعالجة أزمة الطائرة</a>
+                            <a href="#" class="auth">إسلام أباد</a>
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <div class="media odd">
+                        <a href="#" class="pull-right">
+                            <img src="temp/auth04.jpg" class="media-object" alt="" />
+                        </a>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">القاهرة ومعالجة أزمة الطائرة</a>
+                            <a href="#" class="auth">إسلام أباد</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- North Africa Box -->
+        <div class="row">
+            <div class="box north-africa">
+                <div class="col-md-12">
+                    <h5><a href="#">المغرب العربي</a></h5>
+                    <a href="#" class="teaser-wrapper">
+                        <img class="img-responsive" src="temp/news01.jpg" alt="" />
+                    </a>
+                    <h3><a href="#">الطائرة الروسية.. تضارب دولي حول "عبوة" داعش</a></h3>
+                    <h4><a href="#">مصر وروسيا تعتبران التصريحات البريطانية والأميركية"مجرد استنتاجات"</a></h4>
+                    <p>وقد قال مصدر مقرب من التحقيقات في الصندوقين الأسودين بمصر إن تحطم الطائرة الروسية يرجع على الأرجح إلى انفجار لم يتضح إن كان سببه قنبلة أو وقود. وأضاف المصدر أن المحققين يفحصون التربة في موقع سقوط حطام الطائرة بحثا.</p>
+
+                    <ul class="news-headlines">
+                        <li><a href="#">لأول مرة.. وزيرة مسلمة في حكومة كندا</a>
+                        </li>
+                        <li><a href="#">جورج حبيقة ضيف شرف في معرض "سواروفسكي"</a>
+                        </li>
+                        <li><a href="#">صمّمي عطرك الخاص من "ديور"</a>
+                        </li>
+                    </ul>
+                    <div class="more"><a href="#">المزيد</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- North Africa Box -->
+        <div class="row">
+            <div class="box aswaq">
+                <div class="col-md-12">
+                    <h5><a href="#">أسواق</a></h5>
+                    <a href="#" class="teaser-wrapper">
+                        <img class="img-responsive" src="temp/news07.jpg" alt="" />
+                    </a>
+                    <h3><a href="#">الطائرة الروسية.. تضارب دولي حول "عبوة" داعش</a></h3>
+                    <h4><a href="#">مصر وروسيا تعتبران التصريحات البريطانية والأميركية"مجرد استنتاجات"</a></h4>
+                    <p>وقد قال مصدر مقرب من التحقيقات في الصندوقين الأسودين بمصر إن تحطم الطائرة الروسية يرجع على الأرجح إلى انفجار لم يتضح إن كان سببه قنبلة أو وقود. وأضاف المصدر أن المحققين يفحصون التربة في موقع سقوط حطام الطائرة بحثا.</p>
+
+                    <ul class="news-headlines">
+                        <li><a href="#">لأول مرة.. وزيرة مسلمة في حكومة كندا</a>
+                        </li>
+                        <li><a href="#">جورج حبيقة ضيف شرف في معرض "سواروفسكي"</a>
+                        </li>
+                        <li><a href="#">صمّمي عطرك الخاص من "ديور"</a>
+                        </li>
+                    </ul>
+                    <div class="more"><a href="#">المزيد</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- Sports Box -->
+        <div class="row">
+            <div class="box sports">
+                <div class="col-md-12">
+                    <h5><a href="#">رياضة</a></h5>
+                    <a href="#" class="teaser-wrapper">
+                        <img class="img-responsive" src="temp/news08.jpg" alt="" />
+                    </a>
+                    <h3><a href="#">الطائرة الروسية.. تضارب دولي حول "عبوة" داعش</a></h3>
+                    <h4><a href="#">مصر وروسيا تعتبران التصريحات البريطانية والأميركية"مجرد استنتاجات"</a></h4>
+                    <p>وقد قال مصدر مقرب من التحقيقات في الصندوقين الأسودين بمصر إن تحطم الطائرة الروسية يرجع على الأرجح إلى انفجار لم يتضح إن كان سببه قنبلة أو وقود. وأضاف المصدر أن المحققين يفحصون التربة في موقع سقوط حطام الطائرة بحثا.</p>
+
+                    <ul class="news-headlines">
+                        <li><a href="#">لأول مرة.. وزيرة مسلمة في حكومة كندا</a>
+                        </li>
+                        <li><a href="#">جورج حبيقة ضيف شرف في معرض "سواروفسكي"</a>
+                        </li>
+                        <li><a href="#">صمّمي عطرك الخاص من "ديور"</a>
+                        </li>
+                    </ul>
+                    <div class="more"><a href="#">المزيد</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- Default Box -->
+        <div class="row">
+            <div class="box default">
+                <div class="col-md-12">
+                    <h5><a href="#">العرب و العالم</a></h5>
+                    <a href="#" class="teaser-wrapper">
+                        <img class="img-responsive" src="temp/news09.jpg" alt="" />
+                        <span class="vid-icon"><span class="glyphicon glyphicon-play"></span></span>
+                    </a>
+                    <h3><a href="#">الطائرة الروسية.. تضارب دولي حول "عبوة" داعش</a></h3>
+                    <h4><a href="#">مصر وروسيا تعتبران التصريحات البريطانية والأميركية"مجرد استنتاجات"</a></h4>
+                    <p>وقد قال مصدر مقرب من التحقيقات في الصندوقين الأسودين بمصر إن تحطم الطائرة الروسية يرجع على الأرجح إلى انفجار لم يتضح إن كان سببه قنبلة أو وقود. وأضاف المصدر أن المحققين يفحصون التربة في موقع سقوط حطام الطائرة بحثا.</p>
+
+                    <ul class="news-headlines">
+                        <li><a href="#">لأول مرة.. وزيرة مسلمة في حكومة كندا</a>
+                        </li>
+                        <li><a href="#">جورج حبيقة ضيف شرف في معرض "سواروفسكي"</a>
+                        </li>
+                        <li><a href="#">صمّمي عطرك الخاص من "ديور"</a>
+                        </li>
+                    </ul>
+                    <div class="more"><a href="#">المزيد</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- Social Default Box -->
+        <div class="row">
+            <div class="box default social_box">
+                <div class="col-md-12">
+                    <h5><a href="#">المواقع الاجتماعية</a></h5>
+                    <a href="#" class="teaser-wrapper">
+                        <img class="img-responsive" src="temp/news09.jpg" alt="" />
+                        <span class="vid-icon"><span class="glyphicon glyphicon-play"></span></span>
+                    </a>
+                    <h3><a href="#">الطائرة الروسية.. تضارب دولي حول "عبوة" داعش</a></h3>
+                    <h4><a href="#">مصر وروسيا تعتبران التصريحات البريطانية والأميركية"مجرد استنتاجات"</a></h4>
+                    <p>وقد قال مصدر مقرب من التحقيقات في الصندوقين الأسودين بمصر إن تحطم الطائرة الروسية يرجع على الأرجح إلى انفجار لم يتضح إن كان سببه قنبلة أو وقود. وأضاف المصدر أن المحققين يفحصون التربة في موقع سقوط حطام الطائرة بحثا.</p>
+
+                    <ul class="news-headlines">
+                        <li><a href="#">لأول مرة.. وزيرة مسلمة في حكومة كندا</a>
+                        </li>
+                        <li><a href="#">جورج حبيقة ضيف شرف في معرض "سواروفسكي"</a>
+                        </li>
+                        <li><a href="#">صمّمي عطرك الخاص من "ديور"</a>
+                        </li>
+                    </ul>
+                    <div class="more"><a href="#">المزيد</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- Carecature Box -->
+        <div class="row">
+            <div class="box carecature">
+                <div class="col-md-12">
+                    <h5><a href="#">زاوية الكاريكاتير</a></h5>
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="6"></li>
+                            <li data-target="#myCarousel" data-slide-to="5"></li>
+                            <li data-target="#myCarousel" data-slide-to="4"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+                        </ol>
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item">
+                                <img src="temp/gal06.jpg" alt="" />
+                            </div>
+                            <div class="item">
+                                <img src="temp/gal05.jpg" alt="" />
+                            </div>
+                            <div class="item">
+                                <img src="temp/gal04.jpg" alt="" />
+                            </div>
+                            <div class="item">
+                                <img src="temp/gal03.jpg" alt="" />
+                            </div>
+                            <div class="item">
+                                <img src="temp/gal02.jpg" alt="" />
+                            </div>
+                            <div class="item active">
+                                <img src="temp/gal01.jpg" alt="" />
+                            </div>
+                        </div>
+                        <!-- Carousel controls -->
+                        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sports Box -->
+        <div class="row">
+            <div class="box ksa">
+                <div class="col-md-12">
+                    <h5><a href="#">السعودية</a></h5>
+                    <a href="#" class="teaser-wrapper">
+                        <img class="img-responsive" src="temp/news10.jpg" alt="" />
+                        <span class="vid-icon"><span class="glyphicon glyphicon-play"></span></span>
+                    </a>
+                    <h3><a href="#">الطائرة الروسية.. تضارب دولي حول "عبوة" داعش</a></h3>
+                    <h4><a href="#">مصر وروسيا تعتبران التصريحات البريطانية والأميركية"مجرد استنتاجات"</a></h4>
+                    <p>وقد قال مصدر مقرب من التحقيقات في الصندوقين الأسودين بمصر إن تحطم الطائرة الروسية يرجع على الأرجح إلى انفجار لم يتضح إن كان سببه قنبلة أو وقود. وأضاف المصدر أن المحققين يفحصون التربة في موقع سقوط حطام الطائرة بحثا.</p>
+
+                    <ul class="news-headlines">
+                        <li><a href="#">لأول مرة.. وزيرة مسلمة في حكومة كندا</a>
+                        </li>
+                        <li><a href="#">جورج حبيقة ضيف شرف في معرض "سواروفسكي"</a>
+                        </li>
+                        <li><a href="#">صمّمي عطرك الخاص من "ديور"</a>
+                        </li>
+                    </ul>
+                    <div class="more"><a href="#">المزيد</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- Programs Box -->
+        <div class="row">
+            <div class="box programs">
+                <div class="col-md-12">
+                    <h5><a href="#">برامج العربية</a></h5>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="temp/prog01.jpg" class="img-responsive" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="temp/prog02.jpg" class="img-responsive" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="temp/prog03.jpg" class="img-responsive" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="temp/prog04.jpg" class="img-responsive" alt="" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Top Content Box -->
+        <div class="row">
+            <div class="box mod01">
+                <div class="col-md-12">
+                    <h5><a href="#">اختيارات القراء</a></h5>
+                    <a href="#" class="teaser-wrapper">
+                        <img class="img-responsive" src="temp/news11.jpg" alt="" />
+                    </a>
+                    <h3><a href="#">الطائرة الروسية.. تضارب دولي حول "عبوة" داعش</a></h3>
+                    <p>وقد قال مصدر مقرب من التحقيقات في الصندوقين الأسودين بمصر إن تحطم الطائرة الروسية يرجع على الأرجح إلى انفجار لم يتضح إن كان سببه قنبلة أو وقود. وأضاف المصدر أن المحققين يفحصون التربة في موقع سقوط حطام الطائرة بحثا.</p>
+                    <div class="thumbs">
+                        <div class="col-xs-6">
+                            <a href="#" class="thumbnail">
+                                <img src="temp/news12.jpg" alt="" />
+                                <span class="vid-icon"><span class="glyphicon glyphicon-play"></span></span>
+                                <span class="ttl">جورج ضيف شرف في معرض "سواروفسكي"</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6">
+                            <a href="#" class="thumbnail">
+                                <img src="temp/news13.jpg" alt="" />
+                                <span class="ttl">صمّمي عطرك الخاص من "ديور"</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>جميع الحقوق محفوظة &copy; لقناة العربية 2015</p>
+                    <a href="#">النسخة الكاملة للموقع</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-2-1-4-min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script src="js/jquery-mobile-custom-min.js"></script>
+    <script src="js/bootstrap-min.js"></script>
+    <script src="js/scripts.js"></script>
+
 </body>
 
 </html>
