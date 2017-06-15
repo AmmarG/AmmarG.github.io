@@ -219,8 +219,8 @@
         width: 49% !important;
         height: auto !important;
         float: none !important;
-        margin: 0 !important;
-        padding: 0 !important;
+        margin: 0 0 auto 0 !important;
+        padding: 0 0 auto 0 !important;
     }
     .video-icon,
     .photo-icon {
@@ -356,9 +356,10 @@
         font-size: 17px;
     }
     .news.programs ul li {
-        margin-bottom: 8px;
+        margin-bottom: 8px !important;
     }
-    .area-25 .latest-news .time {
+    .area-25 .latest-news .time,
+    .area-25 .latest-news .ttl {
         margin-right: 0;
     }
     footer {
@@ -441,6 +442,7 @@
         padding-right: 0;
     }
     footer li:first-child::after,
+    footer li:last-child::after,
     footer .social li::after {
         content: "";
         padding: 0;
@@ -463,5 +465,8 @@
     }
     footer ul {
         padding: 10px 0;
+    }
+    .area-25 .latest-news .ttl {
+        margin-right: 0;
     }
 }
