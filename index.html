@@ -31,7 +31,6 @@
         <div class="main-content">
             <div class="lbl">عاجل</div>
             <p>شبكة شام: قصف عنيف بالمدفعية الثقيلة على أحياء برزة والقابون ومخيم اليرموك</p>
-            <span class="close">x</span>
         </div>
     </div>
     <!-- Extra Wrapper Top -->
@@ -772,7 +771,11 @@
                             <ul>
                                 <!-- Main Article -->
                                 <li>
-                                    <img src="temp/temp20_4x3.jpg" alt="" />
+                                    <!-- Aspect Ration Change on mobile -->
+                                    <picture>
+                                        <source media="(max-width: 480px)" srcset="temp/temp18_4x3.jpg">
+                                            <img src="temp/temp17_4x3.jpg" alt="">
+                                    </picture>
                                     <a class="cover" href="#" title="">
                                         <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
                                         <span class="video-icon"></span>
@@ -845,7 +848,11 @@
                             <ul>
                                 <!-- Main Article -->
                                 <li>
-                                    <img src="temp/temp01.jpg" alt="" />
+                                    <!-- Aspect Ration Change on mobile -->
+                                    <picture>
+                                        <source media="(max-width: 480px)" srcset="temp/temp18_4x3.jpg">
+                                            <img src="temp/temp17_4x3.jpg" alt="">
+                                    </picture>
                                     <a class="cover" href="#" title="">
                                         <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
                                         <span class="caption">مند 13 ساعة</span>
@@ -1359,11 +1366,39 @@
             <div class="footer-separator">
                 <!-- Footer Logo -->
                 <a class="logo" href="#">العربية</a>
-                <div class="copywrites">
+                <div class="copyrights">
                     © جميع الحقوق محفوظة لقناة العربية 2017</div>
             </div>
+            <!-- Social -->
+            <div class="social">
+                <div class="lbl">تابعنا</div>
+                <ul>
+                    <li class="fb">
+                        <a href="#" title=""></a>
+                    </li>
+                    <li class="twtr">
+                        <a href="#" title=""></a>
+                    </li>
+                    <li class="insta">
+                        <a href="#" title=""></a>
+                    </li>
+                    <li class="snap">
+                        <a href="#" title=""></a>
+                    </li>
+                    <li class="yt">
+                        <a href="#" title=""></a>
+                    </li>
+                    <li class="gplus">
+                        <a href="#" title=""></a>
+                    </li>
+                    <li class="telegram">
+                        <a href="#" title=""></a>
+                    </li>
+                </ul>
+            </div>
             <ul>
-                <li>العرب والعالم</li>
+                <li><a href="#">العرب والعالم</a>
+                </li>
                 <li><a href="#" title="">اليمن</a>
                 </li>
                 <li><a href="#" title="">سوريا</a>

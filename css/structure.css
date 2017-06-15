@@ -148,6 +148,11 @@ a {
     src: url("../fonts/DroidKufi-Bold.eot");
     src: url('../fonts/DroidKufi-Bold.eot?') format('eot'), url("../fonts/DroidKufi-Regular.woff") format("woff"), url("../fonts/DroidKufi-Bold.ttf") format("truetype");
 }
+@font-face {
+    font-family: Arabiya;
+    src: url("../fonts/BoutrosArabiyaB.eot");
+    src: url('../fonts/BoutrosArabiyaB.eot?') format('eot'), url("../fonts/BoutrosArabiyaB.woff") format("woff"), url("../fonts/BoutrosArabiyaB.ttf") format("truetype");
+}
 body {
     text-align: right;
     font-family: DroidKufiRegular;
@@ -779,7 +784,7 @@ footer .logo {
     padding-left: 25px;
     width: 145px;
 }
-footer .copywrites {
+footer .copyrights {
     float: left;
     font-size: 11px;
     padding: 22px 20px 0 0;
@@ -955,17 +960,16 @@ input::-webkit-input-placeholder {
 .breaking-news .main-content {
     padding: 10px 0;
 }
-.breaking-news .close {
-    width: 20px;
-    height: 20px;
-    margin: 17px 0 0 10px;
-    display: block;
-    cursor: pointer;
-    font-family: Tahoma;
-    font-size: 17px;
-    line-height: 90%;
-    padding-right: 4px;
-}
 .box {
     margin-bottom: 15px;
+}
+footer .social {
+    font-family: Arabiya;
+    font-size: 31px;
+    display: none;
+}
+
+.social li a {
+    width: 100%;
+    height: 100%;
 }

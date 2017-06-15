@@ -230,8 +230,8 @@ $(document).ready(function() {
     };
 
     function breakingClose() {
-        $('.breaking-news .close').click(function() {
-            $('.breaking-news').slideUp(300);
+        $('.breaking-news').click(function() {
+            $(this).slideUp(300);
         });
     };
     $('.breaking-news').hide();

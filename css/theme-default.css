@@ -8,6 +8,10 @@ footer .logo,
     background-image: url(../gfx/sprites-default.png);
     background-repeat: no-repeat;
 }
+footer .social li {
+    background-image: url(../gfx/social.png);
+    background-repeat: no-repeat;
+}
 a.cover {
     background: url('../gfx/gradient.png') right -150px repeat-x;
 }
@@ -41,9 +45,30 @@ footer .logo {
 .btn-search {
     background-position: 0 -390px;
 }
+footer .social .fb {
+    background-position: 0 0;
+}
+footer .social .twtr {
+    background-position: -44px 0;
+}
+footer .social .insta {
+    background-position: -88px 0;
+}
+footer .social .snap {
+    background-position: -132px 0;
+}
+footer .social .yt {
+    background-position: -176px 0;
+}
+footer .social .gplus {
+    background-position: -220px 0;
+}
+footer .social .telegram {
+    background-position: -263px 0;
+}
 body,
 footer .logo,
-footer .copywrites {
+footer .copyrights {
     background-color: #f1f1f1;
 }
 .top-info {
@@ -98,7 +123,8 @@ header a:hover,
 .slider > .item,
 .breaking-news,
 .item a,
-.item a:hover {
+.item a:hover,
+footer .social {
     color: #FFF;
 }
 header nav a,
@@ -123,7 +149,7 @@ header nav a:hover {
 .ad25 h2 {
     color: #b7b6b6;
 }
-footer .copywrites,
+footer .copyrights,
 footer a {
     color: #918d91;
 }

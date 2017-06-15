@@ -7,7 +7,8 @@
     }
     .main-header .logo,
     .main-header .live-streaming,
-    .main-header .mobile-searh {
+    .main-header .mobile-searh,
+    .footer-separator .logo {
         background-image: url(../gfx/sprites-mobile.png);
         background-repeat: no-repeat;
     }
@@ -22,7 +23,8 @@
         padding-top: 0;
         border: 0;
     }
-    .main-header .logo {
+    .main-header .logo,
+    .footer-separator .logo {
         background-position: 0 0;
         flex: 0 0 100px;
         height: 42px;
@@ -176,9 +178,9 @@
     .news li:first-child,
     .area-50 .news li:first-child,
     .news-mod02 li:first-child {
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px;
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom: 10px !important;
     }
     .news ul li:first-child .ttl,
     .news-mod02 ul li:first-child .ttl {
@@ -199,7 +201,11 @@
         padding: 5px 10px;
     }
     a.cover {
-        background-position: right -220px;
+        background-position: right -200px;
+    }
+    .news li:first-child a.cover,
+    .news-mod02 li:first-child a.cover {
+        background-position: right -135px;
     }
     .news.programs li a.cover,
     .news.programs li:first-child a.cover {
@@ -210,11 +216,11 @@
     .dark .news-articles li,
     .news.programs ul li,
     .news-mod02 li {
-        width: 49%;
-        height: auto;
-        float: none;
-        margin: 0;
-        padding: 0;
+        width: 49% !important;
+        height: auto !important;
+        float: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
     .video-icon,
     .photo-icon {
@@ -279,9 +285,6 @@
     }
     .gallery li a {
         color: #333;
-    }
-    .gallery li:nth-last-child(3):nth-child(odd) {
-        xdisplay: none;
     }
     .ad25,
     .dark .news-articles li,
@@ -355,7 +358,110 @@
     .news.programs ul li {
         margin-bottom: 8px;
     }
+    .area-25 .latest-news .time {
+        margin-right: 0;
+    }
     footer {
-        display: none;
+        background: #242323 url('../gfx/footer-bg-mob.png') right bottom no-repeat;
+        padding: 0 20px;
+    }
+    .footer-separator {
+        order: 1;
+        background: none;
+        margin-bottom: 0;
+        padding: 20px 0 10px 0;
+        border-width: 1 0 0 0;
+    }
+    .footer-separator .logo {
+        background-color: transparent;
+        width: 100px;
+        margin: 0;
+        padding: 0;
+    }
+    .footer-separator .copyrights {
+        background: transparent;
+        padding: 0;
+        margin: 0;
+        font-family: tahoma;
+        font-size: 11px;
+        line-height: 460%;
+    }
+    footer .social {
+        width: 100%;
+        display: block;
+        padding: 20px 0;
+    }
+    footer .social .lbl {
+        float: right;
+        line-height: 100%;
+    }
+    footer .social ul {
+        float: left;
+        padding: 0;
+        width: auto !important;
+        border: none;
+        padding: 0;
+    }
+    footer .social li {
+        width: 32px;
+        height: 32px;
+        float: left;
+        margin-right: 10px;
+    }
+    footer .social li:first-child {
+        width: 32px;
+    }
+    footer .main-content ul {
+        display: block;
+        width: 100%;
+    }
+    footer li:first-child,
+    footer li:first-child a {
+        font-family: Arabiya;
+        font-size: 23px;
+        width: 30%;
+        padding-right: 0;
+        height: 100%;
+    }
+    footer li:first-child a {
+        width: 100%;
+    }
+    footer li {
+        float: right;
+        padding: 0 10px 0 0;
+    }
+    footer li a {
+        font-size: 12px;
+    }
+    footer li::after {
+        content: ".";
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 0;
+        padding-right: 0;
+    }
+    footer li:first-child::after,
+    footer .social li::after {
+        content: "";
+        padding: 0;
+    }
+    footer ul,
+    .footer-separator {
+        border-top: solid 1px #2f2e2e;
+    }
+    footer .social,
+    footer ul {
+        border-bottom: solid 1px #171717;
+        border-width: 1 0 1px 0;
+    }
+    .footer-separator .copyrights,
+    footer li:first-child,
+    footer li:first-child a,
+    footer li,
+    footer li::after {
+        color: #FFF;
+    }
+    footer ul {
+        padding: 10px 0;
     }
 }
