@@ -517,14 +517,25 @@
     blockquote p {
         font-size: 14px;
     }
-    .topic {
-        width: 100%;
-    }
+    .topic,
+    article .infograph {
+    width: 100%;
+    float: none;
+    margin: 10px 0;
+    padding: 10px;
+}
     article h5 {
         font-size: 23px;
         clear: both;
+        padding-bottom: 0;
     }
     .article-hdr .author {
         font-size: 12px;
+        padding: 0;
+    }
+    .article-hdr time {
+        font-size: 11px;
+        padding: 0;
+        background: none;
     }
 }
