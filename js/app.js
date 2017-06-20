@@ -24,20 +24,54 @@
     });
   }
 }*/
+// Article font size toggle 
+var min = 16;
+var max = 20;
+
+function togalFontSize() {
+
+    var p = document.getElementsByClassName('article-txt');
+    for (i = 0; i < p.length; i++) {
+
+        if (p[i].style.fontSize) {
+            var s = parseInt(p[i].style.fontSize.replace("px", ""));
+            if (s == max) {
+                s = min;
+            } else {
+                s = max;
+            }
+        } else {
+
+            var s = max;
+        }
+
+        p[i].style.fontSize = s + "px"
+    }
+}
 'use strict';
 (function() {
     var menu = document.querySelector('.mobile-menu'),
-     	overlay = document.querySelector('.overlay'),
-     	nav = document.querySelector('nav .main-content'),
-     	ss = nav.querySelector('main-content'),
-     	slider = document.getElementById('slider'),
-     	body = document.querySelector('body');
+        overlay = document.querySelector('.overlay'),
+        nav = document.querySelector('nav .main-content'),
+        ss = nav.querySelector('main-content'),
+        slider = document.getElementById('slider'),
+        body = document.querySelector('body'),
+        submenu = document.querySelector('.menu-icon'),
+        mobsubmenu = document.querySelector('.submenu');
 
     menu.addEventListener('click', function() {
         overlay.classList.toggle('show');
         nav.classList.toggle('show');
         menu.classList.toggle('cross');
         body.classList.toggle('noscroll');
+    })
+    submenu.addEventListener('click', function() {
+        nav.classList.toggle('sections');
+        this.classList.toggle('active');
+    })
+    mobsubmenu.addEventListener('click', function() {
+        this.classList.toggle('active');
+
     })
 
     //moveOneStep();
@@ -182,10 +216,10 @@ function moveOneStep() {
                 //console.log('uu',uu)
                 if (uu) {
                     document.getElementById('next').disabled = true;
-                }else{
-                	sliderStep(slider, nextobj);	
+                } else {
+                    sliderStep(slider, nextobj);
                 }
-                
+
             }, false);
             prev.addEventListener('click', function(e) {
                 current -= 1;
@@ -214,6 +248,9 @@ function moveOneStep() {
     }
 }
 
+
+
+
 /* Search Box | Breaking News */
 $(document).ready(function() {
     $(".btn-search").click(function() {
@@ -237,4 +274,5 @@ $(document).ready(function() {
     $('.breaking-news').hide();
     hideNews();
     breakingClose();
+    $('.font-resize a, .prnt a').removeAttr("href");
 });
