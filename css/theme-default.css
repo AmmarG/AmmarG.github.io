@@ -155,7 +155,8 @@ a:hover,
 .news-articles .section-ttl:hover,
 .top-content .caption,
 footer li:first-child a,
-.breadcrumbs a:hover {
+.breadcrumbs a:hover,
+article h5{
     color: #580956;
 }
 input::-webkit-input-placeholder,
