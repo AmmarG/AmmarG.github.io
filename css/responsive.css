@@ -535,7 +535,6 @@
     }
     .article-hdr time {
         font-size: 11px;
-        padding: 0;
-        background: none;
+        padding-bottom: 1px;
     }
 }
