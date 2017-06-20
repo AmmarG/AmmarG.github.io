@@ -539,4 +539,7 @@
     table {
         font-size: 75%;
     }
+    .article-hdr {
+        padding-top: 15px;
+    }
 }
