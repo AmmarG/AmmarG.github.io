@@ -103,7 +103,7 @@ header nav,
 .breaking-news .lbl,
 .teaser-tools,
 article .topic,
-.infograph {
+article .box {
     background-color: #FFF;
 }
 .video-icon {
@@ -113,19 +113,21 @@ article .topic,
 .breaking-news {
     background: #d62919;
 }
-.slider .time {
-    border-left: solid 1px #404040;
-    background: #212020;
-}
 .gallery ul,
 .dark,
 .ad25 .wrapper,
 form.global-search,
-.tooltip {
+.tooltip,
+.table-wrapper table thead th,
+.table-wrapper table th {
     background-color: rgba(0, 0, 0, 0.06);
 }
 header .live-streaming {
     background: rgba(0, 0, 0, .4);
+}
+.slider .time {
+    border-left: solid 1px #404040;
+    background: #212020;
 }
 .top-info,
 .top-info a,
@@ -162,7 +164,7 @@ article h5{
 input::-webkit-input-placeholder,
 input.fld,
 .article-hdr h4,
-p.article-txt a {
+.table-wrapper table th {
     color: #7e247c;
 }
 body,
@@ -181,7 +183,9 @@ footer a,
 .breadcrumbs a,
 .article-hdr time,
 blockquote p,
-.tooltip {
+.tooltip,
+.table-wrapper .caption,
+.table-wrapper table td {
     color: #918d91;
 }
 .breaking-news .lbl,
@@ -189,6 +193,10 @@ blockquote p,
 blockquote,
 .tooltip .tooltip-txt a {
     color: #d11731
+}
+.article-txt a,
+article .box.tags a {
+    color: #396BAE;
 }
 .main-header,
 h2,
@@ -198,7 +206,6 @@ h2,
 .topic h2 a,
 .topic h2 span {
     border-color: #6a0b67;
-    border-style: solid
 }
 .section-ttl,
 .news .caption,
@@ -207,7 +214,6 @@ h2,
 .slider img,
 .breaking-news .close {
     border-color: #fff;
-    border-style: solid
 }
 .latest-news h2,
 .top-content h2,
@@ -216,38 +222,39 @@ h2,
 .top-content li,
 .topic h2 {
     border-color: #e9e9e9;
-    border-style: solid;
 }
 .news-articles li {
     border-color: #f4f4f4;
-    border-style: solid;
 }
 .news-articles .section-ttl,
 .topic .section-ttl {
     border-color: #333;
-    border-style: solid;
 }
 .ad25 h2,
 .teaser-tools .short-url input {
     border-color: #b7b6b6;
-    border-style: solid;
 }
-blockquote {
+blockquote,
+.table-wrapper table thead th,
+.table-wrapper table th,
+.table-wrapper table td,
+.table-wrapper table {
     border-color: #dbdbdb;
-    border-style: dotted;
 }
 input.fld {
     border-color: #7e247c;
-    border-style: solid;
 }
 .latest-news h2,
 .latest-news h2 a,
 .top-content h2,
 .top-content h2 a,
 .main-header {
+    border-style: solid;
     border-width: 1px 0 0 0;
 }
-.latest-news .time {
+.latest-news .time,
+.table-wrapper table thead th {
+    border-style: solid;
     border-width: 0 0 0 1px;
 }
 .latest-news li,
@@ -256,48 +263,65 @@ input.fld {
 .topic h2,
 .topic h2 a,
 .topic h2 span {
+    border-style: solid;
     border-width: 0 0 1px 0;
 }
 h2 {
+    border-style: solid;
     border-width: 0 5px 0 0;
 }
 .news-articles .section-ttl,
 .topic .section-ttl {
+    border-style: solid;
     border-width: 0 4px 0 0;
 }
+.table-wrapper table th,
+.table-wrapper table td {
+    border-style: solid;
+    border-width: 1px 0;
+}
+.section-ttl {
+    border-style: solid;
+    border-width: 0 4px 0 0;
+}
+.news li:first-child .section-ttl,
+.news-mod02 li:first-child .section-ttl {\
+    border-style: solid;
+    border-width: 0 6px 0 0;
+}
+.news .caption,
+.breaking-news .close,
+.teaser-tools .short-url input,
+.table-wrapper table {
+    border-style: solid;
+    border-width: 1px;
+}
+.news-mod02 li img,
+.opinions .pic {
+    border-style: solid;
+    border-width: 3px;
+}
+input.fld {
+    border-style: solid;
+    border-width: 0 0 2px 0
+}
+.slider img {
+    border-style: solid;
+    border-width: 1px 0 1px 1px;
+}
 blockquote {
+    border-style: dotted;
     border-width: 1px 0;
 }
 header nav li {
     border-right: 1px solid #ab84aa;
 }
-.section-ttl {
-    border-width: 0 4px 0 0;
-}
-.news li:first-child .section-ttl,
-.news-mod02 li:first-child .section-ttl {
-    border-width: 0 6px 0 0;
-}
-.news .caption,
-.breaking-news .close,
-.teaser-tools .short-url input {
-    border-width: 1px;
-}
-.news-mod02 li img,
-.opinions .pic {
-    border-width: 3px;
-}
-input.fld {
-    border-width: 0 0 2px 0
-}
-.slider img {
-    border-width: 1px 0 1px 1px;
-}
 .latest-news li:last-child,
 .area-25 .news-articles li,
 .dark .news-articles ul li,
 .news-mod02 li:first-child img,
-.tooltip .tooltip-txt a {
+.tooltip .tooltip-txt a,
+.table-wrapper table thead td {
     border: none;
 }
 .dark .news-articles ul {
@@ -393,3 +417,14 @@ header nav,
         padding: 0;
     }
 }
+
+
+
+
+
+
+
+
+
+
+

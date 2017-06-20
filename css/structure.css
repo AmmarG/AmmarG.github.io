@@ -790,6 +790,7 @@ h2 {
 .caption {
     font-family: Tahoma;
     font-size: 11px;
+    font-weight: normal;
 }
 .dark {
     padding-top: 20px;
@@ -1145,13 +1146,12 @@ article .article-teaser img {
     font-size: 14px;
 }
 article {
-    padding: 0 0 30px 10px;
+    padding-bottom: 30px;
 }
 article p {
     font-size: 16px;
     line-height: 190%;
     padding: 8px 0;
-    text-align: justify;
 }
 .article-hdr,
 article p,
@@ -1194,7 +1194,7 @@ blockquote p::before {
     margin: 10px 0 10px 20px;
     padding: 10px 20px 20px 20px;
 }
-article .infograph {
+article .box {
     margin: 20px 0;
     padding: 10px 20px 20px 20px;
 }
@@ -1247,7 +1247,6 @@ article .infograph {
     -ms-transition: all .25s ease-out;
     -o-transition: all .25s ease-out;
 }
-
 .tooltip .tooltip-txt:before {
     bottom: -20px;
     content: " ";
@@ -1257,7 +1256,6 @@ article .infograph {
     position: absolute;
     width: 100%;
 }
-
 .tooltip .tooltip-txt:after {
     bottom: -10px;
     content: " ";
@@ -1276,18 +1274,67 @@ article .infograph {
     -o-transform: translateY(0px);
     transform: translateY(0px);
 }
-
 article h5 {
     font-size: 30px;
     padding: 10px 0;
     line-height: 150%;
-    
 }
 .topic.lft {
     float: left;
-        margin-right: 20px;
+    margin-right: 20px;
     margin-left: 0;
 }
 .box h2 span {
     float: left;
+}
+.table-wrapper {
+    padding-bottom: 15px;
+    font-weight: bold;
+    clear: both;
+}
+.table-wrapper h5 {
+    font-size: 21px;
+}
+.table-wrapper table {
+    width: 100%;
+}
+.table-wrapper table td,
+.table-wrapper table th {
+    padding: 5px;
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+}
+.notice {
+    padding: 10px 0;
+}
+article .box.tags {
+    font-weight: bold;
+}
+article .box.tags a {
+    padding-left: 10px;
+    line-height: 200%;
+}
+article .ordered li {
+    list-style-type: decimal;
+    list-style-position: inside;
+    padding: 5px 0;
+    font-weight: bold;
+    font-size: 100%;
+}
+article .ordered li ol li {
+    padding-right: 30px;
+}
+article .unordered li {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding: 5px 0;
+    font-weight: bold;
+}
+article .unordered li ul li {
+    padding-right: 30px;
+}
+.article-txt {
+    text-align: justify;
 }

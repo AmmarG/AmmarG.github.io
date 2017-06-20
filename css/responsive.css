@@ -527,7 +527,6 @@
     article h5 {
         font-size: 23px;
         clear: both;
-        padding-bottom: 0;
     }
     .article-hdr .author {
         font-size: 12px;
@@ -536,5 +535,8 @@
     .article-hdr time {
         font-size: 11px;
         padding-top: 3px;
+    }
+    table {
+        font-size: 75%;
     }
 }
