@@ -1569,6 +1569,10 @@ article .unordered li ul li {
 }
 .tabs-menu li {
     flex-grow: 1;
+    margin-left: 2px
+}
+.tabs-menu li:last-child {
+    margin: 0;
 }
 .tabs-menu li.current {
     position: relative;
