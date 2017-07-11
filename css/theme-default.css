@@ -103,7 +103,9 @@ header nav,
 .breaking-news .lbl,
 .teaser-tools,
 article .topic,
-article .box {
+article .box,
+.tabs-menu li.current,
+.tab {
     background-color: #FFF;
 }
 .video-icon {
@@ -119,7 +121,8 @@ article .box {
 form.global-search,
 .tooltip,
 .table-wrapper table thead th,
-.table-wrapper table th {
+.table-wrapper table th,
+.tabs-menu li {
     background-color: rgba(0, 0, 0, 0.06);
 }
 header .live-streaming {
@@ -158,7 +161,9 @@ a:hover,
 .top-content .caption,
 footer li:first-child a,
 .breadcrumbs a:hover,
-article h5{
+article h5,
+.tabs-menu .current a,
+.main-article .ttl {
     color: #580956;
 }
 input::-webkit-input-placeholder,
@@ -171,7 +176,8 @@ body,
 a,
 header nav a:hover,
 .article-hdr .author span,
-.box h2 span {
+.box h2 span,
+.main-article a:hover .txt {
     color: #333;
 }
 .ad25 h2 {
@@ -185,7 +191,8 @@ footer a,
 blockquote p,
 .tooltip,
 .table-wrapper .caption,
-.table-wrapper table td {
+.table-wrapper table td,
+.tabs-menu li a {
     color: #918d91;
 }
 .breaking-news .lbl,
@@ -223,7 +230,9 @@ h2,
 .topic h2 {
     border-color: #e9e9e9;
 }
-.news-articles li {
+.news-articles li,
+.tabs-menu li,
+.main-article {
     border-color: #f4f4f4;
 }
 .news-articles .section-ttl,
@@ -241,7 +250,8 @@ blockquote,
 .table-wrapper table {
     border-color: #dbdbdb;
 }
-input.fld {
+input.fld,
+.tabs-menu li.current {
     border-color: #7e247c;
 }
 .latest-news h2,
@@ -262,7 +272,8 @@ input.fld {
 .top-content li,
 .topic h2,
 .topic h2 a,
-.topic h2 span {
+.topic h2 spanm,
+.main-article {
     border-style: solid;
     border-width: 0 0 1px 0;
 }
@@ -309,6 +320,14 @@ input.fld {
     border-style: solid;
     border-width: 1px 0 1px 1px;
 }
+.tabs-menu li {
+    border-style: solid;
+    border-width: 0 1px;
+}
+.tabs-menu li.current {
+    border-style: solid;
+    border-width: 2px 0 0 0;
+}
 blockquote {
     border-style: dotted;
     border-width: 1px 0;
@@ -321,10 +340,12 @@ header nav li {
 .dark .news-articles ul li,
 .news-mod02 li:first-child img,
 .tooltip .tooltip-txt a,
-.table-wrapper table thead td {
+.table-wrapper table thead td,
+.tabs .news-articles li {
     border: none;
 }
-.dark .news-articles ul {
+.dark .news-articles ul,
+.area-25 .tab {
     background: none;
 }
 .news li:first-child a.cover,
@@ -387,7 +408,8 @@ header nav,
     .breadcrumbs,
     .teaser-tools,
     .topic,
-    .box.news {
+    .box.news,
+    .box.tags {
         display: none;
     }
     .area-75 {
@@ -417,6 +439,12 @@ header nav,
         padding: 0;
     }
 }
+
+
+/*** SECTIONS THEMING ***/
+
+/* Sports */
+
 
 
 
