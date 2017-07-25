@@ -160,14 +160,14 @@
     nav .menu-icon {
         display: none;
     }
-    nav .submenu.active ul{
+    nav .submenu.active ul {
         position: inherit;
-        height: auto;   
+        height: auto;
     }
-    nav .submenu.active ul li:last-child{
+    nav .submenu.active ul li:last-child {
         height: auto;
         margin: 0;
-        border:none;
+        border: none;
         padding-right: 0;
     }
     section {
@@ -183,19 +183,19 @@
     .global-wrapper .main-content {
         padding: 10px 0;
     }
-    .sticky .main-header{
+    .sticky .main-header {
         height: 76px;
-        padding:0;
+        padding: 0;
     }
-    .sticky h1.logo{
+    .sticky h1.logo {
         height: inherit;
-        transform:none;
+        transform: none;
     }
-    .sticky .live-streaming{
-        transform:none;
+    .sticky .live-streaming {
+        transform: none;
     }
-    .margintop .global-wrapper .full-wrapper:first-child  .main-content{
-        margin-top:79px;
+    .margintop .global-wrapper .full-wrapper:first-child .main-content {
+        margin-top: 79px;
     }
     .box,
     article {
@@ -543,11 +543,11 @@
     }
     .topic,
     article .infograph {
-    width: 100%;
-    float: none;
-    margin: 10px 0;
-    padding: 10px;
-}
+        width: 100%;
+        float: none;
+        margin: 10px 0;
+        padding: 10px;
+    }
     article h5 {
         font-size: 23px;
         clear: both;
@@ -571,19 +571,24 @@
     }
     .main-article img,
     .main-article .ttl,
-.main-article .txt{
-    width: 100%;
-    float: none;
-}
-.main-article .ttl {
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-.main-article .txt {
-    font-size: 15px;
-}
+    .main-article .txt {
+        width: 100%;
+        float: none;
+    }
+    .main-article .ttl {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .main-article .txt {
+        font-size: 15px;
+    }
     .tabs-menu li a {
         font-size: 13px;
+    }
+    .coverage {
+        display: none;
+    }
+    .takeover-outer {
+        background: none !important;
     }
 }
