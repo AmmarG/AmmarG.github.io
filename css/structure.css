@@ -720,6 +720,7 @@ footer,
     .comments-box .comment .user {
         float: right;
         margin-top: 10px;
+        clear: both;
     }
     .comments-box .comment .user img {
         float: right;
