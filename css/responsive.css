@@ -10,10 +10,10 @@
     }
     .main-content {
         width: 100%;
-        padding: 0;
+        padding: 0 15px;
     }
     header {
-        height: 66px;
+        height: 65px;
     }
     .main-header .logo {
         width: 171px;
@@ -90,12 +90,16 @@
     .area-75,
     .area-100 {
         width: 100%;
-    }
-    .area-100,
-    .area-75,
-    .area-25 {
         -webkit-box-flex: auto;
         -ms-flex: auto;
         flex: auto;
+        z-index: 0;
+        margin-bottom: 15px;
+    }
+    .live-now {
+        xheight: 129px;
+    }
+    .slidesjs-previous, .slidesjs-next {
+        top: 28%;
     }
 }

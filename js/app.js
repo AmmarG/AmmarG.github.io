@@ -27,6 +27,9 @@ $(document).ready(function() {
         $(".slides").slidesjs({
             pagination: {
                 active: false
+            },
+            navigation: {
+                effect: "fade"
             }
         });
     });

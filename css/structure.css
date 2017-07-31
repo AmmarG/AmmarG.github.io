@@ -149,7 +149,7 @@ body {
     font-family: DroidKufiRegular;
     font-size: 100%;
     line-height: 150%;
-    min-width: 1024px;
+    min-width: 1044px;
 }
 /*******Areas************/
 
@@ -160,23 +160,22 @@ body {
 }
 .area-75 {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 960px;
-    flex: 0 0 960px;
+    -ms-flex: 0 0 680px;
+    flex: 0 0 680px;
 }
 .area-25 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 340px;
-    flex: 0 0 340px;
+        -webkit-box-flex: 0;
+    -ms-flex: 0 0 325px;
+    flex: 0 0 325px;
+    align-self: flex-start;
 }
-/*******Areas************/
-
 /******* TXT Colors ********/
 
 body {
     color: #333;
 }
 a {
-    color: #723795;
+    color: #333;
 }
 /******* BG Colors ********/
 
@@ -191,21 +190,9 @@ h1.logo,
 .main-header .mobile-menu {
     background-color: #723795;
 }
-header .main-content {
+header .main-content,
+.live-now {
     background-color: #FFF;
-}
-/*******Areas************/
-
-.area-75 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 680px;
-    flex: 0 0 680px;
-}
-.area-25 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 325px;
-    flex: 0 0 325px;
-    margin-right: auto;
 }
 .overlay {
     position: fixed;
@@ -237,6 +224,9 @@ header .main-content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     flex-flow: row wrap;
+    webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 header .main-content {
     padding: 0 0 0 10px;
@@ -245,11 +235,6 @@ header {
     position: relative;
     height: 83px;
     overflow: hidden;
-}
-header {
-    border-style: solid;
-    border-color: #f5f5f5;
-    border-width: 0 0 1px 0;
 }
 h1.logo {
     font-size: 0;
@@ -306,14 +291,13 @@ header .social .twtr {
     display: none;
     position: relative;
 }
-
 .slides img {
     width: 100%;
 }
 .slidesjs-previous,
 .slidesjs-next {
     position: absolute;
-    top: 40%;
+    top: 37%;
     z-index: 10;
     font-size: 0;
     width: 80px;
@@ -328,4 +312,108 @@ header .social .twtr {
 .slidesjs-next {
     background-position: 0 0;
     left: 0;
+}
+.slidesjs-previous:hover,
+.slidesjs-next:hover {
+    opacity: 0.7;
+}
+header,
+.live-now {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+}
+.live-now {
+    padding: 15px;
+}
+.thumb {
+    position: relative;
+}
+.thumb img {
+    width: 100%;
+}
+.play-icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: url(../gfx/play-icon.png) center no-repeat;
+}
+.live-now {
+    position: relative;
+    height: 125px;
+    overflow: hidden;
+}
+.live-now .live-next {
+    width: 80px;
+    float: left;
+    text-align: center;
+}
+.live-now .live-next:hover {
+    opacity: 0.7;
+}
+.live-now .thumb {
+    width: 96px;
+    float: right;
+    overflow: hidden;
+}
+.live-now .thumb img {
+    width: 100%;
+    height: 100%;
+}
+.live-now .live-info {
+    width: 155px;
+    float: right;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.live-now .live-info .now {
+    font-size: 80%;
+}
+.live-now .live-info .now span {
+    text-transform: uppercase;
+    background: #ed1c24;
+    color: #FFF;
+    font-family: Verdana;
+    font-size: 9px;
+    padding: 3px 5px;
+}
+.live-now .live-info .time {
+    color: #ed1c24;
+    font-size: 11px;
+    background: #f9f9f9;
+    position: absolute;
+    padding: 0 15px 16px 15px;
+    bottom: -16px;
+}
+.live-now .live-info .time span {
+    padding-right: 5px;
+    direction: ltr;
+    unicode-bidi: embed;
+    font-family: Verdana;
+}
+.live-now .live-info .time dd {
+    background: #CCC;
+    height: 7px;
+    display: block;
+    clear: both;
+}
+.live-now .live-info .time dd strong {
+    float: left;
+    height: 7px;
+    background: #ed1c24;
+}
+.live-now .slidesjs-previous {
+    display: none;
+}
+.live-now .slidesjs-next {
+    top: -15px;
+    width: 55px;
+    height: 117px;
+    background-image: url(../gfx/next.png);
+    background-position: 0 17px;
+    background-color: #FFF;
 }
