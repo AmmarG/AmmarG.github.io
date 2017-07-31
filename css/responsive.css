@@ -13,7 +13,7 @@
         padding: 0;
     }
     header {
-        height: 65px;
+        height: 66px;
     }
     .main-header .logo {
         width: 171px;
@@ -43,7 +43,7 @@
         width: 70%;
         position: fixed;
         overflow-y: scroll;
-        top: 64px;
+        top: 65px;
         right: -70%;
         z-index: 3;
         transition: right .3s;
@@ -81,5 +81,21 @@
     }
     header .social {
         margin: 20px auto 0 10px;
+    }
+    .full-wrapper .main-content {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .area-25,
+    .area-75,
+    .area-100 {
+        width: 100%;
+    }
+    .area-100,
+    .area-75,
+    .area-25 {
+        -webkit-box-flex: auto;
+        -ms-flex: auto;
+        flex: auto;
     }
 }
