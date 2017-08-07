@@ -47,4 +47,9 @@ $(document).ready(function() {
     $(".play-toggle, .share, .like").click(function() {
         $(this).toggleClass("active");
     });
+    // Close Mobile Menu on Select
+    $("header nav ul li a").click(function() {
+        $("header nav ul, .overlay").toggleClass("show");
+        $(".mobile-menu").toggleClass("cross");
+    });
 });
