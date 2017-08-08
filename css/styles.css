@@ -347,6 +347,7 @@ header .social .twtr {
     background-position: -90px 0;
 }
 .social a:hover {
+    transition: opacity 0.4s;
     -webkit-transition: opacity 0.4s;
     opacity: .7;
 }
@@ -858,6 +859,7 @@ footer {
         background-repeat: no-repeat;
         flex: 0 0 50px;
         transition: background .3s;
+        -webkit-transition: background .3s;
         cursor: pointer;
     }
     .main-header .mobile-menu.cross {
@@ -880,6 +882,7 @@ footer {
         right: -70%;
         z-index: 3;
         transition: right .3s;
+        -webkit-transition: right .3s;
         background: #333;
         display: block;
         height: 100vh;
@@ -896,6 +899,7 @@ footer {
         font-size: 15px;
         border: none;
         transition: border-right .2s;
+        -webkit-transition: border-right .2s;
         border-bottom: 1px solid #232323 !important;
         border-top: 1px solid #444 !important;
     }
