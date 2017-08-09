@@ -48,6 +48,10 @@ $(document).ready(function() {
         $(this).toggleClass("active");
     });
 
+    $(".share").click(function() {
+        $(this).children(".pop").toggleClass("show");
+    });
+
     // Close Mobile Menu on Select
     var isMobile = window.matchMedia("only screen and (max-width: 480px)");
     if (isMobile.matches) {
@@ -60,7 +64,7 @@ $(document).ready(function() {
         playlistItemSelector: 'div',
         elements: ['artwork', 'information', 'controls', 'progress', 'time', 'volume'],
         autoPlay: true,
-        loop: true,// ==> This will display in  the order it is inserted
+        loop: true, // ==> This will display in  the order it is inserted
         //elements: [ 'controls' , 'information', 'artwork', 'progress', 'time', 'volume' ],
         controlElements: ['backward', 'play', 'forward', 'stop'],
         //timeElements: ['current', 'duration'],
