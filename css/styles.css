@@ -1174,7 +1174,6 @@ footer .main-content {
     header nav {
         padding: 0;
         margin: 0;
-        position: fixed;
     }
     header nav ul {
         flex-direction: column;
@@ -1191,7 +1190,7 @@ footer .main-content {
         transition: right .3s;
         -webkit-transition: right .3s;
         background: #333;
-        display: block;
+        xdisplay: block;
         height: 100vh;
     }
     header nav li a {
@@ -1205,8 +1204,6 @@ footer .main-content {
         width: 100%;
         font-size: 15px;
         border: none;
-        transition: border-right .2s;
-        -webkit-transition: border-right .2s;
         border-bottom: 1px solid #232323 !important;
         border-top: 1px solid #444 !important;
     }
