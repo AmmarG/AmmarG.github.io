@@ -55,7 +55,7 @@ $(document).ready(function() {
     // Close Mobile Menu on Select
     var isMobile = window.matchMedia("only screen and (max-width: 480px)");
     if (isMobile.matches) {
-        $("header nav ul li a").click(function() {
+        $("header nav ul li a, .overlay").click(function() {
             $("header nav ul, .overlay").toggleClass("show");
             $(".mobile-menu").toggleClass("cross");
         });
