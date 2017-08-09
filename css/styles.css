@@ -1185,13 +1185,13 @@ footer .main-content {
         position: fixed;
         overflow-y: scroll;
         top: 65px;
-        right: 0;
+        right: -70%;
         z-index: 3;
         transition: right .3s;
         -webkit-transition: right .3s;
         background: #333;
         display: block;
-        height: 100vh;
+        height: 100%;
     }
     header nav li a {
         padding-right: 15px;
