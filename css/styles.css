@@ -1174,6 +1174,7 @@ footer .main-content {
     header nav {
         padding: 0;
         margin: 0;
+        position: fixed;
     }
     header nav ul {
         flex-direction: column;
@@ -1339,8 +1340,7 @@ footer .main-content {
     .hide-in-mob {
         display: none;
     }
-    .hide-in-desktop,
-    header nav ul.show {
+    .hide-in-desktop {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
