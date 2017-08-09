@@ -1081,7 +1081,7 @@ footer .main-content {
         overflow-y: scroll;
         visibility: visible;
         opacity: 1;
-        width: 70%;
+        width: 100%;
         position: fixed;
         overflow-y: scroll;
         top: 65px;
