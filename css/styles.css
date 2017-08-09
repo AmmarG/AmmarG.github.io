@@ -1044,11 +1044,13 @@ footer .main-content {
 .playlist div.active {
     font-weight: bold;
 }
+
 /* Popup container - can be anything you want */
 
 .share {
     position: relative;
 }
+
 .share .pop {
     visibility: hidden;
     background-color: #555;
@@ -1152,6 +1154,7 @@ footer .main-content {
     }
     header {
         height: 65px;
+        overflow: visible;
     }
     .main-header .logo {
         width: 171px;
@@ -1174,15 +1177,22 @@ footer .main-content {
         margin: 0;
     }
     header nav ul {
+        flex-direction: column;
+        padding-bottom: 50px;
+        overflow-y: scroll;
+        visibility: visible;
+        opacity: 1;
+        width: 70%;
         position: absolute;
         overflow-y: scroll;
-        xtop: 65px;
+        top: 65px;
         right: -70%;
-        z-index: 58;
+        z-index: 3;
         transition: right .3s;
         -webkit-transition: right .3s;
-        background: rgb(51, 51, 51);
+        background: #333;
         display: block;
+        height: 100vh;
     }
     header nav li a {
         padding-right: 15px;
