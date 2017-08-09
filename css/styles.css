@@ -857,9 +857,12 @@ footer .main-content {
     z-index: 2;
 }
 .fm-player .info {
-    width: 30%;
+    width: 25%;
+    height: 82px;
     float: right;
     margin: 5px 15px 0 0;
+    border-left: solid 1px #79419a;
+    overflow: hidden;
 }
 .title,
 .artist {
@@ -888,12 +891,7 @@ footer .main-content {
 .controls {
     cursor: pointer;
     float: left;
-}
-.controls .play,
-.controls .pause {
-    width: 60px;
-    height: 60px;
-    margin: 0 5px 0px 5px;
+    margin-top: 25px;
 }
 .controls .play,
 .controls .pause,
@@ -906,9 +904,11 @@ footer .main-content {
 }
 .controls .rew,
 .controls .fwd,
-.controls .stop {
-    width: 50px;
-    height: 50px;
+.controls .stop,
+.controls .play,
+.controls .pause {
+    width: 35px;
+    height: 32px;
     margin: 5px 5px 5px 5px;
 }
 .controls .play {
@@ -934,10 +934,10 @@ footer .main-content {
     display: block;
 }
 .volume {
-    height: 15px;
-    width: 140px;
+    height: 32px;
+    width: 95px;
     float: left;
-    margin-top: 25px;
+    margin-top: 31px;
     direction: ltr;
 }
 .mute .volume-btn {
@@ -945,17 +945,17 @@ footer .main-content {
 }
 .volume-btn {
     background: url(../gfx/volume-up.png) no-repeat;
-    height: 20px;
-    width: 20px;
+    height: 32px;
+    width: 35px;
     float: left;
     position: relative;
-    top: -4px;
 }
 .volume-adjust {
     height: 11px;
-    width: 80%;
+    width: 55%;
     background: #a069c0;
     float: right;
+    margin-top: 10px;
 }
 .volume-adjust > div > div {
     height: 11px;
@@ -965,19 +965,18 @@ footer .main-content {
     background-color: #a069c0;
     cursor: pointer;
     z-index: 1;
-    height: 5px;
-    left: 20px;
+    height: 1px;
+    left: 250px;
     position: absolute;
-    width: 35.3%;
-    top: 85px;
+    width: 28%;
+    top: 66px;
 }
 .novolume .progressbar {
     right: 4.375em;
-    /* 70 */
 }
 .progressbar div {
     width: 0%;
-    height: 5px;
+    height: 1px;
     position: absolute;
     left: 0;
     top: 0;
@@ -990,11 +989,20 @@ footer .main-content {
     background: #FFF;
     z-index: 2;
 }
+.bar-played div {
+    width: 11px;
+    height: 11px;
+    right: 0;
+    top: -5px;
+    border-radius: 11px;
+    border: solid 2px #FFF;
+    background: #723795;
+}
 .timeHolder {
     font-size: 14px;
     font-weight: bold;
-    top: 75px;
-    left: 405px;
+    top: 71px;
+    left: 460px;
     position: absolute;
     font-family: Arial;
 }
@@ -1081,13 +1089,12 @@ footer .main-content {
         overflow-y: scroll;
         visibility: visible;
         opacity: 1;
-        width: 100%;
+        width: 70%;
         position: fixed;
         overflow-y: scroll;
         top: 65px;
-        right: auto;
-        left: 0;
-        z-index: 9999;
+        right: -70%;
+        z-index: 3;
         transition: right .3s;
         -webkit-transition: right .3s;
         background: #333;
@@ -1121,7 +1128,7 @@ footer .main-content {
         padding-right: 5px;
     }
     header nav ul.show {
-        left: 0;
+        right: 0;
     }
     header nav .menu-icon {
         display: none;
@@ -1269,16 +1276,21 @@ footer .main-content {
         padding: 10px;
     }
     .fm-player .info {
-        width: 60%;
+        width: auto;
+        min-width: 60%;
+    height: 65px;
+    border: none;
     }
     .controls {
-        margin-left: -20px;
+    margin-top: 0;
     }
     .progressbar {
-        width: 210px;
-        top: auto;
-        bottom: 10px;
-        left: 10px;
+            width: 48%;
+    max-width: 48%;
+    top: auto;
+    bottom: 30px;
+    left: auto;
+    right: 10px;
     }
     .cover {
         width: 70px;

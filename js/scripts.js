@@ -66,7 +66,7 @@ $(document).ready(function() {
         //autoPlay: true,
         loop: true, // ==> This will display in  the order it is inserted
         //elements: [ 'controls' , 'information', 'artwork', 'progress', 'time', 'volume' ],
-        controlElements: ['backward', 'play', 'forward', 'stop'],
+        controlElements: ['backward', 'play', 'forward'],
         //timeElements: ['current', 'duration'],
         //timeSeparator: " : ", // ==> Only used if two elements in timeElements option
         //infoElements: [  'title', 'artist' ],  
