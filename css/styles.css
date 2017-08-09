@@ -352,7 +352,7 @@ header .social .twtr {
     opacity: .7;
 }
 .full-wrapper {
-    padding: 110px 0 200px 0;
+    padding: 110px 0 130px 0;
 }
 .slides {
     display: none;
@@ -1044,6 +1044,98 @@ footer .main-content {
 .playlist div.active {
     font-weight: bold;
 }
+
+/* Popup container - can be anything you want */
+
+.share {
+    position: relative;
+}
+
+.share .pop {
+    visibility: hidden;
+    background-color: #555;
+    border-radius: 4px;
+    padding: 4px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 0;
+    margin-left: -80px;
+    width: auto;
+    min-width: 268px;
+    float: none;
+    margin-top: 0;
+}
+.share .pop a {
+    float: left;
+    width: 40px;
+    height: 40px;
+    background-image: url(../gfx/share.png);
+    background-repeat: no-repeat;
+    display: block;
+    margin-right: 4px;
+}
+.share .pop a:last-child {
+    margin-right: 0;
+}
+.share .pop a:hover {
+    opacity: 0.8;
+}
+.share .pop .mail {
+    background-position: 0 0;
+}
+.share .pop .telegram {
+    background-position: -279px 0;
+}
+.share .pop .whatsapp {
+    background-position: -224px 0;
+}
+.share .pop .gplus {
+    background-position: -56px 0;
+}
+.share .pop .twtr {
+    background-position: -112px 0;
+}
+.share .pop .fb {
+    background-position: -168px 0;
+}
+/* Popup arrow */
+
+.share .pop::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+/* Toggle this class - hide and show the popup */
+
+.share .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+/* Add animation (fade in the popup) */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 /**** RESPONSIVE ****/
 
 @media (max-width: 480px) {
@@ -1163,7 +1255,7 @@ footer .main-content {
     }
     .episodes .item ul {
         width: 40%;
-        margin: -25px 0 0 -10px;
+        margin: 10px 0 0 -10px;
     }
     .episodes .item ul li,
     .top-content .item .play-toggle {
@@ -1278,19 +1370,19 @@ footer .main-content {
     .fm-player .info {
         width: auto;
         min-width: 60%;
-    height: 65px;
-    border: none;
+        height: 65px;
+        border: none;
     }
     .controls {
-    margin-top: 0;
+        margin-top: 0;
     }
     .progressbar {
-            width: 48%;
-    max-width: 48%;
-    top: auto;
-    bottom: 30px;
-    left: auto;
-    right: 10px;
+        width: 48%;
+        max-width: 48%;
+        top: auto;
+        bottom: 30px;
+        left: auto;
+        right: 10px;
     }
     .cover {
         width: 70px;
@@ -1308,104 +1400,12 @@ footer .main-content {
         font-size: 12px;
         font-weight: normal;
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* Popup container - can be anything you want */
-.share {
-    position: relative;
-}
-
-/* The actual popup */
-.share .pop {
-    visibility: hidden;
-    background-color: #555;
-    border-radius: 4px;
-    padding: 4px;
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 0;
-    margin-left: -80px;
-    width: auto;
-    min-width: 268px;
-    float: none;
-    margin-top: 0;
-}
-
-.share .pop a {
-    float: left;
-    width: 40px;
-    height: 40px;
-    background-image: url(../gfx/share.png);
-    background-repeat: no-repeat;
-    display: block;
-    margin-right: 4px;
-}
-
-.share .pop a:last-child {
-    margin-right: 0;
-}
-
-.share .pop a:hover {
-    opacity: 0.8;
-}
-
-.share .pop .mail {
-    background-position: 0 0;
-}
-.share .pop .telegram {
-    background-position: -279px 0;
-}
-.share .pop .whatsapp {
-    background-position: -224px 0;
-}
-.share .pop .gplus {
-    background-position: -56px 0;
-}
-.share .pop .twtr {
-    background-position: -112px 0;
-}
-.share .pop .fb {
-    background-position: -168px 0;
-}
-
-/* Popup arrow */
-.share .pop::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-/* Toggle this class - hide and show the popup */
-.share .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
+    .share .pop::after {
+        left: 14%;
+        margin-left: 0;
+    }
+    .share .pop {
+        bottom: 110%;
+        margin-left: -29px;
+    }
 }
