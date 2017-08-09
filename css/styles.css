@@ -1176,7 +1176,7 @@ footer .main-content {
         margin: 0;
     }
     header nav ul {
-        flex-direction: column; */
+       flex-direction: column;
     /* padding-bottom: 50px; */
     /* overflow-y: scroll; */
     /* visibility: visible; */
