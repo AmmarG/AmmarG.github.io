@@ -1182,7 +1182,7 @@ footer .main-content {
         visibility: visible;
         opacity: 1;
         width: 70%;
-        position: fixed;
+        position: fixed !important;
         overflow-y: scroll;
         top: 65px;
         right: -70%;
@@ -1190,7 +1190,7 @@ footer .main-content {
         transition: right .3s;
         -webkit-transition: right .3s;
         background: #333;
-        xdisplay: block;
+        display: block;
         height: 100vh;
     }
     header nav li a {
