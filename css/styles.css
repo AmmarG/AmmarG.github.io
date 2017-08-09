@@ -1085,7 +1085,8 @@ footer .main-content {
         position: fixed;
         overflow-y: scroll;
         top: 65px;
-        right: -70%;
+        right: auto;
+        left: 0;
         z-index: 9999;
         transition: right .3s;
         -webkit-transition: right .3s;
