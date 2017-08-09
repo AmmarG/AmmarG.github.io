@@ -1120,7 +1120,7 @@ footer .main-content {
         padding-right: 5px;
     }
     header nav ul.show {
-        right: 0;
+        left: 0;
     }
     header nav .menu-icon {
         display: none;
