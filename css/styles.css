@@ -1407,4 +1407,7 @@ footer .main-content {
         bottom: 110%;
         margin-left: -29px;
     }
+    .volume {
+        display: none;
+    }
 }
