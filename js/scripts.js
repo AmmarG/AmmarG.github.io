@@ -63,7 +63,7 @@ $(document).ready(function() {
     $(".fm-player").musicPlayer({
         playlistItemSelector: 'div',
         elements: ['artwork', 'information', 'controls', 'progress', 'time', 'volume'],
-        //autoPlay: true,
+        autoPlay: true,
         loop: true, // ==> This will display in  the order it is inserted
         //elements: [ 'controls' , 'information', 'artwork', 'progress', 'time', 'volume' ],
         controlElements: ['backward', 'play', 'forward'],

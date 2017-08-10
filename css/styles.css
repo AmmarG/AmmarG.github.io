@@ -648,15 +648,15 @@ h3 {
 .grid .ttl01,
 .grid .ttl02,
 .grid .item p {
-    width: 63%;
+    width: 65%;
     float: left;
     clear: none;
 }
 .grid .item .timing {
-    width: 17%;
+    width: 15%;
     float: right;
     font-family: Arial;
-    font-size: 170%;
+    font-size: 120%;
     letter-spacing: 2px;
 }
 .grid .item .timing span {
@@ -1028,6 +1028,7 @@ footer .main-content {
     width: 95%;
     z-index: 1;
     margin: 0px auto;
+    display: none;
 }
 .playlist li,
 .playlist div {
@@ -1044,13 +1045,11 @@ footer .main-content {
 .playlist div.active {
     font-weight: bold;
 }
-
 /* Popup container - can be anything you want */
 
 .share {
     position: relative;
 }
-
 .share .pop {
     visibility: hidden;
     background-color: #555;
