@@ -1052,14 +1052,14 @@ footer .main-content {
 }
 .share .pop {
     visibility: hidden;
-    background-color: #555;
+    background-color: #ebeaea;
     border-radius: 4px;
     padding: 4px;
     position: absolute;
     z-index: 1;
     bottom: 100%;
     left: 0;
-    margin-left: -80px;
+    margin-left: -95px;
     width: auto;
     min-width: 268px;
     float: none;
@@ -1108,7 +1108,7 @@ footer .main-content {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #555 transparent transparent transparent;
+    border-color: #ebeaea transparent transparent transparent;
 }
 /* Toggle this class - hide and show the popup */
 
