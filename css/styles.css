@@ -850,7 +850,7 @@ footer {
 footer .main-content {
     display: block;
     position: relative;
-    padding: 20px 0;
+    padding: 20px 10px;
     overflow: hidden;
 }
 .player {
