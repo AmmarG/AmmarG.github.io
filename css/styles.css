@@ -1409,4 +1409,15 @@ footer .main-content {
     .volume {
         display: none;
     }
+    .grid .item {
+        padding: 20px 5px 10px 5px;
+    }
+    .grid img {
+        margin: 0 4%;
+    }
+    .grid .ttl01,
+    .grid .ttl02,
+    .grid .item p {
+        width: 59%;
+    }
 }
