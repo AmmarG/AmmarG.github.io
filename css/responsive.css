@@ -1,774 +1,452 @@
-@media (max-width: 480px) {
-    body {
-        min-width: auto;
+@media only screen and (min-width: 1024px) {
+    /**** Desktop ****/
+    .hide_in_desktop,
+    .iwatch .main_img {
+        display: none !important;
     }
-    .noscroll {
-        overflow: hidden;
-    }
-    img {
-        max-width: 100%;
-    }
-    .main-header .logo,
-    .main-header .live-streaming,
-    .main-header .mobile-searh,
-    .footer-separator .logo {
-        background-image: url(../gfx/sprites-mobile.png);
-        background-repeat: no-repeat;
-    }
-    .main-content,
-    section .news,
-    .area-75 {
-        width: 100%;
-    }
-    .main-header {
-        background: #630a64;
-        height: 76px;
-        padding-top: 0;
-        border: 0;
-    }
-    .main-header .logo,
-    .footer-separator .logo {
-        background-position: 0 0;
-        flex: 0 0 100px;
-        height: 42px;
-        margin: 15px 18px 0 0;
-    }
-    .main-header .logo a {
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-    }
-    .main-header .live-streaming {
-        background-position: -24px -51px;
-        width: 51px;
-        font-size: 0;
-        padding: 0;
-    }
-    .main-header .mobile-menu {
-        background: url(../gfx/menu.png) center no-repeat;
-        flex: 0 0 51px;
-        transition: background .3s;
-        cursor: pointer;
-    }
-    .main-header .mobile-menu.cross {
-        background-image: url(../gfx/cross.png);
-    }
-    .main-header .mobile-searh {
-        flex: 0 0 51px;
-        margin-right: auto;
-        background-position: 15px -51px;
-        background-color: rgba(0, 0, 0, .4);
-        cursor: pointer;
-    }
-    .main-header .mobile-menu,
-    .main-header .live-streaming {
+    .hide_in_device {
         display: block;
-        background-color: rgba(0, 0, 0, .2);
-        height: 76px;
     }
-    .top-info,
-    .main-header .weather {
+    .iphone_ipad figure {
+        padding: 50px 0 50px 0;
+    }
+    .iphone_ipad .ipad {
+        float: right;
+        max-width: 60%;
+        z-index: 0;
+    }
+    .iphone_ipad .iphone {
+        float: left;
+        max-width: 30%;
+        z-index: 0;
+        margin-top: 100px;
+    }
+    .iphone_ipad .shape01 {
+        position: absolute;
+        left: 34px;
+        top: 81px;
+    }
+    .iphone_ipad ul {
+        position: relative;
+        z-index: 1;
+        padding: 0;
+        overflow: visible;
+    }
+    .iphone_ipad ul li {
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+    }
+    .iphone_ipad ul li img,
+    .iphone_ipad ul li span {
+        float: none;
+        clear: both;
+        width: auto;
+        font-size: 58%;
+        text-align: center;
+    }
+    .iphone_ipad ul li img {
+        min-width: 40%;
+    }
+    .iphone_ipad ul .li02 {
+        top: -10px;
+        left: 76px;
+        width: 140px;
+    }
+    .iphone_ipad ul .li02 span {
+        margin-top: -15px;
+    }
+    .iphone_ipad ul .li01 {
+        top: 100px;
+        left: 322px;
+        width: 120px;
+    }
+    .iphone_ipad ul .li03 {
+        top: 305px;
+        left: 322px;
+        width: 120px;
+    }
+    .iphone_ipad ul .li04 {
+        top: 700px;
+        left: 86px;
+        width: 128px;
+    }
+    .iphone_ipad ul .li04 img {
+        min-width: 30%;
+    }
+    .iphone_ipad ul .li04 span {
+        margin-top: -2px;
+    }
+    .iphone_ipad ul .li01 img,
+    .iphone_ipad ul .li03 img {
         display: none;
     }
-    .main-content .submenu.active {
-        height: auto;
+    .iphone_ipad p {
+        text-align: right;
+        width: 50%;
+        float: right;
     }
-    .main-content .submenu li:last-child {
-        margin-bottom: 0;
-    }
-    .main-content .submenu.active ul {
-        visibility: visible;
-        opacity: 1;
-        overflow: visible;
-        background: #eee;
-        width: 300px;
-        padding-bottom: 0;
-        margin-right: -15px;
-    }
-    .main-content .submenu ul li a {
-        padding-right: 60px;
-    }
-    header nav {
-        padding: 0;
+    .apple_tv .hide_in_device {
+        width: 100%;
         margin: 0;
     }
-    nav .main-content {
-        width: 300px;
-        position: fixed;
-        overflow-y: scroll;
-        top: 76px;
-        right: -300px;
-        z-index: 3;
-        transition: right .3s;
-        background: #fff;
-        display: block;
-        height: 100vh;
+    .apple_tv figure {
+        padding: 90px 0 150px 0;
     }
-    nav ul {
-        flex-direction: column;
-        padding-bottom: 50px;
-        overflow-y: scroll;
-        visibility: visible;
-        opacity: 1;
-        width: auto;
-        padding-bottom: 100px;
+    .apple_tv figure ul {
+        padding: 0;
     }
-    nav li a {
-        padding-right: 20px;
-    }
-    nav .main-content li {
-        height: auto;
-        line-height: 260%;
-        color: rgb(29, 27, 29);
-        width: 300px;
-        font-size: 100%;
-        border: none;
-        transition: border-right .2s;
-        border-bottom: 1px solid rgb(230, 227, 227) !important;
-        margin-top: 0;
-    }
-    nav .main-content li:first-child {
-        margin-top: 20px;
-    }
-    nav .main-content .submenu li:first-child {
-        margin-top: 0;
-    }
-    nav li:last-child {
-        margin-bottom: 40px;
-    }
-    nav li.submenu a {
-        display: flex;
-        justify-content: space-between;
-    }
-    nav .main-content li a.active {
-        border-right: 10px solid #630460;
-    }
-    nav li a.btn-search {
+    .apple_tv figure ul li {
         position: absolute;
-        left: 37px;
-        top: 0;
-        display: none;
-        z-index: 999;
-        background: red;
-        font-size: 0;
-        background: #3c0744 url(../gfx/search.png) center no-repeat;
-        height: 75px;
-        width: 51px;
+        font-size: 58%;
     }
-    nav .main-content.show {
+    .apple_tv figure ul li img {
+        display: none;
+    }
+    .apple_tv figure ul .li01 {
+        top: 25px;
+        left: 276px;
+        width: 250px;
+        text-align: center;
+    }
+    .apple_tv figure .li02 {
+        top: 350px;
+        right: 0px;
+        width: 140px;
+    }
+    .apple_tv figure .li02 span {
+        text-align: right;
+    }
+    .apple_tv figure .li03 {
+        top: 865px;
+        left: 0px;
+        width: 170px;
+    }
+    .apple_tv figure .li03 span {
+        text-align: left;
+    }
+    .apple_tv figure .li04 {
+        top: 980px;
+        right: 0px;
+        width: 650px;
+        font-size: 110%;
+    }
+    .apple_tv figure .li04 span {
+        text-align: right;
+        float: right
+    }
+    .apple_tv figure .li05 {
+        display: block;
+        top: 40px;
+        right: 3px;
+        width: 200px;
+    }
+    .iwatch .faces {
+        padding: 60px 0;
+    }
+    .iwatch .faces img {
+        float: right;
+        margin: 0 20px 0 0;
+        width: 17%;
+    }
+    .iwatch .shape01.hide_in_device {
+        right: 0%;
+        left: auto;
+        top: 17%;
+        max-width: 30%;
+    }
+    .iwatch .faces img.hide_in_device {
+        margin-right: 260px;
+    }
+    .iwatch .faces .shape01 {
+        margin: 0;
+        max-width: 94%;
+        top: 72%;
+        right: 444px;
+    }
+    .iwatch figure li.li02 {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        text-align: left;
+        width: 200px;
+    }
+    .iwatch figure li.li03 {
+        position: absolute;
+        top: 330px;
+        left: 400px;
+        text-align: center;
+        width: 150px;
+    }
+    .iwatch figure li.li04 {
+        position: absolute;
+        top: 238px;
+        right: 0;
+        text-align: center;
+        width: 155px;
+    }
+    .iwatch figure li span {
+        font-size: 64%;
+    }
+    .iwatch figure li img,
+    .iwatch figure li.li01,
+    .android_devices li img {
+        display: none;
+    }
+    .iwatch figure ul {
+        padding: 0;
+    }
+    .iwatch p {
+        padding-top: 40px;
+    }
+    section p {
+        width: 60% !important;
+        font-size: 22px !important;
+    }
+    .android_devices .android_tab {
+        width: 61%;
+        float: right;
+        margin-top: 39px;
+        margin-right: 0;
+        position: relative;
         right: 0;
     }
-    nav .main-content a span {
-        width: 20px;
-        height: 13px;
-        background: url('../gfx/arrow.png') center no-repeat;
-        flex: 0 0 20px;
-        align-self: center;
-    }
-    nav .main-content li.menu-icon,
-    nav .main-content li.seacrh {
-        display: none;
-    }
-    nav .submenu.active ul {
-        position: inherit;
-        height: auto;
-    }
-    nav .submenu.active ul li:last-child {
-        height: auto;
-        margin: 0;
-        border: none;
-        padding-right: 0;
-    }
-    section {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    header {
-        margin-bottom: 0;
-    }
-    .main-content {
-        padding: 0;
-    }
-    .global-wrapper .main-content {
-        padding: 10px 0;
-    }
-    .sticky .main-header {
-        height: 76px;
-        padding: 0;
-    }
-    .sticky h1.logo {
-        height: inherit;
-        transform: none;
-    }
-    .sticky .live-streaming {
-        transform: none;
-    }
-    .margintop .global-wrapper .full-wrapper:first-child .main-content {
-        margin-top: 79px;
-    }
-    .box,
-    article {
-        padding: 0 10px;
-    }
-    .news ul,
-    .news-mod02 ul {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-flow: row wrap;
-        justify-content: space-between;
-    }
-    .news .ttl,
-    .section-vod .area-25 .news li:first-child .ttl {
-        bottom: 27%;
-        font-size: 13px;
-        padding: 0 10px;
-        max-height: 44px;
-        overflow: hidden;
-    }
-    .news .section-ttl,
-    .news-mod02 .section-ttl,
-    .section-vod .area-25 .news li .section-ttl {
-        font-size: 11px;
-        padding: 0 5px;
-    }
-    .news .section-ttl,
-    .news-mod02 .section-ttl,
-    .news-mod02 li:first-child .section-ttl,
-    .section-vod .area-25 .news li .section-ttl {
-        bottom: 10px;
-        right: 10px;
-    }
-    .news li:first-child,
-    .area-50 .news li:first-child,
-    .news-mod02 li:first-child {
-        width: 100% !important;
-        height: auto !important;
-        margin-bottom: 10px !important;
-    }
-    .news ul li:first-child .ttl,
-    .news-mod02 ul li:first-child .ttl {
-        font-size: 18px;
-        padding: 10px;
-        bottom: 16%;
-        max-height: 68%;
-    }
-    .news li:first-child .section-ttl,
-    .news-mod02 li:first-child .section-ttl {
-        font-size: 14px;
-        border-width: 0 4px 0 0;
-        padding: 0 10px;
-    }
-    .news .caption {
-        bottom: 10px;
-        left: 10px;
-        padding: 0 10px;
-    }
-    a.cover {
-        background-position: right -200px;
-    }
-    .news li:first-child a.cover,
-    .news-mod02 li:first-child a.cover {
-        background-position: right -135px;
-    }
-    .news.programs li a.cover,
-    .news.programs li:first-child a.cover {
-        background-position: right 12px;
-    }
-    .news li,
-    .area-25 .news li:first-child,
-    .gallery ul li,
-    .dark .news-articles li,
-    .news.programs ul li,
-    .news-mod02 li {
-        width: 49% !important;
-        height: auto !important;
-        float: none !important;
-        margin: 0 0 auto 0 !important;
-        padding: 0 0 auto 0 !important;
-    }
-    .video-icon,
-    .photo-icon {
-        top: 0;
-        left: 0;
-        bottom: auto;
-    }
-    .news li:first-child .video-icon,
-    .dark .news-articles .video-icon,
-    .news-mod02 li:first-child .video-icon {
-        background-position: 0 -168px;
-        width: 50px;
-        height: 50px;
-    }
-    .news li .video-icon,
-    .news-articles .video-icon,
-    .news-mod02 li .video-icon,
-    .section-vod .area-25 .news li:first-child .video-icon {
-        background-position: -10px -272px;
-        width: 25px;
-        height: 25px;
-        left: 0;
-    }
-    .area-100,
-    .area-75,
-    .area-50,
-    .area-25 {
-        -webkit-box-flex: auto;
-        -ms-flex: auto;
-        flex: auto;
-    }
-    .section {
-        display: block;
-    }
-    .news-articles li {
-        margin-bottom: 10px;
-        padding-bottom: 10px;
-    }
-    .news-articles .section-ttl {
-        font-size: 13px;
-        margin-top: 5px;
-    }
-    .news-articles ul {
-        padding: 0;
-        background: Transparent;
-        margin-bottom: 0px;
-    }
-    .gallery ul {
-        padding: 10px 10px 0px 10px;
-    }
-    .box.gallery {
-        padding: 0;
-    }
-    .box.gallery h2 {
-        margin-right: 10px;
-    }
-    .gallery ul li {
-        padding-bottom: 10px;
-    }
-    .gallery li a {
-        color: #333;
-    }
-    .ad25,
-    .dark .news-articles li,
-    .gallery li {
-        display: none;
-    }
-    .top-content li .cover,
-    .top-content li .ttl,
-    .top-content li .caption {
-        width: 49%;
-    }
-    .dark,
-    .dark section {
-        padding: 0;
-    }
-    .dark .news-articles ul {
-        padding-top: 10px;
-        ;
-    }
-    .dark .news-articles li {
-        margin-bottom: 10px;
-    }
-    .gallery li:nth-child(-n+2),
-    .dark .news-articles li:nth-child(-n+2) {
-        display: block;
-    }
-    .top-content li:last-child {
-        padding-bottom: 0;
-        border: none;
-    }
-    .breaking-news .lbl {
-        padding: 0 10px 0px 10px;
-        font-size: 18px;
-        line-height: 270%;
-    }
-    .breaking-news p {
-        line-height: 131%;
-        font-size: 13px;
-    }
-    .breaking-news .close {
-        width: 17px;
-        height: 13px;
-        margin: 0 5px 0 10px;
-        font-size: 10px;
-        font-family: arial;
-        line-height: 99%;
-        text-align: center;
-        webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        border-radius: 15px;
-        padding: 0;
-    }
-    .news-mod02 li img {
-        border-width: 0;
-    }
-    .news-articles ul,
-    .news-mod02 li img {
-        box-shadow: none;
-        -moz-box-shadow: none;
-        -webkit-box-shadow: none;
-    }
-    .news-mod02 li img {
-        height: auto;
-    }
-    .custome-video-home li .ttl {
-        height: auto;
-    }
-    .news.programs .ttl {
-        font-size: 17px;
-    }
-    .news.programs ul li {
-        margin-bottom: 8px !important;
-    }
-    .area-25 .latest-news .time,
-    .area-25 .latest-news .ttl {
-        margin-right: 0;
-    }
-    footer {
-        background: #242323 url('../gfx/footer-bg-mob.png') right bottom no-repeat;
-        padding: 0 15px;
-    }
-    .footer-separator {
-        order: 1;
-        background: none;
-        margin-bottom: 0;
-        padding: 20px 0 10px 0;
-        border-width: 1 0 0 0;
-    }
-    .footer-separator .logo {
-        width: 100px;
-        margin: 0;
-        padding: 0;
-    }
-    .footer-separator .copyrights {
-        padding: 0;
-        margin: 0;
-        font-family: tahoma;
-        font-size: 11px;
-        line-height: 460%;
-    }
-    .footer-separator .logo,
-    .footer-separator .copyrights {
-        background-color: transparent !important;
-    }
-    footer .social {
-        width: 100%;
-        display: block;
-        padding: 20px 0;
-    }
-    footer .social .lbl {
-        float: right;
-        line-height: 100%;
-    }
-    footer .social ul {
+    .android_devices .android_phone {
+        width: 15.7%;
         float: left;
-        padding: 0;
-        width: auto !important;
-        border: none;
-        padding: 0;
+        margin: 37px 0px 0 20px;
     }
-    footer .social li {
-        width: 32px;
-        height: 32px;
+    .android_devices .blackberry {
+        width: 18%;
         float: left;
-        margin-right: 7px;
-        padding: 0;
     }
-    footer .social li:first-child {
-        width: 32px;
-        height: 32px;
+    .android_devices .shape01 {
+        position: absolute;
+        top: 120px;
+        right: 587px;
     }
-    footer .main-content ul {
-        display: block;
-        width: 100%;
-    }
-    footer li:first-child,
-    footer li:first-child a {
-        font-family: Arabiya;
-        font-size: 23px;
-        width: 30%;
-        padding-right: 0;
-        height: 100%;
-    }
-    footer li:first-child a {
-        width: 100%;
-    }
-    footer li {
-        float: right;
-        padding: 0 10px 0 0;
-    }
-    footer li a {
-        font-size: 12px;
-    }
-    footer li::after {
-        content: ".";
-        font-weight: bold;
-        font-size: 25px;
-        line-height: 0;
-        padding-right: 3px;
-    }
-    footer li:first-child::after,
-    footer li:last-child::after,
-    footer .social li::after {
-        content: "";
-        padding: 0;
-    }
-    footer ul,
-    .footer-separator {
-        border-top: solid 1px #2f2e2e;
-    }
-    footer .social,
-    footer ul {
-        border-bottom: solid 1px #171717;
-        border-width: 1 0 1px 0;
-    }
-    .footer-separator .copyrights,
-    footer li:first-child,
-    footer li:first-child a,
-    footer li,
-    footer li::after {
-        color: #FFF !important;
-    }
-    footer ul {
-        padding: 10px 0;
-    }
-    .area-25 .latest-news .ttl {
-        margin-right: 0;
-    }
-    footer a:hover {
-        color: #918d91;
-    }
-    .breadcrumbs {
-        padding-right: 10px;
-    }
-    .article-hdr h3 {
-        font-size: 25px;
-    }
-    .article-hdr h4 {
-        font-size: 19px;
-    }
-    .teaser-tools {
-        display: none;
-    }
-    blockquote {
-        font-size: 18px;
-    }
-    blockquote p {
-        font-size: 14px;
-    }
-    .topic,
-    article .infograph {
-        width: 100%;
-        float: none;
-        margin: 10px 0;
-        padding: 10px;
-    }
-    article h5 {
-        font-size: 23px;
+    .android_devices ul {
         clear: both;
     }
-    .article-hdr .author {
-        font-size: 12px;
-        padding: 0;
+    .android_devices li {
+        position: absolute;
+        font-size: 64%;
     }
-    .article-hdr time {
-        font-size: 11px;
-        padding-top: 3px;
+    .android_devices li.li01 {
+        top: 500px;
+        right: 0px;
+        text-align: right;
+        width: 240px;
     }
-    table {
-        font-size: 75%;
-    }
-    .tabs .news-articles li {
-        width: 49%;
-    }
-    .main-article img,
-    .main-article .ttl,
-    .main-article .txt {
-        width: 100%;
+    .android_devices li.li01 span {
         float: none;
     }
-    .main-article .ttl {
-        font-size: 18px;
-        margin-bottom: 5px;
+    .android_devices li.li02 {
+        top: 580px;
+        left: 194px;
+        text-align: center;
+        width: 180px;
     }
-    .main-article .txt {
-        font-size: 15px;
+    .android_devices li.li03 {
+        top: 628px;
+        left: 32px;
+        text-align: center;
+        width: 170px;
     }
-    .tabs-menu li a {
-        font-size: 13px;
+    .android_devices figure {
+        padding: 40px 0 27px 0;
     }
-    .coverage {
-        display: none;
+    .android_devices .container,
+    .apple_tv .container {
+        padding: 10px;
     }
-    .takeover-outer {
-        background: none !important;
+    section .store img {
+        width: 80%;
     }
-    .author-overview img {
-        width: 35%;
+    .android_devices p {
+        padding: 60px 0 20px 0;
+        float: right;
+        text-align: right;
+        width: 50%;
     }
-    .author-overview h5,
-    .author-overview p {
-        width: 62%;
-        font-size: 90%;
+    .samsung_tv p,
+    .android_watch p {
+        padding: 30px 0 20px 0;
+        margin: 0 auto;
     }
-    .author-overview h5 {
-        font-size: 110%;
-        padding-bottom: 3px;
+    .chrome_ext figure {
+        padding-top: 50px;
     }
-    .opinions ul li,
-    .writers li {
-        width: 100% !important;
-        padding-bottom: 7px !important;
-        border-bottom: solid 1px #e9e9e9;
+    .chrome_ext figure img {
+        max-width: 70%;
+        float: left;
     }
-    .opinions {
-        box-shadow: none;
-        -moz-box-shadow: none;
-        -webkit-box-shadow: none;
+    .chrome_ext figure .shape01 {
+        position: absolute;
+        top: 100px;
+        left: 620px;
     }
-    .writers li,
-    .top-writers li {
-        width: 31% !important;
-        margin: 5px 0;
+    .chrome_ext li.li01 {
+        position: absolute;
+        top: 420px;
+        left: 817px;
+        width: 200px;
     }
-    .writers {
-        border-bottom: none;
-        margin: 20px 0;
-    }
-    .writers .author,
-    .top-writers .author,
-    .writers .ttl,
-    .top-writers .ttl {
-        font-size: 80%;
-        padding: 5px;
-    }
-    .writers .ttl {
-        padding-top: 0;
-    }
-    .alfa-filter li {
-        width: 13%;
-        padding: 0;
-    }
-    .top-writers li:nth-child(n+4),
-    .writers li:nth-child(n+4) {
-        display: none;
-    }
-    .all-writers .writers li:nth-child(n+4) {
+    .chrome_ext li.li01 img {
+        float: none;
+        margin: 0 auto;
+        max-width: 100%;
         display: block;
     }
-    .author-story .pic,
-    .author-story .story-content {
-        width: 100%;
-    }
-    .author-story .story-content {
-        padding: 10px;
-        ;
-    }
-    .author-story .story-writer img {
-        width: 60px;
-        height: 60px;
-    }
-    .box.services {
-        padding: 20px 10px 0 10px;
-    }
-    .services .flags img {
-        width: 57px;
-        height: 36px;
-    }
-    form .row .lbl,
-    form .row .fld,
-    .btn {
-        width: 100%;
+    .chrome_ext li.li01 span {
         float: none;
+        font-size: 65%;
+        text-align: center;
     }
-    .btn {
-        margin-top: 15px;
-    }
-    form .row .fld {
-        margin-top: 5px;
-    }
-    .main-content.section-page .submenu ul {
-        right: 2000px;
-    }
-    .main-content .submenu ul li,
-    .main-content .submenu ul li a.active {
-        border: none;
-    }
-    .main-content .submenu ul li {
-        padding: 0;
-    }
-    /*** VOD ***/
-    .section-vod .main-header {
-        height: auto;
-    }
-    .vod-slider.news .caption.trailer {
-        right: 10px;
-        bottom: 10px;
-        font-size: 80%;
-    }
-    .section-vod .main-header .live-streaming {
-        background-position: -64px -51px;
-    }
-    .section-vod nav .main-content {
-        background: #0e0e0e;
-    }
-    .section-vod nav .main-content li {
-        border-bottom: solid 1px #272729 !important;
-    }
-    .section-vod .main-content .submenu.active ul {
-        background: #212020;
-    }
-    .section-vod .main-header h1.logo {
-        flex: 0 0 150px;
-        height: 46px;
-        background-position: 0 -123px;
-    }
-    .vod-slider.news .section-ttl {
-        font-size: 90%;
-    }
-    .section-vod footer .logo {
-        background-position: 0 0;
-    }
-    .section-vod .news li .video-icon,
-    .section-vod .news-articles .video-icon,
-    .section-vod .news-mod02 li .video-icon,
-    .section-vod .area-25 .news li:first-child .video-icon {
-        background-position: -9px -685px !important;
-        background-color: #d62919 !important;
-    }
-    .section-vod .dark .news-articles .video-icon,
-    .section-vod .news-mod02 li:first-child .video-icon,
-    .section-vod .news li:first-child .video-icon {
-        background-position: 0 -618px !important;
-        background-color: transparent !important;
-    }
-    .section-vod .area-100 .news li:first-child .video-icon {
-        top: 5px;
-    }
-    .vod-program .cover,
-    .vod-program .video-preview {
-        width: 100%;
-    }
-    .vod-program .video-preview .ttl {
-        font-size: 180%;
-        padding: 15px 0;
-    }
-    .vod-program .video-preview p {
-        padding: 10px 0;
+}
+@media only screen and (min-width: 992px) {
+    /****Ipad Landscape 1024 Container 970 ****/
+    figure li span {
+        padding-top: 4%;
+        width: 86%;
         font-size: 110%;
     }
-    .vod-program .video-preview .presenter {
-        font-size: 90%;
-        padding-top: 5px;
+    .store img {
+        width: 30%;
     }
-    .section-vod .footer-separator {
-        background: none;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /****Ipad Portrait 768 Container 991 ****/
+    .carousel-control {
+        display: none;
     }
-    .section-aswaq .main-header h1.logo {
-        flex: 0 0 150px;
-        height: 46px;
-        background-position: 0 -197px;
+    figure .full {
+        width: 40%;
+    }
+    figure li span {
+        padding-top: 4%;
+        width: 80%;
+        font-size: 92%;
+    }
+    .apple_tv figure li span,
+    .iwatch figure li span {
+        width: 96%;
+    }
+    .apple_tv figure li img,
+    .iwatch figure li img {
+        margin-top: 4px;
+    }
+    .store img {
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    /****Mobile Landscape 480 Container 767 ****/
+    .carousel-control {
+        display: none;
+    }
+    header figure {
+        width: 70%;
+    }
+    header h1 {
+        font-size: 170%;
+        line-height: 140%;
+    }
+    section h3,
+    .store {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        clear: both;
+        padding-bottom: 30px;
+    }
+    .store img {
+        width: 50%;
+    }
+    figure li span {
+        width: 77%;
+    }
+    .iphone_ipad p {
+        font-size: 100%;
+        width: 70%;
+    }
+    .android_devices p,
+    .samsung_tv p,
+    .android_watch p {
+        font-size: 100%;
+    }
+}
+@media only screen and (max-width: 479px) {
+    /**** Mobile Portrait 479 ****/
+    .carousel-control {
+        display: none;
+    }
+    header h1 {
+        font-size: 140%;
+        line-height: 130%;
+        margin: 15px 0;
+    }
+    #myCarousel .carousel-indicators {
+        bottom: 10%;
+    }
+    section h3,
+    .store {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        clear: both;
+        padding-bottom: 30px;
+        font-size: 180%;
+    }
+    .store img {
+        width: 60%;
+    }
+    #myCarousel .carousel-indicators {
+        bottom: -3%;
+    }
+    figure .full {
+        width: 70%;
+    }
+    figure li img {
+        width: 26%;
+    }
+    figure li span {
+        padding-top: 5%;
+        width: 74%;
+        font-size: 53%;
+        line-height: 160%;
+    }
+    .apple_tv figure li img,
+    .iwatch figure li img {
+        width: 4%;
+    }
+    .apple_tv figure li span,
+    .iwatch figure li span {
+        width: 92%;
+    }
+    .iphone_ipad p {
+        font-size: 70%;
+        width: 90%;
+    }
+    .android_devices p,
+    .samsung_tv p,
+    .android_watch p {
+        font-size: 70%;
+    }
+    figure ul li {
+        padding: 5px 0;
+    }
+}
+@media only screen and (max-width: 1023px) {
+    .hide_in_device {
+        display: none !important;
+    }
+    section h3,
+    .store {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        clear: both;
+        padding-bottom: 30px;
     }
 }
