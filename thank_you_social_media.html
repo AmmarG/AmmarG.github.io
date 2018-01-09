@@ -1,0 +1,1752 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="utf-8" />
+    <title>العربية نت</title>
+    <link rel="stylesheet" href="css/structure.css" type="text/css" />
+    <link rel="stylesheet" href="css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="animate.css" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body class="home_tem">
+    <div class="page_wrapper">
+       <!-- Start Thank You 10000000 User -->
+        <div class="thank_you_overlay">
+            <div class="cd-background-wrapper">
+                <div class="closeBtn">x</div>
+                <figure class="cd-floating-background">
+                    <img src="temp/thankYouSocial03.png" alt="image-1">
+                    <img src="temp/thankYouSocial01.png" alt="image-2">
+                    <img src="temp/thankYouSocial.png" alt="image-3">
+                    <img src="temp/thankYouSocial02.png" alt="image-4">
+                </figure>
+                <style>
+                    .thank_you_overlay {
+                        position: fixed;
+                        z-index: 9999;
+                        width: 1700px;
+                        top: 50%;
+                        right: 50%;
+                        margin-top: -450px;
+                        margin-right: -900px;
+                    }
+                    .closeBtn {
+                        width: 35px;
+                        height: 35px;
+                        cursor: pointer;
+                        color: #777;
+                        z-index: 999999;
+                        position: absolute;
+                        top: 180px;
+                        right: 325px;
+                        text-align: center;
+                        border: solid 2px #777;
+                        -webkit-border-radius: 35px;
+                        -moz-border-radius: 35px;
+                        border-radius: 35px;
+                        font-size: 24px;
+                        font-family: Verdana;
+                        line-height: 135%;
+                        font-weight: normal;
+                    }
+                    .cd-background-wrapper {
+                        position: relative;
+                        overflow: hidden;
+                        -webkit-perspective: 4000px;
+                        perspective: 4000px;
+                        width: 1760px;
+                    }
+                    .cd-floating-background {
+                        position: relative;
+                        top: 0;
+                        left: 0;
+                        -webkit-transform-style: preserve-3d;
+                        transform-style: preserve-3d;
+                        -webkit-transform: translateZ(0);
+                        -ms-transform: translateZ(0);
+                        transform: translateZ(0);
+                    }
+                    .cd-floating-background.is-absolute {
+                        position: absolute;
+                    }
+                    .cd-floating-background img {
+                        display: block;
+                        width: auto;
+                        -webkit-backface-visibility: hidden;
+                        backface-visibility: hidden;
+                        background-color: rgba(255, 255, 255, 0.01);
+                    }
+                    .cd-floating-background img:not(:first-child) {
+                        position: absolute;
+                    }
+                    .cd-floating-background img:first-child {
+                        -webkit-transform: translateZ(0);
+                        -ms-transform: translateZ(0);
+                        transform: translateZ(0);
+                    }
+                    .cd-floating-background img:nth-child(2) {
+                        -webkit-transform: translateZ(150px);
+                        -ms-transform: translateZ(150px);
+                        transform: translateZ(150px);
+                        top: 160px;
+                        left: 345px;
+                        width: 65%;
+                    }
+                    .cd-floating-background img:nth-child(3) {
+                        -webkit-transform: translateZ(400px);
+                        -ms-transform: translateZ(400px);
+                        transform: translateZ(400px);
+                        top: 240px;
+                        left: 340px;
+                        width: 60%;
+                    }
+                    .cd-floating-background img:nth-child(4) {
+                        -webkit-transform: translateZ(600px);
+                        -ms-transform: translateZ(600px);
+                        transform: translateZ(600px);
+                        top: 250px;
+                        left: 310px;
+                        width: 60%;
+                    }
+                    .no-preserve-3d .cd-floating-background {
+                        position: relative;
+                    }
+                </style>
+                <script>
+                    var contextPath = "";
+                    $('.closeBtn').click(function() {
+                        $('.thank_you_overlay').fadeOut(500);
+                    });
+                    jQuery(document).ready(function($) {
+                        $(document).click(function(event) {
+                            $('.thank_you_overlay').fadeOut(500);
+                        });
+                        var halfWindowH = $(window).height() * 0.5,
+                            halfWindowW = $(window).width() * 0.5,
+                            maxRotationY = 5,
+                            maxRotationX = 3,
+                            aspectRatio;
+                        $('.cd-floating-background').find('img').eq(0).load(function() {
+                            aspectRatio = $(this).width() / $(this).height();
+                            if ($('html').hasClass('preserve-3d')) initBackground();
+                        }).each(function() {
+                            if (this.complete) $(this).load();
+                        });
+
+                        $('.cd-background-wrapper').each(function() {
+                            $(this).on('mousemove', function(event) {
+                                var wrapperOffsetTop = $(this).offset().top;
+                                if ($('html').hasClass('preserve-3d')) {
+                                    window.requestAnimationFrame(function() {
+                                        moveBackground(event, wrapperOffsetTop);
+                                    });
+                                }
+                            });
+                        });
+                        $(window).on('resize', function() {
+                            if ($('html').hasClass('preserve-3d')) {
+                                window.requestAnimationFrame(function() {
+                                    halfWindowH = $(window).height() * 0.5,
+                                    halfWindowW = $(window).width() * 0.5;
+                                    initBackground();
+                                });
+                            } else {
+                                $('.cd-background-wrapper').attr('style', '');
+                                $('.cd-floating-background').attr('style', '').removeClass('is-absolute');
+                            }
+                        });
+
+                        function moveBackground(event, topOffset) {
+                            var rotateY = ((-event.pageX + halfWindowW) / halfWindowW) * maxRotationY,
+                                yPosition = event.pageY - topOffset,
+                                rotateX = ((yPosition - halfWindowH) / halfWindowH) * maxRotationX;
+
+                            if (rotateY > maxRotationY) rotateY = maxRotationY;
+                            if (rotateY < -maxRotationY) rotateY = -maxRotationY;
+                            if (rotateX > maxRotationX) rotateX = maxRotationX;
+                            if (rotateX < -maxRotationX) rotateX = -maxRotationX;
+
+                            $('.cd-floating-background').css({
+                                '-moz-transform': 'rotateX(' + rotateX + 'deg' + ') rotateY(' + rotateY + 'deg' + ') translateZ(0)',
+                                '-webkit-transform': 'rotateX(' + rotateX + 'deg' + ') rotateY(' + rotateY + 'deg' + ') translateZ(0)',
+                                '-ms-transform': 'rotateX(' + rotateX + 'deg' + ') rotateY(' + rotateY + 'deg' + ') translateZ(0)',
+                                '-o-transform': 'rotateX(' + rotateX + 'deg' + ') rotateY(' + rotateY + 'deg' + ') translateZ(0)',
+                                'transform': 'rotateX(' + rotateX + 'deg' + ') rotateY(' + rotateY + 'deg' + ') translateZ(0)',
+                            });
+                        }
+                    });
+                    (function getPerspective() {
+                        var element = document.createElement('p'),
+                            html = document.getElementsByTagName('html')[0],
+                            body = document.getElementsByTagName('body')[0],
+                            propertys = {
+                                'webkitTransformStyle': '-webkit-transform-style',
+                                'MozTransformStyle': '-moz-transform-style',
+                                'msTransformStyle': '-ms-transform-style',
+                                'transformStyle': 'transform-style'
+                            };
+
+                        body.insertBefore(element, null);
+
+                        for (var i in propertys) {
+                            if (element.style[i] !== undefined) {
+                                element.style[i] = "preserve-3d";
+                            }
+                        }
+
+                        var st = window.getComputedStyle(element, null),
+                            transform = st.getPropertyValue("-webkit-transform-style") ||
+                                st.getPropertyValue("-moz-transform-style") ||
+                                st.getPropertyValue("-ms-transform-style") ||
+                                st.getPropertyValue("transform-style");
+
+                        if (transform !== 'preserve-3d') {
+                            html.className += ' no-preserve-3d';
+                        } else {
+                            html.className += ' preserve-3d';
+                        }
+                        document.body.removeChild(element);
+
+                    })();
+                </script>
+            </div>
+        </div>
+        <!-- End Thank You 10000000 User -->
+        <!-- Takeovers Inner -->
+        <div class="takeover_inner">
+            <div class="takeover01">
+                <a href="" title=""></a>
+            </div>
+        </div>
+        <!-- Social Icons -->
+        <div class="social_icons">
+            <ul>
+                <li class="fb">
+                    <a href="#" title=""></a>
+                </li>
+                <li class="twitter">
+                    <a href="#" title=""></a>
+                </li>
+                <li class="gplus">
+                    <a href="#" title=""></a>
+                </li>
+                <li class="yt">
+                    <a href="#" title=""></a>
+                </li>
+                <li class="insta">
+                    <a href="#" title=""></a>
+                </li>
+                <li class="feeds">
+                    <a href="#" title=""></a>
+                </li>
+                <li class="telegram">
+                    <a href="#" title=""></a>
+                </li>
+            </ul>
+        </div>
+        <!-- Page Header -->
+        <header>
+            <!-- Branding -->
+            <div class="branding">
+                <h1> <a href="#" title="العربية نت"></a> </h1>
+                <!-- Language and Date -->
+                <div class="lang">
+                    <ul>
+                        <li> <a href="#" title="فارسي">فارسي</a> 
+                        </li>
+                        <li> <a href="#" title="أردو">أردو</a> 
+                        </li>
+                        <li> <a class="en" href="#" title="English">English</a> 
+                        </li>
+                        <li>
+                            <a class="hadath" href="#" title=""></a>
+                        </li>
+                    </ul>
+                    <span class="date">الاثنين 2 جمادي الثاني 1436هـ - 23 مارس 2015م</span> 
+                </div>
+            </div>
+            <!-- Navigation -->
+            <nav>
+                <ul>
+                    <li class="active"> <a href="#" title="الرئيسية">الرئيسية</a> 
+                    </li>
+                    <li> <a href="#" title="العرب و العالم">العرب و العالم</a>
+                        <div>
+                            <ul>
+                                <li> <a href="#" title="">مرسي</a> 
+                                </li>
+                                <li> <a href="#" title="">لمصر</a> 
+                                </li>
+                                <li> <a href="#" title="">أبوتريكة</a> 
+                                </li>
+                                <li> <a href="#" title="">لمرشح</a> 
+                                </li>
+                                <li> <a href="#" title="">مرسي</a> 
+                                </li>
+                                <li> <a href="#" title="">لمصر</a> 
+                                </li>
+                                <li> <a href="#" title="">أبوتريكة</a> 
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li> <a href="#" title="السعودية اليوم">السعودية اليوم</a>
+                        <div>
+                            <ul>
+                                <li> <a href="#" title="">مرسي</a> 
+                                </li>
+                                <li> <a href="#" title="">لمصر</a> 
+                                </li>
+                                <li> <a href="#" title="">أبوتريكة</a> 
+                                </li>
+                                <li> <a href="#" title="">لمرشح</a> 
+                                </li>
+                                <li> <a href="#" title="">مرسي</a> 
+                                </li>
+                                <li> <a href="#" title="">لمصر</a> 
+                                </li>
+                                <li> <a href="#" title="">أبوتريكة</a> 
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li> <a href="#" title="الأسواق العربية">الأسواق العربية</a>
+                        <div>
+                            <ul>
+                                <li> <a href="#" title="">مرسي</a> 
+                                </li>
+                                <li> <a href="#" title="">لمصر</a> 
+                                </li>
+                                <li> <a href="#" title="">أبوتريكة</a> 
+                                </li>
+                                <li> <a href="#" title="">لمرشح</a> 
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li> <a href="#" title="الرياضة">الرياضة</a>
+                        <div>
+                            <ul>
+                                <li> <a href="#" title="">مرسي</a> 
+                                </li>
+                                <li> <a href="#" title="">لمصر</a> 
+                                </li>
+                                <li> <a href="#" title="">أبوتريكة</a> 
+                                </li>
+                                <li> <a href="#" title="">لمرشح</a> 
+                                </li>
+                                <li> <a href="#" title="">مرسي</a> 
+                                </li>
+                                <li> <a href="#" title="">لمصر</a> 
+                                </li>
+                                <li> <a href="#" title="">أبوتريكة</a> 
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li> <a href="#" title="طب و صحة">طب و صحة</a>
+                        <div>
+                            <ul>
+                                <li> <a href="#" title="">مرسي</a> 
+                                </li>
+                                <li> <a href="#" title="">لمصر</a> 
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li> <a href="#" title="أدب">أدب</a>
+                        <div>
+                            <ul>
+                                <li> <a href="#" title="">مرسي</a> 
+                                </li>
+                                <li> <a href="#" title="">لمصر</a> 
+                                </li>
+                                <li> <a href="#" title="">أبوتريكة</a> 
+                                </li>
+                                <li> <a href="#" title="">لمرشح</a> 
+                                </li>
+                                <li> <a href="#" title="">مرسي</a> 
+                                </li>
+                                <li> <a href="#" title="">لمصر</a> 
+                                </li>
+                                <li> <a href="#" title="">أبوتريكة</a> 
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li> <a href="#" title="ثقافة و فن">ثقافة و فن</a>
+                        <div>
+                            <ul>
+                                <li> <a href="#" title="">مرسي</a> 
+                                </li>
+                                <li> <a href="#" title="">لمصر</a> 
+                                </li>
+                                <li> <a href="#" title="">أبوتريكة</a> 
+                                </li>
+                                <li> <a href="#" title="">لمرشح</a> 
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-qafilah"> <a href="#" title="تكنولوجيا">تكنولوجيا</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="subnav">
+                <ul>
+                    <li class="aus"> <a href="#" title="العرب في أمريكا">العرب في أمريكا</a> 
+                    </li>
+                    <li class="ara"> <a href="#" title="أنا أرى">أنا أرى</a> 
+                    </li>
+                    <li class="bath"> <a href="#" title="البث المباشر">البث المباشر</a>
+                        <div>
+                            <ul>
+                                <li> <a href="#" title="">العربية</a> 
+                                </li>
+                                <li> <a href="#" title="">العربية الحدث</a> 
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="aa_vid"> <a href="#" title="فيديو العربية">فيديو العربية</a> 
+                    </li>
+                    <li class="latest_news"> <a href="#" title="آخر الأخبار">آخر الأخبار</a> 
+                    </li>
+                    <li class="aa_hadath"> <a href="#" title="العربية الحدث">العربية الحدث</a> 
+                    </li>
+                    <li class="aa_frequencies"> <a href="#" title="ترددات العربية">ترددات العربية</a> 
+                    </li>
+                    <li class="studies"> <a href="#" title="دراسات العربية">دراسات العربية</a> 
+                    </li>
+                    <li class="nawafeth"> <a href="#" title="نوافذ">نوافذ</a> 
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Leaderboard -->
+        <div class="leaderboard">
+            <img src="temp/header_banner.jpg" width="730" height="92" alt="banner" />
+        </div>
+        <!-- Page Content -->
+        <div class="page_content">
+            <!-- Area_66 -->
+            <div class="area_66">
+                <div class="head66"></div>
+                <!-- Main Slider -->
+                <div class="box news_headlines" auto_news_headlines="3000">
+                    <div class="head"></div>
+                    <div class="content">
+                        <div class="arena">
+                            <div class="wrapper">
+                                <div class="headline"> <a href="#" title="">أنباء عن اغتيال مسؤولين بالنظام السوري</a> 
+                                </div>
+                                <div class="img_teaser">
+                                    <a href="#" title="">
+                                        <img src="temp/img01.jpg" width="395" height="296" alt="" /> <span class="vid_ico"></span>  <span>أعلن نجم كرة القدم المصرية</span> 
+                                    </a>
+                                    <p class="caption"> <span class="source">العربية.نت</span> يوجه المهتمون بالفلك أنظارهم إلى السماء يومي الثلاثاء والأربعاء لمتابعة واحد من أندر الأحداث الفلكية، وهو مرور كوكب الزهرة بشكل مباشر بين الشمس والأرض. ... <a href="#" title="">التتمة</a> 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="wrapper" style="display:none;">
+                                <div class="headline"> <a href="#" title="">مسؤولين بالنظام السوري.. ونفي رسمي</a> 
+                                </div>
+                                <div class="img_teaser">
+                                    <a href="#" title="">
+                                        <img src="temp/img01.jpg" width="395" height="296" alt="" /> <span>أعلن نجم كرة القدم المصرية</span> 
+                                    </a>
+                                    <p class="caption"> <span class="source">العربية.نت</span> يوجه الأحداث الفلكية، وهو مرور كوكب الزهرة بشكل مباشر بين الشمس والأرض. ... <a href="#" title="">التتمة</a> 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="wrapper" style="display:none;">
+                                <div class="headline"> <a href="#" title="">أنباء عن اغتيال مسؤولين بالنظام السوري.. ونفي رسمي</a> 
+                                </div>
+                                <div class="img_teaser">
+                                    <a href="#" title="">
+                                        <img src="temp/img01.jpg" width="395" height="296" alt="" /> <span class="vid_ico"></span>  <span>أعلن نجم كرة القدم المصرية</span> 
+                                    </a>
+                                    <p class="caption"> <span class="source">العربية.نت</span> يوجه المهتمون بالفلك أنظارهم إلى السماء يومي الثلاثاء والأربعاء لمتابعة واحد من أندر الأحداث الفلكية، وهو مرور كوكب الزهرة بشكل مباشر بين الشمس والأرض. ... <a href="#" title="">التتمة</a> 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="wrapper" style="display:none;">
+                                <div class="headline"> <a href="#" title="">مسؤولين بالنظام السوري.. ونفي رسمي</a> 
+                                </div>
+                                <div class="img_teaser">
+                                    <a href="#" title="">
+                                        <img src="temp/img01.jpg" width="395" height="296" alt="" /> <span>أعلن نجم كرة القدم المصرية</span> 
+                                    </a>
+                                    <p class="caption"> <span class="source">العربية.نت</span> يوجه الأحداث الفلكية، وهو مرور كوكب الزهرة بشكل مباشر بين الشمس والأرض. ... <a href="#" title="">التتمة</a> 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="wrapper" style="display:none;">
+                                <div class="headline"> <a href="#" title="">أنباء عن اغتيال مسؤولين بالنظام السوري.. ونفي رسمي</a> 
+                                </div>
+                                <div class="img_teaser">
+                                    <a href="#" title="">
+                                        <img src="temp/img01.jpg" width="395" height="296" alt="" /> <span class="vid_ico"></span>  <span>أعلن نجم كرة القدم المصرية</span> 
+                                    </a>
+                                    <p class="caption"> <span class="source">العربية.نت</span> يوجه المهتمون بالفلك أنظارهم إلى السماء يومي الثلاثاء والأربعاء لمتابعة واحد من أندر الأحداث الفلكية، وهو مرور كوكب الزهرة بشكل مباشر بين الشمس والأرض. ... <a href="#" title="">التتمة</a> 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="wrapper" style="display:none;">
+                                <div class="headline"> <a href="#" title="">مسؤولين بالنظام السوري.. ونفي رسمي</a> 
+                                </div>
+                                <div class="img_teaser">
+                                    <a href="#" title="">
+                                        <img src="temp/img01.jpg" width="395" height="296" alt="" /> <span>أعلن نجم كرة القدم المصرية</span> 
+                                    </a>
+                                    <p class="caption"> <span class="source">العربية.نت</span> يوجه الأحداث الفلكية، وهو مرور كوكب الزهرة بشكل مباشر بين الشمس والأرض. ... <a href="#" title="">التتمة</a> 
+                                    </p>
+                                </div>
+                            </div>
+                            <ul class="news_list">
+                                <li> <a href="#" title=""> أنباء عن اغتيال مسؤولين بالنظام السوري.. ونفي رسمي أنباء عن اغتيال مسؤولين بالنظام السوري.. ونفي رسمي </a> 
+                                </li>
+                                <li> <a href="#" title="">أنباء عن اغتيال مسؤولين بالنظام السوري.. ونفي رسمي</a> 
+                                </li>
+                                <li class="active"> <a href="#" title="">أنباء عن اغتيال مسؤولين بالنظام السوري.. ونفي رسمي</a> 
+                                </li>
+                                <li> <a href="#" title="">أنباء عن اغتيال مسؤولين بالنظام السوري.. ونفي رسمي</a> 
+                                </li>
+                                <li> <a href="#" title="">أنباء عن اغتيال مسؤولين بالنظام السوري.. ونفي رسمي</a> 
+                                </li>
+                                <li> <a href="#" title="">أنباء عن اغتيال مسؤولين بالنظام السوري.. ونفي رسمي</a> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot"></div>
+                </div>
+                <!-- Latest News Ticker -->
+                <div class="news_ticker">
+                    <div class="title"> <a href="#" title="">أخبار العربية</a> 
+                    </div>
+                    <div class="ticker">
+                        <div class="wrapper">
+                            <div class="ticker_feeds"> <span class="aa_icon">تعرض مراسل التلفزيون الرسمي</span>  <span class="aa_icon">السوري في مدينة حلب مساء السبت للاعتداء من قبل أحد المارة</span>  <span class="aa_icon">وذلك أثناء تغطية كانت تقوم بها القناة لتداعيات القرار العربي</span>  <span class="aa_icon">تعرض مراسل التلفزيون الرسمي</span>  <span class="aa_icon">السوري في مدينة حلب مساء السبت للاعتداء من قبل أحد المارة</span>  <span class="aa_icon">وذلك أثناء تغطية كانت تقوم بها القناة لتداعيات القرار العربي</span>  <span class="aa_icon">تعرض مراسل التلفزيون الرسمي</span>  <span class="aa_icon">السوري في مدينة حلب مساء السبت للاعتداء من قبل أحد المارة</span>  <span class="aa_icon">وذلك أثناء تغطية كانت تقوم بها القناة لتداعيات القرار العربي</span> 
+                            </div>
+                        </div>
+                        <div class="controls">
+                            <a class="prev" href="#" title=""></a>
+                            <a class="pause" href="#" title=""></a>
+                            <a class="next" href="#" title=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- External Banner -->
+                <div class="box external_banner">
+                    <img src="temp/external_banner_66.jpg" width="600" height="85" alt="" />
+                </div>
+                <!-- KSA Today -->
+                <div class="box ksa_today">
+                    <div class="head">
+                        <h2> <a href="#" title="">السعودية اليوم</a> </h2>
+                    </div>
+                    <div class="content">
+                        <div class="arena">
+                            <div class="teaser">
+                                <div class="img_teaser">
+                                    <a href="#" title="">
+                                        <img src="temp/img01.jpg" width="252" height="190" alt="" /> <span class="vid_ico"></span>  <span class="title">أعلن نجم كرة القدم المصرية محمد</span> 
+                                    </a>
+                                </div>
+                                <p>أعلن نجم كرة القدم المصرية محمد أبوتريكة تأييده لمرشح حزب الحرية والعدالة د. محمد مرسي رئيساً لمصر، في السباق الرئاسي الذي يشغل الشارع المصري أعلن نجم كرة القدم المصرية محمد أبوتريكة تأييده لمرشح حزب الحرية والعدالة د. محمد مرسي رئيساً لمصر، في السباق الرئاسي ... <a href="#" title="">التتمة</a> 
+                                </p>
+                            </div>
+                            <ul class="teasers_mod02">
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img02.jpg" width="162" height="122" alt="" /> <span class="vid_ico"></span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img03.jpg" width="162" height="122" alt="" /> <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img07.jpg" width="162" height="122" alt="" /> <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img04.jpg" width="162" height="122" alt="" /> <span class="vid_ico"></span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                            </ul>
+                            <a class="more" href="#" title="">المزيد</a> 
+                        </div>
+                    </div>
+                    <div class="foot"></div>
+                </div>
+                <!-- Egypt -->
+                <div class="box egypt">
+                    <div class="head">
+                        <h2> <a href="#" title="">مصر</a> </h2>
+                    </div>
+                    <div class="content">
+                        <div class="arena">
+                            <div class="teaser">
+                                <div class="img_teaser">
+                                    <a href="#" title="">
+                                        <img src="temp/img01.jpg" width="252" height="190" alt="" /> <span class="title">أعلن نجم كرة القدم المصرية محمد</span> 
+                                    </a>
+                                </div>
+                                <p>أعلن نجم كرة القدم المصرية محمد أبوتريكة تأييده لمرشح حزب الحرية والعدالة د. محمد مرسي رئيساً لمصر، في السباق الرئاسي الذي يشغل الشارع المصري أعلن نجم كرة القدم المصرية محمد أبوتريكة تأييده لمرشح حزب الحرية والعدالة د. محمد مرسي رئيساً لمصر، في السباق الرئاسي ... <a href="#" title="">التتمة</a> 
+                                </p>
+                            </div>
+                            <ul class="teasers_mod02">
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img02.jpg" width="162" height="122" alt="" /> <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img03.jpg" width="162" height="122" alt="" /> <span class="vid_ico"></span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img07.jpg" width="162" height="122" alt="" /> <span class="vid_ico"></span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img04.jpg" width="162" height="122" alt="" /> <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                            </ul>
+                            <a class="more" href="#" title="">المزيد</a> 
+                        </div>
+                    </div>
+                    <div class="foot"></div>
+                </div>
+                <!-- North Africa -->
+                <div class="box africa">
+                    <div class="head">
+                        <h2> <a href="#" title="">شمال افريقيا</a> </h2>
+                    </div>
+                    <div class="content">
+                        <div class="arena">
+                            <div class="teaser">
+                                <div class="img_teaser">
+                                    <a href="#" title="">
+                                        <img src="temp/img01.jpg" width="252" height="190" alt="" /> <span class="vid_ico"></span>  <span class="title">أعلن نجم كرة القدم المصرية محمد</span> 
+                                    </a>
+                                </div>
+                                <p>أعلن نجم كرة القدم المصرية محمد أبوتريكة تأييده لمرشح حزب الحرية والعدالة د. محمد مرسي رئيساً لمصر، في السباق الرئاسي الذي يشغل الشارع المصري أعلن نجم كرة القدم المصرية محمد أبوتريكة تأييده لمرشح حزب الحرية والعدالة د. محمد مرسي رئيساً لمصر، في السباق الرئاسي ... <a href="#" title="">التتمة</a> 
+                                </p>
+                            </div>
+                            <ul class="teasers_mod02">
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img02.jpg" width="162" height="122" alt="" /> <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img03.jpg" width="162" height="122" alt="" /> <span class="vid_ico"></span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img07.jpg" width="162" height="122" alt="" /> <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img04.jpg" width="162" height="122" alt="" /> <span class="vid_ico"></span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                            </ul>
+                            <a class="more" href="#" title="">المزيد</a> 
+                        </div>
+                    </div>
+                    <div class="foot"></div>
+                </div>
+                <!-- Syria -->
+                <div class="box syria">
+                    <div class="head">
+                        <h2> <a href="#" title="">سوريا</a> </h2>
+                    </div>
+                    <div class="content">
+                        <div class="arena">
+                            <div class="teaser">
+                                <div class="img_teaser">
+                                    <a href="#" title="">
+                                        <img src="temp/img01.jpg" width="252" height="190" alt="" /> <span class="title">أعلن نجم كرة القدم المصرية محمد</span> 
+                                    </a>
+                                </div>
+                                <p>أعلن نجم كرة القدم المصرية محمد أبوتريكة تأييده لمرشح حزب الحرية والعدالة د. محمد مرسي رئيساً لمصر، في السباق الرئاسي الذي يشغل الشارع المصري أعلن نجم كرة القدم المصرية محمد أبوتريكة تأييده لمرشح حزب الحرية والعدالة د. محمد مرسي رئيساً لمصر، في السباق الرئاسي ... <a href="#" title="">التتمة</a> 
+                                </p>
+                            </div>
+                            <ul class="teasers_mod02">
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img02.jpg" width="162" height="122" alt="" /> <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img03.jpg" width="162" height="122" alt="" /> <span class="vid_ico"></span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img07.jpg" width="162" height="122" alt="" /> <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img04.jpg" width="162" height="122" alt="" /> <span class="vid_ico"></span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                            </ul>
+                            <a class="more" href="#" title="">المزيد</a> 
+                        </div>
+                    </div>
+                    <div class="foot"></div>
+                </div>
+                <!-- Syria -->
+                <div class="box iran">
+                    <div class="head">
+                        <h2> <a href="#" title="">ايران</a> </h2>
+                    </div>
+                    <div class="content">
+                        <div class="arena">
+                            <div class="teaser">
+                                <div class="img_teaser">
+                                    <a href="#" title="">
+                                        <img src="temp/img01.jpg" width="252" height="190" alt="" /> <span class="vid_ico"></span>  <span class="title">أعلن نجم كرة القدم المصرية محمد</span> 
+                                    </a>
+                                </div>
+                                <p>أعلن نجم كرة القدم المصرية محمد أبوتريكة تأييده لمرشح حزب الحرية والعدالة د. محمد مرسي رئيساً لمصر، في السباق الرئاسي الذي يشغل الشارع المصري أعلن نجم كرة القدم المصرية محمد أبوتريكة تأييده لمرشح حزب الحرية والعدالة د. محمد مرسي رئيساً لمصر، في السباق الرئاسي ... <a href="#" title="">التتمة</a> 
+                                </p>
+                            </div>
+                            <ul class="teasers_mod02">
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img02.jpg" width="162" height="122" alt="" /> <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img03.jpg" width="162" height="122" alt="" /> <span class="vid_ico"></span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img07.jpg" width="162" height="122" alt="" /> <span class="vid_ico"></span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img04.jpg" width="162" height="122" alt="" /> <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                            </ul>
+                            <a class="more" href="#" title="">المزيد</a> 
+                        </div>
+                    </div>
+                    <div class="foot"></div>
+                </div>
+                <!-- Aswaq -->
+                <div class="box aswaq">
+                    <div class="head">
+                        <h2> <a href="#" title="">الأسواق العربية</a> </h2>
+                    </div>
+                    <div class="content">
+                        <div class="arena">
+                            <div class="teaser">
+                                <div class="img_teaser">
+                                    <a href="#" title="">
+                                        <img src="temp/img01.jpg" width="252" height="190" alt="" /> <span class="title">أعلن نجم كرة القدم المصرية محمد</span> 
+                                    </a>
+                                </div>
+                                <p>أعلن نجم كرة القدم المصرية محمد أبوتريكة تأييده لمرشح حزب الحرية والعدالة د. محمد مرسي رئيساً لمصر، في السباق الرئاسي الذي يشغل الشارع المصري أعلن نجم كرة القدم المصرية محمد أبوتريكة تأييده لمرشح حزب الحرية والعدالة د. محمد مرسي رئيساً لمصر، في السباق الرئاسي ... <a href="#" title="">التتمة</a> 
+                                </p>
+                            </div>
+                            <ul class="teasers_mod02">
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img02.jpg" width="162" height="122" alt="" /> <span class="vid_ico"></span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img03.jpg" width="162" height="122" alt="" /> <span class="vid_ico"></span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img07.jpg" width="162" height="122" alt="" /> <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img04.jpg" width="162" height="122" alt="" /> <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                            </ul>
+                            <a class="more" href="#" title="">المزيد</a> 
+                        </div>
+                    </div>
+                    <div class="foot"></div>
+                </div>
+                <!-- Sports -->
+                <div class="box sports">
+                    <div class="head">
+                        <h2> <a href="#" title="">الرياضة</a> </h2>
+                    </div>
+                    <div class="content">
+                        <div class="arena">
+                            <div class="teaser">
+                                <div class="img_teaser">
+                                    <a href="#" title="">
+                                        <img src="temp/img01.jpg" width="252" height="190" alt="" /> <span class="vid_ico"></span>  <span class="title">أعلن نجم كرة القدم المصرية محمد</span> 
+                                    </a>
+                                </div>
+                                <p>أعلن نجم كرة القدم المصرية محمد أبوتريكة تأييده لمرشح حزب الحرية والعدالة د. محمد مرسي رئيساً لمصر، في السباق الرئاسي الذي يشغل الشارع المصري أعلن نجم كرة القدم المصرية محمد أبوتريكة تأييده لمرشح حزب الحرية والعدالة د. محمد مرسي رئيساً لمصر، في السباق الرئاسي ... <a href="#" title="">التتمة</a> 
+                                </p>
+                            </div>
+                            <ul class="teasers_mod02">
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img02.jpg" width="162" height="122" alt="" /> <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img03.jpg" width="162" height="122" alt="" /> <span class="vid_ico"></span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img07.jpg" width="162" height="122" alt="" /> <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img04.jpg" width="162" height="122" alt="" /> <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                    </a>
+                                </li>
+                            </ul>
+                            <a class="more" href="#" title="">المزيد</a> 
+                        </div>
+                    </div>
+                    <div class="foot"></div>
+                </div>
+                <div class="box aa_screen">
+                    <div class="head">
+                        <h2> <a href="#">شاشة العربية الحدث</a> </h2>
+                    </div>
+                    <div class="content">
+                        <div class="arena">
+                            <div class="slider_mod01">
+                                <a class="prev off" href="#" title=""></a>
+                                <div class="wrapper">
+                                    <div class="slider">
+                                        <ul class="teasers_mod02">
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img02.jpg" width="162" height="122" alt="" /> <span class="vid_ico"></span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img03.jpg" width="162" height="122" alt="" /> <span class="vid_ico"></span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img07.jpg" width="162" height="122" alt="" /> <span class="vid_ico"></span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="teasers_mod02">
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img02.jpg" width="162" height="122" alt="" /> <span class="vid_ico"></span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img03.jpg" width="162" height="122" alt="" /> <span class="vid_ico"></span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img07.jpg" width="162" height="122" alt="" /> <span class="vid_ico"></span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="teasers_mod02">
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img02.jpg" width="162" height="122" alt="" /> <span class="vid_ico"></span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img03.jpg" width="162" height="122" alt="" /> <span class="vid_ico"></span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img07.jpg" width="162" height="122" alt="" /> <span class="vid_ico"></span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a class="next" href="#" title=""></a>
+                                <ul class="pager">
+                                    <li class="active">
+                                        <a href="#" title=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title=""></a>
+                                    </li>
+                                </ul>
+                                <a class="more" href="#" title="">المزيد</a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foot"></div>
+                </div>
+                <div class="foot66"></div>
+            </div>
+            <!-- Area 33 -->
+            <div class="area_33">
+                <div class="head33"></div>
+                <!-- External Ad -->
+                <div class="box external_ad">
+                    <a href="#" title="">
+                        <img src="temp/external_ad.jpg" width="320" height="90" alt="">
+                    </a>
+                </div>
+                <!-- Search -->
+                <div class="box search">
+                    <form action="post">
+                        <input name="" type="text">
+                        <a href="#" title="">ابحث</a>
+                    </form>
+                </div>
+                <!-- Killer Banner -->
+                <div class="box killer">
+                    <img src="temp/killer.jpg" width="300" height="250" alt="" />
+                </div>
+                <!-- Social33 -->
+                <div class="box newsletter_33">
+                    <div class="head">
+                        <h2>تابعونا على</h2>
+                    </div>
+                    <div class="content">
+                        <div class="arena">
+                            <ul class="social">
+                                <li class="fb">
+                                    <a href="#" title=""></a>
+                                </li>
+                                <li class="twitter">
+                                    <a href="#" title=""></a>
+                                </li>
+                                <li class="gplus">
+                                    <a href="#" title=""></a>
+                                </li>
+                                <li class="yt">
+                                    <a href="#" title=""></a>
+                                </li>
+                                <li class="insta">
+                                    <a href="#" title=""></a>
+                                </li>
+                                <li class="feeds">
+                                    <a href="#" title=""></a>
+                                </li>
+                                <li class="telegram">
+                                    <a href="#" title=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot33"></div>
+                </div>
+                <!-- Readers Selections -->
+                <div class="box selections">
+                    <div class="head">
+                        <h2>اختيارات القراء</h2>
+                        <ul class="filter">
+                            <li class="active"> <a href="#" title="">يوم</a> 
+                            </li>
+                            <li> <a href="#" title="">أسبوع</a> 
+                            </li>
+                            <li> <a href="#" title="">شهر</a> 
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                        <div class="arena">
+                            <ul class="tabs">
+                                <li class="active"> <a href="#" title="">الأكثر قراءة</a> 
+                                </li>
+                                <li> <a href="#" title="">الأكثر تعليقا</a> 
+                                </li>
+                                <li> <a href="#" title="">الأكثر مشاركة</a> 
+                                </li>
+                            </ul>
+                            <!-- Most Read -->
+                            <ul class="items most_read">
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img02.jpg" width="" height="" alt="" /> <span class="vid_ico"></span> إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img03.jpg" width="" height="" alt="" />إحراق مقر حملة شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img04.jpg" width="" height="" alt="" /> <span class="vid_ico"></span> إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img07.jpg" width="" height="" alt="" />إحراق مقر حملة شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img08.jpg" width="" height="" alt="" /> <span class="vid_ico"></span> إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- Most Commented -->
+                            <ul style="display:none;" class="items most_commented">
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img09.jpg" width="" height="" alt="" />إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img10.jpg" width="" height="" alt="" /> <span class="vid_ico"></span> إحراق مقر حملة شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img09.jpg" width="" height="" alt="" />إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img01.jpg" width="" height="" alt="" /> <span class="vid_ico"></span> إحراق مقر حملة شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img03.jpg" width="" height="" alt="" />إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- Most Shared -->
+                            <ul style="display:none;" class="items most_shared">
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img04.jpg" width="" height="" alt="" /> <span class="vid_ico"></span> إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img09.jpg" width="" height="" alt="" />إحراق مقر حملة شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img10.jpg" width="" height="" alt="" />إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img07.jpg" width="" height="" alt="" />إحراق مقر حملة شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img08.jpg" width="" height="" alt="" /> <span class="vid_ico"></span> إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content" style="display:none;">
+                        <div class="arena">
+                            <ul class="tabs">
+                                <li class="active"> <a href="#" title="">الأكثر قراءة</a> 
+                                </li>
+                                <li> <a href="#" title="">الأكثر تعليقا</a> 
+                                </li>
+                                <li> <a href="#" title="">الأكثر مشاركة</a> 
+                                </li>
+                            </ul>
+                            <!-- Most Read -->
+                            <ul class="items most_read">
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img09.jpg" width="" height="" alt="" />إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img01.jpg" width="" height="" alt="" /> <span class="vid_ico"></span> إحراق مقر حملة شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img02.jpg" width="" height="" alt="" /> <span class="vid_ico"></span> إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img03.jpg" width="" height="" alt="" />إحراق مقر حملة شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img04.jpg" width="" height="" alt="" />إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- Most Commented -->
+                            <ul style="display:none;" class="items most_commented">
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img09.jpg" width="" height="" alt="" /> <span class="vid_ico"></span> إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img10.jpg" width="" height="" alt="" /> <span class="vid_ico"></span> إحراق مقر حملة شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img07.jpg" width="" height="" alt="" />إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img08.jpg" width="" height="" alt="" />إحراق مقر حملة شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img09.jpg" width="" height="" alt="" />إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- Most Shared -->
+                            <ul style="display:none;" class="items most_shared">
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img01.jpg" width="" height="" alt="" />إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img03.jpg" width="" height="" alt="" />إحراق مقر حملة شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img02.jpg" width="" height="" alt="" /> <span class="vid_ico"></span> إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img04.jpg" width="" height="" alt="" /> <span class="vid_ico"></span> إحراق مقر حملة شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img09.jpg" width="" height="" alt="" />إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content" style="display:none;">
+                        <div class="arena">
+                            <ul class="tabs">
+                                <li class="active"> <a href="#" title="">الأكثر قراءة</a> 
+                                </li>
+                                <li> <a href="#" title="">الأكثر تعليقا</a> 
+                                </li>
+                                <li> <a href="#" title="">الأكثر مشاركة</a> 
+                                </li>
+                            </ul>
+                            <!-- Most Read -->
+                            <ul class="items most_read">
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img07.jpg" width="" height="" alt="" />إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img08.jpg" width="" height="" alt="" /> <span class="vid_ico"></span> إحراق مقر حملة شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img07.jpg" width="" height="" alt="" />إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img08.jpg" width="" height="" alt="" /> <span class="vid_ico"></span> إحراق مقر حملة شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img09.jpg" width="" height="" alt="" />إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- Most Commented -->
+                            <ul style="display:none;" class="items most_commented">
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img01.jpg" width="" height="" alt="" /> <span class="vid_ico"></span> إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img02.jpg" width="" height="" alt="" />إحراق مقر حملة شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img03.jpg" width="" height="" alt="" />إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img04.jpg" width="" height="" alt="" />إحراق مقر حملة شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img10.jpg" width="" height="" alt="" /> <span class="vid_ico"></span> إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- Most Shared -->
+                            <ul style="display:none;" class="items most_shared">
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img09.jpg" width="" height="" alt="" />إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img07.jpg" width="" height="" alt="" />إحراق مقر حملة شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img08.jpg" width="" height="" alt="" /> <span class="vid_ico"></span> إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img09.jpg" width="" height="" alt="" /> <span class="vid_ico"></span> إحراق مقر حملة شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <img src="temp/img01.jpg" width="" height="" alt="" />إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف <span>(6,202 مشاهدة)</span> 
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot"></div>
+                </div>
+                <!-- Readers Selections -->
+                <div class="box selections">
+                    <div class="head">
+                        <h2>اختيارات القراء</h2>
+                    </div>
+                    <div class="content">
+                        <div class="arena">
+                            <ul class="items">
+                                <li> <a href="#" title="">إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف</a> 
+                                </li>
+                                <li> <a href="#" title="">إحراق مقر حملة شفيق وصباحي يدين العنف</a> 
+                                </li>
+                                <li> <a href="#" title="">إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف</a> 
+                                </li>
+                                <li> <a href="#" title="">إحراق مقر حملة شفيق وصباحي يدين العنف</a> 
+                                </li>
+                                <li> <a href="#" title="">إحراق مقر حملة شفيق وصباحي يدين العنف شفيق وصباحي يدين العنف</a> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot"></div>
+                </div>
+                <!-- Opinions -->
+                <div class="box opinions">
+                    <div class="head">
+                        <h2>آراء</h2>
+                    </div>
+                    <div class="content">
+                        <div class="arena">
+                            <ul class="tabs">
+                                <li class="active"> <a href="#" title="">سياسي</a> 
+                                </li>
+                                <li> <a href="#" title="">رياضي</a> 
+                                </li>
+                                <li> <a href="#" title="">اقتصادي</a> 
+                                </li>
+                            </ul>
+                            <!-- Politics -->
+                            <div class="slider_mod02">
+                                <a class="prev off" href="#" title=""></a>
+                                <div class="wrapper">
+                                    <div class="slider">
+                                        <ul>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img02.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img01.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img03.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img04.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img05.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img02.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img01.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img03.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img04.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img05.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a class="next" href="#" title=""></a> <a class="more" href="#" title="">المزيد</a> 
+                            </div>
+                            <!-- Sports -->
+                            <div class="slider_mod02" style="display:none;">
+                                <a class="prev off" href="#" title=""></a>
+                                <div class="wrapper">
+                                    <div class="slider">
+                                        <ul>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img02.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img01.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img03.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img04.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img05.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img02.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img01.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img03.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img04.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img05.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a class="next" href="#" title=""></a> <a class="more" href="#" title="">المزيد</a> 
+                            </div>
+                            <!-- Economics -->
+                            <div class="slider_mod02" style="display:none;">
+                                <a class="prev off" href="#" title=""></a>
+                                <div class="wrapper">
+                                    <div class="slider">
+                                        <ul>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img02.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img01.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img03.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img04.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img05.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img02.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img01.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img03.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img04.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <img src="temp/img05.jpg" width="44" height="59" alt="" />
+                                                </a> <a class="title" href="#" title="">في سيناء وزير الداخلية المصري</a>  <a class="writer" href="#" title="">محمد أبوعبيد</a> 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a class="next" href="#" title=""></a> <a class="more" href="#" title="">المزيد</a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foot"></div>
+                </div>
+                <!-- Al Arabiya Programs -->
+                <div class="box aa_programs">
+                    <div class="head">
+                        <h2>برامج العربية</h2>
+                    </div>
+                    <div class="content">
+                        <div class="arena">
+                            <div class="slider_mod02">
+                                <a class="prev off" href="#" title=""></a>
+                                <div class="wrapper">
+                                    <div class="slider">
+                                        <ul>
+                                            <li>
+                                                <a title="" href="#">
+                                                    <img width="130" height="98" alt="" src="temp/img02.jpg"> <span class="vid_ico"></span>  <span class="title">محمد أبوعبيد</span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="" href="#">
+                                                    <img width="130" height="98" alt="" src="temp/img01.jpg"> <span class="vid_ico"></span>  <span class="title">محمد أبوعبيد</span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="" href="#">
+                                                    <img width="130" height="98" alt="" src="temp/img03.jpg"> <span class="vid_ico"></span>  <span class="title">محمد أبوعبيد</span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="" href="#">
+                                                    <img width="130" height="98" alt="" src="temp/img04.jpg"> <span class="vid_ico"></span>  <span class="title">محمد أبوعبيد</span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="" href="#">
+                                                    <img width="130" height="98" alt="" src="temp/img01.jpg"> <span class="vid_ico"></span>  <span class="title">محمد أبوعبيد</span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="" href="#">
+                                                    <img width="130" height="98" alt="" src="temp/img03.jpg"> <span class="vid_ico"></span>  <span class="title">محمد أبوعبيد</span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="" href="#">
+                                                    <img width="130" height="98" alt="" src="temp/img04.jpg"> <span class="vid_ico"></span>  <span class="title">محمد أبوعبيد</span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="" href="#">
+                                                    <img width="130" height="98" alt="" src="temp/img01.jpg"> <span class="vid_ico"></span>  <span class="title">محمد أبوعبيد</span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="" href="#">
+                                                    <img width="130" height="98" alt="" src="temp/img03.jpg"> <span class="vid_ico"></span>  <span class="title">محمد أبوعبيد</span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="" href="#">
+                                                    <img width="130" height="98" alt="" src="temp/img04.jpg"> <span class="vid_ico"></span>  <span class="title">محمد أبوعبيد</span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="" href="#">
+                                                    <img width="130" height="98" alt="" src="temp/img01.jpg"> <span class="vid_ico"></span>  <span class="title">محمد أبوعبيد</span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="" href="#">
+                                                    <img width="130" height="98" alt="" src="temp/img03.jpg"> <span class="vid_ico"></span>  <span class="title">محمد أبوعبيد</span>  <span> وزير الداخلية المصري: لا وجود "للقاعدة" في سيناء وزير الداخلية المصري </span> 
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a class="next" href="#" title=""></a> <a class="more" href="#" title="">المزيد</a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foot"></div>
+                </div>
+                <!-- Carecature Corner -->
+                <div class="box carecature">
+                    <div class="head">
+                        <h2>زاوية الكاريكاتير</h2>
+                    </div>
+                    <div class="content">
+                        <div class="arena">
+                            <div class="slider_mod02">
+                                <a class="prev off" href="#" title=""></a>
+                                <div class="wrapper">
+                                    <div class="slider">
+                                        <ul>
+                                            <li>
+                                                <a title="" href="#">
+                                                    <img width="296" height="222" alt="" src="temp/img12.jpg">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="" href="#">
+                                                    <img width="296" height="222" alt="" src="temp/img13.jpg">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="" href="#">
+                                                    <img width="296" height="222" alt="" src="temp/img14.jpg">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="" href="#">
+                                                    <img width="296" height="222" alt="" src="temp/img12.jpg">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="" href="#">
+                                                    <img width="296" height="222" alt="" src="temp/img13.jpg">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="" href="#">
+                                                    <img width="296" height="222" alt="" src="temp/img14.jpg">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="" href="#">
+                                                    <img width="296" height="222" alt="" src="temp/img12.jpg">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="" href="#">
+                                                    <img width="296" height="222" alt="" src="temp/img13.jpg">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="" href="#">
+                                                    <img width="296" height="222" alt="" src="temp/img14.jpg">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a class="next" href="#" title=""></a> <a class="more" href="#" title="">المزيد</a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foot"></div>
+                </div>
+                <div class="foot33"></div>
+            </div>
+        </div>
+        <!-- Page Footer -->
+        <footer>
+            <div class="content_area">
+                <ul class="home">
+                    <li class="title"> <a href="#" title="">الصفحة الرئيسية</a> 
+                    </li>
+                </ul>
+                <ul class="aa_news">
+                    <li class="title">أخبار العربية</li>
+                    <li>
+                        <ul>
+                            <li> <a href="#" title="">الشرق الأوسط</a> 
+                            </li>
+                            <li> <a href="#" title="">العالم</a> 
+                            </li>
+                            <li> <a href="#" title="">الأسواق العربية</a> 
+                            </li>
+                            <li> <a href="#" title="">الرياضة</a> 
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li> <a href="#" title="">طب وصحة</a> 
+                            </li>
+                            <li> <a href="#" title="">ثقافة وفن</a> 
+                            </li>
+                            <li> <a href="#" title="">آراء</a> 
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="aa_programs">
+                    <li class="title">برامج العربية</li>
+                    <li>
+                        <ul>
+                            <li> <a href="#" title="">برامج العربية</a> 
+                            </li>
+                            <li> <a href="#" title="">فيديو العربية</a> 
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="aa_services">
+                    <li class="title">خدمات موقع العربية</li>
+                    <li>
+                        <ul>
+                            <li> <a href="#" title="">جوال العربية</a> 
+                            </li>
+                            <li> <a href="#" title="">حول العربية.نت</a> 
+                            </li>
+                            <li> <a href="#" title="">ترددات القناة</a> 
+                            </li>
+                            <li> <a href="#" title="">فريق العمل</a> 
+                            </li>
+                            <li> <a href="#" title="">أعلن معنا</a> 
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li> <a href="#" title="">إتصل بنا</a> 
+                            </li>
+                            <li class="rss"> <a href="#" title="">خدمة RSS</a> 
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="aa_languages">
+                    <li class="title">لغات أخرى</li>
+                    <li>
+                        <ul>
+                            <li> <a href="#" title="">English</a> 
+                            </li>
+                            <li> <a href="#" title="">أردو</a> 
+                            </li>
+                            <li> <a href="#" title="">فارسي</a> 
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyrights">© جميع الحقوق محفوظة لقناة العربية 2012</div>
+        </footer>
+    </div>
+</body>
+
+</html>
