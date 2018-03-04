@@ -1745,8 +1745,9 @@ article .unordered li {
     display: block;
 }
 .main-article .ttl {
-    font-size: 23px;
+    font-size: 21px;
     margin: 10px 0 15px 0;
+    font-weight: bold;
 }
 .main-article .txt {
     font-size: 17px;

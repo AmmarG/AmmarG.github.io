@@ -852,6 +852,12 @@
     .scroller .navigator i.down {
         margin: -3px 1px 0 0;
     }
+    .scroller-4,
+    .scroller-6,
+    .scroller-8,
+    .scroller-10 {
+        height: 505px;
+    }
 }
 @-ms-viewport{
 
