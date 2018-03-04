@@ -342,6 +342,15 @@ footer .main-content ul {
     -ms-flex-line-pack: start;
     align-content: flex-start;
 }
+.aa-live,
+.teaser-tools ul .share {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 /* Pages & Components */
 
 .ad25,
@@ -734,7 +743,7 @@ nav.moveR .submenu ul {
     top: 3px;
 }
 .margintop .global-wrapper {
-    margin-top: 100px;
+    margin-top: 95px;
 }
 /**Sticky Nav***/
 
@@ -826,6 +835,7 @@ a.cover {
     z-index: 1;
     position: absolute;
     top: 0;
+    right: 0;
 }
 span.cover {
     width: 100%;
@@ -916,6 +926,9 @@ span.cover {
     text-align: center;
     padding-left: 10px;
     margin-right: -66px;
+}
+.area-25 .latest-news a {
+    display: block;
 }
 .area-25 .latest-news a:hover .time {
     margin-right: 0px;
@@ -1329,12 +1342,16 @@ input::-webkit-input-placeholder {
 .breaking-news {
     overflow: hidden;
     position: fixed;
-    bottom: 0;
+    bottom: -200px;
     width: 100%;
     z-index: 9;
     clear: both;
     font-size: 25px;
-    display: none;
+    -webkit-transition: bottom .6s ease;
+    transition: bottom .6s ease;
+}
+.breaking-news.show {
+    bottom: 0;
 }
 .breaking-news .main-content {
     -ms-flex-flow: row nowrap;
@@ -1430,6 +1447,7 @@ article .article-teaser img {
     margin-bottom: 10px;
     font-size: 14px;
     width: 100%;
+    height: 40px;
 }
 .teaser-tools .short-url {
     padding: 8px;
@@ -1459,10 +1477,11 @@ article .article-teaser img {
     font-size: 0;
     cursor: pointer;
 }
-.teaser-tools ul .share a {
-    padding: 11px 45px 10px 10px;
+.teaser-tools ul .share {
+    padding: 10px 45px 10px 10px;
     text-align: center;
     font-size: 14px;
+    cursor: pointer;
 }
 article {
     margin-bottom: 40px;
@@ -1520,6 +1539,7 @@ blockquote p::before {
 article .box {
     margin: 20px 0;
     padding: 10px 20px 20px 20px;
+    overflow: hidden;
 }
 .topic img,
 .infograph img {
@@ -2147,28 +2167,40 @@ form .valid {
     top: 20px;
 }
 .vod-program .cover {
-    width: 53%;
+    width: 52%;
+    height: 456px;
+    overflow: hidden;
+    position: relative;
+}
+.vod-program .cover img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -22px;
+    right: 0;
 }
 .vod-program .video-preview {
     width: 46%;
 }
 .vod-program .video-preview .ttl {
-    font-size: 300%;
+    font-size: 210%;
     font-weight: bold;
     word-spacing: -5px;
-    line-height: 100%;
     padding-bottom: 10px;
+    line-height: 150%;
 }
 .vod-program .video-preview p {
     font-size: 120%;
-    padding: 30px 0;
+    padding: 67px 0 30px 0;
+    line-height: 150%;
 }
-.vod-program .video-preview .video-wrapper {
-    margin: 10px 0;
+.vod-program .video-preview .presenter {
+    display: none;
 }
 .vod-program .video-preview .date-time {
     padding: 2px 0;
     font-size: 90%;
+    display: none;
 }
 .vod-program .video-preview .date-time .timing {
     display: block;
@@ -2199,12 +2231,6 @@ article p a {
     bottom: 285px;
     left: 0;
     z-index: 999;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 .aa-live h2 a {
     display: inline;
@@ -2222,6 +2248,7 @@ article p a {
     padding-right: 30px;
     margin-top: 10px;
     font-weight: bold;
+    font-size: 14px;
 }
 .aa-live .close {
     float: left;
@@ -2269,9 +2296,11 @@ article p a {
     width: 100%;
     overflow: hidden;
 }
+.player-wrapper {
+    margin-bottom: 15px;
+}
 .live-popup .live-info {
     clear: both;
-    margin: 15px 0;
     overflow: hidden;
     line-height: 250%;
     padding-bottom: 15px;
@@ -2297,12 +2326,12 @@ article p a {
 .live-popup .services .devices {
     width: 50%;
     float: right;
-    padding: 0 15px
+    padding-left: 15px;
 }
 .live-popup .services .channels {
     width: 50%;
     float: left;
-    padding: 0 15px
+    padding-right: 15px;
 }
 .live-popup .services h3 {
     font-weight: bold;
@@ -2310,8 +2339,150 @@ article p a {
 }
 .live-popup .services a {
     float: right;
-    margin-left: 20px;
+    margin-left: 30px;
+}
+.live-popup .services .channels a {
+    margin-left: 15px;
 }
 .live-popup .services a:last-child {
     margin-left: 0;
+}
+.live-popup .services .channels a:last-child {
+    margin-left: 0;
+}
+.area-100 .news-articles ul,
+.area-100 .gallery ul,
+.area-100 .news.programs ul {
+    justify-content: flex-start;
+}
+.area-100 .news-articles ul li,
+.area-100 .gallery ul li,
+.area-100 .news.programs ul li {
+    margin-left: 14px;
+}
+.area-100 .news-articles ul li:nth-child(4n+0),
+.area-100 .gallery ul li:nth-child(4n+0),
+.area-100 .news.programs ul li:nth-child(4n+0) {
+    margin-left: 0px;
+}
+article .teaser-tools .share {
+    position: relative;
+}
+article .teaser-tools .share ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 165px;
+    height: 40px;
+    display: none;
+}
+article .teaser-tools .share ul li {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 1px;
+}
+article .teaser-tools .share ul .whatsapp,
+article .teaser-tools .share ul .telegram {
+    display: none;
+}
+article .teaser-tools .share ul.show-icons {
+    display: block;
+}
+a.loadmore {
+    clear: both;
+    display: block;
+    margin: 20px 0;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+.en {
+    direction: ltr;
+    font-family: Arial;
+}
+.en h6 {
+    font-size: 150%;
+    line-height: 180%;
+}
+.en h6 img,
+.en table img {
+    float: right;
+}
+.en table {
+    direction: rtl;
+}
+.en table td {
+    direction: ltr;
+}
+.en table tr th:first-child,
+.en table tr td:first-child {
+    text-align: right;
+}
+.en table tr td:first-child span {
+    line-height: 225%;
+    display: inline-block;
+    margin-top: 13px;
+    font-size: 120%;
+    font-weight: bold;
+}
+.scroller {
+    overflow: hidden;
+    position: relative;
+}
+.scroller .navigator {
+    width: 72px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.scroller .navigator .prev,
+.scroller .navigator .next {
+    width: 35px;
+    height: 100%;
+    display: block;
+    float: left;
+    cursor: pointer;
+    margin-right: 1px
+}
+.scroller .navigator i {
+    border-style: solid;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 5px;
+}
+.scroller .navigator i.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    margin: 8px 10px 0 0;
+}
+.scroller .navigator i.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin: 2px 10px 0 0;
+}
+.scroller {
+    position: relative;
+    overflow: hidden;
+}
+#ver-carousel {
+    position: absolute;
+    visibility: hidden;
+}
+#carouselWrapper {
+    position: relative;
+    overflow: hidden;
+}
+.scroller-4 {
+    height: 505px;
+}
+.scroller-6 {
+    height: 739px;
+}
+.scroller-8 {
+    height: 973px;
+}
+.scroller-10 {
+    height: 1207px;
 }

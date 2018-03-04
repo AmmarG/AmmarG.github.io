@@ -21,10 +21,16 @@ footer .social li {
 }
 a.cover,
 .area-25 .news li:first-child a.cover {
-    background: url('../gfx/gradient.png') right -150px repeat-x;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.74) 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.74) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.74) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#bd000000', GradientType=0);
 }
 .news.programs a.cover {
-    background: url('../gfx/gradient02.png') right bottom repeat-x;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 57%, rgba(0, 0, 0, 1) 86%, rgba(0, 0, 0, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 57%, rgba(0, 0, 0, 1) 86%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 57%, rgba(0, 0, 0, 1) 86%, rgba(0, 0, 0, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=0);
 }
 h1.logo {
     background-position: 0 0;
@@ -78,7 +84,7 @@ footer .social .telegram {
     background-position: right -442px;
 }
 .teaser-tools ul .share {
-    background-position: 50px -467px;
+    background-position: 50px -468px;
 }
 .teaser-tools ul .pdf {
     background-position: -40px -467px;
@@ -124,7 +130,9 @@ article .bookmark,
 .table-wrapper table th,
 .btn,
 .live-popup .live-info .now,
-.aa-live.hide-live .live-open {
+.aa-live.hide-live .live-open,
+.scroller .navigator .prev:hover,
+.scroller .navigator .next:hover {
     background-color: #580956;
 }
 header nav,
@@ -143,7 +151,11 @@ article .box,
 .search-overlay,
 .article-card,
 .author-story,
-.aa-live {
+.aa-live,
+article .teaser-tools .share ul,
+.share-list.for-mobile,
+.scroller .navigator .prev,
+.scroller .navigator .next {
     background-color: #FFF;
 }
 .video-icon {
@@ -163,7 +175,8 @@ article .box,
 form.global-search,
 .tooltip,
 .tabs-menu li,
-.alfa-filter li.disabled {
+.alfa-filter li.disabled,
+a.loadmore {
     background-color: rgba(0, 0, 0, 0.06);
 }
 header .live-streaming,
@@ -192,7 +205,7 @@ header a:hover,
 .item a,
 .item a:hover,
 footer .social,
-.teaser-tools ul .share a,
+.teaser-tools ul .share,
 .tooltip .tooltip-txt,
 .coverage .caption,
 .coverage:hover .caption,
@@ -241,7 +254,8 @@ header nav a:hover,
 .coverage:hover,
 b,
 h6.flag,
-.aa-live .close {
+.aa-live .close,
+.en table tr td:first-child span {
     color: #333;
 }
 .ad25 h2,
@@ -300,7 +314,8 @@ h2,
 .slider img,
 .breaking-news .close,
 .coverage .caption,
-.writers li .pic {
+.writers li .pic,
+.scroller .navigator span:hover i {
     border-color: #fff;
 }
 .latest-news h2,
@@ -331,7 +346,8 @@ select,
 textarea,
 header nav li,
 .main-content .submenu li,
-.main-content .menu-icon {
+.main-content .menu-icon,
+.scroller .navigator i {
     border-color: #b7b6b6;
 }
 blockquote,
@@ -459,10 +475,6 @@ input.btn,
 .vod-slider.news li a.cover {
     background: none;
 }
-.news li:first-child a.cover,
-.news-mod02 li:first-child a.cover {
-    background-position: right bottom;
-}
 header nav,
 .news-articles ul,
 .news-mod02 li img,
@@ -567,6 +579,65 @@ textarea {
     outline: none;
     background: none;
 }
+.teaser-tools .share ul li,
+.share-list li {
+    background-image: url(../gfx/share.png);
+    background-repeat: no-repeat;
+}
+.share-list .mail {
+    background-position: 0 0;
+}
+.share-list .g-plus {
+    background-position: -56px 0;
+}
+.share-list .twtr {
+    background-position: -112px 0;
+}
+.share-list .fb {
+    background-position: -168px 0;
+}
+.share-list .whatsapp {
+    background-position: -224px 0;
+}
+.share-list .telegram {
+    background-position: -279px 0;
+}
+article .teaser-tools .share ul li:hover {
+    opacity: 0.8;
+}
+.aa-freq,
+.aa-freq-hd,
+.hadath-freq {
+    padding-right: 0;
+    border: 0;
+    width: 105px;
+    height: 50px;
+}
+.box.services h2.en_freq {
+    font-size: 200%;
+    line-height: 160%;
+    margin: 30px 0;
+}
+.aa-freq {
+    background: url(../gfx/frequencies_ttl01.png) bottom center no-repeat;
+}
+.aa-freq-hd {
+    background: url(../gfx/frequencies_ttl01_hd.png) bottom center no-repeat;
+}
+.hadath-freq {
+    background: url(../gfx/frequencies_ttl02.png) bottom center no-repeat;
+}
+.scroller .navigator .prev,
+.scroller .navigator .next {
+    background-position: 8px 5px;
+    background-repeat: no-repeat;
+}
+.scroller .navigator .prev {
+    xbackground-image: url(../gfx/arrow_up.png);
+}
+.scroller .navigator .next {
+    xbackground-image: url(../gfx/arrow.png);
+}
 @media print {
     header,
     footer,
@@ -577,6 +648,7 @@ textarea {
     .box.news,
     .box.tags,
     article .bookmark,
+    article .article-teaser .video-icon,
     .box.opinions {
         display: none;
     }
@@ -811,7 +883,9 @@ body.section-vod,
 .section-vod article .box {
     color: #333;
 }
-.section-vod .ad25 h2 {
+.section-vod .ad25 h2,
+.section-vod .short-url input[type=text],
+.section-vod .short-url input[type=text]:focus {
     color: #373737;
     border-color: #373737;
 }
@@ -822,12 +896,14 @@ body.section-vod,
 .section-vod .top-writers li,
 .section-vod .author-story,
 .section-vod .alfa-filter li,
-.section-vod .tabs-menu li {
+.section-vod .tabs-menu li,
+.section-vod a.loadmore {
     background: rgba(255, 255, 255, 0.05);
 }
 .section-vod .tab,
 .section-vod .tabs-menu li.current,
-.section-vod .alfa-filter li.disabled {
+.section-vod .alfa-filter li.disabled,
+.section-vod .short-url input[type=text] {
     background: rgba(255, 255, 255, 0);
 }
 .section-vod footer .logo {
@@ -844,6 +920,15 @@ body.section-vod,
 }
 .section-vod .footer-separator {
     background-image: url(../gfx/footer-brdr-vod.gif);
+}
+.section-vod .aa-freq {
+    background: url(../gfx/frequencies_ttl01_dark.png) bottom center no-repeat;
+}
+.section-vod .aa-freq-hd {
+    background: url(../gfx/frequencies_ttl01_dark_hd.png) bottom center no-repeat;
+}
+.section-vod .hadath-freq {
+    background: url(../gfx/frequencies_ttl02_dark.png) bottom center no-repeat;
 }
 /*************************** Aswaq Theme ***************************/
 
