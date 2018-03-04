@@ -838,7 +838,23 @@
     .vod-program .cover img {
         position: inherit;
     }
+    .scroller .navigator {
+        margin-left: 10px;
+        width: 82px;
+        height: 35px;
+    }
+    .scroller .navigator button {
+        width: 40px;
+    }
+    .scroller .navigator i.up {
+        margin: 7px 0px 0 0;
+    }
+    .scroller .navigator i.down {
+        margin: -3px 1px 0 0;
+    }
 }
 @-ms-viewport{
-    width:device-width;
+
+width:device-width;
+
 }

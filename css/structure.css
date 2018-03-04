@@ -2437,14 +2437,16 @@ a.loadmore {
     left: 0;
     bottom: 0;
 }
-.scroller .navigator .prev,
-.scroller .navigator .next {
+.scroller .navigator button {
     width: 35px;
     height: 100%;
     display: block;
     float: left;
     cursor: pointer;
-    margin-right: 1px
+    margin-right: 1px;
+    border: none;
+    padding: 0;
+    outline: none;
 }
 .scroller .navigator i {
     border-style: solid;
@@ -2455,12 +2457,12 @@ a.loadmore {
 .scroller .navigator i.up {
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
-    margin: 8px 10px 0 0;
+    margin: 8px 0 0 0;
 }
 .scroller .navigator i.down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
-    margin: 2px 10px 0 0;
+    margin: -3px 0px 0 0;
 }
 .scroller {
     position: relative;

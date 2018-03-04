@@ -315,7 +315,7 @@ h2,
 .breaking-news .close,
 .coverage .caption,
 .writers li .pic,
-.scroller .navigator span:hover i {
+.scroller .navigator button:hover i {
     border-color: #fff;
 }
 .latest-news h2,

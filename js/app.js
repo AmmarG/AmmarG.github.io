@@ -398,83 +398,83 @@ $(document).ready(function() {
     $("article .teaser-tools .share").click(function() {
         $(".share .share-list").toggleClass("show-icons");
     });
-// Verical Carousel
-var Carousel = {
-            duration: 300, // Animation duration in milliseconds.
-        };
-        function rotateForward() {
-            var carousel = Carousel.carousel,
-                children = carousel.children,
-                firstChild = children[0],
-                lastChild = children[children.length - 1];
-            carousel.insertBefore(lastChild, firstChild);
-        }
+    // Verical Carousel
+    var Carousel = {
+        duration: 300, // Animation duration in milliseconds.
+    };
 
-        function rotateBackward() {
-            var carousel = Carousel.carousel,
-                children = carousel.children,
-                firstChild = children[0],
-                lastChild = children[children.length - 1];
-            carousel.insertBefore(firstChild, lastChild.nextSibling);
-        }
+    function rotateForward() {
+        var carousel = Carousel.carousel,
+            children = carousel.children,
+            firstChild = children[0],
+            lastChild = children[children.length - 1];
+        carousel.insertBefore(lastChild, firstChild);
+    }
 
-        function animate(begin, end, finalTask) {
-            var wrapper = Carousel.wrapper,
-                carousel = Carousel.carousel,
-                change = end - begin,
-                duration = Carousel.duration,
-                startTime = Date.now();
-            carousel.style.top = begin + 'px';
-            var animateInterval = window.setInterval(function() {
-                var t = Date.now() - startTime;
-                if (t >= duration) {
-                    window.clearInterval(animateInterval);
-                    finalTask();
-                    return;
-                }
-                t /= (duration / 2);
-                var top = begin + (t < 1 ? change / 2 * Math.pow(t, 3) :
-                    change / 2 * (Math.pow(t - 2, 3) + 2));
-                carousel.style.top = top + 'px';
-            }, 1000 / 60);
-        }
+    function rotateBackward() {
+        var carousel = Carousel.carousel,
+            children = carousel.children,
+            firstChild = children[0],
+            lastChild = children[children.length - 1];
+        carousel.insertBefore(firstChild, lastChild.nextSibling);
+    }
 
-        window.onload = function() {
-            var carousel = Carousel.carousel = document.getElementById('ver-carousel'),
-                listItems = carousel.getElementsByTagName('li'),
-                numItems = listItems.length,
-                itemWidth = Carousel.width,
-                rowHeight = listItems.height;
-            carousel.style.width = itemWidth + 'px';
-            for (var i = 0; i < numItems; ++i) {
-                var list = listItems[i];
+    function animate(begin, end, finalTask) {
+        var wrapper = Carousel.wrapper,
+            carousel = Carousel.carousel,
+            change = end - begin,
+            duration = Carousel.duration,
+            startTime = Date.now();
+        carousel.style.top = begin + 'px';
+        var animateInterval = window.setInterval(function() {
+            var t = Date.now() - startTime;
+            if (t >= duration) {
+                window.clearInterval(animateInterval);
+                finalTask();
+                return;
             }
-            Carousel.rowHeight = carousel.getElementsByTagName('li')[0].offsetHeight;
-            carousel.style.visibility = 'visible';
-            var wrapper = Carousel.wrapper = document.createElement('div');
-            wrapper.id = 'carouselWrapper';
-            wrapper.style.width = carousel.offsetWidth + 'px';
-            wrapper.style.height = carousel.offsetHeight + 'px';
-            carousel.parentNode.insertBefore(wrapper, carousel);
-            wrapper.appendChild(carousel);
-            var prevButton = document.getElementById('caro-prev'),
-                nextButton = document.getElementById('caro-next');
-            prevButton.onclick = function() {
-                prevButton.disabled = nextButton.disabled = true;
-                rotateForward();
-                animate(-Carousel.rowHeight, 0, function() {
-                    carousel.style.top = '0';
-                    prevButton.disabled = nextButton.disabled = false;
-                });
-            };
-            nextButton.onclick = function() {
-                prevButton.disabled = nextButton.disabled = true;
-                animate(0, -Carousel.rowHeight, function() {
-                    rotateBackward();
-                    carousel.style.top = '0';
-                    prevButton.disabled = nextButton.disabled = false;
-                });
-            };
+            t /= (duration / 2);
+            var top = begin + (t < 1 ? change / 2 * Math.pow(t, 3) :
+                change / 2 * (Math.pow(t - 2, 3) + 2));
+            carousel.style.top = top + 'px';
+        }, 1000 / 60);
+    }
+
+    window.onload = function() {
+        var carousel = Carousel.carousel = document.getElementById('ver-carousel'),
+            listItems = carousel.getElementsByTagName('li'),
+            numItems = listItems.length,
+            itemWidth = Carousel.width,
+            rowHeight = listItems.height;
+        carousel.style.width = itemWidth + 'px';
+        for (var i = 0; i < numItems; ++i) {
+            var list = listItems[i];
+        }
+        Carousel.rowHeight = carousel.getElementsByTagName('li')[0].offsetHeight;
+        carousel.style.visibility = 'visible';
+        var wrapper = Carousel.wrapper = document.createElement('div');
+        wrapper.id = 'carouselWrapper';
+        wrapper.style.width = carousel.offsetWidth + 'px';
+        wrapper.style.height = carousel.offsetHeight + 'px';
+        carousel.parentNode.insertBefore(wrapper, carousel);
+        wrapper.appendChild(carousel);
+        var prevButton = document.getElementById('caro-prev'),
+            nextButton = document.getElementById('caro-next');
+        prevButton.onclick = function() {
+            prevButton.disabled = nextButton.disabled = true;
+            rotateForward();
+            animate(-Carousel.rowHeight, 0, function() {
+                carousel.style.top = '0';
+                prevButton.disabled = nextButton.disabled = false;
+            });
         };
-    
+        nextButton.onclick = function() {
+            prevButton.disabled = nextButton.disabled = true;
+            animate(0, -Carousel.rowHeight, function() {
+                rotateBackward();
+                carousel.style.top = '0';
+                prevButton.disabled = nextButton.disabled = false;
+            });
+        };
+    };
 });
