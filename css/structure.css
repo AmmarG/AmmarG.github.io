@@ -2387,7 +2387,10 @@ article .teaser-tools .share ul .whatsapp,
 article .teaser-tools .share ul .telegram {
     display: none;
 }
-article .teaser-tools .share ul.show-icons {
+article .teaser-tools .share.show-icons {
+    width: 162px;
+}
+article .teaser-tools .share.show-icons ul.share-list {
     display: block;
 }
 a.loadmore {

@@ -396,7 +396,7 @@ $(document).ready(function() {
 
     // Article Sharing Toggle
     $("article .teaser-tools .share").click(function() {
-        $(".share .share-list").toggleClass("show-icons");
+        $(this).toggleClass("show-icons");
     });
     // Verical Carousel
     var Carousel = {
