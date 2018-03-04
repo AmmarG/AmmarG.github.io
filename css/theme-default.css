@@ -131,8 +131,7 @@ article .bookmark,
 .btn,
 .live-popup .live-info .now,
 .aa-live.hide-live .live-open,
-.scroller .navigator .prev:hover,
-.scroller .navigator .next:hover {
+.scroller .navigator button:hover {
     background-color: #580956;
 }
 header nav,
@@ -627,17 +626,6 @@ article .teaser-tools .share ul li:hover {
 .hadath-freq {
     background: url(../gfx/frequencies_ttl02.png) bottom center no-repeat;
 }
-.scroller .navigator .prev,
-.scroller .navigator .next {
-    background-position: 8px 5px;
-    background-repeat: no-repeat;
-}
-.scroller .navigator .prev {
-    xbackground-image: url(../gfx/arrow_up.png);
-}
-.scroller .navigator .next {
-    xbackground-image: url(../gfx/arrow.png);
-}
 @media print {
     header,
     footer,
@@ -728,7 +716,8 @@ body.section-vod,
 .section-vod .top-content .video-icon,
 .section-vod article .bookmark,
 .section-vod .teaser-tools ul .share,
-.section-vod .alfa-filter li:hover {
+.section-vod .alfa-filter li:hover,
+.section-vod .scroller .navigator button:hover {
     background-color: #d62919;
 }
 .section-vod header nav,
@@ -942,7 +931,8 @@ body.section-vod,
 .section-aswaq .teaser-tools ul .share,
 .section-aswaq .table-wrapper table thead th,
 .section-aswaq .table-wrapper table th,
-.section-aswaq .alfa-filter li:hover {
+.section-aswaq .alfa-filter li:hover,
+.section-aswaq .scroller .navigator button:hover {
     background-color: #093378;
 }
 .section-aswaq header nav a:hover,
@@ -1057,7 +1047,8 @@ body.section-vod,
 .section-ksa .teaser-tools ul .share,
 .section-ksa .table-wrapper table thead th,
 .section-ksa .table-wrapper table th,
-.section-ksa .alfa-filter li:hover {
+.section-ksa .alfa-filter li:hover,
+.section-ksa .scroller .navigator button:hover {
     background-color: #22691e;
 }
 .section-ksa header nav a:hover,
@@ -1162,7 +1153,8 @@ body.section-vod,
 .section-africa .teaser-tools ul .share,
 .section-africa .table-wrapper table thead th,
 .section-africa .table-wrapper table th,
-.section-africa .alfa-filter li:hover {
+.section-africa .alfa-filter li:hover,
+.section-africa .scroller .navigator button:hover {
     background-color: #e33541;
 }
 .section-africa header nav a:hover,
@@ -1268,7 +1260,8 @@ body.section-vod,
 .section-sport .teaser-tools ul .share,
 .section-sport .table-wrapper table thead th,
 .section-sport .table-wrapper table th,
-.section-sport .alfa-filter li:hover {
+.section-sport .alfa-filter li:hover,
+.section-sport .scroller .navigator button:hover {
     background-color: #ef6c03;
 }
 .section-sport header nav a:hover,
