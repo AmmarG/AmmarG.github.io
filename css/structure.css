@@ -1859,6 +1859,9 @@ article .bookmark {
 .area-100 .opinions li {
     width: 21%;
 }
+.area-25 .opinions li {
+    width: 100%;
+}
 .area-50 .opinions li .pic,
 .area-75 .opinions li .pic,
 .area-100 .opinions li .pic,
@@ -2382,7 +2385,7 @@ article .teaser-tools .share ul {
     position: absolute;
     top: 0;
     left: 0;
-    width: 165px;
+    width: 164px;
     height: 40px;
     display: none;
 }
@@ -2483,7 +2486,7 @@ a.loadmore {
 }
 #ver-carousel {
     position: absolute;
-    visibility: hidden;
+    visibility: visible;
 }
 #carouselWrapper {
     position: relative;

@@ -686,11 +686,12 @@ article .teaser-tools .share ul li:hover {
 }
 /*** SECTIONS THEMING ***/
 
-/*************************** VOD Theme ***************************/
+/*************************** VOD Theme & Live Stream ***************************/
 
 body.section-vod,
 .section-vod footer .logo,
-.section-vod footer .copyrights {
+.section-vod footer .copyrights,
+body.live-streaming {
     background-color: #0e0e0e;
 }
 .section-vod .main-header,
@@ -751,7 +752,9 @@ body.section-vod,
 .section-vod .dark,
 .section-vod .table-wrapper table td,
 .section-vod .table-wrapper table,
-.section-vod.section-opinions article .teaser-tools {
+.section-vod.section-opinions article .teaser-tools,
+.live-popup .live-info,
+.live-popup .devices {
     border-color: #1b1a1a;
 }
 .section-vod header nav a,
@@ -782,8 +785,12 @@ body.section-vod,
 .section-vod input[type=password],
 .section-vod select,
 .section-vod textarea,
-.vod-program {
-    color: #FFF;
+.vod-program,
+body.live-streaming,
+body.live-streaming h2,
+.teaser-tools .short-url ,
+.section-vod article .box{
+    color: #e4e4e4;
 }
 .section-vod header nav a:hover,
 .section-vod header nav .active,
@@ -804,7 +811,6 @@ body.section-vod,
 .section-vod .highlighted {
     color: #f90f0f !important;
 }
-.section-vod header nav li,
 .section-vod .main-content .submenu li,
 .section-vod .main-content .menu-icon,
 .section-vod h2 {
@@ -831,7 +837,6 @@ body.section-vod,
 .section-vod .tabs-menu li.current,
 .section-vod nav .main-content li a.active,
 .section-vod .latest-news h2 a,
-.section-vod article .topic h2,
 .section-vod article .box h2,
 .section-vod .box.services h2,
 .section-vod input.fld,
@@ -879,19 +884,19 @@ body.section-vod,
 .section-vod .main-article,
 .section-vod .latest-news .time,
 .section-vod .latest-news li,
-.section-vod .latest-news h2 {
+.section-vod .latest-news h2,
+.section-vod .writers {
     border-color: #202020;
 }
 .section-vod article .topic,
 .section-vod article .topic h2,
-.section-vod article .topic a,
-.section-vod article .box h2,
-.section-vod article .box {
+.section-vod article .topic a {
     color: #333;
 }
 .section-vod .ad25 h2,
 .section-vod .short-url input[type=text],
-.section-vod .short-url input[type=text]:focus {
+.section-vod .short-url input[type=text]:focus,
+.section-vod article .topic h2 {
     color: #373737;
     border-color: #373737;
 }
@@ -903,13 +908,14 @@ body.section-vod,
 .section-vod .author-story,
 .section-vod .alfa-filter li,
 .section-vod .tabs-menu li,
-.section-vod a.loadmore {
+.section-vod a.loadmore,
+.section-vod .teaser-tools,
+.section-vod article .box {
     background: rgba(255, 255, 255, 0.05);
 }
 .section-vod .tab,
 .section-vod .tabs-menu li.current,
-.section-vod .alfa-filter li.disabled,
-.section-vod .short-url input[type=text] {
+.section-vod .alfa-filter li.disabled {
     background: rgba(255, 255, 255, 0);
 }
 .section-vod footer .logo {
