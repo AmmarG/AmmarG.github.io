@@ -866,9 +866,3 @@
         height: 100px;
     }
 }
-
-@media (max-width: 1360px) {
-    .main-content {
-        width: 100%;
-    }
-}
