@@ -105,6 +105,11 @@ section {
 body {
     line-height: 1;
 }
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
 ol,
 ul,
 li {
@@ -158,7 +163,7 @@ body {
     font-family: DroidKufiRegular;
     font-size: 95%;
     line-height: 150%;
-    xmin-width: 1340px;
+    min-width: 1340px;
 }
 /*******Areas************/
 
@@ -1062,6 +1067,10 @@ h2 {
     width: 198px;
     float: left;
     text-align: right;
+    overflow: hidden;
+}
+.top-content .ttl {
+    max-height: 45px;
 }
 .top-content .caption {
     padding-top: 10px;
@@ -1538,7 +1547,7 @@ blockquote p::before {
 }
 article .box {
     margin: 20px 0;
-    padding: 10px 20px 20px 20px;
+    padding: 20px;
     overflow: hidden;
 }
 .topic img,
@@ -2491,4 +2500,10 @@ a.loadmore {
 }
 .scroller-10 {
     height: 1207px;
+}
+article .box.infograph .caption {
+    display: block;
+    padding-top: 10px;
+    font-family: DroidKufiRegular;
+    font-size: 15px;
 }

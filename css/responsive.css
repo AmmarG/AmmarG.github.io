@@ -858,4 +858,16 @@
     .scroller-10 {
         height: 505px;
     }
+    .page-404 {
+        background-size: 400px 388px;
+    }
+    .page-404 .logo {
+        background-size: 200px 75px;
+        height: 100px;
+    }
+}
+@media (max-width: 1024px) {
+    body {
+        min-width: 100%;
+    }
 }

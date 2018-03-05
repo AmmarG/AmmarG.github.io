@@ -626,6 +626,23 @@ article .teaser-tools .share ul li:hover {
 .hadath-freq {
     background: url(../gfx/frequencies_ttl02.png) bottom center no-repeat;
 }
+.page-404 {
+    background-color: #702665;
+    background-image: url(../gfx/404.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-width: 100%;
+}
+.page-404 .logo {
+    background: url(../gfx/logo_large.png) center bottom no-repeat;
+    width: 250px;
+    height: 114px;
+    margin: 0 auto;
+    direction: ltr;
+}
+.page-404 .logo img {
+    height: auto;
+}
 @media print {
     header,
     footer,

@@ -398,7 +398,9 @@ $(document).ready(function() {
     $("article .teaser-tools .share").click(function() {
         $(this).toggleClass("show-icons");
     });
-    // Verical Carousel
+});
+
+// Verical Carousel
     var Carousel = {
         duration: 300, // Animation duration in milliseconds.
     };
@@ -477,4 +479,3 @@ $(document).ready(function() {
             });
         };
     };
-});
