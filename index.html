@@ -93,7 +93,11 @@
             setTimeout(function() {
                 PopUp('show');
             }, 1000);
+            $('#vid-popup .close').click(function() {
+                            document.getElementsByTagName('video')[0].pause();
+                        });
         });
+        
     </script>
     <!-- End  Static Video Popup on Pageload -->
     <!-- Breaking News -->
