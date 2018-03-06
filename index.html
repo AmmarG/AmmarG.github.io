@@ -26,6 +26,76 @@
 </head>
 
 <body>
+    <!-- Start Static Video Popup on Pageload -->
+    <div id="promo-wrapper" style='display:none'>
+        <div id="vid-popup">
+            <div class="close" onClick="PopUp('hide')">x</div>
+            <div class="graphic"></div>
+            <video width="960" height="540" controls autoplay>
+                <source src="https://vid.alarabiya.net/2018/03/02/alarabiya15/AA15thAnniversary.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+    <style>
+        #promo-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .6);
+            z-index: 1001;
+        }
+        #vid-popup {
+            width: 980px;
+            height: 560px;
+            background: #FFF;
+            position: relative;
+            top: 20%;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        #vid-popup .close {
+            width: 31px;
+            height: 31px;
+            position: absolute;
+            right: 0;
+            top: -31px;
+            background: #FFF;
+            font-family: Tahoma;
+            font-weight: bold;
+            font-size: 18px;
+            color: #e42929;
+            cursor: pointer;
+            padding: 3px 9px 0 0;
+        }
+        .graphic {
+            position: absolute;
+            width: 240px;
+            height: 105px;
+            background: url(gfx/year-15.png) center bottom no-repeat;
+            left: -5px;
+            top: -105px;
+        }
+        @media (max-width: 480px) {
+            #promo-wrapper {
+                display: none;
+            }
+        }
+    </style>
+    <script>
+        function PopUp(hideOrshow) {
+            if (hideOrshow == 'hide') document.getElementById('promo-wrapper').style.display = "none";
+            else document.getElementById('promo-wrapper').removeAttribute('style');
+        }
+        document.addEventListener("DOMContentLoaded", function(event) {
+            setTimeout(function() {
+                PopUp('show');
+            }, 1000);
+        });
+    </script>
+    <!-- End  Static Video Popup on Pageload -->
     <!-- Breaking News -->
     <div class="breaking-news">
         <div class="main-content">
