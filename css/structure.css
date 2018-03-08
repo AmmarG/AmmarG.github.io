@@ -368,7 +368,7 @@ footer .main-content ul {
     overflow: hidden;
 }
 header {
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     -webkit-transition: 0.6s ease all;
     transition: 0.6s ease all;
 }
@@ -981,7 +981,7 @@ h2 {
 }
 .area-100 .news-articles li,
 .area-100 .news.programs li {
-    width: 24.2%;
+    width: 24.1%;
 }
 .news-articles li img,
 .gallery li img {
@@ -1954,20 +1954,39 @@ article .disclaimer {
     cursor: default;
 }
 .article-card {
-    padding: 20px 20px 10px 20px;
+    padding: 20px;
     clear: both;
     line-height: 170%;
     overflow: hidden;
     margin-bottom: 20px;
 }
 .article-card .ttl {
-    font-size: 120%;
+        font-size: 120%;
     font-weight: bold;
     padding-bottom: 10px;
+    height: 35px;
+    line-height: 170%;
+}
+.article-card p {
+    height: 50px;
+}
+.article-card .ttl,
+.article-card p,
+.article-card .date-time {
+    width: 80%;
+    float: left;
+    display: block;
+    overflow: hidden;
+}
+.section-opinions .article-card .ttl,
+.section-opinions .article-card p,
+.section-opinions .article-card .date-time {
+    width: 100%;
+    float: none;
+    height: auto;
 }
 .article-card .date-time {
-    clear: both;
-    margin-top: 20px;
+    padding-top: 15px;
 }
 .article-card .date-time .time {
     padding: 5px 10px;
@@ -1976,6 +1995,10 @@ article .disclaimer {
     font-weight: bold;
     text-transform: uppercase;
     margin-left: 10px;
+}
+.article-card img {
+    width: 18%;
+    float: right;
 }
 .loader {
     font-size: 13px;
@@ -2304,8 +2327,7 @@ article p a {
     font-size: 24px;
     padding-right: 40px;
 }
-.player-wrapper,
-.player-wrapper * {
+.player-wrapper {
     width: 100%;
     overflow: hidden;
 }
@@ -2451,7 +2473,7 @@ a.loadmore {
     height: 25px;
     position: absolute;
     left: 0;
-    bottom: 0;
+    top: 0;
 }
 .scroller .navigator button {
     width: 35px;
@@ -2509,4 +2531,9 @@ article .box.infograph .caption {
     padding-top: 10px;
     font-family: DroidKufiRegular;
     font-size: 15px;
+}
+.leaderboard,
+.leaderboard * {
+    text-align: center;
+    margin: 0 auto;
 }

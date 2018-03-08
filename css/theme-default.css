@@ -254,7 +254,8 @@ header nav a:hover,
 b,
 h6.flag,
 .aa-live .close,
-.en table tr td:first-child span {
+.en table tr td:first-child span,
+.article-card:hover p  {
     color: #333;
 }
 .ad25 h2,
@@ -654,7 +655,8 @@ article .teaser-tools .share ul li:hover {
     .box.tags,
     article .bookmark,
     article .article-teaser .video-icon,
-    .box.opinions {
+    .box.opinions,
+    .breaking-news {
         display: none;
     }
     .area-75 {
@@ -770,7 +772,6 @@ body.live-streaming {
 .section-vod footer .copyrights,
 .section-vod .gallery li a,
 .section-vod .area-25 .latest-news a:hover,
-.section-vod .article-hdr h4,
 .section-vod article p,
 .section-vod .article-hdr .author,
 .section-vod .author-overview h5,
@@ -784,12 +785,14 @@ body.live-streaming {
 .section-vod input[type=text],
 .section-vod input[type=password],
 .section-vod select,
+.section-vod .video-preview,
 .section-vod textarea,
+.section-vod .teaser-tools .short-url,
+.section-vod .article-hdr h3,
+.section-vod article .box
 .vod-program,
 body.live-streaming,
-body.live-streaming h2,
-.teaser-tools .short-url ,
-.section-vod article .box{
+body.live-streaming h2 {
     color: #e4e4e4;
 }
 .section-vod header nav a:hover,
@@ -800,10 +803,10 @@ body.live-streaming h2,
 .section-vod .tabs-menu .current a,
 .section-vod .tabs-menu li:hover a,
 .section-vod .area-25 .latest-news .time,
-.section-vod .article-hdr h3,
 .section-vod article p a,
 .section-vod .article-hdr .author span,
 .section-vod article h5,
+.section-vod .article-hdr h4,
 .section-vod .box h2 span,
 .section-vod .story-writer,
 .section-vod .box.services a,

@@ -48,7 +48,7 @@
         nav.classList.toggle('show');
         menu.classList.toggle('cross');
         body.classList.toggle('noscroll');
-    })
+    });
     submenu.addEventListener('click', function(e) {
         e.preventDefault();
         this.classList.toggle('active');
@@ -58,41 +58,38 @@
             mobsubmenu.classList.toggle('slideOut');
         }
 
-    })
+    });
     arr.forEach(function(ele) {
         ele.addEventListener('click', function(e) {
             e.preventDefault();
             body.classList.toggle('noscroll');
             search.classList.toggle('show');
-        })
-    })
+        });
+    });
 
     close.addEventListener('click', function(e) {
         e.preventDefault();
         search.classList.remove('show');
         body.classList.remove('noscroll');
-    })
+    });
     if (chamgeFont) {
         chamgeFont.addEventListener('click', function(e) {
             e.preventDefault();
             article.classList.toggle('bigger');
-        })
+        });
     }
     if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
         mobsubmenu.addEventListener('click', function(e) {
             e.preventDefault();
-            this.classList.toggle('active');
+            mobsubmenu.classList.toggle('active');
 
-        });
-    } else {
-
-
+        } ,false);
     }
     window.addEventListener('scroll', function() {
         if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {} else {
             var header = document.querySelector('header');
             var logo = document.querySelector('h1.logo');
-            var menu = document.querySelector('nav .main-content ul');
+           // var menu = document.querySelector('nav .main-content ul');
             var mainNav = document.querySelector('header nav');
             //first step global header
 
@@ -122,7 +119,7 @@
         }
 
 
-    })
+    });
     var sliders = ['slider', 'dateSlider'];
     sliders.forEach(function(slider) {
         var ele = document.getElementById(slider);
@@ -166,15 +163,15 @@
         xmlhttp.send();
     }, 30000);
 
-})()
+})();
 //arr varilble to save the called slider before
 var arr = [];
 
 function isVisible(el) {
     var elemTop = el.getBoundingClientRect().top;
     var elemBottom = el.getBoundingClientRect().bottom;
-    var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
-    if (isVisible)
+    var iselVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+    if (iselVisible)
         return true;
     return false;
 }
@@ -253,7 +250,6 @@ function moveOneStep(elem) {
 
         //current edge set the one before the active
         var current = initalActiveElIndex - 1;
-        if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
             var swipe_det = {};
             swipe_det.sX = 0;
             swipe_det.eX = 0;
@@ -306,7 +302,6 @@ function moveOneStep(elem) {
                 }
 
             }, false);
-        } else {
             next.addEventListener('click', function(e) {
                 if (elem.querySelector('#prev').disabled === true) {
                     elem.querySelector('#prev').disabled = false;
@@ -338,7 +333,7 @@ function moveOneStep(elem) {
                     }, 250);
                 }
 
-            }, true);
+            }, false);
             prev.addEventListener('click', function(e) {
                 current -= 1;
                 if (current > 0) {
@@ -361,9 +356,6 @@ function moveOneStep(elem) {
                     elem.querySelector('#prev').disabled = true;
                 }
             }, false);
-
-        }
-
         //if no active		
     } else {
         console.log('please set active');
@@ -401,81 +393,86 @@ $(document).ready(function() {
 });
 
 // Verical Carousel
-    var Carousel = {
-        duration: 300, // Animation duration in milliseconds.
-    };
+var Carousel = {
+    duration: 300, // Animation duration in milliseconds.
+};
 
-    function rotateForward() {
-        var carousel = Carousel.carousel,
-            children = carousel.children,
-            firstChild = children[0],
-            lastChild = children[children.length - 1];
-        carousel.insertBefore(lastChild, firstChild);
-    }
+function rotateForward() {
+    var carousel = Carousel.carousel,
+        children = carousel.children,
+        firstChild = children[0],
+        lastChild = children[children.length - 1];
+    carousel.insertBefore(lastChild, firstChild);
+}
 
-    function rotateBackward() {
-        var carousel = Carousel.carousel,
-            children = carousel.children,
-            firstChild = children[0],
-            lastChild = children[children.length - 1];
-        carousel.insertBefore(firstChild, lastChild.nextSibling);
-    }
+function rotateBackward() {
+    var carousel = Carousel.carousel,
+        children = carousel.children,
+        firstChild = children[0],
+        lastChild = children[children.length - 1];
+    carousel.insertBefore(firstChild, lastChild.nextSibling);
+}
 
-    function animate(begin, end, finalTask) {
-        var wrapper = Carousel.wrapper,
-            carousel = Carousel.carousel,
-            change = end - begin,
-            duration = Carousel.duration,
-            startTime = Date.now();
-        carousel.style.top = begin + 'px';
-        var animateInterval = window.setInterval(function() {
-            var t = Date.now() - startTime;
-            if (t >= duration) {
-                window.clearInterval(animateInterval);
-                finalTask();
-                return;
-            }
-            t /= (duration / 2);
-            var top = begin + (t < 1 ? change / 2 * Math.pow(t, 3) :
-                change / 2 * (Math.pow(t - 2, 3) + 2));
-            carousel.style.top = top + 'px';
-        }, 1000 / 60);
-    }
-
-    window.onload = function() {
-        var carousel = Carousel.carousel = document.getElementById('ver-carousel'),
-            listItems = carousel.getElementsByTagName('li'),
-            numItems = listItems.length,
-            itemWidth = Carousel.width,
-            rowHeight = listItems.height;
-        carousel.style.width = itemWidth + 'px';
-        for (var i = 0; i < numItems; ++i) {
-            var list = listItems[i];
+function animate(begin, end, finalTask) {
+    var wrapper = Carousel.wrapper,
+        carousel = Carousel.carousel,
+        change = end - begin,
+        duration = Carousel.duration,
+        startTime = Date.now();
+    carousel.style.top = begin + 'px';
+    var animateInterval = window.setInterval(function() {
+        var t = Date.now() - startTime;
+        if (t >= duration) {
+            window.clearInterval(animateInterval);
+            finalTask();
+            return;
         }
-        Carousel.rowHeight = carousel.getElementsByTagName('li')[0].offsetHeight;
-        carousel.style.visibility = 'visible';
-        var wrapper = Carousel.wrapper = document.createElement('div');
-        wrapper.id = 'carouselWrapper';
-        wrapper.style.width = carousel.offsetWidth + 'px';
-        wrapper.style.height = carousel.offsetHeight + 'px';
-        carousel.parentNode.insertBefore(wrapper, carousel);
-        wrapper.appendChild(carousel);
-        var prevButton = document.getElementById('caro-prev'),
-            nextButton = document.getElementById('caro-next');
-        prevButton.onclick = function() {
-            prevButton.disabled = nextButton.disabled = true;
-            rotateForward();
-            animate(-Carousel.rowHeight, 0, function() {
-                carousel.style.top = '0';
-                prevButton.disabled = nextButton.disabled = false;
-            });
-        };
-        nextButton.onclick = function() {
-            prevButton.disabled = nextButton.disabled = true;
-            animate(0, -Carousel.rowHeight, function() {
-                rotateBackward();
-                carousel.style.top = '0';
-                prevButton.disabled = nextButton.disabled = false;
-            });
-        };
+        t /= (duration / 2);
+        var top = begin + (t < 1 ? change / 2 * Math.pow(t, 3) :
+            change / 2 * (Math.pow(t - 2, 3) + 2));
+        carousel.style.top = top + 'px';
+    }, 1000 / 60);
+}
+
+window.onload = function() {
+    var carousel = Carousel.carousel = document.getElementById('ver-carousel'),
+        listItems = carousel.getElementsByTagName('li'),
+        numItems = listItems.length,
+        itemWidth = Carousel.width,
+        rowHeight = listItems.height;
+    carousel.style.width = itemWidth + 'px';
+    for (var i = 0; i < numItems; ++i) {
+        var list = listItems[i];
+    }
+    Carousel.rowHeight = carousel.getElementsByTagName('li')[0].offsetHeight;
+    carousel.style.visibility = 'visible';
+    var wrapper = Carousel.wrapper = document.createElement('div');
+    wrapper.id = 'carouselWrapper';
+    wrapper.style.width = carousel.offsetWidth + 'px';
+    wrapper.style.height = carousel.offsetHeight + 'px';
+    carousel.parentNode.insertBefore(wrapper, carousel);
+    wrapper.appendChild(carousel);
+    var prevButton = document.getElementById('caro-prev'),
+        nextButton = document.getElementById('caro-next');
+    prevButton.onclick = function() {
+        prevButton.disabled = nextButton.disabled = true;
+        rotateForward();
+        animate(-Carousel.rowHeight, 0, function() {
+            carousel.style.top = '0';
+            prevButton.disabled = nextButton.disabled = false;
+        });
     };
+    nextButton.onclick = function() {
+        prevButton.disabled = nextButton.disabled = true;
+        animate(0, -Carousel.rowHeight, function() {
+            rotateBackward();
+            carousel.style.top = '0';
+            prevButton.disabled = nextButton.disabled = false;
+        });
+    };
+    // iFrame resize
+    iFrameResize({
+        log: false,
+        checkOrigin: false
+    });
+};

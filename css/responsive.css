@@ -194,9 +194,16 @@
     .global-wrapper .main-content {
         padding: 10px 0;
     }
-    .sticky .main-header {
+    .main-header {
         height: 76px;
         padding: 0;
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
+    .global-wrapper {
+        padding-top: 80px;
     }
     .sticky h1.logo {
         height: inherit;
@@ -205,8 +212,12 @@
     .sticky .live-streaming {
         transform: none;
     }
+    /**
     .margintop .global-wrapper .full-wrapper:first-child .main-content {
         margin-top: 79px;
+    } **/
+    .search-overlay{
+        top:75px;
     }
     .box,
     article {
@@ -246,7 +257,10 @@
     }
     .news li:first-child,
     .area-50 .news li:first-child,
-    .news-mod02 li:first-child {
+    .news-mod02 li:first-child,
+    .area-25 .news.programs li:first-child,
+    .area-75 .news.programs li:first-child,
+    .area-100 .news.programs li:first-child{
         width: 100% !important;
         height: auto !important;
         margin-bottom: 10px !important;
@@ -280,6 +294,18 @@
         float: none !important;
         margin: 0 0 auto 0 !important;
         padding: 0 0 auto 0 !important;
+    }
+    .area-25 .news-articles li,
+    .area-25 .news.programs li,
+    .area-75 .news-articles li,
+    .area-75 .news.programs li,
+    .area-100 .news-articles li,
+    .area-100 .news.programs li {
+        width: 49% !important;
+        margin-bottom: 10px;
+    }
+    .area-75 .news-articles li:last-child {
+        display: none;
     }
     .video-icon,
     .photo-icon {
@@ -864,5 +890,28 @@
     .page-404 .logo {
         background-size: 200px 75px;
         height: 100px;
+    }
+    .article-card .ttl {
+        font-size: 100%;
+        width: 68%;
+        float: left;
+        height: auto;
+    }
+    .article-card p {
+        float: none;
+        clear: both;
+        font-size: 85%;
+    }
+    .article-card img {
+    width: 27%;
+    margin: 0 0 10px 0;
+}
+    .article-card p,
+    .article-card .date-time {
+        width: 100%;
+    }
+    .article-card .date-time {
+        padding-top: 10px;
+        clear: both;
     }
 }

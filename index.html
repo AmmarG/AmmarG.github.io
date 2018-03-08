@@ -27,16 +27,6 @@
 
 <body>
     <!-- Start Static Video Popup on Pageload -->
-    <div id="promo-wrapper" style='display:none'>
-        <div id="vid-popup">
-            <div class="close" onClick="PopUp('hide')">x</div>
-            <div class="graphic"></div>
-            <video width="960" height="540" controls autoplay>
-                <source src="https://vid.alarabiya.net/2018/03/02/alarabiya15/AA15thAnniversary.mp4" type="video/mp4">
-                    Your browser does not support HTML5 video.
-            </video>
-        </div>
-    </div>
     <style>
         #promo-wrapper {
             position: fixed;
@@ -56,19 +46,19 @@
             margin: 0 auto;
             padding: 10px;
         }
-        #vid-popup .close {
+        #vid-close {
             width: 31px;
             height: 31px;
             position: absolute;
             right: 0;
             top: -31px;
-            background: #FFF;
-            font-family: Tahoma;
-            font-weight: bold;
-            font-size: 18px;
-            color: #e42929;
+            background: #e42929;
+            font-family: Verdana;
+            font-size: 22px;
+            color: #FFF;
             cursor: pointer;
             padding: 3px 9px 0 0;
+            display: none;
         }
         .graphic {
             position: absolute;
@@ -85,21 +75,32 @@
         }
     </style>
     <script>
-        function PopUp(hideOrshow) {
-            if (hideOrshow == 'hide') document.getElementById('promo-wrapper').style.display = "none";
-            else document.getElementById('promo-wrapper').removeAttribute('style');
-        }
         document.addEventListener("DOMContentLoaded", function(event) {
+            $('#promo15')[0].volume = 0.5;
             setTimeout(function() {
-                PopUp('show');
-            }, 1000);
-            $('#vid-popup .close').click(function() {
-                            document.getElementsByTagName('video')[0].pause();
-                        });
+                $("#vid-close").show();
+            }, 3000);
+            $('#vid-close').click(function() {
+                $("#promo-wrapper").css("display", "none");
+                $('#promo15')[0].pause();
+            });
+            if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
+                $("#promo-wrapper").css("display", "none");
+                document.getElementById("promo15").pause();
+            }
         });
-        
     </script>
-    <!-- End  Static Video Popup on Pageload -->
+    <div id="promo-wrapper">
+        <div id="vid-popup">
+            <div class="close" id="vid-close">x</div>
+            <div class="graphic"></div>
+            <video id="promo15" width="960" height="540" controls autoplay poster="https://vid.alarabiya.net/images/2018/03/08/7717d836-884d-452a-a9b9-48bb9e314f32/7717d836-884d-452a-a9b9-48bb9e314f32.jpg">
+                <source src="https://vid.alarabiya.net/2018/03/02/alarabiya15/AA15thAnniversary.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+    <!-- End Static Video Popup on Pageload -->
     <!-- Breaking News -->
     <div class="breaking-news">
         <div class="main-content">
