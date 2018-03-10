@@ -628,21 +628,21 @@ article .teaser-tools .share ul li:hover {
     background: url(../gfx/frequencies_ttl02.png) bottom center no-repeat;
 }
 .page-404 {
-    background-color: #702665;
     background-image: url(../gfx/404.gif);
+}
+.page-500 {
+    background-image: url(../gfx/500.gif);
+}
+.page-404,
+.page-500 {
+    background-color: #702665;
     background-position: center center;
     background-repeat: no-repeat;
     min-width: 100%;
 }
-.page-404 .logo {
-    background: url(../gfx/logo_large.png) center bottom no-repeat;
-    width: 250px;
-    height: 114px;
-    margin: 0 auto;
-    direction: ltr;
-}
-.page-404 .logo img {
-    height: auto;
+.page-404 footer,
+.page-500 footer {
+    display: none;
 }
 @media print {
     header,
@@ -988,7 +988,8 @@ body.live-streaming h2 {
 .section-aswaq .highlighted,
 .section-aswaq .news-articles .section-ttl,
 .section-aswaq .main-article .ttl,
-.section-aswaq .topic .section-ttl {
+.section-aswaq .topic .section-ttl,
+.section-aswaq .ftr-disclaimer {
     color: #1e4990;
 }
 .section-aswaq header nav a,
@@ -1060,6 +1061,14 @@ body.live-streaming h2 {
 .section-aswaq footer .logo {
     background-position: 9px -1283px;
     width: 200px;
+}
+.section-aswaq .ftr-disclaimer {
+    display: block;
+    font-family: Tahoma;
+    font-size: 11px;
+    width: 100%;
+    text-align: left;
+    padding-top: 10px;
 }
 /*************************** KSA Theme ***************************/
 

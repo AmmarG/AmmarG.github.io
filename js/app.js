@@ -83,13 +83,13 @@
             e.preventDefault();
             mobsubmenu.classList.toggle('active');
 
-        } ,false);
+        }, false);
     }
     window.addEventListener('scroll', function() {
         if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {} else {
             var header = document.querySelector('header');
             var logo = document.querySelector('h1.logo');
-           // var menu = document.querySelector('nav .main-content ul');
+            // var menu = document.querySelector('nav .main-content ul');
             var mainNav = document.querySelector('header nav');
             //first step global header
 
@@ -250,112 +250,112 @@ function moveOneStep(elem) {
 
         //current edge set the one before the active
         var current = initalActiveElIndex - 1;
-            var swipe_det = {};
-            swipe_det.sX = 0;
-            swipe_det.eX = 0;
-            var min_x = 20; //min x swipe for horizontal swipe
-            var max_x = 40; //max x difference for vertical swipe
-            function dd(e) {
-                var t = e.touches[0];
-                swipe_det.sX = t.screenX;
-            }
-            slider.addEventListener('touchstart', dd, false);
+        var swipe_det = {};
+        swipe_det.sX = 0;
+        swipe_det.eX = 0;
+        var min_x = 20; //min x swipe for horizontal swipe
+        var max_x = 40; //max x difference for vertical swipe
+        function dd(e) {
+            var t = e.touches[0];
+            swipe_det.sX = t.screenX;
+        }
+        slider.addEventListener('touchstart', dd, false);
 
-            slider.addEventListener('touchmove', function(e) {
+        slider.addEventListener('touchmove', function(e) {
 
-                var t = e.touches[0];
-                swipe_det.eX = t.screenX;
-            }, false);
+            var t = e.touches[0];
+            swipe_det.eX = t.screenX;
+        }, false);
 
-            slider.addEventListener('touchend', function(e) {
-                //check if last visisble
-                var uu = checkVisible(elem.id);
-                var nextobj = startingPoint + ss[current].offsetWidth;
-                //var vis= true;
+        slider.addEventListener('touchend', function(e) {
+            //check if last visisble
+            var uu = checkVisible(elem.id);
+            var nextobj = startingPoint + ss[current].offsetWidth;
+            //var vis= true;
 
-                if ((swipe_det.eX - min_x > swipe_det.sX) || (swipe_det.eX + min_x < swipe_det.sX)) {
-                    if (swipe_det.eX > swipe_det.sX) {
-                        if (!uu) {
-                            if (current < ss.length - 1) {
-                                startingPoint = nextobj;
-                                sliderStep(slider, nextobj);
-                                current += 1;
-                            }
-
-                        } else {
-                            slider.removeEventListener("touchMove", dd);
-                            var laststep = parseInt(slider.getAttribute('step')) + Math.abs(last.getBoundingClientRect().left);
-                            sliderStep(slider, laststep);
-
+            if ((swipe_det.eX - min_x > swipe_det.sX) || (swipe_det.eX + min_x < swipe_det.sX)) {
+                if (swipe_det.eX > swipe_det.sX) {
+                    if (!uu) {
+                        if (current < ss.length - 1) {
+                            startingPoint = nextobj;
+                            sliderStep(slider, nextobj);
+                            current += 1;
                         }
+
                     } else {
-
-                        if (current >= 1) {
-                            current -= 1;
-                            var prevobj = startingPoint - ss[current].offsetWidth;
-                            startingPoint = prevobj;
-                            sliderStep(slider, prevobj);
-                        }
+                        slider.removeEventListener("touchMove", dd);
+                        var laststep = parseInt(slider.getAttribute('step')) + Math.abs(last.getBoundingClientRect().left);
+                        sliderStep(slider, laststep);
 
                     }
-
-                }
-
-            }, false);
-            next.addEventListener('click', function(e) {
-                if (elem.querySelector('#prev').disabled === true) {
-                    elem.querySelector('#prev').disabled = false;
-                }
-
-                //get the last element position	(recentleft)
-                var recentleft = last.getBoundingClientRect();
-                var nextobj = startingPoint + ss[current].offsetWidth;
-                startingPoint = nextobj;
-                current += 1;
-                var uu = checkVisible(elem.id);
-                if (uu) {
-                    elem.querySelector('#next').disabled = true;
                 } else {
-                    var transitionEnd = transitionEndEventName();
-                    slider.addEventListener(transitionEnd, function() {
-                        if (checkVisible(elem.id)) {
-                            var finalmove = nextobj + Math.abs(checkVisible(elem.id));
-                            sliderStep(slider, finalmove)
-                            elem.querySelector('#next').disabled = true;
-                        }
-                    })
 
-
-                    sliderStep(slider, nextobj);
-                    elem.querySelector('#next').disabled = true;
-                    setTimeout(function() {
-                        elem.querySelector('#next').disabled = false;
-                    }, 250);
-                }
-
-            }, false);
-            prev.addEventListener('click', function(e) {
-                current -= 1;
-                if (current > 0) {
-
-                    if (elem.querySelector('#next').disabled === true) {
-                        elem.querySelector('#next').disabled = false;
+                    if (current >= 1) {
+                        current -= 1;
+                        var prevobj = startingPoint - ss[current].offsetWidth;
+                        startingPoint = prevobj;
+                        sliderStep(slider, prevobj);
                     }
 
-                    var prevobj = startingPoint - ss[current].offsetWidth;
-                    sliderStep(slider, prevobj);
-                    startingPoint = prevobj;
-                    elem.querySelector('#prev').disabled = true;
-                    setTimeout(function() {
-                        elem.querySelector('#prev').disabled = false;
-                    }, 250);
-                } else if (current === 0) {
-                    prevobj = startingPoint - ss[current].offsetWidth;
-                    sliderStep(slider, prevobj);
-                    startingPoint = prevobj;
-                    elem.querySelector('#prev').disabled = true;
                 }
-            }, false);
+
+            }
+
+        }, false);
+        next.addEventListener('click', function(e) {
+            if (elem.querySelector('#prev').disabled === true) {
+                elem.querySelector('#prev').disabled = false;
+            }
+
+            //get the last element position	(recentleft)
+            var recentleft = last.getBoundingClientRect();
+            var nextobj = startingPoint + ss[current].offsetWidth;
+            startingPoint = nextobj;
+            current += 1;
+            var uu = checkVisible(elem.id);
+            if (uu) {
+                elem.querySelector('#next').disabled = true;
+            } else {
+                var transitionEnd = transitionEndEventName();
+                slider.addEventListener(transitionEnd, function() {
+                    if (checkVisible(elem.id)) {
+                        var finalmove = nextobj + Math.abs(checkVisible(elem.id));
+                        sliderStep(slider, finalmove)
+                        elem.querySelector('#next').disabled = true;
+                    }
+                })
+
+
+                sliderStep(slider, nextobj);
+                elem.querySelector('#next').disabled = true;
+                setTimeout(function() {
+                    elem.querySelector('#next').disabled = false;
+                }, 250);
+            }
+
+        }, false);
+        prev.addEventListener('click', function(e) {
+            current -= 1;
+            if (current > 0) {
+
+                if (elem.querySelector('#next').disabled === true) {
+                    elem.querySelector('#next').disabled = false;
+                }
+
+                var prevobj = startingPoint - ss[current].offsetWidth;
+                sliderStep(slider, prevobj);
+                startingPoint = prevobj;
+                elem.querySelector('#prev').disabled = true;
+                setTimeout(function() {
+                    elem.querySelector('#prev').disabled = false;
+                }, 250);
+            } else if (current === 0) {
+                prevobj = startingPoint - ss[current].offsetWidth;
+                sliderStep(slider, prevobj);
+                startingPoint = prevobj;
+                elem.querySelector('#prev').disabled = true;
+            }
+        }, false);
         //if no active		
     } else {
         console.log('please set active');
@@ -470,9 +470,11 @@ window.onload = function() {
             prevButton.disabled = nextButton.disabled = false;
         });
     };
+};
+$(document).ready(function() {
     // iFrame resize
     iFrameResize({
         log: false,
         checkOrigin: false
     });
-};
+});

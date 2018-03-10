@@ -429,7 +429,7 @@ nav ul {
     position: relative;
 }
 nav li {
-    padding: 0 15px;
+    padding: 0 14px;
     height: 19px;
     margin-top: 12px;
     font-weight: bold;
@@ -568,7 +568,7 @@ nav li:last-child {
     margin: 12px 0 0 0;
 }
 .main-content .submenu li {
-    padding-right: 15px;
+    padding-right: 14px;
 }
 /**Search Overlay***/
 
@@ -1155,7 +1155,7 @@ form .valid {
 }
 footer {
     font-family: DroidKufiBold;
-    padding: 50px 0;
+    padding: 50px 0 25px 0;
 }
 .footer-separator {
     clear: both;
@@ -1164,7 +1164,6 @@ footer {
     margin-bottom: 30px;
 }
 footer .logo {
-    width: 117px;
     height: 50px;
     font-size: 0;
     float: right;
@@ -1959,9 +1958,10 @@ article .disclaimer {
     line-height: 170%;
     overflow: hidden;
     margin-bottom: 20px;
+    position: relative;
 }
 .article-card .ttl {
-        font-size: 120%;
+    font-size: 120%;
     font-weight: bold;
     padding-bottom: 10px;
     height: 35px;
@@ -2536,4 +2536,34 @@ article .box.infograph .caption {
 .leaderboard * {
     text-align: center;
     margin: 0 auto;
+}
+.ftr-disclaimer {
+    display: none;
+}
+/*************** Beta Logo, will be deleted ***************/
+header h1.logo {
+    width: 215px;
+    background-image: url(../gfx/logo-beta.png);
+}
+.section-aswaq header h1.logo {
+    width: 337px !important;
+    height: 46px;
+    background-image: url(../gfx/aswaq-beta.png) !important;
+    background-position: 0 0;
+}
+.section-vod header h1.logo {
+    width: 304px !important;
+    height: 46px;
+    background-image: url(../gfx/vod-logo-beta.png) !important;
+    background-position: 0 0;
+}
+@media (max-width: 480px) {
+    .main-header .logo {
+        flex: 0 0 150px !important;
+    }
+    .section-aswaq header .main-header h1.logo,
+    .section-vod header .main-header h1.logo {
+        flex: 0 0 200px !important;
+        background-image: url(../gfx/sprites-mobile.png) !important;
+    }
 }
