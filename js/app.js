@@ -120,6 +120,7 @@
 
 
     });
+     window.onload=setTimeout(function() {
     var sliders = ['slider', 'dateSlider'];
     sliders.forEach(function(slider) {
         var ele = document.getElementById(slider);
@@ -133,7 +134,7 @@
             }
         }
     });
-
+     },0);
 
     var xmlhttp = new XMLHttpRequest(),
         previous = null,
@@ -146,7 +147,7 @@
             if (previous && current && previous !== current) {
                 breakingNews.classList.add('show');
                 breakingTxt.innerText = current;
-                setTimeout(() => {
+                setTimeout(function() {
                     breakingNews.classList.remove('show');
                 }, 10000);
 
