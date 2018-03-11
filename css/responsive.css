@@ -926,4 +926,7 @@
         bottom: 0;
         top: auto;
     }
+    header .live-streaming span {
+        display: none;
+    }
 }
