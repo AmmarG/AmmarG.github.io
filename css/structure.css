@@ -2229,6 +2229,7 @@ form .valid {
     font-size: 120%;
     padding: 67px 0 30px 0;
     line-height: 150%;
+    height: 151px;
 }
 .vod-program .video-preview .presenter {
     display: none;
