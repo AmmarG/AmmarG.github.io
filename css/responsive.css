@@ -987,11 +987,11 @@
 }
 @media (min-width: 481px) and (max-width: 1340px) {
     body {
-        -moz-transform: scale(0.8, 0.8);
+        -moz-transform: scale(0.9, 0.9);
         /* Moz-browsers */
-        zoom: 0.8;
+        zoom: 0.9;
         /* Other non-webkit browsers */
-        zoom: 80%;
+        zoom: 90%;
         /* Webkit browsers */
     }
 }
