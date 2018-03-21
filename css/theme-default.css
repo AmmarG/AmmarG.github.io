@@ -11,7 +11,8 @@ footer .logo,
 .aa-live .listen,
 .live-popup .watch-ttl,
 .live-popup .listen-ttl,
-.aa-live.hide-live .live-open {
+.aa-live.hide-live .live-open,
+.share-list li {
     background-image: url(../gfx/sprites-default.png);
     background-repeat: no-repeat;
 }
@@ -146,7 +147,6 @@ article .box,
 .opinions ul,
 .top-writers li,
 .alfa-filter li:hover,
-.main-content .submenu ul,
 .search-overlay,
 .article-card,
 .author-story,
@@ -253,7 +253,7 @@ header nav a:hover,
 .coverage:hover,
 b,
 h6.flag,
-.aa-live .close,
+.aa-live .close-btn,
 .en table tr td:first-child span,
 .article-card:hover p  {
     color: #333;
@@ -261,7 +261,6 @@ h6.flag,
 .ad25 h2,
 .alfa-filter li.disabled,
 .alfa-filter li.disabled:hover,
-.search-overlay input,
 .search-overlay a:hover {
     color: #b7b6b6;
 }
@@ -346,7 +345,6 @@ select,
 textarea,
 header nav li,
 .main-content .submenu li,
-.main-content .menu-icon,
 .scroller .navigator i {
     border-color: #b7b6b6;
 }
@@ -375,8 +373,8 @@ textarea:focus {
     border-width: 1px 0 0 0;
 }
 .latest-news .time,
-.main-content .menu-icon,
-.live-popup .devices {
+.live-popup .devices,
+.main-content .menu-icon {
     border-style: solid;
     border-width: 0 0 0 1px;
 }
@@ -475,7 +473,6 @@ input.btn,
 .vod-slider.news li a.cover {
     background: none;
 }
-header nav,
 .news-articles ul,
 .news-mod02 li img,
 .Nwoslider,
@@ -579,28 +576,23 @@ textarea {
     outline: none;
     background: none;
 }
-.teaser-tools .share ul li,
-.share-list li {
-    background-image: url(../gfx/share.png);
-    background-repeat: no-repeat;
-}
 .share-list .mail {
-    background-position: 0 0;
+    background-position: 0 -1708px;
 }
 .share-list .g-plus {
-    background-position: -56px 0;
+    background-position: -56px -1708px;
 }
 .share-list .twtr {
-    background-position: -112px 0;
+    background-position: -112px -1708px;
 }
 .share-list .fb {
-    background-position: -168px 0;
+    background-position: -168px -1708px;
 }
 .share-list .whatsapp {
-    background-position: -224px 0;
+    background-position: -224px -1708px;
 }
 .share-list .telegram {
-    background-position: -279px 0;
+    background-position: 0 -1760px;
 }
 article .teaser-tools .share ul li:hover {
     opacity: 0.8;
@@ -641,7 +633,9 @@ article .teaser-tools .share ul li:hover {
     min-width: 100%;
 }
 .page-404 footer,
-.page-500 footer {
+.page-500 footer,
+.page-404 .leaderboard,
+.page-500 .leaderboard {
     display: none;
 }
 @media print {
@@ -656,7 +650,8 @@ article .teaser-tools .share ul li:hover {
     article .bookmark,
     article .article-teaser .video-icon,
     .box.opinions,
-    .breaking-news {
+    .breaking-news,
+    .leaderboard {
         display: none;
     }
     .area-75 {
@@ -698,7 +693,8 @@ body.live-streaming {
 }
 .section-vod .main-header,
 .section-vod .top-info,
-.section-vod .search-overlay {
+.section-vod .search-overlay,
+.section-vod article .teaser-tools .share ul {
     background-color: #020202;
 }
 .section-vod .main-header {
@@ -792,7 +788,9 @@ body.live-streaming {
 .section-vod article .box
 .vod-program,
 body.live-streaming,
-body.live-streaming h2 {
+body.live-streaming h2,
+.section-vod .short-url input[type=text],
+.section-vod .short-url input[type=text]:focus {
     color: #e4e4e4;
 }
 .section-vod header nav a:hover,
@@ -815,15 +813,8 @@ body.live-streaming h2 {
     color: #f90f0f !important;
 }
 .section-vod .main-content .submenu li,
-.section-vod .main-content .menu-icon,
 .section-vod h2 {
     border-color: #FFF;
-}
-.section-vod .main-content .menu-icon a {
-    background-image: url(../gfx/submenu-sticky.png);
-}
-.section-vod .main-content .menu-icon.active a {
-    background-image: url(../gfx/submenu-active-sticky.png);
 }
 .section-vod .btn-search {
     background-position: -77px -390px;
@@ -865,7 +856,9 @@ body.live-streaming h2 {
     padding: 0;
     bottom: 10px;
 }
-.section-vod .slider img {
+.section-vod .slider img,
+.section-vod .short-url input[type=text],
+.section-vod .short-url input[type=text]:focus {
     border-color: #000;
 }
 .section-vod .controls #next {
@@ -897,8 +890,6 @@ body.live-streaming h2 {
     color: #333;
 }
 .section-vod .ad25 h2,
-.section-vod .short-url input[type=text],
-.section-vod .short-url input[type=text]:focus,
 .section-vod article .topic h2 {
     color: #373737;
     border-color: #373737;
@@ -1388,4 +1379,7 @@ body.live-streaming h2 {
 }
 .section-sport footer .logo {
     background-position: 28px -1014px;
+}
+.video-js * {
+    outline: none;
 }

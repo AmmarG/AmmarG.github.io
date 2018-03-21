@@ -165,6 +165,10 @@ body {
     line-height: 150%;
     min-width: 1340px;
 }
+.box h2 {
+    font-family: Arabiya;
+    font-size: 31px;
+}
 /*******Areas************/
 
 .area-100 {
@@ -293,6 +297,7 @@ div > h2 {
     width: 100%;
     font-weight: bold;
     margin-bottom: 15px;
+    font-size: 140%;
 }
 .news-articles {
     -webkit-box-pack: justify;
@@ -368,7 +373,7 @@ footer .main-content ul {
     overflow: hidden;
 }
 header {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     -webkit-transition: 0.6s ease all;
     transition: 0.6s ease all;
 }
@@ -448,41 +453,12 @@ nav li:last-child {
     margin: 0;
     z-index: 4;
 }
-.main-content .menu-icon {
-    visibility: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    display: inline-block;
-    margin: 0 auto 0 0;
-    border-right: none;
-    width: 43px;
-    height: 16px;
-    padding: 0;
-    -ms-flex-item-align: center;
-    align-self: center;
-}
-.main-content .menu-icon a {
-    width: 26px;
-    height: 16px;
-    background: url('../gfx/submenu.png') center no-repeat;
-}
-.main-content .menu-icon.active a {
-    background-image: url('../gfx/submenu-active.png');
-    height: 30px;
-    width: 30px;
-    margin: -11px -4px 0 0;
-}
+
 /**Inside Sections Page***/
 
 .main-content > ul {
     position: relative;
     transition: .3s ease transform;
-}
-.main-content.section-page .menu-icon {
-    visibility: visible;
-    opacity: 1;
-    z-index: 4;
 }
 @-webkit-keyframes slideIN {
     0% {
@@ -536,6 +512,30 @@ nav li:last-child {
         opacity: 0;
     }
 }
+.main-content .menu-icon a {
+    width: 25px;
+    height: 18px;
+    background: url('../gfx/submenu.png') center no-repeat;
+    margin-top: -2px;
+}
+.main-content .menu-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline-block;
+    margin: 0 auto 0 0;
+    border-right: none;
+    width: 43px;
+    height: 16px;
+    padding: 0;
+    -ms-flex-item-align: center;
+    align-self: center;
+    opacity: 1;
+    z-index: 4;
+}
+.main-content .menu-icon.active a {
+    background-image: url('../gfx/submenu-active.png');
+}
 .main-content .submenu {
     overflow: hidden;
 }
@@ -544,13 +544,11 @@ nav li:last-child {
 }
 .main-content .submenu ul {
     position: absolute;
-    top: 0;
-    right: 2000px;
-    height: 40px;
-    width: 91%;
-}
-.main-content.section-page .submenu ul {
+    top: 60px;
     right: 0;
+    height: 40px;
+    width: 100%;
+    background:#e6e6e7;
 }
 .main-content .submenu.slideOut ul {
     -webkit-animation: slideOut 0.3s;
@@ -653,25 +651,36 @@ nav li:last-child {
     -ms-flex-item-align: start;
     align-self: flex-start;
 }
-.search-overlay input::-webkit-input-placeholder,
-.search-overlay input:-ms-input-placeholder,
-.search-overlay input::placeholder {
-    font-family: DroidKufiRegular;
+.search-input::-webkit-input-placeholder,
+.search-input::placeholder{
+    color:#757575;
 }
-.close-icon {
+.search-input:-ms-input-placeholder,
+.search-input::placeholder{
+    color:#757575;
+}
+.search-input::-moz-placeholder,
+.search-input::placeholder{
+    color:#757575;
+}
+.search-overlay input{
+    color:#757575;
+}
+.search-icon {
     display: block;
     width: 50px;
     height: 50px;
     padding: 2px;
-    background: url('../gfx/search-reset.png') center no-repeat;
     border: none;
-    margin: 5px -37px 0 0;
-    background-size: contain;
+    margin:21px -37px 0 0;
     outline: none;
     font-size: 0;
 }
-.search-input:not(:valid) ~ .close-icon {
+.search-input:not(:valid) ~ .search-icon {
     display: none;
+}
+.search-icon svg{
+    fill: #757577;
 }
 /**Search Overlay***/
 
@@ -747,8 +756,11 @@ nav.moveR .submenu ul {
     position: fixed;
     top: 3px;
 }
+.section-page.margintop .global-wrapper {
+    margin-top: 137px;
+}
 .margintop .global-wrapper {
-    margin-top: 95px;
+    margin-top: 76px;
 }
 /**Sticky Nav***/
 
@@ -852,9 +864,13 @@ span.cover {
     float: right;
 }
 .news li img,
-.news-mod02 {
+.news-mod02 img {
     width: 100%;
     height: 100%;
+}
+.area-75 .news li img,
+.area-75 .news-mod02 img {
+    width: auto;
 }
 .news li:first-child .ttl,
 .news .section-ttl,
@@ -1123,6 +1139,7 @@ form .valid {
     margin: 0 0 12px 0;
 }
 .news.programs li img {
+    width: 100%;
     height: auto;
 }
 .latest-news h2,
@@ -2055,7 +2072,7 @@ article .disclaimer {
     height: 60px;
 }
 nav .main-content {
-    overflow: hidden;
+    overflow: visible;
 }
 .box.services {
     padding-bottom: 20px;
@@ -2288,7 +2305,7 @@ article p a {
     font-weight: bold;
     font-size: 14px;
 }
-.aa-live .close {
+.aa-live .close-btn {
     float: left;
     font-family: Arial;
     font-weight: normal;
@@ -2434,7 +2451,7 @@ a.loadmore {
     display: block;
     margin: 20px 0;
     text-align: center;
-    padding: 5px;
+    padding: 15px;
     font-weight: bold;
 }
 .en {
@@ -2570,5 +2587,105 @@ header h1.logo {
     .section-vod header .main-header h1.logo {
         flex: 0 0 200px !important;
         background-image: url(../gfx/sprites-mobile.png) !important;
+        margin-right: 4px;
     }
+
+}
+/**updates new menu*/
+.submenu ul{
+    display: none;
+}
+.section-page .submenu.current-section ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.overflowfix{
+    overflow: visible !important;
+}
+.section-page nav{
+    height: 124px;
+    background: url('/gfx/menu-bg.jpg') center top repeat-x;
+}
+.main-submenu{
+    border:none;
+    padding-left: 0;
+    font-family: DroidKufiBold;
+    font-weight: bold;
+    font-size: 17px;
+}
+.submenu .main-submenu  a{
+    color:#580956;
+
+}
+
+.main-submenu span{
+    display: inline-block;
+    margin:2px 20px 0 0;
+    
+}
+.main-submenu svg{
+    fill:#262931;
+}
+.submenu li:first-child + li{
+    border:none;
+    padding-right: 10px;
+}
+.submenu li  a{
+    color:#262931;
+}
+.mega-menu{
+    background: #e3e3e3;
+    height: auto;
+    padding-bottom: 40px;
+    position: absolute;
+    top: 246px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: none;
+}
+.mega-menu.show{
+    display: block;
+}
+.mega-menu .main-content{
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.mega-menu .main-menu{
+    flex: 0 0 160px;
+    margin-left: 70px;
+    padding: 23px 0;
+}
+.mega-menu .main-menu:nth-child(1n+7){
+    background-image: url('../gfx/mega-menu-spr.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.mega-menu .main-menu:nth-child(6n+0){
+    margin-left: 0;
+}
+.mega-menu li{
+    line-height: 29px;
+}
+.mega-menu a {
+    color:#333;
+}
+.menu-lead{
+    margin-bottom: 15px;
+}
+.menu-lead a{
+    font-family: DroidKufiBold;
+    font-weight: bold;
+    color:#6a0b67;
+    font-size: 1.1em;
+}
+.sticky .mega-menu{
+    position:fixed;
+    top:60px;
+}
+/**sport section**/
+.takeover-outer{
+    z-index: -1;
 }

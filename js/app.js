@@ -1,3 +1,4 @@
+'use strict';
 /*if ('serviceWorker' in navigator) {
 	navigator.serviceWorker.register('../sw.js', { scope: '/' }).then((reg) => {
 		if (reg.installing) {
@@ -24,7 +25,6 @@
     });
   }
 }*/
-'use strict';
 (function() {
     var menu = document.querySelector('.mobile-menu'),
         overlay = document.querySelector('.overlay'),
@@ -33,15 +33,17 @@
         slider = document.getElementById('slider'),
         body = document.querySelector('body'),
         submenu = document.querySelector('.menu-icon'),
-        mobsubmenu = document.querySelector('.submenu'),
+        mobsubmenu = document.querySelectorAll('.submenu'),
+        mobsubmenuD = document.querySelector('.submenu.current-section'),
         seacrhBtn = document.querySelector('.btn-search'),
         search = document.querySelector('.search-overlay'),
-        close = document.querySelector('.close'),
+        close = document.querySelector('.search-overlay .close'),
         mobsearh = document.querySelector('.mobile-searh'),
         chamgeFont = document.querySelector('.font-resize'),
         article = document.querySelector('article'),
         breakingNews = document.querySelector('.breaking-news'),
-        breakingTxt = document.querySelector('.breaking-news p');
+        breakingTxt = document.querySelector('.breaking-news p'),
+        megaMenu = document.querySelector('.mega-menu');
     var arr = [seacrhBtn, mobsearh];
     menu.addEventListener('click', function() {
         overlay.classList.toggle('show');
@@ -49,28 +51,54 @@
         menu.classList.toggle('cross');
         body.classList.toggle('noscroll');
     });
+    overlay.addEventListener('touchstart',function(e){
+        e.preventDefault();
+        overlay.classList.toggle('show');
+        nav.classList.toggle('show');
+        menu.classList.toggle('cross');
+        body.classList.toggle('noscroll');
+    },false);
     submenu.addEventListener('click', function(e) {
         e.preventDefault();
+        megaMenu.classList.toggle('show');
         this.classList.toggle('active');
-        if (mobsubmenu.classList.contains('slideOut')) {
-            mobsubmenu.classList.toggle('slideIN');
+        /*if (mobsubmenuD.classList.contains('slideOut')) {
+            mobsubmenuD.classList.toggle('slideIN');
         } else {
-            mobsubmenu.classList.toggle('slideOut');
-        }
+
+            mobsubmenuD.classList.toggle('slideOut');
+        }*/
 
     });
     arr.forEach(function(ele) {
-        ele.addEventListener('click', function(e) {
-            e.preventDefault();
-            body.classList.toggle('noscroll');
-            search.classList.toggle('show');
-        });
+        ele.addEventListener('click',searchToggle,false);
     });
-
+    function searchToggle(event){
+        event.preventDefault();
+        body.classList.toggle('noscroll');
+        search.classList.toggle('show');
+        nav.classList.toggle('overflowfix');
+}
+document.addEventListener('keyup',function(e){
+    if (search.classList.contains('show')) {
+        document.addEventListener('keyup',escapeToClose,false);
+    }else{
+        document.removeEventListener('keyup',escapeToClose);
+    }
+},false);
+function escapeToClose(event){
+    event = event || window.event;
+    if (event.keyCode == 27 && search.classList.contains('show')) {
+        body.classList.remove('noscroll');
+        search.classList.remove('show');
+        nav.classList.remove('overflowfix');
+    }
+}
     close.addEventListener('click', function(e) {
         e.preventDefault();
         search.classList.remove('show');
         body.classList.remove('noscroll');
+        nav.classList.remove('overflowfix');
     });
     if (chamgeFont) {
         chamgeFont.addEventListener('click', function(e) {
@@ -79,12 +107,25 @@
         });
     }
     if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
-        mobsubmenu.addEventListener('click', function(e) {
-            e.preventDefault();
-            mobsubmenu.classList.toggle('active');
-
-        }, false);
+        mobsubmenu.forEach(function(meun){
+            meun.addEventListener('click', function(e) {
+                if(e.target.tagName.toLowerCase() !== 'a'){
+                    e.preventDefault();    
+                    this.classList.toggle('active');
+                var Siblings = getSiblings(this);
+                for(var i=0;i<Siblings.length;i++){
+                    if(Siblings[i].classList.contains('active')){
+                        Siblings[i].classList.remove('active');
+                    }
+                    }
+                }
+                
+                
+            }, false);
+        })
+     
     }
+    
     window.addEventListener('scroll', function() {
         if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {} else {
             var header = document.querySelector('header');
@@ -115,6 +156,10 @@
                 mainNav.classList.add('moveD');
             } else {
                 mainNav.classList.remove('moveD');
+            }
+            if(megaMenu.classList.contains('show')){
+                megaMenu.classList.remove('show');
+                submenu.classList.remove('active');
             }
         }
 
@@ -164,9 +209,12 @@
         xmlhttp.send();
     }, 30000);
 
+   
 })();
 //arr varilble to save the called slider before
 var arr = [];
+
+
 
 function isVisible(el) {
     var elemTop = el.getBoundingClientRect().top;
@@ -177,6 +225,16 @@ function isVisible(el) {
     return false;
 }
 
+function getSiblings(elem) {
+	var siblings = [];
+	var sibling = elem.parentNode.firstChild;
+	for ( ; sibling; sibling = sibling.nextSibling ) {
+			if ( sibling.nodeType === 1 && sibling !== elem ) {
+					siblings.push( sibling );
+			}
+	}
+	return siblings;
+}
 function isScrolledIntoView(el, fun) {
     if (isVisible(el)) {
         if (arr.indexOf(el) === -1) {
@@ -378,7 +436,7 @@ $(document).ready(function() {
     });
 
     // Side Showing Now Box
-    $(".aa-live .close").click(
+    $(".aa-live .close-btn").click(
         function() {
             $(".aa-live").addClass("hide-live");
         });

@@ -1,76 +1,68 @@
-var CACHE_NAME = 'sw-ex';
-var CACHE_VERSION = 1;
+"use strict";
+var CACHE_NAME = "AA-v1";
+var urlsToCache = ["/", "/css/", "/gfx/", "/js/", "index.html"];
 
-var filesToCache = [
-  '/',
-  '/index.html',
-  '/css/styles.css',
-  '/js/app.js',
-  '/images/yeoman.png',
-  '/images/touch/chrome-touch-icon-192x192.png'
-];
-
-self.oninstall = function(event) {
-  event.waitUntil(
-    caches.open(CACHE_NAME + '-v' + CACHE_VERSION).then(function(cache) {
-      return cache.addAll(filesToCache);
+self.addEventListener("install", e => {
+  console.log("WORKER: install event in progress.");
+  e.waitUntil(
+    caches.open(CACHE_NAME).then(cache => {
+      console.log("install");
+      console.log(urlsToCache);
+      return cache.addAll(urlsToCache).then(() => self.skipWaiting());
     })
   );
-};
+});
 
-self.onactivate = function(event) {
-  var currentCacheName = CACHE_NAME + '-v' + CACHE_VERSION;
-  caches.keys().then(function(cacheNames) {
-    return Promise.all(
-      cacheNames.map(function(cacheName) {
-        if (cacheName.indexOf(CACHE_NAME) == -1) {
-          return;
-        }
+self.addEventListener("activate", function(event) {
+  var cacheWhitelist = ["top-read-v1"];
 
-        if (cacheName != currentCacheName) {
-          return caches.delete(cacheName);
-        }
-      })
-    );
-  });
-};
+  event.waitUntil(
+    caches.keys().then(function(cacheNames) {
+      return Promise.all(
+        cacheNames.map(function(cacheName) {
+          if (cacheWhitelist.indexOf(cacheName) === -1) {
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    })
+  );
+});
 
-self.onfetch = function(event) {
-  var request = event.request;
+self.addEventListener("fetch", function(event) {
   event.respondWith(
-    caches.match(request).then(function(response) {
+    caches.match(event.request).then(function(response) {
+      // Cache hit - return response
       if (response) {
+        console.log("fetching..", response);
+
         return response;
       }
 
-      return fetch(request).then(function(response) {
+      // IMPORTANT: Clone the request. A request is a stream and
+      // can only be consumed once. Since we are consuming this
+      // once by cache and once by the browser for fetch, we need
+      // to clone the response.
+      var fetchRequest = event.request.clone();
+
+      return fetch(fetchRequest).then(function(response) {
+        // Check if we received a valid response
+        if (!response || response.status !== 200 || response.type !== "basic") {
+          return response;
+        }
+
+        // IMPORTANT: Clone the response. A response is a stream
+        // and because we want the browser to consume the response
+        // as well as the cache consuming the response, we need
+        // to clone it so we have two streams.
         var responseToCache = response.clone();
-        caches.open(CACHE_NAME + '-v' + CACHE_VERSION).then(
-          function(cache) {
-            cache.put(request, responseToCache).catch(function(err) {
-              console.warn(request.url + ': ' + err.message);
-            });
-          });
+
+        caches.open(CACHE_NAME).then(function(cache) {
+          cache.put(event.request, responseToCache);
+        });
+
         return response;
       });
     })
   );
-};
-
-
-// Communicate via MessageChannel.
-self.addEventListener('message', function(event) {
-  console.log(`Received message from main thread: ${event.data}`);
-  event.ports[0].postMessage(`Got message! Sending direct message back - "${event.data}"`);
 });
-
-// Broadcast via postMessage.
-function sendMessage(message) {
-  self.clients.matchAll().then(function(clients) {
-    clients.map(function(client) {
-      return client.postMessage(message);
-    })
-  });
-}
-
-

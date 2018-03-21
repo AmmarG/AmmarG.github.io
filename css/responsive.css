@@ -91,6 +91,8 @@
     header nav {
         padding: 0;
         margin: 0;
+        height: auto !important;
+        background: none !important;
     }
     nav .main-content {
         width: 300px;
@@ -103,8 +105,12 @@
         background: #fff;
         display: block;
         height: 100vh;
+        /*fix for iphone*/
+        overflow-x: visible;
+        -webkit-overflow-scrolling: touch;
     }
-    nav ul {
+    nav ul,
+    .main-content .submenu ul {
         flex-direction: column;
         padding-bottom: 50px;
         overflow-y: scroll;
@@ -112,13 +118,14 @@
         opacity: 1;
         width: auto;
         padding-bottom: 100px;
+        position: relative;
     }
     nav li a {
         padding-right: 20px;
     }
     nav .main-content li {
-        height: auto;
-        line-height: 260%;
+        height: 70px;
+        line-height: 70px;
         color: rgb(29, 27, 29);
         width: 300px;
         font-size: 100%;
@@ -126,7 +133,15 @@
         transition: border-right .2s;
         border-bottom: 1px solid rgb(230, 227, 227) !important;
         margin-top: 0;
-        padding-right: 0;
+        padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
     }
     nav .main-content li:first-child {
         margin-top: 20px;
@@ -138,8 +153,10 @@
         margin-bottom: 40px;
     }
     nav li.submenu a {
-        display: flex;
-        justify-content: space-between;
+        display: inline-block;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
     }
     nav .main-content li a.active {
         border-right: 5px solid #630460;
@@ -167,7 +184,6 @@
         flex: 0 0 20px;
         align-self: center;
     }
-    nav .main-content li.menu-icon,
     nav .main-content li.seacrh {
         display: none;
     }
@@ -191,9 +207,6 @@
     .main-content {
         padding: 0;
     }
-    .global-wrapper .main-content {
-        padding: 10px 0;
-    }
     .main-header {
         height: 77px;
         padding: 0;
@@ -201,13 +214,13 @@
         left: 0;
         right: 0;
         z-index: 100;
-        border-bottom: solid 1px #FFF; 
+        border-bottom: solid 1px #FFF;
     }
     .section-vod .main-header {
-        border-bottom: solid 1px #000; 
+        border-bottom: solid 1px #000;
     }
     .global-wrapper {
-        padding-top: 80px;
+        padding-top: 90px;
     }
     .sticky h1.logo {
         height: inherit;
@@ -216,12 +229,23 @@
     .sticky .live-streaming {
         transform: none;
     }
-    /**
-    .margintop .global-wrapper .full-wrapper:first-child .main-content {
-        margin-top: 79px;
-    } **/
     .search-overlay {
         top: 75px;
+    }
+    .search-overlay .container form,
+    .search-overlay .search-input{
+        width: 100%;
+    }
+    .search-overlay .search-input{
+        font-size: 2em;
+    }
+    .search-icon{
+        margin-top:13px;
+    }
+    .search-overlay .close{
+        width: 40px;
+        height: 40px;
+        background-size: contain;
     }
     .box,
     article {
@@ -298,6 +322,12 @@
         float: none !important;
         margin: 0 0 auto 0 !important;
         padding: 0 0 auto 0 !important;
+    }
+    .news li {
+        margin-bottom: 10px !important;
+    }
+    .news li:nth-last-of-type(-n+2) {
+        margin-bottom: 0 !important;
     }
     .area-25 .news-articles li,
     .area-25 .news.programs li,
@@ -377,6 +407,9 @@
     .dark .news-articles li,
     .gallery li {
         display: none;
+    }
+    #Scroll li {
+        display: block !important;
     }
     .top-content li .cover,
     .top-content li .ttl,
@@ -716,9 +749,6 @@
     form .row .fld {
         margin-top: 5px;
     }
-    .main-content.section-page .submenu ul {
-        right: 2000px;
-    }
     .main-content .submenu ul li,
     .main-content .submenu ul li a.active {
         border: none;
@@ -848,15 +878,6 @@
         margin: 0;
         float: none;
     }
-    nav .main-content .submenu a {
-        display: block;
-    }
-    nav .main-content .submenu a {
-        background: url(../gfx/arrow.png) 3px 13px no-repeat;
-    }
-    nav .main-content .submenu.active a {
-        background: url(../gfx/arrow_up.png) 3px 13px no-repeat;
-    }
     nav .main-content .submenu ul a,
     nav .main-content .submenu.active ul a {
         background: none;
@@ -928,5 +949,39 @@
     }
     header .live-streaming span {
         display: none;
+    }
+    .submenu .arrow {
+        display: inline-block;
+        width: 70px;
+        height: 60px;
+        border-right: 1px solid #dfdfdf;
+        background: url('../gfx/arrow.png') center no-repeat;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    }
+    .submenu.active .arrow {
+        background-image: url('../gfx/arrow_up.png');
+    }
+    .area-75 .news li img,
+    .area-75 .news-mod02 img {
+        width: 100%;
+    }
+    .section-page .submenu ul{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .mega-menu,
+    .menu-icon,
+    .main-submenu span{
+        display: none !important;
+    }
+    .artcl-snippet {
+        float: none;
+        margin: 20px 0;
+    }
+    article .twitter-video {
+        min-width: 100% !important;
     }
 }

@@ -23,10 +23,11 @@
     <meta name="msapplication-TileImage" content="gfx/touch/ms-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#ff0505">
     <meta name="theme-color" content="#73337d">
+    <meta name="google" value="notranslate">
 </head>
 
 <body>
-    <!-- Start Static Video Popup on Pageload -->
+    <!-- Start Static Video Popup on Pageload 
     <style>
         #promo-wrapper {
             position: fixed;
@@ -37,6 +38,7 @@
             background: rgba(0, 0, 0, .6);
             z-index: 1001;
         }
+
         #vid-popup {
             width: 980px;
             height: 560px;
@@ -46,6 +48,7 @@
             margin: 0 auto;
             padding: 10px;
         }
+
         #vid-close {
             width: 31px;
             height: 31px;
@@ -60,6 +63,7 @@
             padding: 3px 9px 0 0;
             display: none;
         }
+
         .graphic {
             position: absolute;
             width: 240px;
@@ -68,6 +72,7 @@
             left: -5px;
             top: -105px;
         }
+
         @media (max-width: 480px) {
             #promo-wrapper {
                 display: none;
@@ -75,12 +80,12 @@
         }
     </style>
     <script>
-        document.addEventListener("DOMContentLoaded", function(event) {
+        document.addEventListener("DOMContentLoaded", function (event) {
             $('#promo15')[0].volume = 0.5;
-            setTimeout(function() {
+            setTimeout(function () {
                 $("#vid-close").show();
             }, 3000);
-            $('#vid-close').click(function() {
+            $('#vid-close').click(function () {
                 $("#promo-wrapper").css("display", "none");
                 $('#promo15')[0].pause();
             });
@@ -92,15 +97,14 @@
     </script>
     <div id="promo-wrapper">
         <div id="vid-popup">
-            <div class="close" id="vid-close">x</div>
+            <div id="vid-close">x</div>
             <div class="graphic"></div>
             <video id="promo15" width="960" height="540" controls autoplay poster="https://vid.alarabiya.net/images/2018/03/08/7717d836-884d-452a-a9b9-48bb9e314f32/7717d836-884d-452a-a9b9-48bb9e314f32.jpg">
-                <source src="https://vid.alarabiya.net/2018/03/02/alarabiya15/AA15thAnniversary.mp4" type="video/mp4">
-                    Your browser does not support HTML5 video.
+                <source src="https://vid.alarabiya.net/2018/03/02/alarabiya15/AA15thAnniversary.mp4" type="video/mp4"> Your browser does not support HTML5 video.
             </video>
         </div>
     </div>
-    <!-- End Static Video Popup on Pageload -->
+     End Static Video Popup on Pageload -->
     <!-- Breaking News -->
     <div class="breaking-news">
         <div class="main-content">
@@ -112,7 +116,7 @@
     <div class="aa-live">
         <!-- Shows When Collapsed -->
         <div class="live-open"></div>
-        <h2>البث المباشر<span class="close">x</span></h2>
+        <h2>البث المباشر<span class="close-btn">x</span></h2>
         <a class="prog-img" href="#" title="">
             <img src="gfx/live_aa_logo.gif" alt="" />
         </a>
@@ -142,7 +146,8 @@
                     <a href="#" title="">#العربية</a>
                 </div>
                 <!-- Languages -->
-                <div class="lang"><a href="#" title="">English</a>
+                <div class="lang">
+                    <a href="#" title="">English</a>
                     <a href="#" title="">فارسي</a>
                     <a href="#" title="">عربي</a>
                 </div>
@@ -156,8 +161,8 @@
                 <!-- Logo -->
                 <h1 class="logo">
                     <a href="#" title="">
-                   العربية
-                </a>
+                        العربية
+                    </a>
                 </h1>
                 <!-- Mobile Search Icon -->
                 <div class="mobile-searh"></div>
@@ -176,41 +181,77 @@
             <div class="main-content">
                 <div class="logo">
                     <a href="#" title="">
-                   العربية
-                </a>
+                        العربية
+                    </a>
                 </div>
                 <ul>
-                    <li><a href="#" class="active" title="">الرئيسية</a>
+                    <li class="main-home-link ">
+                        <a href="#" class="active" title="">الرئيسية</a>
                     </li>
-                    <li><a href="#" title="">الشرق الأوسط</a>
+                    <li>
+                        <a href="#" title="">الشرق الأوسط</a>
                     </li>
-                    <li class="submenu"><a href="www.alarabiya.net" title="">العالم <span class="arrow"></span></a>
+                    <li class="submenu">
+                        <a href="www.alarabiya.net" title="">العالم </a>
+                        <span class="arrow"></span>
                         <ul>
-                            <li><a href="">صحة</a>
+                            <li>
+                                <a href="www.alarabiya.net">صح1ة</a>
                             </li>
-                            <li><a href="">رياظة</a>
+                            <li>
+                                <a href="">ريا1ظة</a>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#" title="">السعودية</a>
+                    <li class="submenu">
+                        <a href="#" title="">السعودية</a>
+                        <span class="arrow"></span>
+                        <ul>
+                            <li>
+                                <a href="">ص2حة</a>
+                            </li>
+                            <li>
+                                <a href="">ريا2ظة</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li><a href="#" title="">أسواق</a>
+                    <li class="submenu">
+                        <a href="#" title="">أسواق
+                        </a>
+                        <span class="arrow"></span>
+                        <ul>
+                            <li>
+                                <a href="">صح3ة</a>
+                            </li>
+                            <li>
+                                <a href="">ريا3ظة</a>
+                            </li>
+                        </ul>
+
                     </li>
-                    <li><a href="#" title="">رياضة</a>
+                    <li>
+                        <a href="#" title="">رياضة</a>
                     </li>
-                    <li><a href="#" title="">تكنولوجيا</a>
+                    <li>
+                        <a href="#" title="">تكنولوجيا</a>
                     </li>
-                    <li><a href="#" title="">آراء</a>
+                    <li>
+                        <a href="#" title="">آراء</a>
                     </li>
-                    <li><a href="#" title="">ستايل</a>
+                    <li>
+                        <a href="#" title="">ستايل</a>
                     </li>
-                    <li><a href="#" title="">منوعات</a>
+                    <li>
+                        <a href="#" title="">منوعات</a>
                     </li>
-                    <li><a href="#" title="">البرامج</a>
+                    <li>
+                        <a href="#" title="">البرامج</a>
                     </li>
-                    <li><a href="#" title="">أنا أرى</a>
+                    <li>
+                        <a href="#" title="">أنا أرى</a>
                     </li>
-                    <li><a href="#" title="">أنا أرى</a>
+                    <li>
+                        <a href="#" title="">أنا أرى</a>
                     </li>
                     <!-- Search -->
                     <li class="menu-icon">
@@ -221,16 +262,214 @@
                     </li>
                 </ul>
                 <div class="search-overlay">
-                    <div class="container">
-                        <a href="" class="close"></a>
-                        <form action="">
-                            <input type="text" name="search" class="search-input" placeholder="ابحث ..." required />
-                            <button class="close-icon" type="reset">x</button>
-                        </form>
+                        <div class="container">
+                            <a href="" class="close"></a>
+                            <form action="">
+                                <input type="text" name="search" class="search-input" placeholder="ابحث ..." required />
+                                <a class="search-icon" href="#">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+                                            <title>بحث</title>
+                                            <path d="M15.869 435.698l121.276-103.147c12.537-11.283 25.945-16.463 36.776-15.963-28.628-33.534-45.921-77.039-45.921-124.588 0-106.039 85.961-192 192-192s192 85.961 192 192-85.961 192-192 192c-47.549 0-91.054-17.293-124.588-45.922 0.5 10.831-4.68 24.239-15.963 36.776l-103.147 121.276c-17.661 19.623-46.511 21.277-64.11 3.678s-15.946-46.449 3.677-64.11zM320 320c70.692 0 128-57.308 128-128s-57.308-128-128-128-128 57.308-128 128 57.307 128 128 128z"></path>
+                                            </svg>
+                                            
+                                </a>
+                            </form>
+                        </div>
                     </div>
-                </div>
             </div>
         </nav>
+        <div class="mega-menu">
+            <div class="main-content">
+                <div class="main-menu">
+                    <ul>
+                        <li class="menu-lead">
+                            <a href="#">الاخبار</a>
+                        </li>
+                        <li><a href="/arab-and-world/gulf.html" title="الخليج العربي">الخليج العربي</a></li>
+   	 
+                        <li><a href="/arab-and-world/egypt.html" title="مصر">مصر</a></li>
+                        
+                        <li><a href="/arab-and-world/syria.html" title="سوريا">سوريا</a></li>
+                        
+                        <li><a href="/arab-and-world/yemen.html" title="اليمن">اليمن</a></li>
+                        
+                        <li><a href="/arab-and-world/iraq.html" title="العراق">العراق</a></li>
+                        
+                        <li><a href="/arab-and-world/american-elections-2016.html" title="أميركا">أميركا</a></li>
+                    </ul>
+                </div>
+                <div class="main-menu">
+                    <ul>
+                        <li class="menu-lead">
+                            <a href="#">السعودية</a>
+                        </li>
+                        <li><a href="/saudi-today/last-news.html" title="الأخبار">الأخبار</a></li>
+   	 
+                        <li><a href="/saudi-today/videos.html" title="نشرة الرابعة">نشرة الرابعة</a></li>
+                        
+                        <li><a href="/saudi-today/views.html" title="الآراء">الآراء</a></li>
+                        
+                        <li><a href="/saudi-today/saudi-vision-2030.html" title="رؤية 2030">رؤية 2030</a></li>                
+                    </ul>
+                </div>
+                <div class="main-menu">
+                    <ul>
+                        <li class="menu-lead">
+                            <a href="#">منوعات</a>
+                        </li>
+                        <li><a href="/variety/medicine-and-health.html" title="صحة">صحة</a></li>
+   	 
+                        <li><a href="/variety/technology.html" title="تكنولوجيا">تكنولوجيا</a></li>
+                        
+                        <li><a href="/variety/social-media.html" title="سوشيال ميديا">سوشيال ميديا</a></li>
+                        
+                        <li><a href="/variety/knowmore.html" title="العربية_المعرفة">العربية_المعرفة</a></li>
+                        
+                        <li><a href="/variety/culture-and-art.html" title="ثقافة و فن">ثقافة و فن</a></li>
+                        
+                        <li><a href="/variety/fashion-beauty.html" title="ستايل">ستايل</a></li>
+                        
+                        <li><a href="/variety/science.html" title="علم">علم</a></li>
+                    </ul>
+                </div>
+                <div class="main-menu">
+                    <ul>
+                        <li class="menu-lead">
+                            <a href="#">أسواق</a>
+                        </li>
+                        <li><a href="/aswaq/news.html" title="الأخبار">الأخبار</a></li>
+   	 
+                        <li><a href="/aswaq/videos.html" title="النشرات الاقتصادية">النشرات الاقتصادية</a></li>
+                        
+                        <li><a href="/aswaq/markets.html" title="أسواق المال">أسواق المال</a></li>
+                        
+                        <li><a href="/aswaq/companies.html" title="شركات">شركات</a></li>
+                        
+                        <li><a href="/aswaq/banks.html" title="بنوك وتمويل">بنوك وتمويل</a></li>
+                        
+                        <li><a href="/aswaq/oil-and-gas.html" title="طاقة">طاقة</a></li>
+                        
+                        <li><a href="/aswaq/realestate.html" title="عقار">عقار</a></li>
+                        
+                        <li><a href="/aswaq/eskan.html" title="إسكان">إسكان</a></li>
+                        
+                        <li><a href="/aswaq/economy.html" title="اقتصاد">اقتصاد</a></li>
+                        
+                        <li><a href="/aswaq/travel-and-tourism.html" title="سياحة">سياحة</a></li>
+                        
+                        <li><a href="/aswaq/business-lifestyle.html" title="بيزنس لايف ستايل">بيزنس لايف ستايل</a></li>
+                    </ul>
+                </div>
+                <div class="main-menu">
+                    <ul>
+                        <li class="menu-lead">
+                            <a href="#">آراء</a>
+                        </li>
+                        <li><a href="/views/politics.html" title="سياسة">سياسة</a></li>
+   	 
+                        <li><a href="/views/science.html" title="الرياضة">الرياضة</a></li>
+                
+                    </ul>
+                </div>
+                <div class="main-menu">
+                    <ul>
+                        <li class="menu-lead">
+                            <a href="#">الشرق الاوسط</a>
+                        </li>
+                        <li>
+                            <a href="">العرب والعالم</a>
+                        </li>
+                        <li>
+                            <a href="">الأسواق العربية</a>
+                        </li>
+                        <li>
+                            <a href="">الرياضة</a>
+                        </li>
+                        <li>
+                            <a href="">طب وصحة</a>
+                        </li>
+                        <li>
+                                <a href="">طب وصحة</a>
+                            </li>
+                            <li>
+                                    <a href="">طب وصحة</a>
+                                </li>
+                    </ul>
+                </div>
+                <div class="main-menu">
+                    <ul>
+                        <li class="menu-lead">
+                            <a href="#">الشرق الاوسط</a>
+                        </li>
+                        <li>
+                            <a href="">العرب والعالم</a>
+                        </li>
+                        <li>
+                            <a href="">الأسواق العربية</a>
+                        </li>
+                      
+                      
+                    </ul>
+                </div>
+                <div class="main-menu">
+                    <ul>
+                        <li class="menu-lead">
+                            <a href="#">الشرق الاوسط</a>
+                        </li>
+                        <li>
+                            <a href="">العرب والعالم</a>
+                        </li>
+                        <li>
+                            <a href="">الأسواق العربية</a>
+                        </li>
+                        <li>
+                            <a href="">الرياضة</a>
+                        </li>
+                        <li>
+                            <a href="">طب وصحة</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-menu">
+                    <ul>
+                        <li class="menu-lead">
+                            <a href="#">الاخبار</a>
+                        </li>
+                        <li>
+                            <a href="">العرب والعالم</a>
+                        </li>
+                        <li>
+                            <a href="">الأسواق العربية</a>
+                        </li>
+                        <li>
+                            <a href="">الرياضة</a>
+                        </li>
+                        <li>
+                            <a href="">طب وصحة</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-menu">
+                    <ul>
+                        <li class="menu-lead">
+                            <a href="#">الاخبار</a>
+                        </li>
+                        <li>
+                            <a href="">العرب والعالم</a>
+                        </li>
+                        <li>
+                            <a href="">الأسواق العربية</a>
+                        </li>
+                        <li>
+                            <a href="">الرياضة</a>
+                        </li>
+                        <li>
+                            <a href="">طب وصحة</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <form class="global-search">
             <div class="main-content">
                 <input type="search" class="fld" name="ابحث" autocomplete="off" placeholder="ابحث في العربية!" />
@@ -254,10 +493,10 @@
                                     <!-- Aspect Ration Change on mobile -->
                                     <picture>
                                         <source media="(max-width: 480px)" srcset="temp/temp18_4x3.jpg">
-                                            <img src="temp/temp17_4x3.jpg" alt="">
+                                        <img src="temp/temp17_4x3.jpg" alt="">
                                     </picture>
                                     <a class="cover" href="#" title="">
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
                                         <span class="caption">مند 13 ساعة</span>
                                     </a>
                                     <!-- Section Title -->
@@ -266,7 +505,7 @@
                                 <li>
                                     <img src="temp/temp02.jpg" alt="" />
                                     <a class="cover" href="#" title="">
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
                                         <span class="video-icon"></span>
                                     </a>
                                     <!-- Section Title -->
@@ -275,7 +514,7 @@
                                 <li>
                                     <img src="temp/temp03.jpg" alt="" />
                                     <a class="cover" href="#" title="">
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
                                     </a>
                                     <!-- Section Title -->
                                     <a href="#" class="section-ttl">العالم العربي</a>
@@ -288,15 +527,15 @@
                         <!-- Latest News Only for 25 -->
                         <div class="box latest-news">
                             <h2>
-                            <a href="#" title="">آخر الأخبار</a>
-                        </h2>
+                                <a href="#" title="">آخر الأخبار</a>
+                            </h2>
                             <ul>
                                 <li>
                                     <a href="#" title="">
                                         <!-- Time -->
                                         <span class="time">
-                                    <span>20:20</span>
-                                        <span class="region">GMT</span>
+                                            <span>20:20</span>
+                                            <span class="region">GMT</span>
                                         </span>
                                         <!-- Title -->
                                         <span class="ttl">شاهد.. بريطانية تشيد بالمسلمين في حريق برج لندن</span>
@@ -306,8 +545,8 @@
                                     <a href="#" title="">
                                         <!-- Time -->
                                         <span class="time">
-                                    <span>20:20</span>
-                                        <span class="region">GMT</span>
+                                            <span>20:20</span>
+                                            <span class="region">GMT</span>
                                         </span>
                                         <!-- Title -->
                                         <span class="ttl">شاهد.. بريطانية تشيد بالمسلمين في حريق برج لندن</span>
@@ -317,8 +556,8 @@
                                     <a href="#" title="">
                                         <!-- Time -->
                                         <span class="time">
-                                    <span>20:20</span>
-                                        <span class="region">GMT</span>
+                                            <span>20:20</span>
+                                            <span class="region">GMT</span>
                                         </span>
                                         <!-- Title -->
                                         <span class="ttl">شاهد.. بريطانية تشيد بالمسلمين في حريق برج لندن</span>
@@ -328,8 +567,8 @@
                                     <a href="#" title="">
                                         <!-- Time -->
                                         <span class="time">
-                                    <span>20:20</span>
-                                        <span class="region">GMT</span>
+                                            <span>20:20</span>
+                                            <span class="region">GMT</span>
                                         </span>
                                         <!-- Title -->
                                         <span class="ttl">شاهد.. بريطانية تشيد بالمسلمين في حريق برج لندن</span>
@@ -339,8 +578,8 @@
                                     <a href="#" title="">
                                         <!-- Time -->
                                         <span class="time">
-                                    <span>20:20</span>
-                                        <span class="region">GMT</span>
+                                            <span>20:20</span>
+                                            <span class="region">GMT</span>
                                         </span>
                                         <!-- Title -->
                                         <span class="ttl">شاهد.. بريطانية تشيد بالمسلمين في حريق برج لندن</span>
@@ -350,8 +589,8 @@
                                     <a href="#" title="">
                                         <!-- Time -->
                                         <span class="time">
-                                    <span>20:20</span>
-                                        <span class="region">GMT</span>
+                                            <span>20:20</span>
+                                            <span class="region">GMT</span>
                                         </span>
                                         <!-- Title -->
                                         <span class="ttl">شاهد.. بريطانية تشيد بالمسلمين في حريق برج لندن</span>
@@ -367,14 +606,16 @@
                     <div class="area-50">
                         <!-- News Articles 100/75/50/25 -->
                         <div class="box news-articles">
-                            <h2><a href="#">الأخبار</a></h2>
+                            <h2>
+                                <a href="#">الأخبار</a>
+                            </h2>
                             <ul>
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                    <img src="temp/temp04.jpg" alt="" />
-                                    </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                            <img src="temp/temp04.jpg" alt="" />
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
                                     </a>
                                     <!-- Section Title -->
                                     <a href="#" class="section-ttl">رياضة</a>
@@ -382,9 +623,9 @@
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                    <img src="temp/temp05.jpg" alt="" />
-                                    </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                            <img src="temp/temp05.jpg" alt="" />
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
                                     </a>
                                     <!-- Section Title -->
                                     <a href="#" class="section-ttl">إقتصاد</a>
@@ -392,9 +633,9 @@
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                    <img src="temp/temp06.jpg" alt="" />
-                                    </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                            <img src="temp/temp06.jpg" alt="" />
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
                                     </a>
                                     <!-- Section Title -->
                                     <a href="#" class="section-ttl">العالم العربي</a>
@@ -402,10 +643,10 @@
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                    <img src="temp/temp07.jpg" alt="" />
-                                    <span class="video-icon"></span>
+                                            <img src="temp/temp07.jpg" alt="" />
+                                            <span class="video-icon"></span>
                                         </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
                                     </a>
                                     <!-- Section Title -->
                                     <a href="#" class="section-ttl">السعودية</a>
@@ -413,10 +654,10 @@
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                    <img src="temp/temp11.jpg" alt="" />
-                                    <span class="video-icon"></span>
+                                            <img src="temp/temp11.jpg" alt="" />
+                                            <span class="video-icon"></span>
                                         </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
                                     </a>
                                     <!-- Section Title -->
                                     <a href="#" class="section-ttl">أسواق</a>
@@ -424,9 +665,9 @@
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                    <img src="temp/temp12.jpg" alt="" />
-                                    </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                            <img src="temp/temp12.jpg" alt="" />
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
                                     </a>
                                     <!-- Section Title -->
                                     <a href="#" class="section-ttl">ستايل</a>
@@ -438,33 +679,35 @@
                     <div class="area-25">
                         <!-- Photo Gallery 100/75/50/25 -->
                         <div class="box gallery">
-                            <h2><a href="#">بالصور</a></h2>
+                            <h2>
+                                <a href="#">بالصور</a>
+                            </h2>
                             <ul>
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                    <img src="temp/temp08.jpg" alt="" />
-                                    <span class="photo-icon"></span>
+                                            <img src="temp/temp08.jpg" alt="" />
+                                            <span class="photo-icon"></span>
                                         </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                    <img src="temp/temp09.jpg" alt="" />
-                                    <span class="photo-icon"></span>
+                                            <img src="temp/temp09.jpg" alt="" />
+                                            <span class="photo-icon"></span>
                                         </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                    <img src="temp/temp10.jpg" alt="" />
-                                    <span class="photo-icon"></span>
+                                            <img src="temp/temp10.jpg" alt="" />
+                                            <span class="photo-icon"></span>
                                         </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
                                     </a>
                                 </li>
                             </ul>
@@ -482,63 +725,64 @@
                         </div>
                         <!-- Top Content only for 25 -->
                         <div class="box top-content">
-                            <h2><a href="#" title="">الأكثر قراءة</a></h2>
+                            <h2>
+                                <a href="#" title="">الأكثر قراءة</a>
+                            </h2>
                             <ul>
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                        <img src="temp/temp13.jpg" alt="" />
-                                        <span class="video-icon"></span>
+                                            <img src="temp/temp13.jpg" alt="" />
+                                            <span class="video-icon"></span>
                                         </span>
                                         <span class="ttl">
-                                           معتقلو حماة المركزي : النمر المقنع
-</span>
-                                        <span class="caption">1,885,311  مشاهدة</span>
+                                            معتقلو حماة المركزي : النمر المقنع
+                                        </span>
+                                        <span class="caption">1,885,311 مشاهدة</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                        <img src="temp/temp14.jpg" alt="" />
+                                            <img src="temp/temp14.jpg" alt="" />
                                         </span>
                                         <span class="ttl">
-                                           معتقلو حماة المركزي : النمر المقنع
- يعزي رئي</span>
-                                        <span class="caption">1,885,311  مشاهدة</span>
+                                            معتقلو حماة المركزي : النمر المقنع يعزي رئي</span>
+                                        <span class="caption">1,885,311 مشاهدة</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                        <img src="temp/temp15.jpg" alt="" />
-                                        <span class="video-icon"></span>
+                                            <img src="temp/temp15.jpg" alt="" />
+                                            <span class="video-icon"></span>
                                         </span>
                                         <span class="ttl">
-                                           معتقلو حماة المركزي : النمر المقنع
-</span>
-                                        <span class="caption">1,885,311  مشاهدة</span>
+                                            معتقلو حماة المركزي : النمر المقنع
+                                        </span>
+                                        <span class="caption">1,885,311 مشاهدة</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                        <img src="temp/temp16.jpg" alt="" />
-                                        <span class="video-icon"></span>
+                                            <img src="temp/temp16.jpg" alt="" />
+                                            <span class="video-icon"></span>
                                         </span>
                                         <span class="ttl">
-                                           معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد</span>
-                                        <span class="caption">1,885,311  مشاهدة</span>
+                                            معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد</span>
+                                        <span class="caption">1,885,311 مشاهدة</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                        <img src="temp/temp06.jpg" alt="" />
+                                            <img src="temp/temp06.jpg" alt="" />
                                         </span>
                                         <span class="ttl">
-                                           معتقلو حماة المركزي : النمر المقنع
-</span>
-                                        <span class="caption">1,885,311  مشاهدة</span>
+                                            معتقلو حماة المركزي : النمر المقنع
+                                        </span>
+                                        <span class="caption">1,885,311 مشاهدة</span>
                                     </a>
                                 </li>
                             </ul>
@@ -555,17 +799,19 @@
                     <div class="area-100">
                         <!-- News Articles 100/75/50/25 -->
                         <div class="box news-articles">
-                            <h2><a href="#">فيديو العربية</a></h2>
+                            <h2>
+                                <a href="#">فيديو العربية</a>
+                            </h2>
                             <ul>
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp20_4x3.jpg">
-                                            <img src="temp/temp11.jpg" alt="">
-                                    </picture>
-                                    <span class="video-icon"></span>
+                                            <!-- Aspect Ration Change on mobile -->
+                                            <picture>
+                                                <source media="(max-width: 480px)" srcset="temp/temp20_4x3.jpg">
+                                                <img src="temp/temp11.jpg" alt="">
+                                            </picture>
+                                            <span class="video-icon"></span>
                                         </span>
                                         <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                     </a>
@@ -573,12 +819,12 @@
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
-                                    <img src="temp/temp12.jpg" alt="" />
+                                            <!-- Aspect Ration Change on mobile -->
+                                            <picture>
+                                                <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
+                                                <img src="temp/temp12.jpg" alt="" />
                                             </picture>
-                                    <span class="video-icon"></span>
+                                            <span class="video-icon"></span>
                                         </span>
                                         <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                     </a>
@@ -586,12 +832,12 @@
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
-                                    <img src="temp/temp13.jpg" alt="" />
+                                            <!-- Aspect Ration Change on mobile -->
+                                            <picture>
+                                                <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
+                                                <img src="temp/temp13.jpg" alt="" />
                                             </picture>
-                                    <span class="video-icon"></span>
+                                            <span class="video-icon"></span>
                                         </span>
                                         <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                     </a>
@@ -599,12 +845,12 @@
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
-                                    <img src="temp/temp14.jpg" alt="" />
+                                            <!-- Aspect Ration Change on mobile -->
+                                            <picture>
+                                                <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
+                                                <img src="temp/temp14.jpg" alt="" />
                                             </picture>
-                                    <span class="video-icon"></span>
+                                            <span class="video-icon"></span>
                                         </span>
                                         <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                     </a>
@@ -612,12 +858,12 @@
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
-                                    <img src="temp/temp15.jpg" alt="" />
+                                            <!-- Aspect Ration Change on mobile -->
+                                            <picture>
+                                                <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
+                                                <img src="temp/temp15.jpg" alt="" />
                                             </picture>
-                                    <span class="video-icon"></span>
+                                            <span class="video-icon"></span>
                                         </span>
                                         <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                     </a>
@@ -625,12 +871,12 @@
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
-                                    <img src="temp/temp16.jpg" alt="" />
+                                            <!-- Aspect Ration Change on mobile -->
+                                            <picture>
+                                                <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
+                                                <img src="temp/temp16.jpg" alt="" />
                                             </picture>
-                                    <span class="video-icon"></span>
+                                            <span class="video-icon"></span>
                                         </span>
                                         <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                     </a>
@@ -638,12 +884,12 @@
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
-                                    <img src="temp/temp04.jpg" alt="" />
+                                            <!-- Aspect Ration Change on mobile -->
+                                            <picture>
+                                                <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
+                                                <img src="temp/temp04.jpg" alt="" />
                                             </picture>
-                                    <span class="video-icon"></span>
+                                            <span class="video-icon"></span>
                                         </span>
                                         <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                     </a>
@@ -651,12 +897,12 @@
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
-                                    <img src="temp/temp05.jpg" alt="" />
+                                            <!-- Aspect Ration Change on mobile -->
+                                            <picture>
+                                                <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
+                                                <img src="temp/temp05.jpg" alt="" />
                                             </picture>
-                                    <span class="video-icon"></span>
+                                            <span class="video-icon"></span>
                                         </span>
                                         <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                     </a>
@@ -675,25 +921,16 @@
                     <div class="area-50">
                         <!-- News Articles 100/75/50/25 -->
                         <div class="box news-articles">
-                            <h2><a href="#">العرب و العالم</a></h2>
+                            <h2>
+                                <a href="#">العرب و العالم</a>
+                            </h2>
                             <ul>
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                    <img src="temp/temp06.jpg" alt="" />
-                                    </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
-                                    </a>
-                                    <!-- Section Title -->
-                                    <a href="#" class="section-ttl">العالم العربي</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="">
-                                        <span class="cover">
-                                    <img src="temp/temp07.jpg" alt="" />
-                                    <span class="video-icon"></span>
+                                            <img src="temp/temp06.jpg" alt="" />
                                         </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
                                     </a>
                                     <!-- Section Title -->
                                     <a href="#" class="section-ttl">العالم العربي</a>
@@ -701,10 +938,10 @@
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                    <img src="temp/temp13.jpg" alt="" />
-                                    <span class="video-icon"></span>
+                                            <img src="temp/temp07.jpg" alt="" />
+                                            <span class="video-icon"></span>
                                         </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
                                     </a>
                                     <!-- Section Title -->
                                     <a href="#" class="section-ttl">العالم العربي</a>
@@ -712,9 +949,20 @@
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                    <img src="temp/temp14.jpg" alt="" />
-                                    </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                            <img src="temp/temp13.jpg" alt="" />
+                                            <span class="video-icon"></span>
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
+                                    </a>
+                                    <!-- Section Title -->
+                                    <a href="#" class="section-ttl">العالم العربي</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <span class="cover">
+                                            <img src="temp/temp14.jpg" alt="" />
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
                                     </a>
                                     <!-- Section Title -->
                                     <a href="#" class="section-ttl">العالم العربي</a>
@@ -726,24 +974,26 @@
                     <div class="area-25">
                         <!-- Photo Gallery 100/75/50/25 -->
                         <div class="box gallery">
-                            <h2><a href="#">بالصور</a></h2>
+                            <h2>
+                                <a href="#">بالصور</a>
+                            </h2>
                             <ul>
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                    <img src="temp/temp09.jpg" alt="" />
-                                    <span class="photo-icon"></span>
+                                            <img src="temp/temp09.jpg" alt="" />
+                                            <span class="photo-icon"></span>
                                         </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                    <img src="temp/temp10.jpg" alt="" />
-                                    <span class="photo-icon"></span>
+                                            <img src="temp/temp10.jpg" alt="" />
+                                            <span class="photo-icon"></span>
                                         </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
                                     </a>
                                 </li>
                             </ul>
@@ -767,14 +1017,16 @@
                     <div class="area-50">
                         <!-- News Mode 02 Only 50 / For Other Variations, Use the 'news-articles' Component for 25/50/75/100 -->
                         <div class="box news-mod02">
-                            <h2><a href="#" title="">الأسواق العربية</a></h2>
+                            <h2>
+                                <a href="#" title="">الأسواق العربية</a>
+                            </h2>
                             <ul>
                                 <!-- Main Article -->
                                 <li>
                                     <!-- Aspect Ration Change on mobile -->
                                     <picture>
                                         <source media="(max-width: 480px)" srcset="temp/temp18_4x3.jpg">
-                                            <img src="temp/temp00.jpg" alt="" />
+                                        <img src="temp/temp00.jpg" alt="" />
                                     </picture>
                                     <a class="cover" href="#" title="">
                                         <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
@@ -786,18 +1038,18 @@
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                    <img src="temp/temp15.jpg" alt="" />
-                                      <span class="video-icon"></span>
+                                            <img src="temp/temp15.jpg" alt="" />
+                                            <span class="video-icon"></span>
                                         </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                    <img src="temp/temp16.jpg" alt="" />
-                                    </span>
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                            <img src="temp/temp16.jpg" alt="" />
+                                        </span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
                                     </a>
                                 </li>
                             </ul>
@@ -832,17 +1084,19 @@
                     <div class="area-25">
                         <!-- Video Gallery 100/75/50/25 / The Second Class Name is Only for Visual Bottom Alignement -->
                         <div class="box gallery custome-video-home">
-                            <h2><a href="#">الأسواق فيديو</a></h2>
+                            <h2>
+                                <a href="#">الأسواق فيديو</a>
+                            </h2>
                             <ul>
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp20_4x3.jpg">
-                                            <img src="temp/temp11.jpg" alt="">
-                                    </picture>
-                                    <span class="video-icon"></span>
+                                            <!-- Aspect Ration Change on mobile -->
+                                            <picture>
+                                                <source media="(max-width: 480px)" srcset="temp/temp20_4x3.jpg">
+                                                <img src="temp/temp11.jpg" alt="">
+                                            </picture>
+                                            <span class="video-icon"></span>
                                         </span>
                                         <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                     </a>
@@ -850,12 +1104,12 @@
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
-                                    <img src="temp/temp12.jpg" alt="" />
+                                            <!-- Aspect Ration Change on mobile -->
+                                            <picture>
+                                                <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
+                                                <img src="temp/temp12.jpg" alt="" />
                                             </picture>
-                                    <span class="video-icon"></span>
+                                            <span class="video-icon"></span>
                                         </span>
                                         <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                     </a>
@@ -870,17 +1124,19 @@
                     <div class="area-75">
                         <!-- Main News Slider 100/75/50 -->
                         <div class="box news">
-                            <h2><a href="#" title="">أخبار الرياضة</a></h2>
+                            <h2>
+                                <a href="#" title="">أخبار الرياضة</a>
+                            </h2>
                             <ul>
                                 <!-- Main Article -->
                                 <li>
                                     <!-- Aspect Ration Change on mobile -->
                                     <picture>
                                         <source media="(max-width: 480px)" srcset="temp/temp18_4x3.jpg">
-                                            <img src="temp/temp17_4x3.jpg" alt="">
+                                        <img src="temp/temp17_4x3.jpg" alt="">
                                     </picture>
                                     <a class="cover" href="#" title="">
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
                                         <span class="video-icon"></span>
                                     </a>
                                     <!-- Section Title -->
@@ -889,7 +1145,7 @@
                                 <li>
                                     <img src="temp/temp21_4x3.jpg" alt="" />
                                     <a class="cover" href="#" title="">
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
                                     </a>
                                     <!-- Section Title -->
                                     <a href="#" class="section-ttl">رياضة</a>
@@ -897,7 +1153,7 @@
                                 <li>
                                     <img src="temp/temp22_4x3.jpg" alt="" />
                                     <a class="cover" href="#" title="">
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
                                     </a>
                                     <!-- Section Title -->
                                     <a href="#" class="section-ttl">العالم العربي</a>
@@ -909,17 +1165,19 @@
                     <div class="area-25">
                         <!-- Video Gallery 100/75/50/25 / The Second Class Name is Only for Visual Bottom Alignement -->
                         <div class="box gallery custome-video-home">
-                            <h2><a href="#">الرياضة فيديو</a></h2>
+                            <h2>
+                                <a href="#">الرياضة فيديو</a>
+                            </h2>
                             <ul>
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp20_4x3.jpg">
-                                            <img src="temp/temp11.jpg" alt="">
-                                    </picture>
-                                    <span class="video-icon"></span>
+                                            <!-- Aspect Ration Change on mobile -->
+                                            <picture>
+                                                <source media="(max-width: 480px)" srcset="temp/temp20_4x3.jpg">
+                                                <img src="temp/temp11.jpg" alt="">
+                                            </picture>
+                                            <span class="video-icon"></span>
                                         </span>
                                         <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                     </a>
@@ -927,12 +1185,12 @@
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
-                                    <img src="temp/temp12.jpg" alt="" />
+                                            <!-- Aspect Ration Change on mobile -->
+                                            <picture>
+                                                <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
+                                                <img src="temp/temp12.jpg" alt="" />
                                             </picture>
-                                    <span class="video-icon"></span>
+                                            <span class="video-icon"></span>
                                         </span>
                                         <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                     </a>
@@ -947,17 +1205,19 @@
                     <div class="area-75">
                         <!-- Main News Slider 100/75/50 -->
                         <div class="box news">
-                            <h2><a href="#" title="">أخبار السعودية</a></h2>
+                            <h2>
+                                <a href="#" title="">أخبار السعودية</a>
+                            </h2>
                             <ul>
                                 <!-- Main Article -->
                                 <li>
                                     <!-- Aspect Ration Change on mobile -->
                                     <picture>
                                         <source media="(max-width: 480px)" srcset="temp/temp18_4x3.jpg">
-                                            <img src="temp/temp17_4x3.jpg" alt="">
+                                        <img src="temp/temp17_4x3.jpg" alt="">
                                     </picture>
                                     <a class="cover" href="#" title="">
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
                                         <span class="caption">مند 13 ساعة</span>
                                     </a>
                                     <!-- Section Title -->
@@ -966,7 +1226,7 @@
                                 <li>
                                     <img src="temp/temp18_4x3.jpg" alt="" />
                                     <a class="cover" href="#" title="">
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
                                         <span class="video-icon"></span>
                                     </a>
                                     <!-- Section Title -->
@@ -975,7 +1235,7 @@
                                 <li>
                                     <img src="temp/temp19_4x3.jpg" alt="" />
                                     <a class="cover" href="#" title="">
-                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد الشرطة</span>
+                                        <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
                                     </a>
                                     <!-- Section Title -->
                                     <a href="#" class="section-ttl">العالم العربي</a>
@@ -987,17 +1247,19 @@
                     <div class="area-25">
                         <!-- Video Gallery 100/75/50/25, The Second Class Name is Only for Visual Bottom Alignement -->
                         <div class="box gallery custome-video-home">
-                            <h2><a href="#">السعودية فيديو</a></h2>
+                            <h2>
+                                <a href="#">السعودية فيديو</a>
+                            </h2>
                             <ul>
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp20_4x3.jpg">
-                                            <img src="temp/temp11.jpg" alt="">
-                                    </picture>
-                                    <span class="video-icon"></span>
+                                            <!-- Aspect Ration Change on mobile -->
+                                            <picture>
+                                                <source media="(max-width: 480px)" srcset="temp/temp20_4x3.jpg">
+                                                <img src="temp/temp11.jpg" alt="">
+                                            </picture>
+                                            <span class="video-icon"></span>
                                         </span>
                                         <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                     </a>
@@ -1005,12 +1267,12 @@
                                 <li>
                                     <a href="#" title="">
                                         <span class="cover">
-                                        <!-- Aspect Ration Change on mobile -->
-                                    <picture>
-                                        <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
-                                    <img src="temp/temp12.jpg" alt="" />
+                                            <!-- Aspect Ration Change on mobile -->
+                                            <picture>
+                                                <source media="(max-width: 480px)" srcset="temp/temp17_4x3.jpg">
+                                                <img src="temp/temp12.jpg" alt="" />
                                             </picture>
-                                    <span class="video-icon"></span>
+                                            <span class="video-icon"></span>
                                         </span>
                                         <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                     </a>
@@ -1024,8 +1286,8 @@
                     <!-- Programs Slider -->
                     <div class="box programs-times">
                         <h2>
-                        <a href="#">جدول البرامج</a>
-                    </h2>
+                            <a href="#">جدول البرامج</a>
+                        </h2>
                         <!-- Slider -->
                         <div class="Nwoslider" id="slider">
 
@@ -1034,12 +1296,16 @@
                                 <div class="item">
                                     <a href="#">
                                         <span class="time">
-                                             <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
+                                            <time class="start">10
+                                                <em>:00</em>
+                                            </time>
+                                            <time class="end">11
+                                                <em>:00</em>
+                                            </time>
                                         </span>
                                         <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">الإرهابية في وسائل</span>
+                                            <span class="ttl">صناعة الموت</span>
+                                            <span class="caption">الإرهابية في وسائل</span>
                                         </span>
                                         <img src="temp/auth01.jpg">
                                     </a>
@@ -1048,12 +1314,16 @@
                                 <div class="item">
                                     <a href="">
                                         <span class="time">
-                                            <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
+                                            <time class="start">10
+                                                <em>:00</em>
+                                            </time>
+                                            <time class="end">11
+                                                <em>:00</em>
+                                            </time>
                                         </span>
                                         <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">شاهد الآن</span>
+                                            <span class="ttl">صناعة الموت</span>
+                                            <span class="caption">شاهد الآن</span>
                                         </span>
                                         <img src="temp/program01.jpg">
                                     </a>
@@ -1062,12 +1332,16 @@
                                 <div class="item">
                                     <a href="#">
                                         <span class="time">
-                                            <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
+                                            <time class="start">10
+                                                <em>:00</em>
+                                            </time>
+                                            <time class="end">11
+                                                <em>:00</em>
+                                            </time>
                                         </span>
                                         <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">متوفر على ONAA</span>
+                                            <span class="ttl">صناعة الموت</span>
+                                            <span class="caption">متوفر على ONAA</span>
                                         </span>
                                         <img src="temp/temp17_4x3.jpg">
                                     </a>
@@ -1076,12 +1350,16 @@
                                 <div class="item">
                                     <a href="#" title="">
                                         <span class="time">
-                                            <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
+                                            <time class="start">10
+                                                <em>:00</em>
+                                            </time>
+                                            <time class="end">11
+                                                <em>:00</em>
+                                            </time>
                                         </span>
                                         <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">شاهد الآن</span>
+                                            <span class="ttl">صناعة الموت</span>
+                                            <span class="caption">شاهد الآن</span>
                                         </span>
                                         <img src="temp/program04.jpg">
                                     </a>
@@ -1090,12 +1368,16 @@
                                 <div class="item">
                                     <a href="#" title="">
                                         <span class="time">
-                                            <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
+                                            <time class="start">10
+                                                <em>:00</em>
+                                            </time>
+                                            <time class="end">11
+                                                <em>:00</em>
+                                            </time>
                                         </span>
                                         <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">الإرهابية في وسائل</span>
+                                            <span class="ttl">صناعة الموت</span>
+                                            <span class="caption">الإرهابية في وسائل</span>
                                         </span>
                                         <img src="temp/killer.jpg">
                                     </a>
@@ -1104,12 +1386,16 @@
                                 <div class="item active">
                                     <a href="#">
                                         <span class="time">
-                                            <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
+                                            <time class="start">10
+                                                <em>:00</em>
+                                            </time>
+                                            <time class="end">11
+                                                <em>:00</em>
+                                            </time>
                                         </span>
                                         <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">شاهد الآن</span>
+                                            <span class="ttl">صناعة الموت</span>
+                                            <span class="caption">شاهد الآن</span>
                                         </span>
                                         <img src="temp/program02.jpg">
                                     </a>
@@ -1118,12 +1404,16 @@
                                 <div class="item">
                                     <a href="#" title="">
                                         <span class="time">
-                                            <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
+                                            <time class="start">10
+                                                <em>:00</em>
+                                            </time>
+                                            <time class="end">11
+                                                <em>:00</em>
+                                            </time>
                                         </span>
                                         <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">متوفر على ONAA</span>
+                                            <span class="ttl">صناعة الموت</span>
+                                            <span class="caption">متوفر على ONAA</span>
                                         </span>
                                         <img src="temp/temp00.jpg">
                                     </a>
@@ -1132,12 +1422,16 @@
                                 <div class="item">
                                     <a href="#" title="">
                                         <span class="time">
-                                             <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
+                                            <time class="start">10
+                                                <em>:00</em>
+                                            </time>
+                                            <time class="end">11
+                                                <em>:00</em>
+                                            </time>
                                         </span>
                                         <span class="label">
                                             <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">الإرهابية في وسائل</span>
+                                            <span class="caption">الإرهابية في وسائل</span>
                                         </span>
                                         <img src="temp/program05.jpg">
                                     </a>
@@ -1146,12 +1440,16 @@
                                 <div class="item">
                                     <a href="#" title="">
                                         <span class="time">
-                                            <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
+                                            <time class="start">10
+                                                <em>:00</em>
+                                            </time>
+                                            <time class="end">11
+                                                <em>:00</em>
+                                            </time>
                                         </span>
                                         <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">شاهد الآن</span>
+                                            <span class="ttl">صناعة الموت</span>
+                                            <span class="caption">شاهد الآن</span>
                                         </span>
                                         <img src="temp/temp01.jpg">
                                     </a>
@@ -1160,12 +1458,16 @@
                                 <div class="item">
                                     <a href="#" title="">
                                         <span class="time">
-                                              <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
+                                            <time class="start">10
+                                                <em>:00</em>
+                                            </time>
+                                            <time class="end">11
+                                                <em>:00</em>
+                                            </time>
                                         </span>
                                         <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">الإرهابية في وسائل</span>
+                                            <span class="ttl">صناعة الموت</span>
+                                            <span class="caption">الإرهابية في وسائل</span>
                                         </span>
                                         <img src="temp/temp02.jpg">
                                     </a>
@@ -1174,12 +1476,16 @@
                                 <div class="item">
                                     <a href="#" title="">
                                         <span class="time">
-                                            <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
+                                            <time class="start">10
+                                                <em>:00</em>
+                                            </time>
+                                            <time class="end">11
+                                                <em>:00</em>
+                                            </time>
                                         </span>
                                         <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">متوفر على ONAA</span>
+                                            <span class="ttl">صناعة الموت</span>
+                                            <span class="caption">متوفر على ONAA</span>
                                         </span>
                                         <img src="temp/temp03.jpg">
                                     </a>
@@ -1188,12 +1494,16 @@
                                 <div class="item">
                                     <a href="#" title="">
                                         <span class="time">
-                                           <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
+                                            <time class="start">10
+                                                <em>:00</em>
+                                            </time>
+                                            <time class="end">11
+                                                <em>:00</em>
+                                            </time>
                                         </span>
                                         <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">شاهد الآن</span>
+                                            <span class="ttl">صناعة الموت</span>
+                                            <span class="caption">شاهد الآن</span>
                                         </span>
                                         <img src="temp/auth03.jpg">
                                     </a>
@@ -1201,12 +1511,16 @@
                                 <div class="item">
                                     <a href="#" title="">
                                         <span class="time">
-                                            <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
+                                            <time class="start">10
+                                                <em>:00</em>
+                                            </time>
+                                            <time class="end">11
+                                                <em>:00</em>
+                                            </time>
                                         </span>
                                         <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">الإرهابية في وسائل</span>
+                                            <span class="ttl">صناعة الموت</span>
+                                            <span class="caption">الإرهابية في وسائل</span>
                                         </span>
                                         <img src="temp/temp05.jpg">
                                     </a>
@@ -1215,12 +1529,16 @@
                                 <div class="item">
                                     <a href="#" title="">
                                         <span class="time">
-                                              <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
+                                            <time class="start">10
+                                                <em>:00</em>
+                                            </time>
+                                            <time class="end">11
+                                                <em>:00</em>
+                                            </time>
                                         </span>
                                         <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">شاهد الآن</span>
+                                            <span class="ttl">صناعة الموت</span>
+                                            <span class="caption">شاهد الآن</span>
                                         </span>
                                         <img src="temp/program02.jpg">
                                     </a>
@@ -1229,12 +1547,16 @@
                                 <div class="item">
                                     <a href="#" title="">
                                         <span class="time">
-                                           <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
+                                            <time class="start">10
+                                                <em>:00</em>
+                                            </time>
+                                            <time class="end">11
+                                                <em>:00</em>
+                                            </time>
                                         </span>
                                         <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">شاهد الآن</span>
+                                            <span class="ttl">صناعة الموت</span>
+                                            <span class="caption">شاهد الآن</span>
                                         </span>
                                         <img src="temp/program04.jpg">
                                     </a>
@@ -1243,12 +1565,16 @@
                                 <div class="item">
                                     <a href="#" title="">
                                         <span class="time">
-                                         <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
+                                            <time class="start">10
+                                                <em>:00</em>
+                                            </time>
+                                            <time class="end">11
+                                                <em>:00</em>
+                                            </time>
                                         </span>
                                         <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">الإرهابية في وسائل</span>
+                                            <span class="ttl">صناعة الموت</span>
+                                            <span class="caption">الإرهابية في وسائل</span>
                                         </span>
                                         <img src="temp/auth05.jpg">
                                     </a>
@@ -1257,12 +1583,16 @@
                                 <div class="item">
                                     <a href="#" title="">
                                         <span class="time">
-                                              <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
+                                            <time class="start">10
+                                                <em>:00</em>
+                                            </time>
+                                            <time class="end">11
+                                                <em>:00</em>
+                                            </time>
                                         </span>
                                         <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">شاهد الآن</span>
+                                            <span class="ttl">صناعة الموت</span>
+                                            <span class="caption">شاهد الآن</span>
                                         </span>
                                         <img src="temp/temp17_4x3.jpg">
                                     </a>
@@ -1271,12 +1601,16 @@
                                 <div class="item">
                                     <a href="#" title="">
                                         <span class="time">
-                                         <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
+                                            <time class="start">10
+                                                <em>:00</em>
+                                            </time>
+                                            <time class="end">11
+                                                <em>:00</em>
+                                            </time>
                                         </span>
                                         <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">شاهد الآن</span>
+                                            <span class="ttl">صناعة الموت</span>
+                                            <span class="caption">شاهد الآن</span>
                                         </span>
                                         <img src="temp/program04.jpg">
                                     </a>
@@ -1285,12 +1619,16 @@
                                 <div class="item">
                                     <a href="#" title="">
                                         <span class="time">
-                                            <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
+                                            <time class="start">10
+                                                <em>:00</em>
+                                            </time>
+                                            <time class="end">11
+                                                <em>:00</em>
+                                            </time>
                                         </span>
                                         <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">متوفر على ONAA</span>
+                                            <span class="ttl">صناعة الموت</span>
+                                            <span class="caption">متوفر على ONAA</span>
                                         </span>
                                         <img src="temp/program03.jpg">
                                     </a>
@@ -1299,12 +1637,16 @@
                                 <div class="item">
                                     <a href="#" title="">
                                         <span class="time">
-                                             <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
+                                            <time class="start">10
+                                                <em>:00</em>
+                                            </time>
+                                            <time class="end">11
+                                                <em>:00</em>
+                                            </time>
                                         </span>
                                         <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">شاهد الآن</span>
+                                            <span class="ttl">صناعة الموت</span>
+                                            <span class="caption">شاهد الآن</span>
                                         </span>
                                         <img src="temp/program02.jpg">
                                     </a>
@@ -1313,12 +1655,16 @@
                                 <div class="item">
                                     <a href="#" title="">
                                         <span class="time">
-                                              <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
+                                            <time class="start">10
+                                                <em>:00</em>
+                                            </time>
+                                            <time class="end">11
+                                                <em>:00</em>
+                                            </time>
                                         </span>
                                         <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">متوفر على ONAA</span>
+                                            <span class="ttl">صناعة الموت</span>
+                                            <span class="caption">متوفر على ONAA</span>
                                         </span>
                                         <img src="temp/program03.jpg">
                                     </a>
@@ -1327,12 +1673,16 @@
                                 <div class="item">
                                     <a href="#" title="">
                                         <span class="time">
-                                              <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
+                                            <time class="start">10
+                                                <em>:00</em>
+                                            </time>
+                                            <time class="end">11
+                                                <em>:00</em>
+                                            </time>
                                         </span>
                                         <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">شاهد الآن</span>
+                                            <span class="ttl">صناعة الموت</span>
+                                            <span class="caption">شاهد الآن</span>
                                         </span>
                                         <img src="temp/program02.jpg">
                                     </a>
@@ -1341,12 +1691,16 @@
                                 <div class="item">
                                     <a href="#" title="">
                                         <span class="time">
-                                          <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
+                                            <time class="start">10
+                                                <em>:00</em>
+                                            </time>
+                                            <time class="end">11
+                                                <em>:00</em>
+                                            </time>
                                         </span>
                                         <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">شاهد الآن</span>
+                                            <span class="ttl">صناعة الموت</span>
+                                            <span class="caption">شاهد الآن</span>
                                         </span>
                                         <img src="temp/program01.jpg">
                                     </a>
@@ -1355,12 +1709,16 @@
                                 <div class="item" id="last">
                                     <a href="">
                                         <span class="time">
-                                              <time class="start">10<em>:00</em></time>
-                                            <time class="end">11<em>:00</em></time>
+                                            <time class="start">10
+                                                <em>:00</em>
+                                            </time>
+                                            <time class="end">11
+                                                <em>:00</em>
+                                            </time>
                                         </span>
                                         <span class="label">
-                                        <span class="ttl">صناعة الموت</span>
-                                        <span class="caption">الإرهابية في وسائل</span>
+                                            <span class="ttl">صناعة الموت</span>
+                                            <span class="caption">الإرهابية في وسائل</span>
                                         </span>
                                         <img src="temp/program04.jpg">
                                     </a>
@@ -1380,7 +1738,9 @@
                     <div class="area-75">
                         <!-- Programs 100/75/50/25 -->
                         <div class="box news programs">
-                            <h2><a href="#" title="">البرامج</a></h2>
+                            <h2>
+                                <a href="#" title="">البرامج</a>
+                            </h2>
                             <ul>
                                 <li>
                                     <img src="temp/program01.jpg" alt="" />
@@ -1423,15 +1783,20 @@
                         <!-- Tabs Box -->
                         <div class="box tabs">
                             <ul class="tabs-menu">
-                                <li class="current"><a href="#tab-1">ملخص</a>
+                                <li class="current">
+                                    <a href="#tab-1">ملخص</a>
                                 </li>
-                                <li><a href="#tab-2">المباريات</a>
+                                <li>
+                                    <a href="#tab-2">المباريات</a>
                                 </li>
-                                <li><a href="#tab-3">الترتيب</a>
+                                <li>
+                                    <a href="#tab-3">الترتيب</a>
                                 </li>
-                                <li><a href="#tab-4">الإحصائيات</a>
+                                <li>
+                                    <a href="#tab-4">الإحصائيات</a>
                                 </li>
-                                <li><a href="#tab-5">الفرق</a>
+                                <li>
+                                    <a href="#tab-5">الفرق</a>
                                 </li>
                             </ul>
                             <div class="tab">
@@ -1442,9 +1807,12 @@
                                         <a href="#" title="">
                                             <img src="temp/article.jpg" alt="" />
                                             <span class="ttl">
-                                                   متجر شهير "يطرد" صديقة رونالدو من وظيفتها بسبب علاقتهما
-                                               </span>
-                                            <span class="txt">الرسالة التي وصلت أحلام عبر بريدها الإلكتروني وطلب فيها فريق الإعداد وسيلة اتصال من أجل الاتفاق على كافة التفاصيل، قامت هي بنشرها وعلقت عليها قائلة لن أمنحك شرف لقاء الملكة.. ولا أتشرف بك ولا بلقائك". ولم تكتف أحلام بالرفض فقط بل تابعت قائلة "من حق كل شخص أن يحلم لكن احلم ...</span>
+                                                متجر شهير "يطرد" صديقة رونالدو من وظيفتها بسبب علاقتهما
+                                            </span>
+                                            <span class="txt">الرسالة التي وصلت أحلام عبر بريدها الإلكتروني وطلب فيها فريق الإعداد وسيلة اتصال
+                                                من أجل الاتفاق على كافة التفاصيل، قامت هي بنشرها وعلقت عليها قائلة لن أمنحك
+                                                شرف لقاء الملكة.. ولا أتشرف بك ولا بلقائك". ولم تكتف أحلام بالرفض فقط بل
+                                                تابعت قائلة "من حق كل شخص أن يحلم لكن احلم ...</span>
                                         </a>
                                     </div>
                                     <!-- News Articles -->
@@ -1453,7 +1821,7 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                            <img src="temp/temp04.jpg" alt="">
+                                                        <img src="temp/temp04.jpg" alt="">
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1461,8 +1829,8 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp05.jpg" alt="">
-                                    <span class="video-icon"></span>
+                                                        <img src="temp/temp05.jpg" alt="">
+                                                        <span class="video-icon"></span>
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1470,7 +1838,7 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp06.jpg" alt="">
+                                                        <img src="temp/temp06.jpg" alt="">
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1478,7 +1846,7 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp11.jpg" alt="">
+                                                        <img src="temp/temp11.jpg" alt="">
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1486,8 +1854,8 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp12.jpg" alt="">
-                                    <span class="video-icon"></span>
+                                                        <img src="temp/temp12.jpg" alt="">
+                                                        <span class="video-icon"></span>
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1495,8 +1863,8 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp13.jpg" alt="">
-                                    <span class="video-icon"></span>
+                                                        <img src="temp/temp13.jpg" alt="">
+                                                        <span class="video-icon"></span>
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1504,7 +1872,7 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp14.jpg" alt="">
+                                                        <img src="temp/temp14.jpg" alt="">
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1512,7 +1880,7 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp15.jpg" alt="">
+                                                        <img src="temp/temp15.jpg" alt="">
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1520,7 +1888,7 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                            <img src="temp/temp16.jpg" alt="">
+                                                        <img src="temp/temp16.jpg" alt="">
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1535,9 +1903,12 @@
                                         <a href="#" title="">
                                             <img src="temp/temp04.jpg" alt="" />
                                             <span class="ttl">
-                                                   متجر شهير "يطرد" صديقة رونالدو من وظيفتها بسبب علاقتهما
-                                               </span>
-                                            <span class="txt">الرسالة التي وصلت أحلام عبر بريدها الإلكتروني وطلب فيها فريق الإعداد وسيلة اتصال من أجل الاتفاق على كافة التفاصيل، قامت هي بنشرها وعلقت عليها قائلة لن أمنحك شرف لقاء الملكة.. ولا أتشرف بك ولا بلقائك". ولم تكتف أحلام بالرفض فقط بل تابعت قائلة "من حق كل شخص أن يحلم لكن احلم ...</span>
+                                                متجر شهير "يطرد" صديقة رونالدو من وظيفتها بسبب علاقتهما
+                                            </span>
+                                            <span class="txt">الرسالة التي وصلت أحلام عبر بريدها الإلكتروني وطلب فيها فريق الإعداد وسيلة اتصال
+                                                من أجل الاتفاق على كافة التفاصيل، قامت هي بنشرها وعلقت عليها قائلة لن أمنحك
+                                                شرف لقاء الملكة.. ولا أتشرف بك ولا بلقائك". ولم تكتف أحلام بالرفض فقط بل
+                                                تابعت قائلة "من حق كل شخص أن يحلم لكن احلم ...</span>
                                         </a>
                                     </div>
                                     <!-- News Articles -->
@@ -1546,7 +1917,7 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                            <img src="temp/temp11.jpg" alt="">
+                                                        <img src="temp/temp11.jpg" alt="">
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1554,8 +1925,8 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp12.jpg" alt="">
-                                    <span class="video-icon"></span>
+                                                        <img src="temp/temp12.jpg" alt="">
+                                                        <span class="video-icon"></span>
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1563,7 +1934,7 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp13.jpg" alt="">
+                                                        <img src="temp/temp13.jpg" alt="">
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1571,7 +1942,7 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp14.jpg" alt="">
+                                                        <img src="temp/temp14.jpg" alt="">
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1579,8 +1950,8 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp15.jpg" alt="">
-                                    <span class="video-icon"></span>
+                                                        <img src="temp/temp15.jpg" alt="">
+                                                        <span class="video-icon"></span>
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1588,8 +1959,8 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp12.jpg" alt="">
-                                    <span class="video-icon"></span>
+                                                        <img src="temp/temp12.jpg" alt="">
+                                                        <span class="video-icon"></span>
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1597,8 +1968,8 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp13.jpg" alt="">
-                                    <span class="video-icon"></span>
+                                                        <img src="temp/temp13.jpg" alt="">
+                                                        <span class="video-icon"></span>
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1606,7 +1977,7 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp14.jpg" alt="">
+                                                        <img src="temp/temp14.jpg" alt="">
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1614,7 +1985,7 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                            <img src="temp/temp11.jpg" alt="">
+                                                        <img src="temp/temp11.jpg" alt="">
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1629,9 +2000,12 @@
                                         <a href="#" title="">
                                             <img src="temp/temp06.jpg" alt="" />
                                             <span class="ttl">
-                                                   متجر شهير "يطرد" صديقة رونالدو من وظيفتها بسبب علاقتهما
-                                               </span>
-                                            <span class="txt">الرسالة التي وصلت أحلام عبر بريدها الإلكتروني وطلب فيها فريق الإعداد وسيلة اتصال من أجل الاتفاق على كافة التفاصيل، قامت هي بنشرها وعلقت عليها قائلة لن أمنحك شرف لقاء الملكة.. ولا أتشرف بك ولا بلقائك". ولم تكتف أحلام بالرفض فقط بل تابعت قائلة "من حق كل شخص أن يحلم لكن احلم ...</span>
+                                                متجر شهير "يطرد" صديقة رونالدو من وظيفتها بسبب علاقتهما
+                                            </span>
+                                            <span class="txt">الرسالة التي وصلت أحلام عبر بريدها الإلكتروني وطلب فيها فريق الإعداد وسيلة اتصال
+                                                من أجل الاتفاق على كافة التفاصيل، قامت هي بنشرها وعلقت عليها قائلة لن أمنحك
+                                                شرف لقاء الملكة.. ولا أتشرف بك ولا بلقائك". ولم تكتف أحلام بالرفض فقط بل
+                                                تابعت قائلة "من حق كل شخص أن يحلم لكن احلم ...</span>
                                         </a>
                                     </div>
                                     <!-- News Articles -->
@@ -1640,7 +2014,7 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                            <img src="temp/temp11.jpg" alt="">
+                                                        <img src="temp/temp11.jpg" alt="">
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1648,8 +2022,8 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp12.jpg" alt="">
-                                    <span class="video-icon"></span>
+                                                        <img src="temp/temp12.jpg" alt="">
+                                                        <span class="video-icon"></span>
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1657,8 +2031,8 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp13.jpg" alt="">
-                                    <span class="video-icon"></span>
+                                                        <img src="temp/temp13.jpg" alt="">
+                                                        <span class="video-icon"></span>
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1666,7 +2040,7 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp14.jpg" alt="">
+                                                        <img src="temp/temp14.jpg" alt="">
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1674,8 +2048,8 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp15.jpg" alt="">
-                                    <span class="video-icon"></span>
+                                                        <img src="temp/temp15.jpg" alt="">
+                                                        <span class="video-icon"></span>
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1683,8 +2057,8 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp16.jpg" alt="">
-                                    <span class="video-icon"></span>
+                                                        <img src="temp/temp16.jpg" alt="">
+                                                        <span class="video-icon"></span>
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1692,7 +2066,7 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp04.jpg" alt="">
+                                                        <img src="temp/temp04.jpg" alt="">
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1700,7 +2074,7 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp05.jpg" alt="">
+                                                        <img src="temp/temp05.jpg" alt="">
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1708,7 +2082,7 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                            <img src="temp/temp11.jpg" alt="">
+                                                        <img src="temp/temp11.jpg" alt="">
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1723,9 +2097,12 @@
                                         <a href="#" title="">
                                             <img src="temp/temp04.jpg" alt="" />
                                             <span class="ttl">
-                                                   متجر شهير "يطرد" صديقة رونالدو من وظيفتها بسبب علاقتهما
-                                               </span>
-                                            <span class="txt">الرسالة التي وصلت أحلام عبر بريدها الإلكتروني وطلب فيها فريق الإعداد وسيلة اتصال من أجل الاتفاق على كافة التفاصيل، قامت هي بنشرها وعلقت عليها قائلة لن أمنحك شرف لقاء الملكة.. ولا أتشرف بك ولا بلقائك". ولم تكتف أحلام بالرفض فقط بل تابعت قائلة "من حق كل شخص أن يحلم لكن احلم ...</span>
+                                                متجر شهير "يطرد" صديقة رونالدو من وظيفتها بسبب علاقتهما
+                                            </span>
+                                            <span class="txt">الرسالة التي وصلت أحلام عبر بريدها الإلكتروني وطلب فيها فريق الإعداد وسيلة اتصال
+                                                من أجل الاتفاق على كافة التفاصيل، قامت هي بنشرها وعلقت عليها قائلة لن أمنحك
+                                                شرف لقاء الملكة.. ولا أتشرف بك ولا بلقائك". ولم تكتف أحلام بالرفض فقط بل
+                                                تابعت قائلة "من حق كل شخص أن يحلم لكن احلم ...</span>
                                         </a>
                                     </div>
                                     <!-- News Articles -->
@@ -1734,7 +2111,7 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                            <img src="temp/temp11.jpg" alt="">
+                                                        <img src="temp/temp11.jpg" alt="">
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1742,8 +2119,8 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp12.jpg" alt="">
-                                    <span class="video-icon"></span>
+                                                        <img src="temp/temp12.jpg" alt="">
+                                                        <span class="video-icon"></span>
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1751,7 +2128,7 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp13.jpg" alt="">
+                                                        <img src="temp/temp13.jpg" alt="">
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1759,7 +2136,7 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp14.jpg" alt="">
+                                                        <img src="temp/temp14.jpg" alt="">
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1767,8 +2144,8 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp15.jpg" alt="">
-                                    <span class="video-icon"></span>
+                                                        <img src="temp/temp15.jpg" alt="">
+                                                        <span class="video-icon"></span>
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1776,8 +2153,8 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp16.jpg" alt="">
-                                    <span class="video-icon"></span>
+                                                        <img src="temp/temp16.jpg" alt="">
+                                                        <span class="video-icon"></span>
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1785,8 +2162,8 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp12.jpg" alt="">
-                                    <span class="video-icon"></span>
+                                                        <img src="temp/temp12.jpg" alt="">
+                                                        <span class="video-icon"></span>
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1794,8 +2171,8 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp13.jpg" alt="">
-                                    <span class="video-icon"></span>
+                                                        <img src="temp/temp13.jpg" alt="">
+                                                        <span class="video-icon"></span>
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1803,7 +2180,7 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp14.jpg" alt="">
+                                                        <img src="temp/temp14.jpg" alt="">
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1818,9 +2195,12 @@
                                         <a href="#" title="">
                                             <img src="temp/temp05.jpg" alt="" />
                                             <span class="ttl">
-                                                   متجر شهير "يطرد" صديقة رونالدو من وظيفتها بسبب علاقتهما
-                                               </span>
-                                            <span class="txt">الرسالة التي وصلت أحلام عبر بريدها الإلكتروني وطلب فيها فريق الإعداد وسيلة اتصال من أجل الاتفاق على كافة التفاصيل، قامت هي بنشرها وعلقت عليها قائلة لن أمنحك شرف لقاء الملكة.. ولا أتشرف بك ولا بلقائك". ولم تكتف أحلام بالرفض فقط بل تابعت قائلة "من حق كل شخص أن يحلم لكن احلم ...</span>
+                                                متجر شهير "يطرد" صديقة رونالدو من وظيفتها بسبب علاقتهما
+                                            </span>
+                                            <span class="txt">الرسالة التي وصلت أحلام عبر بريدها الإلكتروني وطلب فيها فريق الإعداد وسيلة اتصال
+                                                من أجل الاتفاق على كافة التفاصيل، قامت هي بنشرها وعلقت عليها قائلة لن أمنحك
+                                                شرف لقاء الملكة.. ولا أتشرف بك ولا بلقائك". ولم تكتف أحلام بالرفض فقط بل
+                                                تابعت قائلة "من حق كل شخص أن يحلم لكن احلم ...</span>
                                         </a>
                                     </div>
                                     <!-- News Articles -->
@@ -1829,7 +2209,7 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                            <img src="temp/temp11.jpg" alt="">
+                                                        <img src="temp/temp11.jpg" alt="">
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1837,8 +2217,8 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp12.jpg" alt="">
-                                    <span class="video-icon"></span>
+                                                        <img src="temp/temp12.jpg" alt="">
+                                                        <span class="video-icon"></span>
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1846,7 +2226,7 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp13.jpg" alt="">
+                                                        <img src="temp/temp13.jpg" alt="">
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1854,8 +2234,8 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp12.jpg" alt="">
-                                    <span class="video-icon"></span>
+                                                        <img src="temp/temp12.jpg" alt="">
+                                                        <span class="video-icon"></span>
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1863,8 +2243,8 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp13.jpg" alt="">
-                                    <span class="video-icon"></span>
+                                                        <img src="temp/temp13.jpg" alt="">
+                                                        <span class="video-icon"></span>
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1872,7 +2252,7 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp14.jpg" alt="">
+                                                        <img src="temp/temp14.jpg" alt="">
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1880,7 +2260,7 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp04.jpg" alt="">
+                                                        <img src="temp/temp04.jpg" alt="">
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1888,7 +2268,7 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                    <img src="temp/temp05.jpg" alt="">
+                                                        <img src="temp/temp05.jpg" alt="">
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1896,7 +2276,7 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                            <img src="temp/temp11.jpg" alt="">
+                                                        <img src="temp/temp11.jpg" alt="">
                                                     </span>
                                                     <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد</span>
                                                 </a>
@@ -1912,7 +2292,9 @@
                         <!-- Opinions  100/75/50/25 -->
                         <div class="box opinions scroller scroller-4">
                             <!-- scroller-04 / the (4) here it indicates the number of visible items, we will have 6, 8 and 10 -->
-                            <h2><a href="#" title="">الأراء</a></h2>
+                            <h2>
+                                <a href="#" title="">الأراء</a>
+                            </h2>
                             <ul id="ver-carousel">
                                 <li>
                                     <a class="pic" href="#" title="">
@@ -2029,9 +2411,11 @@
                             </ul>
                             <!-- Navigator -->
                             <div class="navigator">
-                                <button class="prev" id="caro-prev"><i class="up"></i>
+                                <button class="prev" id="caro-prev">
+                                    <i class="up"></i>
                                 </button>
-                                <button class="next" id="caro-next"><i class="down"></i>
+                                <button class="next" id="caro-next">
+                                    <i class="down"></i>
                                 </button>
                             </div>
                         </div>
@@ -2039,9 +2423,11 @@
                         <!-- Tabs Box -->
                         <div class="box tabs">
                             <ul class="tabs-menu">
-                                <li class="current"><a href="#tab-01">آخر الأخبار</a>
+                                <li class="current">
+                                    <a href="#tab-01">آخر الأخبار</a>
                                 </li>
-                                <li><a href="#tab-02">الأكثر قراءة</a>
+                                <li>
+                                    <a href="#tab-02">الأكثر قراءة</a>
                                 </li>
                             </ul>
                             <div class="tab">
@@ -2053,58 +2439,57 @@
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                        <img src="temp/temp13.jpg" alt="" />
-                                        <span class="video-icon"></span>
+                                                        <img src="temp/temp13.jpg" alt="" />
+                                                        <span class="video-icon"></span>
                                                     </span>
                                                     <span class="ttl">
-                                           معتقلو حماة المركزي : النمر المقنع
-</span>
-                                                    <span class="caption">1,885,311  مشاهدة</span>
+                                                        معتقلو حماة المركزي : النمر المقنع
+                                                    </span>
+                                                    <span class="caption">1,885,311 مشاهدة</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                        <img src="temp/temp14.jpg" alt="" />
-                                        </span>
-                                                    <span class="ttl">
-                                           معتقلو حماة المركزي : النمر المقنع
- يعزي رئي</span>
-                                                    <span class="caption">1,885,311  مشاهدة</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" title="">
-                                                    <span class="cover">
-                                        <img src="temp/temp15.jpg" alt="" />
-                                        <span class="video-icon"></span>
+                                                        <img src="temp/temp14.jpg" alt="" />
                                                     </span>
                                                     <span class="ttl">
-                                           معتقلو حماة المركزي : النمر المقنع
-</span>
-                                                    <span class="caption">1,885,311  مشاهدة</span>
+                                                        معتقلو حماة المركزي : النمر المقنع يعزي رئي</span>
+                                                    <span class="caption">1,885,311 مشاهدة</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                        <img src="temp/temp16.jpg" alt="" />
-                                        <span class="video-icon"></span>
+                                                        <img src="temp/temp15.jpg" alt="" />
+                                                        <span class="video-icon"></span>
                                                     </span>
                                                     <span class="ttl">
-                                           معتقلو حماة المركزي : هكذا أسرنا عميد  السجن وقائد</span>
-                                                    <span class="caption">1,885,311  مشاهدة</span>
+                                                        معتقلو حماة المركزي : النمر المقنع
+                                                    </span>
+                                                    <span class="caption">1,885,311 مشاهدة</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" title="">
                                                     <span class="cover">
-                                        <img src="temp/temp06.jpg" alt="" />
-                                        </span>
+                                                        <img src="temp/temp16.jpg" alt="" />
+                                                        <span class="video-icon"></span>
+                                                    </span>
                                                     <span class="ttl">
-                                           معتقلو حماة المركزي : النمر المقنع
-</span>
-                                                    <span class="caption">1,885,311  مشاهدة</span>
+                                                        معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد</span>
+                                                    <span class="caption">1,885,311 مشاهدة</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">
+                                                    <span class="cover">
+                                                        <img src="temp/temp06.jpg" alt="" />
+                                                    </span>
+                                                    <span class="ttl">
+                                                        معتقلو حماة المركزي : النمر المقنع
+                                                    </span>
+                                                    <span class="caption">1,885,311 مشاهدة</span>
                                                 </a>
                                             </li>
                                         </ul>
@@ -2119,8 +2504,8 @@
                                                 <a href="#" title="">
                                                     <!-- Time -->
                                                     <span class="time">
-                                    <span>20:20</span>
-                                                    <span class="region">GMT</span>
+                                                        <span>20:20</span>
+                                                        <span class="region">GMT</span>
                                                     </span>
                                                     <!-- Title -->
                                                     <span class="ttl">شاهد.. بريطانية تشيد بالمسلمين في حريق برج لندن</span>
@@ -2130,8 +2515,8 @@
                                                 <a href="#" title="">
                                                     <!-- Time -->
                                                     <span class="time">
-                                    <span>20:20</span>
-                                                    <span class="region">GMT</span>
+                                                        <span>20:20</span>
+                                                        <span class="region">GMT</span>
                                                     </span>
                                                     <!-- Title -->
                                                     <span class="ttl">شاهد.. بريطانية تشيد بالمسلمين في حريق برج لندن</span>
@@ -2141,8 +2526,8 @@
                                                 <a href="#" title="">
                                                     <!-- Time -->
                                                     <span class="time">
-                                    <span>20:20</span>
-                                                    <span class="region">GMT</span>
+                                                        <span>20:20</span>
+                                                        <span class="region">GMT</span>
                                                     </span>
                                                     <!-- Title -->
                                                     <span class="ttl">شاهد.. بريطانية تشيد بالمسلمين في حريق برج لندن</span>
@@ -2152,8 +2537,8 @@
                                                 <a href="#" title="">
                                                     <!-- Time -->
                                                     <span class="time">
-                                    <span>20:20</span>
-                                                    <span class="region">GMT</span>
+                                                        <span>20:20</span>
+                                                        <span class="region">GMT</span>
                                                     </span>
                                                     <!-- Title -->
                                                     <span class="ttl">شاهد.. بريطانية تشيد بالمسلمين في حريق برج لندن</span>
@@ -2163,8 +2548,8 @@
                                                 <a href="#" title="">
                                                     <!-- Time -->
                                                     <span class="time">
-                                    <span>20:20</span>
-                                                    <span class="region">GMT</span>
+                                                        <span>20:20</span>
+                                                        <span class="region">GMT</span>
                                                     </span>
                                                     <!-- Title -->
                                                     <span class="ttl">شاهد.. بريطانية تشيد بالمسلمين في حريق برج لندن</span>
@@ -2174,8 +2559,8 @@
                                                 <a href="#" title="">
                                                     <!-- Time -->
                                                     <span class="time">
-                                    <span>20:20</span>
-                                                    <span class="region">GMT</span>
+                                                        <span>20:20</span>
+                                                        <span class="region">GMT</span>
                                                     </span>
                                                     <!-- Title -->
                                                     <span class="ttl">شاهد.. بريطانية تشيد بالمسلمين في حريق برج لندن</span>
@@ -2229,81 +2614,114 @@
                 </ul>
             </div>
             <ul>
-                <li><a href="#">العرب والعالم</a>
+                <li>
+                    <a href="#">العرب والعالم</a>
                 </li>
-                <li><a href="#" title="">اليمن</a>
+                <li>
+                    <a href="#" title="">اليمن</a>
                 </li>
-                <li><a href="#" title="">سوريا</a>
+                <li>
+                    <a href="#" title="">سوريا</a>
                 </li>
-                <li><a href="#" title="">العراق</a>
+                <li>
+                    <a href="#" title="">العراق</a>
                 </li>
-                <li><a href="#" title="">اوكرانيا</a>
-                </li>
-            </ul>
-            <ul>
-                <li><a href="#" title="">رياضة</a>
-                </li>
-                <li><a href="#" title="">عربية</a>
-                </li>
-                <li><a href="#" title="">عالمية</a>
-                </li>
-                <li><a href="#" title="">الدوريات</a>
-                </li>
-                <li><a href="#" title="">سعودية</a>
+                <li>
+                    <a href="#" title="">اوكرانيا</a>
                 </li>
             </ul>
             <ul>
-                <li><a href="#" title="">أسواق</a>
+                <li>
+                    <a href="#" title="">رياضة</a>
                 </li>
-                <li><a href="#" title="">عقار</a>
+                <li>
+                    <a href="#" title="">عربية</a>
                 </li>
-                <li><a href="#" title="">بنوك</a>
+                <li>
+                    <a href="#" title="">عالمية</a>
                 </li>
-                <li><a href="#" title="">اقتصاد</a>
+                <li>
+                    <a href="#" title="">الدوريات</a>
                 </li>
-                <li><a href="#" title="">اسواق</a>
-                </li>
-                <li><a href="#" title="">تداول</a>
-                </li>
-            </ul>
-            <ul>
-                <li><a href="#" title="">السعودية</a>
-                </li>
-                <li><a href="#" title="">عقار</a>
-                </li>
-                <li><a href="#" title="">بنوك</a>
-                </li>
-                <li><a href="#" title="">اقتصاد</a>
-                </li>
-                <li><a href="#" title="">اسواق</a>
-                </li>
-                <li><a href="#" title="">تداول</a>
+                <li>
+                    <a href="#" title="">سعودية</a>
                 </li>
             </ul>
             <ul>
-                <li><a href="#" title="">المزيد</a>
+                <li>
+                    <a href="#" title="">أسواق</a>
                 </li>
-                <li><a href="#" title="">عقار</a>
+                <li>
+                    <a href="#" title="">عقار</a>
                 </li>
-                <li><a href="#" title="">بنوك</a>
+                <li>
+                    <a href="#" title="">بنوك</a>
                 </li>
-                <li><a href="#" title="">اقتصاد</a>
+                <li>
+                    <a href="#" title="">اقتصاد</a>
                 </li>
-                <li><a href="#" title="">اسواق</a>
+                <li>
+                    <a href="#" title="">اسواق</a>
                 </li>
-                <li><a href="#" title="">تداول</a>
+                <li>
+                    <a href="#" title="">تداول</a>
                 </li>
             </ul>
             <ul>
-                <li><a href="#" title="">رياضة</a>
+                <li>
+                    <a href="#" title="">السعودية</a>
                 </li>
-                <li><a href="#" title="">عربية</a>
+                <li>
+                    <a href="#" title="">عقار</a>
                 </li>
-                <li><a href="#" title="">عالمية</a>
+                <li>
+                    <a href="#" title="">بنوك</a>
                 </li>
-                <li><a href="#" title="">الدوريات</a>
+                <li>
+                    <a href="#" title="">اقتصاد</a>
                 </li>
-                <li><a href="#" title="">سعودية</a>
+                <li>
+                    <a href="#" title="">اسواق</a>
+                </li>
+                <li>
+                    <a href="#" title="">تداول</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#" title="">المزيد</a>
+                </li>
+                <li>
+                    <a href="#" title="">عقار</a>
+                </li>
+                <li>
+                    <a href="#" title="">بنوك</a>
+                </li>
+                <li>
+                    <a href="#" title="">اقتصاد</a>
+                </li>
+                <li>
+                    <a href="#" title="">اسواق</a>
+                </li>
+                <li>
+                    <a href="#" title="">تداول</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#" title="">رياضة</a>
+                </li>
+                <li>
+                    <a href="#" title="">عربية</a>
+                </li>
+                <li>
+                    <a href="#" title="">عالمية</a>
+                </li>
+                <li>
+                    <a href="#" title="">الدوريات</a>
+                </li>
+                <li>
+                    <a href="#" title="">سعودية</a>
                 </li>
             </ul>
             <a class="ftr-disclaimer" href="#" target="_blank">مزود البيانات دايركت اف ان | مباشر</a>
