@@ -123,6 +123,7 @@ article .disclaimer {
 }
 .main-header,
 .area-25 .latest-news .time .region,
+.area-25 .latest-news.with-thumbs .time,
 .photo-icon,
 .teaser-tools ul .share,
 article .bookmark,
@@ -154,7 +155,8 @@ article .box,
 article .teaser-tools .share ul,
 .share-list.for-mobile,
 .scroller .navigator .prev,
-.scroller .navigator .next {
+.scroller .navigator .next,
+.latest-news.with-thumbs {
     background-color: #FFF;
 }
 .video-icon {
@@ -216,7 +218,8 @@ article .bookmark:hover,
 .table-wrapper table th,
 .btn,
 .article-teaser .caption,
-.live-popup .live-info .now {
+.live-popup .live-info .now,
+.area-25 .latest-news.with-thumbs .time {
     color: #FFF;
 }
 header nav a,
@@ -488,7 +491,8 @@ input.btn,
 .author-story,
 .author-story .story-writer img,
 .btn,
-.aa-live {
+.aa-live,
+.latest-news.with-thumbs {
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
     -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
     -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);

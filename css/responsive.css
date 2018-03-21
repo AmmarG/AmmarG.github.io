@@ -1,3 +1,23 @@
+@media (min-width: 1155px) and (max-width: 1340px) {
+    body {
+        /* Moz-browsers */
+        -moz-transform: scale(0.85, 0.85);
+        /* Other non-webkit browsers */
+        zoom: 0.85;
+        /* Webkit browsers */
+        zoom: 85%;
+    }
+}
+@media (min-width: 481px) and (max-width: 1154px) {
+    body {
+        /* Moz-browsers */
+        -moz-transform: scale(0.75, 0.75);
+        /* Other non-webkit browsers */
+        zoom: 0.75;
+        /* Webkit browsers */
+        zoom: 75%;
+    }
+}
 @media (max-width: 480px) {
     body {
         min-width: auto;
@@ -10,7 +30,7 @@
     }
     .main-header .logo,
     .main-header .live-streaming,
-    .main-header .mobile-searh,
+    .main-header .mobile-search,
     .footer-separator .logo {
         background-image: url(../gfx/sprites-mobile.png);
         background-repeat: no-repeat;
@@ -44,6 +64,9 @@
         font-size: 0;
         padding: 0;
     }
+    .mobile-menu, .mobile-search{
+        display: inline-block;
+    }
     .main-header .mobile-menu {
         background: url(../gfx/menu.png) center no-repeat;
         flex: 0 0 51px;
@@ -53,7 +76,7 @@
     .main-header .mobile-menu.cross {
         background-image: url(../gfx/cross.png);
     }
-    .main-header .mobile-searh {
+    .main-header .mobile-search {
         flex: 0 0 51px;
         margin-right: auto;
         background-position: 15px -51px;
@@ -184,7 +207,7 @@
         flex: 0 0 20px;
         align-self: center;
     }
-    nav .main-content li.seacrh {
+    nav .main-content li.search {
         display: none;
     }
     nav .submenu.active ul {
@@ -967,14 +990,15 @@
     .area-75 .news-mod02 img {
         width: 100%;
     }
-    .section-page .submenu ul {
+    .submenu ul {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
     }
     .mega-menu,
     .menu-icon,
-    .main-submenu span {
+    .main-submenu span,
+    .main-content .submenu .logo{
         display: none !important;
     }
     .artcl-snippet {
@@ -983,25 +1007,5 @@
     }
     article .twitter-video {
         min-width: 100% !important;
-    }
-}
-@media (min-width: 1155px) and (max-width: 1340px) {
-    body {
-        /* Moz-browsers */
-        -moz-transform: scale(0.85, 0.85);
-        /* Other non-webkit browsers */
-        zoom: 0.85;
-        /* Webkit browsers */
-        zoom: 85%;
-    }
-}
-@media (min-width: 768px) and (max-width: 1154px) {
-    body {
-        /* Moz-browsers */
-        -moz-transform: scale(0.70, 0.70);
-        /* Other non-webkit browsers */
-        zoom: 0.70;
-        /* Webkit browsers */
-        zoom: 70%;
     }
 }
