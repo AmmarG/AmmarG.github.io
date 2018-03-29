@@ -1,30 +1,4 @@
 'use strict';
-/*if ('serviceWorker' in navigator) {
-	navigator.serviceWorker.register('../sw.js', { scope: '/' }).then((reg) => {
-		if (reg.installing) {
-			console.log('Service worker installing');
-		} else if(reg.waiting) {
-			console.log('Service worker installed');
-		} else if(reg.active) {
-			console.log('Service worker active');
-		}
-		
-	}).catch((error) => {
-		console.log('Registration failed with ' + error); // Registration failed
-	});
-
-  // Communicate with the service worker using MessageChannel API.
-  function sendMessage(message) {
-    return new Promise((resolve, reject) => {
-      const messageChannel = new MessageChannel();
-      messageChannel.port1.onmessage = function(event) {
-        resolve(`Direct message from SW: ${event.data}`);
-      };
-
-      navigator.serviceWorker.controller.postMessage(message, [messageChannel.port2])
-    });
-  }
-}*/
 (function() {
     var menu = document.querySelector('.mobile-menu'),
         overlay = document.querySelector('.overlay'),
@@ -62,13 +36,6 @@
             e.preventDefault();
             megaMenu.classList.toggle('show');
             this.classList.toggle('active');
-            /*if (mobsubmenuD.classList.contains('slideOut')) {
-                mobsubmenuD.classList.toggle('slideIN');
-            } else {
-    
-                mobsubmenuD.classList.toggle('slideOut');
-            }*/
-    
         });
     },false);
     searchBtn.forEach(function(ele) {
@@ -201,7 +168,7 @@ function escapeToClose(event){
                 breakingTxt.innerText = current;
                 setTimeout(function() {
                     breakingNews.classList.remove('show');
-                }, 10000);
+                }, 30000);
 
             }
             previous = current;
@@ -214,7 +181,7 @@ function escapeToClose(event){
     setInterval(function() {
         xmlhttp.open("GET", "https://feed.alarabiya.net/breakingNews/ar.json", true);
         xmlhttp.send();
-    }, 30000);
+    }, 5000);
 
    
 })();

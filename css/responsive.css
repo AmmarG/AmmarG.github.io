@@ -1008,4 +1008,16 @@
     article .twitter-video {
         min-width: 100% !important;
     }
+    .latest-news.with-thumbs li {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .latest-news.with-thumbs h2 a {
+        padding-right: 0;
+    }
+    .latest-news.with-thumbs .ttl {
+    height: 47px;
+    max-height: 47px;
+    line-height: 165%;
+}
 }

@@ -1,0 +1,298 @@
+#draggableMultiple .sortable-moves{
+width:100%
+}
+
+.activation-ico.activation-ico_2{
+	background-image: url(../icon/aa-dashboard/avtivation-flow/bullet_green.png);
+	    width: 14px;
+    height: 17px;
+    display: block;
+}
+
+.activation-ico.activation-ico_1{
+	background-image: url(../icon/aa-dashboard/avtivation-flow/bullet_yellow.png);
+	    width: 14px;
+    height: 17px;
+    display: block;
+}
+
+.activation-ico, .activation-ico.activation-ico_0{
+	background-image: url(../icon/aa-dashboard/avtivation-flow/bullet_red.png);
+    width: 14px;
+    height: 17px;
+    display: block;
+}
+
+.notification-ico{
+	background-image: url(../icon/aa-dashboard/flow-status/status-0.png);
+    width: 14px;
+    height: 17px;
+    display: block;
+}
+
+.notification-ico.SET{
+	background-image: url(../icon/aa-dashboard/flow-status/status-1.png);
+}
+
+.notification-ico.DONE{
+	background-image: url(../icon/aa-dashboard/flow-status/status-3.png);
+}
+
+.notification-ico.PROCESS{
+	background-image: url(../icon/aa-dashboard/flow-status/status-2.png);
+}
+
+.action-preview{
+	background-image: url(../icon/aa-dashboard/view_content.png);
+    width: 17px;
+    height: 17px;
+    display: block;
+    float: left;
+    margin-left: 3px;
+}
+
+.action-edit{
+	background-image: url(../icon/aa-dashboard/edit_content.png);
+    width: 17px;
+    height: 17px;
+    display: block;
+    float: left;
+    margin-left: 3px;
+}
+
+.action-delete{
+	background-image: url(../icon/aa-dashboard/delete.png);
+    width: 17px;
+    height: 17px;
+    display: block;
+    float: left;
+    margin-left: 3px;
+}
+
+#toolbarButtons li.position {
+    width: 100%;
+}
+
+.ui-autocomplete {
+    width: 500px;
+    background: #EEE;
+    padding: 10px;
+}
+.sections-preview {
+    padding-left: 0 !important;
+    margin-top: 5px;
+}
+.article-creation-form-sections-row label {
+    width: 250px;
+    font-weight: bold;
+    padding-left: 25px;
+}
+.article-creation-form-sections-row label.mSection {
+    background: url(../icon/aa-dashboard/sections/main-section.png) left no-repeat;
+}
+.article-creation-form-sections-row label.section {
+    background: url(../icon/aa-dashboard/sections/section.png) left no-repeat;
+}
+.article-creation-form-sections-row button {
+    margin-left: 5px;
+}
+.options_wraper {
+    overflow: hidden;
+}
+.options_wraper .form-group {
+    float: left;
+    width:200px;
+}
+.form-check-input {
+    margin-left: 0;
+    margin-right: 5px;
+}
+.horizontal-fixed.fixed .container-fluid {
+    margin-top: 40px !important;
+}
+.editlink {
+    clear: both;
+    padding: 5px;
+    margin: 10px 0;
+    background: #689600;
+    padding: 5px 0;
+    overflow: hidden;
+}
+.editlink a {
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 20px;
+    border-left: solid 1px #FFF;
+    float: right;
+}
+.editlink a:hover {
+    color: #333;
+}
+.editlink a:last-child {
+    border: none;
+}
+
+nav.editor-mod li,
+nav li:last-child {
+    height: auto;
+    padding: 0;
+    width: auto;
+    border:none;
+    margin:0;
+}
+div.mgnlLevel-2,
+div.mgnlLevel-4,
+nav.editor-mod .logo,
+nav.editor-mod .menu-icon,
+nav.editor-mod li.seacrh,
+.mgnlEditorBarLabel .mgnlLevel-0{
+	display: none;
+}
+ 
+header nav.editor-mod  li,nav.editor-mod  .main-content .submenu li{
+    border:none;
+}
+nav.editor-mod li{
+    margin:5px 0;
+}
+.editor-mod .main-content{
+    width: 100%;
+}
+.editor-mod ul{
+    display: flex;
+    justify-content: space-between;
+}
+.editor-mod ul li ul{
+    flex-direction: column;
+}
+nav.editor-mod li a{
+    padding: 6px 0;
+}
+
+/****Images ****/
+.sortable-moves{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+     -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: #c1c1c1;
+    border: 2px solid #fff;
+    margin-bottom: 5px;
+}
+.sortable-moves p{
+    -ms-grid-row-align: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    color: #fefefe;
+    font-size: 16px;
+}
+
+/*****imageDialog***/
+.imageDialog .aa-picker-button, .aa-picker-button{
+   border: 1px solid #c5c5c5;
+    background: #f6f6f6;
+    font-weight: normal;
+    padding: .4em 1em;
+    display: inline-block;
+    border-radius: 3px;
+}
+.imageDialog .img-preview-item{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+     -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+   -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
+}
+.imageDialog .img-preview-item span{
+       flex: 0.1 0 auto;
+    text-align: center;
+}
+.imageDialog .img-preview-item .title{
+        flex: 1 0 auto;
+}
+/****ToolbarButtons**/
+#toolbarButtons{
+        display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-flow: wrap;
+    align-items: stretch;
+    height: 100%;
+    align-content: stretch;
+    background: #f7f7f7;
+    padding: 15px;
+    border-radius: 6px;
+    border: #ddd 1px solid;
+}
+#toolbarButtons li{
+        margin: 15px 0;
+}
+#toolbarButtons li.status{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-direction: row;
+}
+#toolbarButtons li:first-child{
+    flex: 1 0 100%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-dialog-buttons.ui-draggable.ui-resizable {
+    background-color: white;
+    border: solid gray;
+}
+
+.ui-dialog-titlebar.ui-corner-all.ui-widget-header.ui-helper-clearfix.ui-draggable-handle {
+    background-color: gray;
+}
+
+.wrapper .form-control {
+    border: 1px solid rgba(0, 0, 0, 0.42);
+}
+
+.cke_editable h5 {
+    color: #833fcd;
+    font-size: 40px;
+    line-height: 0;
+}
+
+.aa-articles tr.selected {
+    background-color: #c29cca!important;
+}
+
+.form-group label, input.form-control {
+    font-size: 28px;
+}
+
+.options_wraper label.form-check-label {
+   font-size: 18px;
+}
+.action-delete .delete-trigger{
+	display:none!important;
+}
+
+/****NAV***/
+header nav{
+    height:auto;
+}
+.main-content .submenu ul {
+    position: relative;
+    top: 0;
+    right: 0;
+    height: auto;
+}
+.mega-menu{
+    display:block !important;
+    position: relative;
+    top: 0;
+}
