@@ -135,7 +135,9 @@ article .bookmark,
 .aa-live.hide-live .live-open,
 .scroller .navigator button:hover,
 .area-25 .latest-news.with-thumbs .time span,
-.area-25 .latest-news.with-thumbs .time span.region {
+.area-25 .latest-news.with-thumbs .time span.region,
+.main-content .video-js .vjs-volume-level,
+.main-content .video-js .vjs-play-progress {
     background-color: #580956;
 }
 header nav,
@@ -238,7 +240,8 @@ article h5,
 .tabs-menu .current a,
 .main-article .ttl,
 .tabs-menu li:hover a,
-.box h6 {
+.box h6,
+.section-vod .mega-menu .menu-lead a {
     color: #580956;
 }
 input.fld,
@@ -648,6 +651,9 @@ article .teaser-tools .share ul li:hover {
 .area-25 .latest-news.with-thumbs .time {
     background-color: transparent;
 }
+.video-js * {
+    outline: none;
+}
 @media print {
     header,
     footer,
@@ -698,11 +704,12 @@ article .teaser-tools .share ul li:hover {
 body.section-vod,
 .section-vod footer .logo,
 .section-vod footer .copyrights,
-body.live-streaming {
+body.live-streaming,
+.section-vod .top-info {
     background-color: #0e0e0e;
 }
 .section-vod .main-header,
-.section-vod .top-info,
+.section-page .sticky nav.moveR.moveD,
 .section-vod .search-overlay,
 .section-vod article .teaser-tools .share ul {
     background-color: #020202;
@@ -721,10 +728,9 @@ body.live-streaming {
     background-position: 0 -551px;
 }
 .section-vod header .live-streaming span {
-    background-position: -110px -91px;
+    background-position: -118px -91px;
 }
 .section-vod header nav,
-.section-vod .main-content .submenu ul,
 .section-vod .gallery ul,
 .section-vod .dark,
 .section-vod .ad25 .wrapper,
@@ -746,7 +752,11 @@ body.live-streaming {
 .section-vod .alfa-filter li:hover,
 .section-vod .scroller .navigator button:hover,
 .section-vod .latest-news.with-thumbs .time span,
-.section-vod .latest-news.with-thumbs .time span.region {
+.section-vod .latest-news.with-thumbs .time span.region,
+.section-vod .main-content .video-js .vjs-volume-level,
+.section-vod .main-content .video-js .vjs-play-progress,
+.live-streaming .video-js .vjs-volume-level,
+.live-streaming .video-js .vjs-play-progress {
     background-color: #d62919;
 }
 .section-vod header nav,
@@ -804,7 +814,9 @@ body.live-streaming,
 body.live-streaming h2,
 .section-vod .short-url input[type=text],
 .section-vod .short-url input[type=text]:focus,
-.section-vod .area-25 .latest-news.with-thumbs .time span {
+.section-vod .area-25 .latest-news.with-thumbs .time span,
+.section-vod article .ordered li,
+.section-vod article .unordered li {
     color: #e4e4e4;
 }
 .section-vod header nav a:hover,
@@ -823,7 +835,9 @@ body.live-streaming h2,
 .section-vod .story-writer,
 .section-vod .box.services a,
 .section-vod h6,
-.section-vod .highlighted {
+.section-vod .highlighted,
+.section-vod .submenu .main-submenu a,
+.section-vod .mega-menu a:hover {
     color: #f90f0f !important;
 }
 .section-vod .main-content .submenu li,
@@ -834,7 +848,7 @@ body.live-streaming h2,
     background-position: -77px -390px;
 }
 .section-vod .sticky nav.moveR .logo {
-    transform-origin: 223px -45px;
+    transform-origin: 487px -45px;
     background-position: 0px -443px;
     transform: scale(0.8);
     width: 220px;
@@ -901,7 +915,8 @@ body.live-streaming h2,
 }
 .section-vod article .topic,
 .section-vod article .topic h2,
-.section-vod article .topic a {
+.section-vod article .topic a,
+.section-vod .mega-menu a {
     color: #333;
 }
 .section-vod .ad25 h2,
@@ -932,6 +947,16 @@ body.live-streaming h2,
 }
 .section-vod .main-header {
     height: 130px;
+}
+.section-vod.section-page nav,
+.section-vod .main-content .submenu ul {
+    background: url(../gfx/menu-bg-vod.gif) center top repeat-x;;
+}
+.section-vod .mega-menu {
+    top: 227px;
+}
+.section-vod .main-submenu svg {
+    fill: #FFF;
 }
 .section-vod .unordered li {
     background-image: url(../gfx/blt_red.gif);
@@ -966,7 +991,9 @@ body.live-streaming h2,
 .section-aswaq .alfa-filter li:hover,
 .section-aswaq .scroller .navigator button:hover,
 .section-aswaq .latest-news.with-thumbs .time span,
-.section-aswaq .latest-news.with-thumbs .time span.region {
+.section-aswaq .latest-news.with-thumbs .time span.region,
+.section-aswaq .main-content .video-js .vjs-volume-level,
+.section-aswaq .main-content .video-js .vjs-play-progress {
     background-color: #093378;
 }
 .section-aswaq header nav a:hover,
@@ -1093,7 +1120,9 @@ body.live-streaming h2,
 .section-ksa .alfa-filter li:hover,
 .section-ksa .scroller .navigator button:hover,
 .section-ksa .latest-news.with-thumbs .time span,
-.section-ksa .latest-news.with-thumbs .time span.region {
+.section-ksa .latest-news.with-thumbs .time span.region,
+.section-ksa .main-content .video-js .vjs-volume-level,
+.section-ksa .main-content .video-js .vjs-play-progress {
     background-color: #22691e;
 }
 .section-ksa header nav a:hover,
@@ -1201,7 +1230,9 @@ body.live-streaming h2,
 .section-africa .alfa-filter li:hover,
 .section-africa .scroller .navigator button:hover,
 .section-africa .latest-news.with-thumbs .time span,
-.section-africa .latest-news.with-thumbs .time span.region {
+.section-africa .latest-news.with-thumbs .time span.region,
+.section-africa .main-content .video-js .vjs-volume-level,
+.section-africa .main-content .video-js .vjs-play-progress {
     background-color: #e33541;
 }
 .section-africa header nav a:hover,
@@ -1310,7 +1341,9 @@ body.live-streaming h2,
 .section-sport .alfa-filter li:hover,
 .section-sport .scroller .navigator button:hover,
 .section-sport .latest-news.with-thumbs .time span,
-.section-sport .latest-news.with-thumbs .time span.region {
+.section-sport .latest-news.with-thumbs .time span.region,
+.section-sport .main-content .video-js .vjs-volume-level,
+.section-sport .main-content .video-js .vjs-play-progress {
     background-color: #ef6c03;
 }
 .section-sport header nav a:hover,
@@ -1402,7 +1435,4 @@ body.live-streaming h2,
 }
 .section-sport footer .logo {
     background-position: 28px -1014px;
-}
-.video-js * {
-    outline: none;
 }

@@ -294,6 +294,7 @@ div > h2 {
     font-weight: bold;
     margin-bottom: 15px;
     font-size: 140%;
+    line-height: 125%;
 }
 .news-articles {
     -webkit-box-pack: justify;
@@ -449,7 +450,6 @@ nav li:last-child {
     margin: 0;
     z-index: 4;
 }
-
 /**Inside Sections Page***/
 
 .main-content > ul {
@@ -491,7 +491,7 @@ nav li:last-child {
     right: 0;
     height: 40px;
     width: 100%;
-    background:#e6e6e7;
+    background: #e6e6e7;
 }
 /**Search Overlay***/
 
@@ -568,19 +568,19 @@ nav li:last-child {
     align-self: flex-start;
 }
 .search-input::-webkit-input-placeholder,
-.search-input::placeholder{
-    color:#757575;
+.search-input::placeholder {
+    color: #757575;
 }
 .search-input:-ms-input-placeholder,
-.search-input::placeholder{
-    color:#757575;
+.search-input::placeholder {
+    color: #757575;
 }
 .search-input::-moz-placeholder,
-.search-input::placeholder{
-    color:#757575;
+.search-input::placeholder {
+    color: #757575;
 }
-.search-overlay input{
-    color:#757575;
+.search-overlay input {
+    color: #757575;
 }
 .search-icon {
     display: block;
@@ -588,14 +588,14 @@ nav li:last-child {
     height: 50px;
     padding: 2px;
     border: none;
-    margin:21px -37px 0 0;
+    margin: 21px -37px 0 0;
     outline: none;
     font-size: 0;
 }
 .search-input:not(:valid) ~ .search-icon {
     display: none;
 }
-.search-icon svg{
+.search-icon svg {
     fill: #757577;
 }
 /**Search Overlay***/
@@ -627,7 +627,7 @@ nav .logo {
     top: 0;
 }
 .section-page .sticky nav.moveR.moveD {
-    top:-60px;
+    top: -60px;
 }
 .sticky nav.moveR .logo {
     transform: scale(1.3);
@@ -833,7 +833,7 @@ span.cover {
 .area-25 .latest-news .time {
     width: 15%;
     float: right;
-    font-family: Tahoma;
+    font-family: Arial;
     font-weight: bold;
     font-size: 14px;
     text-align: center;
@@ -2505,6 +2505,7 @@ article .box.infograph .caption {
     padding: 20px 20px 0 0;
 }
 /*************** Beta Logo, will be deleted ***************/
+
 header h1.logo {
     width: 215px;
     background-image: url(../gfx/logo-beta.png);
@@ -2531,62 +2532,60 @@ header h1.logo {
         background-image: url(../gfx/sprites-mobile.png) !important;
         margin-right: 4px;
     }
-
 }
 /**updates new menu*/
-.submenu ul{
+
+.submenu ul {
     display: none;
 }
-.section-page .submenu.current-section ul{
+.section-page .submenu.current-section ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
-
-.overflowfix{
+.overflowfix {
     overflow: visible !important;
 }
-.section-page nav{
+.section-page nav {
     height: 124px;
     background: url('../gfx/menu-bg.jpg') center top repeat-x;
 }
-.main-submenu{
-    border:none;
+.main-submenu {
+    border: none;
     padding-left: 0;
     font-family: DroidKufiBold;
     font-weight: bold;
     font-size: 17px;
 }
-.main-content .main-submenu +li{
+.main-content .main-submenu +li {
     padding-right: 10px;
     border: none !important;
 }
-.submenu .main-submenu  a{
-    color:#580956;
+.submenu .main-submenu a {
+    color: #580956;
 }
-.main-submenu span{
+.main-submenu span {
     display: inline-block;
-    margin:2px 20px 0 0;
-    
+    margin: 2px 20px 0 0;
 }
-.main-submenu svg{
-    fill:#262931;
+.main-submenu svg {
+    fill: #262931;
 }
-.submenu li:first-child + li{
-    border:none;
+.submenu li:first-child + li {
+    border: none;
     padding-right: 0;
 }
-.submenu li  a{
-    color:#262931;
+.submenu li a {
+    color: #262931;
 }
 .submenu .menu-icon {
     border-right: none !important;
     border-left: 1px solid #b7b6b6 !important;
 }
-.submenu .search{
-    border:none !important;
+.submenu .search {
+    border: none !important;
 }
-.mega-menu{
+.mega-menu {
     background: #e3e3e3;
     height: auto;
     padding-bottom: 40px;
@@ -2597,59 +2596,87 @@ header h1.logo {
     z-index: 13;
     display: none;
 }
-.mega-menu.show{
+.mega-menu.show {
     display: block;
 }
-.mega-menu .main-content{
+.mega-menu .main-content {
     justify-content: flex-start;
     flex-wrap: wrap;
 }
-.mega-menu .main-menu{
+.mega-menu .main-menu {
     flex: 0 0 160px;
     margin-left: 70px;
     padding: 23px 0;
 }
-.mega-menu .main-menu:nth-child(1n+7){
+.mega-menu .main-menu:nth-child(1n+7) {
     background-image: url('../gfx/mega-menu-spr.jpg');
     background-repeat: no-repeat;
     background-position: top;
 }
-.mega-menu .main-menu:nth-child(6n+0){
+.mega-menu .main-menu:nth-child(6n+0) {
     margin-left: 0;
 }
-.mega-menu li{
+.mega-menu li {
     line-height: 29px;
 }
 .mega-menu a {
-    color:#333;
+    color: #333;
 }
-.menu-lead{
+.menu-lead {
     margin-bottom: 15px;
 }
-.menu-lead a{
+.menu-lead a {
     font-family: DroidKufiBold;
     font-weight: bold;
-    color:#6a0b67;
+    color: #6a0b67;
     font-size: 1.1em;
 }
-.sticky nav.moveR + .mega-menu{
-    position:fixed;
-    top:60px;
+.sticky nav.moveR + .mega-menu {
+    position: fixed;
+    top: 60px;
 }
-.sticky nav.moveR .submenu .logo{
+.sticky nav.moveR .submenu .logo {
     position: absolute;
     right: -167px;
     margin: 0;
 }
 .submenu .menu-icon,
-.submenu .search{
+.submenu .search {
     display: none;
 }
 .sticky nav.moveR .submenu .menu-icon,
-.sticky nav.moveR .submenu .search{
+.sticky nav.moveR .submenu .search {
     display: inline-block;
 }
 /**sport section**/
-.takeover-outer{
+
+.takeover-outer {
     z-index: -1;
+}
+/***secound level nav*****/
+.section-page .current-section .submenu-level2 ul,
+.section-page .current-section .submenu-level2 .arrow{
+    display: none;
+}
+.main-content .submenu-level2.show ul{
+    display: flex;
+    top:0;
+    z-index: 9;
+}
+/** Video JS Overrides **/
+.main-content .video-js .vjs-control-bar {
+    height: 4.0em;
+}
+.main-content .video-js .vjs-control:before {
+    font-size: 2.5em;
+}
+.main-content .vjs-volume-bar.vjs-slider-horizontal {
+    margin-top: 19px;
+}
+.main-content .vjs-remaining-time-display {
+    font-size: 1.3em;
+    line-height: 335%;
+}
+.video-js ul {
+    font-family: Arial !important;
 }
