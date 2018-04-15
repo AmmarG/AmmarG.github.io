@@ -82,6 +82,7 @@ function escapeToClose(event){
             meun.addEventListener('click', function(e) {
                 if(e.target.tagName.toLowerCase() !== 'a'){
                     e.preventDefault();    
+                    e.stopPropagation();
                     this.classList.toggle('active');
                 var Siblings = getSiblings(this);
                 for(var i=0;i<Siblings.length;i++){
@@ -156,22 +157,25 @@ function escapeToClose(event){
      },0);
 
     var xmlhttp = new XMLHttpRequest(),
-        previous = null,
-        current = null;
+        current = '',
+        previous = '';
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             var myObj = JSON.parse(this.responseText);
             current = myObj.result.text;
-
-            if (previous && current && previous !== current) {
-                breakingNews.classList.add('show');
-                breakingTxt.innerText = current;
-                setTimeout(function() {
+            if(current!='' ){
+                if(current != previous){
+                    breakingTxt.innerText = current;
+                    breakingNews.classList.add('show'); 
+                    previous = current;
+                }
+            }else{
+                if(breakingNews.classList.contains('show')){
                     breakingNews.classList.remove('show');
-                }, 30000);
-
+                    
+                }
+               
             }
-            previous = current;
 
 
         }

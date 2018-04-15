@@ -138,7 +138,7 @@ article .bookmark,
 .area-25 .latest-news.with-thumbs .time span.region,
 .main-content .video-js .vjs-volume-level,
 .main-content .video-js .vjs-play-progress {
-    background-color: #580956;
+    background-color: #6e2968;
 }
 header nav,
 .news-articles ul,
@@ -950,7 +950,8 @@ body.live-streaming h2,
 }
 .section-vod.section-page nav,
 .section-vod .main-content .submenu ul {
-    background: url(../gfx/menu-bg-vod.gif) center top repeat-x;;
+    background: url(../gfx/menu-bg-vod.gif) center top repeat-x;
+    background-color: #090909;
 }
 .section-vod .mega-menu {
     top: 227px;
@@ -1107,7 +1108,6 @@ body.live-streaming h2,
 }
 /*************************** KSA Theme ***************************/
 
-.section-ksa .main-header,
 .section-ksa .area-25 .latest-news .time .region,
 .section-ksa .photo-icon,
 .section-ksa .article-card .date-time .time,
@@ -1193,7 +1193,6 @@ body.live-streaming h2,
 .section-ksa .topic h2 {
     border-color: #ccc;
 }
-.section-ksa .main-header,
 .section-ksa .lastest-news h2 a,
 .section-ksa .top-content h2 a {
     border-color: #3c8938;
@@ -1217,7 +1216,6 @@ body.live-streaming h2,
 }
 /*************************** North Africa Theme ***************************/
 
-.section-africa .main-header,
 .section-africa .area-25 .latest-news .time .region,
 .section-africa .photo-icon,
 .section-africa .article-card .date-time .time,
@@ -1304,7 +1302,6 @@ body.live-streaming h2,
 .section-africa .topic h2 {
     border-color: #ccc;
 }
-.section-africa .main-header,
 .section-africa .lastest-news h2 a,
 .section-africa .top-content h2 a {
     border-color: #eb636c;
@@ -1328,7 +1325,6 @@ body.live-streaming h2,
 }
 /*************************** Sports Theme ***************************/
 
-.section-sport .main-header,
 .section-sport .area-25 .latest-news .time .region,
 .section-sport .photo-icon,
 .section-sport .article-card .date-time .time,
@@ -1414,7 +1410,6 @@ body.live-streaming h2,
 .section-sport .topic h2 {
     border-color: #ccc;
 }
-.section-sport .main-header,
 .section-sport .lastest-news h2 a,
 .section-sport .top-content h2 a {
     border-color: #ff780b;

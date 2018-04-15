@@ -114,7 +114,6 @@
     }
     .main-content .submenu ul li a {
         padding-right: 40px;
-        color: #747474;
     }
     header nav {
         padding: 0;
@@ -800,7 +799,7 @@
         background: #0e0e0e;
     }
     .section-vod nav .main-content li {
-        border-bottom: solid 1px #272729 !important;
+        border-bottom: solid 1px #36363a !important;
     }
     .section-vod .main-content .submenu.active ul {
         background: #212020;
@@ -1021,8 +1020,46 @@
         padding-right: 0;
     }
     .latest-news.with-thumbs .ttl {
-        height: 47px;
-        max-height: 47px;
-        line-height: 165%;
-    }
+    height: 47px;
+    max-height: 47px;
+    line-height: 165%;
+}
+/***Submenu level2 ***/
+.section-page  .submenu.level2 .arrow,
+.submenu.level2 .arrow{
+    background-image: url('../gfx/arrow.png') !important;
+    display: inline-block !important;
+}
+.section-page  .submenu.level2.active .arrow,
+.submenu.level2.active .arrow{
+    background-image: url('../gfx/arrow_up.png') !important;
+}
+.section-page  .submenu.level2.active,
+.submenu.level2.active{
+    height: auto;;
+}
+.section-page .submenu.level2.active ul,
+.submenu.level2.active ul{
+    display: flex;
+    background: #fafafa !important;
+}
+.submenu.level2 .main-submenu{
+    border-top: 1px solid rgb(230, 227, 227) !important;
+}
+.section-vod .submenu.level2 .main-submenu{
+    border-top: 1px solid #272729 !important;
+    border-color: #272729;
+}
+.section-vod nav .submenu .arrow,
+.section-vod .submenu.level2 .main-submenu{
+    border-right: 1px solid #272729;
+}
+.submenu.level2 .main-submenu .submenu.level2.active ul,
+.section-vod .submenu.level2.active ul{
+background: #2a2a2a !important;
+ }
+ .submenu .main-submenu{
+     display: none;
+ }
+
 }

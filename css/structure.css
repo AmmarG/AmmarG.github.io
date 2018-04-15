@@ -2559,7 +2559,7 @@ header h1.logo {
 }
 .main-content .main-submenu +li {
     padding-right: 10px;
-    border: none !important;
+    border-right: none !important;
 }
 .submenu .main-submenu a {
     color: #580956;
@@ -2654,11 +2654,11 @@ header h1.logo {
     z-index: -1;
 }
 /***secound level nav*****/
-.section-page .current-section .submenu-level2 ul,
-.section-page .current-section .submenu-level2 .arrow{
+.section-page .current-section .submenu.level2 ul,
+.section-page .current-section .submenu.level2 .arrow{
     display: none;
 }
-.main-content .submenu-level2.show ul{
+.main-content .submenu.level2.show ul{
     display: flex;
     top:0;
     z-index: 9;

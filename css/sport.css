@@ -131,6 +131,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    font-size: 1em;
 }
 .match-slider .slider .item a,
 .match-slider .slider .item a:hover{
@@ -173,6 +174,15 @@
     color: #000;
     line-height: 45px;
     padding-right: 20px;
+}
+.match-slider .match-result span {
+    -ms-flex: 0 0 91px;
+    flex: 0 0 91px;
+    text-align: center;
+    margin-top: 10px;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    font-size: 0.9em;
 }
 .match-time{
         display: -webkit-box;
@@ -1586,6 +1596,9 @@ div.t img{
 .calander .c-group {
     flex: 0 0 245px;
 }
+.calander .c-group .card{
+    font-size: 0;
+}
 .calander .c-group.right{
     text-align: left;
     margin-left: auto;
@@ -1593,6 +1606,9 @@ div.t img{
 }
 .calander .c-group.left{
     margin-right: auto;
+}
+.c-group span{
+    margin-left: 4px;
 }
 .calander .t-header.no-bg{
     background: none;
