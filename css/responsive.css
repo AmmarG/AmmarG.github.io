@@ -755,7 +755,6 @@
     }
     .author-story .story-writer img {
         width: 60px;
-        height: 60px;
     }
     .box.services {
         padding: 20px 10px 0 10px;
@@ -1020,46 +1019,54 @@
         padding-right: 0;
     }
     .latest-news.with-thumbs .ttl {
-    height: 47px;
-    max-height: 47px;
-    line-height: 165%;
+        height: 47px;
+        max-height: 47px;
+        line-height: 165%;
+    }
+    .area-50 .opinions li, .area-75 .opinions li, .area-100 .opinions li {
+        margin-bottom: 4px;
+    }
+    .opinions .ttl, .opinions .author {
+        width: 75%;
+    }
 }
 /***Submenu level2 ***/
-.section-page  .submenu.level2 .arrow,
-.submenu.level2 .arrow{
+
+.section-page .submenu.level2 .arrow,
+.submenu.level2 .arrow {
     background-image: url('../gfx/arrow.png') !important;
     display: inline-block !important;
 }
-.section-page  .submenu.level2.active .arrow,
-.submenu.level2.active .arrow{
+.section-page .submenu.level2.active .arrow,
+.submenu.level2.active .arrow {
     background-image: url('../gfx/arrow_up.png') !important;
 }
-.section-page  .submenu.level2.active,
-.submenu.level2.active{
-    height: auto;;
+.section-page .submenu.level2.active,
+.submenu.level2.active {
+    height: auto;
+    ;
 }
 .section-page .submenu.level2.active ul,
-.submenu.level2.active ul{
+.submenu.level2.active ul {
     display: flex;
     background: #fafafa !important;
 }
-.submenu.level2 .main-submenu{
+.submenu.level2 .main-submenu {
     border-top: 1px solid rgb(230, 227, 227) !important;
 }
-.section-vod .submenu.level2 .main-submenu{
+.section-vod .submenu.level2 .main-submenu {
     border-top: 1px solid #272729 !important;
     border-color: #272729;
 }
 .section-vod nav .submenu .arrow,
-.section-vod .submenu.level2 .main-submenu{
+.section-vod .submenu.level2 .main-submenu {
     border-right: 1px solid #272729;
 }
 .submenu.level2 .main-submenu .submenu.level2.active ul,
-.section-vod .submenu.level2.active ul{
-background: #2a2a2a !important;
- }
- .submenu .main-submenu{
-     display: none;
- }
-
+.section-vod .submenu.level2.active ul {
+    background: #2a2a2a !important;
+}
+.submenu .main-submenu {
+    display: none;
+}
 }
