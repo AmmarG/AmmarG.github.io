@@ -71,14 +71,14 @@
 .select-match{
     position: absolute;
     z-index: 9;
-    border-top: 2px solid #580956;
+    border-top: 2px solid #6e2968;
 }
 .select-match select{
     width: 168px;
     height: 32px;
     line-height: 32px;
     padding-top: 0;
-    color: #580956;
+    color: #6e2968;
     font-family: inherit;
     font-size: 15px;
     direction: rtl;

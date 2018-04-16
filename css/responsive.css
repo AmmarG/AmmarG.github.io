@@ -45,7 +45,6 @@
         width: 100%;
     }
     .main-header {
-        background: #630a64;
         height: 76px;
         padding-top: 0;
         border: 0;
@@ -85,13 +84,13 @@
         flex: 0 0 51px;
         margin-right: auto;
         background-position: 15px -51px;
-        background-color: rgba(0, 0, 0, .4);
+        background-color: rgba(0, 0, 0, .2);
         cursor: pointer;
     }
     .main-header .mobile-menu,
     .main-header .live-streaming {
         display: block;
-        background-color: rgba(0, 0, 0, .2);
+        background-color: rgba(0, 0, 0, .1);
         height: 76px;
     }
     .top-info,
@@ -186,7 +185,7 @@
         flex: 1 0 auto;
     }
     nav .main-content li a.active {
-        border-right: 5px solid #630460;
+        border-right: 5px solid #6e2968;
         padding-right: 15px;
     }
     nav li a.btn-search {
@@ -197,7 +196,7 @@
         z-index: 999;
         background: red;
         font-size: 0;
-        background: #3c0744 url(../gfx/search.png) center no-repeat;
+        background: #6e2968 url(../gfx/search.png) center no-repeat;
         height: 75px;
         width: 51px;
     }
@@ -1028,6 +1027,9 @@
     }
     .opinions .ttl, .opinions .author {
         width: 75%;
+    }
+    article p {
+        line-height: 150%;
     }
 }
 /***Submenu level2 ***/

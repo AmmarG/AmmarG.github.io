@@ -195,6 +195,12 @@ header .live-streaming,
     border-left: solid 1px #404040;
     background: #212020;
 }
+.slider .item .label {
+    background-color: rgba(110, 41, 104, .9);
+}
+.slider .active .label {
+    background-color: rgba(214, 41, 25, .9);
+}
 .top-info,
 .top-info a,
 header a,
@@ -241,14 +247,13 @@ article h5,
 .main-article .ttl,
 .tabs-menu li:hover a,
 .box h6,
-.section-vod .mega-menu .menu-lead a {
-    color: #580956;
-}
+.section-vod .mega-menu .menu-lead a,
+.submenu .main-submenu a,
 input.fld,
 .article-hdr h4,
 article p a,
 .unordered li::before {
-    color: #7e247c;
+    color: #6e2968;
 }
 body,
 a,
@@ -312,7 +317,7 @@ h2,
 .news-articles .section-ttl:hover,
 .topic h2 a,
 .topic h2 span {
-    border-color: #6a0b67;
+    border-color: #6e2968;
 }
 .section-ttl,
 .news .caption,
@@ -509,12 +514,6 @@ input.btn,
 .controls button {
     border: none;
     background-color: Transparent;
-}
-.slider .item .label {
-    background: rgba(88, 9, 86, 0.8)
-}
-.slider .active .label {
-    background: rgba(214, 41, 25, 0.8)
 }
 .breaking-news .close {
     -webkit-border-radius: 20px;
@@ -987,7 +986,7 @@ body.live-streaming h2,
 .section-aswaq .latest-news.with-thumbs .time span.region,
 .section-aswaq .main-content .video-js .vjs-volume-level,
 .section-aswaq .main-content .video-js .vjs-play-progress {
-    background-color: #093378;
+    background-color: #083375;
 }
 .section-aswaq header nav a:hover,
 .section-aswaq header nav .active,
@@ -1018,7 +1017,7 @@ body.live-streaming h2,
 .section-aswaq .main-article .ttl,
 .section-aswaq .topic .section-ttl,
 .section-aswaq .ftr-disclaimer {
-    color: #1e4990;
+    color: #083375;
 }
 .section-aswaq header nav a,
 .section-aswaq .article-hdr h4 {
@@ -1051,17 +1050,15 @@ body.live-streaming h2,
 .section-aswaq textarea:focus,
 .section-aswaq h2,
 .section-aswaq .topic .section-ttl {
-    border-color: #1e4990;
+    border-color: #083375;
 }
 .section-aswaq .latest-news h2,
 .section-aswaq .top-content h2,
-.section-aswaq .topic h2 {
-    border-color: #ccc;
-}
+.section-aswaq .topic h2,
 .section-aswaq .main-header,
 .section-aswaq .lastest-news h2 a,
 .section-aswaq .top-content h2 a {
-    border-color: #1e4990;
+    border-color: #ccc;
 }
 .section-aswaq .alfa-filter li.disabled,
 .section-aswaq .alfa-filter li.disabled:hover {
@@ -1115,7 +1112,7 @@ body.live-streaming h2,
 .section-ksa .latest-news.with-thumbs .time span.region,
 .section-ksa .main-content .video-js .vjs-volume-level,
 .section-ksa .main-content .video-js .vjs-play-progress {
-    background-color: #22691e;
+    background-color: #246826;
 }
 .section-ksa header nav a:hover,
 .section-ksa header nav .active,
@@ -1123,7 +1120,6 @@ body.live-streaming h2,
 .section-ksa a:hover,
 .section-ksa h2,
 .section-ksa h2 a,
-.section-ksa footer li:first-child a,
 .section-ksa .area-25 .latest-news a:hover,
 .section-ksa .article-hdr h3,
 .section-ksa article .disclaimer,
@@ -1145,7 +1141,7 @@ body.live-streaming h2,
 .section-ksa .news-articles .section-ttl,
 .section-ksa .main-article .ttl,
 .section-ksa .topic .section-ttl {
-    color: #22691e;
+    color: #246826;
 }
 .section-ksa header nav a,
 .section-ksa .article-hdr h4 {
@@ -1177,17 +1173,15 @@ body.live-streaming h2,
 .section-ksa select:focus,
 .section-ksa textarea:focus,
 .section-ksa h2,
-.section-ksa .topic .section-ttl {
-    border-color: #22691e;
+.section-ksa .topic .section-ttl,
+.section-ksa .lastest-news h2 a,
+.section-ksa .top-content h2 a {
+    border-color: #246826;
 }
 .section-ksa .latest-news h2,
 .section-ksa .top-content h2,
 .section-ksa .topic h2 {
     border-color: #ccc;
-}
-.section-ksa .lastest-news h2 a,
-.section-ksa .top-content h2 a {
-    border-color: #3c8938;
 }
 .section-ksa .unordered li {
     background-image: url(../gfx/blt_ksa.gif);
@@ -1199,12 +1193,6 @@ body.live-streaming h2,
 .section-ksa .alfa-filter li.disabled:hover {
     color: #b6b6b6;
     background-color: rgba(0, 0, 0, 0.06);
-}
-.section-ksa .sticky nav.moveR .logo {
-    background-position: 95px -524px;
-}
-.section-ksa footer .logo {
-    background-position: 28px -850px;
 }
 /*************************** North Africa Theme ***************************/
 
@@ -1231,7 +1219,6 @@ body.live-streaming h2,
 .section-africa a:hover,
 .section-africa h2,
 .section-africa h2 a,
-.section-africa footer li:first-child a,
 .section-africa .area-25 .latest-news a:hover,
 .section-africa .article-hdr h3,
 .section-africa article .disclaimer,
@@ -1286,17 +1273,15 @@ body.live-streaming h2,
 .section-africa select:focus,
 .section-africa textarea:focus,
 .section-africa h2,
-.section-africa .topic .section-ttl {
+.section-africa .topic .section-ttl,
+.section-africa .lastest-news h2 a,
+.section-africa .top-content h2 a {
     border-color: #e33541;
 }
 .section-africa .latest-news h2,
 .section-africa .top-content h2,
 .section-africa .topic h2 {
     border-color: #ccc;
-}
-.section-africa .lastest-news h2 a,
-.section-africa .top-content h2 a {
-    border-color: #eb636c;
 }
 .section-africa .alfa-filter li.disabled,
 .section-africa .alfa-filter li.disabled:hover {
@@ -1308,12 +1293,6 @@ body.live-streaming h2,
 }
 .section-africa .contact-form h2 {
     background-image: url(../gfx/contact_NA.png);
-}
-.section-africa .sticky nav.moveR .logo {
-    background-position: 95px -683px;
-}
-.section-africa footer .logo {
-    background-position: 28px -1095px;
 }
 /*************************** Sports Theme ***************************/
 
@@ -1332,7 +1311,7 @@ body.live-streaming h2,
 .section-sport .latest-news.with-thumbs .time span.region,
 .section-sport .main-content .video-js .vjs-volume-level,
 .section-sport .main-content .video-js .vjs-play-progress {
-    background-color: #ef6c03;
+    background-color: #ed6d21;
 }
 .section-sport header nav a:hover,
 .section-sport header nav .active,
@@ -1340,7 +1319,6 @@ body.live-streaming h2,
 .section-sport a:hover,
 .section-sport h2,
 .section-sport h2 a,
-.section-sport footer li:first-child a,
 .section-sport .area-25 .latest-news a:hover,
 .section-sport .article-hdr h3,
 .section-sport article .disclaimer,
@@ -1362,7 +1340,7 @@ body.live-streaming h2,
 .section-sport .news-articles .section-ttl,
 .section-sport .main-article .ttl,
 .section-sport .topic .section-ttl {
-    color: #ef6c03;
+    color: #ed6d21;
 }
 .section-sport header nav a,
 .section-sport .article-hdr h4 {
@@ -1394,17 +1372,15 @@ body.live-streaming h2,
 .section-sport select:focus,
 .section-sport textarea:focus,
 .section-sport h2,
-.section-sport .topic .section-ttl {
-    border-color: #ef6c03;
+.section-sport .topic .section-ttl,
+.section-sport .lastest-news h2 a,
+.section-sport .top-content h2 a {
+    border-color: #ed6d21;
 }
 .section-sport .latest-news h2,
 .section-sport .top-content h2,
 .section-sport .topic h2 {
     border-color: #ccc;
-}
-.section-sport .lastest-news h2 a,
-.section-sport .top-content h2 a {
-    border-color: #ff780b;
 }
 .section-sport .alfa-filter li.disabled,
 .section-sport .alfa-filter li.disabled:hover {
@@ -1416,10 +1392,4 @@ body.live-streaming h2,
 }
 .section-sport .contact-form h2 {
     background-image: url(../gfx/contact_sport.png);
-}
-.section-sport .sticky nav.moveR .logo {
-    background-position: 95px -631px;
-}
-.section-sport footer .logo {
-    background-position: 28px -1014px;
 }

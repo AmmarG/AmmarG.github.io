@@ -2569,9 +2569,6 @@ header h1.logo {
     padding-right: 10px;
     border-right: none !important;
 }
-.submenu .main-submenu a {
-    color: #580956;
-}
 .main-submenu span {
     display: inline-block;
     margin: 2px 20px 0 0;
