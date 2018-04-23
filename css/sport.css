@@ -328,8 +328,8 @@ span.l{
 span.t{
     color: #989898;
 }
-.standing .arrow,
-.arrow{
+.standing .ranking-arrow,
+.ranking-arrow{
     width: 13px;
     height: 11px;
     background-image: url(../gfx/arrows.png);
@@ -337,13 +337,13 @@ span.t{
     background-repeat: no-repeat;
     display: inline-block;
 }
-.arrow.up{
+.ranking-arrow.up{
         background-position: 0 2px;
 }
-.arrow.down{
+.ranking-arrow.down{
       background-position: 0 -8px;
 }
-.arrow.same{
+.ranking-arrow.same{
       background-position: -5px -20px;
 }
 .team em{
@@ -405,7 +405,7 @@ border-bottom:1px solid #f4f4f4;
         margin-top: 20px;
         flex: 0 0 auto;
 }
-.box.standing  .arrow{
+.box.standing  .ranking-arrow{
         margin: 0 32px 0 0;
 }
 .statistics h2{
@@ -1708,7 +1708,7 @@ div.t img{
 .order .points span{
     flex: 0 0 50%;
 }
-.order  .points  .arrow{
+.order  .points  .ranking-arrow{
     flex:0 0 13px;
     align-self: center;
 }
@@ -1753,7 +1753,7 @@ div.t img{
 .area-25 .t-extra-content img{
     margin-right: 20px;
 }
-.area-25 .order .arrow{
+.area-25 .order .ranking-arrow{
     margin-right: 5px;
 }
 .area-25 .order .t-extra-content:nth-child(odd){

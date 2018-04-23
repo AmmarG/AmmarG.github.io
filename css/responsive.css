@@ -289,7 +289,7 @@
     }
     .news .ttl,
     .section-vod .area-25 .news li:first-child .ttl {
-        bottom: 27%;
+        bottom: 6%;
         font-size: 13px;
         padding: 0 10px;
         max-height: 44px;
@@ -323,7 +323,7 @@
     .news-mod02 ul li:first-child .ttl {
         font-size: 18px;
         padding: 10px;
-        bottom: 16%;
+        bottom: 0%;
         max-height: 68%;
     }
     .news li:first-child .section-ttl,
@@ -376,7 +376,7 @@
     .news li:first-child .video-icon,
     .dark .news-articles .video-icon,
     .news-mod02 li:first-child .video-icon {
-        background-position: 0 -168px;
+        background-position: 0 -618px;
         width: 50px;
         height: 50px;
     }
@@ -385,7 +385,7 @@
     .news-mod02 li .video-icon,
     .section-vod .area-25 .news li:first-child .video-icon,
     .article-card .video-icon {
-        background-position: -10px -272px;
+        background-position: -9px -684px;
         width: 25px;
         height: 25px;
         left: 0;
@@ -444,7 +444,7 @@
     }
     .dark,
     .dark section {
-        padding: 0;
+        padding: 20px 0 10px 0;
     }
     .dark .news-articles ul {
         padding-top: 10px;
@@ -855,7 +855,7 @@
         background-position: 0 -197px;
     }
     .article-teaser {
-        min-height: 180px;
+        min-height: auto;
     }
     .article-teaser .caption {
         padding: 5px 10px;
@@ -972,6 +972,10 @@
         bottom: 0;
         top: auto;
     }
+    .news-mod02 li .video-icon {
+        left: 0 !important;
+        top: 0 !important;
+    }
     header .live-streaming span {
         display: none;
     }
@@ -1006,6 +1010,7 @@
     .artcl-snippet {
         float: none;
         margin: 20px 0;
+        width: 100%;
     }
     article .twitter-video {
         min-width: 100% !important;
@@ -1020,55 +1025,81 @@
     .latest-news.with-thumbs .ttl {
         height: 47px;
         max-height: 47px;
-        line-height: 165%;
+        line-height: 150%;
+        font-size: 100%;
+        margin-bottom: 15px;
     }
-    .area-50 .opinions li, .area-75 .opinions li, .area-100 .opinions li {
+    .area-50 .opinions li,
+    .area-75 .opinions li,
+    .area-100 .opinions li {
         margin-bottom: 4px;
     }
-    .opinions .ttl, .opinions .author {
+    .opinions .ttl,
+    .opinions .author {
         width: 75%;
     }
     article p {
         line-height: 150%;
     }
-}
-/***Submenu level2 ***/
-
-.section-page .submenu.level2 .arrow,
-.submenu.level2 .arrow {
-    background-image: url('../gfx/arrow.png') !important;
-    display: inline-block !important;
-}
-.section-page .submenu.level2.active .arrow,
-.submenu.level2.active .arrow {
-    background-image: url('../gfx/arrow_up.png') !important;
-}
-.section-page .submenu.level2.active,
-.submenu.level2.active {
-    height: auto;
-    ;
-}
-.section-page .submenu.level2.active ul,
-.submenu.level2.active ul {
-    display: flex;
-    background: #fafafa !important;
-}
-.submenu.level2 .main-submenu {
-    border-top: 1px solid rgb(230, 227, 227) !important;
-}
-.section-vod .submenu.level2 .main-submenu {
-    border-top: 1px solid #272729 !important;
-    border-color: #272729;
-}
-.section-vod nav .submenu .arrow,
-.section-vod .submenu.level2 .main-submenu {
-    border-right: 1px solid #272729;
-}
-.submenu.level2 .main-submenu .submenu.level2.active ul,
-.section-vod .submenu.level2.active ul {
-    background: #2a2a2a !important;
-}
-.submenu .main-submenu {
-    display: none;
-}
+    .hide-in-desktop {
+        display: block;
+    }
+    .hide-in-mobile {
+        display: none;
+    }
+    article iframe {
+        width: 100%;
+    }
+    .section-aswaq article .bookmark {
+        display: none;
+    }
+    /***Submenu level2 ***/
+    .section-page .submenu.level2 .arrow,
+    .submenu.level2 .arrow,
+    .section-page .current-section .submenu.level2 .arrow {
+        background-image: url('../gfx/arrow.png') !important;
+        display: inline-block !important;
+    }
+    .section-page .submenu.level2.active .arrow,
+    .submenu.level2.active .arrow {
+        background-image: url('../gfx/arrow_up.png') !important;
+    }
+    .section-page .submenu.level2.active,
+    .submenu.level2.active,
+    .section-page .current-section .submenu.level2 ul {
+        height: auto;
+        ;
+    }
+    .section-page .submenu.level2.active ul,
+    .submenu.level2.active ul {
+        display: flex;
+        background: #fafafa !important;
+    }
+    .submenu.level2 .main-submenu {
+        border-top: 1px solid rgb(230, 227, 227) !important;
+    }
+    .section-vod .submenu.level2 .main-submenu {
+        border-top: 1px solid #272729 !important;
+        border-color: #272729;
+    }
+    .section-vod nav .submenu .arrow,
+    .section-vod .submenu.level2 .main-submenu {
+        border-right: 1px solid #272729;
+    }
+    .submenu.level2 .main-submenu .submenu.level2.active ul,
+    .section-vod .submenu.level2.active ul {
+        background: #2a2a2a !important;
+    }
+    .submenu .main-submenu {
+        display: none;
+    }
+    /**Main video**/
+    #main-video {
+        position: relative;
+    }
+    nav .alhadath a,
+    .section-vod .main-content .alhadath a {
+        background: none;
+        font-size: inherit;
+    }
 }

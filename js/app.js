@@ -203,7 +203,12 @@ function escapeToClose(event){
         xmlhttp.send();
     }, 5000);
 
-   
+  /**Search Form submit***/ 
+  var atag = document.querySelector('.search-icon');
+    atag.addEventListener('click',function(e){
+        e.preventDefault();
+        document.getElementById('search-form').submit(); 
+    })  
 })();
 //arr varilble to save the called slider before
 var arr = [];

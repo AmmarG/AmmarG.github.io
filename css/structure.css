@@ -159,14 +159,11 @@ a {
     src: url('../fonts/BoutrosArabiyaB.eot?') format('eot'), url("../fonts/BoutrosArabiyaB.woff") format("woff"), url("../fonts/BoutrosArabiyaB.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Noto Naskh Arabic';
-  font-style: normal;
-  font-weight: 700;
-  src: url(../fonts/NotoNaskhArabic-Bold.eot);
-  src: url(../fonts/NotoNaskhArabic-Bold.eot?#iefix) format('embedded-opentype'),
-       url(../fonts/NotoNaskhArabic-Bold.woff2) format('woff2'),
-       url(../fonts/NotoNaskhArabic-Bold.woff) format('woff'),
-       url(../fonts/NotoNaskhArabic-Bold.ttf) format('truetype');
+    font-family: 'Noto Naskh Arabic';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/NotoNaskhArabic-Bold.eot);
+    src: url(../fonts/NotoNaskhArabic-Bold.eot?#iefix) format('embedded-opentype'), url(../fonts/NotoNaskhArabic-Bold.woff2) format('woff2'), url(../fonts/NotoNaskhArabic-Bold.woff) format('woff'), url(../fonts/NotoNaskhArabic-Bold.ttf) format('truetype');
 }
 body {
     text-align: right;
@@ -472,20 +469,32 @@ nav li:last-child {
     background: url('../gfx/submenu.png') center no-repeat;
     margin-top: -2px;
 }
+nav .alhadath a {
+    width: 45px;
+    height: 21px;
+    background: url('../gfx/alhadath-menu.png') center no-repeat;
+    font-size: 0;
+}
+nav .alhadath {
+    margin:0 auto 0 0;
+    -ms-flex-item-align: center;
+    align-self: center;
+    border-width: 0 0 0 1px;
+}
 .main-content .menu-icon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     display: inline-block;
-    margin: 0 auto 0 0;
+    margin: 0;
     border-right: none;
-    width: 43px;
-    height: 16px;
-    padding: 0;
     -ms-flex-item-align: center;
     align-self: center;
     opacity: 1;
     z-index: 4;
+}
+.submenu .menu-icon{
+    margin: 0 auto 0 0 ; 
 }
 .main-content .menu-icon.active a {
     background-image: url('../gfx/submenu-active.png');
@@ -710,8 +719,8 @@ section {
     width: 284px;
 }
 .news-mod02 li .video-icon {
-    left: 3px;
-    bottom: 5px;
+    left: 3px !important;
+    top: 3px !important;
 }
 .news li:last-child,
 .news-mod02 li:last-child {
@@ -782,29 +791,29 @@ span.cover {
     font-size: 25px;
     font-weight: bold;
     position: absolute;
-    padding: 0 20px;
+    padding: 0 15px;
     line-height: 160%;
 }
 .news .ttl,
 .news.programs li:first-child .ttl,
 .area-25 .news li:first-child .ttl {
-    bottom: 22%;
+    bottom: 5%;
     font-size: 17px;
     position: absolute;
-    padding: 0 20px;
+    padding: 0 15px;
     line-height: 170%;
     font-weight: bold;
 }
 .news li:first-child .ttl,
 .news-mod02 li:first-child .ttl {
-    bottom: 15%;
+    bottom: 3%;
 }
 .news .section-ttl,
 .area-25 .news li:first-child .section-ttl,
 .news-mod02 li:first-child .section-ttl {
     bottom: 20px;
     z-index: 1;
-    right: 20px;
+    right: 15px;
     line-height: 150%;
     padding-right: 10px;
     font-size: 14px;
@@ -820,6 +829,9 @@ span.cover {
     bottom: 20px;
     left: 20px;
     padding: 10px;
+}
+.news .video-icon {
+    top: 0;
 }
 .area-25 .latest-news {
     width: 100%;
@@ -939,7 +951,7 @@ h2 {
     height: 50px;
     position: absolute;
     display: block;
-    bottom: 0;
+    top: 0;
     left: 0;
 }
 .top-content .video-icon {
@@ -961,8 +973,16 @@ h2 {
 .area-100 .gallery ul li {
     width: 23.2%;
 }
+.ad25 {
+    text-align: center;
+}
 .ad25 .wrapper {
     padding: 20px;
+    text-align: center;
+}
+.ad25 h2 {
+    padding: 0;
+    border: 0;
 }
 .top-content {
     width: 100%;
@@ -1270,7 +1290,7 @@ input::-webkit-input-placeholder {
     position: fixed;
     bottom: -200px;
     width: 100%;
-    z-index: 9;
+    z-index: 999;
     clear: both;
     font-size: 25px;
     -webkit-transition: bottom .6s ease;
@@ -1320,6 +1340,9 @@ footer .social {
 .dark section {
     padding-bottom: 0;
 }
+.breadcrumbs {
+    padding-bottom: 20px;
+}
 .breadcrumbs,
 .breadcrumbs a {
     font-weight: bold;
@@ -1335,7 +1358,7 @@ footer .social {
     content: "";
 }
 .article-hdr {
-    padding: 30px 0 20px 0;
+    padding-bottom: 20px;
 }
 .article-hdr h3 {
     font-size: 34px;
@@ -1757,9 +1780,6 @@ article .bookmark {
     left: 0;
     padding: 15px 15px 15px 37px;
 }
-.section-opinions .article-hdr h3 {
-    padding-top: 10px;
-}
 .section-opinions article .teaser-tools {
     position: absolute;
     right: 0;
@@ -1978,6 +1998,8 @@ article .disclaimer {
 }
 nav .main-content {
     overflow: visible;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
 }
 .box.services {
     padding-bottom: 20px;
@@ -2182,6 +2204,7 @@ article p a {
 .artcl-snippet {
     float: left;
     margin-right: 15px;
+    width: 45%;
 }
 .aa-live {
     width: 330px;
@@ -2490,7 +2513,7 @@ article .box.infograph .caption {
     float: left;
     padding: 0;
     margin: 0 0 7px 0;
-    font-size: 87%;
+    font-size: 95%;
     height: 36px;
     max-height: 36px;
     line-height: 130%;
@@ -2501,7 +2524,7 @@ article .box.infograph .caption {
 }
 .latest-news.with-thumbs li {
     margin: 0 20px;
-    margin-top: 20px;
+    margin-top: 18px;
     padding: 0 0 20px 0;
     height: auto;
     max-height: 100px;
@@ -2516,6 +2539,18 @@ article .box.infograph .caption {
 }
 .latest-news.with-thumbs h2 a {
     padding: 20px 20px 0 0;
+}
+.hide-in-desktop {
+    display: none;
+}
+.hide-in-mobile {
+    display: block;
+}
+.section-opinions .article-hdr {
+    padding-top: 0;
+}
+.section-vod .box.news.episodes .ttl {
+    bottom: 19%;
 }
 /*************** Beta Logo, will be deleted ***************/
 
@@ -2664,16 +2699,18 @@ header h1.logo {
     z-index: -1;
 }
 /***secound level nav*****/
+
 .section-page .current-section .submenu.level2 ul,
-.section-page .current-section .submenu.level2 .arrow{
+.section-page .current-section .submenu.level2 .arrow {
     display: none;
 }
-.main-content .submenu.level2.show ul{
+.main-content .submenu.level2.show ul {
     display: flex;
-    top:0;
+    top: 0;
     z-index: 9;
 }
 /** Video JS Overrides **/
+
 .main-content .video-js .vjs-control-bar {
     height: 4.0em;
 }
@@ -2690,27 +2727,33 @@ header h1.logo {
 .video-js ul {
     font-family: Arial !important;
 }
+.vjs-resolution-button {
+    line-height: 320% !important;
+}
 /***sticky video*****/
-#main-video{
+
+#main-video {
     -webkit-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
-position: absolute;
-bottom:0;
-right:0;
-width: 100%;
-height:100%;
-z-index: 3;
-
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
 }
 #main-video.video-sticky {
     position: fixed !important;
     top: 64px;
-    right:auto;
+    right: auto;
     max-width: 400px;
     max-height: 225px;
     width: 400px;
     height: 225px;
     transform: translateX(-245%);
-    
-  }
+}
+#main-video.video-sticky .video-youyube-container{
+    max-width: 400px;
+    max-height: 225px;
+}

@@ -22,9 +22,9 @@ footer .social li {
 }
 a.cover,
 .area-25 .news li:first-child a.cover {
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.74) 100%);
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.74) 100%);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.74) 100%);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1.4) 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1.4) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1.4) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#bd000000', GradientType=0);
 }
 .news.programs a.cover {
@@ -40,10 +40,10 @@ header .live-streaming span {
     background-position: 115px -91px
 }
 .video-icon {
-    background-position: 0 -168px;
+    background-position: 0 -620px;
 }
 .top-content .video-icon {
-    background-position: -10px -272px;
+    background-position: -9px -684px;
 }
 .photo-icon {
     background-position: 0 -218px;
@@ -476,7 +476,8 @@ blockquote {
 input.btn,
 .news .caption.trailer,
 .live-popup h2,
-.area-25 .latest-news.with-thumbs .time {
+.area-25 .latest-news.with-thumbs .time,
+.video-js:focus {
     border: none;
 }
 .dark .news-articles ul,
@@ -629,7 +630,7 @@ article .teaser-tools .share ul li:hover {
 .page-404,
 .page-500 {
     background-color: #702665;
-    background-position: center center;
+    background-position: center 310px;
     background-repeat: no-repeat;
     min-width: 100%;
 }
@@ -644,6 +645,12 @@ article .teaser-tools .share ul li:hover {
 }
 .video-js * {
     outline: none;
+}
+.ima-ad-container video{
+    right:0;
+}
+.article-teaser {
+    background: url(../gfx/video_bg.jpg) center bottom no-repeat;
 }
 @media print {
     header,
@@ -839,10 +846,11 @@ body.live-streaming h2,
     background-position: -77px -390px;
 }
 .section-vod .sticky nav.moveR .logo {
-    transform-origin: 487px -45px;
-    background-position: 0px -443px;
+    transform-origin: 432px 29px;
+    background-position: 0px -441px;
     transform: scale(0.8);
-    width: 220px;
+    width: 211px;
+    padding-left: 0;
 }
 .section-vod .search-overlay .search-input:focus,
 .section-vod .news-articles .section-ttl,
@@ -859,19 +867,10 @@ body.live-streaming h2,
 .section-vod textarea:focus {
     border-color: #f90f0f;
 }
-.section-vod .video-icon {
-    background-position: 0 -618px;
-    top: 0;
-    bottom: auto;
-    background-color: transparent;
-}
-.section-vod .top-content .video-icon {
-    background-position: -9px -685px;
-}
 .section-vod .episodes .section-ttl,
 .section-vod .area-25 .news li:first-child .section-ttl {
     border: none;
-    font-size: 130%;
+    font-size: 105%;
     padding: 0;
     bottom: 10px;
 }
@@ -939,10 +938,11 @@ body.live-streaming h2,
 .section-vod .main-header {
     height: 130px;
 }
-.section-vod.section-page nav,
+.section-vod.section-page nav {
+    background: url(../gfx/menu-bg-vod.jpg) center top repeat-x;
+}
 .section-vod .main-content .submenu ul {
-    background: url(../gfx/menu-bg-vod.gif) center top repeat-x;
-    background-color: #090909;
+    background-color: #030303;
 }
 .section-vod .mega-menu {
     top: 227px;
@@ -967,6 +967,12 @@ body.live-streaming h2,
 }
 .section-vod .hadath-freq {
     background: url(../gfx/frequencies_ttl02_dark.png) bottom center no-repeat;
+}
+.section-vod .main-content .alhadath a {
+    background: url(../gfx/alhadath-menu-dark.png) center no-repeat;
+}
+.section-vod .article-teaser {
+    background: url(../gfx/vod_video_bg.jpg) center bottom no-repeat;
 }
 /*************************** Aswaq Theme ***************************/
 
