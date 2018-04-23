@@ -25,6 +25,7 @@
 @media (max-width: 480px) {
     body {
         min-width: auto;
+        letter-spacing: -1px;
     }
     .noscroll {
         overflow: hidden;
@@ -1040,6 +1041,7 @@
     }
     article p {
         line-height: 150%;
+        letter-spacing: 0;
     }
     .hide-in-desktop {
         display: block;
