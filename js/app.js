@@ -97,6 +97,15 @@ function escapeToClose(event){
             }, false);
         })
      
+    }else{
+        /**only for desktop **/
+          /**Alhdath nav**/
+  var hadathnav = document.querySelector('.alhadath-nav');
+  if(hadathnav){
+    setInterval(function() {
+        hadathnav.classList.toggle('switch');
+    },10000);
+    }
     }
     //stiky video
     if(articleVideo){
@@ -209,6 +218,7 @@ function escapeToClose(event){
         e.preventDefault();
         document.getElementById('search-form').submit(); 
     })  
+
 })();
 //arr varilble to save the called slider before
 var arr = [];
@@ -447,6 +457,19 @@ $(document).ready(function() {
     // Article Sharing Toggle
     $("article .teaser-tools .share").click(function() {
         $(this).toggleClass("show-icons");
+    });
+    
+    // Related artiles show/hide on page scroll
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) { 
+            $('.sticky-related').slideDown(500);
+        }
+        if ($(window).scrollTop() < 300) {
+            $('.sticky-related').slideUp(500);
+        }
+        if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+            $('.sticky-related').slideUp(500);
+        }
     });
 });
 

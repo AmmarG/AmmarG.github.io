@@ -431,7 +431,8 @@
     }
     .ad25,
     .dark .news-articles li,
-    .gallery li {
+    .gallery li,
+    .navigate {
         display: none;
     }
     #Scroll li {
@@ -444,7 +445,7 @@
     }
     .dark,
     .dark section {
-        padding: 20px 0 10px 0;
+        padding: 10px 0 10px 0;
     }
     .dark .news-articles ul {
         padding-top: 10px;
@@ -1058,6 +1059,9 @@
     article h5 {
         letter-spacing: -1px;
     }
+    .sticky-related {
+        display: none !important;
+    }
     /***Submenu level2 ***/
     .section-page .submenu.level2 .arrow,
     .submenu.level2 .arrow,
@@ -1102,9 +1106,21 @@
     #main-video {
         position: relative;
     }
-    nav .alhadath a,
-    .section-vod .main-content .alhadath a {
+    .alhadath-nav{
+        height: auto !important;
+    }
+    .alhadath-nav a,
+    .section-vod .main-content .alhadath-nav a {
         background: none;
         font-size: inherit;
+        border-bottom: 1px solid rgb(230, 227, 227) !important;
+        height: 70px;
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+        width:100%;
+    }
+    .alhadath-nav .hd2{
+        background: none;
+        width: auto;
     }
 }

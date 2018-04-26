@@ -468,17 +468,39 @@ nav li:last-child {
     background: url('../gfx/submenu.png') center no-repeat;
     margin-top: -2px;
 }
-nav .alhadath a {
+.alhadath-nav {
+    margin: 0 auto 0 0;
+    -ms-flex-item-align: center;
+    align-self: center;
+    border-width: 0 0 0 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    height: 21px;
+    overflow: hidden;
+}
+.alhadath-nav a {
     width: 45px;
     height: 21px;
     background: url('../gfx/alhadath-menu.png') center no-repeat;
     font-size: 0;
+    -webkit-transition: margin-top ease-in 0.3s;
+    -o-transition: margin-top ease-in 0.3s;
+    transition: margin-top ease-in 0.3s;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin-top: 0;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
 }
-nav .alhadath {
-    margin:0 auto 0 0;
-    -ms-flex-item-align: center;
-    align-self: center;
-    border-width: 0 0 0 1px;
+.alhadath-nav.switch .hd {
+    margin-top: -21px;
+}
+.alhadath-nav .hd2 {
+    background-image: url('../gfx/aa-fm-logo.png');
+    width: 85px;
 }
 .main-content .menu-icon {
     display: -webkit-box;
@@ -492,8 +514,8 @@ nav .alhadath {
     opacity: 1;
     z-index: 4;
 }
-.submenu .menu-icon{
-    margin: 0 auto 0 0 ; 
+.submenu .menu-icon {
+    margin: 0 auto 0 0;
 }
 .main-content .menu-icon.active a {
     background-image: url('../gfx/submenu-active.png');
@@ -1042,7 +1064,7 @@ form .valid {
     margin-bottom: 0;
 }
 .custome-video-home li .ttl {
-    height: 20px;
+    height: 21px;
 }
 .external {
     margin-top: 32px;
@@ -1998,7 +2020,7 @@ article .disclaimer {
 nav .main-content {
     overflow: visible;
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
 }
 .box.services {
     padding-bottom: 20px;
@@ -2551,6 +2573,123 @@ article .box.infograph .caption {
 .section-vod .box.news.episodes .ttl {
     bottom: 19%;
 }
+/************ Navigate Articles ************/
+
+.navigate {
+    overflow: hidden;
+    position: fixed;
+    top: 50vh;
+    left: 0;
+    -webkit-transition: width .3s;
+    -o-transition: width .3s;
+    transition: width .3s;
+    width: 30px;
+    z-index: 9999;
+    cursor: pointer;
+}
+.navigate .link {
+    display: block;
+    margin-left: 30px;
+    width: 290px;
+    height: 128px;
+}
+.navigate .link:before {
+    position: absolute;
+    left: 10px;
+    top: 58px;
+    border-style: solid;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    content: "";
+}
+.navigate .head {
+    display: inline-block;
+    font-size: 134%;
+    font-family: DroidKufiBold;
+    font-weight: bold;
+    padding: 10px 10px 0 10px;
+    ;
+}
+.navigate .item {
+    display: block;
+    padding: 10px;
+}
+.navigate img {
+    float: right;
+    width: 100px;
+}
+.navigate .ttl {
+    overflow: hidden;
+    padding-right: 10px;
+    font-size: 100%;
+    display: block;
+}
+.navigate .txt {
+    display: block;
+    overflow: hidden;
+    height: 44px;
+}
+.navigate .time {
+    display: block;
+    clear: both;
+    font-family: Arial;
+    font-size: 12px;
+    padding-top: 8px;
+}
+.navigate .time b {
+    font-weight: normal;
+    padding: 3px 5px;
+}
+.navigate:hover {
+    width: 320px;
+}
+.navigate.navigate-prev {
+    left: auto;
+    right: 0;
+    direction: ltr;
+    height: 128px;
+}
+.navigate.navigate-prev .link {
+    margin-right: 30px;
+    right: 0;
+    position: absolute;
+    display: block;
+}
+.navigate.navigate-prev .link:before {
+    left: auto;
+    right: -19px;
+    transform: rotate(315deg);
+    -webkit-transform: rotate(315deg);
+}
+.sticky-related {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    width: 100%;
+    display: none;
+}
+.sticky-related h2 {
+    float: right;
+    padding: 10px 15px;
+    width: auto;
+    border: none;
+    font-size: 120%;
+}
+.sticky-related ul {
+    clear: both;
+    padding: 0;
+}
+.sticky-related .area-100 .news-articles ul li {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.sticky-related .box {
+    margin-bottom: 0;
+}
 /*************** Beta Logo, will be deleted ***************/
 
 header h1.logo {
@@ -2752,7 +2891,7 @@ header h1.logo {
     height: 225px;
     transform: translateX(-245%);
 }
-#main-video.video-sticky .video-youyube-container{
+#main-video.video-sticky .video-youyube-container {
     max-width: 400px;
     max-height: 225px;
 }

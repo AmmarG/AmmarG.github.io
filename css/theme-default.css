@@ -137,7 +137,10 @@ article .bookmark,
 .area-25 .latest-news.with-thumbs .time span,
 .area-25 .latest-news.with-thumbs .time span.region,
 .main-content .video-js .vjs-volume-level,
-.main-content .video-js .vjs-play-progress {
+.main-content .video-js .vjs-play-progress,
+.navigate:hover,
+.navigate .time b,
+.sticky-related h2 {
     background-color: #6e2968;
 }
 header nav,
@@ -160,7 +163,10 @@ article .teaser-tools .share ul,
 .share-list.for-mobile,
 .scroller .navigator .prev,
 .scroller .navigator .next,
-.latest-news.with-thumbs {
+.latest-news.with-thumbs,
+.navigate .link,
+.navigate,
+.sticky-related {
     background-color: #FFF;
 }
 .video-icon {
@@ -229,7 +235,10 @@ article .bookmark:hover,
 .btn,
 .article-teaser .caption,
 .live-popup .live-info .now,
-.area-25 .latest-news.with-thumbs .time span {
+.area-25 .latest-news.with-thumbs .time span,
+.navigate .time b,
+.sticky-related .news-articles h2,
+.sticky-related .news-articles h2 a {
     color: #FFF;
 }
 header nav a,
@@ -252,7 +261,8 @@ article h5,
 input.fld,
 .article-hdr h4,
 article p a,
-.unordered li::before {
+.unordered li::before,
+.navigate .head {
     color: #6e2968;
 }
 body,
@@ -268,7 +278,8 @@ b,
 h6.flag,
 .aa-live .close-btn,
 .en table tr td:first-child span,
-.article-card:hover p  {
+.article-card:hover p,
+.navigate .link:hover {
     color: #333;
 }
 .ad25 h2,
@@ -316,7 +327,8 @@ h2,
 .top-content h2 a,
 .news-articles .section-ttl:hover,
 .topic h2 a,
-.topic h2 span {
+.topic h2 span,
+.navigate .head {
     border-color: #6e2968;
 }
 .section-ttl,
@@ -327,7 +339,8 @@ h2,
 .breaking-news .close,
 .coverage .caption,
 .writers li .pic,
-.scroller .navigator button:hover i {
+.scroller .navigator button:hover i,
+.navigate:hover .link:before {
     border-color: #fff;
 }
 .latest-news h2,
@@ -358,7 +371,8 @@ select,
 textarea,
 header nav li,
 .main-content .submenu li,
-.scroller .navigator i {
+.scroller .navigator i,
+.navigate .link:before {
     border-color: #b7b6b6;
 }
 blockquote,
@@ -381,7 +395,8 @@ textarea:focus {
 .top-content h2,
 .top-content h2 a,
 .main-header,
-.section-opinions article .teaser-tools {
+.section-opinions article .teaser-tools,
+.navigate .head {
     border-style: solid;
     border-width: 1px 0 0 0;
 }
@@ -477,7 +492,9 @@ input.btn,
 .news .caption.trailer,
 .live-popup h2,
 .area-25 .latest-news.with-thumbs .time,
-.video-js:focus {
+.video-js:focus,
+.sticky-related .area-100 .news-articles ul,
+.sticky-related .area-100 .news-articles ul li {
     border: none;
 }
 .dark .news-articles ul,
@@ -504,7 +521,8 @@ input.btn,
 .author-story .story-writer img,
 .btn,
 .aa-live,
-.latest-news.with-thumbs {
+.latest-news.with-thumbs,
+.navigate {
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
     -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
     -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
@@ -544,7 +562,8 @@ article .bookmark {
 .section-opinions article .teaser-tools,
 .area-25 .opinions,
 .no-bg,
-.no-bg ul {
+.no-bg ul,
+.sticky-related .area-100 .news-articles ul {
     box-shadow: none;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
@@ -695,6 +714,11 @@ article .teaser-tools .share ul li:hover {
         padding: 0;
     }
 }
+.sticky-related {
+-webkit-box-shadow: 0px -4px 5px -2px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px -4px 5px -2px rgba(0,0,0,0.1);
+box-shadow: 0px -4px 5px -2px rgba(0,0,0,0.1);
+}
 /*** SECTIONS THEMING ***/
 
 /*************************** VOD Theme & Live Stream ***************************/
@@ -709,7 +733,10 @@ body.live-streaming,
 .section-vod .main-header,
 .section-page .sticky nav.moveR.moveD,
 .section-vod .search-overlay,
-.section-vod article .teaser-tools .share ul {
+.section-vod article .teaser-tools .share ul,
+.section-vod .navigate .link,
+.section-vod .navigate,
+.section-vod .sticky-related {
     background-color: #020202;
 }
 .section-vod .main-header {
@@ -754,7 +781,10 @@ body.live-streaming,
 .section-vod .main-content .video-js .vjs-volume-level,
 .section-vod .main-content .video-js .vjs-play-progress,
 .live-streaming .video-js .vjs-volume-level,
-.live-streaming .video-js .vjs-play-progress {
+.live-streaming .video-js .vjs-play-progress,
+.section-vod .navigate:hover,
+.section-vod .navigate .time b,
+.section-vod .sticky-related h2{
     background-color: #d62919;
 }
 .section-vod header nav,
@@ -814,7 +844,8 @@ body.live-streaming h2,
 .section-vod .short-url input[type=text]:focus,
 .section-vod .area-25 .latest-news.with-thumbs .time span,
 .section-vod article .ordered li,
-.section-vod article .unordered li {
+.section-vod article .unordered li,
+.section-vod .navigate .link:hover {
     color: #e4e4e4;
 }
 .section-vod header nav a:hover,
@@ -835,7 +866,8 @@ body.live-streaming h2,
 .section-vod h6,
 .section-vod .highlighted,
 .section-vod .submenu .main-submenu a,
-.section-vod .mega-menu a:hover {
+.section-vod .mega-menu a:hover,
+.section-vod .navigate .head {
     color: #f90f0f !important;
 }
 .section-vod .main-content .submenu li,
@@ -864,7 +896,8 @@ body.live-streaming h2,
 .section-vod input[type=text]:focus,
 .section-vod input[type=password]:focus,
 .section-vod select:focus,
-.section-vod textarea:focus {
+.section-vod textarea:focus,
+.section-vod .navigate .head {
     border-color: #f90f0f;
 }
 .section-vod .episodes .section-ttl,
@@ -968,7 +1001,7 @@ body.live-streaming h2,
 .section-vod .hadath-freq {
     background: url(../gfx/frequencies_ttl02_dark.png) bottom center no-repeat;
 }
-.section-vod .main-content .alhadath a {
+.section-vod .main-content .alhadath-nav a {
     background: url(../gfx/alhadath-menu-dark.png) center no-repeat;
 }
 .section-vod .article-teaser {
@@ -991,7 +1024,10 @@ body.live-streaming h2,
 .section-aswaq .latest-news.with-thumbs .time span,
 .section-aswaq .latest-news.with-thumbs .time span.region,
 .section-aswaq .main-content .video-js .vjs-volume-level,
-.section-aswaq .main-content .video-js .vjs-play-progress {
+.section-aswaq .main-content .video-js .vjs-play-progress,
+.section-aswaq .navigate:hover,
+.section-aswaq .navigate .time b,
+.section-aswaq .sticky-related h2 {
     background-color: #083375;
 }
 .section-aswaq header nav a:hover,
@@ -1022,7 +1058,8 @@ body.live-streaming h2,
 .section-aswaq .news-articles .section-ttl,
 .section-aswaq .main-article .ttl,
 .section-aswaq .topic .section-ttl,
-.section-aswaq .ftr-disclaimer {
+.section-aswaq .ftr-disclaimer,
+.section-aswaq .navigate .head {
     color: #083375;
 }
 .section-aswaq header nav a,
@@ -1055,7 +1092,8 @@ body.live-streaming h2,
 .section-aswaq select:focus,
 .section-aswaq textarea:focus,
 .section-aswaq h2,
-.section-aswaq .topic .section-ttl {
+.section-aswaq .topic .section-ttl,
+.section-aswaq .navigate .head {
     border-color: #083375;
 }
 .section-aswaq .latest-news h2,
@@ -1117,7 +1155,10 @@ body.live-streaming h2,
 .section-ksa .latest-news.with-thumbs .time span,
 .section-ksa .latest-news.with-thumbs .time span.region,
 .section-ksa .main-content .video-js .vjs-volume-level,
-.section-ksa .main-content .video-js .vjs-play-progress {
+.section-ksa .main-content .video-js .vjs-play-progress,
+.section-ksa .navigate:hover,
+.section-ksa .navigate .time b,
+.section-ksa .sticky-related h2 {
     background-color: #246826;
 }
 .section-ksa header nav a:hover,
@@ -1146,7 +1187,8 @@ body.live-streaming h2,
 .section-ksa .highlighted,
 .section-ksa .news-articles .section-ttl,
 .section-ksa .main-article .ttl,
-.section-ksa .topic .section-ttl {
+.section-ksa .topic .section-ttl,
+.section-ksa .navigate .head {
     color: #246826;
 }
 .section-ksa header nav a,
@@ -1181,7 +1223,8 @@ body.live-streaming h2,
 .section-ksa h2,
 .section-ksa .topic .section-ttl,
 .section-ksa .lastest-news h2 a,
-.section-ksa .top-content h2 a {
+.section-ksa .top-content h2 a,
+.section-ksa .navigate .head {
     border-color: #246826;
 }
 .section-ksa .latest-news h2,
@@ -1216,7 +1259,10 @@ body.live-streaming h2,
 .section-africa .latest-news.with-thumbs .time span,
 .section-africa .latest-news.with-thumbs .time span.region,
 .section-africa .main-content .video-js .vjs-volume-level,
-.section-africa .main-content .video-js .vjs-play-progress {
+.section-africa .main-content .video-js .vjs-play-progress,
+.section-africa .navigate:hover,
+.section-africa .navigate .time b,
+.section-africa .sticky-related h2 {
     background-color: #e33541;
 }
 .section-africa header nav a:hover,
@@ -1246,7 +1292,8 @@ body.live-streaming h2,
 .section-africa .news-articles .section-ttl,
 .section-africa .main-article .ttl,
 .section-africa .topic .section-ttl,
-.aa-live h2 a {
+.aa-live h2 a,
+.section-africa .navigate .head {
     color: #e33541;
 }
 .section-africa header nav a,
@@ -1281,7 +1328,8 @@ body.live-streaming h2,
 .section-africa h2,
 .section-africa .topic .section-ttl,
 .section-africa .lastest-news h2 a,
-.section-africa .top-content h2 a {
+.section-africa .top-content h2 a,
+.section-africa .navigate .head {
     border-color: #e33541;
 }
 .section-africa .latest-news h2,
@@ -1316,7 +1364,10 @@ body.live-streaming h2,
 .section-sport .latest-news.with-thumbs .time span,
 .section-sport .latest-news.with-thumbs .time span.region,
 .section-sport .main-content .video-js .vjs-volume-level,
-.section-sport .main-content .video-js .vjs-play-progress {
+.section-sport .main-content .video-js .vjs-play-progress,
+.section-sport .navigate:hover,
+.section-sport .navigate .time b,
+.section-sport .sticky-related h2 {
     background-color: #ed6d21;
 }
 .section-sport header nav a:hover,
@@ -1345,7 +1396,8 @@ body.live-streaming h2,
 .section-sport .highlighted,
 .section-sport .news-articles .section-ttl,
 .section-sport .main-article .ttl,
-.section-sport .topic .section-ttl {
+.section-sport .topic .section-ttl,
+.section-sport .navigate .head {
     color: #ed6d21;
 }
 .section-sport header nav a,
@@ -1380,7 +1432,8 @@ body.live-streaming h2,
 .section-sport h2,
 .section-sport .topic .section-ttl,
 .section-sport .lastest-news h2 a,
-.section-sport .top-content h2 a {
+.section-sport .top-content h2 a,
+.section-sport .navigate .head {
     border-color: #ed6d21;
 }
 .section-sport .latest-news h2,
