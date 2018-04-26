@@ -78,7 +78,7 @@ function escapeToClose(event){
             article.classList.toggle('bigger');
         });
     }
-    if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
+    if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)|| navigator.userAgent.match(/Firefox/i)) {
         mobsubmenu.forEach(function(meun){
             meun.addEventListener('click', function(e) {
                 if(e.target.tagName.toLowerCase() !== 'a'){
@@ -113,7 +113,7 @@ function escapeToClose(event){
     var startSticky=  Math.floor( videoPlace +  articleVideo.offsetHeight + window.pageYOffset );
     }
     window.addEventListener('scroll', function() {
-        if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {} else {
+        if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) || navigator.userAgent.match(/Firefox/i)) {} else {
             var header = document.querySelector('header');
             var logo = document.querySelector('h1.logo');
             // var menu = document.querySelector('nav .main-content ul');
@@ -131,15 +131,16 @@ function escapeToClose(event){
                 mainNav.classList.remove('moveR');
                 body.classList.remove('margintop');
             }
-            if (window.pageYOffset > 245) {
+            if (window.pageYOffset > 190) {
                 mainNav.classList.add('moveR');
                 body.classList.add('margintop');
             } else {
                 mainNav.classList.remove('moveR');
                 body.classList.remove('margintop');
             }
-            if (window.pageYOffset > 250) {
+            if (window.pageYOffset > 190) {
                 mainNav.classList.add('moveD');
+                body.classList.add('margintop');
             } else {
                 mainNav.classList.remove('moveD');
             }

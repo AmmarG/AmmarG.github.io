@@ -676,6 +676,9 @@ nav .logo {
     display: block;
     background-position: 95px -184px;
     width: 170px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 170px;
+        flex: 0 0 170px;
 }
 .sticky nav.moveR ul {
     height: 40px;
@@ -2225,7 +2228,9 @@ article p a {
 .artcl-snippet {
     float: left;
     margin-right: 15px;
-    width: 45%;
+}
+.artcl-snippet iframe {
+    max-width: 100%;
 }
 .aa-live {
     width: 330px;

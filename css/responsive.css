@@ -435,6 +435,12 @@
     .navigate {
         display: none;
     }
+    article .ad25 .wrapper {
+        padding: 0;
+        text-align: center;
+        max-width: 300px;
+        margin: 0 auto;
+    }
     #Scroll li {
         display: block !important;
     }
@@ -1106,7 +1112,7 @@
     #main-video {
         position: relative;
     }
-    .alhadath-nav{
+    .alhadath-nav {
         height: auto !important;
     }
     .alhadath-nav a,
@@ -1117,9 +1123,9 @@
         height: 70px;
         -ms-flex-item-align: start;
         align-self: flex-start;
-        width:100%;
+        width: 100%;
     }
-    .alhadath-nav .hd2{
+    .alhadath-nav .hd2 {
         background: none;
         width: auto;
     }

@@ -1004,8 +1004,17 @@ body.live-streaming h2,
 .section-vod .main-content .alhadath-nav a {
     background: url(../gfx/alhadath-menu-dark.png) center no-repeat;
 }
+.section-vod .main-content .alhadath-nav a {
+    background: url(../gfx/alhadath-menu-dark.png) center no-repeat;
+}
+.section-vod .main-content .alhadath-nav .hd2 {
+    background-image: url(../gfx/aa-fm-logo.png);
+}
 .section-vod .article-teaser {
     background: url(../gfx/vod_video_bg.jpg) center bottom no-repeat;
+}
+.section-vod .loader {
+    background: url(../gfx/vod-loader.gif) center bottom no-repeat;
 }
 /*************************** Aswaq Theme ***************************/
 
