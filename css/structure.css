@@ -1034,9 +1034,11 @@ h2 {
 }
 .top-content .ttl {
     max-height: 45px;
+    overflow: visible;
 }
 .top-content .caption {
     padding-top: 10px;
+    text-align: left;
 }
 .caption,
 article .disclaimer,
@@ -2168,9 +2170,6 @@ form .valid {
 .area-25 .news li:last-child {
     margin-bottom: 0;
 }
-.section-vod .vod-slider .video-icon {
-    top: 20px;
-}
 .vod-program .cover {
     width: 52%;
     height: 456px;
@@ -2575,9 +2574,6 @@ article .box.infograph .caption {
 .section-opinions .article-hdr {
     padding-top: 0;
 }
-.section-vod .box.news.episodes .ttl {
-    bottom: 19%;
-}
 /************ Navigate Articles ************/
 
 .navigate {
@@ -2591,12 +2587,19 @@ article .box.infograph .caption {
     width: 30px;
     z-index: 9999;
     cursor: pointer;
+    direction: ltr;
 }
 .navigate .link {
     display: block;
-    margin-left: 30px;
-    width: 290px;
     height: 128px;
+}
+.navigate .link .wrapper {
+    display: block;
+    margin-left: 30px;
+    float: right;
+    width: 290px;
+    height: 100%;
+    position: absolute;
 }
 .navigate .link:before {
     position: absolute;
@@ -2654,18 +2657,17 @@ article .box.infograph .caption {
 .navigate.navigate-prev {
     left: auto;
     right: 0;
-    direction: ltr;
     height: 128px;
 }
-.navigate.navigate-prev .link {
-    margin-right: 30px;
+.navigate.navigate-prev .link .wrapper {
+    float: left;
     right: 0;
-    position: absolute;
-    display: block;
+    margin-right: 30px;
+    margin-left: 0;
 }
 .navigate.navigate-prev .link:before {
     left: auto;
-    right: -19px;
+    right: 10px;
     transform: rotate(315deg);
     -webkit-transform: rotate(315deg);
 }
@@ -2694,6 +2696,21 @@ article .box.infograph .caption {
 }
 .sticky-related .box {
     margin-bottom: 0;
+}
+.more-btn {
+    position: absolute;
+    width: 100%;
+    bottom: 18px;
+}
+.more-btn span {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arabiya;
+    font-size: 21px;
+}
+.news-articles {
+    position: relative;
 }
 /*************** Beta Logo, will be deleted ***************/
 
@@ -2873,6 +2890,9 @@ header h1.logo {
 .vjs-resolution-button {
     line-height: 320% !important;
 }
+.video-js {
+    outline: none;
+}
 /***sticky video*****/
 
 #main-video {
@@ -2900,3 +2920,43 @@ header h1.logo {
     max-width: 400px;
     max-height: 225px;
 }
+
+/*** Responsive Youtube video iFrame ***/
+
+.LimelightEmbeddedPlayer {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.LimelightEmbeddedPlayer iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/***AutoComplete Aswaq*****/
+.ui-menu{
+    z-index: 15;
+    width:600px;
+    background:#F1F1F1;
+    padding: 20px;
+    height: 400px;
+    overflow: scroll;
+}
+.ui-menu li{
+    padding: 10px 4px 10px 0;
+}
+.ui-menu li.ui-menu-item:nth-child(odd) {
+    background: white;
+}
+.ui-menu .search_news{
+    background: #e2e2e2 !important;
+    padding: 10px;
+}
+.ui-autocomplete-category{
+border-bottom: 1px solid #ccc;
+}
+

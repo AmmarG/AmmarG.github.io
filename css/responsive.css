@@ -830,8 +830,7 @@
     .section-vod .dark .news-articles .video-icon,
     .section-vod .news-mod02 li:first-child .video-icon,
     .section-vod .news li:first-child .video-icon {
-        background-position: 0 -618px !important;
-        background-color: transparent !important;
+        background-position: 0 -620px !important;
     }
     .section-vod .area-100 .news li:first-child .video-icon {
         top: 5px;
@@ -942,7 +941,7 @@
     .scroller-6,
     .scroller-8,
     .scroller-10 {
-        height: 505px;
+        height: 520px;
     }
     .page-404,
     .page-500 {
@@ -1068,6 +1067,15 @@
     .sticky-related {
         display: none !important;
     }
+    .more-btn {
+        position: inherit;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.05);
+        line-height: 270%;
+    }
+    .section-vod .more-btn {
+        background: rgba(255, 255, 255, 0.03);
+    }
     /***Submenu level2 ***/
     .section-page .submenu.level2 .arrow,
     .submenu.level2 .arrow,
@@ -1128,5 +1136,10 @@
     .alhadath-nav .hd2 {
         background: none;
         width: auto;
+    }
+    /***AutoComplete Aswaq*****/
+    .ui-menu {
+        width: 80%;
+        margin: 0 auto;
     }
 }

@@ -441,7 +441,7 @@ $(document).ready(function() {
         $(this).parent().addClass("current");
         $(this).parent().siblings().removeClass("current");
         var tab = $(this).attr("href");
-        $(this).parent().parent().siblings().children().not(tab).css("display", "none");
+        $(this).parent().parent().siblings(".tab").children().not(tab).css("display", "none");
         $(tab).fadeIn();
     });
 
@@ -460,18 +460,18 @@ $(document).ready(function() {
         $(this).toggleClass("show-icons");
     });
     
-    // Related artiles show/hide on page scroll
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > 300) { 
-            $('.sticky-related').slideDown(500);
-        }
-        if ($(window).scrollTop() < 300) {
-            $('.sticky-related').slideUp(500);
-        }
-        if ($(window).scrollTop() + $(window).height() == $(document).height()) {
-            $('.sticky-related').slideUp(500);
-        }
-    });
+    // Related artiles show/hide on page scroll (will be activated later)
+    // $(window).scroll(function() {
+    //    if ($(window).scrollTop() > 300) { 
+    //        $('.sticky-related').slideDown(500);
+    //    }
+    //    if ($(window).scrollTop() < 300) {
+    //        $('.sticky-related').slideUp(500);
+    //    }
+    //    if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+    //        $('.sticky-related').slideUp(500);
+    //    }
+    // });
 });
 
 // Verical Carousel
@@ -553,10 +553,102 @@ window.onload = function() {
         });
     };
 };
-$(document).ready(function() {
-    // iFrame resize
-    iFrameResize({
-        log: false,
-        checkOrigin: false
+
+//aswaq Search For companies
+
+function iniSearchAutoComplete() {
+    $.widget("custom.catcomplete", $.ui.autocomplete, {
+        _create: function() {
+            this._super();
+            this.widget().menu("option", "items", "> :not(.ui-autocomplete-category)");
+        },
+        _renderMenu: function(ul, items) {
+            var that = this,
+                currentCategory = "";
+            ul.append('<li class="search_news"><a>البحث في الأخبار</a></li>');
+            $.each(items, function(index, item) {
+                var li;
+                if (item.category != currentCategory) {
+                    ul.append("<li class='ui-autocomplete-category'>" + item.category + "</li>");
+                    currentCategory = item.category;
+                }
+                li = that._renderItemData(ul, item);
+                if (item.category) {
+                    li.attr("aria-label", item.category + " : " + item.label);
+                    li.attr("aria-link", item.url);
+                }
+            });
+        }
+
     });
+}
+
+function loadSearch() {
+    var xhr;
+    $(".section-aswaq .search-input").catcomplete({
+        delay: 0,
+        source: function(request, response) {
+            var regex = new RegExp(request.term, 'i');
+            if (xhr) {
+                xhr.abort();
+            }
+            xhr = $.ajax({
+                url: "/.resources/aa-templating-lm/webresources/static/aswaq/market-data.json",
+                dataType: "json",
+                cache: false,
+                success: function(data) {
+    
+                    var resArr = $.map(data.list, function(item) {
+                        if (regex.test(item.label)) {
+                            return {
+                                label: item.label,
+                                category: item.category,
+                                url: item.url
+                            };
+                        }
+                    });
+                    if (resArr.length == 0) {
+                        resArr = [{
+                            label: "",
+                            category: "",
+                            url: ""
+                        }];
+                    }
+                    response(resArr);
+                }
+            });
+        },
+        minlength: 0,
+        select: function(event, ui) {
+            console.log("select");
+            if (typeof ui.item === "undefined") {
+                console.log("select undefined");
+                var searchVal = $('.section-aswaq .search-input').val();
+                window.location.href = seartchPageLink + "?lang=ar&q=" + searchVal
+            } else {
+                console.log(ui.item.url);
+                window.location.href = ui.item.url;
+            }
+        }
+    });
+}
+//END iniSearch AutoComplete
+$(document).ready(function() {
+
+    // init Search for aswaq companies
+    try {
+    if($('.section-aswaq  .search-input').length){
+    console.log("start init search");
+            iniSearchAutoComplete();
+            loadSearch();
+            console.log("end init search");
+    }
+    } catch (err) {
+        console.log(err.message);
+    }
+        iFrameResize({
+            log: false,
+            checkOrigin: false
+        });
 });
+

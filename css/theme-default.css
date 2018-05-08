@@ -164,7 +164,7 @@ article .teaser-tools .share ul,
 .scroller .navigator .prev,
 .scroller .navigator .next,
 .latest-news.with-thumbs,
-.navigate .link,
+.navigate .link .wrapper,
 .navigate,
 .sticky-related {
     background-color: #FFF;
@@ -238,7 +238,8 @@ article .bookmark:hover,
 .area-25 .latest-news.with-thumbs .time span,
 .navigate .time b,
 .sticky-related .news-articles h2,
-.sticky-related .news-articles h2 a {
+.sticky-related .news-articles h2 a,
+.section-vod .more-btn:hover span {
     color: #FFF;
 }
 header nav a,
@@ -262,7 +263,8 @@ input.fld,
 .article-hdr h4,
 article p a,
 .unordered li::before,
-.navigate .head {
+.navigate .head,
+.more-btn {
     color: #6e2968;
 }
 body,
@@ -279,7 +281,8 @@ h6.flag,
 .aa-live .close-btn,
 .en table tr td:first-child span,
 .article-card:hover p,
-.navigate .link:hover {
+.navigate .link:hover,
+.more-btn:hover span {
     color: #333;
 }
 .ad25 h2,
@@ -734,7 +737,7 @@ body.live-streaming,
 .section-page .sticky nav.moveR.moveD,
 .section-vod .search-overlay,
 .section-vod article .teaser-tools .share ul,
-.section-vod .navigate .link,
+.section-vod .navigate .link .wrapper,
 .section-vod .navigate,
 .section-vod .sticky-related {
     background-color: #020202;
@@ -845,7 +848,8 @@ body.live-streaming h2,
 .section-vod .area-25 .latest-news.with-thumbs .time span,
 .section-vod article .ordered li,
 .section-vod article .unordered li,
-.section-vod .navigate .link:hover {
+.section-vod .navigate .link:hover,
+.section-vod article .box.infograph .caption {
     color: #e4e4e4;
 }
 .section-vod header nav a:hover,
@@ -867,7 +871,8 @@ body.live-streaming h2,
 .section-vod .highlighted,
 .section-vod .submenu .main-submenu a,
 .section-vod .mega-menu a:hover,
-.section-vod .navigate .head {
+.section-vod .navigate .head,
+.section-vod .more-btn {
     color: #f90f0f !important;
 }
 .section-vod .main-content .submenu li,
@@ -878,10 +883,9 @@ body.live-streaming h2,
     background-position: -77px -390px;
 }
 .section-vod .sticky nav.moveR .logo {
-    transform-origin: 432px 29px;
-    background-position: 0px -441px;
+    transform-origin: 126px -21px;
+    background-position: 0px -339px;
     transform: scale(0.8);
-    width: 211px;
     padding-left: 0;
 }
 .section-vod .search-overlay .search-input:focus,
@@ -1064,11 +1068,11 @@ body.live-streaming h2,
 .section-aswaq .box.services a,
 .section-aswaq h6,
 .section-aswaq .highlighted,
-.section-aswaq .news-articles .section-ttl,
 .section-aswaq .main-article .ttl,
 .section-aswaq .topic .section-ttl,
 .section-aswaq .ftr-disclaimer,
-.section-aswaq .navigate .head {
+.section-aswaq .navigate .head,
+.section-aswaq .more-btn {
     color: #083375;
 }
 .section-aswaq header nav a,
@@ -1109,8 +1113,7 @@ body.live-streaming h2,
 .section-aswaq .top-content h2,
 .section-aswaq .topic h2,
 .section-aswaq .main-header,
-.section-aswaq .lastest-news h2 a,
-.section-aswaq .top-content h2 a {
+.section-aswaq .lastest-news h2 a {
     border-color: #ccc;
 }
 .section-aswaq .alfa-filter li.disabled,
@@ -1194,10 +1197,10 @@ body.live-streaming h2,
 .section-ksa .box.services a,
 .section-ksa h6,
 .section-ksa .highlighted,
-.section-ksa .news-articles .section-ttl,
 .section-ksa .main-article .ttl,
 .section-ksa .topic .section-ttl,
-.section-ksa .navigate .head {
+.section-ksa .navigate .head,
+.section-ksa .more-btn {
     color: #246826;
 }
 .section-ksa header nav a,
@@ -1298,11 +1301,11 @@ body.live-streaming h2,
 .section-africa .box.services a,
 .section-africa h6,
 .section-africa .highlighted,
-.section-africa .news-articles .section-ttl,
 .section-africa .main-article .ttl,
 .section-africa .topic .section-ttl,
 .aa-live h2 a,
-.section-africa .navigate .head {
+.section-africa .navigate .head,
+.section-africa .more-btn {
     color: #e33541;
 }
 .section-africa header nav a,
@@ -1403,10 +1406,10 @@ body.live-streaming h2,
 .section-sport .box.services a,
 .section-sport h6,
 .section-sport .highlighted,
-.section-sport .news-articles .section-ttl,
 .section-sport .main-article .ttl,
 .section-sport .topic .section-ttl,
-.section-sport .navigate .head {
+.section-sport .navigate .head,
+.section-sport .more-btn {
     color: #ed6d21;
 }
 .section-sport header nav a,
