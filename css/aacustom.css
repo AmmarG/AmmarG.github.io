@@ -25,8 +25,8 @@ width:100%
 
 .notification-ico{
 	background-image: url(../icon/aa-dashboard/flow-status/status-0.png);
-    width: 14px;
-    height: 17px;
+    width: 24px;
+    height: 27px;
     display: block;
 }
 
@@ -44,17 +44,22 @@ width:100%
 
 .action-preview{
 	background-image: url(../icon/aa-dashboard/view_content.png);
-    width: 17px;
-    height: 17px;
+    width: 30px;
+    height: 30px;
     display: block;
     float: left;
     margin-left: 3px;
 }
 
+#simpletable a.notification-accept-action , #simpletable a.notification-delete-action{
+    text-decoration: underline;
+    padding-left:6px;
+}
+
 .action-edit{
 	background-image: url(../icon/aa-dashboard/edit_content.png);
-    width: 17px;
-    height: 17px;
+    width: 30px;
+    height: 30px;
     display: block;
     float: left;
     margin-left: 3px;
@@ -62,8 +67,8 @@ width:100%
 
 .action-delete{
 	background-image: url(../icon/aa-dashboard/delete.png);
-    width: 17px;
-    height: 17px;
+    width: 30px;
+    height: 30px;
     display: block;
     float: left;
     margin-left: 3px;
@@ -178,7 +183,7 @@ nav.editor-mod li a{
      -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background: #c1c1c1;
+    background: #E1D1E1;
     border: 2px solid #fff;
     margin-bottom: 5px;
 }
@@ -186,8 +191,17 @@ nav.editor-mod li a{
     -ms-grid-row-align: center;
     -ms-flex-item-align: center;
         align-self: center;
-    color: #fefefe;
-    font-size: 16px;
+    color: #000000;
+    font-size: 33px;
+}
+
+table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td {
+    font-size: 15px;
+    word-wrap:normal;
+    white-space:normal;
+}
+table.table-bordered.dataTable tbody td.title {
+    font-size: 22px;
 }
 
 /*****imageDialog***/
@@ -292,7 +306,7 @@ header nav{
     height: auto;
 }
 .mega-menu{
-    display:block !important;
+    /*display:block !important;*/
     position: relative;
     top: 0;
 }
@@ -363,4 +377,12 @@ background-size: cover;
 }
 #videos-gal-list  li .title{
     font-size: 17px;
+}
+
+.error {
+    color: red;
+}
+
+.nav-tabs .nav-link{
+	font-size: 22px;
 }

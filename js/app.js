@@ -515,7 +515,85 @@ function animate(begin, end, finalTask) {
         carousel.style.top = top + 'px';
     }, 1000 / 60);
 }
+// Start Slider
+(function() {
+            const images = document.getElementsByClassName("slideshow-img")
+            const radios = document.getElementsByClassName("selector-radio")
+            const slideShowBtnLeft = document.getElementById("slideshow-btn-left")
+            const slideShowBtnRight = document.getElementById("slideshow-btn-right")
 
+            let currentIndex = 0;
+
+            const rotateSelectedImage = (incrementValue = 1) => {
+                let nextIndex;
+                if (currentIndex + incrementValue > images.length - 1) {
+                    nextIndex = 0;
+                } else if (currentIndex + incrementValue < 0) {
+                    nextIndex = images.length - 1
+                } else {
+                    nextIndex = currentIndex + incrementValue;
+                }
+
+                rotateImage(currentIndex, nextIndex);
+                currentIndex = nextIndex;
+            }
+
+            const rotateImage = (currentIndex, nextIndex) => {
+                images[currentIndex].classList.remove("slideshow-img-active");
+                images[nextIndex].classList.add("slideshow-img-active");
+                radios[nextIndex].checked = true;
+            }
+
+            let rotatingTimer = (callback, time) => {
+                let interval = null;
+                const savedCallback = callback;
+                const savedTime = time;
+
+                const restartInterval = () => {
+                    clearInterval(interval);
+                    startInterval();
+                }
+
+                const stopInterval = () => {
+                    clearInterval(interval);
+                }
+
+                const startInterval = () => {
+                    setTimeout(() => {
+                        if (interval) clearInterval(interval);
+                        interval = setInterval(savedCallback, savedTime);
+                    }, savedTime)
+                }
+                return {
+                    startInterval,
+                    stopInterval,
+                    restartInterval
+                }
+            }
+
+            const timer = rotatingTimer(rotateSelectedImage, 7000)
+
+            Array.from(radios).forEach(radio => {
+                radio.addEventListener("click", event => {
+                    rotateImage(currentIndex, +event.target.value);
+                    currentIndex = +event.target.value;
+                    timer.startInterval();
+                })
+            })
+
+            slideShowBtnLeft.addEventListener("click", () => {
+                rotateSelectedImage();
+                timer.startInterval();
+            })
+
+            slideShowBtnRight.addEventListener("click", () => {
+                rotateSelectedImage(-1);
+                timer.startInterval();
+            })
+
+            timer.startInterval();
+        })();
+// End Slider
 window.onload = function() {
     var carousel = Carousel.carousel = document.getElementById('ver-carousel'),
         listItems = carousel.getElementsByTagName('li'),
