@@ -595,41 +595,45 @@ function animate(begin, end, finalTask) {
         })();
 // End Slider
 window.onload = function() {
-    var carousel = Carousel.carousel = document.getElementById('ver-carousel'),
-        listItems = carousel.getElementsByTagName('li'),
-        numItems = listItems.length,
-        itemWidth = Carousel.width,
-        rowHeight = listItems.height;
-    carousel.style.width = itemWidth + 'px';
-    for (var i = 0; i < numItems; ++i) {
-        var list = listItems[i];
-    }
-    Carousel.rowHeight = carousel.getElementsByTagName('li')[0].offsetHeight;
-    carousel.style.visibility = 'visible';
-    var wrapper = Carousel.wrapper = document.createElement('div');
-    wrapper.id = 'carouselWrapper';
-    wrapper.style.width = carousel.offsetWidth + 'px';
-    wrapper.style.height = carousel.offsetHeight + 'px';
-    carousel.parentNode.insertBefore(wrapper, carousel);
-    wrapper.appendChild(carousel);
-    var prevButton = document.getElementById('caro-prev'),
-        nextButton = document.getElementById('caro-next');
-    prevButton.onclick = function() {
-        prevButton.disabled = nextButton.disabled = true;
-        rotateForward();
-        animate(-Carousel.rowHeight, 0, function() {
-            carousel.style.top = '0';
-            prevButton.disabled = nextButton.disabled = false;
-        });
-    };
-    nextButton.onclick = function() {
-        prevButton.disabled = nextButton.disabled = true;
-        animate(0, -Carousel.rowHeight, function() {
-            rotateBackward();
-            carousel.style.top = '0';
-            prevButton.disabled = nextButton.disabled = false;
-        });
-    };
+    try {
+            var carousel = Carousel.carousel = document.getElementById('ver-carousel'),
+            listItems = carousel.getElementsByTagName('li'),
+            numItems = listItems.length,
+            itemWidth = Carousel.width,
+            rowHeight = listItems.height;
+            carousel.style.width = itemWidth + 'px';
+        for (var i = 0; i < numItems; ++i) {
+            var list = listItems[i];
+        }
+        Carousel.rowHeight = carousel.getElementsByTagName('li')[0].offsetHeight;
+        carousel.style.visibility = 'visible';
+        var wrapper = Carousel.wrapper = document.createElement('div');
+        wrapper.id = 'carouselWrapper';
+        wrapper.style.width = carousel.offsetWidth + 'px';
+        wrapper.style.height = carousel.offsetHeight + 'px';
+        carousel.parentNode.insertBefore(wrapper, carousel);
+        wrapper.appendChild(carousel);
+        var prevButton = document.getElementById('caro-prev'),
+            nextButton = document.getElementById('caro-next');
+        prevButton.onclick = function() {
+            prevButton.disabled = nextButton.disabled = true;
+            rotateForward();
+            animate(-Carousel.rowHeight, 0, function() {
+                carousel.style.top = '0';
+                prevButton.disabled = nextButton.disabled = false;
+            });
+        };
+        nextButton.onclick = function() {
+            prevButton.disabled = nextButton.disabled = true;
+            animate(0, -Carousel.rowHeight, function() {
+                rotateBackward();
+                carousel.style.top = '0';
+                prevButton.disabled = nextButton.disabled = false;
+            });
+        };
+    } catch(err){
+		console.log("error in windowLoad" + err.message)
+	}
 };
 
 //aswaq Search For companies
@@ -709,6 +713,44 @@ function loadSearch() {
             }
         }
     });
+}
+// Initialize native ads
+function iniNativeAds(){
+	 console.log("iniNativeAds start");
+	 // init Native Ads
+    if($("#Native").length > 0) {
+    	googletag.defineSlot(adUnitName, [[2, 2], 'fluid'], "Native").setCollapseEmptyDiv(true, true).setTargeting("MVPlacementKey", nativeTarge).addService(googletag.pubads());
+        
+        googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+        	 if (event.slot.getSlotElementId() == "NativeHomePage") {
+        	       if(event.creativeId){
+        	    	   console.log("call remove last NativeHomePage");
+        	    	   $("#Native").siblings().last().remove();  
+        	       }
+        	 }
+        	 if (event.slot.getSlotElementId() == "NativeSection") {
+        	       if(event.creativeId){
+        	    	   console.log("call remove last NativeSection");
+        	    	   $("#Native").siblings().last().remove();  
+        	       }
+        	 }
+        	 if (event.slot.getSlotElementId() == "NativeROS") {
+        	       if(event.creativeId){
+        	    	   console.log("call remove last NativeROS");
+        	    	   $("#Native").siblings().last().remove();  
+        	       }
+        	 }
+        	 if (event.slot.getSlotElementId() == "Native") {
+	      	       if(event.creativeId){
+	      	    	   console.log("call remove last Native");
+	      	    	   $("#Native").siblings().last().remove();  
+	      	       }
+        	 }
+        });
+    }else{
+    	console.log("Native Id not exsist");
+    }
+	
 }
 //END iniSearch AutoComplete
 $(document).ready(function() {

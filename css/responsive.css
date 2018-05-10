@@ -243,9 +243,6 @@
         z-index: 100;
         border-bottom: solid 1px #FFF;
     }
-    .section-vod .main-header {
-        border-bottom: solid 1px #000;
-    }
     .global-wrapper {
         padding-top: 90px;
     }
@@ -797,6 +794,7 @@
     /*** VOD ***/
     .section-vod .main-header {
         height: auto;
+        border-bottom: solid 1px #000;
     }
     .vod-slider.news .caption.trailer {
         right: 10px;
