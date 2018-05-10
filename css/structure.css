@@ -720,6 +720,7 @@ section {
     float: right;
     width: 290px;
     margin-right: 0;
+    margin-bottom: 0;
 }
 .news.main-slider .fix-for-slider li:first-child {
     margin-left: 20px;
@@ -731,6 +732,7 @@ section {
 .fix-for-slider {
     clear: both;
     padding-top: 15px;
+    overflow: hidden;
 }
 .news li:first-child,
 .area-50 .news li:first-child {
@@ -1032,12 +1034,11 @@ h2 {
     width: 100%;
 }
 .top-content li {
-    padding-bottom: 18px;
-    margin-bottom: 18px;
+    padding-bottom: 11px;
+    margin-bottom: 15px;
 }
 .top-content li:last-child {
     margin-bottom: 0;
-    padding-bottom: 17px;
 }
 .top-content li img {
     width: 100%;
@@ -1118,7 +1119,10 @@ form .valid {
 .opinions li {
     clear: both;
     overflow: hidden;
-    padding: 7px 0;
+    padding: 13px 0;
+}
+.opinions li:first-child {
+    padding-top: 0;
 }
 .opinions .pic {
     float: right;
@@ -2504,19 +2508,19 @@ i.down {
     overflow: hidden;
 }
 .scroller-4 {
-    height: 521px;
+    height: 549px;
 }
 .scroller-6 {
-    height: 761px;
+    height: 823px;
 }
 .scroller-7 {
-    height: 882px;
+    height: 949px;
 }
 .scroller-8 {
-    height: 1003px;
+    height: 1082px;
 }
 .scroller-10 {
-    height: 1245px;
+    height: 1349px;
 }
 article .box.infograph .caption {
     display: block;
@@ -2591,6 +2595,10 @@ article .box.infograph .caption {
 }
 .section-opinions .article-hdr {
     padding-top: 0;
+}
+.area-50.true-50 {
+    -ms-flex: 0 0 650px;
+    flex: 0 0 650px;
 }
 /************ Navigate Articles ************/
 
