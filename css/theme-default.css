@@ -82,7 +82,7 @@ footer .social .telegram {
     background-position: -263px 0;
 }
 .article-hdr time {
-    background-position: right -442px;
+    background-position: right -867px;
 }
 .teaser-tools ul .share {
     background-position: 50px -468px;
@@ -524,7 +524,7 @@ input.btn,
 .topic,
 .infograph,
 .section-opinions article,
-.opinions,
+.opinions ul,
 .opinions .pic,
 .top-writers li,
 .writers li .pic,

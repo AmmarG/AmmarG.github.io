@@ -353,8 +353,8 @@
     .news li {
         margin-bottom: 10px !important;
     }
-    .news li:nth-last-of-type(-n+2) {
-        margin-bottom: 0 !important;
+    .box.news {
+        margin-bottom: 10px;
     }
     .area-25 .news-articles li,
     .area-25 .news.programs li,
@@ -396,7 +396,7 @@
     .area-75,
     .area-50,
     .area-25,
-    .area-50.true-50 {
+    .true-50 .area-50 {
         -webkit-box-flex: auto;
         -ms-flex: auto;
         flex: auto;
@@ -477,7 +477,7 @@
         line-height: 270%;
     }
     .breaking-news p {
-        line-height: 131%;
+        line-height: 190%;
         font-size: 13px;
     }
     .breaking-news .close {
