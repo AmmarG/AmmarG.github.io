@@ -61,25 +61,25 @@ footer .logo {
     background-position: 0 -390px;
 }
 footer .social .fb {
-    background-position: 0 0;
+    background-position: -296px -59px;
 }
 footer .social .twtr {
-    background-position: -44px 0;
+    background-position: -47px -59px;
 }
 footer .social .insta {
-    background-position: -88px 0;
+    background-position: -196px -59px;
 }
 footer .social .snap {
-    background-position: -132px 0;
+    background-position: -147px -59px;
 }
 footer .social .yt {
-    background-position: -176px 0;
+    background-position: 0 -59px;
 }
 footer .social .gplus {
-    background-position: -220px 0;
+    background-position: -246px -59px;
 }
 footer .social .telegram {
-    background-position: -263px 0;
+    background-position: -97px -59px;
 }
 .article-hdr time {
     background-position: right -867px;
@@ -114,7 +114,8 @@ footer .social .telegram {
 body,
 footer .logo,
 footer .copyrights,
-article .disclaimer {
+article .disclaimer,
+footer .social {
     background-color: #f1f1f1;
 }
 .top-info,

@@ -1156,9 +1156,9 @@ footer .logo {
     width: 145px;
 }
 footer .copyrights {
-    float: left;
+    float: right;
     font-size: 11px;
-    padding: 22px 20px 0 0;
+    padding: 22px 0 0 20px;
 }
 footer ul {
     padding: 0 50px;
@@ -1378,7 +1378,27 @@ input::-webkit-input-placeholder {
 footer .social {
     font-family: Arabiya;
     font-size: 31px;
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 27%;
+}
+footer .social .lbl {
     display: none;
+}
+footer .social ul {
+    padding: 0;
+    width: auto !important;
+    border: none;
+    padding: 0 20px 0 0;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+footer .social li {
+    width: 42px;
+    height: 42px;
+    padding: 0;
 }
 .social li a {
     width: 100%;
