@@ -1031,6 +1031,9 @@ body.live-streaming h2,
 .section-vod .loader {
     background: url(../gfx/vod-loader.gif) center bottom no-repeat;
 }
+.section-vod .article-hdr time {
+    background-position: right -987px;
+}
 /*************************** Aswaq Theme ***************************/
 
 .section-aswaq .main-header,
