@@ -740,7 +740,8 @@ body.section-vod,
 .section-vod footer .logo,
 .section-vod footer .copyrights,
 body.live-streaming,
-.section-vod .top-info {
+.section-vod .top-info,
+.section-vod footer .social {
     background-color: #0e0e0e;
 }
 .section-vod .main-header,
@@ -882,7 +883,9 @@ body.live-streaming h2,
 .section-vod .submenu .main-submenu a,
 .section-vod .mega-menu a:hover,
 .section-vod .navigate .head,
-.section-vod .more-btn {
+.section-vod .more-btn,
+.section-vod footer li:first-child a,
+.section-vod footer li a:hover {
     color: #f90f0f !important;
 }
 .section-vod .main-content .submenu li,

@@ -1156,9 +1156,9 @@ footer .logo {
     width: 145px;
 }
 footer .copyrights {
-    float: right;
+    float: left;
     font-size: 11px;
-    padding: 22px 0 0 20px;
+    padding: 22px 22px 0px 353px;
 }
 footer ul {
     padding: 0 50px;
