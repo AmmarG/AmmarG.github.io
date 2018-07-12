@@ -9,6 +9,11 @@
         zoom: 100%;
         zoom: 100%;
     }
+    body .leaderboard * {
+        -moz-transform: scale(1.15, 1.15);
+        zoom: 1.15;
+        zoom: 115%;
+    }
 }
 @media (min-width: 481px) and (max-width: 1154px) {
     body {
@@ -20,6 +25,11 @@
         -moz-transform: scale(1, 1);
         zoom: 100%;
         zoom: 100%;
+    }
+    body .leaderboard * {
+        -moz-transform: scale(1.15, 1.15);
+        zoom: 1.15;
+        zoom: 115%;
     }
 }
 @media (max-width: 480px) {
