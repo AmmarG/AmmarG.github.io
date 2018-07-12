@@ -1,0 +1,259 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/structure.css">
+    <link rel="stylesheet" href="css/theme-default.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+</head>
+
+<body>
+   <div class="area-50">
+    <div class="box news">
+       <style type="text/css">
+        .gallery-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .slideshow {
+            position: relative;
+            height: 600px;
+            width: 900px;
+        }
+        .slideshow-img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: all 700ms ease-in-out;
+            z-index: 0;
+        }
+        .slideshow img {
+            z-index: 0;
+        }
+        .slideshow-img-active {
+            opacity: 1;
+        }
+        .slideshow-btn {
+            position: absolute;
+            top: calc(50% - 25px);
+            display: flex;
+            cursor: pointer;
+            background: #000;
+            color: #FFF;
+        }
+        .slideshow-polyline {
+            transition: all 200ms ease-in-out;
+        }
+        .slideshow-btn-left {
+            left: 0px;
+        }
+        .slideshow-btn-right {
+            right: 0px;
+        }
+        .selector {
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .selector-radio {
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+        .selector-label {
+            margin-right: 1em;
+        }
+        .selector-label:before {
+            content: "";
+            cursor: pointer;
+            display: inline-block;
+            width: 0.5em;
+            height: 0.5em;
+            margin: 0.25em;
+            border-radius: 100%;
+            vertical-align: -3px;
+            border: 2px solid #000;
+            padding: 4px;
+            background-color: transparent;
+            background-clip: content-box;
+            transition: all 0.7s ease;
+        }
+        .selector-radio:hover + .selector-label:before {
+            border-color: #3dbfef;
+        }
+        .selector-radio:checked + .selector-label:before {
+            background-color: #808080;
+        }
+        /*** To be removed ***/
+        .slideshow a.cover .ttl {
+            font-size: 25px;
+            font-weight: bold;
+            position: absolute;
+            padding: 0 15px;
+            line-height: 160%;
+            bottom: 3%;
+            right: 0;
+            display: block;
+        }
+        .slideshow a.cover .breaking {
+            background-color: #F33;
+            padding: 10px 15px 10px 30px;
+            font-size: 22px;
+            font-family: 'Noto Naskh Arabic';
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            bottom: 20%;
+        }
+        .slideshow a.cover {
+            xz-index: 9;
+        }
+        .slideshow .video-icon {
+            top: 45%;
+            left: 45%;
+        }
+    </style>
+       <script>
+        (function() {
+            const images = document.getElementsByClassName("slideshow-img")
+            const radios = document.getElementsByClassName("selector-radio")
+            const slideShowBtnLeft = document.getElementById("slideshow-btn-left")
+            const slideShowBtnRight = document.getElementById("slideshow-btn-right")
+
+            let currentIndex = 0;
+
+            const rotateSelectedImage = (incrementValue = 1) => {
+                let nextIndex;
+                if (currentIndex + incrementValue > images.length - 1) {
+                    nextIndex = 0;
+                } else if (currentIndex + incrementValue < 0) {
+                    nextIndex = images.length - 1
+                } else {
+                    nextIndex = currentIndex + incrementValue;
+                }
+
+                rotateImage(currentIndex, nextIndex);
+                currentIndex = nextIndex;
+            }
+
+            const rotateImage = (currentIndex, nextIndex) => {
+                images[currentIndex].classList.remove("slideshow-img-active");
+                images[nextIndex].classList.add("slideshow-img-active");
+                radios[nextIndex].checked = true;
+            }
+
+            let rotatingTimer = (callback, time) => {
+                let interval = null;
+                const savedCallback = callback;
+                const savedTime = time;
+
+                const restartInterval = () => {
+                    clearInterval(interval);
+                    startInterval();
+                }
+
+                const stopInterval = () => {
+                    clearInterval(interval);
+                }
+
+                const startInterval = () => {
+                    setTimeout(() => {
+                        if (interval) clearInterval(interval);
+                        interval = setInterval(savedCallback, savedTime);
+                    }, savedTime)
+                }
+                return {
+                    startInterval,
+                    stopInterval,
+                    restartInterval
+                }
+            }
+
+            const timer = rotatingTimer(rotateSelectedImage, 7000)
+
+            Array.from(radios).forEach(radio => {
+                radio.addEventListener("click", event => {
+                    rotateImage(currentIndex, +event.target.value);
+                    currentIndex = +event.target.value;
+                    timer.startInterval();
+                })
+            })
+
+            slideShowBtnLeft.addEventListener("click", () => {
+                rotateSelectedImage(-1);
+                timer.startInterval();
+            })
+
+            slideShowBtnRight.addEventListener("click", () => {
+                rotateSelectedImage();
+                timer.startInterval();
+            })
+
+            timer.startInterval();
+        })();
+    </script>
+        <div class="slideshow">
+            <div class="slideshow-img slideshow-img-active">
+                <img src="https://unsplash.it/900/600/?image=1011" alt="" />
+                <a class="cover" href="#" title="">
+                    <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
+                    <span class="video-icon"></span>
+                    <span class="breaking">عاجل</span>
+                </a>
+            </div>
+            <div class="slideshow-img">
+                <img src="https://unsplash.it/900/600/?image=1012" alt="" />
+                <a class="cover" href="#" title="">
+                    <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
+                    <span class="video-icon"></span>
+                    <span class="breaking">عاجل</span>
+                </a>
+            </div>
+            <div div class="slideshow-img">
+                <img src="https://unsplash.it/900/600/?image=1005" alt="" />
+                <a class="cover" href="#" title="">
+                    <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
+                    <span class="video-icon"></span>
+                    <span class="breaking">عاجل</span>
+                </a>
+            </div>
+            <div div class="slideshow-img">
+                <img src="https://unsplash.it/900/600/?image=883" alt="" />
+                <a class="cover" href="#" title="">
+                    <span class="ttl">معتقلو حماة المركزي : هكذا أسرنا عميد السجن وقائد الشرطة</span>
+                    <span class="video-icon"></span>
+                    <span class="breaking">عاجل</span>
+                </a>
+            </div>
+            <div id="slideshow-btn-left" class="slideshow-btn slideshow-btn-left">
+                next
+            </div>
+            <div id="slideshow-btn-right" class="slideshow-btn slideshow-btn-right">
+                prev
+            </div>
+        </div>
+        <div class="selector">
+            <input class="selector-radio" checked type="radio" name="slideNumber" id="0" value="0">
+            <label class="selector-label" for="0"></label>
+            <input class="selector-radio" type="radio" name="slideNumber" id="1" value="1">
+            <label class="selector-label" for="1"></label>
+            <input class="selector-radio" type="radio" name="slideNumber" id="2" value="2">
+            <label class="selector-label" for="2"></label>
+            <input class="selector-radio" type="radio" name="slideNumber" id="3" value="3">
+            <label class="selector-label" for="3"></label>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
