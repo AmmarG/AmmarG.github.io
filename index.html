@@ -2,23 +2,30 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+    <title>AlHadath Live</title>
+    <script type="text/javascript" src="https://player.kwikmotion.com/ClientsTemplates/alarabiya/KwikLink_3e3874be-69a7-436f-83c9-11ff2d7e4f5c.js"></script>
+    <link rel="stylesheet" href="player.css">
 </head>
 
 <body>
-    <div id="player"></div>
-    <script type="text/javascript" src="https://player.kwikmotion.com/ClientsTemplates/your/kwikplayer/embed/link.js"></script>
-    <script>
-        kwikMotion("player", {
-            width: 720,
-            height: 406,
-            aspectratio: "16:9",
-            sources: [{
-                file: "https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8"
-            }]
-        });
-    </script>
+    <div id='hadath_live'></div>
+    <div id="error_message_div" style="display: none; height: 50px; position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0; margin: auto; text-align: center;
+    color: white; font-size: 20px; max-width: 500px;
+    width:100%; font-family: Myriad Pro, Arial">
+        <span id="error_message">Your desired error message.</span>
+        <script>
+            kwikMotion('hadath_live', {
+                width: 720,
+                height: 406,
+                debug: true,
+                autostart: true,
+                sources: [{
+                    file: "https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8"
+                }],
+            });
+        </script>
+    </div>
 </body>
 
 </html>
