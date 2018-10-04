@@ -541,18 +541,27 @@
 .video-js * {
     outline: 0
 }
-.video-js .vjs-volume-level,
-.vjs-menu .vjs-menu-item.vjs-menu-item:focus,
-.vjs-menu .vjs-menu-item.vjs-menu-item:hover {
-    background-color: #ac1600!important
+.video-js .vjs-volume-level:before {
+    background-color: #6e2968!important;
+    color: #993790;
+    border-radius: 50%;
+    left: -0.36em!important;
 }
 .vjs-menu .vjs-menu-item.vjs-selected,
 .vjs-menu .vjs-menu-item.vjs-selected:focus,
-.vjs-menu .vjs-menu-item.vjs-selected:hover {
-    background-color: #0f14ae!important;
+.vjs-menu .vjs-menu-item.vjs-selected:hover,
+.vjs-menu .vjs-menu-item.vjs-menu-item:focus {
+    background-color: #6e2968!important;
     color: #FFF!important
+}
+.vjs-menu .vjs-menu-item.vjs-menu-item:hover {
+    background-color: #FFF!important;
+    color: #333!important
 }
 .vjs-menu.vjs-contextmenu-ui-menu .vjs-menu-item.vjs-menu-item:focus,
 .vjs-menu.vjs-contextmenu-ui-menu .vjs-menu-item.vjs-menu-item:hover {
     background-color: transparent!important
+}
+.vjs-hls-active {
+    color: #9c3693!important;
 }
