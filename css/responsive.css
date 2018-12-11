@@ -36,6 +36,11 @@
     body {
         min-width: auto;
     }
+    body.live-streaming {
+        -moz-transform: scale(0.65, 0.65);
+        zoom: 65%;
+        zoom: 65%;
+    }
     .noscroll {
         overflow: hidden;
     }
@@ -1286,5 +1291,25 @@
     }
     .section-urdu footer .social .lbl {
         line-height: 50%;
+    }
+    .live-popup {
+        padding: 15px;
+    }
+    .live-popup h2 {
+    padding-right: 50px;
+}
+    .live-popup .services .devices {
+        padding-left: 0;
+    }
+    .live-popup .services .devices a {
+        width: 80px;
+        margin-left: 15px;
+    }
+    .live-popup .services .devices a:last-child {
+        margin-left: 0;
+    }
+    .live-popup .services .channels a {
+        width: 60px;
+        margin-left: 10px;
     }
 }
