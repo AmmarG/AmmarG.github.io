@@ -372,12 +372,6 @@
         margin: 0 0 auto 0 !important;
         padding: 0 0 auto 0 !important;
     }
-    .news.full-mob li {
-    width: 100% !important;
-    height: auto !important;
-    float: none !important;
-    margin: 0 0 20px 0 !important;
-}
     .news li {
         margin-bottom: 10px !important;
     }
@@ -408,6 +402,16 @@
         background-position: 0 -620px;
         width: 50px;
         height: 50px;
+    }
+    .news li .video-icon,
+    .news-articles .video-icon,
+    .news-mod02 li .video-icon,
+    .section-vod .area-25 .news li:first-child .video-icon,
+    .article-card .video-icon {
+        background-position: -9px -684px;
+        width: 25px;
+        height: 25px;
+        left: 0;
     }
     .area-100,
     .area-75,
@@ -580,7 +584,7 @@
         display: block;
     }
     .farsi footer .social .lbl {
-        font-family: 'Cairo', sans-serif;
+        font-family: DroidKufiRegular;
         font-size: 46%;
         line-height: 200%;
     }
@@ -629,7 +633,7 @@
     }
     .farsi footer li:first-child,
     .farsi footer li:first-child a {
-        font-family: 'Cairo', sans-serif;
+        font-family: DroidKufiRegular;
         font-size: 13px;
     }
     footer li:first-child a {
@@ -1378,9 +1382,7 @@
     .section-vod .area-25 .news.episodes li:first-child a.cover,
     .section-vod .area-25 .news.episodes li:first-child a.cover .ttl,
     .section-vod .area-25 .news.episodes li a.cover,
-    .section-vod .area-25 .news.episodes li a.cover .ttl,
-    .full-mob li:first-child a.cover,
-    .full-mob li:first-child a.cover .ttl {
+    .section-vod .area-25 .news.episodes li a.cover .ttl {
         height: auto;
         position: relative;
         bottom: auto;
@@ -1391,10 +1393,6 @@
         font-size: 15px;
         line-height: 140%;
     }
-    .full-mob li a.cover .ttl,
-    .full-mob li:first-child a.cover .ttl {
-        font-size: 18px;
-    }
     li:first-child a.cover .ttl,
     .news.programs li a.cover .ttl {
         position: absolute;
@@ -1404,9 +1402,8 @@
         padding: 0 10px;
     }
     .news a.cover .video-icon,
-    .section-vod .area-25 .news.episodes li a.cover .video-icon,
-    .news.full-mob li:first-child a.cover .video-icon {
-        top: -50px;
+    .section-vod .area-25 .news.episodes li a.cover .video-icon {
+        top: -25px;
     }
     .news li:first-child a.cover .video-icon {
         top: 0;
@@ -1515,8 +1512,5 @@
         width: 100%;
         font-size: 140%;
         line-height: 150%;
-    }
-    .news li a {
-        display: block;
     }
 }
