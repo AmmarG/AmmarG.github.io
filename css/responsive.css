@@ -684,7 +684,8 @@
     footer li:first-child a,
     footer li,
     footer li::after,
-    .section-vod footer li:first-child a {
+    .section-vod footer li:first-child a,
+    .section-hadath footer a:hover {
         color: #FFF !important;
     }
     .box.infograph {
@@ -935,12 +936,25 @@
     }
     .section-hadath .main-header .logo {
         height: auto;
-        background-position: 22px -280px;
+        background-position: 17px -273px;
         margin-top: 11px;
+        margin-right: 15px;
     }
     .section-hadath header .live-streaming {
         margin-top: 0;
         height: auto;
+    }
+    .section-hadath footer {
+        background-image: none;
+    }
+    .section-hadath footer .main-content .footer-separator .logo {
+        background-position: 17px -281px !important;
+    }
+    .section-hadath footer .social {
+        width: 100%;
+    }
+    .section-hadath footer .copyrights {
+        padding-left: 0px;
     }
     .article-teaser {
         min-height: auto;
@@ -1532,12 +1546,12 @@
         color: inherit;
         padding: 0;
     }
-    .area-25 .box.latest-news .more-btn{
+    .area-25 .box.latest-news .more-btn {
         padding: 0;
         background: rgba(0, 0, 0, 0.05);
         margin-top: 15px;
     }
-    .area-25 .box.latest-news{
+    .area-25 .box.latest-news {
         padding-bottom: 0;
     }
     .box h2 > a {
@@ -1548,8 +1562,5 @@
     }
     .carousel-indicators {
         display: none;
-    }
-    .section-hadath footer .social {
-        width: 100%;
     }
 }
