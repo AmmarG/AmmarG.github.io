@@ -223,16 +223,14 @@
             }
         }
     };
-    xmlhttp.open("GET", "https://feed.alarabiya.net/breakingNews/ar.json", true);
+    var __breakingnewsLink =
+        typeof breakingnewsLink !== "undefined" ? breakingnewsLink : "https://feed.alarabiya.net/breakingNews/ar.json";
+    xmlhttp.open("GET", __breakingnewsLink, true);
     xmlhttp.send();
     setInterval(function() {
-        xmlhttp.open(
-            "GET",
-            "https://feed.alarabiya.net/breakingNews/ar.json",
-            true
-        );
+        xmlhttp.open("GET", __breakingnewsLink, true);
         xmlhttp.send();
-    }, 5000);
+    }, 30000);
 
     /**Search Form submit***/
     var atag = document.querySelector(".search-icon");
@@ -289,6 +287,85 @@
         }
     }
     /**Moving thumbnail**/
+    /** Latest news component **/
+    function createEle(element, classname) {
+        if (!classname) {
+            return document.createElement(element);
+        } else {
+            var ele = document.createElement(element);
+            ele.setAttribute("class", classname);
+            return ele;
+        }
+    }
+
+    function appendCh(parent, el) {
+        return parent.appendChild(el);
+    }
+
+    function arraysCompare(ar1, ar2) {
+        return (
+            ar1.length === ar2.length &&
+            ar1.sort().every(function(value, index) {
+                return ObjectsCompare(value, ar2.sort()[index]);
+            })
+        );
+    }
+
+    function ObjectsCompare(obj1, obj2) {
+        return JSON.stringify(obj1) === JSON.stringify(obj2);
+    }
+    var previousData = [];
+    //var latestNewsFeed = "https://feed.alarabiya.net/latestEvents/alhadath.json";
+    //var latestNewsLimit = 6;
+    function LatestNewsComponent() {
+        var latestNewsHTMLAll = document.querySelectorAll(".latest-news-js");
+        if (latestNewsHTMLAll.length > 0 && typeof latestNewsFeed !== "undefined") {
+            var __latestNewsLimit =
+                typeof latestNewsLimit == "undefined" ? 6 : latestNewsLimit;
+            var xmlhttpLatestNews = new XMLHttpRequest();
+            xmlhttpLatestNews.open("GET", latestNewsFeed, true);
+            xmlhttpLatestNews.send();
+            xmlhttpLatestNews.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    var that = this;
+                    var myObj = JSON.parse(that.responseText);
+                    var news = myObj.latestEvents;
+                    if (!arraysCompare(news, previousData)) {
+                        previousData = news;
+                        latestNewsHTMLAll.forEach(function(latestNewsHTML) {
+                            var Ul = latestNewsHTML.querySelector("ul");
+                            Ul.innerHTML = '';
+                            for (var i = 0; i < __latestNewsLimit; i++) {
+                                var li = createEle("li"),
+                                    wrapperSpan = createEle("span"),
+                                    timeSpan = createEle("span", "time"),
+                                    firstSpan = createEle("span"),
+                                    secondSpan = createEle("span", "region"),
+                                    ttlSpan = createEle("span", "ttl");
+                                wrapperSpan.classList.add("latest-news__wrapper");
+                                firstSpan.innerText = news[i].creationDate.split("-")[1];
+                                secondSpan.innerText = "GMT";
+                                ttlSpan.innerText = news[i].text;
+                                appendCh(timeSpan, firstSpan);
+                                appendCh(timeSpan, secondSpan);
+                                appendCh(wrapperSpan, timeSpan);
+                                appendCh(wrapperSpan, ttlSpan);
+                                appendCh(li, wrapperSpan);
+                                appendCh(Ul, li);
+                            }
+                        });
+                    }
+                }
+            };
+        }
+    }
+    if (typeof latestNewsFeed != "undefined") {
+        LatestNewsComponent();
+        setInterval(function() {
+            LatestNewsComponent();
+        }, 30000);
+    }
+    /** Latest news component **/
 })();
 
 function iframeGenerator() {
@@ -828,42 +905,49 @@ document.addEventListener("DOMContentLoaded", function() {
 // Article Timeline
 $(document).ready(function() {
     // Timeline nav active class
-    $('ul.tm-nav li').on('click', function() {
-        $(this).parent().find('li.active').removeClass('active');
-        $(this).addClass('active');
+    $("ul.tm-nav li").on("click", function() {
+        $(this)
+            .parent()
+            .find("li.active")
+            .removeClass("active");
+        $(this).addClass("active");
     });
     // Timeline smooth scrolling
-    $('.tm-sequence ul li a').click(function(e) {
+    $(".tm-sequence ul li a").click(function(e) {
         e.preventDefault();
-        var target = $($(this).attr('href'));
+        var target = $($(this).attr("href"));
         if (target.length) {
             var scrollTo = target.offset().top;
-            $('body, html').animate({
-                scrollTop: scrollTo - 90 + 'px'
-            }, 600);
+            $("body, html").animate({
+                    scrollTop: scrollTo - 90 + "px"
+                },
+                600
+            );
         }
     });
     // Timeline sticky nav
-    var $window = $(window);
-    var $sidebar = $(".tm-sequence");
-    var $sidebarHeight = $sidebar.innerHeight();
-    var $footerOffsetTop = $("footer").offset().top;
-    var $sidebarOffset = $sidebar.offset();
-    
-    $window.scroll(function() {
-        if ($window.scrollTop() > $sidebarOffset.top) {
-            $sidebar.addClass("fixed");
-        } else {
-            $sidebar.removeClass("fixed");
-        }
-        if ($window.scrollTop() + $sidebarHeight > $footerOffsetTop) {
-            $sidebar.css({
-                "top": -($window.scrollTop() + $sidebarHeight - $footerOffsetTop)
-            });
-        } else {
-            $sidebar.css({
-                "top": "80",
-            });
-        }
-    });
+    if ($(".tm-sequence").length > 0) {
+        var $window = $(window);
+        var $sidebar = $(".tm-sequence");
+        var $sidebarHeight = $sidebar.innerHeight();
+        var $footerOffsetTop = $("footer").offset().top;
+        var $sidebarOffset = $sidebar.offset();
+
+        $window.scroll(function() {
+            if ($window.scrollTop() > $sidebarOffset.top) {
+                $sidebar.addClass("fixed");
+            } else {
+                $sidebar.removeClass("fixed");
+            }
+            if ($window.scrollTop() + $sidebarHeight > $footerOffsetTop) {
+                $sidebar.css({
+                    top: -($window.scrollTop() + $sidebarHeight - $footerOffsetTop)
+                });
+            } else {
+                $sidebar.css({
+                    top: "80"
+                });
+            }
+        });
+    }
 });
