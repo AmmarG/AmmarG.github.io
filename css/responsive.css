@@ -1406,7 +1406,11 @@
     .full-mob li a.cover .ttl,
     .full-mob li:first-child a.cover .ttl {
         font-size: 26px;
-        color: #000;
+        color: #000 !important;
+    }
+    .section-vod .full-mob li a.cover .ttl,
+    .section-vod .full-mob li:first-child a.cover .ttl {
+        color: #FFF !important;
     }
     li:first-child a.cover .ttl,
     .news.programs li a.cover .ttl {
