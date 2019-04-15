@@ -1406,6 +1406,7 @@
     .full-mob li a.cover .ttl,
     .full-mob li:first-child a.cover .ttl {
         font-size: 26px;
+        color: #000;
     }
     li:first-child a.cover .ttl,
     .news.programs li a.cover .ttl {
