@@ -3,19 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>The Terminal</title>
+    <title>Code</title>
     <style>
         @font-face {
-            font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+            font-family: 'Source Code Pro';
             font-style: normal;
-            font-weight: normal;
+            font-weight: 400;
+            src: local('Source Code Pro'), local('SourceCodePro-Regular'), url(http://themes.googleusercontent.com/static/fonts/sourcecodepro/v4/mrl8jkM18OlOQN8JLgasDxM0YzuT7MdOe03otPbuUS0.woff) format('woff');
         }
         body {
             font-family: Source Code Pro;
             background: #000;
-            color: lime;
+            color: darkgray;
             margin: 0;
-            font-size: 19px;
+            font-size: 13px;
         }
         canvas {
             position: absolute;
@@ -31,7 +32,7 @@
             overflow: visible;
         }
         p {
-            margin: 0;
+            margin: 0
         }
     </style>
     
@@ -158,8 +159,7 @@
 
         /* fake console stuff */
         var commandStart = ['Performing DNS Lookups for',
-            'This is AMG! ',
-            'Searching... ',
+            'Searching ',
             'Analyzing ',
             'Estimating Approximate Location of ',
             'Compressing ',
@@ -171,24 +171,14 @@
             'Downloading '
         ],
             commandParts = ['Data Structure',
-                'https://instagram.com',
-                'Finding all accounts...',
+                'http://alarabiya.net?au&2',
                 'Texture',
                 'TPS Reports',
-                'Searching ... ',
-                'https://gmail.com',
-                'https://facebook.com',
-                'https://twitter.com',
-                'https://instagram.com',
-                'Finding Apple ID',
-                'Finding saved CREDIT CARDS info ',
-                'Badr Kachibal... COMPLETED! ',
-                'Mohammed Hakawati... COMPLETED! ',
-                'Ahmad Kadi... COMPLETED! ',
-                'Ali Teis... COMPLETED! '
+                ' .... Searching ... ',
+                'http://alhadath.net/?23&88&far=2',
+                'http://alarabiya.net?45-33/?timing=1ww'
             ],
             commandResponses = ['Authorizing ',
-                'Retrieving usernames...',
                 'Authorized...',
                 'Access Granted..',
                 'Going Deeper....',
@@ -197,10 +187,8 @@
                 'Entering Security Console...',
                 'Encryption Unsuccesful Attempting Retry...',
                 'Waiting for response...',
-                'Searching...',
-                'Calculating Space Requirements ',
-                'Fetching all passwords...',
-                'Melhem Ibrahim Fawaz... COMPLETED! ',
+                '....Searching...',
+                'Calculating Space Requirements '
             ],
             isProcessing = false,
             processTime = 0,
@@ -286,7 +274,7 @@
                 }
             }
 
-            setTimeout(consoleOutput, ~~ (Math.random() * 300));
+            setTimeout(consoleOutput, ~~ (Math.random() * 200));
         }
 
 
