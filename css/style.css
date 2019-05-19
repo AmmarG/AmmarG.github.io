@@ -267,7 +267,7 @@ figure li span {
 }
 .carousel-indicators li,
 .carousel-indicators .active {
-    width: 115px;
+    width: 10%;
     height: 5px;
     border: none;
     margin: 0 4px;
@@ -298,13 +298,11 @@ figure li span {
 .carousel-fade .carousel-control {
     z-index: 2;
 }
-
 .carousel-inner,
 section.apple_tv .container,
 section.android_devices .container {
     border-bottom: solid 1px #232323;
 }
-
 .carousel-indicators {
     bottom: -50px;
     left: auto;

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
     /**** Desktop ****/
     .hide_in_desktop {
         display: none !important;
@@ -313,7 +313,6 @@
     }
     figure li span {
         width: 76%;
-        font-size: 80%;
         line-height: 160%;
     }
     .apple_tv figure li img,
@@ -322,7 +321,7 @@
     }
     .apple_tv figure li span,
     .iwatch figure li span {
-        width: 91%;
+        width: 100%;
     }
     .iphone_ipad p {
         font-size: 100%;
@@ -335,24 +334,34 @@
     .android_watch p {
         font-size: 70%;
     }
+    .iwatch p {
+        padding-top: 50px;
+        text-align: right;
+        line-height: 170%;
+    }
     figure ul li {
         padding: 15px 0;
     }
     header img {
-        width: 60%;
+        width: 80%;
     }
     .carousel-inner {
         height: 333px;
     }
     .carousel-indicators li,
     .carousel-indicators .active {
-        width: 30px;
+        width: 10%;
+        ;
+        height: 10px;
+        border-radius: 3px;
     }
     #myCarousel {
         margin-top: 0;
     }
     figure,
-    .apple_tv .container {
+    .apple_tv .container,
+    .android-tab,
+    .chrome_ext {
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
@@ -387,18 +396,78 @@
     section.chrome_ext {
         background-position: -1120px top;
     }
-    .apple_tv {
-        padding: 0 10px;
+    .apple_tv,
+    .iwatch,
+    .android_devices figure,
+    .samsung_tv {
+        padding: 20px 10px;
     }
     .apple_tv p {
         order: 2;
         padding: 30px 0;
     }
-    .apple_tv ul li {
-        background: url(../gfx/blt.gif) right 20px no-repeat;
-    }
     .sec_header {
         margin: 0;
+    }
+    .iwatch .faces img {
+        display: block;
+        margin: 80px auto 30px auto;
+    }
+    .f-left {
+        float: left;
+        margin-right: 10px;
+    }
+    .f-right {
+        float: right;
+        margin-left: 10px;
+    }
+    .android_devices img {
+        max-width: 50%;
+        clear: both;
+    }
+    .android_devices img.li_icon {
+        width: 18%;
+        margin-top: 20%;
+    }
+    .android_devices div {
+        clear: both;
+        padding-bottom: 50px;
+        text-align: right;
+        overflow: hidden;
+    }
+    .android_devices .faces span {
+        display: block;
+        text-align: right;
+        font-size: 90%;
+        line-height: 160%;
+        padding: 20px 0 0 0;
+    }
+    .android-tab p {
+        order: -1;
+        text-align: right;
+        font-size: 20px;
+        padding: 0 10px 40px 10px;
+    }
+    .android-tab img {
+        width: 160%;
+        max-width: 160%;
+        margin-right: -30%;
+    }
+    .iwatch .faces div {
+        text-align: right;
+    }
+    .samsung_tv p,
+    .chrome_ext p {
+        font-size: 23px;
+        text-align: right;
+        padding: 20px 0;
+    }
+    .chrome_ext figure img {
+        order: -1;
+        margin-left: -10px;
+    }
+    .chrome_ext p {
+        padding: 20px 10px;
     }
 }
 @media only screen and (min-width: 480px) and (max-width: 1023px) {
