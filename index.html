@@ -1,316 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>Code</title>
-    <style>
-        body {
-            font-family: Times;
-            background: #000;
-            color: darkgray;
-            margin: 0;
-            font-size: 14px;
-        }
-        canvas {
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: none;
-        }
-        .bars-and-stuff {
-            left: 66.6%;
-        }
-        .output-console {
-            padding: 20px;
-            overflow: visible;
-        }
-        p {
-            margin: 0
-        }
-    </style>
-    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1">
+    <title>تطبيقات الحدث للأجهزة الذكية</title>
+    <link href="css/bootstrap-min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-2-1-4-min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-min.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
+    <!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 
 <body>
-    <canvas class='hacker-3d-shiz'></canvas>
-<canvas class='bars-and-stuff'></canvas>
-<div class="output-console"></div>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <figure class="wow animated fadeInDown">
+                <a href="#" title="الحدث">
+                    <img src="gfx/logo.png" alt="الحدث" />
+                </a>
+            </figure>
+            <!-- Main Title -->
+            <h1 class="wow animated fadeInDown">تطبيقات الحدث للأجهزة الذكية</h1>
+        </div>
+    </header>
+    <!-- Section Slider -->
+    <section class="slider wow animated fadeInUp">
+        <div class="container">
+            <div id="myCarousel" class="carousel slide carousel-fade animated fadeInUp" data-ride="carousel" data-interval="false">
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" class="active" data-slide-to="5"></li>
+                </ol>
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                    <div class="item">
+                        <a href="#chrome_ext" title="">
+                            <img src="gfx/chrome_ext.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#samsung_tv" title="">
+                            <img src="gfx/samsung_tv.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#android_devices" title="">
+                            <img src="gfx/android_phone.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#iwatch" title="">
+                            <img src="gfx/apple_watch.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#apple_tv" title="">
+                            <img src="gfx/app_tv.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="item active">
+                        <a href="#iphone_ipad" title="">
+                            <img src="gfx/slider_iphone.png" alt="" />
+                        </a>
+                    </div>
 
-<script>
-        var canvas = document.querySelector(".hacker-3d-shiz"),
-            ctx = canvas.getContext("2d"),
-            canvasBars = document.querySelector(".bars-and-stuff"),
-            ctxBars = canvasBars.getContext("2d"),
-            outputConsole = document.querySelector(".output-console");
-
-        outputConsole.style.height = (window.innerHeight);
-        outputConsole.style.top = window.innerHeight
-
-
-        /* Graphics stuff */
-        function Square(z) {
-            this.width = canvas.width / 2;
-
-            if (canvas.height < 200) {
-                this.width = 200;
-            };
-
-            this.height = canvas.height;
-            z = z || 0;
-
-            this.points = [
-                new Point({
-                    x: (canvas.width / 2) - this.width,
-                    y: (canvas.height / 2) - this.height,
-                    z: z
-                }),
-                new Point({
-                    x: (canvas.width / 2) + this.width,
-                    y: (canvas.height / 2) - this.height,
-                    z: z
-                }),
-                new Point({
-                    x: (canvas.width / 2) + this.width,
-                    y: (canvas.height / 2) + this.height,
-                    z: z
-                }),
-                new Point({
-                    x: (canvas.width / 2) - this.width,
-                    y: (canvas.height / 2) + this.height,
-                    z: z
-                })
-            ];
-            this.dist = 0;
-        }
-
-        Square.prototype.update = function() {
-            for (var p = 0; p < this.points.length; p++) {
-                this.points[p].rotateZ(0.001);
-                this.points[p].z -= 3;
-                if (this.points[p].z < -300) {
-                    this.points[p].z = 2700;
-                }
-                this.points[p].map2D();
-            }
-        }
-
-        Square.prototype.render = function() {
-            ctx.beginPath();
-            ctx.moveTo(this.points[0].xPos, this.points[0].yPos);
-            for (var p = 1; p < this.points.length; p++) {
-                if (this.points[p].z > -(focal - 50)) {
-                    ctx.lineTo(this.points[p].xPos, this.points[p].yPos);
-                }
-            }
-
-            ctx.closePath();
-            ctx.stroke();
-
-            this.dist = this.points[this.points.length - 1].z;
-
-        };
-
-        function Point(pos) {
-            this.x = pos.x - canvas.width / 2 || 0;
-            this.y = pos.y - canvas.height / 2 || 0;
-            this.z = pos.z || 0;
-
-            this.cX = 0;
-            this.cY = 0;
-            this.cZ = 0;
-
-            this.xPos = 0;
-            this.yPos = 0;
-            this.map2D();
-        }
-
-        Point.prototype.rotateZ = function(angleZ) {
-            var cosZ = Math.cos(angleZ),
-                sinZ = Math.sin(angleZ),
-                x1 = this.x * cosZ - this.y * sinZ,
-                y1 = this.y * cosZ + this.x * sinZ;
-
-            this.x = x1;
-            this.y = y1;
-        }
-
-        Point.prototype.map2D = function() {
-            var scaleX = focal / (focal + this.z + this.cZ),
-                scaleY = focal / (focal + this.z + this.cZ);
-
-            this.xPos = vpx + (this.cX + this.x) * scaleX;
-            this.yPos = vpy + (this.cY + this.y) * scaleY;
-        };
-
-         // Init graphics stuff
-        var squares = [],
-            focal = canvas.width / 2,
-            vpx = canvas.width / 2,
-            vpy = canvas.height / 2,
-            barVals = [],
-            sineVal = 0;
-
-        /* fake console stuff */
-        var commandStart = ['Performing DNS Lookups for',
-            'Searching ',
-            'Analyzing ',
-            'Estimating Approximate Location of ',
-            'Compressing ',
-            'Requesting Authorization From : ',
-            'wget -a -t ',
-            'tar -xzf ',
-            'Entering Location ',
-            'Compilation Started of ',
-            'Downloading '
-        ],
-            commandParts = ['Data Structure',
-                'http://google.com?au&2',
-                'Texture',
-                'TPS Reports',
-                ' .... Searching ... ',
-                'http://google.com/?23&88&far=2',
-                'http://google.com?45-33/?timing=1ww'
-            ],
-            commandResponses = ['Authorizing ',
-                'Authorized...',
-                'Access Granted..',
-                'Going Deeper....',
-                'Compression Complete.',
-                'Compilation of Data Structures Complete..',
-                'Entering Security Console...',
-                'Encryption Unsuccesful Attempting Retry...',
-                'Waiting for response...',
-                '....Searching...',
-                'Calculating Space Requirements '
-            ],
-            isProcessing = false,
-            processTime = 0,
-            lastProcess = 0;
-
-
-        function render() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-            squares.sort(function(a, b) {
-                return b.dist - a.dist;
-            });
-            for (var i = 0, len = squares.length; i < len; i++) {
-                squares[i].update();
-                squares[i].render();
-            }
-
-            ctxBars.clearRect(0, 0, canvasBars.width, canvasBars.height);
-
-            ctxBars.beginPath();
-            var y = canvasBars.height / 6;
-            ctxBars.moveTo(0, y);
-
-            for (i = 0; i < canvasBars.width; i++) {
-                var ran = (Math.random() * 20) - 10;
-                if (Math.random() > 0.98) {
-                    ran = (Math.random() * 50) - 25
-                }
-                ctxBars.lineTo(i, y + ran);
-            }
-
-            ctxBars.stroke();
-
-            for (i = 0; i < canvasBars.width; i += 20) {
-                if (!barVals[i]) {
-                    barVals[i] = {
-                        val: Math.random() * (canvasBars.height / 2),
-                        freq: 0.1,
-                        sineVal: Math.random() * 100
-                    };
-                }
-
-                barVals[i].sineVal += barVals[i].freq;
-                barVals[i].val += Math.sin(barVals[i].sineVal * Math.PI / 2) * 5;
-                ctxBars.fillRect(i + 5, canvasBars.height, 15, -barVals[i].val);
-            }
-
-            requestAnimationFrame(render);
-        }
-
-        function consoleOutput() {
-            var textEl = document.createElement('p');
-
-            if (isProcessing) {
-                textEl = document.createElement('span');
-                textEl.textContent += Math.random() + " ";
-                if (Date.now() > lastProcess + processTime) {
-                    isProcessing = false;
-                }
-            } else {
-                var commandType = ~~ (Math.random() * 4);
-                switch (commandType) {
-                    case 0:
-                        textEl.textContent = commandStart[~~(Math.random() * commandStart.length)] + commandParts[~~(Math.random() * commandParts.length)];
-                        break;
-                    case 3:
-                        isProcessing = true;
-                        processTime = ~~ (Math.random() * 5000);
-                        lastProcess = Date.now();
-                    default:
-                        textEl.textContent = commandResponses[~~(Math.random() * commandResponses.length)];
-                        break;
-                }
-            }
-
-            outputConsole.scrollTop = outputConsole.scrollHeight;
-            outputConsole.appendChild(textEl);
-
-            if (outputConsole.scrollHeight > window.innerHeight) {
-                var removeNodes = outputConsole.querySelectorAll('*');
-                for (var n = 0; n < ~~(removeNodes.length / 3); n++) {
-                    outputConsole.removeChild(removeNodes[n]);
-                }
-            }
-
-            setTimeout(consoleOutput, ~~ (Math.random() * 200));
-        }
-
-
-        setTimeout(function() {
-            canvas.width = (window.innerWidth / 3) * 2;
-            canvas.height = window.innerHeight / 3;
-
-            canvasBars.width = window.innerWidth / 3;
-            canvasBars.height = canvas.height;
-
-            outputConsole.style.height = (window.innerHeight / 3) * 2 + 'px';
-            outputConsole.style.top = window.innerHeight / 3 + 'px';
-
-            focal = canvas.width / 2;
-            vpx = canvas.width / 2;
-            vpy = canvas.height / 2;
-
-            for (var i = 0; i < 15; i++) {
-                squares.push(new Square(-300 + (i * 200)));
-            }
-
-            ctx.strokeStyle = ctxBars.strokeStyle = ctxBars.fillStyle = '#00FF00';
-
-            render();
-            consoleOutput();
-        }, 200);
-
-        window.addEventListener('resize', function() {
-            canvas.width = (window.innerWidth / 3) * 2;
-            canvas.height = window.innerHeight / 3;
-
-            canvasBars.width = window.innerWidth / 3;
-            canvasBars.height = canvas.height;
-
-            outputConsole.style.height = (window.innerHeight / 3) * 2 + 'px';
-            outputConsole.style.top = window.innerHeight / 3 + 'px';
-
-            focal = canvas.width / 2;
-            vpx = canvas.width / 2;
-            vpy = canvas.height / 2;
-            ctx.strokeStyle = ctxBars.strokeStyle = ctxBars.fillStyle = '#00FF00';
+                </div>
+                <!-- Carousel controls -->
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                </a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Section iPhone -->
+    <section id="iphone_ipad" class="iphone_ipad">
+        <div class="container">
+            <div class="sec_header">
+                <h3 class="wow animated zoomIn">آي فون وآيباد</h3>
+                <a class="store wow animated zoomIn" href="#" title="">
+                    <img src="gfx/app_store.png" alt="" />
+                </a>
+            </div>
+            <figure>
+                
+                <ul>
+                   <li class="li01">
+                        <img class="wow animated fadeInLeft" src="gfx/li04.png" alt="" /><span class="wow animated fadeInLeft">ربط البث المباشر للتطبيق مع Apple TV أو أي جهاز متوافق مع تقنية (AirPlay).</span>
+                    </li>
+                    <li class="li02">
+                        <img class="wow animated fadeInLeft" src="gfx/li01.png" alt="" /><span class="wow animated fadeInLeft">البث المباشر للعربية و العربية الحدث مع توفير خاصية البث الصوتي لمن يرغب سماع الأخبار فقط.</span>
+                    </li>
+                    <li class="li03">
+                        <img class="wow animated fadeInLeft" src="gfx/li03.png" alt="" /><span class="wow animated fadeInLeft">معرفة آخر الأخبار العربية والعالمية والتقارير والصور الواردة حول أهم هذه الأحداث</span>
+                    </li>
+                </ul>
+                <img class="ipad wow animated fadeInUp" src="gfx/iphone02.png" alt="" />
+                <img class="iphone wow animated fadeInDown" src="gfx/iPhone01.png" alt="" />
+            </figure>
+            <p class="wow animated fadeInDown">يتيح تطبيق "الحدث" خدمة الاطلاع على آخر الأخبار العاجلة وأهم الأحداث العربية والعالمية فور حدوثها، بالاضافة الى مشاهدة البرامج وتقارير أخرى</p>
+        </div>
+    </section>
+    <!-- Section Apple TV -->
+    <section id="apple_tv" class="apple_tv">
+        <div class="container">
+            <div class="sec_header">
+                <h3 class="wow animated zoomIn">آبل TV</h3>
+                <a class="store wow animated zoomIn" href="#" title="">
+                    <img src="gfx/appletv_store.png" alt="" />
+                </a>
+            </div>
+            <figure>
+                <img class="wow animated fadeInDown" src="gfx/appletv01.png" alt="" />
+                <ul>
+                    <li class="li01"><span class="wow animated fadeInDown">البث المباشر الحدث</span>
+                    </li>
+                    <li class="li02"><span class="wow animated fadeInDown">معرفة آخرعرض البرامج مع إمكانية مشاهدة الحلقات السابقة</span>
+                    </li>
+                    <li class="li03"><span class="wow animated fadeInDown">الاطلاع على آخر التقارير والأخبار المصورة في عالم الاقتصاد والرياضة والتكنولوجيا والصحة والثقافة ومواضيع أخرى</span>
+                    </li>
+                    <li class="li04"><span class="wow animated fadeInDown">معرفة آخر الأخبار العربية والعالمية والتقارير المصورة الواردة حول أهم هذه الأحداث</span>
+                    </li>
+                </ul>
+            </figure>
+            <p class="wow animated fadeInRight">يتيح تطبيق "الحدث" خدمة الاطلاع على آخر الأخبار العاجلة وأهم الأحداث العربية والعالمية فور حدوثها، بالاضافة الى مشاهدة البرامج وتقارير أخرى</p>
+            <img class="wow animated fadeInLeft" src="gfx/appletv02.png" alt="" />
+        </div>
+    </section>
+    <!-- Section Apple Watch -->
+    <section id="iwatch" class="iwatch">
+        <div class="container">
+            <div class="sec_header">
+                <h3 class="wow animated zoomIn">ساعة أبل</h3>
+                <a class="store wow animated zoomIn" href="#" title="">
+                    <img src="gfx/app_store.png" alt="" />
+                </a>
+            </div>
+            <figure>
+                <img class="main_img wow animated fadeInDown" src="gfx/apple_watch_main.png" alt="" />
+                <p class="wow animated fadeInUp">يتيح تطبيق "الحدث" خدمة الاطلاع على آخر الأخبار العاجلة وأهم الأحداث العربية والعالمية فور حدوثها، بالاضافة الى مشاهدة البرامج وتقارير أخرى</p>
+                <div class="faces">
+                   <div class="wow animated fadeInDown">
+                    <img src="gfx/iwatch04.png" alt="" />
+                    معرفة آخر الأخبار العربية والعالمية والتقارير والصور الواردة حول أهم هذه الأحداث
+                    </div>
+                    <div class="hide_in_device wow animated fadeInDown">
+                    <img src="gfx/iwatch01.png" alt="" />
+                    متابعة قراءة الأخبار على تطبيق الحدث لهواتف أبل
+                    </div>
+                    <div class="hide_in_device wow animated fadeInDown">
+                    <img src="gfx/iwatch02.png" alt="" />
+                    معرفة آخر الأخبار العربية والعالمية والتقارير والصور الواردة حول أهم هذه الأحداث
+                    </div>
+                </div>
+            </figure>
+        </div>
+    </section>
+    <!-- Section Android Devices -->
+    <section id="android_devices" class="android_devices">
+        <div class="container">
+            <div class="sec_header">
+                <h3 class="wow animated zoomIn">أجهزة آندرويد</h3>
+                <a class="store wow animated zoomIn" href="#" title="">
+                    <img src="gfx/google_play.png" alt="" />
+                </a>
+            </div>
+            <figure>
+                <div class="faces">
+                   <div class="wow animated fadeInDown">
+                    <img src="gfx/android01.png" alt="" />
+                    <img class="li_icon" src="gfx/li08.png" alt="" >معرفة آخر الأخبار العربية والعالمية والتقارير والصور الواردة حول أهم هذه الأحداث</div>
+                    <div class="hide_in_device wow animated fadeInDown">
+                    <img src="gfx/android02.png" alt="" />
+                    <img class="li_icon" src="gfx/li09.png" alt="" >التفاعل مع المقالات وامكانية التعليق عليها ومشاركتها عبر شبكات التواصل الاجتماعي</div>
+                    <div class="hide_in_device wow animated fadeInDown">
+                    <img src="gfx/android03.png" alt="" />
+                    <img class="li_icon" src="gfx/li01.png" alt="" >البث المباشر للحدث مع توفير خاصية البث الصوتي لمن يرغب سماع الأخبار فقط</div>
+                </div>
+            </figure>
+            <img class="main_img wow animated fadeInUp" src="gfx/android_device.png" alt="" />
+            <p class="wow animated fadeInDown">يتيح تطبيق "الحدث" خدمة الاطلاع على آخر الأخبار العاجلة وأهم الأحداث العربية والعالمية فور حدوثها، بالاضافة الى مشاهدة البرامج وتقارير أخرى</p>
+        </div>
+    </section>
+    <!-- Section Samsung Smart TV -->
+    <section id="samsung_tv" class="samsung_tv">
+        <div class="container">
+            <div class="sec_header">
+                <h3 class="wow animated zoomIn">Samsung Smart TV</h3>
+                <a class="store wow animated zoomIn" href="#" title="">
+                    <img src="gfx/samsung_store.png" alt="" />
+                </a>
+            </div>
+            <figure>
+                <img class="wow animated fadeInDown" src="gfx/samsung_tv_sec.png" alt="" />
+            </figure>
+            <p class="wow animated fadeInDown">يتيح تطبيق "الحدث" خدمة الاطلاع على آخر الأخبار العاجلة وأهم الأحداث العربية والعالمية فور حدوثها، بالاضافة للبرامج وتقارير أخرى</p>
+        </div>
+    </section>
+    <!-- Section Chrome Extention -->
+    <section id="chrome_ext" class="chrome_ext">
+        <div class="container">
+            <div class="sec_header">
+                <h3 class="wow animated zoomIn">إضافات متصفح كروم</h3>
+                <a class="store wow animated zoomIn" href="#" title="">
+                    <img src="gfx/chrome.png" alt="" />
+                </a>
+            </div>
+            <figure>
+               <p>يتيح تطبيق "الحدث" خدمة الاطلاع على آخر الأخبار العاجلة وأهم الأحداث العربية والعالمية فور حدوثها، بالاضافة للبرامج وتقارير أخرى</p>
+                <img class="wow animated fadeInDown" src="gfx/chrome_sec.png" alt="" />
+            </figure>
+        </div>
+    </section>
+    <script>
+        wow = new WOW({
+            animateClass: 'animated',
+            offset: 100
         });
+        wow.init();
+        $('.carousel').carousel('pause');
     </script>
 </body>
 
