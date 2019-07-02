@@ -1,0 +1,793 @@
+<!doctype html>
+<html amp lang="ar">
+
+<head>
+   <meta charset="utf-8">
+   <title>العربية</title>
+   <link rel="canonical" href="index.html" />
+   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+   <style amp-custom>
+   @font-face {
+      font-family: DroidKufiRegular;
+      src: url("font/DroidKufi-Regular.eot");
+      src: url('font/DroidKufi-Regular.eot?') format('eot'), url("font/DroidKufi-Regular.woff") format("woff"), url("font/DroidKufi-Regular.ttf") format("truetype");
+   }
+   @font-face {
+      font-family: 'Noto Naskh Arabic';
+      font-style: normal;
+      font-weight: 700;
+      src: url("font/NotoNaskhArabic-Bold.eot");
+      src: url("fonts/NotoNaskhArabic-Bold.eot?#iefix") format('embedded-opentype'), url("font/NotoNaskhArabic-Bold.woff2") format('woff2'), url("font/NotoNaskhArabic-Bold.woff") format('woff'), url("font/NotoNaskhArabic-Bold.ttf") format('truetype');
+      }
+   @font-face {
+      font-family: Arabiya;
+      src: url("font/BoutrosArabiyaB.eot");
+      src: url('font/BoutrosArabiyaB.eot?') format('eot'), url("font/BoutrosArabiyaB.woff") format("woff"), url("font/BoutrosArabiyaB.ttf") format("truetype");
+   }   
+   body {
+      background-color: #f1f1f1;
+      direction: rtl;
+      padding:0;
+      padding-bottom: 60px;
+      color:#333;
+      font-family: 'DroidKufiRegular' ;
+   }
+   a {
+       text-decoration: none;
+      display: inline-block;
+      outline: none;
+   }
+   amp-img {
+      background-color: gray;
+      border: 1px solid black;
+   }
+   h1,h2,h3{
+      font-family: 'DroidKufiRegular';
+   }
+   a,button{
+      outline: none;
+      text-decoration: none;
+   }
+   article,
+   footer{
+      padding:10px;
+   }
+   .sidebar {
+      margin: 0;
+      color: #333;
+      font-weight:bold;
+      padding: 77px 0 0  0;
+
+   }
+   .sidebar > li {
+      list-style: none;margin-bottom:10px;
+      height: 70px;
+      line-height: 70px;
+      color: rgb(29, 27, 29);
+      width: 300px;
+      font-size: 100%;
+      border: none;
+      transition: border-right .2s;
+      border-bottom: 1px solid rgb(230, 227, 227) ;
+      margin-top: 0;
+      padding: 0;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-right:10px;
+   }
+   .sidebar a {
+      text-decoration: none;
+      color: #333;
+   }
+   .headerbar { 
+      background: #6e2968;
+      color: #FFF;
+      line-height: 30px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 40px;
+      z-index: 1000;
+      height: 77px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      box-shadow: 0px 5px 20px 3px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+   }
+   .headerbar a {
+      text-decoration: none;
+      color: #FFF;
+   }
+   .hamburger{
+      display: block;
+      padding: 25px 13px;
+      background-color: rgba(0, 0, 0, .1);
+      font-size: 1.8em;
+      margin-left: 23px;
+      outline: none;
+   }
+   .streaming{
+      background-color: rgba(0, 0, 0, .1);
+      margin-right: auto;
+      display: inline-block;
+      padding: 25px 13px;
+   }
+   .site-name{
+      display: inline-block;
+      width:100px;
+   }
+   .site-name amp-img,
+   .streaming amp-img,
+   footer amp-img{
+      background: none;
+      border:none;
+   }
+   .menu{
+      background: url('./menu-bg.png') top repeat-x;
+      width:300px;
+      height: 100vh;
+      z-index: 5;
+   }
+   .sidebar,
+   amp-sidebar[side=right],
+   #sidebar1,
+   amp-sidebar{
+      overflow: hidden;
+      overflow-y: hidden;
+   }
+   .article-title{
+      font-weight: 700;
+      letter-spacing: -1;
+      line-height: 150%;
+      font-size: 25px;
+      margin-bottom:0;
+      margin-top:0;
+   }
+   .times{
+      background: url('./clock.png') right center  no-repeat;
+      line-height: 130%;
+   }
+   time{
+      font-size: 12px;
+      color: #918d91;
+      display: block;
+      padding-right: 27px;
+      
+   }
+   .author{
+      font-size: 12px;
+      color: #d11731;
+   }
+   .author span.author_head{
+      color:#333;
+   }
+   .author-overview {
+      padding: 0px 10px 10px 10px;
+      overflow:hidden;
+   }
+   .author-overview h2{
+      margin-top:0px;
+   }
+   .author-overview h2 a{
+      color:#6e2968;
+   }
+   .author-overview .img-container{
+      float:right;
+      padding-left:10px;
+   }
+   .author-overview h5 a{
+      color:#333;
+      font-size:115%;
+   	}
+   	.author-overview h5 p{
+      font-size:110%;
+   	}
+   	.author a span{
+      color:#d11731
+    }
+   article p {
+      font-family: 'Noto Naskh Arabic', serif;
+      font-size: 22px;
+      line-height: 170%;
+      padding: 8px 0;
+      text-align: justify;
+   }
+   .tags{
+      font-weight: bold;
+      background-color: #FFF;
+      margin: 20px 0;
+      padding: 20px;
+      overflow: hidden;
+   }
+   h2{
+       border-right: 5px solid #6e2968;
+      padding-right: 10px;
+      color:#6e2968;
+   }
+   [class*="amphtml-sidebar-mask"] {
+       z-index: 0;
+   }
+   footer{
+      background:#242323;
+      color:#fff;
+      padding-top: 0;
+   }
+   footer ul.social{
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding:0;
+      margin:0;
+      
+      padding:13px 0;
+   }
+   footer ul{
+      display: block;
+      width:100%;
+      height: 100%;
+      border-bottom:solid 1px #171717;
+      border-top:solid 1px #2f2e2e;
+      padding: 10px 0;
+      margin:0;
+      overflow: hidden;
+   }
+   footer ul:first-child{
+      border: none;
+   }
+   footer li{
+      margin-left: 5px;
+      justify-content: center;
+      align-items: baseline;
+      flex: 0 0 auto;
+   }
+   .social li{
+      width: 32px;
+      height: 32px;
+      background-image: url('./social.png');
+      background-repeat: no-repeat;
+   }
+   footer li a{
+      color:#918d91;
+      font-size: 12px;
+   }
+   footer li:first-child{
+      flex: 0 0 30%;
+      background: none;
+      margin-left: 0;
+      font-weight: bold;
+      font-size: 26px;
+      display: block;
+      min-height: 30px;
+   }
+   footer li.lbl:first-child{
+      float: right;
+      height: 100%;
+      width: 30%;
+      line-height: 100%;
+      display: block;
+      border: 1px solid transparent;
+   }
+   footer ul.lbl li:first-child a{
+      display: block;
+      height: 100%;
+      width: 100%;
+      min-height: 30px;
+   }
+   footer li{
+      float: right;
+      display: block;
+   }
+  footer li:first-child a{
+      font-size: 23px;
+      font-family: Arabiya;
+      color:#fff; 
+   }
+   footer li:first-child::after{
+      display: none;
+   }
+   li.fb{
+      background-position: 0 0;
+   }
+   li.twtr{
+      background-position: -44px 0;
+   }
+   li.insta{
+      background-position: -88px 0;
+   }
+   li.snap{
+      background-position: -132px 0;
+   }
+   li.yt{
+      background-position: -176px 0;
+   }
+   li.gplus{
+      background-position: -220px 0;
+   }
+   li.telegram{
+      background-position: -263px 0;
+   }
+   footer li::after {
+      content: ".";
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 0;
+      padding-right: 3px;
+      color: #fff;
+   }
+   footer .social li::after,
+   footer  ul.lbl li:first-child::after,
+   footer  li:last-child::after{
+      display: none;
+   }
+   .social li a {
+      width: 100%;
+      height: 100%;
+   }
+   .footer-separator{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   .footer-separator a{
+      flex:0 0 30%;
+      align-self: center;
+   }
+   .footer-separator .copyrights{
+      font-size: 11px;
+      align-self: center;
+   }
+   .share{
+      position: fixed;
+      bottom: -1px;
+      width: 100%;
+      display: flex;
+      background: #fff;
+      padding: 10px 0;
+      justify-content: space-evenly;
+      align-items: center;
+      box-shadow: 0px -5px 20px 3px rgba(0, 0, 0, 0.2);
+   }
+   amp-social-share {
+      background-image: url('./share.png');
+      background-repeat: no-repeat;
+   }
+   amp-social-share[type="telegram"] {
+      background: url('./share.png') 0px -52px  no-repeat;
+   }
+   .related {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 1px;
+   }
+   .related div{
+      position: relative;
+      overflow: hidden;
+      width: 49%;
+      margin-bottom: 10px;
+   }
+   .related div:first-child{
+      width: 100%;
+   }
+   .related div:first-child a{
+      font-size: 16px;
+   }
+   .related div a{
+      color: #fff;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 10px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1.4) 100%);
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      font-size: 12px;
+   }
+   .top-ad {
+      text-align: center;
+   }
+   .topic {
+      background: #fff;
+      padding: 10px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, .12);
+      -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .12);
+      -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .12);
+      margin: 0 auto
+   }
+   .topic h2 {
+      width: 100%;
+      font-weight: 700;
+      margin: 0 0 15px 0;
+      font-size: 140%;
+      line-height: 125%;
+      border-right: none;
+      border-bottom: 1px solid #e9e9e9
+   }
+   .topic .ttl {
+    color: #333
+   }
+   .topic .section-ttl {
+      display: block;
+      color: #333;
+      border-right: 4px solid #222;
+      font-weight: 700;
+      font-size: 100%;
+      padding-right: 7px;
+      line-height: 120%;
+      margin: 10px 0 0
+   }
+
+.topic h2 a,
+.topic h2 span {
+    margin-bottom: -1px;
+    padding-bottom: 7px;
+    display: inline-block;
+}
+amp-carousel {
+	direction: ltr;
+}
+/*Alhadth Theme*/
+.section-hadath .headerbar {
+    background: #000018 url(hadath_header.jpg) center top no-repeat;
+}
+.section-hadath .alhadtah-logo{
+    width: 81px;
+    height: 49px;
+    margin-top: 8px;
+}
+.section-hadath .article-title,
+.section-hadath h2{
+    color: #10107e;
+}
+.section-hadath h2{
+    border-right-color: #10107e;
+}
+</style>
+   <!--Carousel -->
+   <script async custom-element="amp-anim" src="https://cdn.ampproject.org/v0/amp-anim-0.1.js"></script>
+   <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+   <!--Carousel -->
+   <!--Youtube -->
+   <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+   <!--Youtube -->
+   <!--Twitter -->
+   <script async custom-element="amp-twitter" src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"></script>
+   <!--Twitter -->
+   <!--Instagram -->
+   <script async custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>
+   <!--Instagram -->
+   <!--AD-->
+   <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+   <!--AD-->
+   <!--Video-->
+   <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+   <!--Video-->
+   <!-- Facebook -->
+   <script async custom-element="amp-facebook" src="https://cdn.ampproject.org/v0/amp-facebook-0.1.js"></script>
+   <!-- Facebook -->
+   <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+   <!--sidebar-->
+   <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+   <!--share-->
+   <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+   <noscript>
+      <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+   </noscript>
+   <script async src="https://cdn.ampproject.org/v0.js"></script>
+</head>
+
+<body class="section-hadath">
+
+
+   <header class="headerbar">
+      <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
+      <a href="#" class="site-name">
+         <amp-img src="./alhadath-logo.png" layout="responsive" class="alhadtah-logo"></amp-img>
+      </a>
+      <a href="#" class="streaming">
+         <amp-img src="./live-stream.png" width="20" height="18" layout=fixed></amp-img>
+      </a>
+   </header>
+   <amp-sidebar id="sidebar1" layout="nodisplay" side="right" class="menu">
+      <ul class="sidebar">
+         <li><a href="#">الرئيسية</a></li>
+         <li><a href="#">الأخبار</a></li>
+         <li><a href="#">أسواق</a></li>
+         <li><a href="#">الرئيسية</a></li>
+         <li><a href="#">الأخبار</a></li>
+         <li><a href="#">أسواق</a></li>
+         <li><a href="#">الرئيسية</a></li>
+         <li><a href="#">الأخبار</a></li>
+         <li><a href="#">أسواق</a></li>
+         <li><a href="#">الرئيسية</a></li>
+         <li><a href="#">الأخبار</a></li>
+         <li><a href="#">أسواق</a></li>
+         <li><a href="#">الرئيسية</a></li>
+         <li><a href="#">الأخبار</a></li>
+         <li><a href="#">أسواق</a></li>
+      </ul>
+   </amp-sidebar>
+
+   <article>
+
+      <h3 class="article-title">محمد بن سلمان يرسم خارطة "مهمة" لنمو الاقتصاد السعودي خلال السنوات المقبلة</h3>
+      <div class="times">
+             <time datetime="22-11-2018"><span>آخر تحديث: </span> الخميس 22 نوفمبر 2018 KSA 14:26 - GMT 11:26  </time>
+             <time datetime="22-11-2018"><span>آخر تحديث: </span> الخميس 22 نوفمبر 2018 KSA 14:26 - GMT 11:26 </time>
+             
+      </div>      
+      <div class="author">
+         <span>المصدر: </span> العربية.نت - وكالات
+      </div>
+      <p>
+         <amp-carousel width=400 height=300 layout=responsive type=slides>
+            <amp-img src="https://lh3.googleusercontent.com/pSECrJ82R7-AqeBCOEPGPM9iG9OEIQ_QXcbubWIOdkY=w400-h300-no-n"
+               layout=fill></amp-img>
+            <amp-img src="https://lh3.googleusercontent.com/5rcQ32ml8E5ONp9f9-Rf78IofLb9QjS5_0mqsY1zEFc=w400-h300-no-n"
+               width=400 height=300 layout=responsive></amp-img>
+            <amp-img src="https://lh3.googleusercontent.com/Z4gtm5Bkxyv21Z2PtbTf95Clb9AE4VTR6olbBKYrenM=w400-h300-no-n"
+               width=400 height=300 layout=responsive></amp-img>
+            <amp-anim src="https://lh3.googleusercontent.com/qNn8GDz8Jfd-s9lt3Nc4lJeLjVyEaqGJTk1vuCUWazCmAeOBVjSWDD0SMTU7x0zhVe5UzOTKR0n-kN4SXx7yElvpKYvCMaRyS_g-jydhJ_cEVYmYPiZ_j1Y9de43mlKxU6s06uK1NAlpbSkL_046amEKOdgIACICkuWfOBwlw2hUDfjPOWskeyMrcTu8XOEerCLuVqXugG31QC345hz3lUyOlkdT9fMYVUynSERGNzHba7bXMOxKRe3izS5DIWUgJs3oeKYqA-V8iqgCvneD1jj0Ff68V_ajm4BDchQubBJU0ytXVkoWh27ngeEHubpnApOS6fcGsjPxeuMjnzAUtoTsiXz2FZi1mMrxrblJ-kZoAq1DJ95cnoqoa2CYq3BTgq2E8BRe2paNxLJ5GXBCTpNdXMpVJc6eD7ceijQyn-2qanilX-iK3ChbOq0uBHMvsdoC_LsFOu5KzbbNH71vM3DPkvDGmHJmF67Vj8sQ6uBrLnzpYlCyN4-Y9frR8zugDcqX5Q=w400-h300-no"
+               width="400" height="300">
+               <amp-img placeholder src="https://lh3.googleusercontent.com/qNn8GDz8Jfd-s9lt3Nc4lJeLjVyEaqGJTk1vuCUWazCmAeOBVjSWDD0SMTU7x0zhVe5UzOTKR0n-kN4SXx7yElvpKYvCMaRyS_g-jydhJ_cEVYmYPiZ_j1Y9de43mlKxU6s06uK1NAlpbSkL_046amEKOdgIACICkuWfOBwlw2hUDfjPOWskeyMrcTu8XOEerCLuVqXugG31QC345hz3lUyOlkdT9fMYVUynSERGNzHba7bXMOxKRe3izS5DIWUgJs3oeKYqA-V8iqgCvneD1jj0Ff68V_ajm4BDchQubBJU0ytXVkoWh27ngeEHubpnApOS6fcGsjPxeuMjnzAUtoTsiXz2FZi1mMrxrblJ-kZoAq1DJ95cnoqoa2CYq3BTgq2E8BRe2paNxLJ5GXBCTpNdXMpVJc6eD7ceijQyn-2qanilX-iK3ChbOq0uBHMvsdoC_LsFOu5KzbbNH71vM3DPkvDGmHJmF67Vj8sQ6uBrLnzpYlCyN4-Y9frR8zugDcqX5Q=w400-h300-no-k"
+                  width="400" height="300"></amp-img>
+            </amp-anim>
+         </amp-carousel>
+      </p>
+      <p>
+         كشف الأمير محمد بن سلمان، ولي ولي العهد السعودي ووزير الدفاع عن خطة اقتصادية متكاملة في المملكة سوف تؤدي إلى
+         رفع الإيرادات غير النفطية إلى ثلاث أضعاف ما هي عليه الآن، وذلك خلال أقل من أربع سنوات فقط، وهو ما يؤكد عزم
+         المملكة على الاستعداد لعصر "ما بعد النفط" والتقليل من الاعتماد على البترول في الاقتصاد المحلي السعودي.
+      </p>
+
+      <p>
+         وقال الأمير محمد في مقابلة مع وكالة "بلومبرغ" للأنباء استمرت 5 ساعات وشرح فيها رؤيته الاقتصادية، والعديد من
+         المواقف والآراء السياسية، إن الإيرادات غير النفطية للمملكة سوف ترتفع بواقع 100 مليار دولار إضافية بحلول العام
+         2020، وذلك بعد تنفيذ خطة الإصلاحات.
+      </p>
+      <div class="tags">
+         <h2>كلمات دالّة</h2>
+         <a title="#ليبيا" href="/ar/tools/tags?tagLabel=ليبيا">#ليبيا</a>,
+         <a title="#الشرارة_النفطي" href="/ar/tools/tags?tagLabel=الشرارة_النفطي">#الشرارة_النفطي</a>
+      </div>
+      <div>
+         <h2>اقرأ أيضا</h2>
+         <div class="related">
+            <div>
+               <amp-img src="https://lh3.googleusercontent.com/pSECrJ82R7-AqeBCOEPGPM9iG9OEIQ_QXcbubWIOdkY=w300-h200-no-n"
+                  width="466" height="355" alt="ss" layout="responsive"></amp-img><a> ولي ولي العهد السعودي ووزير الدفاع </a>
+            </div>
+            <div>
+               <amp-img src="https://lh3.googleusercontent.com/pSECrJ82R7-AqeBCOEPGPM9iG9OEIQ_QXcbubWIOdkY=w300-h200-no-n"
+               width="466" height="355" layout="responsive"></amp-img><a> ولي ولي العهد السعودي ووزير الدفاع </a>
+            </div>
+            <div>
+               <amp-img src="https://lh3.googleusercontent.com/pSECrJ82R7-AqeBCOEPGPM9iG9OEIQ_QXcbubWIOdkY=w300-h200-no-n"
+               width="466" height="355" layout="responsive"></amp-img><a> ولي ولي العهد السعودي ووزير الدفاع </a>
+            </div>
+         </div>
+      </div>
+      <p>
+         <amp-carousel width=auto height=200>
+            <amp-img src="https://lh3.googleusercontent.com/pSECrJ82R7-AqeBCOEPGPM9iG9OEIQ_QXcbubWIOdkY=w300-h200-no-n"
+               width=300 height=200></amp-img>
+            <amp-img src="https://lh3.googleusercontent.com/5rcQ32ml8E5ONp9f9-Rf78IofLb9QjS5_0mqsY1zEFc=w300-h200-no-n"
+               width=300 height=200></amp-img>
+            <amp-img src="https://lh3.googleusercontent.com/Z4gtm5Bkxyv21Z2PtbTf95Clb9AE4VTR6olbBKYrenM=w300-h200-no-n"
+               width=300 height=200></amp-img>
+            <amp-img src="https://lh3.googleusercontent.com/Z4gtm5Bkxyv21Z2PtbTf95Clb9AE4VTR6olbBKYrenM=w300-h200-no-n"
+               width=300 height=200></amp-img>
+            <amp-img src="https://lh3.googleusercontent.com/Z4gtm5Bkxyv21Z2PtbTf95Clb9AE4VTR6olbBKYrenM=w300-h200-no-n"
+               width=300 height=200></amp-img>
+            <amp-anim src="https://lh3.googleusercontent.com/qNn8GDz8Jfd-s9lt3Nc4lJeLjVyEaqGJTk1vuCUWazCmAeOBVjSWDD0SMTU7x0zhVe5UzOTKR0n-kN4SXx7yElvpKYvCMaRyS_g-jydhJ_cEVYmYPiZ_j1Y9de43mlKxU6s06uK1NAlpbSkL_046amEKOdgIACICkuWfOBwlw2hUDfjPOWskeyMrcTu8XOEerCLuVqXugG31QC345hz3lUyOlkdT9fMYVUynSERGNzHba7bXMOxKRe3izS5DIWUgJs3oeKYqA-V8iqgCvneD1jj0Ff68V_ajm4BDchQubBJU0ytXVkoWh27ngeEHubpnApOS6fcGsjPxeuMjnzAUtoTsiXz2FZi1mMrxrblJ-kZoAq1DJ95cnoqoa2CYq3BTgq2E8BRe2paNxLJ5GXBCTpNdXMpVJc6eD7ceijQyn-2qanilX-iK3ChbOq0uBHMvsdoC_LsFOu5KzbbNH71vM3DPkvDGmHJmF67Vj8sQ6uBrLnzpYlCyN4-Y9frR8zugDcqX5Q=w300-h200-no"
+               width="300" height="200">
+               <amp-img placeholder src="https://lh3.googleusercontent.com/qNn8GDz8Jfd-s9lt3Nc4lJeLjVyEaqGJTk1vuCUWazCmAeOBVjSWDD0SMTU7x0zhVe5UzOTKR0n-kN4SXx7yElvpKYvCMaRyS_g-jydhJ_cEVYmYPiZ_j1Y9de43mlKxU6s06uK1NAlpbSkL_046amEKOdgIACICkuWfOBwlw2hUDfjPOWskeyMrcTu8XOEerCLuVqXugG31QC345hz3lUyOlkdT9fMYVUynSERGNzHba7bXMOxKRe3izS5DIWUgJs3oeKYqA-V8iqgCvneD1jj0Ff68V_ajm4BDchQubBJU0ytXVkoWh27ngeEHubpnApOS6fcGsjPxeuMjnzAUtoTsiXz2FZi1mMrxrblJ-kZoAq1DJ95cnoqoa2CYq3BTgq2E8BRe2paNxLJ5GXBCTpNdXMpVJc6eD7ceijQyn-2qanilX-iK3ChbOq0uBHMvsdoC_LsFOu5KzbbNH71vM3DPkvDGmHJmF67Vj8sQ6uBrLnzpYlCyN4-Y9frR8zugDcqX5Q=w300-h200-no-k"
+                  width="300" height="200"></amp-img>
+            </amp-anim>
+         </amp-carousel>
+      </p>
+      <h2>فيديو</h2>
+      <p>
+         وأضاف الأمير محمد: "إنها حزمة كبيرة من البرامج التي تهدف لإعادة هيكلة بعض القطاعات المدرة للدخل"، مشيراً إلى
+         أن الإيرادات غير النفطية للسعودية ارتفعت بالفعل خلال العام الماضي بنسبة 35% لتصل إلى 163.5 مليار ريال سعودي
+         (44 مليار دولار)، بحسب بيانات الموازنة.
+      </p>
+      <amp-video src="Bahrain-2016-2.mp4" width="358" height="204" layout="responsive" poster="welcome.jpg" controls>
+         <div fallback>
+            <p>Your browser doesn’t support HTML5 video</p>
+         </div>
+      </amp-video>
+      <h2>يوتيوب فيديو</h2>
+      <p>وتقول الوكالة الأميركية إن طموحات وخطط الأمير محمد تمثل "تحولاً كبيراً بالنسبة لبلد مبني اقتصاده على العوائد
+         النفطية الدولارية منذ اكتشاف البترول فيه قبل ثمانية عقود، فيما تلفت "بلومبرغ" الى أن الأمير يهدف بشكل رئيسي
+         إلى التحول في الإدارة عبر "سلسلة إصلاحات" تجنب السعودية مخاطر هبوط أسعار النفط</p>
+      <amp-youtube data-videoid="mGENRKrdoGY" layout="responsive" width="480" height="270"></amp-youtube>
+      <h2>صورة</h2>
+      <p>وتقول الوكالة الأميركية إن طموحات وخطط الأمير محمد تمثل "تحولاً كبيراً بالنسبة لبلد مبني اقتصاده على العوائد
+         النفطية الدولارية منذ اكتشاف البترول فيه قبل ثمانية عقود، فيما تلفت "بلومبرغ" الى أن الأمير يهدف بشكل رئيسي
+         إلى التحول في الإدارة عبر "سلسلة إصلاحات" تجنب السعودية مخاطر هبوط أسعار النفط</p>
+      <amp-img src="welcome.jpg" width=466 height=355 layout="responsive"></amp-img>
+      <h2>إعلان</h2>
+      <amp-ad width=300 height=200 type="adsense" data-ad-client="ca-pub-8125901705757971" data-ad-slot="7783467241">
+      </amp-ad>
+      <h2>إعلان</h2>
+      <p>وتقول الوكالة الأميركية إن طموحات وخطط الأمير محمد تمثل "تحولاً كبيراً بالنسبة لبلد مبني اقتصاده على العوائد
+         النفطية الدولارية منذ اكتشاف البترول فيه قبل ثمانية عقود، فيما تلفت "بلومبرغ" الى أن الأمير يهدف بشكل رئيسي
+         إلى التحول في الإدارة عبر "سلسلة إصلاحات" تجنب السعودية مخاطر هبوط أسعار النفط</p>
+      <amp-ad width=300 height=250 type="a9" data-aax_size="300x250" data-aax_pubname="abc123" data-aax_src="302">
+      </amp-ad>
+      <p>وتقول الوكالة الأميركية إن طموحات وخطط الأمير محمد تمثل "تحولاً كبيراً بالنسبة لبلد مبني اقتصاده على العوائد
+         النفطية الدولارية منذ اكتشاف البترول فيه قبل ثمانية عقود، فيما تلفت "بلومبرغ" الى أن الأمير يهدف بشكل رئيسي
+         إلى التحول في الإدارة عبر "سلسلة إصلاحات" تجنب السعودية مخاطر هبوط أسعار النفط</p>
+      <amp-ad width=300 height=90 type="adreactor" data-pid=790 data-zid=9 data-custom3="No Type">
+      </amp-ad>
+      <h2>توتير</h2>
+      <p>وتقول الوكالة الأميركية إن طموحات وخطط الأمير محمد تمثل "تحولاً كبيراً بالنسبة لبلد مبني اقتصاده على العوائد
+         النفطية الدولارية منذ اكتشاف البترول فيه قبل ثمانية عقود، فيما تلفت "بلومبرغ" الى أن الأمير يهدف بشكل رئيسي
+         إلى التحول في الإدارة عبر "سلسلة إصلاحات" تجنب السعودية مخاطر هبوط أسعار النفط</p>
+      <amp-twitter width=300 height=657 layout="responsive" data-tweetID="717656426919903232">
+      </amp-twitter>
+      <amp-ad width=300 height=250 type="adblade" data-width="300" data-height="250" data-cid="19626-3798936394">
+      </amp-ad>
+      <h2>انستا غرام</h2>
+      <amp-instagram data-shortcode="BDmvqGQR995" width="320" height="250" layout="responsive">
+      </amp-instagram>
+      <h2>فيس بوك</h2>
+      <amp-facebook width="486" height="657" layout="responsive" data-href="https://www.facebook.com/tafa3olcom/videos/1411278422264061/">
+      </amp-facebook>
+
+      <h2>فيس بوك فيديو</h2>
+      <amp-facebook width="486" height="657" layout="responsive" data-href="https://www.facebook.com/AlArabiya/videos/1468554016514218/">
+      </amp-facebook>
+
+      <h2>فيس بوك خبر</h2>
+      <amp-facebook width="486" height="657" layout="responsive" data-href="https://www.facebook.com/AlArabiya/posts/1468676946501925">
+      </amp-facebook>
+
+
+      <h2>فيس بوك صورة</h2>
+      <amp-facebook width="486" height="657" layout="responsive" data-href="https://www.facebook.com/AlArabiya/posts/1468502759852677:0">
+      </amp-facebook>
+      <h2>غوغل مابس</h2>
+      <amp-iframe width=300 height=300 sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+         layout="responsive" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14452.556432634523!2d55.154139900000004!3d25.097151999999998!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sae!4v1491229270025">
+      </amp-iframe>
+
+   </article>
+   <footer>
+      <ul class="social">
+         <li>تابعنا</li>
+         <li class="fb">
+            <a href="https://www.facebook.com/AlArabiya" target="_blank" rel="noopener" title=""></a>
+         </li>
+         <li class="twtr">
+            <a href="https://twitter.com/AlArabiya" target="_blank" rel="noopener" title=""></a>
+         </li>
+         <li class="insta">
+            <a href="https://www.instagram.com/alarabiya" target="_blank" rel="noopener" title=""></a>
+         </li>
+         <li class="snap">
+            <a href="https://www.snapchat.com/discover/Al-Arabiya/0445020355" rel="noopener" target="_blank" title=""></a>
+         </li>
+         <li class="yt">
+            <a href="https://www.youtube.com/AlArabiya" target="_blank" rel="noopener" title=""></a>
+         </li>
+         <li class="gplus">
+            <a href="https://plus.google.com/+AlArabiya" target="_blank" rel="noopener" title=""></a>
+         </li>
+         <li class="telegram">
+            <a href="https://telegram.me/Alarabiya" target="_blank" rel="noopener" title=""></a>
+         </li>
+      </ul>
+      <ul>
+         <li class="lbl">
+            <a href="/latest-news.html" target="_self">الأخبار</a>
+         </li>
+         <li>
+            <a href="/arab-and-world.html" target="_self">العرب والعالم</a>
+         </li>
+         <li>
+            <a href="/aswaq.html" target="_self">الأسواق العربية</a>
+         </li>
+         <li>
+            <a href="/sport.html" target="_self">الرياضة</a>
+         </li>
+      </ul>
+      <ul>
+         <li class="lbl">
+            <a target="_self"></a>
+         </li>
+         <li>
+            <a href="/medicine-and-health.html" target="_self">طب وصحة</a>
+         </li>
+         <li>
+            <a href="/culture-and-art.html" target="_self">ثقافة وفن</a>
+         </li>
+         <li>
+            <a href="/views.html" target="_self">آراء</a>
+         </li>
+      </ul>
+      <ul>
+         <li class="lbl">
+            <a href="/alarabiya-videos.html" target="_self">فيديو العربية</a>
+            </l>
+         <li>
+            <a href="/programs.html" target="_self">البرامج</a>
+         </li>
+         <li>
+            <a href="/alarabiya-today.html" target="_self">فيديو</a>
+         </li>
+         <li>
+            <a href="/alarabiya-media.html" target="_self">العربية ميديا</a>
+         </li>
+      </ul>
+      <ul>
+         <li class="lbl">
+            <a target="_self">خدمات العربية</a>
+         </li>
+         <li>
+            <a href="/service-provider.html" target="_self">مزودو الخدمة</a>
+         </li>
+         <li>
+            <a href="/tools/حول-العربية.html" target="_self">حول العربية.نت</a>
+         </li>
+         <li>
+            <a href="/alarabiya-frequencies.html" target="_self">ترددات القناة</a>
+         </li>
+      </ul>
+      <ul>
+         <li class="lbl">
+            <a target="_self"></a>
+         </li>
+         <li>
+            <a href="/applications.html" target="_self">تطبيقات العربية</a>
+         </li>
+         <li>
+            <a href="/tools/mrss.html" target="_self">خدمة RSS</a>
+         </li>
+         <li>
+            <a href="/tools/privacy-policy.html" target="_self">سياسة الخصوصية</a>
+         </li>
+      </ul>
+      <ul>
+         <li class="lbl">
+            <a target="_self">لغات أخرى</a>
+         </li>
+         <li>
+            <a href="https://english.alarabiya.net/" target="_self">English</a>
+         </li>
+         <li>
+            <a href="https://farsi.alarabiya.net/" target="_self">فارسي</a>
+         </li>
+         <li>
+            <a href="https://urdu.alarabiya.net/" target="_self">اردو</a>
+         </li>
+      </ul>
+      <div class="footer-separator">
+         <a class="logo" href="/">
+            <amp-img src="./logo.png" width="70" height="29"></amp-img>
+         </a>
+         <div class="copyrights">
+            © جميع الحقوق محفوظة لشبكة العربية 2018</div>
+      </div>
+   </footer>
+   <div class="share">
+      <amp-social-share type="facebook" width="40" height="40" data-param-app_id="254325784911610"></amp-social-share>
+      <amp-social-share type="gplus" width="40" height="40"></amp-social-share>
+      <amp-social-share type="twitter" width="40" height="40"></amp-social-share>
+      <amp-social-share type="whatsapp" width="40" height="40"></amp-social-share>
+      <amp-social-share type="email" width="40" height="40"></amp-social-share>
+      <amp-social-share type="telegram" width="40" height="40" data-share-endpoint="https://telegram.me/share/"
+         data-param-text="ليبيا..%20هجوم%20مسلّح%20على%20أكبر%20حقل%20نفطي - CANONICAL_URL" data-param-url="http://ara.tv/4g932"></amp-social-share>
+   </div>
+</body>
+
+</html>  
