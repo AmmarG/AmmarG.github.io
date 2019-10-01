@@ -615,7 +615,7 @@ nav li:last-child {
     align-self: center;
     direction: rtl;
     text-align: right;
-    width: 100%;
+    width: 90%;
     padding-top: 2%;
     overflow: visible;
     display: -webkit-box;
@@ -628,10 +628,11 @@ nav li:last-child {
     -webkit-box-flex: 1;
     -ms-flex: 1 0 auto;
     flex: 1 0 auto;
+    position: relative;
 }
 .search-overlay .search-input {
-    width: 90%;
-    font-size: 2.5em;
+    width: 100%;
+    font-size: 2em;
     line-height: 1.8em;
     padding: 0 10px;
     border: 0;
@@ -662,7 +663,7 @@ nav li:last-child {
     height: 50px;
     padding: 2px;
     border: none;
-    margin: 21px -37px 0 0;
+    margin: 21px -50px 0 0;
     outline: none;
     font-size: 0;
 }
@@ -3039,29 +3040,6 @@ article .video-js {
     width: 100%;
     height: 100%;
 }
-/***AutoComplete Aswaq*****/
-
-.ui-menu {
-    z-index: 15;
-    width: 600px;
-    background: #F1F1F1;
-    padding: 20px;
-    height: 400px;
-    overflow: scroll;
-}
-.ui-menu li {
-    padding: 10px 4px 10px 0;
-}
-.ui-menu li.ui-menu-item:nth-child(odd) {
-    background: white;
-}
-.ui-menu .search_news {
-    background: #e2e2e2 !important;
-    padding: 10px;
-}
-.ui-autocomplete-category {
-    border-bottom: 1px solid #ccc;
-}
 .aa-live {
     display: none;
 }
@@ -3163,9 +3141,8 @@ table.gsc-search-box td.gsc-input {
 }
 #search-form>div {
     overflow-y: auto;
-    height: 800px;
+    height: auto;
     width: 100%;
-    ;
 }
 .gsc-tabHeader {
     width: 100px;
@@ -3464,12 +3441,15 @@ div#___gcse_0 {
 .gsc-result-info-container {
     padding-top: 20px
 }
-.lazy.size--16x9 {
-    padding-top: 56.25%;
+/**Lazy Loading**/
+img.lazy {
+	opacity: 0.5;
 }
-.lazy.size--4x3 {
-    padding-top: 75%;
+img.load-image {
+	opacity: 1;
+	transition: opacity 0.3s;
 }
+/**Lazy Loading**/
 .gsc-results .gsc-cursor {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -3697,6 +3677,7 @@ div#___gcse_0 {
     display: block;
     right: 0;
     padding: 20px;
+    width: 100%;
 }
 .img-gal-ttl {
     bottom: 30px;
@@ -3707,7 +3688,6 @@ div#___gcse_0 {
 }
 .img-gal-info .caption {
     bottom: 0;
-    width: 100%;
     font-weight: normal;
 }
 .area-25 .img-gal-ttl,
@@ -4184,3 +4164,36 @@ width: 100%;
     padding: 3px;
     border-radius: 6px;
 }
+.ifram-data{
+    visibility: hidden;
+}
+/**Aswaq suggestions list**/
+.suggestions {
+    position: relative;
+    display: inline-block;
+  }
+
+  .suggestions-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    top: 105px;
+  }
+  .suggestions-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+  }
+  .suggestions-items div:hover {
+    background-color: #e9e9e9;
+  }
+  .current-active {
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+  }
+/**Aswaq suggestions list**/

@@ -48,9 +48,13 @@ function initVideoJsAR(videoIdName, idPostFix , videoLable, pageCategoryVID) {
 			
 	    	this.ima({ id: videoIdName+idPostFix,
 					   vpaidMode: google.ima.ImaSdkSettings.VpaidMode.INSECURE ,
-		  		       adTagUrl: 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/7229/alarabiya.net'+pageCategoryVID+'&ciu_szs=300x250,728x90&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&url=[referrer_url]&correlator=' + rnd 
+		  		       //adTagUrl: 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/7229/alarabiya.net'+pageCategoryVID+'&ciu_szs=300x250,728x90&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&url=[referrer_url]&correlator=' + rnd
+		  		       adTagUrl: 'https://pubads.g.doubleclick.net/gampad/ads?iu=/7229/alarabiya.net'+pageCategoryVID+'&description_url=https://www.alarabiya.net&env=vp&impl=s&tfcd=0&npa=0&gdfp_req=1&output=vast&sz=640x360&ciu_szs=300x250,728x90,320x100,320x50,970x250,970x90,300x600&unviewed_position_start=1&ad_rule=0&cust_params=platform%3Dweb&correlator=' + rnd 
 		  		       //contribAdsSettings: { timeout: 3000} 
 		  			  });
+		
+		
+		
 		
 			// Initialize the ad container when the video player is clicked, but
 			// only the

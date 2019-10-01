@@ -303,7 +303,8 @@ article p a,
 .more-btn,
 .tm-card h1,
 .tm-card h1 a,
-.tm-sequence ul li.active a {
+.tm-sequence ul li.active a,
+.opinions .ttl {
     color: #6e2968;
 }
 body,
@@ -349,7 +350,7 @@ form .caption,
 select,
 .tm-card time,
 .tm-card .caption {
-    color: #918d91;
+    color: #827e82;
 }
 .breaking-news .lbl,
 .article-hdr .author,
@@ -964,7 +965,8 @@ body.live-streaming h2,
 .section-vod article .unordered li,
 .section-vod .navigate .link:hover,
 .section-vod article .box.infograph .caption,
-.section-vod .tm-sequence .ttl {
+.section-vod .tm-sequence .ttl,
+.section-vod .opinions .ttl {
     color: #e4e4e4;
 }
 .section-vod header nav a:hover,
@@ -992,7 +994,8 @@ body.live-streaming h2,
 .section-vod footer li a:hover,
 .section-vod .tm-card h1,
 .section-vod .tm-card h1 a,
-.section-vod .tm-sequence ul li.active a {
+.section-vod .tm-sequence ul li.active a,
+.section-vod .opinions .author {
     color: #f90f0f !important;
 }
 .section-vod .main-content .submenu li,
@@ -1197,11 +1200,13 @@ body.live-streaming h2,
 .section-hadath .ftr-disclaimer,
 .section-hadath .navigate .head,
 .section-hadath .more-btn,
-.section-hadath .tm-sequence ul li.active a {
+.section-hadath .tm-sequence ul li.active a,
+.section-hadath .opinions .author {
     color: #10107e;
 }
 .section-hadath header nav a,
-.section-hadath .article-hdr h2 {
+.section-hadath .article-hdr h2,
+.section-hadath .opinions .ttl {
     color: #333;
 }
 .section-hadath article .bookmark,
@@ -1348,7 +1353,8 @@ body.live-streaming h2,
 .section-aswaq .ftr-disclaimer,
 .section-aswaq .navigate .head,
 .section-aswaq .more-btn,
-.section-aswaq .tm-sequence ul li.active a {
+.section-aswaq .tm-sequence ul li.active a,
+.section-aswaq .opinions .ttl {
     color: #083375;
 }
 .section-aswaq header nav a,
@@ -1480,7 +1486,8 @@ body.live-streaming h2,
 .section-ksa .topic .section-ttl,
 .section-ksa .navigate .head,
 .section-ksa .more-btn,
-.section-ksa .tm-sequence ul li.active a {
+.section-ksa .tm-sequence ul li.active a,
+.section-ksa .opinions .ttl {
     color: #246826;
 }
 .section-ksa header nav a,
@@ -1589,11 +1596,13 @@ body.live-streaming h2,
 .aa-live h2 a,
 .section-africa .navigate .head,
 .section-africa .more-btn,
-.section-africa .tm-sequence ul li.active a {
+.section-africa .tm-sequence ul li.active a,
+.section-africa .opinions .author {
     color: #e33541;
 }
 .section-africa header nav a,
-.section-africa .article-hdr h2 {
+.section-africa .article-hdr h2,
+.section-africa .opinions .ttl {
     color: #333;
 }
 .section-africa article .bookmark,
@@ -1697,11 +1706,13 @@ body.live-streaming h2,
 .section-sport .topic .section-ttl,
 .section-sport .navigate .head,
 .section-sport .more-btn,
-.section-sport .tm-sequence ul li.active a {
+.section-sport .tm-sequence ul li.active a,
+.section-sport .opinions .author {
     color: #ed6d21;
 }
 .section-sport header nav a,
-.section-sport .article-hdr h2 {
+.section-sport .article-hdr h2,
+.section-sport .opinions .ttl {
     color: #333;
 }
 .section-sport article .bookmark,

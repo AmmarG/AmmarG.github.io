@@ -1,0 +1,890 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,700&display=swap');
+ body,
+.main-submenu,
+footer,
+input::-webkit-input-placeholder,
+.slider .item .label .caption,
+footer .social,
+.article-hdr,
+.teaser-tools,
+blockquote,
+article h2,
+article h5,
+article p,
+input[type=text],
+input[type=password],
+select,
+textarea,
+.vod-slider.news .caption.trailer,
+article .box.infograph .caption,
+.navigate .head,
+.more-btn span,
+.main-submenu,
+.menu-lead a,
+.gs-webResult.gs-result a.gs-title:link b,
+.gs-webResult.gs-result a.gs-title:link,
+#___gcse_0,
+.gsc-table-cell-snippet-close,
+.gsc-tabHeader,
+.gsc-results .gsc-cursor-box,
+.gsc-search-box-tools .gsc-search-box .gsc-input,
+.gsc-above-wrapper-area-container,
+.gs-no-results-result,
+.tm-card time b,
+footer li:first-child a {
+    font-family: 'Noto Serif', serif;
+}
+.top-info .date-time,
+header .live-streaming,
+.mega-menu,
+.ad25 h2,
+.slider .item .label .ttl,
+.opinions .author,
+.tabs-menu li a,
+footer li a,
+.breadcrumbs a,
+.article-hdr time,
+.article-hdr .author,
+.teaser-tools,
+footer .copyrights,
+.btn {
+    font-family: Arial;
+}
+.opinions .author {
+    font-weight: bold;
+}
+.tabs-menu li a,
+.article-hdr time,
+a.loadmore,
+.btn {
+    font-weight: normal;
+}
+blockquote small {
+    font-style: italic;
+}
+body {
+    text-align: left;
+    font-size: 100%;
+    line-height: 130%;
+}
+.main-content,
+.search-overlay,
+.search-overlay .container form,
+.en table,
+.navigate .link .wrapper,
+table {
+    direction: ltr;
+}
+.main-content .box.programs-times .slider {
+    direction: rtl;
+}
+.main-header .weather,
+.search-overlay .container form {
+    text-align: right;
+}
+.top-info .hashtags a {
+    margin: 0 30px 0 0;
+}
+.top-info .hashtags {
+    margin: 0 50px 0 0;
+}
+.aswaq-articles div {
+    float: left;
+}
+header .live-streaming span {
+    padding: 17px 20px 0 65px;
+}
+.main-header .weather {
+    margin-right: 20px;
+}
+nav li:first-child,
+.main-content .submenu li:first-child {
+    padding-left: 0;
+    padding-right: 14px;
+}
+header nav li,
+.main-content .submenu li {
+    border-width: 0 0 0 1px;
+}
+.fm-nav,
+.submenu .menu-icon {
+    margin: 0 0 0 auto;
+}
+.search-overlay .close {
+    left: 10%;
+    right: auto;
+}
+.latest-news .time,
+.live-popup .devices,
+.main-content .menu-icon {
+    border-width: 0 1px 0 0;
+    border-color: #b7b6b6;
+}
+.btn-search {
+    background-position: 13px -390px;
+}
+.search-icon {
+    margin: 21px 0 0 -37px;
+}
+nav .logo {
+    background-position: 0 -308px;
+}
+.sticky nav.moveR .logo {
+    transform-origin: 171px 95px;
+    background-position: 39px -184px;
+}
+.news li {
+    float: left;
+    margin: 0 0 17px 20px;
+}
+.news li:first-child,
+.area-50 .news li:first-child {
+    float: left;
+}
+.ad25 h2 {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 190%;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+.main-content .main-submenu+li {
+    padding-right: 1px0;
+    padding-left: 10px;
+    border-left: none !important;
+}
+.main-submenu span {
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+header .live-streaming span {
+    background-position: 15px -91px;
+    line-height: 330%;
+}
+.news li:first-child .ttl,
+.news .section-ttl,
+.news-mod02 li:first-child .ttl,
+.news-mod02 .section-ttl,
+.news .ttl,
+.news.programs li:first-child .ttl,
+.area-25 .news li:first-child .ttl {
+    line-height: 130%;
+}
+.latest-news.with-thumbs h2 a {
+    padding: 20px 0 0 20px;
+}
+.latest-news.with-thumbs img {
+    float: left;
+}
+.latest-news.with-thumbs .ttl {
+    float: right;
+}
+.area-25 .latest-news.with-thumbs .time span {
+    float: left;
+}
+.latest-news.with-thumbs .time span.region {
+    padding-right: 10px;
+    padding-left: 0;
+}
+.latest-news.with-thumbs .time {
+    margin-left: 5px;
+}
+h2 {
+    border-width: 0 0 0 5px;
+    padding-left: 10px;
+    padding-right: 0;
+}
+.news-articles .section-ttl,
+.topic .section-ttl {
+    padding-right: 0;
+    padding-left: 7px;
+    border-width: 0 0 0 4px;
+}
+.video-icon,
+.photo-icon,
+.news-mod02 li:first-child .video-icon {
+    left: auto;
+    right: 0;
+}
+.latest-news.with-thumbs .video-icon {
+    left: 0;
+    right: auto;
+}
+.more-btn span {
+    font-size: 15px;
+}
+.latest-news h2,
+.top-content h2 {
+    padding-left: 0;
+}
+.top-content .cover {
+    float: left;
+}
+.top-content .ttl,
+.top-content .caption {
+    float: right;
+    text-align: left;
+}
+.top-content .caption {
+    text-align: right;
+}
+.area-100 .news-articles ul li,
+.area-100 .gallery ul li,
+.area-100 .news.programs ul li {
+    margin-left: 0;
+    margin-right: 14px;
+}
+.area-100 .news-articles ul li:nth-child(4n+0),
+.area-100 .gallery ul li:nth-child(4n+0),
+.area-100 .news.programs ul li:nth-child(4n+0) {
+    margin-right: 0;
+}
+.news.programs li {
+    margin-left: 0;
+}
+.scroller .navigator {
+    left: auto;
+    right: 0;
+}
+.opinions .pic {
+    float: left;
+}
+.opinions .ttl,
+.opinions .author {
+    float: right;
+}
+.latest-news .time {
+    float: left;
+    padding-left: 0;
+    padding-right: 10px;
+    margin-left: 0;
+    margin-right: 7px;
+}
+.sticky nav.moveR .submenu .logo {
+    right: auto;
+    left: -167px;
+}
+footer .logo {
+    float: left;
+    padding-left: 0;
+    padding-right: 25px;
+    background-position: 0px -320px;
+}
+footer .social {
+    left: auto;
+    right: 0;
+}
+footer .copyrights {
+    float: right;
+    padding: 22px 360px 0px 22px;
+}
+.slider .item .label .ttl,
+.slider .item .label .caption {
+    text-align: left;
+}
+.slider .item .label {
+    padding: 10px 20px 10px 10px;
+}
+.slider .time .start {
+    float: left;
+}
+.slider .time .end {
+    float: right;
+}
+.section-vod .btn-search {
+    background-position: -64px -390px;
+}
+.section-vod header .live-streaming span {
+    background-position: -207px -91px;
+}
+.section-vod .sticky nav.moveR .logo {
+    transform-origin: 0 -21px;
+}
+.latest-news.with-thumbs .time,
+.latest-news.with-thumbs a:hover .time {
+    width: 68%;
+    float: right;
+    text-align: left;
+    margin: 0;
+}
+.box.news .ttl {
+    right: auto;
+    left: 0;
+}
+.article-hdr time {
+    background-position: -243px -867px;
+    padding: 0 0 0 27px;
+}
+.article-hdr h1,
+.article-hdr h3 {
+    font-size: 38px;
+    line-height: 110%;
+}
+article p {
+    font-size: 17px;
+    line-height: 155%;
+}
+blockquote {
+    font-size: 27px;
+    line-height: 140%;
+    font-weight: normal;
+}
+.tooltip {
+    float: right;
+    font-size: 14px;
+    line-height: 150%;
+    margin-top: 7px;
+}
+.topic h2 a,
+.topic h2 span {
+    font-size: 20px;
+}
+article h2,
+article h5 {
+    font-size: 25px;
+    line-height: 150%;
+    border-left: none;
+}
+article .box.tags a {
+    padding: 0 10px 0 0;
+}
+.ordered li ol li,
+.unordered li ul li {
+    margin-left: 30px;
+    margin-right: 0;
+}
+.unordered li {
+    padding: 0 0 0 15px;
+    background-position: left 9px;
+}
+.teaser-tools ul .share {
+    background-position: 60px -468px;
+}
+.teaser-tools ul .font-resize {
+    background-position: -170px -467px;
+}
+.tm-card .breaking {
+    float: left;
+}
+.tm-card time b {
+    padding-left: 0;
+    padding-right: 10px;
+}
+.tm-sequence {
+    float: left;
+}
+.section-timeline #body-text,
+.section-timeline .area-75 .box.news {
+    float: right;
+}
+.tm-sequence ul {
+    border-width: 0 0 0 2px;
+    margin: 15px 0 0 5px;
+}
+.tm-sequence ul li::before {
+    right: auto;
+    left: -6px;
+}
+.author-overview h1,
+.author-overview p,
+.author-overview h2 {
+    line-height: 150%;
+}
+.tooltip .tooltip-txt {
+    left: auto;
+    right: 0;
+    text-align: left;
+}
+.mega-menu .main-menu {
+    margin-left: 0;
+    margin-right: 70px;
+}
+.article-card img {
+    float: left;
+}
+.article-card .ttl,
+.article-card p,
+.article-card .date-time {
+    float: right;
+}
+.article-card .date-time .time {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.article-card .ttl {
+    font-size: 130%;
+}
+.author-overview img {
+    float: left;
+}
+.author-overview h1,
+.author-overview p,
+.author-overview h2 {
+    float: right;
+}
+article .bookmark {
+    left: auto;
+    right: 0;
+}
+blockquote p {
+    text-align: right;
+}
+form .row .lbl {
+    float: left;
+}
+form .row .fld {
+    float: right;
+}
+.contact-form h2 {
+    border: none;
+    float: left;
+}
+.contact-form .btn {
+    float: right;
+}
+.captcha {
+    float: left;
+}
+h6.flag img {
+    margin-left: 0;
+    margin-right: 15px;
+}
+.table-wrapper table .ttl {
+    text-align: left;
+}
+td img {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.table-wrapper table {
+    width: 99%;
+}
+.breaking-news .lbl {
+    margin-left: 0;
+    margin-right: 15px;
+}
+.teaser-tools .short-url {
+    padding: 10px 0 0 0;
+}
+.teaser-tools .short-url span {
+    padding-right: 10px;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 200%;
+}
+@media (max-width: 480px) {
+    .farsi footer .social .lbl,
+    footer li:first-child,
+    footer li:first-child a,
+    .farsi footer li:first-child,
+    .farsi footer li:first-child a {
+        font-family: 'Noto Serif', serif;
+    }
+    .main-header .logo {
+        margin: 19px 0 0 13px;
+    }
+    .section-vod .main-header .logo {
+        margin: 15px 0 0 0;
+    }
+    .main-header .mobile-search {
+        margin-left: auto;
+        margin-right: 0;
+    }
+    nav .main-content {
+        right: auto;
+        left: -300px;
+        transition: left .3s;
+        -webkit-overflow-scrolling: touch;
+    }
+    nav .main-content.show {
+        left: 0;
+        right: auto;
+    }
+    nav li:first-child,
+    .main-content .submenu li:first-child {
+        padding: 0;
+    }
+    nav .main-content li a.active {
+        border-right: none;
+        border-left: 5px solid #6e2968;
+        padding: 0 0 0 15px;
+    }
+    .submenu .arrow {
+        border-right: none;
+        border-left: 1px solid #dfdfdf;
+    }
+    .main-content .submenu ul li a {
+        padding: 0 20px 0 40px;
+    }
+    .section-vod nav .submenu .arrow,
+    .section-vod .submenu.level2 .main-submenu {
+        border-left: 1px solid #272729;
+        border-right: none;
+    }
+    nav li a {
+        padding: 0 0 0 20px;
+    }
+    .news ul li:first-child .ttl,
+    .news-mod02 ul li:first-child .ttl {
+        font-size: 18px;
+    }
+    a.cover,
+    a.cover .ttl,
+    .section-vod .area-25 .news.episodes li:first-child a.cover,
+    .section-vod .area-25 .news.episodes li:first-child a.cover .ttl,
+    .section-vod .area-25 .news.episodes li a.cover,
+    .section-vod .area-25 .news.episodes li a.cover .ttl {
+        padding: 0 0 0 0;
+        font-size: 15px;
+        font-weight: normal;
+    }
+    .latest-news.with-thumbs h2 a {
+        padding-left: 0;
+    }
+    .latest-news.with-thumbs .ttl {
+        line-height: 140%;
+        font-size: 14px;
+    }
+    .news-articles li .ttl,
+    .gallery li .ttl,
+    .topic a .ttl,
+    .news-mod02 li .ttl,
+    .top-content .ttl,
+    .opinions .ttl,
+    .latest-news .ttl {
+        font-weight: normal;
+    }
+    .top-content li .cover,
+    .top-content li .ttl,
+    .top-content li .caption {
+        width: 49%;
+        clear: right;
+    }
+    .top-content .ttl {
+        font-size: 16px;
+    }
+    section>h2,
+    div>h2 {
+        font-size: 130%;
+    }
+    .box.gallery h2 {
+        margin-left: 10px;
+    }
+    .scroller .navigator {
+        margin-right: 10px;
+    }
+    .opinions .ttl {
+        margin: 10px 0 5px 0;
+        padding: 0 10px 0 0;
+        line-height: 130%;
+    }
+    .opinions .author {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    footer .social .lbl {
+        line-height: 200%;
+        font-size: 50%;
+    }
+    footer li {
+        float: left;
+        padding: 0 0 0 10px;
+    }
+    footer li::after {
+        padding-right: 0;
+        padding-left: 3px;
+    }
+    footer li:first-child,
+    footer li:first-child a {
+        font-size: 17px;
+    }
+    .article-hdr h1,
+    .article-hdr h3 {
+        font-size: 27px;
+    }
+    blockquote {
+        font-size: 18px;
+    }
+    .breadcrumbs {
+        padding-left: 10px;
+    }
+    .tm-card .author-overview p {
+        font-size: 100%;
+    }
+    .author-overview img {
+        float: left;
+    }
+    .tm-card .author-overview h1,
+    .tm-card .author-overview h2 {
+        float: right;
+    }
+    .tm-card .author-overview h1 {
+        font-size: 100%;
+    }
+    .tm-card .author-overview h2 {
+        font-size: 90%;
+    }
+    .area-100 .news-articles ul li,
+    .area-100 .gallery ul li,
+    .area-100 .news.programs ul li {
+        margin-right: 0;
+    }
+    .article-card .ttl {
+        font-size: 100%;
+    }
+    .article-card .video-icon {
+        left: auto;
+        right: 0;
+    }
+}
+/**************************** Men Al Haramain ****************************/
+
+.slider-container {
+    direction: rtl;
+}
+.men-alharameen header nav li {
+    font-family: 'Noto Serif', serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 22px;
+}
+.men-alharameen .lang a {
+    font-family: Arial;
+    padding: 12px 25px 5px 25px;
+    font-size: 15px;
+}
+.men-alharameen nav .search {
+    margin-left: auto;
+    margin-right: 0;
+}
+.men-alharameen .search-text {
+    float: left;
+}
+.men-alharameen .lang-content {
+    top: 25px;
+}
+.men-alharameen .information-slide .information-info {
+    right: auto;
+    left: 40px;
+}
+.men-alharameen .slide-info {
+    height: auto;
+}
+.men-alharameen .slide-info h2 {
+    padding-left: 0;
+}
+.men-alharameen .floating-label {
+    right: auto;
+    left: 0;
+}
+.men-alharameen .area-100 .news-articles ul li {
+    margin-right: 0;
+}
+.men-alharameen .special-layout ul li .cover {
+    margin-left: 0;
+    margin-right: 20px;
+}
+.men-alharameen .video-label {
+    right: auto;
+    left: 345px;
+}
+.men-alharameen .top-content li .ttl {
+    line-height: 130%;
+    font-size: 20px;
+}
+.men-alharameen .floating-label.no-text {
+    left: auto;
+    right: 20px;
+}
+.men-alharameen .news .ttl {
+    border-left: 10px solid var(--men-alharameen-slider-header-color);
+    border-right: none;
+    right: auto;
+    left: 20px;
+}
+.men-alharameen .main-header .logo {
+    background-image: url(../gfx/Logo_English.png);
+    background-position: left center;
+    background-size: 150px 88px;
+}
+.men-alharameen .sticky nav .logo {
+    background: url(../gfx/logo-english-white.png) no-repeat;
+    background-size: 100px 58px;
+}
+.men-alharameen .sticky nav.moveR .logo {
+    background-position: center left;
+}
+.men-alharameen footer .social {
+    width: 12%;
+}
+.men-alharameen footer .copyrights {
+    padding-right: 165px;
+}
+.men-alharameen .news-articles li .ttl {
+    line-height: 120%;
+}
+.article_tem.men-alharameen .author {
+    padding-top: 10px;
+}
+.article_tem.men-alharameen .author span {
+    color: #d11731;
+}
+.article_tem.men-alharameen .teaser-tools ul .share,
+.article_tem.men-alharameen .main-content .video-js .vjs-volume-level,
+.article_tem.men-alharameen .main-content .video-js .vjs-play-progress {
+    background-color: #63c2c6;
+}
+.article_tem.men-alharameen article h4 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #6e2968;
+    padding: 10px 0;
+}
+.article_tem.men-alharameen article .box.slideshow.article-inner a,
+.article_tem.men-alharameen article .box.slideshow.article-inner a img,
+.article_tem.men-alharameen article .media_box img {
+    width: 100%;
+}
+.article_tem.men-alharameen article .box.slideshow.article-inner h5 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+    padding: 5px 0 20px 0;
+}
+.article_tem.men-alharameen article .box.slideshow.article-inner .slide-prev,
+.article_tem.men-alharameen article .box.slideshow.article-inner .slide-next {
+    display: none;
+}
+.article_tem.men-alharameen article .video-js .vjs-tech {
+    position: relative;
+}
+.article_tem.men-alharameen article .img_box01 img {
+    width: 100%;
+}
+.article_tem.men-alharameen article .box.video_box {
+    padding: 0;
+    background: none;
+}
+.article_tem.men-alharameen article .box.video_box .content {
+    padding: 15px;
+    background: #FFF;
+}
+.article_tem.men-alharameen article blockquote p {
+    text-align: center;
+    font-size: 27px;
+    line-height: 140%;
+    font-weight: normal;
+    color: #d11731;
+    padding: 10px 40px 0 40px;
+}
+.article_tem.men-alharameen article blockquote cite {
+    font-size: 18px;
+    font-style: italic;
+    text-align: right;
+    display: block;
+    color: #666;
+}
+.article_tem.men-alharameen article blockquote p::before {
+    content: "";
+}
+.article_tem.men-alharameen .article-hdr {
+    padding-bottom: 10px;
+}
+.article_tem.men-alharameen .vjs-big-play-centered .vjs-big-play-button {
+    top: 48%;
+    left: 46%;
+    margin-top: -0.75em;
+    margin-left: -1.5em;
+    height: 42px;
+    width: 61px;
+    background-color: transparent;
+}
+.article_tem.men-alharameen .LimelightEmbeddedPlayer .vjs-default-skin .vjs-big-play-button {
+    background: url(/dms/docroot/aa-templating/gfx/sprites.png) -49px -1268px no-repeat;
+}
+.article_tem.men-alharameen .txt_focus .tags {
+    padding: 15px;
+    background: #FFF;
+    margin-top: 5px;
+}
+.article_tem.men-alharameen .txt_focus .tags a {
+    font-weight: bold;
+    color: #396BAE;
+}
+.article_tem.men-alharameen article .teasers_mod01 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+}
+.article_tem.men-alharameen article .teasers_mod01 li {
+    width: 32%;
+    margin-bottom: 20px;
+}
+.article_tem.men-alharameen article .teasers_mod01 li img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+.article_tem.men-alharameen article .news_sections h4 {
+    padding: 0 0 20px 0;
+}
+@media (max-width: 480px) {
+    .men-alharameen .lang:hover .lang-content {
+        width: 25px;
+        left: auto;
+        right: 20px;
+    }
+    .men-alharameen .lang a {
+        padding: 0 25px;
+    }
+    .men-alharameen .slide-info {
+        right: auto;
+        left: 20px;
+    }
+    .men-alharameen .information-slide .information-info {
+        left: 10px;
+    }
+    .men-alharameen .information-slide .information-info h2 {
+        font-size: 18px;
+        font-weight: normal;
+    }
+    .men-alharameen header nav li {
+        padding: 0 0;
+    }
+    .men-alharameen .news-articles ul li .ttl {
+        font-size: 20px;
+    }
+    .men-alharameen .main-header .logo {
+        background-size: 90px 53px;
+    }
+    .men-alharameen footer .social {
+        width: 100%;
+    }
+    .article_tem.men-alharameen .content_area {
+        padding: 10px;
+    }
+    .article_tem.men-alharameen .vjs-big-play-centered .vjs-big-play-button {
+        top: 41%;
+        left: 41%;
+    }
+    .men-alharameen nav .main-content a span {
+        background: none;
+    }
+    .article_tem.men-alharameen .box.news_sections {
+        padding: 10px;
+    }
+    .article_tem.men-alharameen article .teasers_mod01 li {
+        width: 100%;
+    }
+}
+/**************************** Men Al Haramain ****************************/

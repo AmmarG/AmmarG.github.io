@@ -295,7 +295,7 @@
         width: 100%;
     }
     .search-overlay .search-input {
-        font-size: 2em;
+        font-size: 1em;
     }
     .search-icon {
         margin-top: 13px;
@@ -1266,11 +1266,6 @@
     .carousel-control.next {
         left: -30px;
         padding-right: 13px;
-    }
-    /***AutoComplete Aswaq*****/
-    .ui-menu {
-        width: 80%;
-        margin: 0 auto;
     }
     /***Google Search*****/
     .search-overlay .container {

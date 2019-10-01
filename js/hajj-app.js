@@ -265,18 +265,20 @@
       host.addEventListener("click", function(e) {
         e.preventDefault();
         e.stopPropagation();
-        var videoURL = e.target.dataset.vidUrl,
-          videoIMG = e.target.dataset.vidImg,
-          videTitle = e.target.dataset.vidTitle,
-          videoText = e.target.dataset.vidText;
-        video.src = videoURL;
-        video.setAttribute("poster", videoIMG);
-        title.innerText = videTitle;
-        var paragraph = document.querySelector(".info_js div");
-        if (videoText) {
-          paragraph.innerHTML = videoText;
-        } else {
-          paragraph.innerHTML = "";
+        if (e.target.dataset.vidUrl) {
+          var videoURL = e.target.dataset.vidUrl,
+            videoIMG = e.target.dataset.vidImg,
+            videTitle = e.target.dataset.vidTitle,
+            videoText = e.target.dataset.vidText;
+          video.src = videoURL;
+          video.setAttribute("poster", videoIMG);
+          title.innerText = videTitle;
+          var paragraph = document.querySelector(".info_js div");
+          if (videoText) {
+            paragraph.innerHTML = videoText;
+          } else {
+            paragraph.innerHTML = "";
+          }
         }
       });
     }
