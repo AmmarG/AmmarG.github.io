@@ -1,43 +1,4 @@
-@media (min-width: 1155px) and (max-width: 1340px) {
-    body {
-        zoom: 0.85;
-        zoom: 85%;
-    }
-    body.live-streaming {
-        zoom: 100%;
-        zoom: 100%;
-    }
-    body .leaderboard * {
-        zoom: 1.06;
-        zoom: 106%;
-    }
-}
-@media (min-width: 481px) and (max-width: 1154px) {
-    body {
-        zoom: 0.75;
-        zoom: 75%;
-    }
-    body.live-streaming {
-        zoom: 100%;
-        zoom: 100%;
-    }
-    body .leaderboard * {
-        zoom: 1.11;
-        zoom: 111%;
-    }
-    .gssb_c {
-        right: -117px !important;
-    }
-}
-@media (max-width: 1154px) and (orientation: landscape) {
-    body {
-        zoom: 50%;
-    }
-    body.live-streaming {
-        zoom: 100%;
-        zoom: 100%;
-    }
-}
+
 @media (min-width: 481px) {
     .hide-in-desktop {
         display: none !important;
@@ -46,11 +7,6 @@
 @media (max-width: 480px) {
     body {
         min-width: auto;
-    }
-    body.live-streaming {
-        -moz-transform: scale(0.65, 0.65);
-        zoom: 65%;
-        zoom: 65%;
     }
     .noscroll {
         overflow: hidden;
