@@ -2,7 +2,8 @@
     header .main-header,
     header .top-info,
     .full-wrapper.dark,
-    header nav {
+    header nav,
+    .mega-menu.show {
         min-width: 1340px;
     }
 }
