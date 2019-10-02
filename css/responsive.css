@@ -1,7 +1,8 @@
 @media (min-width: 768px) and (max-width: 1340px) {
     header .main-header,
     header .top-info,
-    .full-wrapper.dark {
+    .full-wrapper.dark,
+    header nav {
         min-width: 1340px;
     }
 }
