@@ -445,6 +445,7 @@ video {
     cursor: pointer;
     color: #000;
     margin: 5px 0;
+    border-radius: 7px;
 }
 .tab-label:hover {
     background: #ececec;
@@ -456,7 +457,6 @@ video {
     text-align: center;
     -webkit-transition: all .35s;
     transition: all .35s;
-    margin-top: 7px;
 }
 .tab-content {
     max-height: 0;
