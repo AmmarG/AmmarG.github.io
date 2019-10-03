@@ -445,7 +445,6 @@ video {
     cursor: pointer;
     color: #000;
     margin: 5px 0;
-    border-radius: 7px;
 }
 .tab-label:hover {
     background: #ececec;
