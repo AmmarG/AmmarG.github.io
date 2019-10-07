@@ -315,11 +315,14 @@ video {
     color: #999;
     background: #FFF;
     border: 2px solid #FFF;
+    border-radius: 0;
     margin-bottom: 10px;
     position: relative;
     opacity: 1;
     z-index: 0;
     display: block;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 .contact form input:focus,
 .contact form textarea:focus {
