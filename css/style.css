@@ -321,8 +321,7 @@ video {
     opacity: 1;
     z-index: 0;
     display: block;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+    -webkit-appearance: none;
 }
 .contact form input:focus,
 .contact form textarea:focus {
