@@ -467,9 +467,11 @@ video {
         font-size: 20px;
     }
     .accordion .tab-label,
-    .accordion .tab-content,
-    .list01 .ttl {
+    .accordion .tab-content {
         font-size: 15px;
+    }
+    .list01 .ttl {
+        font-size: 18px;
     }
     .carousel ul {
         display: block;
