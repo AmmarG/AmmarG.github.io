@@ -140,6 +140,7 @@ a {
 
 @font-face {
     font-family: 'Cairo';
+    font-display: auto;
     font-style: normal;
     font-weight: 700;
     src: local('Cairo Bold'), local('Cairo-Bold'), url(https://fonts.gstatic.com/s/cairo/v5/SLXLc1nY6Hkvalqaa46O59Zea3ZlqSo.woff2) format('woff2');
@@ -210,7 +211,7 @@ h1 a {
     line-height: 180%;
 }
 .block {
-    padding: 15px;
+    padding: 10px;
     width: 100%;
 }
 video {
@@ -435,8 +436,11 @@ video {
     .list01 .ttl {
         font-size: 12px;
     }
+    .list01 .ttl {
+        line-height: 140%;
+    }
 }
-@media (max-width: 480px) {
+@media (max-width: 650px) {
     .page-content {
         padding: 15px;
     }
