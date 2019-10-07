@@ -330,7 +330,7 @@ video {
     height: 30px;
     padding: 5px 10px;
     font-size: 12px;
-    color: #999;
+    color: #333;
     background: #FFF;
     border: 2px solid #FFF;
     border-radius: 0;
@@ -344,7 +344,7 @@ video {
 .contact form input:focus,
 .contact form textarea:focus {
     border: 2px solid #64b843;
-    color: #999;
+    color: #333;
     -webkit-appearance: none;
 }
 .contact form textarea {
@@ -355,8 +355,8 @@ video {
     width: 100%;
     padding: 5px 10px;
     font-size: 14px;
-    background: #64b843;
-    border: solid 1px #64b843;
+    background: #007EAC;
+    border: solid 1px #007EAC;
     height: 40px;
     color: #FFF;
     -webkit-transition: all .1s ease-in-out;
@@ -366,11 +366,15 @@ video {
 }
 .contact form .submit:hover {
     color: #FFF;
-    background: #82e05d;
+    background: #64b843;
+    border: solid 1px #64b843;
     cursor: pointer;
 }
 .contact form .required {
     color: #b43838;
+}
+.contact form label {
+    display: none;
 }
 .carousel ul {
     display: -webkit-box;
