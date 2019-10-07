@@ -374,7 +374,7 @@ video {
     color: #b43838;
 }
 .contact form label {
-    display: none;
+    font-size: 0;
 }
 .carousel ul {
     display: -webkit-box;
