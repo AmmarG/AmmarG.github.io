@@ -172,6 +172,15 @@ a {
     -ms-flex-order: 2;
     order: 2;
 }
+.main-2 {
+    text-align: right;
+    -webkit-box-flex: 3;
+    -ms-flex: 3 0px;
+    flex: 3 0px;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+}
 .aside {
     -webkit-box-flex: 1;
     -ms-flex: 1 0 0px;
@@ -202,6 +211,7 @@ h1 a {
 }
 .block {
     padding: 15px;
+    width: 100%;
 }
 video {
     width: 100%;
@@ -237,7 +247,7 @@ video {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 0 15px;
+    padding: 0 10px;
     border: solid 1px #e3e3e3;
     cursor: pointer;
     margin: 5px 0;
@@ -245,6 +255,7 @@ video {
     line-height: 320%;
     color: #333;
     font-size: 15px;
+    text-align: right;
 }
 .accordion .tab-label:hover {
     background: #ececec;
@@ -257,7 +268,7 @@ video {
 }
 .accordion .tab-content {
     max-height: 0;
-    padding: 0 1em;
+    padding: 0 10px;
     color: #333;
     -webkit-transition: all .25s;
     transition: all .25s;
@@ -275,7 +286,7 @@ video {
 }
 .accordion input:checked ~ .tab-content {
     max-height: 100vh;
-    padding: 1em;
+    padding: 10px;
 }
 .list01 li {
     clear: both;
@@ -298,6 +309,12 @@ video {
     width: 27%;
     float: left;
     border-radius: 7px;
+}
+.aside-2 .list01 .ttl {
+    float: left;
+}
+.aside-2 .list01 img {
+    float: right;
 }
 /** Form **/
 
@@ -354,29 +371,117 @@ video {
 .contact form .required {
     color: #b43838;
 }
-@media (max-width: 480px) {
+.carousel ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+.carousel ul li {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0px;
+    flex: 1 0px;
+    height: 290px;
+    overflow: hidden;
+    -webkit-transition: flex 0.3s;
+    -webkit-transition: -webkit-box-flex 0.3s;
+    transition: -webkit-box-flex 0.3s;
+    transition: flex 0.3s;
+    transition: flex 0.3s, -webkit-box-flex 0.3s, -ms-flex 0.3s;
+    margin: 0 10px;
+    border-radius: 7px;
+    position: relative;
+}
+.carousel ul li:hover {
+    -webkit-box-flex: 3;
+    -ms-flex: 3 0px;
+    flex: 3 0px;
+    -webkit-transition: flex 0.3s;
+    -webkit-transition: -webkit-box-flex 0.3s;
+    transition: -webkit-box-flex 0.3s;
+    transition: flex 0.3s;
+    transition: flex 0.3s, -webkit-box-flex 0.3s, -ms-flex 0.3s;
+}
+.carousel ul li .play-icon {
+    display: block;
+    width: 58px;
+    height: 58px;
+    background: url(../gfx/play.png) center no-repeat;
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    right: 45%;
+    opacity: 0;
+}
+.carousel ul li:hover .play-icon {
+    opacity: 1;
+}
+@media (max-width: 1024px) {
     .page {
         width: 100%;
     }
+    .head h2 {
+        font-size: 18px;
+    }
+    .accordion .tab-label,
+    .accordion .tab-content,
+    .list01 .ttl {
+        font-size: 12px;
+    }
+}
+@media (max-width: 480px) {
+    .page-content {
+        padding: 15px;
+    }
     .page-content > * {
-        padding: 5px;
         -webkit-box-flex: 1;
         -ms-flex: 1 100%;
         flex: 1 100%;
     }
+    .block {
+        padding: 20px 0;
+    }
     .main {
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
-}
-.aside-1 {
-    -webkit-box-ordinal-group: 4;
-    -ms-flex-order: 3;
-    order: 3;
-}
-.aside-2 {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
-}
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+    .aside-1 {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3;
+    }
+    .aside-2 {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+    .head h2 {
+        font-size: 20px;
+    }
+    .accordion .tab-label,
+    .accordion .tab-content,
+    .list01 .ttl {
+        font-size: 15px;
+    }
+    .carousel ul {
+        display: block;
+    }
+    .carousel ul li {
+        width: 100%;
+        height: 100px;
+        margin: 15px 0;
+    }
+    .carousel ul li .play-icon {
+        opacity: 1;
+        top: 21%;
+        right: 42%;
+    }
 }
