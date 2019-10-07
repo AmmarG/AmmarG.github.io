@@ -375,6 +375,7 @@ video {
 }
 .contact form label {
     font-size: 0;
+    display: inherit;
 }
 .carousel ul {
     display: -webkit-box;
