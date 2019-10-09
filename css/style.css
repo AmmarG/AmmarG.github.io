@@ -174,7 +174,7 @@ header .logo {
     margin-top: 10px;
     font-family: Tahoma;
     font-weight: normal;
-    }
+}
 .sl-nav {
     display: inline;
 }
@@ -666,8 +666,8 @@ video {
     }
     header .logo {
         width: 150px;
-        height: 84px;
-        margin-top: -20px;
+        height: 135px;
+        margin-top: -50px;
     }
 }
 @media (max-width: 700px) {
@@ -729,7 +729,7 @@ video {
     header .logo {
         width: 166px;
         height: 141px;
-        margin-top: -49px;
+        margin-top: -50px;
     }
     .artwork01 .square {
         display: block;
