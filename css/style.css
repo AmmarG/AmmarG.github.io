@@ -734,7 +734,7 @@ video {
     .artwork01 .square {
         display: block;
         right: 166px;
-        top: 143px;
+        top: 142px;
         background: url(../gfx/aramco01.png) center no-repeat;
         width: 166px;
         height: 166px;
@@ -746,7 +746,7 @@ video {
         height: 166px;
         background: rgba(0, 0, 0, 0.9);
         right: 0;
-        top: 143px;
+        top: 142px;
         padding: 20px;
     }
     .countdown {
@@ -755,7 +755,7 @@ video {
         height: 300px;
         padding: 70px 25px;
         text-align: right;
-        bottom: -136px;
+        bottom: -137px;
         right: 166px;
         background-image: url(../gfx/countdown-bg.png);
     }
