@@ -152,6 +152,7 @@ a {
     direction: rtl;
     font-family: 'Cairo', sans-serif;
     color: #333;
+    overflow: hidden;
 }
 .full {
     width: 100%;
@@ -298,8 +299,8 @@ section {
     order: 3;
 }
 section h1 {
-    font-size: 25px;
-    line-height: 150%;
+    font-size: 29px;
+    line-height: 140%;
     margin: 20px 0 10px 0;
 }
 a {
@@ -687,9 +688,6 @@ video {
 .en section {
     text-align: left;
 }
-.en section h1 {
-    font-size: 29px;
-}
 .en section p {
     font-size: 17px;
     line-height: 180%;
@@ -802,7 +800,6 @@ video {
         /* ENGLISH */
         font-size: 15px;
     }
-}
 }
 @media (max-width: 1024px) {
     .page {
