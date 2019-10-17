@@ -418,6 +418,9 @@ video {
 .list01 li:last-child {
     border: none;
 }
+.list01 li a {
+    display: block;
+}
 .list01 .ttl {
     font-size: 15px;
     width: 70%;
@@ -1159,7 +1162,7 @@ span.cover {
 }
 .en article {
     padding-left: 115px;
-    margin-right: 0;
+    padding-right: 0;
 }
 .en .teaser-tools {
     margin-left: -115px;
@@ -1170,9 +1173,6 @@ span.cover {
     right: auto;
     padding: 0 0 10px 40px;
 }
-.en section .bigger p {
-    font-size: 22px;
-}
 .en .article-hdr h1 {
     font-size: 28px;
     line-height: 140%;
@@ -1181,6 +1181,12 @@ span.cover {
     left: 115px;
     right: auto;
     padding-left: 0;
+}
+.en section article p {
+    font-size: 19px;
+}
+.en section .bigger p {
+    font-size: 24px;
 }
 @media (max-width: 1470px) {
     .page {
@@ -1210,75 +1216,10 @@ span.cover {
     .en .accordion .tab-content,
     .en .list01 .ttl {
         /* ENGLISH */
-        font-size: 15px;
+        font-size: 19px;
     }
 }
 @media (max-width: 1024px) {
-    .page {
-        width: 100%;
-    }
-    .head h2 {
-        font-size: 18px;
-    }
-    .accordion .tab-label,
-    .accordion .tab-content,
-    .list01 .ttl {
-        font-size: 12px;
-    }
-    .list01 .ttl {
-        line-height: 140%;
-    }
-    .artwork01 {
-        background: url(../gfx/artwork01.jpg) right top no-repeat;
-    }
-    .artwork01 .txt {
-        font-size: 70px;
-        width: 400px;
-        right: 410px;
-        bottom: 100px;
-    }
-    .artwork01 .aramco-logo {
-        width: 122px;
-        height: 34px;
-        position: absolute;
-        top: 50px;
-        left: 160px;
-        background: url(../gfx/aramco-logo.png) center no-repeat;
-    }
-    .artwork01 .square {
-        display: none;
-    }
-    header .logo {
-        width: 150px;
-        height: 135px;
-        margin-top: -50px;
-    }
-    .en .head h2 {
-        /* ENGLISH */
-        font-size: 18px;
-    }
-    .en .artwork01 {
-        /* ENGLISH */
-        background-position: left top;
-    }
-    .en .artwork01 .txt {
-        /* ENGLISH */
-        left: 410px;
-        right: auto;
-    }
-    .en .artwork01 .aramco-logo {
-        /* ENGLISH */
-        right: 160px;
-        left: auto;
-    }
-    article {
-        margin-top: 0;
-    }
-}
-@media (max-width: 700px) {
-    section {
-        padding: 15px;
-    }
     .main,
     .main-2,
     .aside-1,
@@ -1286,9 +1227,6 @@ span.cover {
         -webkit-box-flex: 1;
         -ms-flex: 1 100%;
         flex: 1 100%;
-    }
-    .block {
-        padding: 20px 0;
     }
     .main {
         -webkit-box-ordinal-group: 2;
@@ -1304,6 +1242,12 @@ span.cover {
         -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
         order: 2;
+    }
+    .block {
+        padding: 20px 0;
+    }
+    section {
+        padding: 15px;
     }
     .head h2 {
         font-size: 20px;
@@ -1493,9 +1437,6 @@ span.cover {
     table {
         font-size: 11px;
     }
-    .section-page .aside-2 {
-        margin-top: 0;
-    }
     .block {
         margin: 20px 0;
     }
@@ -1614,6 +1555,10 @@ span.cover {
         left: 0;
         right: auto;
         padding: 0 0 10px 0;
+    }
+    .en article,
+    .en article.box {
+        padding-right: 0;
     }
 }
 @media print {
