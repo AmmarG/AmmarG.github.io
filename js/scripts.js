@@ -23,3 +23,27 @@
 
         }, second)
 })();
+
+document.querySelector('.font-resize').addEventListener('click', function(e) {
+    [].map.call(document.querySelectorAll('article'), function(el) {
+        el.classList.toggle('bigger');
+    });
+});
+window.onload = function() {
+    // Variables
+    var share = document.querySelector('.teaser-tools');
+    var shareTop = share.offsetTop;
+
+    // Functions
+    // You can use toggle instead of add/remove
+    function shareFixed(e) {
+        if (window.scrollY >= shareTop) {
+            share.classList.add('is-fixed');
+        } else {
+            share.classList.remove('is-fixed');
+        }
+    }
+    // Event Listener
+    window.addEventListener('scroll', shareFixed);
+
+}
