@@ -1484,6 +1484,9 @@ span.cover {
     .teaser-tools.is-fixed {
         position: inherit;
     }
+    article, article.box {
+        margin-top: 0;
+    }
     /********************* ENGLISH ***********************/
     .en .head h2 {
         font-size: 20px;
@@ -1569,7 +1572,8 @@ span.cover {
     .carousel,
     .aside-2,
     .tags,
-    .txt_focus {
+    .txt_focus,
+    .article-teaser .video-icon {
         display: none;
     }
 }
