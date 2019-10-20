@@ -756,6 +756,7 @@ article p {
 .teaser-tools.is-fixed {
     position: fixed;
     top: 0;
+    z-index: 9;
 }
 blockquote {
     border: dotted;
