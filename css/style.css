@@ -523,13 +523,13 @@ video {
     transition: flex 0.3s;
     transition: flex 0.3s, -webkit-box-flex 0.3s, -ms-flex 0.3s;
     margin: 0 10px;
-    border-radius: 7px;
     position: relative;
+    border-radius: 7px;
 }
 .carousel ul li:hover {
-    -webkit-box-flex: 3;
-    -ms-flex: 3 0px;
-    flex: 3 0px;
+    -webkit-box-flex: 2.5;
+    -ms-flex: 2.5 0px;
+    flex: 2.5 0px;
     -webkit-transition: flex 0.3s;
     -webkit-transition: -webkit-box-flex 0.3s;
     transition: -webkit-box-flex 0.3s;
@@ -549,6 +549,38 @@ video {
     opacity: 0;
 }
 .carousel ul li:hover .play-icon {
+    opacity: 1;
+}
+.carousel ul li .cover {
+    width: 100%;
+    height: 101%;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(30%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1.4)));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1.4) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#bd000000', GradientType=0);
+    color: #FFF;
+}
+.carousel ul li .ttl {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #FFF;
+    z-index: 2;
+    padding: 10px;
+}
+.carousel ul li .cover,
+.carousel ul li .ttl {
+    opacity: 0;
+}
+.carousel ul li:hover .ttl {
+    opacity: 1;
+    -webkit-transition: opacity 0.9s linear;
+    transition: opacity 0.9s linear;
+}
+.carousel ul li:hover .cover {
     opacity: 1;
 }
 .aside-1 .stories,
@@ -1028,7 +1060,6 @@ span.cover {
 }
 .breadcrumbs a:last-child::after {
     display: none;
-    ;
 }
 /********************* ENGLISH ***********************/
 
@@ -1188,6 +1219,10 @@ span.cover {
 }
 .en section .bigger p {
     font-size: 24px;
+}
+.en .carousel ul li .ttl {
+    text-align: left;
+    font-size: 18px;
 }
 @media (max-width: 1470px) {
     .page {
@@ -1485,9 +1520,20 @@ span.cover {
     .teaser-tools.is-fixed {
         position: inherit;
     }
-    article, article.box,
+    article,
+    article.box,
     .section-page .aside-2 {
         margin-top: 0;
+    }
+    .carousel ul li .cover,
+    .carousel ul li .ttl {
+        display: none;
+    }
+    .carousel ul li a {
+        display: block;
+    }
+    .carousel ul li img {
+        width: 100%;
     }
     /********************* ENGLISH ***********************/
     .en .head h2 {
