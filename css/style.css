@@ -1484,7 +1484,8 @@ span.cover {
     .teaser-tools.is-fixed {
         position: inherit;
     }
-    article, article.box {
+    article, article.box,
+    .section-page .aside-2 {
         margin-top: 0;
     }
     /********************* ENGLISH ***********************/
