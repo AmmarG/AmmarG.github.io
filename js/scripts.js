@@ -1,49 +1,28 @@
-(function() {
-    var second = 1000,
-        minute = second * 60,
-        hour = minute * 60,
-        day = hour * 24;
+"use strict";
 
-    var countDown = new Date('Oct 20, 2019 00:00:00').getTime(),
-        x = setInterval(function() {
+var slider = document.querySelector('.slider');
+var li = slider.querySelectorAll('ul li');
+var leftBtn = slider.querySelector('button.left');
+var rightBtn = slider.querySelector('button.right');
+var score = 0;
 
-            var now = new Date().getTime(),
-                distance = countDown - now;
+slider.firstElementChild.style.width = li.length * 900 + 50 + 'px';
 
-            document.getElementById('days').innerText = Math.floor(distance / (day)),
-            document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-            document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-            document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+function scroll() {
 
-            //do something later when date is reached
-            //if (distance < 0) {
-            //  clearInterval(x);
-            //  'Hello!;
-            //}
+  if (this.classList[1] == 'right') {
+    if (li[score].nextElementSibling.nextElementSibling.nextElementSibling == null) return;
+    li[score].style.display = 'none';
+    score++;
+  };
 
-        }, second)
-})();
+  if (this.classList[1] == 'left') {
+    if (score == 0) return;
+    li[score - 1].style.display = 'inline-block';
+    score--;
+  };
 
-document.querySelector('.font-resize').addEventListener('click', function(e) {
-    [].map.call(document.querySelectorAll('article'), function(el) {
-        el.classList.toggle('bigger');
-    });
-});
-window.onload = function() {
-    // Variables
-    var share = document.querySelector('.teaser-tools');
-    var shareTop = share.offsetTop;
+};
 
-    // Functions
-    // You can use toggle instead of add/remove
-    function shareFixed(e) {
-        if (window.scrollY >= shareTop) {
-            share.classList.add('is-fixed');
-        } else {
-            share.classList.remove('is-fixed');
-        }
-    }
-    // Event Listener
-    window.addEventListener('scroll', shareFixed);
-
-}
+rightBtn.addEventListener('click', scroll);
+leftBtn.addEventListener('click', scroll);
