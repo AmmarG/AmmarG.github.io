@@ -10,19 +10,26 @@ slider.firstElementChild.style.width = li.length * 900 + 50 + 'px';
 
 function scroll() {
 
-  if (this.classList[1] == 'right') {
-    if (li[score].nextElementSibling.nextElementSibling.nextElementSibling == null) return;
-    li[score].style.display = 'none';
-    score++;
-  };
+    if (this.classList[1] == 'right') {
+        if (li[score].nextElementSibling.nextElementSibling.nextElementSibling == null) return;
+        li[score].style.display = 'none';
+        score++;
+    };
 
-  if (this.classList[1] == 'left') {
-    if (score == 0) return;
-    li[score - 1].style.display = 'inline-block';
-    score--;
-  };
+    if (this.classList[1] == 'left') {
+        if (score == 0) return;
+        li[score - 1].style.display = 'inline-block';
+        score--;
+    };
 
 };
-
 rightBtn.addEventListener('click', scroll);
 leftBtn.addEventListener('click', scroll);
+
+document.querySelector('.menu-icon').addEventListener('click', function(e) {
+  
+  [].map.call(document.querySelectorAll('.overlay'), function(el) {
+    
+    el.classList.toggle('show');
+  });
+});
