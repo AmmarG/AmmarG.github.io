@@ -195,12 +195,6 @@ header .logo {
     background: url(../gfx/logo.png) center no-repeat;
     font-size: 0;
 }
-footer .logo {
-    width: 219px;
-    height: 103px;
-    background: url(../gfx/logo-footer.png) center no-repeat;
-    font-size: 0;
-}
 .navigation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -226,6 +220,9 @@ footer a {
 .main {
     position: relative;
     float: left;
+}
+.main img {
+    width: 100%;
 }
 .main .ttl {
     display: block;
@@ -302,11 +299,12 @@ h2 {
 .slider ul li .content {
     display: block;
     padding: 20px;
+    overflow: hidden;
 }
 .slider ul li .date {
     float: left;
     width: 20%;
-    float: left;
+    overflow: hidden;
 }
 .slider ul li .month,
 .slider ul li .day {
@@ -525,10 +523,16 @@ footer {
     padding: 40px 0 20px 0;
     font-size: 12px;
 }
+footer .logo {
+    width: 219px;
+    height: 103px;
+    background: url(../gfx/logo-footer.png) center no-repeat;
+    font-size: 0;
+}
 footer .copyrights {
     clear: both;
     color: #FFF;
-    padding-top: 30px;
+    padding-top: 20px;
     overflow: hidden;
     line-height: 200%;
 }
@@ -542,4 +546,96 @@ footer .foot-aa a {
     font-size: 0;
     margin-left: 10px;
     background: url(../gfx/aa-logo.png) center no-repeat;
+}
+@media (max-width: 940px) {
+    .content-area,
+    .wide .content-area {
+        width: 90%;
+    }
+    section,
+    section.about {
+        padding: 30px 0;
+    }
+    .main {
+        float: none;
+    }
+    .main .ttl {
+        width: 70%;
+        right: 5%;
+        bottom: -80px;
+        font-size: 23px;
+        padding: 10px;
+        line-height: 130%;
+    }
+    .main .more {
+        right: 5%;
+        bottom: -160px;
+        line-height: 330%;
+    }
+    .more {
+        clear: both;
+        float: left;
+        padding-top: 15px;
+    }
+    p.center {
+        width: 100%;
+        padding: 180px 0 0 0;
+        font-size: 18px;
+    }
+    .slider ul li {
+        width: 180px;
+        height: 194px
+    }
+    .slider ul li .content {
+        padding: 10px;
+    }
+    .slider ul li .info .ttl {
+        display: block;
+        font-size: 13px;
+    }
+    .slider ul li .month {
+        font-size: 12px;
+    }
+    .slider ul li .day {
+        font-size: 22px;
+    }
+    .slider ul li .info .caption,
+    .slider ul li .info .address {
+        display: none;
+    }
+    .slider ul li .info {
+        width: 70%;
+    }
+    .slider ul li .date {
+        width: 25%;
+    }
+    ul.experts li {
+        width: 48%;
+    }
+    ul.coverage,
+    ul.coverage li {
+        width: 100%;
+        float: none;
+    }
+    ul.coverage li {
+        height: 150px;
+    }
+    ul.coverage li a .ttl {
+        width: 80%;
+        overflow: hidden;
+    }
+    footer .logo {
+        width: 100px;
+        height: 47px;
+        background: url(../gfx/logo-footer-mob.png) center no-repeat;
+    }
+    footer .navigation {
+        display: none;
+    }
+    footer .copyrights {
+        overflow: visible;
+    }
+    footer .foot-aa {
+        margin-top: -50px;
+    }
 }
