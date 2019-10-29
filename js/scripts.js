@@ -1,6 +1,7 @@
 "use strict";
 
-var slider = document.querySelector('.slider');
+var slider = (document.querySelector('.slider') ? document.querySelector('.slider') : null);
+if(slider){
 var li = slider.querySelectorAll('ul li');
 var leftBtn = slider.querySelector('button.left');
 var rightBtn = slider.querySelector('button.right');
@@ -25,11 +26,15 @@ function scroll() {
 };
 rightBtn.addEventListener('click', scroll);
 leftBtn.addEventListener('click', scroll);
-
+}
 document.querySelector('.menu-icon').addEventListener('click', function(e) {
   
-  [].map.call(document.querySelectorAll('.overlay'), function(el) {
-    
-    el.classList.toggle('show');
-  });
+  document.querySelector('.overlay').classList.toggle('show');
+  
 });
+var ss =   document.querySelector('.overlay');
+
+ss.addEventListener('click',function(e){
+    document.querySelector('.menu-btn').checked=false;
+     document.querySelector('.overlay').classList.toggle('show');
+})
