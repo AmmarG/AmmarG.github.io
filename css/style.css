@@ -638,9 +638,10 @@ header .menu-btn {
     backdrop-filter: blur(4px);
     background-color: rgba(0, 34, 35, 0.34);
 }
-.about-us .main {
+.about-us .main,
+.our-experts .main {
     float: right;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 .about-us .main .ttl {
     width: 85px;
@@ -728,6 +729,30 @@ nav.about a {
 }
 nav.about a.is-selected {
     color: #000;
+}
+.our-experts ul li {
+    clear: both;
+    overflow: hidden;
+    padding: 30px 0;
+}
+.our-experts ul li img {
+    width: 33%;
+    float: left;
+}
+.our-experts ul li span,
+.our-experts ul li p {
+    display: block;
+    float: right;
+    width: 63%;
+}
+.our-experts ul li .name {
+    font-family: 'Montserrat-black', sans-serif;
+    font-size: 32px;
+    margin-top: 100px;
+}
+.our-experts ul li .caption {
+    font-size: 24px;
+    padding: 7px 0;
 }
 @media (max-width: 940px) {
     body {
@@ -958,7 +983,8 @@ nav.about a.is-selected {
     .vision h2 {
         display: block;
     }
-    .about-us .wide.content-area {
+    .about-us .wide.content-area,
+    .our-experts .wide.content-area {
         width: 100%;
     }
     .about-us .main .img02 {
@@ -1016,6 +1042,14 @@ nav.about a.is-selected {
     }
     nav.about {
         display: none;
+    }
+    .our-experts ul li .name {
+        font-family: 'Montserrat-black', sans-serif;
+        font-size: 20px;
+        margin-top: 0;
+    }
+    .our-experts ul li .caption {
+        font-size: 14px;
     }
 }
 @media (max-width: 700px) {
