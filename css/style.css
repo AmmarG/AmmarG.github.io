@@ -924,6 +924,7 @@ nav.about a.is-selected {
     }
     .main {
         float: none;
+        margin-bottom: 20px;
     }
     .main .ttl {
         width: 70%;
@@ -1137,7 +1138,9 @@ nav.about a.is-selected {
     }
     .about-us .wide.content-area,
     .our-experts .wide.content-area,
-    .events .wide.content-area {
+    .events .wide.content-area,
+    .press .wide.content-area,
+    .contact .wide.content-area {
         width: 100%;
     }
     .about-us .main .img02,
@@ -1217,6 +1220,7 @@ nav.about a.is-selected {
     }
     .contact p.center {
         padding-top: 0;
+        width: 90%;
     }
     .contact .main {
         margin-bottom: 20px;
