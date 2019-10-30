@@ -770,6 +770,141 @@ nav.about a.is-selected {
     font-size: 24px;
     padding: 7px 0;
 }
+/*** Form ***/
+
+.contact form {
+    display: block;
+    width: 380px;
+    position: absolute;
+    right: -160px;
+    top: 150px;
+    padding: 40px 20px;
+    background-color: #FFF;
+}
+.contact form h2 {
+    padding-bottom: 20px;
+}
+.form-field {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+.form-field-label {
+    font-size: 16px;
+    -webkit-transform: translateY(-14px);
+    transform: translateY(-14px);
+    display: block;
+    font-weight: normal;
+    left: 0;
+    margin: 0;
+    padding: 30px 12px 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    width: 100%;
+    color: #9E9E9E;
+}
+.form-field-control {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.form-field-bar {
+    border-bottom: 2px solid #1CA4A7;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    width: 1%;
+}
+.form-field-input,
+.form-field-textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #CCC;
+    color: #666;
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 24px;
+    outline: 0;
+    padding: 5px;
+    width: 100%;
+}
+.form-field-input:-ms-input-placeholder ~ .form-field-label,
+.form-field-textarea:-ms-input-placeholder ~ .form-field-label {
+    font-size: 1rem;
+    transform: translateY(0);
+}
+.form-field-input:placeholder-shown ~ .form-field-label,
+.form-field-textarea:placeholder-shown ~ .form-field-label {
+    font-size: 1rem;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+.form-field-input:focus ~ .form-field-label,
+.form-field-textarea:focus ~ .form-field-label {
+    color: #1CA4A7;
+    font-size: 0.75rem;
+    -webkit-transform: translateY(-14px);
+    transform: translateY(-14px);
+}
+.form-field-input:focus ~ .form-field-bar,
+.form-field-textarea:focus ~ .form-field-bar {
+    border-bottom: 2px solid #01e6eb;
+    -webkit-transform: scaleX(150);
+    transform: scaleX(150);
+}
+.form-field-textarea {
+    height: 100px;
+    resize: none;
+}
+.form-field button {
+    position: relative;
+    width: 100%;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 20px;
+    padding: 2px 10px;
+    color: rgba(0, 0, 0, 0.4);
+    background: white;
+    border: none;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #01E6EB), color-stop(50%, transparent));
+    background: linear-gradient(to right, #01E6EB 50%, transparent 50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+.form-field button:before {
+    position: absolute;
+    content: "Submit";
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    display: block;
+    background-color: white;
+}
+.form-field button:active,
+.form-field button:focus,
+.form-field button:hover {
+    outline: none;
+    background-position: 0 0;
+    color: #01E6EB;
+    cursor: pointer;
+}
 @media (max-width: 940px) {
     body {
         padding-top: 90px;
@@ -1006,7 +1141,7 @@ nav.about a.is-selected {
         width: 100%;
     }
     .about-us .main .img02,
-    .events .main .img02{
+    .events .main .img02 {
         left: 5%;
         top: auto;
         bottom: -30%;
@@ -1072,18 +1207,32 @@ nav.about a.is-selected {
     .our-experts ul li .caption {
         font-size: 14px;
     }
+    .contact form {
+        width: 95%;
+        position: relative;
+        right: auto;
+        top: -30px;
+        padding: 15px 20px;
+        margin: 0 auto;
+    }
+    .contact p.center {
+        padding-top: 0;
+    }
+    .contact .main {
+        margin-bottom: 20px;
+    }
 }
 @media (max-width: 700px) {
     .single-event {
-    background: #FFF;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
-    width: 96%;
+        background: #FFF;
+        border-radius: 5px;
+        -webkit-box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+        width: 96%;
         position: relative;
         margin: 0 2% 30px 2%;
         padding: 0;
-}
+    }
     .single-event .event-cover {
         float: none;
         width: 100%;
@@ -1117,5 +1266,8 @@ nav.about a.is-selected {
     .events .main .ttl {
         width: 45px;
         height: 45px;
+    }
+    ul.coverage img {
+        width: auto;
     }
 }
