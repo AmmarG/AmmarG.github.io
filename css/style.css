@@ -104,6 +104,7 @@ html,
 body {
     width: 100%;
     height: 100%;
+    scroll-behavior: smooth;
 }
 ol,
 ul,
@@ -170,6 +171,11 @@ a:hover {
     color: #1ca4a7;
     text-decoration: underline;
 }
+p {
+    font-size: 16px;
+    line-height: 170%;
+    padding: 15px 0;
+}
 section {
     padding: 60px 0;
 }
@@ -183,7 +189,7 @@ section {
     overflow: hidden;
     padding-bottom: 40px;
 }
-.wide .content-area {
+.wide.content-area {
     width: 1440px;
 }
 header {
@@ -257,12 +263,10 @@ p.center {
     clear: both;
     padding: 80px 0 20px 0;
     line-height: 150%;
+    font-size: 24px;
 }
 section.dark {
     background: #f0f0f0;
-}
-section.about {
-    padding: 40px 0;
 }
 h2 {
     font-family: 'Montserrat-black', sans-serif;
@@ -367,7 +371,8 @@ h2 {
     transition: all .2s ease-in-out;
 }
 ul.experts,
-ul.coverage {
+ul.coverage,
+.research ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -551,15 +556,11 @@ footer .foot-aa a {
 }
 header .menu-btn {
     display: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
-.overlay {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 3;
-    display: none;
-}
-.show {
+.overlay.show {
     display: block;
 }
 .single-event {
@@ -627,12 +628,106 @@ header .menu-btn {
 .single-event:hover .info .address {
     color: #000;
 }
-@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-    .overlay {
-        -webkit-backdrop-filter: blur(5px);
-        backdrop-filter: blur(5px);
-        background-color: rgba(0, 0, 0, 0.2);
-    }
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 3;
+    display: none;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 34, 35, 0.34);
+}
+.about-us .main {
+    float: right;
+    margin-bottom: 50px;
+}
+.about-us .main .ttl {
+    width: 85px;
+    height: 80px;
+    position: absolute;
+    right: auto;
+    left: -80px;
+    top: 120px;
+    bottom: auto;
+}
+.about-us .main .img02 {
+    width: 300px;
+    height: 225px;
+    position: absolute;
+    left: -160px;
+    top: 200px;
+}
+.about-us p {
+    width: 82%;
+    display: block;
+    clear: both;
+    font-size: 16px;
+}
+.research ul li {
+    width: 23%;
+    font-size: 17px;
+}
+.research ul li img {
+    margin-bottom: 17px;
+    clear: both;
+    width: 100%;
+}
+.units ul {
+    padding-bottom: 30px;
+}
+.units li {
+    font-size: 16px;
+    background: url(../gfx/blt.gif) left 21px no-repeat;
+    padding: 7px 0 7px 30px;
+    line-height: 170%;
+}
+.mission .content-area {
+    margin-top: -100px;
+}
+.mission img {
+    float: left;
+    margin-left: 100px;
+}
+.mission p {
+    width: 300px;
+    float: left;
+    font-size: 24px;
+    line-height: 160%;
+    padding: 100px 0 0 30px;
+}
+.vision img {
+    float: right;
+}
+.vision p {
+    width: 55%;
+    float: left;
+    font-size: 24px;
+    line-height: 160%;
+    background: #FFF;
+    padding: 40px 40px 0 0;
+    margin-top: -100px;
+}
+.about-us h2,
+.units h2,
+.mission h2,
+.vision h2 {
+    display: none;
+}
+nav.about {
+    position: fixed;
+    top: 390px;
+    left: 100px;
+    width: 250px;
+}
+nav.about a {
+    font-family: 'Montserrat-black', sans-serif;
+    font-size: 24px;
+    color: #bdbdbd;
+    padding: 5px 0;
+}
+nav.about a.is-selected {
+    color: #000;
 }
 @media (max-width: 940px) {
     body {
@@ -644,7 +739,7 @@ header .menu-btn {
         background: url(../gfx/logo-header-mob.png) center no-repeat;
     }
     .content-area,
-    .wide .content-area {
+    .wide.content-area {
         width: 90%;
     }
     section,
@@ -767,7 +862,7 @@ header .menu-btn {
     }
     .navigation li a {
         padding: 0;
-        margin: 20px 0;
+        margin: 30px 0;
         line-height: 130%;
         font-size: 24px;
     }
@@ -857,6 +952,71 @@ header .menu-btn {
         width: 25%;
         padding: 20px 10px;
     }
+    .about-us h2,
+    .units h2,
+    .mission h2,
+    .vision h2 {
+        display: block;
+    }
+    .about-us .wide.content-area {
+        width: 100%;
+    }
+    .about-us .main .img02 {
+        left: 5%;
+        top: auto;
+        bottom: -30%;
+        width: 40%;
+        height: auto;
+    }
+    .about-us .main .ttl {
+        width: 101px;
+        height: 94px;
+        left: 33.4%;
+        top: 48.6%;
+        bottom: auto;
+    }
+    .about-us .main {
+        margin-bottom: 25%;
+    }
+    .research ul li {
+        width: 47%;
+        margin-bottom: 30px;
+        font-size: 15px;
+    }
+    .research ul li img {
+        margin-bottom: 10px;
+    }
+    .mission .content-area {
+        margin-top: 0;
+    }
+    .mission img {
+        float: none;
+        margin: 0;
+        width: 100%;
+    }
+    .about-us p {
+        width: 100%;
+    }
+    .mission p {
+        width: 100%;
+        float: none;
+        font-size: 20px;
+        padding: 20px 0 0 0px;
+    }
+    .vision img {
+        float: none;
+        width: 100%;
+    }
+    .vision p {
+        width: 100%;
+        float: none;
+        font-size: 20px;
+        padding: 20px 0 0 0px;
+        margin-top: 0;
+    }
+    nav.about {
+        display: none;
+    }
 }
 @media (max-width: 700px) {
     .event-cover {
@@ -875,5 +1035,9 @@ header .menu-btn {
     .single-event .info .caption,
     .single-event .info .address {
         font-size: 12px;
+    }
+    .about-us .main .ttl {
+        width: 45px;
+        height: 45px;
     }
 }
