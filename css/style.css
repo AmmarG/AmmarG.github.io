@@ -1237,6 +1237,9 @@ header .btn-search {
     text-align: right;
     -webkit-box-shadow: none;
     box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 .close-btn {
   display: none;
