@@ -1235,6 +1235,8 @@ header .btn-search {
   outline: 0;
   padding: 10px;
     text-align: right;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 .close-btn {
   display: none;
