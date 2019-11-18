@@ -1,44 +1,104 @@
 (function() {
-    var second = 1000,
-        minute = second * 60,
-        hour = minute * 60,
-        day = hour * 24;
+    'use strict';
 
-    var countDown = new Date('Oct 20, 2019 00:00:00').getTime(),
-        x = setInterval(function() {
+    var slider = (document.querySelector('.slider') ? document.querySelector('.slider') : null);
+    if (slider) {
+        var li = slider.querySelectorAll('ul li');
+        var leftBtn = slider.querySelector('button.left');
+        var rightBtn = slider.querySelector('button.right');
+        var score = 0;
 
-            var now = new Date().getTime(),
-                distance = countDown - now;
+        slider.firstElementChild.style.width = li.length * 900 + 50 + 'px';
 
-            document.getElementById('days').innerText = Math.floor(distance / (day)),
-            document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-            document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-            document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+        function scroll() {
 
-            //do something later when date is reached
-            //if (distance < 0) {
-            //  clearInterval(x);
-            //  'Hello!;
-            //}
+            if (this.classList[1] == 'right') {
+                if (li[score].nextElementSibling.nextElementSibling.nextElementSibling == null) return;
+                li[score].style.display = 'none';
+                score++;
+            };
 
-        }, second)
+            if (this.classList[1] == 'left') {
+                if (score == 0) return;
+                li[score - 1].style.display = 'inline-block';
+                score--;
+            };
+
+        };
+        rightBtn.addEventListener('click', scroll);
+        leftBtn.addEventListener('click', scroll);
+    }
+    document.querySelector('.menu-icon').addEventListener('click', function(e) {
+
+        document.querySelector('.overlay').classList.toggle('show');
+
+    });
+    var ss = document.querySelector('.overlay');
+
+    ss.addEventListener('click', function(e) {
+        document.querySelector('.menu-btn').checked = false;
+        document.querySelector('.overlay').classList.toggle('show');
+    });
+
+
+    var sections = document.querySelectorAll('section[id]');
+    var navLinks = document.querySelectorAll('nav.about ul li a');
+
+    function getClosestSection() {
+        var sectionsLength = sections.length;
+
+        for (var index = 0; index < sectionsLength; index++) {
+            if (isBelowScroll(sections.item(index)))
+                break;
+        }
+
+        selectLink(sections.item(index).id)
+    }
+
+    function isBelowScroll(element) {
+        var position = element.getBoundingClientRect();
+        return position.top > 0;
+    }
+
+    function selectLink(id) {
+
+        Array.prototype.forEach.call(navLinks, function(element) {
+            element.classList.remove('is-selected');
+        });
+
+        document.querySelector('a[href="#' + id + '"]').classList.add('is-selected');
+    }
+
+    window.addEventListener('scroll', function(event) {
+        getClosestSection();
+    });
+
+
 })();
 
-document.querySelector('.font-resize').addEventListener('click', function(e) {
-    [].map.call(document.querySelectorAll('article'), function(el) {
-        el.classList.toggle('bigger');
-    });
-});
-window.onload = function() {
-    var share = document.querySelector('.teaser-tools');
-    var shareTop = share.offsetTop;
-    function shareFixed(e) {
-        if (window.scrollY >= shareTop) {
-            share.classList.add('is-fixed');
-        } else {
-            share.classList.remove('is-fixed');
+function formSubmit() {
+    console.log("Start -- Thank you!");
+    var xhr = new XMLHttpRequest();
+    var url = "http://sibf.alarabiya.cc/sharjah-bookfair/contact/send";
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            var json = JSON.parse(xhr.responseText);
+            console.log("Thank you!");
         }
-    }
-    window.addEventListener('scroll', shareFixed);
-
+    };
+    var firstName = document.getElementById('firstname').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('message').value;
+    var category = document.getElementById('category').value;
+    var data = JSON.stringify({
+        "fullName": firstName,
+        "emailAddress": email,
+        "mailSubject": subject,
+        "mailText": message,
+        "mailCategory": category
+    });
+    xhr.send(data);
 }
