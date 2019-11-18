@@ -78,6 +78,7 @@
 
 function formSubmit() {
     console.log("Start -- Thank you!");
+    //
     var xhr = new XMLHttpRequest();
     var url = "https://sibf.alarabiya.cc/sharjah-bookfair/contact/send";
     xhr.open("POST", url, true);
@@ -102,3 +103,18 @@ function formSubmit() {
     });
     xhr.send(data);
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  var btn = document.querySelector('.button'),
+      loader = document.querySelector('.loader'),
+      check = document.querySelector('.check');
+  
+  btn.addEventListener('click', function () {
+    loader.classList.add('active');    
+  });
+ 
+  loader.addEventListener('animationend', function() {
+    check.classList.add('active'); 
+  });
+});
+
