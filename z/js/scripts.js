@@ -79,7 +79,7 @@
 function formSubmit() {
     console.log("Start -- Thank you!");
     var xhr = new XMLHttpRequest();
-    var url = "http://sibf.alarabiya.cc/sharjah-bookfair/contact/send";
+    var url = "https://sibf.alarabiya.cc/sharjah-bookfair/contact/send";
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onreadystatechange = function() {
