@@ -104,17 +104,20 @@ function formSubmit() {
     xhr.send(data);
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-  var btn = document.querySelector('.button'),
-      loader = document.querySelector('.loader'),
-      check = document.querySelector('.check');
-  
-  btn.addEventListener('click', function () {
-    loader.classList.add('active');    
-  });
- 
-  loader.addEventListener('animationend', function() {
-    check.classList.add('active'); 
-  });
-});
+document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.querySelector('.button'),
+        loader = document.querySelector('.loader'),
+        check = document.querySelector('.check'),
+        form = document.querySelector('form'),
+        msg = document.querySelector('.thank-you-msg');
 
+    btn.addEventListener('click', function() {
+        loader.classList.add('active');
+    });
+
+    loader.addEventListener('animationend', function() {
+        check.classList.add('active');
+        form.classList.add('hide');
+        msg.classList.add('show');
+    });
+});
