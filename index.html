@@ -2,68 +2,177 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Arab Policy Forum</title>
-    <meta http-equiv=X-UA-Compatible content="IE=edge">
-    <meta name=description content="Arab Policy Forum">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="google" value="notranslate">
+    <meta charset="UTF-8">
+    <title>Boutros New Font</title>
+    <style>
+        @font-face {
+            font-family: 'Cairo';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Cairo Bold'), local('Cairo-Bold'), url(https://fonts.gstatic.com/s/cairo/v5/SLXLc1nY6Hkvalqaa46L59Zea3Zl.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        @font-face {
+            font-family: 'Noto Naskh Arabic';
+            font-style: normal;
+            font-weight: 700;
+            src: url(fonts/NotoNaskhArabic-Bold.eot);
+            src: url(fonts/NotoNaskhArabic-Bold.eot?#iefix) format('embedded-opentype'), url(fonts/NotoNaskhArabic-Bold.woff2) format('woff2'), url(fonts/NotoNaskhArabic-Bold.woff) format('woff'), url(fonts/NotoNaskhArabic-Bold.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: 'Droid Kufi';
+            font-style: normal;
+            font-weight: 400;
+            src: url(fonts/DroidKufi-Regular.eot);
+            src: url(fonts/DroidKufi-Regular.eot?#iefix) format('embedded-opentype'), url(fonts/DroidKufi-Regular.woff2) format('woff2'), url(fonts/DroidKufi-Regular.woff) format('woff'), url(fonts/DroidKufi-Regular.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: Boutros Old;
+            src: url("fonts/BoutrosArabiyaB.eot");
+            src: url('fonts/BoutrosArabiyaB.eot?') format('eot'), url("fonts/BoutrosArabiyaB.woff") format("woff"), url("fonts/BoutrosArabiyaB.ttf") format("truetype");
+        }
+        @font-face {
+            font-family: Boutros New;
+            src: url(fonts/alarabiyaBoutros2020-Regular.otf);
+            src: url(fonts/alarabiyaBoutros2020-Regular.otf?#iefix) format('embedded-opentype'), url(fonts/alarabiyaBoutros2020-Regular.woff2) format('woff2'), url(fonts/alarabiyaBoutros2020-Regular.woff) format('woff'), url(fonts/alarabiyaBoutros2020-Regular.ttf) format('truetype');
+        }
+        * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        fieldset {
+            display: inline-block;
+        }
+        button {
+            display: inline-block text-align: center;
+            color: #aaa;
+            background: #eee;
+            border: 1px solid #ccc;
+            outline: none;
+            padding: 10px;
+        }
+        button[data-value="italic"] {
+            font-style: italic;
+        }
+        button[data-value="underline"] {
+            text-decoration: underline;
+        }
+        button.set {
+            font-weight: bold;
+            color: #000;
+            background: #fff;
+            border: 1px solid #ccc;
+        }
+        textarea {
+            width: 970px;
+            height: 100px;
+            resize: none;
+            clear: both;
+            display: block;
+            margin-bottom: 100px;
+            font-size: 15px;
+            padding: 10px;
+            color: #666;
+            border: solid 1px #ccc;
+        }
+        .wrapper {
+            width: 980px;
+            margin: 50px auto;
+            direction: rtl;
+        }
+        #prevCom {
+            font-size: 32px;
+            line-height: 130%;
+            padding-top: 30px;
+        }
+        legend {
+            direction: ltr;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="overlay"></div>
-    <!-- Header -->
-    <header>
-        <div class="content-area">
-            <a class="logo" href="index.html" title="Arab Policy Forum">Arab Policy Forum</a>
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span>
-            </label>
-            <ul class="navigation">
-                <li>
-                    <a href="about.html" title="About">About</a>
-                </li>
-                <li>
-                    <a href="contact.html" title="Contact Us">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-    </header>
-    <!-- Section -->
-    <section class="about">
-        <div class="content-area wide">
-            <div class="main">
-                <img src="temp/img01.jpg" alt="A new policy think tank for the Middle East" />
-                <span class="ttl">A policy think tank for the middle east.</span>
-                <a href="about.html" class="more" title="Read More">Read More &#x2794;</a>
-            </div>
-            <p class="center">The Arab Policy Forum (APF) was established as an initiative to provide quality data and information on the Middle East, generated from empirical research and data analysis.</p>
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer>
-        <div class="content-area">
-            <a class="logo" href="index.html" title="Arab Policy Forum">Arab Policy Forum</a>
-            <ul class="navigation">
-                <li>
-                    <a href="about.html" title="About">About</a>
-                </li>
-                <li>
-                    <a href="contact.html" title="Contact Us">Contact Us</a>
-                </li>
-            </ul>
-            <div class="copyrights">
-                <div class="foot-aa">
-                    <span>Powered by</span>
-                    <a href="https://www.alarabiya.net/" title="Alarabiya" target="_blank" rel="noopener">
-                    Alarabiya
-                </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <div class="wrapper">
+        <textarea name="WPcomment" id="WPComment" placeholder="اكتب شو ما بدك يا معلم مش فارقة!"></textarea>
+        <fieldset>
+            <legend>Size [px]</legend>
+            <button data-property="font-size" data-value="18px">18</button>
+            <button data-property="font-size" data-value="24px">24</button>
+            <button data-property="font-size" data-value="32px">32</button>
+            <button data-property="font-size" data-value="46px">46</button>
+            <button data-property="font-size" data-value="58px">58</button>
+        </fieldset>
+        <fieldset>
+            <legend>Weight</legend>
+            <button data-property="font-weight" data-value="600" title="Bold">Bold</button>
+        </fieldset>
+        <fieldset>
+            <legend>Style</legend>
+            <button data-property="font-style" data-value="italic" title="Italic">I</button>
+        </fieldset>
+        <fieldset>
+            <legend>Decoration</legend>
+            <button data-property="text-decoration" data-value="none" title="None">U</button>
+            <button data-property="text-decoration" data-value="underline" title="Underline">U</button>
+        </fieldset>
+        <fieldset>
+            <legend>Other Fonts</legend>
+            <button data-property="font-family" data-value="Boutros New" title="Boutros New">Boutros New</button>
+            <button data-property="font-family" data-value="Boutros Old" title="Boutros Old">Boutros Old</button>
+            <button data-property="font-family" data-value="Cairo" title="Cairo">Cairo</button>
+            <button data-property="font-family" data-value="Noto Naskh Arabic" title="Noto Naskh Arabic">Noto Naskh Arabic</button>
+            <button data-property="font-family" data-value="Droid Kufi" title="Droid Kufi">Droid Kufi</button>
+        </fieldset>
+
+        <div id="prevCom"></div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript">
+        $('button').click(function() {
+            $(this).toggleClass('set');
+
+            var fontProperty = $(this).data('property');
+            var fontValue = $(this).data('value');
+
+            if (fontProperty == 'font-size') {
+
+                $('button[data-property="font-size"]').removeClass('set');
+                $(this).addClass('set');
+                $('#prevCom').css(fontProperty, fontValue);
+
+            } else if (fontProperty == 'font-family') {
+
+                $('button[data-property="font-family"]').removeClass('set');
+                $(this).addClass('set');
+                $('#prevCom').css(fontProperty, fontValue);
+
+            } else if (fontProperty == 'text-decoration') {
+
+                $('button[data-property="text-decoration"]').removeClass('set');
+                $(this).addClass('set');
+                $('#prevCom').css(fontProperty, fontValue);
+
+            } else {
+
+                if ($('#prevCom').css(fontProperty) == fontValue) {
+                    $('#prevCom').css(fontProperty, '');
+                } else {
+                    $('#prevCom').css(fontProperty, fontValue);
+                }
+            }
+        });
+        var wpcomment = document.getElementById('WPComment');
+
+        wpcomment.onkeyup = wpcomment.onkeypress = function() {
+            document.getElementById('prevCom').innerHTML = this.value;
+        }
+        $(document).ready(function() {
+            $('button[data-property="font-family"][data-value="Boutros New"]').trigger('click');
+            $('button[data-property="font-size"][data-value="32px"]').trigger('click');
+            $('button[data-property="text-decoration"][data-value="none"]').trigger('click');
+        });
+    </script>
 </body>
 
 </html>
