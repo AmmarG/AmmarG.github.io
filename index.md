@@ -42,14 +42,17 @@ __This will also be bold__
 _You **can** combine them_
 
 > I am a Blockquote
+
 > I am another Blockquote
 
 <div class="full-wrapper ">
   <div class="main-content">
     <section class="">
       <div class="area-75">
+      Area75
       </div>
       <div class="area-25">
+      Area25
       </div>
     </section>
   </div>
