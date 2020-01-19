@@ -2,6 +2,8 @@
 
 *Italic*
 
+***BoldItalic***
+
 [Alarabiya](http://www.alarabiya.net)
 
 # Numbers:
