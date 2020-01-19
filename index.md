@@ -49,10 +49,8 @@ _You **can** combine them_
   <div class="main-content">
     <section class="">
       <div class="area-75">
-      Area75
       </div>
       <div class="area-25">
-      Area25
       </div>
     </section>
   </div>
