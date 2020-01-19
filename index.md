@@ -1,7 +1,1 @@
-# test
-
-[test]
-
-  - Type some Markdown on the left
-  - See HTML in the right
-  - Magic
+It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to Google!](http://google.com)
