@@ -45,6 +45,7 @@ _You **can** combine them_
 
 > I am another Blockquote
 
+`
 <div class="full-wrapper ">
   <div class="main-content">
     <section class="">
@@ -57,5 +58,6 @@ _You **can** combine them_
     </section>
   </div>
 </div>
+`
 
 ![Image of Chiniese](https://vid.alarabiya.net/images/2020/01/19/12b24213-b2cf-40a4-8e46-43edccb230ad/12b24213-b2cf-40a4-8e46-43edccb230ad_16x9_1200x676.jpg)
