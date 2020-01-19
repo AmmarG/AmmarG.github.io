@@ -1,2 +1,7 @@
 # test
-[git-repo-url]: <https://github.com/joemccann/dillinger.git>
+
+[test] - test
+
+  - Type some Markdown on the left
+  - See HTML in the right
+  - Magic
