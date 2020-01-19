@@ -31,4 +31,12 @@
 ##### This is an <h5> tag
 ###### This is an <h6> tag
 
+*This text will be italic*
+_This will also be italic_
+
+**This text will be bold**
+__This will also be bold__
+
+_You **can** combine them_
+
 ![Image of Chiniese](https://vid.alarabiya.net/images/2020/01/19/12b24213-b2cf-40a4-8e46-43edccb230ad/12b24213-b2cf-40a4-8e46-43edccb230ad_16x9_1200x676.jpg)
