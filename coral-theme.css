@@ -20,6 +20,7 @@
     }
     .TabBar-primary-3rIQ9 {
       border-color: #e5e5e5;
+      padding: 10px;
     }
 
     .TabBar-primary-3rIQ9 li {
@@ -36,4 +37,5 @@
 
     .Tab-primary-BShmJ {
       border: none;
+      background: none;
     }
