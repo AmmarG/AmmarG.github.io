@@ -4,17 +4,19 @@
       display: flex;
       flex-direction: row;
       padding: 0;
-      background: #fff;
+      background: none;
     }
 
     .CallOut-colorPrimary-1YYlF::before {
       content: "";
       flex: 0 0 72px;
       height: 72px;
-      background: #373c59;
+      background-color: #373c59;
       border-radius: 50%;
       margin-right: 15px;
-      background: url(/icon-comment.svg) center no-repeat;
+      background-image: url(/icon-comment.svg);
+      background-position: center;
+      background-repeat: no-repeat;
     }
 
     .Markdown-root-YMTjB {
