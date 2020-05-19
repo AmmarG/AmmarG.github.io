@@ -41,7 +41,7 @@
       outline: none;
     }
 
-    .TabBar-primary-3rIQ9 li:last-child {
+    li:first-child .TabBar-primary-3rIQ9 {
       padding-left: 0;
     }
 
