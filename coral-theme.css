@@ -18,3 +18,22 @@
       border-radius: 4px;
       background-color: rgba(55, 60, 89, 0.04);
     }
+    .TabBar-primary-3rIQ9 {
+      border-color: #e5e5e5;
+    }
+
+    .TabBar-primary-3rIQ9 li {
+      border-right: solid 1px #e5e5e5;
+    }
+    .TabBar-primary-3rIQ9 li:last-child {
+      border: none;
+    }
+
+    .Tab-primary-BShmJ.Tab-active-XrGkw {
+      border: none;
+      font-weight: bold;
+    }
+
+    .Tab-primary-BShmJ {
+      border: none;
+    }
