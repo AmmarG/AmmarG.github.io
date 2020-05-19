@@ -5,6 +5,7 @@
       flex-direction: row;
       padding: 0;
       background: none;
+      position: relative;
     }
 
     .CallOut-colorPrimary-1YYlF::before {
@@ -14,9 +15,14 @@
       background-color: #373c59;
       border-radius: 50%;
       margin-right: 15px;
-      background-image: url(/icon-comment.svg);
-      background-position: center;
-      background-repeat: no-repeat;
+    }
+    .CallOut-colorPrimary-1YYlF::after {
+      content: "";
+      background: url(/icon-comment.svg) center no-repeat;
+      filter: invert(1) contrast(3);
+      position: absolute;
+      left: 10px;
+      top: 10px;
     }
 
     .Markdown-root-YMTjB {
