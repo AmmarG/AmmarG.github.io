@@ -1,9 +1,47 @@
 
-    .App-root-3Hk1g {
-      background: white;
-      padding: 30px;
-      border-radius: 0.4px;
-    }
+  @font-face {
+    font-family: "alarabiyaBold";
+    src: url("https://avalon.alarabiya.cc/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-Bold.woff2") format("woff2"),
+      url("https://avalon.alarabiya.cc/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-Bold.woff2") format("woff");
+    font-style: normal;
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "alarabiyaExtraBold";
+    src: url("https://avalon.alarabiya.cc/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-ExtraBold.woff2") format("woff2"),
+      url("https://avalon.alarabiya.cc/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-ExtraBold.woff2") format("woff");
+    font-style: normal;
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "alarabiyaLight";
+    src: url("https://avalon.alarabiya.cc/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-Light.woff2") format("woff2"),
+      url("https://avalon.alarabiya.cc/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-Light.woff2") format("woff");
+    font-style: normal;
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: "alarabiya";
+    src: url("https://avalon.alarabiya.cc/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-Regular.woff2") format("woff2"),
+      url("https://avalon.alarabiya.cc/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-Regular.woff2") format("woff");
+    font-style: normal;
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "alarabiyaUltraLight";
+    src: url("https://avalon.alarabiya.cc/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-UltraLight.woff2")
+        format("woff2"),
+      url("https://avalon.alarabiya.cc/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-UltraLight.woff2") format("woff");
+    font-style: normal;
+    font-weight: 100;
+  }
+
+  
+  
+  .coral-comments {
+    background: #FFF;
+    font-family: alarabiya;
+  }
     
     .CallOut-colorPrimary-1YYlF {
       border: none;
