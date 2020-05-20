@@ -314,3 +314,7 @@
 .Button-mouseHover-7Y2eV {
   color: #373c59 !important;
 }
+
+.Button-variantFilled-3TpZj.Button-colorBrand-3MO1W, .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W {
+  background-color: #373c59;
+}
