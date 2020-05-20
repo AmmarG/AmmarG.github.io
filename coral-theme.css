@@ -73,12 +73,12 @@
     }
 
     .Markdown-root-YMTjB {
-      color: #000;
+      color: #151515;
       font-weight: bold;
     }
   
     .Tab-secondary-SAOuB.Tab-active-XrGkw {
-      border-color: #373c59;
+      border: none;
     }
 
     .CallOut-colorRegular-1TwSR {
@@ -132,3 +132,19 @@
       margin-right: 0;
       margin-left: 0;
     }
+
+    .Flex-alignFlexEnd-1fIG3 {
+      align-items: stretch;
+    }
+
+    .Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX, .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorPrimary-3wqmX {
+      background-color: #FFF;
+      color: #151515;
+      border: solid 1px #151515;
+      border-radius: 4px;
+  }
+
+  .StreamContainer-tabBarRow-3T4QQ {
+    border-color: #e5e5e5;
+    padding: 20px 0;
+  }
