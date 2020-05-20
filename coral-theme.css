@@ -41,9 +41,6 @@
   .coral-comments {
     background: #FFF;
   }
-  .coral-comments * {
-    font-family: alarabiyaBold !important;
-  }
     
     .CallOut-colorPrimary-1YYlF {
       border: none;
@@ -61,7 +58,7 @@
       height: 72px;
       background-color: #373c59;
       border-radius: 50%;
-      margin-right: 15px;
+      margin-right: 32px;
     }
     .CallOut-colorPrimary-1YYlF::after {
       content: "";
@@ -111,6 +108,8 @@
       border: none;
       background: none;
       outline: none;
+      padding: 0;
+      padding-bottom: 0;
     }
 
     .TabBar-primary-3rIQ9 li:first-child .Tab-primary-BShmJ {
