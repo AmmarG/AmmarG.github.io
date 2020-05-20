@@ -188,6 +188,7 @@
     border-radius: 4px;
     border: none;
     position: relative;
+    margin-bottom: 15px;
 }
 
 .Indent-level1-3GgDX::before,
@@ -237,8 +238,10 @@
   color: #373c59;
 }
 
-.Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F {
+.coral-comment-shareButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F {
   font-size: 0;
   background: url(./icon-share_2.svg) center no-repeat;
   background-size: contain;
+  width: 20px;
+  height: 20px;
 }
