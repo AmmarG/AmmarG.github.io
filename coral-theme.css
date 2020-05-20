@@ -145,8 +145,9 @@
       transition: all 0.2s;
   }
 
-  .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3, .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active {
+  .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3, .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active, .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV {
     background: #373c59;
+    border-color: #373c59;
     color: #FFF;
     border: none;
   }
@@ -154,4 +155,8 @@
   .StreamContainer-tabBarRow-3T4QQ {
     border-color: #e5e5e5;
     padding: 20px 0;
+  }
+
+  .htmlContent-root-1db2D blockquote {
+    background-color: rgba(55, 60, 89, 0.04);
   }
