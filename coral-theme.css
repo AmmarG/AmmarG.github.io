@@ -219,3 +219,19 @@
   background: rgba(55, 60, 89, 0.04);
   padding: 10px 20px;
 }
+
+.Tag-colorGrey-3TasG {
+  background: #373c59;
+}
+
+.Button-variantUnderlined-1jUqn.Button-colorPrimary-3wqmX {
+  color: #373c59;
+}
+
+.Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3, .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active {
+  opacity: 0.7;
+}
+
+.Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3, .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active {
+  color: #373c59;
+}
