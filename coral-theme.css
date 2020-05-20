@@ -189,7 +189,6 @@
     border: none;
     position: relative;
     margin-bottom: 15px;
-    margin-left: 0;
 }
 
 .Indent-level1-3GgDX::before,
@@ -203,18 +202,6 @@
   position: absolute;
   top: 0;
   right: 0;
-}
-
-.Indent-level1-3GgDX {
-  margin-right: 10px;
-}
-
-.Indent-level2-3-UNp {
-  margin-right: 20px;
-}
-
-.Indent-level3-1CdyG {
-  margin-right: 30px;
 }
 
 .Comment-highlight-2r8jI {
