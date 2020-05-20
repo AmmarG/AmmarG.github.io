@@ -2,14 +2,14 @@
   @font-face {
     font-family: "alarabiyaBold";
     src: url("fonts/alarabiyaBoutros2020-Bold.woff2") format("woff2"),
-      url("https://avalon.alarabiya.cc/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-Bold.woff2") format("woff");
+      url("fonts/alarabiyaBoutros2020-Bold.woff2") format("woff");
     font-style: normal;
     font-weight: 500;
   }
   @font-face {
     font-family: "alarabiyaExtraBold";
     src: url("fonts/alarabiyaBoutros2020-ExtraBold.woff2") format("woff2"),
-      url("https://avalon.alarabiya.cc/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-ExtraBold.woff2") format("woff");
+      url("fonts/alarabiyaBoutros2020-ExtraBold.woff2") format("woff");
     font-style: normal;
     font-weight: 700;
   }
