@@ -277,6 +277,7 @@
 
 .Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX, .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX {
   color: #373c59;
+  border-radius: 4px;
 }
 .Bar-root-bOJJJ,
 .Button-variantFilled-3TpZj.Button-colorBrand-3MO1W, .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W {
@@ -301,4 +302,8 @@
 }
 .Tab-secondary-SAOuB, .Tab-secondary-SAOuB.Tab-active-XrGkw {
   padding: 0 10px 10px 0;
+}
+.coral-myComments-loadMoreButton:hover {
+  background: #373c59;
+  color: #fff;
 }
