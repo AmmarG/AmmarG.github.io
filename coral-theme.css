@@ -41,6 +41,10 @@
   .coral-comments {
     background: #FFF;
   }
+
+  .coral-comments * {
+    outline: none;
+  }
     
     .CallOut-colorPrimary-1YYlF {
       border: none;
@@ -79,6 +83,7 @@
   
     .Tab-secondary-SAOuB.Tab-active-XrGkw {
       border: none;
+      padding: 0;
     }
 
     .CallOut-colorRegular-1TwSR {
@@ -149,7 +154,6 @@
     background: #373c59;
     border-color: #373c59;
     color: #FFF;
-    border: none;
     outline: none;
   }
 
@@ -160,4 +164,18 @@
 
   .htmlContent-root-1db2D blockquote {
     background-color: rgba(55, 60, 89, 0.04);
+  }
+
+  .StreamContainer-sortMenu-2P6fd {
+    padding: 0;
+  }
+
+  .SelectField-select-2NBid {
+    border: none;
+    outline: none;
+    background: rgba(55, 60, 89, 0.04);
+  }
+
+  .Counter-colorPrimary-2DGd2 {
+    background: #373c59;
   }
