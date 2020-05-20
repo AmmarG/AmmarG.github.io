@@ -251,3 +251,19 @@
   box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.12);
   border: none;
 }
+
+.TextField-colorRegular-DqnMy {
+  border-color: #e5e5e5;
+}
+
+.Arrow-root-CdFJ8[data-placement*=top]:before {
+  border-top-color: #e5e5e5 ;
+}
+
+.TextField-colorRegular-DqnMy {
+  border-color: #e5e5e5;
+}
+
+.typography-timestamp-2gyl1 {
+  color: #c4c4c4;
+}
