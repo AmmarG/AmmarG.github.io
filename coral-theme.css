@@ -188,6 +188,7 @@
     border-radius: 4px;
     border: none;
     position: relative;
+    margin-left: 0;
     margin-bottom: 15px;
 }
 
@@ -201,7 +202,7 @@
   background-color: #373c59;
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
 }
 
 .Comment-highlight-2r8jI {
@@ -232,7 +233,8 @@
 
 .coral-comment-reactButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
 .coral-comment-replyButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
-.coral-comment-shareButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F {
+.coral-comment-shareButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
+.coral-reportButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F {
   font-size: 0;
   background-size: contain;
   background-repeat: no-repeat;
@@ -271,4 +273,32 @@
 
 .typography-timestamp-2gyl1 {
   color: #c4c4c4;
+}
+
+.Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX, .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX {
+  color: #373c59;
+}
+.Bar-root-bOJJJ,
+.Button-variantFilled-3TpZj.Button-colorBrand-3MO1W, .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W {
+  background: #373c59;
+}
+
+.TextLink-root-2_bTm {
+  color: #373c59;
+}
+
+.Button-variantRegular-1_TV8.Button-colorPrimary-3wqmX {
+  color: #373c59;
+}
+.Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3, .Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active {
+  color: #373c59;
+  opacity: 0.7;
+}
+
+.CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before {
+  background: #373c59;
+  border-color: #373c59;
+}
+.Tab-secondary-SAOuB, .Tab-secondary-SAOuB.Tab-active-XrGkw {
+  padding: 0 10px 10px 0;
 }
