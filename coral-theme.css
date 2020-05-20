@@ -179,3 +179,27 @@
   .Counter-colorPrimary-2DGd2 {
     background: #373c59;
   }
+
+  .Indent-level1-3GgDX,
+  .Indent-level2-3-UNp,
+  .Indent-level3-1CdyG  {
+    padding: 10px;
+    background: rgba(55, 60, 89, 0.04);
+    border-radius: 4px;
+}
+
+.Indent-level1-3GgDX {
+  margin-left: 20px;
+}
+
+.Indent-level2-3-UNp {
+  margin-left: 40px;
+}
+
+.Indent-level3-1CdyG {
+  margin-left: 40px;
+}
+
+.Comment-highlight-2r8jI {
+  background: rgba(55, 60, 89, 0.04);
+}
