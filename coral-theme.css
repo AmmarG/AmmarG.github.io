@@ -221,6 +221,10 @@
   padding: 10px 20px;
 }
 
+.typography-heading4-3-o7q {
+  font-size: inherit;
+}
+
 .Tag-colorGrey-3TasG {
   background: #373c59;
 }
@@ -238,12 +242,22 @@
   color: #373c59;
 }
 
+.coral-comment-reactButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
+.coral-comment-replyButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
 .coral-comment-shareButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F {
   font-size: 0;
-  background: url(./icon-share_2.svg) center no-repeat;
   background-size: contain;
   width: 20px;
   height: 20px;
+}
+.coral-comment-reactButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F {
+  xbackground: url(./icon-share_2.svg) center no-repeat;
+}
+.coral-comment-replyButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F {
+  xbackground: url(./icon-share_2.svg) center no-repeat;
+}
+.coral-comment-shareButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F {
+  background: url(./icon-share_2.svg) center no-repeat;
 }
 
 .Popover-popover-1ih4R {
@@ -257,7 +271,8 @@
 }
 
 .Arrow-root-CdFJ8[data-placement*=top]:before {
-  border-top-color: #e5e5e5 ;
+  filter: none;
+  border-top-color: #e5e5e5;
 }
 
 .TextField-colorRegular-DqnMy {
