@@ -2,36 +2,36 @@
   @font-face {
     font-family: "alarabiyaBold";
     src: url("fonts/alarabiyaBoutros2020-Bold.woff2") format("woff2"),
-      url("fonts/alarabiyaBoutros2020-Bold.woff2") format("woff");
+      url("https://avalon.alarabiya.cc/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-Bold.woff2") format("woff");
     font-style: normal;
     font-weight: 500;
   }
   @font-face {
     font-family: "alarabiyaExtraBold";
     src: url("fonts/alarabiyaBoutros2020-ExtraBold.woff2") format("woff2"),
-      url("fonts/alarabiyaBoutros2020-ExtraBold.woff2") format("woff");
+      url("https://avalon.alarabiya.cc/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-ExtraBold.woff2") format("woff");
     font-style: normal;
     font-weight: 700;
   }
   @font-face {
     font-family: "alarabiyaLight";
-    src: url("fonts/alarabiyaBoutros2020-Light.woff2") format("woff2"),
-      url("fonts/alarabiyaBoutros2020-Light.woff2") format("woff");
+    src: url("https://avalon.alarabiya.cc/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-Light.woff2") format("woff2"),
+      url("https://avalon.alarabiya.cc/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-Light.woff2") format("woff");
     font-style: normal;
     font-weight: 300;
   }
   @font-face {
     font-family: "alarabiya";
-    src: url("fonts/alarabiyaBoutros2020-Regular.woff2") format("woff2"),
-      url("fonts/alarabiyaBoutros2020-Regular.woff2") format("woff");
+    src: url("https://avalon.alarabiya.cc/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-Regular.woff2") format("woff2"),
+      url("https://avalon.alarabiya.cc/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-Regular.woff2") format("woff");
     font-style: normal;
     font-weight: 400;
   }
   @font-face {
     font-family: "alarabiyaUltraLight";
-    src: url("fonts/alarabiyaBoutros2020-UltraLight.woff2")
+    src: url("https://avalon.alarabiya.cc/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-UltraLight.woff2")
         format("woff2"),
-      url("fonts/alarabiyaBoutros2020-UltraLight.woff2") format("woff");
+      url("https://avalon.alarabiya.cc/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-UltraLight.woff2") format("woff");
     font-style: normal;
     font-weight: 100;
   }
@@ -41,7 +41,7 @@
   }
 
   .coral-comments * {
-    font-display: alarabiya !important;
+    font-family: alarabiya;
     outline: none;
   }
     
@@ -310,7 +310,7 @@
   color: #373c59;
 }
 
-.Button-mouseHover-7Y2eV {
+.Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorRegular-13F5P.Button-mouseHover-7Y2eV {
   color: #FFF !important;
   background: #373c59 !important;
 }
