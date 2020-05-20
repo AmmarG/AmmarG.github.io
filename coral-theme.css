@@ -189,6 +189,7 @@
     border: none;
     position: relative;
     margin-bottom: 15px;
+    margin-left: 0;
 }
 
 .Indent-level1-3GgDX::before,
@@ -202,7 +203,6 @@
   position: absolute;
   top: 0;
   right: 0;
-  margin-left: 0;
 }
 
 .Indent-level1-3GgDX {
