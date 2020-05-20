@@ -29,7 +29,7 @@
       filter: invert(1) contrast(3);
       position: absolute;
       left: 0;
-      top: 0;
+      top: 50%;
       width: 72px;
       height: 72px;
       transform: translate(0, -50%);
