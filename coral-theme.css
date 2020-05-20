@@ -1,4 +1,10 @@
 
+    .App-root-3Hk1g {
+      background: white;
+      padding: 30px;
+      border-radius: 0.4px;
+    }
+    
     .CallOut-colorPrimary-1YYlF {
       border: none;
       display: flex;
@@ -26,6 +32,7 @@
       top: 0;
       width: 72px;
       height: 72px;
+      transform: translate(0, -50%);
     }
 
     .Markdown-root-YMTjB {
