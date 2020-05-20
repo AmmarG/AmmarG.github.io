@@ -41,7 +41,7 @@
   }
 
   .coral-comments * {
-    font-display: alarabiya;
+    font-display: alarabiya !important;
     outline: none;
   }
     
