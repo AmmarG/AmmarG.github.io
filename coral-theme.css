@@ -40,6 +40,8 @@
   
   .coral-comments {
     background: #FFF;
+  }
+  .coral-comments * {
     font-family: alarabiya !important;
   }
     
