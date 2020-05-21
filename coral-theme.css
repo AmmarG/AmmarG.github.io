@@ -153,10 +153,14 @@
   transform: translate(0, -50%);
 }
 .Markdown-root-YMTjB,
-.TabBar-primary-3rIQ9 * {
+.TabBar-primary-3rIQ9 .Tab-primary-BShmJ.Tab-active-XrGkw {
   font-family: AlarabiyaExtraBold;
   font-size: 24px;
-  font-weight: normal;
+  line-height: 100%;
+}
+.TabBar-primary-3rIQ9 * {
+  font-family: Alarabiya;
+  font-size: 24px;
   line-height: 100%;
 }
 .Tab-secondary-SAOuB.Tab-active-XrGkw {
