@@ -100,7 +100,8 @@
 .Tab-secondary-SAOuB.Tab-active-XrGkw,
 .typography-button-2nvMs,
 .typography-heading1-2b6tF,
-.typography-heading2-1XoJQ  {
+.typography-heading2-1XoJQ,
+.typography-heading3-2rRZI  {
   color: #151515 !important;
 }
 .Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX,
@@ -309,7 +310,8 @@
   padding: 0 10px 10px 0;
 }
 
-.UserBoxAuthenticated-userBoxButton-1EdY7 {
+.UserBoxAuthenticated-userBoxButton-1EdY7,
+.TextLink-root-2_bTm {
   text-decoration: underline;
   text-decoration-style: dotted;
 }
