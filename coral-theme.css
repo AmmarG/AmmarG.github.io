@@ -152,8 +152,12 @@
   height: 72px;
   transform: translate(0, -50%);
 }
-.Markdown-root-YMTjB {
-  font-weight: bold;
+.Markdown-root-YMTjB,
+.TabBar-primary-3rIQ9 * {
+  font-family: AlarabiyaExtraBold;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 100%;
 }
 .Tab-secondary-SAOuB.Tab-active-XrGkw {
   border: none;
