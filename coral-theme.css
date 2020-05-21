@@ -310,34 +310,44 @@
 .UserBoxAuthenticated-userBoxText-3JSQ3 {
   font-family: alarabiya;
   font-size: 22px;
+  font-weight: normal;
 }
 
 .typography-heading3-2rRZI {
   font-family: alarabiyaBold;
   font-size: 22px;
+  font-weight: normal;
 }
 
-.UserBoxAuthenticated-userBoxButton-1EdY7 {
+.UserBoxAuthenticated-userBoxButton-1EdY7,
+.typography-bodyCopy-3JspD  {
   font-family: alarabiya;
   font-size: 22px;
   text-decoration: underline;
   text-decoration-style: dotted;
+  font-weight: normal;
 }
 
 .Markdown-root-YMTjB,
-.TabBar-primary-3rIQ9 .Tab-primary-BShmJ.Tab-active-XrGkw {
+.TabBar-primary-3rIQ9 .Tab-primary-BShmJ.Tab-active-XrGkw,
+.Tab-secondary-SAOuB.Tab-active-XrGkw,
+.Counter-sizeSmall-32MjC,
+.SelectField-select-2NBid {
   font-family: AlarabiyaBold;
   font-size: 24px;
   line-height: 100%;
+  font-weight: normal;
 }
 .TabBar-primary-3rIQ9 * {
   font-family: Alarabiya;
   font-size: 24px;
   line-height: 100%;
+  font-weight: normal;
 }
-
-.typography-bodyCopy-3JspD, .typography-bodyShort-30fcZ {
+.typography-bodyShort-30fcZ,
+.Counter-sizeSmall-32MjC {
   font-family: alarabiya;
   font-size: 21px;
   line-height: 100%;
+  font-weight: normal;
 }
