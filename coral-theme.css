@@ -256,22 +256,28 @@
 .coral-comment-reactButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
 .coral-comment-replyButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
 .coral-comment-shareButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
-.coral-reportButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F {
+.coral-reportButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
+.Icon-root-ZlBoK {
   font-size: 0;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  width: 20px;
-  height: 20px;
 }
 .coral-comment-reactButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F {
   background-image: url(./icon-like.svg);
+  width: 30px;
+  height: 30px;
 }
-.coral-comment-replyButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F {
+.coral-comment-replyButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
+.Icon-root-ZlBoK {
   background-image: url(./icon-reply.svg);
+  width: 35px;
+  height: 35px;
 }
 .coral-comment-shareButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F {
   background-image: url(./icon-share_2.svg);
+  width: 20px;
+  height: 20px;
 }
 .Popover-popover-1ih4R {
   border-radius: 4px;
