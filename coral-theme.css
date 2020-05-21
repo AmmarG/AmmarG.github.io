@@ -310,29 +310,39 @@
   text-decoration-style: dotted;
 }
 
+.Tab-secondary-SAOuB.Tab-active-XrGkw {
+  font-weight: normal;
+}
+
 .Tab-button-1FPpH,
 .typography-bodyCopy-3JspD,
-.UserBoxAuthenticated-userBoxButton-1EdY7 {
+.UserBoxAuthenticated-userBoxButton-1EdY7,
+.typography-button-2nvMs,
+.typography-buttonLarge-cg1Uu,
+.Counter-sizeSmall-32MjC {
   font-family: alarabiya;
   font-weight: normal;
   line-height: 100%;
-  font-style: normal !important;
 }
 .Markdown-root-YMTjB,
 .typography-heading3-2rRZI {
   font-family: alarabiyaBold;
   font-weight: normal;
   line-height: 100%;
-  font-style: normal !important;
 }
 .Tab-button-1FPpH,
 .Markdown-root-YMTjB,
 .typography-heading3-2rRZI,
-.UserBoxAuthenticated-userBoxButton-1EdY7 {
+.UserBoxAuthenticated-userBoxButton-1EdY7,
+.Counter-sizeSmall-32MjC {
   font-size: 24px;
   
 }
 .Flex-flex-AOdKg.Flex-halfItemGutter-1GWGW.Flex-wrap-3EvBu.gutter *,
 .typography-bodyCopy-3JspD {
   font-size: 22px;
+}
+
+.typography-button-2nvMs, .typography-buttonLarge-cg1Uu {
+  font-size: 20px;
 }
