@@ -97,7 +97,8 @@
 .Markdown-root-YMTjB,
 .Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX,
 .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorPrimary-3wqmX,
-.Tab-secondary-SAOuB.Tab-active-XrGkw  {
+.Tab-secondary-SAOuB.Tab-active-XrGkw,
+.typography-button-2nvMs  {
   color: #151515 !important;
 }
 .Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX,
@@ -319,7 +320,6 @@
 .Tab-button-1FPpH,
 .typography-bodyCopy-3JspD,
 .UserBoxAuthenticated-userBoxButton-1EdY7,
-.typography-button-2nvMs,
 .typography-buttonLarge-cg1Uu,
 .Counter-sizeSmall-32MjC,
 .typography-menuItem-3jjqW,
@@ -334,7 +334,8 @@
 .Markdown-root-YMTjB,
 .typography-heading3-2rRZI,
 .typography-detail-1ey0h,
-.typography-heading4-3-o7q {
+.typography-heading4-3-o7q,
+.typography-button-2nvMs {
   font-family: alarabiyaBold !important;
   font-weight: normal !important;
   line-height: 100% !important;
