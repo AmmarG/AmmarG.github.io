@@ -299,7 +299,8 @@
   filter: none;
 }
 .Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
-.Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX {
+.Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
+.Button-root-3Ap5v {
   border-radius: 4px;
 }
 .Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
