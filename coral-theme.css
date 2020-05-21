@@ -328,7 +328,8 @@
   font-weight: normal;
   line-height: 100%;
 }
-.Flex-flex-AOdKg.Flex-halfItemGutter-1GWGW.Flex-wrap-3EvBu.gutter * {
+.Flex-flex-AOdKg.Flex-halfItemGutter-1GWGW.Flex-wrap-3EvBu.gutter *,
+.typography-bodyCopy-3JspD {
   font-size: 22px;
   font-weight: normal;
   line-height: 100%;
