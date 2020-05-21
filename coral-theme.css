@@ -40,7 +40,7 @@
 .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
 .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
 .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
-.Button-variantFilled-3TpZj.Button-colorSuccess-1m3-i * {
+.Button-variantFilled-3TpZj.Button-colorSuccess-1m3-i.typography-button-2nvMs{
   color: #FFF !important;
 }
 .coral-comments,
@@ -265,7 +265,8 @@
 .coral-comment-replyButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
 .coral-comment-shareButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
 .coral-reportButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
-.Comment-subBar-1TO1F .Flex-alignCenter-1avOH .Icon-root-ZlBoK {
+.Comment-subBar-1TO1F .Flex-alignCenter-1avOH .Icon-root-ZlBoK,
+.InReplyTo-icon-3F4IS {
   font-size: 0;
   background-size: contain;
   background-repeat: no-repeat;
@@ -277,7 +278,8 @@
   height: 30px;
 }
 .coral-comment-replyButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
-.Comment-subBar-1TO1F .Flex-alignCenter-1avOH .Icon-root-ZlBoK {
+.Comment-subBar-1TO1F .Flex-alignCenter-1avOH .Icon-root-ZlBoK,
+.InReplyTo-icon-3F4IS {
   background-image: url(./icons/icon-reply.svg);
   width: 35px;
   height: 35px;
