@@ -323,31 +323,31 @@
 .typography-menuItem-3jjqW,
 .SelectField-select-2NBid,
 .Button-root-1njr3 {
-  font-family: alarabiya;
-  font-weight: normal;
-  line-height: 100%;
+  font-family: alarabiya !important;
+  font-weight: normal !important;
+  line-height: 100% !important;
 }
 .Markdown-root-YMTjB,
 .typography-heading3-2rRZI {
-  font-family: alarabiyaBold;
-  font-weight: normal;
-  line-height: 100%;
+  font-family: alarabiyaBold !important;
+  font-weight: normal !important;
+  line-height: 100% !important;
 }
 .Tab-button-1FPpH,
 .Markdown-root-YMTjB,
 .typography-heading3-2rRZI,
 .UserBoxAuthenticated-userBoxButton-1EdY7,
 .Counter-sizeSmall-32MjC {
-  font-size: 24px;
+  font-size: 24px !important;
   
 }
 .Flex-flex-AOdKg.Flex-halfItemGutter-1GWGW.Flex-wrap-3EvBu.gutter *,
 .typography-bodyCopy-3JspD,
 .typography-menuItem-3jjqW {
-  font-size: 22px;
+  font-size: 22px !important;
 }
 
 .typography-button-2nvMs, .typography-buttonLarge-cg1Uu,
 .Button-root-1njr3 {
-  font-size: 20px;
+  font-size: 20px !important;
 }
