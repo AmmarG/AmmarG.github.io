@@ -165,7 +165,6 @@
 }
 .CallOut-colorRegular-1TwSR {
   border: none;
-  border-radius: 4px;
   margin-bottom: 30px;
 }
 .TabBar-primary-3rIQ9 {
@@ -206,8 +205,8 @@
 .coral-comment .Flex-alignFlexEnd-1fIG3 {
   align-items: center;
 }
-.Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX, .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorPrimary-3wqmX {
-  border-radius: 4px;
+.Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX,
+.Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorPrimary-3wqmX {
   transition: all 0.2s;
 }
 .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
@@ -229,7 +228,6 @@
 .Indent-level2-3-UNp,
 .Indent-level3-1CdyG  {
   padding: 0 20px;
-  border-radius: 4px;
   border: none;
   position: relative;
   margin-left: 20px;
@@ -293,7 +291,6 @@
   display: none;
 }
 .Popover-popover-1ih4R {
-  border-radius: 4px;
   box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.12);
   border: none;
 }
@@ -302,7 +299,16 @@
 }
 .Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
 .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
-.Button-root-3Ap5v {
+.Button-root-3Ap5v,
+.CallOut-colorRegular-1TwSR,
+.Tag-colorGrey-3TasG,
+.Counter-sizeSmall-32MjC,
+.Popover-popover-1ih4R,
+.Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX,
+.Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorPrimary-3wqmX,
+.Indent-level1-3GgDX,
+.Indent-level2-3-UNp,
+.Indent-level3-1CdyG {
   border-radius: 4px;
 }
 .Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
@@ -312,7 +318,6 @@
 .Tab-secondary-SAOuB, .Tab-secondary-SAOuB.Tab-active-XrGkw {
   padding: 0 10px 10px 0;
 }
-
 .UserBoxAuthenticated-userBoxButton-1EdY7,
 .TextLink-root-2_bTm,
 .Button-variantUnderlined-1jUqn.Button-colorPrimary-3wqmX {
@@ -320,17 +325,12 @@
   text-decoration-style: dotted;
   border: none;
 }
-
 .Tag-colorGrey-3TasG {
-  border-radius: 4px;
   padding: 3px 7px;
 }
-
 .Counter-sizeSmall-32MjC {
-  border-radius: 4px;
   padding: 0 5px;
 }
-
 .FieldSet-root-36U4x .HorizontalGutter-root-OXrSR {
   padding: 5px 0;
 }
@@ -340,7 +340,6 @@
 .AccountSettingsContainer-root-3sy8R .CallOut-colorPrimary-1YYlF::after {
   display: none !important;
 }
-
 .Tab-button-1FPpH,
 .typography-bodyCopy-3JspD,
 .UserBoxAuthenticated-userBoxButton-1EdY7,
