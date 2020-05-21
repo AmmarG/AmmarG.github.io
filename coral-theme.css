@@ -253,10 +253,8 @@
 .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV {
   opacity: 0.7;
 }
-/**
 .coral-comment-reactButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
 .coral-comment-replyButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
-**/
 .coral-comment-shareButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
 .coral-reportButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F {
   font-size: 0;
@@ -266,14 +264,12 @@
   width: 20px;
   height: 20px;
 }
-/**
 .coral-comment-reactButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F {
-  background-image: url(./icon-share_2.svg);
+  background-image: url(./icon-like.svg);
 }
 .coral-comment-replyButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F {
-  background-image: url(./icon-share_2.svg);
+  background-image: url(./icon-reply.svg);
 }
-**/
 .coral-comment-shareButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F {
   background-image: url(./icon-share_2.svg);
 }
