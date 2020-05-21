@@ -1,37 +1,36 @@
 
 @font-face {
   font-family: "alarabiyaBold";
-  src: url("./fonts/alarabiyaBoutros2020-Bold.woff2") format("woff2"),
-  url("./fonts/alarabiyaBoutros2020-Bold.woff2") format("woff");
+  src: url("../fonts/alarabiyaBoutros2020-Bold.woff2") format("woff2"),
+  url("../fonts/alarabiyaBoutros2020-Bold.woff2") format("woff");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: "alarabiyaExtraBold";
-  src: url("./fonts/alarabiyaBoutros2020-ExtraBold.woff2") format("woff2"),
-  url("./fonts/alarabiyaBoutros2020-ExtraBold.woff2") format("woff");
+  src: url("../fonts/alarabiyaBoutros2020-ExtraBold.woff2") format("woff2"),
+  url("../fonts/alarabiyaBoutros2020-ExtraBold.woff2") format("woff");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: "alarabiyaLight";
-  src: url("./fonts/alarabiyaBoutros2020-Light.woff2") format("woff2"),
-  url("./fonts/alarabiyaBoutros2020-Light.woff2") format("woff");
+  src: url("../fonts/alarabiyaBoutros2020-Light.woff2") format("woff2"),
+  url("../fonts/alarabiyaBoutros2020-Light.woff2") format("woff");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
   font-family: "alarabiya";
-  src: url("./fonts/alarabiyaBoutros2020-Regular.woff2") format("woff2"),
-  url("./fonts/alarabiyaBoutros2020-Regular.woff2") format("woff");
+  src: url("../fonts/alarabiyaBoutros2020-Regular.woff2") format("woff2"),
+  url("../fonts/alarabiyaBoutros2020-Regular.woff2") format("woff");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "alarabiyaUltraLight";
-  src: url("./fonts/alarabiyaBoutros2020-UltraLight.woff2")
-  format("woff2"),
-  url("./fonts/alarabiyaBoutros2020-UltraLight.woff2") format("woff");
+  src: url("../fonts/alarabiyaBoutros2020-UltraLight.woff2") format("woff2"),
+  url("../fonts/alarabiyaBoutros2020-UltraLight.woff2") format("woff");
   font-style: normal;
   font-weight: 100;
 }
@@ -151,7 +150,7 @@
 }
 .CallOut-colorPrimary-1YYlF::after {
   content: "";
-  background: url(./icons/icon-comment.svg) center no-repeat;
+  background: url(../icons/icon-comment.svg) center no-repeat;
   filter: invert(1) contrast(3);
   position: absolute;
   left: 0;
@@ -272,19 +271,19 @@
   background-position: center;
 }
 .coral-comment-reactButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F {
-  background-image: url(./icons/icon-like.svg);
+  background-image: url(../icons/icon-like.svg);
   width: 30px;
   height: 30px;
 }
 .coral-comment-replyButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
 .Comment-subBar-1TO1F .Flex-alignCenter-1avOH .Icon-root-ZlBoK,
 .InReplyTo-icon-3F4IS {
-  background-image: url(./icons/icon-reply.svg);
+  background-image: url(../icons/icon-reply.svg);
   width: 35px;
   height: 35px;
 }
 .coral-comment-shareButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F {
-  background-image: url(./icons/icon-share_2.svg);
+  background-image: url(../icons/icon-share_2.svg);
   width: 23px;
   height: 23px;
 }
@@ -350,7 +349,6 @@
 .SelectField-select-2NBid,
 .Button-root-1njr3,
 .typography-timestamp-2gyl1,
-.Tag-colorGrey-3TasG,
 .IgnoreUserSettingsContainer-description-2DJCo,
 .IgnoreUserSettingsContainer-empty-2c2AS,
 .ToggleConfig-details-3TDTH .typography-detail-1ey0h {
@@ -372,7 +370,8 @@
 }
 .typography-heading1-2b6tF,
 .typography-heading2-1XoJQ,
-.typography-button-2nvMs.Button-variantFilled-3TpZj.Button-colorSuccess-1m3-i.typography-button-2nvMs {
+.typography-button-2nvMs.Button-variantFilled-3TpZj.Button-colorSuccess-1m3-i.typography-button-2nvMs,
+.Tag-colorGrey-3TasG {
   font-family: alarabiyaExtraBold !important;
   font-weight: normal !important;
   line-height: 100% !important;
@@ -404,4 +403,7 @@
 }
 .typography-timestamp-2gyl1 {
   font-size: 18px !important;
+}
+.Tag-colorGrey-3TasG {
+  font-size: 16px !important;
 }
