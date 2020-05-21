@@ -21,8 +21,8 @@
 }
 @font-face {
   font-family: "alarabiya";
-  src: url("fonts/alarabiyaBoutros2020-Regular.woff2") format("woff2"),
-  url("fonts/alarabiyaBoutros2020-Regular.woff2") format("woff");
+  src: url("./fonts/alarabiyaBoutros2020-Regular.woff2") format("woff2"),
+  url("./fonts/alarabiyaBoutros2020-Regular.woff2") format("woff");
   font-style: normal;
   font-weight: 400;
 }
