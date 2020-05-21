@@ -45,7 +45,8 @@
 }
 .coral-comments,
 .Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX,
-.Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorPrimary-3wqmX {
+.Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorPrimary-3wqmX,
+.Button-variantGhost-1xqiJ:not(.Button-disabled-2iEkQ).Button-colorRegular-13F5P.Button-active-2v8r3 {
   background: #FFF !important;
 }
 .CallOut-colorPrimary-1YYlF::before,
