@@ -306,32 +306,16 @@
   padding: 0 10px 10px 0;
 }
 
-
-.UserBoxAuthenticated-userBoxText-3JSQ3 {
-  font-family: alarabiya;
-  font-size: 22px;
-}
-
-.typography-heading3-2rRZI {
-  font-family: alarabiyaBold;
-  font-size: 22px;
-}
-
-.UserBoxAuthenticated-userBoxButton-1EdY7 {
-  font-family: alarabiya;
-  font-size: 22px;
-  text-decoration: underline;
-  text-decoration-style: dotted;
-}
-
-.Markdown-root-YMTjB,
-.TabBar-primary-3rIQ9 .Tab-primary-BShmJ.Tab-active-XrGkw {
-  font-family: AlarabiyaBold;
-  font-size: 24px;
-  line-height: 100%;
-}
 .TabBar-primary-3rIQ9 * {
   font-family: Alarabiya;
   font-size: 24px;
+  font-weight: normal;
+  line-height: 100%;
+}
+
+.TabBar-primary-3rIQ9 .Tab-primary-BShmJ.Tab-active-XrGkw {
+  font-family: AlarabiyaBold;
+  font-size: 24px;
+  font-weight: normal;
   line-height: 100%;
 }
