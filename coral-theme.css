@@ -319,10 +319,6 @@
   border: none;
 }
 
-.Tab-secondary-SAOuB.Tab-active-XrGkw {
-  font-weight: normal;
-}
-
 .Tag-colorGrey-3TasG {
   border-radius: 4px;
   padding: 3px 7px;
@@ -335,6 +331,10 @@
 
 .FieldSet-root-36U4x .HorizontalGutter-root-OXrSR {
   padding: 5px 0;
+}
+.ChangePassword-callOut-26xmP::before,
+.ChangePassword-callOut-26xmP::after {
+  display: none !important;
 }
 
 .Tab-button-1FPpH,
@@ -360,7 +360,8 @@
 .typography-heading4-3-o7q,
 .typography-button-2nvMs,
 .Tab-button-1FPpH .Flex-flex-AOdKg,
-.typography-inputLabel-1_EwP {
+.typography-inputLabel-1_EwP,
+.Tab-secondary-SAOuB.Tab-active-XrGkw {
   font-family: alarabiyaBold !important;
   font-weight: normal !important;
   line-height: 100% !important;
@@ -391,11 +392,11 @@
 .typography-button-2nvMs, .typography-buttonLarge-cg1Uu,
 .Button-root-1njr3,
 .typography-detail-1ey0h,
-.typography-heading4-3-o7q {
-  font-size: 20px !important;
-}
-.typography-timestamp-2gyl1,
+.typography-heading4-3-o7q,
 .IgnoreUserSettingsContainer-description-2DJCo,
 .IgnoreUserSettingsContainer-empty-2c2AS {
+  font-size: 20px !important;
+}
+.typography-timestamp-2gyl1 {
   font-size: 18px !important;
 }
