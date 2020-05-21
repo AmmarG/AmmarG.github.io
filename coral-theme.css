@@ -1,35 +1,36 @@
 @font-face {
-  font-family: 'alarabiyaBold';
-  src: url(fonts/alarabiyaBoutros2020-Bold.woff2) format('woff2'),
-  url(fonts/alarabiyaBoutros2020-Bold.woff2) format('woff');
+  font-family: "alarabiyaBold";
+  src: url("fonts/alarabiyaBoutros2020-Bold.woff2") format("woff2"),
+  url("fonts/alarabiyaBoutros2020-Bold.woff2") format("woff");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
-  font-family: 'alarabiyaExtraBold';
-  src: url(fonts/alarabiyaBoutros2020-ExtraBold.woff2) format('woff2'),
-  url(fonts/alarabiyaBoutros2020-ExtraBold.woff2) format('woff');
+  font-family: "alarabiyaExtraBold";
+  src: url("fonts/alarabiyaBoutros2020-ExtraBold.woff2") format("woff2"),
+  url("fonts/alarabiyaBoutros2020-ExtraBold.woff2") format("woff");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
-  font-family: 'alarabiyaLight';
-  src: url(fonts/alarabiyaBoutros2020-Light.woff2) format('woff2'),
-  url(fonts/alarabiyaBoutros2020-Light.woff2) format('woff');
+  font-family: "alarabiyaLight";
+  src: url("fonts/alarabiyaBoutros2020-Light.woff2") format("woff2"),
+  url("fonts/alarabiyaBoutros2020-Light.woff2") format("woff");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
-  font-family: 'alarabiya';
-  src: url(fonts/alarabiyaBoutros2020-Regular.woff2) format('woff2'),
-  url(fonts/alarabiyaBoutros2020-Regular.woff2) format('woff');
+  font-family: "alarabiya";
+  src: url("fonts/alarabiyaBoutros2020-Regular.woff2") format("woff2"),
+  url("fonts/alarabiyaBoutros2020-Regular.woff2") format("woff");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
-  font-family: 'alarabiyaUltraLight';
-  src: url(fonts/alarabiyaBoutros2020-UltraLight.woff2) format('woff2'),
-  url(fonts/alarabiyaBoutros2020-UltraLight.woff2) format('woff');
+  font-family: "alarabiyaUltraLight";
+  src: url("fonts/alarabiyaBoutros2020-UltraLight.woff2")
+  format("woff2"),
+  url("fonts/alarabiyaBoutros2020-UltraLight.woff2") format("woff");
   font-style: normal;
   font-weight: 100;
 }
@@ -120,7 +121,7 @@
   background: rgba(55, 60, 89, 0.04);
 }
 .coral-comments * {
-  /** font-family: alarabiya; **/
+  font-family: alarabiya;
   outline: none;
 }
 .CallOut-colorPrimary-1YYlF {
