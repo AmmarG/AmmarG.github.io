@@ -320,7 +320,9 @@
 .typography-button-2nvMs,
 .typography-buttonLarge-cg1Uu,
 .Counter-sizeSmall-32MjC,
-.typography-menuItem-3jjqW {
+.typography-menuItem-3jjqW,
+.SelectField-select-2NBid,
+.Button-root-1njr3 {
   font-family: alarabiya;
   font-weight: normal;
   line-height: 100%;
@@ -341,7 +343,8 @@
 }
 .Flex-flex-AOdKg.Flex-halfItemGutter-1GWGW.Flex-wrap-3EvBu.gutter *,
 .typography-bodyCopy-3JspD,
-.typography-menuItem-3jjqW {
+.typography-menuItem-3jjqW,
+.Button-root-1njr3 {
   font-size: 22px;
 }
 
