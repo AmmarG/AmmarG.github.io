@@ -342,8 +342,7 @@
   
 }
 .Flex-flex-AOdKg.Flex-halfItemGutter-1GWGW.Flex-wrap-3EvBu.gutter *,
-.typography-bodyCopy-3JspD,
-.typography-menuItem-3jjqW {
+.typography-bodyCopy-3JspD {
   font-size: 22px !important;
 }
 
@@ -351,8 +350,6 @@
 .Button-root-1njr3 {
   font-size: 20px !important;
 }
-.SelectField-keyboardFocus-3P5pU option,
-.SelectField-keyboardFocus-3P5pU:focus,
 .SelectField-keyboardFocus-3P5pU:focus option {
   font-size: 16px !important;
 }
