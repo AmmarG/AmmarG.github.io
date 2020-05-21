@@ -308,13 +308,15 @@
 
 .TabBar-primary-3rIQ9 * {
   font-family: Alarabiya;
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 100%;
 }
 
-.TabBar-primary-3rIQ9 .Tab-primary-BShmJ.Tab-active-XrGkw {
+.Tab-primary-BShmJ.Tab-active-XrGkw {
   font-family: AlarabiyaBold;
+  
+}
+
+.TabBar-primary-3rIQ9 *,
+.TabBar-primary-3rIQ9 .Tab-primary-BShmJ.Tab-active-XrGkw * {
   font-size: 24px;
   font-weight: normal;
   line-height: 100%;
