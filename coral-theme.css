@@ -306,15 +306,22 @@
   padding: 0 10px 10px 0;
 }
 
-.TabBar-primary-3rIQ9 * {
+.TabBar-primary-3rIQ9 *,
+.typography-bodyCopy-3JspD {
   font-family: alarabiya;
 }
-.Markdown-root-YMTjB {
+.Markdown-root-YMTjB,
+.typography-heading3-2rRZI {
   font-family: alarabiyaBold;
 }
 .TabBar-primary-3rIQ9 *,
 .Markdown-root-YMTjB {
   font-size: 24px;
+  font-weight: normal;
+  line-height: 100%;
+}
+.typography-bodyCopy-3JspD {
+  font-size: 22px;
   font-weight: normal;
   line-height: 100%;
 }
