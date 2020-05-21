@@ -310,13 +310,11 @@
   font-family: Alarabiya;
 }
 
-.Tab-primary-BShmJ.Tab-active-XrGkw {
+.TabBar-primary-3rIQ9 .Tab-primary-BShmJ.Tab-active-XrGkw * {
   font-family: AlarabiyaBold;
-  
 }
 
-.TabBar-primary-3rIQ9 *,
-.TabBar-primary-3rIQ9 .Tab-primary-BShmJ.Tab-active-XrGkw * {
+.TabBar-primary-3rIQ9 * {
   font-size: 24px;
   font-weight: normal;
   line-height: 100%;
