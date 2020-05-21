@@ -114,7 +114,8 @@
 .TextField-colorRegular-DqnMy,
 .StreamContainer-tabBarRow-3T4QQ,
 .RTE-content-vbwj2, .RTE-toolbar-3drmR,
-.TabBar-primary-3rIQ9 li {
+.TabBar-primary-3rIQ9 li,
+.ReplyTo-root-3u8me {
   border-color: #e5e5e5 !important;
 }
 .Arrow-root-CdFJ8[data-placement*=top]:before {
@@ -123,7 +124,8 @@
 .SelectField-select-2NBid,
 .Comment-highlight-2r8jI,
 .htmlContent-root-1db2D blockquote,
-.CallOut-colorRegular-1TwSR {
+.CallOut-colorRegular-1TwSR,
+.ReplyTo-root-3u8me {
   background: rgba(55, 60, 89, 0.06) !important;
 }
 .typography-timestamp-2gyl1 {
@@ -264,7 +266,8 @@
 .coral-comment-shareButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
 .coral-reportButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
 .Comment-subBar-1TO1F .Flex-alignCenter-1avOH .Icon-root-ZlBoK,
-.InReplyTo-icon-3F4IS {
+.InReplyTo-icon-3F4IS,
+.ReplyTo-root-3u8me .Icon-sm-2_l4F  {
   font-size: 0;
   background-size: contain;
   background-repeat: no-repeat;
@@ -277,7 +280,8 @@
 }
 .coral-comment-replyButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
 .Comment-subBar-1TO1F .Flex-alignCenter-1avOH .Icon-root-ZlBoK,
-.InReplyTo-icon-3F4IS {
+.InReplyTo-icon-3F4IS,
+.ReplyTo-root-3u8me .Icon-sm-2_l4F {
   background-image: url(../icons/icon-reply.svg);
   width: 35px;
   height: 35px;
