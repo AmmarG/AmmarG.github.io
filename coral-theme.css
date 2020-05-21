@@ -104,11 +104,11 @@
   border: solid 1px #151515;
 }
 .TextField-colorRegular-DqnMy,
+.TabBar-primary-3rIQ9,
 .TextField-colorRegular-DqnMy,
 .StreamContainer-tabBarRow-3T4QQ,
 .RTE-content-vbwj2, .RTE-toolbar-3drmR,
-.TabBar-primary-3rIQ9 li,
-.CallOut-colorPrimary-1YYlF {
+.TabBar-primary-3rIQ9 li {
   border-color: #e5e5e5;
 }
 .Arrow-root-CdFJ8[data-placement*=top]:before {
@@ -135,8 +135,6 @@
   background: none;
   position: relative;
   font-weight: bold;
-  padding-top: 20px;
-  border-top: solid 1px;
 }
 .CallOut-colorPrimary-1YYlF::before {
   content: "";
@@ -297,13 +295,4 @@
 }
 .Tab-secondary-SAOuB, .Tab-secondary-SAOuB.Tab-active-XrGkw {
   padding: 0 10px 10px 0;
-}
-nav {
-  float: left;
-}
-.Box-root-37C1E {
-  float: right;
-}
-.TabBar-primary-3rIQ9 {
-  border-bottom: none;
 }
