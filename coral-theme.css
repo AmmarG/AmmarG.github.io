@@ -306,31 +306,31 @@
   padding: 0 10px 10px 0;
 }
 
-
-.UserBoxAuthenticated-userBoxText-3JSQ3,
-.typography-heading3-2rRZI,
-.SelectField-select-2NBid {
-  font-family: alarabiya;
-  font-size: 22px;
-  font-weight: normal;
-  line-height: 100%;
+.UserBoxAuthenticated-userBoxButton-1EdY7 {
+  text-decoration: underline;
+  text-decoration-style: dotted;
 }
 
+
+.typography-bodyShort-30fcZ,
+.Counter-sizeSmall-32MjC {
+  font-family: alarabiya;
+  font-size: 21px;
+  line-height: 100%;
+  font-weight: normal;
+}
+.UserBoxAuthenticated-userBoxText-3JSQ3,
+.typography-heading3-2rRZI,
+.SelectField-select-2NBid,
 .UserBoxAuthenticated-userBoxButton-1EdY7 {
   font-family: alarabiya;
   font-size: 22px;
-  text-decoration: underline;
-  text-decoration-style: dotted;
   font-weight: normal;
   line-height: 100%;
 }
-
-.Markdown-root-YMTjB,
-.TabBar-primary-3rIQ9 .Tab-primary-BShmJ.Tab-active-XrGkw,
-.Tab-secondary-SAOuB.Tab-active-XrGkw,
-.Counter-sizeSmall-32MjC {
+.Box-root-37C1E.Typography-root-l8wFQ.Typography-bodyCopyBold-3qaFN.typography-bodyCopy-3JspD.Typography-colorTextPrimary-3PX2_ {
   font-family: AlarabiyaBold;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 100%;
   font-weight: normal;
 }
@@ -340,10 +340,12 @@
   line-height: 100%;
   font-weight: normal;
 }
-.typography-bodyShort-30fcZ,
+.Markdown-root-YMTjB,
+.TabBar-primary-3rIQ9 .Tab-primary-BShmJ.Tab-active-XrGkw,
+.Tab-secondary-SAOuB.Tab-active-XrGkw,
 .Counter-sizeSmall-32MjC {
-  font-family: alarabiya;
-  font-size: 21px;
+  font-family: AlarabiyaBold;
+  font-size: 24px;
   line-height: 100%;
   font-weight: normal;
 }
