@@ -98,7 +98,9 @@
 .Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX,
 .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorPrimary-3wqmX,
 .Tab-secondary-SAOuB.Tab-active-XrGkw,
-.typography-button-2nvMs  {
+.typography-button-2nvMs,
+.typography-heading1-2b6tF,
+.typography-heading2-1XoJQ  {
   color: #151515 !important;
 }
 .Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX,
@@ -121,8 +123,7 @@
 .Comment-highlight-2r8jI,
 .htmlContent-root-1db2D blockquote,
 .CallOut-colorRegular-1TwSR,
-.typography-timestamp-2gyl1,
-.Typography-colorTextPrimary-3PX2_ {
+.typography-timestamp-2gyl1, {
   background: rgba(55, 60, 89, 0.04) !important;
 }
 .coral-comments * {
@@ -345,10 +346,21 @@
 .typography-detail-1ey0h,
 .typography-heading4-3-o7q,
 .typography-button-2nvMs,
-.Tab-button-1FPpH .Flex-flex-AOdKg {
+.Tab-button-1FPpH .Flex-flex-AOdKg,
+.Typography-colorTextPrimary-3PX2_ {
   font-family: alarabiyaBold !important;
   font-weight: normal !important;
   line-height: 100% !important;
+}
+.typography-heading1-2b6tF,
+.typography-heading2-1XoJQ {
+  font-family: alarabiyaExtraBold !important;
+  font-weight: normal !important;
+  line-height: 100% !important;
+}
+.typography-heading1-2b6tF,
+.typography-heading2-1XoJQ {
+  font-size: 33px !important;
 }
 .Tab-button-1FPpH,
 .Markdown-root-YMTjB,
