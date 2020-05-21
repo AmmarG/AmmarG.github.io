@@ -335,7 +335,9 @@
   padding: 5px 0;
 }
 .ChangePassword-callOut-26xmP::before,
-.ChangePassword-callOut-26xmP::after {
+.ChangePassword-callOut-26xmP::after,
+.AccountSettingsContainer-root-3sy8R .CallOut-colorPrimary-1YYlF::before,
+.AccountSettingsContainer-root-3sy8R .CallOut-colorPrimary-1YYlF::after {
   display: none !important;
 }
 
@@ -370,7 +372,7 @@
 }
 .typography-heading1-2b6tF,
 .typography-heading2-1XoJQ,
-.Button-variantFilled-3TpZj.Button-colorSuccess-1m3-i.typography-button-2nvMs {
+.typography-button-2nvMs.Button-variantFilled-3TpZj.Button-colorSuccess-1m3-i.typography-button-2nvMs {
   font-family: alarabiyaExtraBold !important;
   font-weight: normal !important;
   line-height: 100% !important;
