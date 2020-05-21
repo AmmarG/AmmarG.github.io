@@ -143,7 +143,7 @@
 }
 .CallOut-colorPrimary-1YYlF::after {
   content: "";
-  background: url(./icon-comment.svg) center no-repeat;
+  background: url(./icons/icon-comment.svg) center no-repeat;
   filter: invert(1) contrast(3);
   position: absolute;
   left: 0;
@@ -272,18 +272,18 @@
   background-position: center;
 }
 .coral-comment-reactButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F {
-  background-image: url(./icon-like.svg);
+  background-image: url(./icons/icon-like.svg);
   width: 30px;
   height: 30px;
 }
 .coral-comment-replyButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
 .Comment-subBar-1TO1F .Flex-alignCenter-1avOH .Icon-root-ZlBoK {
-  background-image: url(./icon-reply.svg);
+  background-image: url(./icons/icon-reply.svg);
   width: 35px;
   height: 35px;
 }
 .coral-comment-shareButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F {
-  background-image: url(./icon-share_2.svg);
+  background-image: url(./icons/icon-share_2.svg);
   width: 23px;
   height: 23px;
 }
