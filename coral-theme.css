@@ -229,8 +229,15 @@
   border-radius: 4px;
   border: none;
   position: relative;
-  margin-left: 0;
+  margin-left: 10px;
   margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .Indent-level1-3GgDX,
+  .Indent-level2-3-UNp,
+  .Indent-level3-1CdyG {
+    margin-left: 20px;
+  }
 }
 .Indent-level1-3GgDX::before,
 .Indent-level2-3-UNp::before,
