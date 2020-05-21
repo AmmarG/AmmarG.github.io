@@ -96,7 +96,8 @@
 }
 .Markdown-root-YMTjB,
 .Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX,
-.Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorPrimary-3wqmX  {
+.Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorPrimary-3wqmX,
+.Tab-secondary-SAOuB.Tab-active-XrGkw  {
   color: #151515 !important;
 }
 .Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX,
@@ -248,9 +249,6 @@
 .Comment-highlight-2r8jI {
   padding: 10px 20px;
 }
-.typography-heading4-3-o7q {
-  font-size: inherit;
-}
 .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
 .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
 .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV {
@@ -314,6 +312,10 @@
   font-weight: normal;
 }
 
+.Tag-colorGrey-3TasG {
+  border-radius: 4px;
+}
+
 .Tab-button-1FPpH,
 .typography-bodyCopy-3JspD,
 .UserBoxAuthenticated-userBoxButton-1EdY7,
@@ -322,13 +324,17 @@
 .Counter-sizeSmall-32MjC,
 .typography-menuItem-3jjqW,
 .SelectField-select-2NBid,
-.Button-root-1njr3 {
+.Button-root-1njr3,
+.typography-timestamp-2gyl1,
+.Tag-colorGrey-3TasG {
   font-family: alarabiya !important;
   font-weight: normal !important;
   line-height: 100% !important;
 }
 .Markdown-root-YMTjB,
-.typography-heading3-2rRZI {
+.typography-heading3-2rRZI,
+.typography-detail-1ey0h,
+.typography-heading4-3-o7q {
   font-family: alarabiyaBold !important;
   font-weight: normal !important;
   line-height: 100% !important;
@@ -345,8 +351,12 @@
 .typography-bodyCopy-3JspD {
   font-size: 22px !important;
 }
-
 .typography-button-2nvMs, .typography-buttonLarge-cg1Uu,
-.Button-root-1njr3 {
+.Button-root-1njr3,
+.typography-detail-1ey0h,
+.typography-heading4-3-o7q {
   font-size: 20px !important;
+}
+.typography-timestamp-2gyl1 {
+  font-size: 18px !important;
 }
