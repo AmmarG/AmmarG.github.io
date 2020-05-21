@@ -151,17 +151,6 @@
   height: 72px;
   transform: translate(0, -50%);
 }
-.Markdown-root-YMTjB,
-.TabBar-primary-3rIQ9 .Tab-primary-BShmJ.Tab-active-XrGkw {
-  font-family: AlarabiyaExtraBold;
-  font-size: 24px;
-  line-height: 100%;
-}
-.TabBar-primary-3rIQ9 * {
-  font-family: Alarabiya;
-  font-size: 24px;
-  line-height: 100%;
-}
 .Tab-secondary-SAOuB.Tab-active-XrGkw {
   border: none;
   padding: 0;
@@ -315,4 +304,40 @@
 }
 .Tab-secondary-SAOuB, .Tab-secondary-SAOuB.Tab-active-XrGkw {
   padding: 0 10px 10px 0;
+}
+
+
+.UserBoxAuthenticated-userBoxText-3JSQ3 {
+  font-family: alarabiya;
+  font-size: 22px;
+}
+
+.typography-heading3-2rRZI {
+  font-family: alarabiyaBold;
+  font-size: 22px;
+}
+
+.UserBoxAuthenticated-userBoxButton-1EdY7 {
+  font-family: alarabiya;
+  font-size: 22px;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.Markdown-root-YMTjB,
+.TabBar-primary-3rIQ9 .Tab-primary-BShmJ.Tab-active-XrGkw {
+  font-family: AlarabiyaBold;
+  font-size: 24px;
+  line-height: 100%;
+}
+.TabBar-primary-3rIQ9 * {
+  font-family: Alarabiya;
+  font-size: 24px;
+  line-height: 100%;
+}
+
+.typography-bodyCopy-3JspD, .typography-bodyShort-30fcZ {
+  font-family: alarabiya;
+  font-size: 21px;
+  line-height: 100%;
 }
