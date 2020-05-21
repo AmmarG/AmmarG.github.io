@@ -315,22 +315,25 @@
 .typography-bodyCopy-3JspD,
 .UserBoxAuthenticated-userBoxButton-1EdY7 {
   font-family: alarabiya;
+  font-weight: normal;
+  line-height: 100%;
+  font-style: normal !important;
 }
 .Markdown-root-YMTjB,
 .typography-heading3-2rRZI {
   font-family: alarabiyaBold;
+  font-weight: normal;
+  line-height: 100%;
+  font-style: normal !important;
 }
 .TabBar-primary-3rIQ9 *,
 .Markdown-root-YMTjB,
 .typography-heading3-2rRZI,
 .UserBoxAuthenticated-userBoxButton-1EdY7 {
   font-size: 24px;
-  font-weight: normal;
-  line-height: 100%;
+  
 }
 .Flex-flex-AOdKg.Flex-halfItemGutter-1GWGW.Flex-wrap-3EvBu.gutter *,
 .typography-bodyCopy-3JspD {
   font-size: 22px;
-  font-weight: normal;
-  line-height: 100%;
 }
