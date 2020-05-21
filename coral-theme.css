@@ -306,11 +306,6 @@
   padding: 0 10px 10px 0;
 }
 
-.UserBoxAuthenticated-userBoxButton-1EdY7 {
-  text-decoration: underline;
-  text-decoration-style: dotted;
-}
-
 
 .UserBoxAuthenticated-userBoxText-3JSQ3 {
   font-family: alarabiya;
@@ -327,9 +322,11 @@
 }
 
 .UserBoxAuthenticated-userBoxButton-1EdY7,
-.typography-bodyCopy-3JspD  {
+.typography-bodyCopy-3JspD {
   font-family: alarabiya;
   font-size: 22px;
+  text-decoration: underline;
+  text-decoration-style: dotted;
   font-weight: normal;
   line-height: 100%;
 }
@@ -337,8 +334,7 @@
 .Markdown-root-YMTjB,
 .TabBar-primary-3rIQ9 .Tab-primary-BShmJ.Tab-active-XrGkw,
 .Tab-secondary-SAOuB.Tab-active-XrGkw,
-.Counter-sizeSmall-32MjC,
-.SelectField-select-2NBid {
+.Counter-sizeSmall-32MjC {
   font-family: AlarabiyaBold;
   font-size: 24px;
   line-height: 100%;
@@ -356,4 +352,8 @@
   font-size: 21px;
   line-height: 100%;
   font-weight: normal;
+}
+
+.SelectField-select-2NBid {
+
 }
