@@ -306,26 +306,32 @@
   padding: 0 10px 10px 0;
 }
 
+.UserBoxAuthenticated-userBoxButton-1EdY7 {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
 
 .UserBoxAuthenticated-userBoxText-3JSQ3 {
   font-family: alarabiya;
   font-size: 22px;
   font-weight: normal;
+  line-height: 100%;
 }
 
 .typography-heading3-2rRZI {
   font-family: alarabiyaBold;
   font-size: 22px;
   font-weight: normal;
+  line-height: 100%;
 }
 
 .UserBoxAuthenticated-userBoxButton-1EdY7,
 .typography-bodyCopy-3JspD  {
   font-family: alarabiya;
   font-size: 22px;
-  text-decoration: underline;
-  text-decoration-style: dotted;
   font-weight: normal;
+  line-height: 100%;
 }
 
 .Markdown-root-YMTjB,
