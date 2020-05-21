@@ -101,7 +101,7 @@
 .typography-button-2nvMs,
 .typography-heading1-2b6tF,
 .typography-heading2-1XoJQ,
-.typography-heading3-2rRZI..typography-heading3-2rRZI  {
+.typography-heading3-2rRZI  {
   color: #151515 !important;
 }
 .Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX,
@@ -125,8 +125,7 @@
 .CallOut-colorRegular-1TwSR {
   background: rgba(55, 60, 89, 0.06) !important;
 }
-.typography-timestamp-2gyl1,
-.Typography-colorTextPrimary-3PX2_ {
+.typography-timestamp-2gyl1 {
   color: rgba(55, 60, 89, 0.6) !important;
 }
 .coral-comments * {
