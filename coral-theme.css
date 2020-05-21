@@ -118,13 +118,15 @@
 .Arrow-root-CdFJ8[data-placement*=top]:before {
   border-top-color: #e5e5e5 !important;
 }
-
 .SelectField-select-2NBid,
 .Comment-highlight-2r8jI,
 .htmlContent-root-1db2D blockquote,
-.CallOut-colorRegular-1TwSR,
-.typography-timestamp-2gyl1, {
-  background: rgba(55, 60, 89, 0.04) !important;
+.CallOut-colorRegular-1TwSR {
+  background: rgba(55, 60, 89, 0.06) !important;
+}
+.typography-timestamp-2gyl1,
+.Typography-colorTextPrimary-3PX2_ {
+  color: rgba(55, 60, 89, 0.6) !important;
 }
 .coral-comments * {
   outline: none;
@@ -307,8 +309,7 @@
   padding: 0 10px 10px 0;
 }
 
-.UserBoxAuthenticated-userBoxButton-1EdY7,
-.TextLink-root-2_bTm {
+.UserBoxAuthenticated-userBoxButton-1EdY7 {
   text-decoration: underline;
   text-decoration-style: dotted;
 }
@@ -346,8 +347,7 @@
 .typography-detail-1ey0h,
 .typography-heading4-3-o7q,
 .typography-button-2nvMs,
-.Tab-button-1FPpH .Flex-flex-AOdKg,
-.Typography-colorTextPrimary-3PX2_ {
+.Tab-button-1FPpH .Flex-flex-AOdKg {
   font-family: alarabiyaBold !important;
   font-weight: normal !important;
   line-height: 100% !important;
@@ -360,7 +360,7 @@
 }
 .typography-heading1-2b6tF,
 .typography-heading2-1XoJQ {
-  font-size: 33px !important;
+  font-size: 33px;
 }
 .Tab-button-1FPpH,
 .Markdown-root-YMTjB,
