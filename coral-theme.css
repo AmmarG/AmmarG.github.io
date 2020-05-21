@@ -232,7 +232,7 @@
   margin-left: 10px;
   margin-bottom: 15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1300px) {
   .Indent-level1-3GgDX,
   .Indent-level2-3-UNp,
   .Indent-level3-1CdyG {
