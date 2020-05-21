@@ -307,15 +307,10 @@
 }
 
 
-.UserBoxAuthenticated-userBoxText-3JSQ3 {
+.UserBoxAuthenticated-userBoxText-3JSQ3,
+.typography-heading3-2rRZI,
+.SelectField-select-2NBid {
   font-family: alarabiya;
-  font-size: 22px;
-  font-weight: normal;
-  line-height: 100%;
-}
-
-.typography-heading3-2rRZI {
-  font-family: alarabiyaBold;
   font-size: 22px;
   font-weight: normal;
   line-height: 100%;
@@ -351,8 +346,4 @@
   font-size: 21px;
   line-height: 100%;
   font-weight: normal;
-}
-
-.SelectField-select-2NBid {
-
 }
