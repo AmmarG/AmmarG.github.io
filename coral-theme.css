@@ -267,7 +267,8 @@
 .coral-reportButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
 .Comment-subBar-1TO1F .Flex-alignCenter-1avOH .Icon-root-ZlBoK,
 .InReplyTo-icon-3F4IS,
-.ReplyTo-root-3u8me .Icon-sm-2_l4F  {
+.ReplyTo-root-3u8me .Icon-sm-2_l4F,
+.HistoryComment-icon-20DaI  {
   font-size: 0;
   background-size: contain;
   background-repeat: no-repeat;
@@ -281,7 +282,8 @@
 .coral-comment-replyButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
 .Comment-subBar-1TO1F .Flex-alignCenter-1avOH .Icon-root-ZlBoK,
 .InReplyTo-icon-3F4IS,
-.ReplyTo-root-3u8me .Icon-sm-2_l4F {
+.ReplyTo-root-3u8me .Icon-sm-2_l4F,
+.HistoryComment-icon-20DaI {
   background-image: url(../icons/icon-reply.svg);
   width: 35px;
   height: 35px;
