@@ -316,8 +316,6 @@
 .Tag-colorGrey-3TasG {
   font-size: 16px !important;
 }
-
-/***** Themes *****/
 .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorRegular-13F5P.Button-mouseHover-7Y2eV,
 .coral-myComments-loadMoreButton:hover,
 .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
@@ -330,53 +328,6 @@
 .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorPrimary-3wqmX,
 .Button-variantGhost-1xqiJ:not(.Button-disabled-2iEkQ).Button-colorRegular-13F5P.Button-active-2v8r3 {
   background: #FFF !important;
-}
-.CallOut-colorPrimary-1YYlF::before,
-.Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
-.Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W,
-.Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorRegular-13F5P.Button-mouseHover-7Y2eV,
-.coral-myComments-loadMoreButton:hover,
-.CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
-.Bar-root-bOJJJ,
-.Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
-.Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W,
-.Tag-colorGrey-3TasG,
-.Indent-level1-3GgDX::before,
-.Indent-level2-3-UNp::before,
-.Indent-level3-1CdyG::before,
-.Counter-colorPrimary-2DGd2,
-.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
-.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
-.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
-.MessageBox-root-30ja9,
-.TileOption-checked-Ywl6F {
-  background-color: #373c59 !important;
-}
-.ExternalLink-root-ixHlE,
-.Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
-.Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
-.Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
-.Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
-.Button-variantRegular-1_TV8.Button-colorPrimary-3wqmX,
-.TextLink-root-2_bTm,
-.Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
-.Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
-.Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
-.Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
-.Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
-.Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
-.Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
-.Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
-.Button-variantUnderlined-1jUqn.Button-colorPrimary-3wqmX {
-  color: #373c59 !important;
-}
-.CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
-.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
-.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active, 
-.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
-.TileOption-checked-Ywl6F,
-.TileOption-label-2YaIM {
-  border-color: #373c59 !important;
 }
 .Markdown-root-YMTjB,
 .Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX,
@@ -413,4 +364,542 @@
 }
 .typography-timestamp-2gyl1 {
   color: rgba(55, 60, 89, 0.6) !important;
+}
+
+/************************************* Themes *************************************/
+
+/* Default Theme */
+.CallOut-colorPrimary-1YYlF::before,
+.Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
+.Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W,
+.Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorRegular-13F5P.Button-mouseHover-7Y2eV,
+.coral-myComments-loadMoreButton:hover,
+.CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
+.Bar-root-bOJJJ,
+.Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
+.Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W,
+.Tag-colorGrey-3TasG,
+.Indent-level1-3GgDX::before,
+.Indent-level2-3-UNp::before,
+.Indent-level3-1CdyG::before,
+.Counter-colorPrimary-2DGd2,
+.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.MessageBox-root-30ja9,
+.TileOption-checked-Ywl6F,
+/* News Theme */
+.news-theme .CallOut-colorPrimary-1YYlF::before,
+.news-theme .Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
+.news-theme .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W,
+.news-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorRegular-13F5P.Button-mouseHover-7Y2eV,
+.news-theme .coral-myComments-loadMoreButton:hover,
+.news-theme .CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
+.news-theme .Bar-root-bOJJJ,
+.news-theme .Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
+.news-theme .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W,
+.news-theme .Tag-colorGrey-3TasG,
+.news-theme .Indent-level1-3GgDX::before,
+.news-theme .Indent-level2-3-UNp::before,
+.news-theme .Indent-level3-1CdyG::before,
+.news-theme .Counter-colorPrimary-2DGd2,
+.news-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.news-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.news-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.news-theme .MessageBox-root-30ja9,
+.news-theme .TileOption-checked-Ywl6F {
+  background-color: #373c59 !important; /* News Color */
+}
+/* Default Theme */
+.ExternalLink-root-ixHlE,
+.Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
+.Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
+.Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.Button-variantRegular-1_TV8.Button-colorPrimary-3wqmX,
+.TextLink-root-2_bTm,
+.Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
+.Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
+.Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.Button-variantUnderlined-1jUqn.Button-colorPrimary-3wqmX,
+/* News Theme */
+.news-theme .ExternalLink-root-ixHlE,
+.news-theme .Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
+.news-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
+.news-theme .Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.news-theme .Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.news-theme .Button-variantRegular-1_TV8.Button-colorPrimary-3wqmX,
+.news-theme .TextLink-root-2_bTm,
+.news-theme .Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
+.news-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
+.news-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.news-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.news-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.news-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.news-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.news-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.news-theme .Button-variantUnderlined-1jUqn.Button-colorPrimary-3wqmX {
+  color: #373c59 !important; /* News Color */
+}
+/* Default Theme */
+.CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
+.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active, 
+.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.TileOption-checked-Ywl6F,
+.TileOption-label-2YaIM,
+/* News Theme */
+.news-theme .CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
+.news-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.news-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active, 
+.news-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.news-theme .TileOption-checked-Ywl6F,
+.news-theme .TileOption-label-2YaIM {
+  border-color: #373c59 !important; /* News Color */
+}
+
+/* Business Theme */
+.business-theme .CallOut-colorPrimary-1YYlF::before,
+.business-theme .Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
+.business-theme .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W,
+.business-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorRegular-13F5P.Button-mouseHover-7Y2eV,
+.business-theme .coral-myComments-loadMoreButton:hover,
+.business-theme .CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
+.business-theme .Bar-root-bOJJJ,
+.business-theme .Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
+.business-theme .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W,
+.business-theme .Tag-colorGrey-3TasG,
+.business-theme .Indent-level1-3GgDX::before,
+.business-theme .Indent-level2-3-UNp::before,
+.business-theme .Indent-level3-1CdyG::before,
+.business-theme .Counter-colorPrimary-2DGd2,
+.business-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.business-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.business-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.business-theme .MessageBox-root-30ja9,
+.business-theme .TileOption-checked-Ywl6F {
+  background-color: #5c98f8 !important; /* Business Color */
+}
+.business-theme .ExternalLink-root-ixHlE,
+.business-theme .Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
+.business-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
+.business-theme .Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.business-theme .Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.business-theme .Button-variantRegular-1_TV8.Button-colorPrimary-3wqmX,
+.business-theme .TextLink-root-2_bTm,
+.business-theme .Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
+.business-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
+.business-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.business-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.business-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.business-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.business-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.business-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.business-theme .Button-variantUnderlined-1jUqn.Button-colorPrimary-3wqmX {
+  color: #5c98f8 !important; /* Business Color */
+}
+.business-theme .CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
+.business-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.business-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active, 
+.business-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.business-theme .TileOption-checked-Ywl6F,
+.business-theme .TileOption-label-2YaIM {
+  border-color: #5c98f8 !important; /* Business Color */
+}
+
+/* Energy Theme */
+.energy-theme .CallOut-colorPrimary-1YYlF::before,
+.energy-theme .Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
+.energy-theme .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W,
+.energy-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorRegular-13F5P.Button-mouseHover-7Y2eV,
+.energy-theme .coral-myComments-loadMoreButton:hover,
+.energy-theme .CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
+.energy-theme .Bar-root-bOJJJ,
+.energy-theme .Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
+.energy-theme .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W,
+.energy-theme .Tag-colorGrey-3TasG,
+.energy-theme .Indent-level1-3GgDX::before,
+.energy-theme .Indent-level2-3-UNp::before,
+.energy-theme .Indent-level3-1CdyG::before,
+.energy-theme .Counter-colorPrimary-2DGd2,
+.energy-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.energy-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.energy-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.energy-theme .MessageBox-root-30ja9,
+.energy-theme .TileOption-checked-Ywl6F {
+  background-color: #39ad6f !important; /* Energy Color */
+}
+.energy-theme .ExternalLink-root-ixHlE,
+.energy-theme .Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
+.energy-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
+.energy-theme .Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.energy-theme .Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.energy-theme .Button-variantRegular-1_TV8.Button-colorPrimary-3wqmX,
+.energy-theme .TextLink-root-2_bTm,
+.energy-theme .Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
+.energy-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
+.energy-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.energy-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.energy-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.energy-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.energy-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.energy-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.energy-theme .Button-variantUnderlined-1jUqn.Button-colorPrimary-3wqmX {
+  color: #39ad6f !important; /* Energy Color */
+}
+.energy-theme .CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
+.energy-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.energy-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active, 
+.energy-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.energy-theme .TileOption-checked-Ywl6F,
+.energy-theme .TileOption-label-2YaIM {
+  border-color: #39ad6f !important; /* Energy Color */
+}
+
+/* Latest Theme */
+.latest-theme .CallOut-colorPrimary-1YYlF::before,
+.latest-theme .Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
+.latest-theme .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W,
+.latest-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorRegular-13F5P.Button-mouseHover-7Y2eV,
+.latest-theme .coral-myComments-loadMoreButton:hover,
+.latest-theme .CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
+.latest-theme .Bar-root-bOJJJ,
+.latest-theme .Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
+.latest-theme .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W,
+.latest-theme .Tag-colorGrey-3TasG,
+.latest-theme .Indent-level1-3GgDX::before,
+.latest-theme .Indent-level2-3-UNp::before,
+.latest-theme .Indent-level3-1CdyG::before,
+.latest-theme .Counter-colorPrimary-2DGd2,
+.latest-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.latest-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.latest-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.latest-theme .MessageBox-root-30ja9,
+.latest-theme .TileOption-checked-Ywl6F {
+  background-color: #890941 !important; /* Latest Color */
+}
+.latest-theme .ExternalLink-root-ixHlE,
+.latest-theme .Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
+.latest-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
+.latest-theme .Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.latest-theme .Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.latest-theme .Button-variantRegular-1_TV8.Button-colorPrimary-3wqmX,
+.latest-theme .TextLink-root-2_bTm,
+.latest-theme .Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
+.latest-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
+.latest-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.latest-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.latest-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.latest-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.latest-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.latest-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.latest-theme .Button-variantUnderlined-1jUqn.Button-colorPrimary-3wqmX {
+  color: #890941 !important; /* Latest Color */
+}
+.latest-theme .CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
+.latest-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.latest-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active, 
+.latest-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.latest-theme .TileOption-checked-Ywl6F,
+.latest-theme .TileOption-label-2YaIM {
+  border-color: #890941 !important; /* Latest Color */
+}
+
+/* Lifestyle Theme */
+.lifestyle-theme .CallOut-colorPrimary-1YYlF::before,
+.lifestyle-theme .Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
+.lifestyle-theme .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W,
+.lifestyle-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorRegular-13F5P.Button-mouseHover-7Y2eV,
+.lifestyle-theme .coral-myComments-loadMoreButton:hover,
+.lifestyle-theme .CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
+.lifestyle-theme .Bar-root-bOJJJ,
+.lifestyle-theme .Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
+.lifestyle-theme .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W,
+.lifestyle-theme .Tag-colorGrey-3TasG,
+.lifestyle-theme .Indent-level1-3GgDX::before,
+.lifestyle-theme .Indent-level2-3-UNp::before,
+.lifestyle-theme .Indent-level3-1CdyG::before,
+.lifestyle-theme .Counter-colorPrimary-2DGd2,
+.lifestyle-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.lifestyle-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.lifestyle-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.lifestyle-theme .MessageBox-root-30ja9,
+.lifestyle-theme .TileOption-checked-Ywl6F {
+  background-color: #d3af37 !important; /* Lifestyle Color */
+}
+.lifestyle-theme .ExternalLink-root-ixHlE,
+.lifestyle-theme .Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
+.lifestyle-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
+.lifestyle-theme .Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.lifestyle-theme .Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.lifestyle-theme .Button-variantRegular-1_TV8.Button-colorPrimary-3wqmX,
+.lifestyle-theme .TextLink-root-2_bTm,
+.lifestyle-theme .Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
+.lifestyle-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
+.lifestyle-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.lifestyle-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.lifestyle-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.lifestyle-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.lifestyle-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.lifestyle-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.lifestyle-theme .Button-variantUnderlined-1jUqn.Button-colorPrimary-3wqmX {
+  color: #d3af37 !important; /* Lifestyle Color */
+}
+.lifestyle-theme .CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
+.lifestyle-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.lifestyle-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active, 
+.lifestyle-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.lifestyle-theme .TileOption-checked-Ywl6F,
+.lifestyle-theme .TileOption-label-2YaIM {
+  border-color: #d3af37 !important; /* Lifestyle Color */
+}
+
+/* Live Theme */
+.live-theme .CallOut-colorPrimary-1YYlF::before,
+.live-theme .Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
+.live-theme .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W,
+.live-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorRegular-13F5P.Button-mouseHover-7Y2eV,
+.live-theme .coral-myComments-loadMoreButton:hover,
+.live-theme .CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
+.live-theme .Bar-root-bOJJJ,
+.live-theme .Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
+.live-theme .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W,
+.live-theme .Tag-colorGrey-3TasG,
+.live-theme .Indent-level1-3GgDX::before,
+.live-theme .Indent-level2-3-UNp::before,
+.live-theme .Indent-level3-1CdyG::before,
+.live-theme .Counter-colorPrimary-2DGd2,
+.live-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.live-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.live-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.live-theme .MessageBox-root-30ja9,
+.live-theme .TileOption-checked-Ywl6F {
+  background-color: #ff0000 !important; /* Live Color */
+}
+.live-theme .ExternalLink-root-ixHlE,
+.live-theme .Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
+.live-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
+.live-theme .Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.live-theme .Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.live-theme .Button-variantRegular-1_TV8.Button-colorPrimary-3wqmX,
+.live-theme .TextLink-root-2_bTm,
+.live-theme .Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
+.live-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
+.live-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.live-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.live-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.live-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.live-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.live-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.live-theme .Button-variantUnderlined-1jUqn.Button-colorPrimary-3wqmX {
+  color: #ff0000 !important; /* Live Color */
+}
+.live-theme .CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
+.live-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.live-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active, 
+.live-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.live-theme .TileOption-checked-Ywl6F,
+.live-theme .TileOption-label-2YaIM {
+  border-color: #ff0000 !important; /* Live Color */
+}
+
+/* Opinions Theme */
+.opinions-theme .CallOut-colorPrimary-1YYlF::before,
+.opinions-theme .Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
+.opinions-theme .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W,
+.opinions-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorRegular-13F5P.Button-mouseHover-7Y2eV,
+.opinions-theme .coral-myComments-loadMoreButton:hover,
+.opinions-theme .CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
+.opinions-theme .Bar-root-bOJJJ,
+.opinions-theme .Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
+.opinions-theme .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W,
+.opinions-theme .Tag-colorGrey-3TasG,
+.opinions-theme .Indent-level1-3GgDX::before,
+.opinions-theme .Indent-level2-3-UNp::before,
+.opinions-theme .Indent-level3-1CdyG::before,
+.opinions-theme .Counter-colorPrimary-2DGd2,
+.opinions-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.opinions-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.opinions-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.opinions-theme .MessageBox-root-30ja9,
+.opinions-theme .TileOption-checked-Ywl6F {
+  background-color: #41798c !important; /* Opinions Color */
+}
+.opinions-theme .ExternalLink-root-ixHlE,
+.opinions-theme .Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
+.opinions-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
+.opinions-theme .Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.opinions-theme .Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.opinions-theme .Button-variantRegular-1_TV8.Button-colorPrimary-3wqmX,
+.opinions-theme .TextLink-root-2_bTm,
+.opinions-theme .Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
+.opinions-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
+.opinions-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.opinions-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.opinions-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.opinions-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.opinions-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.opinions-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.opinions-theme .Button-variantUnderlined-1jUqn.Button-colorPrimary-3wqmX {
+  color: #41798c !important; /* Opinions Color */
+}
+.opinions-theme .CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
+.opinions-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.opinions-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active, 
+.opinions-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.opinions-theme .TileOption-checked-Ywl6F,
+.opinions-theme .TileOption-label-2YaIM {
+  border-color: #41798c !important; /* Opinions Color */
+}
+
+/* Saudi Theme */
+.saudi-theme .CallOut-colorPrimary-1YYlF::before,
+.saudi-theme .Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
+.saudi-theme .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W,
+.saudi-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorRegular-13F5P.Button-mouseHover-7Y2eV,
+.saudi-theme .coral-myComments-loadMoreButton:hover,
+.saudi-theme .CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
+.saudi-theme .Bar-root-bOJJJ,
+.saudi-theme .Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
+.saudi-theme .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W,
+.saudi-theme .Tag-colorGrey-3TasG,
+.saudi-theme .Indent-level1-3GgDX::before,
+.saudi-theme .Indent-level2-3-UNp::before,
+.saudi-theme .Indent-level3-1CdyG::before,
+.saudi-theme .Counter-colorPrimary-2DGd2,
+.saudi-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.saudi-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.saudi-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.saudi-theme .MessageBox-root-30ja9,
+.saudi-theme .TileOption-checked-Ywl6F {
+  background-color: #00592b !important; /* Saudi Color */
+}
+.saudi-theme .ExternalLink-root-ixHlE,
+.saudi-theme .Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
+.saudi-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
+.saudi-theme .Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.saudi-theme .Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.saudi-theme .Button-variantRegular-1_TV8.Button-colorPrimary-3wqmX,
+.saudi-theme .TextLink-root-2_bTm,
+.saudi-theme .Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
+.saudi-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
+.saudi-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.saudi-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.saudi-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.saudi-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.saudi-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.saudi-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.saudi-theme .Button-variantUnderlined-1jUqn.Button-colorPrimary-3wqmX {
+  color: #00592b !important; /* Saudi Color */
+}
+.saudi-theme .CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
+.saudi-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.saudi-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active, 
+.saudi-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.saudi-theme .TileOption-checked-Ywl6F,
+.saudi-theme .TileOption-label-2YaIM {
+  border-color: #00592b !important; /* Saudi Color */
+}
+
+/* Sports Theme */
+.sports-theme .CallOut-colorPrimary-1YYlF::before,
+.sports-theme .Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
+.sports-theme .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W,
+.sports-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorRegular-13F5P.Button-mouseHover-7Y2eV,
+.sports-theme .coral-myComments-loadMoreButton:hover,
+.sports-theme .CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
+.sports-theme .Bar-root-bOJJJ,
+.sports-theme .Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
+.sports-theme .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W,
+.sports-theme .Tag-colorGrey-3TasG,
+.sports-theme .Indent-level1-3GgDX::before,
+.sports-theme .Indent-level2-3-UNp::before,
+.sports-theme .Indent-level3-1CdyG::before,
+.sports-theme .Counter-colorPrimary-2DGd2,
+.sports-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.sports-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.sports-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.sports-theme .MessageBox-root-30ja9,
+.sports-theme .TileOption-checked-Ywl6F {
+  background-color: #689e42 !important; /* Sports Color */
+}
+.sports-theme .ExternalLink-root-ixHlE,
+.sports-theme .Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
+.sports-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
+.sports-theme .Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.sports-theme .Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.sports-theme .Button-variantRegular-1_TV8.Button-colorPrimary-3wqmX,
+.sports-theme .TextLink-root-2_bTm,
+.sports-theme .Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
+.sports-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
+.sports-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.sports-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.sports-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.sports-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.sports-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.sports-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.sports-theme .Button-variantUnderlined-1jUqn.Button-colorPrimary-3wqmX {
+  color: #689e42 !important; /* Sports Color */
+}
+.sports-theme .CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
+.sports-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.sports-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active, 
+.sports-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.sports-theme .TileOption-checked-Ywl6F,
+.sports-theme .TileOption-label-2YaIM {
+  border-color: #689e42 !important; /* Sports Color */
+}
+
+/* VOD Theme */
+.CallOut-colorPrimary-1YYlF::before,
+.Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
+.Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W,
+.Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorRegular-13F5P.Button-mouseHover-7Y2eV,
+.coral-myComments-loadMoreButton:hover,
+.CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
+.Bar-root-bOJJJ,
+.Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
+.Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W,
+.Tag-colorGrey-3TasG,
+.Indent-level1-3GgDX::before,
+.Indent-level2-3-UNp::before,
+.Indent-level3-1CdyG::before,
+.Counter-colorPrimary-2DGd2,
+.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.MessageBox-root-30ja9,
+.TileOption-checked-Ywl6F {
+  background-color: #55ccbe !important; /* VOD Color */
+}
+.ExternalLink-root-ixHlE,
+.Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
+.Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
+.Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.Button-variantRegular-1_TV8.Button-colorPrimary-3wqmX,
+.TextLink-root-2_bTm,
+.Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
+.Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
+.Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.Button-variantUnderlined-1jUqn.Button-colorPrimary-3wqmX {
+  color: #55ccbe !important; /* VOD Color */
+}
+.CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
+.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active, 
+.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.TileOption-checked-Ywl6F,
+.TileOption-label-2YaIM {
+  border-color: #55ccbe !important; /* VOD Color */
 }
