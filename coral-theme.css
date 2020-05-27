@@ -905,7 +905,8 @@
 .TileOption-label-2YaIM {
   border-color: #55ccbe !important; /* VOD Color */
 }
-.Tab-primary-BShmJ {
+.Tab-primary-BShmJ,
+.Typography-colorTextPrimary-3PX2_ {
   color: rgba(255, 255, 255, 0.3) !important;
 }
 .TextField-colorRegular-DqnMy,
@@ -920,22 +921,12 @@
 .Arrow-root-CdFJ8[data-placement*=top]:before {
   border-top-color: rgba(255, 255, 255, 0.1) !important;
 }
-
-
-
-
-.Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorRegular-13F5P.Button-mouseHover-7Y2eV,
-.coral-myComments-loadMoreButton:hover,
-.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
-.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
-.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
-.Button-variantFilled-3TpZj.Button-colorSuccess-1m3-i.typography-button-2nvMs {
-  color: #FFF !important;
-}
-.Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX,
-.Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorPrimary-3wqmX,
-.Button-variantGhost-1xqiJ:not(.Button-disabled-2iEkQ).Button-colorRegular-13F5P.Button-active-2v8r3 {
-  background: #FFF !important;
+.SelectField-select-2NBid,
+.Comment-highlight-2r8jI,
+.htmlContent-root-1db2D blockquote,
+.CallOut-colorRegular-1TwSR,
+.ReplyTo-root-3u8me {
+  background: rgba(255, 255, 255, 0.05) !important;
 }
 .Markdown-root-YMTjB,
 .Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX,
@@ -944,19 +935,26 @@
 .typography-button-2nvMs,
 .typography-heading1-2b6tF,
 .typography-heading2-1XoJQ,
-.typography-heading3-2rRZI  {
+.typography-heading3-2rRZI,
+.Typography-colorTextPrimary-3PX2_  {
+  color: #FFF !important;
+}
+.Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorRegular-13F5P.Button-mouseHover-7Y2eV,
+.coral-myComments-loadMoreButton:hover,
+.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.Button-variantFilled-3TpZj.Button-colorSuccess-1m3-i.typography-button-2nvMs {
   color: #151515 !important;
 }
 .Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX,
-.Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorPrimary-3wqmX {
-  border: solid 1px #151515 !important;
+.Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorPrimary-3wqmX,
+.Button-variantGhost-1xqiJ:not(.Button-disabled-2iEkQ).Button-colorRegular-13F5P.Button-active-2v8r3 {
+  background: #151515 !important;
 }
-.SelectField-select-2NBid,
-.Comment-highlight-2r8jI,
-.htmlContent-root-1db2D blockquote,
-.CallOut-colorRegular-1TwSR,
-.ReplyTo-root-3u8me {
-  background: rgba(55, 60, 89, 0.06) !important;
+.Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX,
+.Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorPrimary-3wqmX {
+  border: solid 1px rgba(255, 255, 255, 0.1) !important;
 }
 .typography-timestamp-2gyl1 {
   color: rgba(55, 60, 89, 0.6) !important;
