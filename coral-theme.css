@@ -906,22 +906,24 @@
 .TileOption-label-2YaIM {
   border-color: #55ccbe !important; /* VOD Color */
 }
+.Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorRegular-13F5P.Button-mouseHover-7Y2eV,
+.coral-myComments-loadMoreButton:hover,
+.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.Button-variantFilled-3TpZj.Button-colorSuccess-1m3-i.typography-button-2nvMs,
+.RTE-contentEditable-1Gad6.coral.coral-rte-content.RTE-content-vbwj2.htmlContent-root-1db2D.typography-bodyCopy-3JspD {
+  color: #151515 !important;
+}
+.Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX,
+.Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorPrimary-3wqmX,
+.Button-variantGhost-1xqiJ:not(.Button-disabled-2iEkQ).Button-colorRegular-13F5P.Button-active-2v8r3 {
+  background: #151515 !important;
+}
 .Typography-colorTextPrimary-3PX2_,
 .typography-timestamp-2gyl1,
 .SelectField-select-2NBid {
   color: rgba(255, 255, 255, 0.3) !important;
-}
-.TextField-colorRegular-DqnMy,
-.TabBar-primary-3rIQ9,
-.TextField-colorRegular-DqnMy,
-.StreamContainer-tabBarRow-3T4QQ,
-.RTE-content-vbwj2, .RTE-toolbar-3drmR,
-.TabBar-primary-3rIQ9 li,
-.ReplyTo-root-3u8me {
-  border-color: rgba(255, 255, 255, 0.1) !important;
-}
-.Arrow-root-CdFJ8[data-placement*=top]:before {
-  border-top-color: rgba(255, 255, 255, 0.1) !important;
 }
 .SelectField-select-2NBid,
 .Comment-highlight-2r8jI,
@@ -945,26 +947,22 @@
 .typography-bodyShort-30fcZ  {
   color: #FFF !important;
 }
-.Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorRegular-13F5P.Button-mouseHover-7Y2eV,
-.coral-myComments-loadMoreButton:hover,
-.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
-.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
-.Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
-.Button-variantFilled-3TpZj.Button-colorSuccess-1m3-i.typography-button-2nvMs,
-.RTE-contentEditable-1Gad6.coral.coral-rte-content.RTE-content-vbwj2.htmlContent-root-1db2D.typography-bodyCopy-3JspD {
-  color: #151515 !important;
+.TextField-colorRegular-DqnMy,
+.TabBar-primary-3rIQ9,
+.TextField-colorRegular-DqnMy,
+.StreamContainer-tabBarRow-3T4QQ,
+.RTE-content-vbwj2, .RTE-toolbar-3drmR,
+.TabBar-primary-3rIQ9 li,
+.ReplyTo-root-3u8me {
+  border-color: rgba(255, 255, 255, 0.1) !important;
 }
-.Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX,
-.Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorPrimary-3wqmX,
-.Button-variantGhost-1xqiJ:not(.Button-disabled-2iEkQ).Button-colorRegular-13F5P.Button-active-2v8r3 {
-  background: #151515 !important;
+.Arrow-root-CdFJ8[data-placement*=top]:before {
+  border-top-color: rgba(255, 255, 255, 0.1) !important;
 }
 .Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX,
 .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorPrimary-3wqmX {
   border: solid 1px rgba(255, 255, 255, 0.1) !important;
 }
-
-
 .coral-comment-reactButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
 .coral-comment-replyButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
 .coral-comment-shareButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
