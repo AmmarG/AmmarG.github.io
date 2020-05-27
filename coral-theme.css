@@ -895,7 +895,7 @@
 .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
 .Button-variantUnderlined-1jUqn.Button-colorPrimary-3wqmX,
 .Tab-primary-BShmJ.Tab-active-XrGkw,
-.Typography-colorTextPrimary-3PX2_ {
+.coral-viewerBox .typography-heading3-2rRZI {
   color: #55ccbe !important; /* VOD Color */
 }
 .CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
@@ -936,7 +936,8 @@
 .typography-button-2nvMs,
 .typography-heading1-2b6tF,
 .typography-heading2-1XoJQ,
-.typography-heading3-2rRZI  {
+.typography-heading3-2rRZI,
+.Typography-colorTextPrimary-3PX2_  {
   color: #FFF !important;
 }
 .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorRegular-13F5P.Button-mouseHover-7Y2eV,
