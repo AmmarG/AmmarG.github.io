@@ -908,6 +908,18 @@
 .Tab-primary-BShmJ {
   color: rgba(255, 255, 255, 0.3) !important;
 }
+.TextField-colorRegular-DqnMy,
+.TabBar-primary-3rIQ9,
+.TextField-colorRegular-DqnMy,
+.StreamContainer-tabBarRow-3T4QQ,
+.RTE-content-vbwj2, .RTE-toolbar-3drmR,
+.TabBar-primary-3rIQ9 li,
+.ReplyTo-root-3u8me {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+.Arrow-root-CdFJ8[data-placement*=top]:before {
+  border-top-color: rgba(255, 255, 255, 0.1) !important;
+}
 
 
 
@@ -938,18 +950,6 @@
 .Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX,
 .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorPrimary-3wqmX {
   border: solid 1px #151515 !important;
-}
-.TextField-colorRegular-DqnMy,
-.TabBar-primary-3rIQ9,
-.TextField-colorRegular-DqnMy,
-.StreamContainer-tabBarRow-3T4QQ,
-.RTE-content-vbwj2, .RTE-toolbar-3drmR,
-.TabBar-primary-3rIQ9 li,
-.ReplyTo-root-3u8me {
-  border-color: #e5e5e5 !important;
-}
-.Arrow-root-CdFJ8[data-placement*=top]:before {
-  border-top-color: #e5e5e5 !important;
 }
 .SelectField-select-2NBid,
 .Comment-highlight-2r8jI,
