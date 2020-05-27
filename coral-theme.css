@@ -939,7 +939,8 @@
 .typography-heading1-2b6tF,
 .typography-heading2-1XoJQ,
 .typography-heading3-2rRZI,
-.Typography-colorTextPrimary-3PX2_  {
+.Typography-colorTextPrimary-3PX2_,
+.htmlContent-root-1db2D  {
   color: #FFF !important;
 }
 .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorRegular-13F5P.Button-mouseHover-7Y2eV,
@@ -958,4 +959,16 @@
 .Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX,
 .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorPrimary-3wqmX {
   border: solid 1px rgba(255, 255, 255, 0.1) !important;
+}
+
+
+.coral-comment-reactButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
+.coral-comment-replyButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
+.coral-comment-shareButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
+.coral-reportButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
+.Comment-subBar-1TO1F .Flex-alignCenter-1avOH .Icon-root-ZlBoK,
+.InReplyTo-icon-3F4IS,
+.ReplyTo-root-3u8me .Icon-sm-2_l4F,
+.HistoryComment-icon-20DaI {
+  filter: invert(1) contrast(3);
 }
