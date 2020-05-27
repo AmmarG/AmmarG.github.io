@@ -913,8 +913,7 @@
 .vod-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
 .vod-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
 .vod-theme .Button-variantUnderlined-1jUqn.Button-colorPrimary-3wqmX,
-.vod-theme .Tab-primary-BShmJ.Tab-active-XrGkw,
-.vod-theme .coral-viewerBox .typography-heading3-2rRZI {
+.vod-theme .Tab-primary-BShmJ.Tab-active-XrGkw {
   color: #55ccbe !important; /* VOD Color */
 }
 .vod-theme .CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
@@ -952,7 +951,8 @@
 .vod-theme .htmlContent-root-1db2D,
 .vod-theme .typography-bodyCopy-3JspD,
 .vod-theme .typography-bodyShort-30fcZ,
-.vod-theme .Typography-colorTextDark-2H0M-  {
+.vod-theme .Typography-colorTextDark-2H0M-,
+.vod-theme .coral-viewerBox .typography-heading3-2rRZI {
   color: #FFF !important;
 }
 .vod-theme .Typography-colorTextPrimary-3PX2_,
