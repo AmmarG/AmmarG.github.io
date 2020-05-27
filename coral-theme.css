@@ -970,6 +970,8 @@
 .Comment-subBar-1TO1F .Flex-alignCenter-1avOH .Icon-root-ZlBoK,
 .InReplyTo-icon-3F4IS,
 .ReplyTo-root-3u8me .Icon-sm-2_l4F,
-.HistoryComment-icon-20DaI {
+.HistoryComment-icon-20DaI,
+.icon-icon-3PuRl,
+.Icon-root-ZlBoK {
   filter: invert(1) contrast(3);
 }
