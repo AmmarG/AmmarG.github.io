@@ -1027,7 +1027,6 @@
 .CallOut-colorPrimary-1YYlF::before {
   margin-right: 0;
   margin-left: 32px;
-  background: red !important;
 }
 
 .CallOut-colorPrimary-1YYlF::after {
@@ -1060,8 +1059,18 @@
   right: auto;
 }
 
-.SelectField-keyBoardFocus-3P5pU:focus {
-  background: red !important;
+.Button-iconBefore-3wUUQ {
+  margin-left: var(--v2-spacing-2);
+  margin-right: 0;
+}
+
+.Flex-halfItemGutter-1GWGW>* {
+  margin: 0 !important;
+}
+
+.ReactionButton-button-2hVLL {
+  padding-left: 10px;
+  padding-right: 0px;
 }
 
 
