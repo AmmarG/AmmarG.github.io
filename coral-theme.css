@@ -1121,3 +1121,21 @@
   padding-right: 0;
 }
 
+.Flex-doubleItemGutter-1tnlb>* {
+  margin: 0 0 0 calc(2*var(--mini-unit)) !important;
+}
+
+.CheckBox-label-2kTsG {
+  padding-right: 25px;
+  padding-left: 0;
+}
+
+.CheckBox-input-2Bn2s+.CheckBox-label-2kTsG:before {
+  right: 0;
+  left: auto;
+}
+
+.SelectField-select-2NBid {
+  padding: calc(0.5*var(--mini-unit)) var(--mini-unit) calc(0.5*var(--mini-unit)) calc(2*var(--mini-unit));
+}
+
