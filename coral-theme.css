@@ -1010,6 +1010,11 @@
   direction: rtl;
 }
 
+.TabBar-primary-3rIQ9 li:first-child .Tab-primary-BShmJ {
+  padding-left: calc(var(--mini-unit)*2);
+  padding-right: 0;
+}
+
 /*
 .CallOut-colorPrimary-1YYlF::before {
   margin-right: 0;
@@ -1019,11 +1024,6 @@
 .CallOut-colorPrimary-1YYlF::after {
   right: 0;
   left: auto;
-}
-
-.TabBar-primary-3rIQ9 li:first-child .Tab-primary-BShmJ {
-  padding-left: 20px;
-  padding-right: 0;
 }
 
 .TabBar-primary-3rIQ9 li {
