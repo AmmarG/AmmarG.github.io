@@ -1042,3 +1042,7 @@
 .Tab-secondary-SAOuB, .Tab-secondary-SAOuB.Tab-active-XrGkw {
   padding: 0 0 10px 10px;
 }
+
+.Flex-spacing-1-3xonS>* {
+  margin: 0 0 0 5px !important;
+}
