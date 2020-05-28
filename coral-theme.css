@@ -176,7 +176,7 @@
   font-size: 0;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 0;
 }
 .coral-comment-reactButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F {
   background-image: url(../icons/icon-like.svg);
