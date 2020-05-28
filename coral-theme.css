@@ -1027,6 +1027,7 @@
 .CallOut-colorPrimary-1YYlF::before {
   margin-right: 0;
   margin-left: 32px;
+  background: red;
 }
 
 .CallOut-colorPrimary-1YYlF::after {
