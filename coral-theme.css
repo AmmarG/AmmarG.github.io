@@ -1001,105 +1001,79 @@
 /* End VOD Theme */
 /************************************* End Themes *************************************/
 
-
-
-
-
-
-
-
-
-/************************************* RTL *************************************/
+/************************************* RTL 
 .coral-stream {
   direction: rtl;
 }
-
 .TabBar-primary-3rIQ9 li:first-child .Tab-primary-BShmJ {
   padding-left: calc(var(--mini-unit)*2);
   padding-right: 0;
 }
-
 .TabBar-primary-3rIQ9 li {
   border-right: none;
   border-left: solid 1px;
 }
-
 .Flex-halfItemGutter-1GWGW>* {
   margin: 0 0 0 calc(0.5*var(--mini-unit)) !important;
 }
-
 .CallOut-colorPrimary-1YYlF::before {
   margin-right: 0;
   margin-left: 32px;
 }
-
 .CallOut-colorPrimary-1YYlF::after {
   right: 0;
   left: auto;
 }
-
 .RTE-placeholder-5COCg {
   margin: 10px 10px 0 0;
 }
-
 .Button-button-22QPS {
   margin-left: 3px;
   margin-right: 0;
 }
-
 .Tab-secondary-SAOuB, .Tab-secondary-SAOuB.Tab-active-XrGkw {
   padding: 0 0 10px 10px;
 }
 .Flex-spacing-1-3xonS>* {
   margin: 0 0 0 var(--spacing-1) !important;
 }
-
 .Flex-itemGutter-1I3tQ>* {
   margin: 0 0 0 var(--mini-unit) !important;
 }
-
 .SelectField-afterWrapper-3BhXc {
   left: calc(0.5*var(--mini-unit));
   right: auto;
 }
-
 .Button-iconBefore-3wUUQ {
   margin-left: var(--v2-spacing-2);
   margin-right: 0;
 }
-
 .Flex-halfItemGutter-1GWGW>* {
   margin: 0 !important;
 }
-
 .ReactionButton-button-2hVLL {
   padding-left: 10px;
   padding-right: 0px;
 }
-
 .Button-iconAfter-CcbuZ {
   margin-right: var(--v2-spacing-2);
   margin-left: 0;
 }
-
 .Indent-level1-3GgDX,
 .Indent-level2-3-UNp,
 .Indent-level3-1CdyG {
   margin-left: 0;
   margin-right: 20px;
 }
-
 .Indent-level1-3GgDX::before,
 .Indent-level2-3-UNp::before,
 .Indent-level3-1CdyG::before {
   right: 0;
   left: auto;
 }
-
 .Button-root-3Ap5v>* {
   margin: 0 0 0 var(--spacing-1);
 }
-
 .coral-comment-replyButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
 .Comment-subBar-1TO1F .Flex-alignCenter-1avOH .Icon-root-ZlBoK,
 .InReplyTo-icon-3F4IS,
@@ -1107,45 +1081,36 @@
 .HistoryComment-icon-20DaI {
   transform: scaleX(-1);
 }
-
 .RadioButton-input-2mrmM+.RadioButton-label-2g4eK:before {
   margin-right: 0;
   margin-left: 10px;
 }
-
 .ReportPopover-close-3Y-C1 {
   left: calc(0.5*var(--mini-unit));
   right: auto;
 }
-
 .ReportCommentForm-title-3Fa2o {
   padding-left: calc(2*var(--mini-unit));
   padding-right: 0;
 }
-
 .Flex-doubleItemGutter-1tnlb>* {
   margin: 0 0 0 calc(2*var(--mini-unit)) !important;
 }
-
 .CheckBox-label-2kTsG {
   padding-right: 25px;
   padding-left: 0;
 }
-
 .CheckBox-input-2Bn2s+.CheckBox-label-2kTsG:before {
   right: 0;
   left: auto;
 }
-
 .SelectField-select-2NBid {
   padding: calc(0.5*var(--mini-unit)) var(--mini-unit) calc(0.5*var(--mini-unit)) calc(2.5*var(--mini-unit));
 }
-
 .CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:after {
   right: 10px;
   left: auto;
 }
-
 .PasswordField-icon-XXrxB {
   left: 0;
   right: auto;
@@ -1154,12 +1119,11 @@
   margin-left: calc(0.5*var(--mini-unit));
   margin-right: 0;
 }
-
 .Flex-halfItemGutter-1GWGW>* {
   margin: 0 0 0 5px !important;
 }
-
 .MessageBoxIcon-root-2LEOA:first-child {
   margin-left: var(--spacing-3);
   margin-right: 0;
 }
+*************************************/
