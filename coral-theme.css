@@ -182,7 +182,7 @@
   background-image: url(../icons/icon-like.svg);
   width: 30px;
   height: 30px;
-  background-position: center -3px;
+  background-position: center -2px;
 }
 .coral-comment-replyButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
 .Comment-subBar-1TO1F .Flex-alignCenter-1avOH .Icon-root-ZlBoK,
@@ -197,7 +197,6 @@
   background-image: url(../icons/icon-share_2.svg);
   width: 23px;
   height: 30px;
-  background-position: center -2px;
 }
 .coral-reportButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F {
   display: none;
@@ -323,6 +322,9 @@
 }
 .Tag-colorGrey-3TasG {
   font-size: 16px !important;
+}
+.Flex-halfItemGutter-1GWGW>* {
+  margin: 0 5px 0 0 !important;
 }
 
 
@@ -1136,6 +1138,28 @@
 }
 
 .SelectField-select-2NBid {
-  padding: calc(0.5*var(--mini-unit)) var(--mini-unit) calc(0.5*var(--mini-unit)) calc(2*var(--mini-unit));
+  padding: calc(0.5*var(--mini-unit)) var(--mini-unit) calc(0.5*var(--mini-unit)) calc(2.5*var(--mini-unit));
 }
 
+.CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:after {
+  right: 10px;
+  left: auto;
+}
+
+.PasswordField-icon-XXrxB {
+  left: 0;
+  right: auto;
+}
+.MessageIcon-root-2sqiG:first-child {
+  margin-left: calc(0.5*var(--mini-unit));
+  margin-right: 0;
+}
+
+.Flex-halfItemGutter-1GWGW>* {
+  margin: 0 0 0 5px !important;
+}
+
+.MessageBoxIcon-root-2LEOA:first-child {
+  margin-left: var(--spacing-3);
+  margin-right: 0;
+}
