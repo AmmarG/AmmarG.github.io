@@ -1015,6 +1015,11 @@
   padding-right: 0;
 }
 
+.TabBar-primary-3rIQ9 li {
+  border-right: none;
+  border-left: solid 1px;
+}
+
 /*
 .CallOut-colorPrimary-1YYlF::before {
   margin-right: 0;
@@ -1024,11 +1029,6 @@
 .CallOut-colorPrimary-1YYlF::after {
   right: 0;
   left: auto;
-}
-
-.TabBar-primary-3rIQ9 li {
-  border-right: none;
-  border-left: solid 1px;
 }
 
 .RTE-placeholder-5COCg {
