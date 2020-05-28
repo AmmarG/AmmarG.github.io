@@ -1020,7 +1020,10 @@
   border-left: solid 1px;
 }
 
-/*
+.Flex-halfItemGutter-1GWGW>* {
+  margin: 0 0 0 calc(0.5*var(--mini-unit)) !important;
+}
+
 .CallOut-colorPrimary-1YYlF::before {
   margin-right: 0;
   margin-left: 32px;
@@ -1030,6 +1033,8 @@
   right: 0;
   left: auto;
 }
+/*
+
 
 .RTE-placeholder-5COCg {
   margin: 10px 10px 0 0;
