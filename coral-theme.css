@@ -1009,3 +1009,23 @@
 .coral-stream {
   direction: rtl;
 }
+
+.CallOut-colorPrimary-1YYlF::before {
+  margin-right: 0;
+  margin-left: 32px;
+}
+
+.CallOut-colorPrimary-1YYlF::after {
+  right: 0;
+  left: auto;
+}
+
+.TabBar-primary-3rIQ9 li:first-child .Tab-primary-BShmJ {
+  padding-left: 20px;
+  padding-right: 0;
+}
+
+.TabBar-primary-3rIQ9 li {
+  border-right: none;
+  border-left: solid 1px;
+}
