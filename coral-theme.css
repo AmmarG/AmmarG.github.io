@@ -1046,3 +1046,12 @@
 .Flex-spacing-1-3xonS>* {
   margin: 0 0 0 5px !important;
 }
+
+.Flex-itemGutter-1I3tQ>* {
+  margin: 0 0 0 10px !important;
+}
+
+.SelectField-afterWrapper-3BhXc {
+  left: calc(0.5*var(--mini-unit));
+  right: auto;
+}
