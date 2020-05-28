@@ -182,6 +182,7 @@
   background-image: url(../icons/icon-like.svg);
   width: 30px;
   height: 30px;
+  background-position: center -3px;
 }
 .coral-comment-replyButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
 .Comment-subBar-1TO1F .Flex-alignCenter-1avOH .Icon-root-ZlBoK,
@@ -195,7 +196,8 @@
 .coral-comment-shareButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F {
   background-image: url(../icons/icon-share_2.svg);
   width: 23px;
-  height: 23px;
+  height: 30px;
+  background-position: center -2px;
 }
 .coral-reportButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F {
   display: none;
@@ -1104,4 +1106,18 @@
   transform: scaleX(-1);
 }
 
+.RadioButton-input-2mrmM+.RadioButton-label-2g4eK:before {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.ReportPopover-close-3Y-C1 {
+  left: calc(0.5*var(--mini-unit));
+  right: auto;
+}
+
+.ReportCommentForm-title-3Fa2o {
+  padding-left: calc(2*var(--mini-unit));
+  padding-right: 0;
+}
 
