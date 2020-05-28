@@ -1073,11 +1073,35 @@
   padding-right: 0px;
 }
 
+.Button-iconAfter-CcbuZ {
+  margin-right: var(--v2-spacing-2);
+  margin-left: 0;
+}
+
 .Indent-level1-3GgDX,
 .Indent-level2-3-UNp,
 .Indent-level3-1CdyG {
   margin-left: 0;
   margin-right: 20px;
+}
+
+.Indent-level1-3GgDX::before,
+.Indent-level2-3-UNp::before,
+.Indent-level3-1CdyG::before {
+  right: 0;
+  left: auto;
+}
+
+.Button-root-3Ap5v>* {
+  margin: 0 0 0 var(--spacing-1);
+}
+
+.coral-comment-replyButton .Icon-root-ZlBoK.icon-icon-3PuRl.Icon-sm-2_l4F,
+.Comment-subBar-1TO1F .Flex-alignCenter-1avOH .Icon-root-ZlBoK,
+.InReplyTo-icon-3F4IS,
+.ReplyTo-root-3u8me .Icon-sm-2_l4F,
+.HistoryComment-icon-20DaI {
+  transform: scaleX(-1);
 }
 
 
