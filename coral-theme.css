@@ -269,7 +269,7 @@
 .SelectField-select-2NBid, .Comment-highlight-2r8jI, .htmlContent-root-1db2D blockquote, .CallOut-colorRegular-1TwSR, .ReplyTo-root-3u8me {
   background: rgba(55, 60, 89, 0.06) !important;
 }
-.typography-timestamp-2gyl1, .Tab-primary-BShmJ, .Tab-secondary-SAOuB {
+.typography-timestamp-2gyl1, .Tab-primary-BShmJ, .Tab-secondary-SAOuB, .Typography-colorTextSecondary-3Bq3A {
   color: rgba(55, 60, 89, 0.6) !important;
 }
 /* Start Global Light Theme */
@@ -297,7 +297,7 @@
 .light-theme .SelectField-select-2NBid, .light-theme .Comment-highlight-2r8jI, .light-theme .htmlContent-root-1db2D blockquote, .light-theme .CallOut-colorRegular-1TwSR, .light-theme .ReplyTo-root-3u8me {
   background: rgba(55, 60, 89, 0.06) !important;
 }
-.light-theme .typography-timestamp-2gyl1, .light-theme .Tab-primary-BShmJ, .light-theme .Tab-secondary-SAOuB {
+.light-theme .typography-timestamp-2gyl1, .light-theme .Tab-primary-BShmJ, .light-theme .Tab-secondary-SAOuB, .light-theme .Typography-colorTextSecondary-3Bq3A {
   color: rgba(55, 60, 89, 0.6) !important;
 }
 /* End Global Light Theme */
@@ -314,7 +314,7 @@
 .night-theme .Markdown-root-YMTjB, .dark-theme .Markdown-root-YMTjB, .night-theme .Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX, .dark-theme .Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX, .night-theme .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorPrimary-3wqmX, .dark-theme .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorPrimary-3wqmX, .night-theme .Tab-secondary-SAOuB.Tab-active-XrGkw, .dark-theme .Tab-secondary-SAOuB.Tab-active-XrGkw, .night-theme .typography-button-2nvMs, .dark-theme .typography-button-2nvMs, .night-theme .typography-heading1-2b6tF, .dark-theme .typography-heading1-2b6tF, .night-theme .typography-heading2-1XoJQ, .dark-theme .typography-heading2-1XoJQ, .night-theme .typography-heading2-1XoJQ.Typography-colorTextPrimary-3PX2_, .dark-theme .typography-heading2-1XoJQ.Typography-colorTextPrimary-3PX2_, .night-theme .typography-heading3-2rRZI, .dark-theme .typography-heading3-2rRZI, .night-theme .Typography-colorTextPrimary-3PX2_, .dark-theme .Typography-colorTextPrimary-3PX2_, .night-theme .htmlContent-root-1db2D, .dark-theme .htmlContent-root-1db2D, .night-theme .typography-bodyCopy-3JspD, .dark-theme .typography-bodyCopy-3JspD, .night-theme .typography-bodyShort-30fcZ, .dark-theme .typography-bodyShort-30fcZ, .night-theme .Typography-colorTextDark-2H0M-, .dark-theme .Typography-colorTextDark-2H0M-, .night-theme .coral-viewerBox .typography-heading3-2rRZI, .dark-theme .coral-viewerBox .typography-heading3-2rRZI, .night-theme .coral-createComment .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV, .dark-theme .coral-createComment .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV, .night-theme .Tab-primary-BShmJ.Tab-active-XrGkw, .dark-theme .Tab-primary-BShmJ.Tab-active-XrGkw {
   color: #fff !important;
 }
-.night-theme .typography-timestamp-2gyl1, .dark-theme .typography-timestamp-2gyl1, .night-theme .SelectField-select-2NBid, .dark-theme .SelectField-select-2NBid, .night-theme .Tab-primary-BShmJ, .dark-theme .Tab-primary-BShmJ, .night-theme .Tab-secondary-SAOuB, .dark-theme .Tab-secondary-SAOuB {
+.night-theme .typography-timestamp-2gyl1, .dark-theme .typography-timestamp-2gyl1, .night-theme .SelectField-select-2NBid, .dark-theme .SelectField-select-2NBid, .night-theme .Tab-primary-BShmJ, .dark-theme .Tab-primary-BShmJ, .night-theme .Tab-secondary-SAOuB, .dark-theme .Tab-secondary-SAOuB, .night-theme .Typography-colorTextSecondary-3Bq3A, .dark-theme .Typography-colorTextSecondary-3Bq3A {
   color: rgba(255, 255, 255, 0.3) !important;
 }
 .night-theme .SelectField-select-2NBid, .dark-theme .SelectField-select-2NBid, .night-theme .Comment-highlight-2r8jI, .dark-theme .Comment-highlight-2r8jI, .night-theme .htmlContent-root-1db2D blockquote, .dark-theme .htmlContent-root-1db2D blockquote, .night-theme .CallOut-colorRegular-1TwSR, .dark-theme .CallOut-colorRegular-1TwSR, .night-theme .ReplyTo-root-3u8me, .dark-theme .ReplyTo-root-3u8me {
