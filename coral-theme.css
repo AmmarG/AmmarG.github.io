@@ -269,7 +269,7 @@
 .SelectField-select-2NBid, .Comment-highlight-2r8jI, .htmlContent-root-1db2D blockquote, .CallOut-colorRegular-1TwSR, .ReplyTo-root-3u8me {
   background: rgba(55, 60, 89, 0.06) !important;
 }
-.typography-timestamp-2gyl1, .Tab-secondary-SAOuB {
+.typography-timestamp-2gyl1, .Tab-primary-BShmJ, .Tab-secondary-SAOuB {
   color: rgba(55, 60, 89, 0.6) !important;
 }
 /* Start Global Light Theme */
@@ -297,7 +297,7 @@
 .light-theme .SelectField-select-2NBid, .light-theme .Comment-highlight-2r8jI, .light-theme .htmlContent-root-1db2D blockquote, .light-theme .CallOut-colorRegular-1TwSR, .light-theme .ReplyTo-root-3u8me {
   background: rgba(55, 60, 89, 0.06) !important;
 }
-.light-theme .typography-timestamp-2gyl1 {
+.light-theme .typography-timestamp-2gyl1, .light-theme .Tab-primary-BShmJ, .light-theme .Tab-secondary-SAOuB {
   color: rgba(55, 60, 89, 0.6) !important;
 }
 /* End Global Light Theme */
