@@ -879,6 +879,56 @@
 }
 /* End Sports Theme */
 
+/* Start Special Theme */
+.special-theme .CallOut-colorPrimary-1YYlF::before,
+.special-theme .Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
+.special-theme .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W,
+.special-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorRegular-13F5P.Button-mouseHover-7Y2eV,
+.special-theme .coral-myComments-loadMoreButton:hover,
+.special-theme .CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
+.special-theme .Bar-root-bOJJJ,
+.special-theme .Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
+.special-theme .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorBrand-3MO1W,
+.special-theme .Tag-colorGrey-3TasG,
+.special-theme .Indent-level1-3GgDX::before,
+.special-theme .Indent-level2-3-UNp::before,
+.special-theme .Indent-level3-1CdyG::before,
+.special-theme .Counter-colorPrimary-2DGd2,
+.special-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.special-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.special-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.special-theme .MessageBox-root-30ja9,
+.special-theme .TileOption-checked-Ywl6F {
+  background-color: #c61c20 !important; /* Special Color */
+}
+.special-theme .ExternalLink-root-ixHlE,
+.special-theme .Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
+.special-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
+.special-theme .Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.special-theme .Button-variantRegular-1_TV8:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.special-theme .Button-variantRegular-1_TV8.Button-colorPrimary-3wqmX,
+.special-theme .TextLink-root-2_bTm,
+.special-theme .Button-variantOutlined-sYoCV.Button-colorPrimary-3wqmX,
+.special-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorPrimary-3wqmX,
+.special-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.special-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.special-theme .Button-variantTextUnderlined-3tK7H:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.special-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.special-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active,
+.special-theme .Button-variantUnderlined-1jUqn:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.special-theme .Button-variantUnderlined-1jUqn.Button-colorPrimary-3wqmX {
+  color: #c61c20 !important; /* Special Color */
+}
+.special-theme .CheckBox-input-2Bn2s:checked+.CheckBox-label-2kTsG:before,
+.special-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3,
+.special-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active, 
+.special-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV,
+.special-theme .TileOption-checked-Ywl6F,
+.special-theme .TileOption-label-2YaIM {
+  border-color: #c61c20 !important; /* Special Color */
+}
+/* End Special Theme */
+
 /* Start VOD Theme */
 .vod-theme .CallOut-colorPrimary-1YYlF::before,
 .vod-theme .Button-variantFilled-3TpZj.Button-colorBrand-3MO1W,
