@@ -248,7 +248,23 @@
   margin: 0 5px 0 0 !important;
 }
 /************************************* Start Themes *************************************/
-/* Start Global Light Theme */
+/*
+ .night-theme, .black-theme {
+ $news-theme: #73768a;
+ $business-theme: #8cb6fa;
+ $energy-theme: #74c59a;
+ $latest-theme: #f2a959;
+ $lifestyle-theme: #e0c773;
+ $live-theme: #ff4c4c;
+ $opinions-theme: #7aa1ae;
+ $saudi-theme: #4c8a6a;
+ $sports-theme: #95bb7a;
+ $special-theme: #d76062;
+ $vod-theme: #88dbd1;
+ $black-theme: #5b5b5b;
+ }
+ // End Section Theme Colors
+ /* Start Global Light Theme */
 .light-theme {
   background: #fff !important;
 }
