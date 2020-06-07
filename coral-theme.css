@@ -248,6 +248,30 @@
   margin: 0 5px 0 0 !important;
 }
 /************************************* Start Themes *************************************/
+.Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorRegular-13F5P.Button-mouseHover-7Y2eV, .coral-myComments-loadMoreButton:hover, .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3, .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active, .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV, .Button-variantFilled-3TpZj.Button-colorSuccess-1m3-i.typography-button-2nvMs {
+  color: #fff !important;
+}
+.Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX, .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorPrimary-3wqmX, .Button-variantGhost-1xqiJ:not(.Button-disabled-2iEkQ).Button-colorRegular-13F5P.Button-active-2v8r3 {
+  background: #fff !important;
+}
+.Markdown-root-YMTjB, .Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX, .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorPrimary-3wqmX, .Tab-secondary-SAOuB.Tab-active-XrGkw, .typography-button-2nvMs, .typography-heading1-2b6tF, .typography-heading2-1XoJQ, .typography-heading3-2rRZI {
+  color: #151515 !important;
+}
+.Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX, .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorPrimary-3wqmX {
+  border: solid 1px #151515 !important;
+}
+.TextField-colorRegular-DqnMy, .TabBar-primary-3rIQ9, .StreamContainer-tabBarRow-3T4QQ, .RTE-content-vbwj2, .RTE-toolbar-3drmR, .TabBar-primary-3rIQ9 li, .ReplyTo-root-3u8me {
+  border-color: #e5e5e5 !important;
+}
+.Arrow-root-CdFJ8[data-placement*=top]:before {
+  border-top-color: #e5e5e5 !important;
+}
+.SelectField-select-2NBid, .Comment-highlight-2r8jI, .htmlContent-root-1db2D blockquote, .CallOut-colorRegular-1TwSR, .ReplyTo-root-3u8me {
+  background: rgba(55, 60, 89, 0.06) !important;
+}
+.typography-timestamp-2gyl1 {
+  color: rgba(55, 60, 89, 0.6) !important;
+}
 /* Start Global Light Theme */
 .light-theme {
   background: #fff !important;
@@ -314,7 +338,7 @@
   background: #151515 !important;
 }
 .dark-theme .Button-variantOutlineFilled-3Kz5e:not(.Button-mouseHover-7Y2eV).Button-colorRegular-13F5P.Button-mouseHover-7Y2eV, .dark-theme .coral-myComments-loadMoreButton:hover, .dark-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-active-2v8r3, .dark-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX:active, .dark-theme .Button-variantFilled-3TpZj:not(.Button-disabled-2iEkQ).Button-colorPrimary-3wqmX.Button-mouseHover-7Y2eV, .dark-theme .Button-variantFilled-3TpZj.Button-colorSuccess-1m3-i.typography-button-2nvMs, .dark-theme .RTE-contentEditable-1Gad6.coral.coral-rte-content.RTE-content-vbwj2.htmlContent-root-1db2D.typography-bodyCopy-3JspD {
-  color: #151515 !important;
+  color: #fff !important;
 }
 .dark-theme .Button-variantFilled-3TpZj.Button-colorPrimary-3wqmX, .dark-theme .Button-variantOutlineFilled-3Kz5e.Button-mouseHover-7Y2eV.Button-colorPrimary-3wqmX, .dark-theme .Button-variantGhost-1xqiJ:not(.Button-disabled-2iEkQ).Button-colorRegular-13F5P.Button-active-2v8r3 {
   background: #151515 !important;
