@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "alarabiya-bold";
+  src: url("https://beta.alarabiya.net/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-Bold.woff2") format("woff2"),
+    url("https://beta.alarabiya.net/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-Bold.woff2") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "alarabiya-light";
+  src: url("https://beta.alarabiya.net/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-Light.woff2") format("woff2"),
+    url("https://beta.alarabiya.net/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-Light.woff2") format("woff");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+
+.office-nav, .nav .bop-summary, .bop .label, .bop .count, h2.state-headline {
+  font-family: alarabiya-bold;
+}
+
+body, .toggle>.toggle-label, .map-legend .legend-key, .map-legend .legend-label, .other-races {
+  font-family: alarabiya-light;
+}
