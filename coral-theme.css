@@ -47,5 +47,20 @@
   border-bottom: 0;
   border-radius: 0;
   color: #151515;
-  border-bottom: none;
+}
+
+.Tab-streamPrimary-788f1d302542d0297b23c1040eae710a.Tab-active-c7162dccdcf7f0eceb82b59dc555281d:before {
+  display: none;
+}
+
+.Tab-streamPrimary-788f1d302542d0297b23c1040eae710a {
+  margin: 0 10px 0;
+  padding: 10px;
+  background: transparent;
+  border: solid #e5e5e5;
+  border-width: 0 1px 0 0;
+  font-family: "alarabiya";
+  font-size: 23px;
+  line-height: normal;
+  color: #151515;
 }
