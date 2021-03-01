@@ -57,8 +57,16 @@
   margin: 0 15px 0 0;
 }
 
-.coral-tabBar-tab-active {
+.coral.coral-tabBar-tab:last-child {
+  border: none;
+}
+
+.coral.coral-tabBar-tab.coral-tabBar-tab-active {
   color: #151515;
   font-family: "alarabiyaBold";
   font-weight: normal;
+}
+
+.coral.coral-tabBar-tab.coral-tabBar-tab-active::before {
+  display: none;
 }
