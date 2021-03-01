@@ -48,15 +48,17 @@
 }
 
 .coral.coral-tabBar-tab {
-  font-family: "alarabiya";
+  font-family: "alarabiyaLight";
   font-size: 23px;
   border: solid 1px #e5e5e5;
   border-width: 0 1px 0 0;
   background: none;
   padding: 0 15px 0 0;
-  margin: 0;
+  margin: 0 15px 0 0;
 }
 
 .coral-tabBar-tab-active {
   color: #151515;
+  font-family: "alarabiyaBold";
+  font-weight: normal;
 }
