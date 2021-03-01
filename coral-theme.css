@@ -46,3 +46,13 @@
   margin: 16px 0;
   border-bottom: solid 1px #e5e5e5;
 }
+
+.coral.coral-tabBar-tab {
+  font-family: "alarabiya";
+  font-size: 23px;
+  border: solid 1px #e5e5e5;
+  border-width: 0 1px 0 0;
+  background: none;
+  padding-right: 15px;
+  margin-right: 15px;
+}
