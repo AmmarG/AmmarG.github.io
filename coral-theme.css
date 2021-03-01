@@ -1,5 +1,50 @@
 /** Coral 6.8.1 **/
 
-.Tab-streamPrimary-788f1d302542d0297b23c1040eae710a.Tab-active-c7162dccdcf7f0eceb82b59dc555281d:before {
-  color: red;
+
+@font-face {
+  font-family: "alarabiyaBold";
+  src: url("../fonts/alarabiyaBoutros2020-Bold.woff2") format("woff2"),
+  url("../fonts/alarabiyaBoutros2020-Bold.woff2") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "alarabiyaExtraBold";
+  src: url("../fonts/alarabiyaBoutros2020-ExtraBold.woff2") format("woff2"),
+  url("../fonts/alarabiyaBoutros2020-ExtraBold.woff2") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "alarabiyaLight";
+  src: url("../fonts/alarabiyaBoutros2020-Light.woff2") format("woff2"),
+  url("../fonts/alarabiyaBoutros2020-Light.woff2") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "alarabiya";
+  src: url("../fonts/alarabiyaBoutros2020-Regular.woff2") format("woff2"),
+  url("../fonts/alarabiyaBoutros2020-Regular.woff2") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "alarabiyaUltraLight";
+  src: url("../fonts/alarabiyaBoutros2020-UltraLight.woff2") format("woff2"),
+  url("../fonts/alarabiyaBoutros2020-UltraLight.woff2") format("woff");
+  font-style: normal;
+  font-weight: 100;
+}
+
+.coral-stream * {
+  outline: none;
+}
+
+.Tab-streamPrimary-788f1d302542d0297b23c1040eae710a.Tab-active-c7162dccdcf7f0eceb82b59dc555281d {
+  z-index: 10;
+  background-color: transparent;
+  border-bottom: 0;
+  border-radius: 0;
+  color: #151515;
 }
