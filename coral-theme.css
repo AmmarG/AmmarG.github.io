@@ -57,7 +57,7 @@
   margin: 0 15px 0 0;
 }
 
-.coral.coral-tabBar-tab:last-child {
+.coral.coral-tabBar li:last-child .coral.coral-tabBar-tab:last-child {
   border: none;
 }
 
