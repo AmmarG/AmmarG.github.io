@@ -42,13 +42,7 @@
 }
 
 .coral.coral-tabBar {
-  margin: 0 10px 0;
-  padding: 10px;
-  background: transparent;
-  border: solid #e5e5e5;
-  border-width: 0 1px 0 0;
-  font-family: "alarabiya";
-  font-size: 23px;
-  line-height: normal;
-  color: #151515;
+  padding: 15px 0;
+  margin: 16px 0;
+  border-bottom: solid 1px #e5e5e5;
 }
