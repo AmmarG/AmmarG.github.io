@@ -3,22 +3,22 @@
 
 @font-face {
   font-family: "alarabiyaBold";
-  src: url("https://www.alarabiya.net/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-Bold.woff2") format("woff2"),
-  url("https://www.alarabiya.net/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-Bold.woff2") format("woff");
+  src: url("https://23423423423jkhjkhjk.s3-us-west-2.amazonaws.com/coralcss/alarabiyaBoutros2020-Bold.woff2") format("woff2"),
+  url("https://23423423423jkhjkhjk.s3-us-west-2.amazonaws.com/coralcss/alarabiyaBoutros2020-Bold.woff2") format("woff");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: "alarabiyaExtraBold";
-  src: url("https://www.alarabiya.net/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-ExtraBold.woff2") format("woff2"),
-  url("https://www.alarabiya.net/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-ExtraBold.woff2") format("woff");
+  src: url("https://23423423423jkhjkhjk.s3-us-west-2.amazonaws.com/coralcss/alarabiyaBoutros2020-ExtraBold.woff2") format("woff2"),
+  url("https://23423423423jkhjkhjk.s3-us-west-2.amazonaws.com/coralcss/alarabiyaBoutros2020-ExtraBold.woff2") format("woff");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: "alarabiyaLight";
-  src: url("https://www.alarabiya.net/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-Light.woff2") format("woff2"),
-  url("https://www.alarabiya.net/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-Light.woff2") format("woff");
+  src: url("https://23423423423jkhjkhjk.s3-us-west-2.amazonaws.com/coralcss/alarabiyaBoutros2020-Light.woff2") format("woff2"),
+  url("https://23423423423jkhjkhjk.s3-us-west-2.amazonaws.com/coralcss/alarabiyaBoutros2020-Light.woff2") format("woff");
   font-style: normal;
   font-weight: 300;
 }
@@ -31,8 +31,8 @@
 }
 @font-face {
   font-family: "alarabiyaUltraLight";
-  src: url("https://www.alarabiya.net/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-UltraLight.woff2") format("woff2"),
-  url("https://www.alarabiya.net/.resources/aa-fe-templating/webresources/dist/assets/fonts/alarabiyaBoutros2020-UltraLight.woff2") format("woff");
+  src: url("https://23423423423jkhjkhjk.s3-us-west-2.amazonaws.com/coralcss/alarabiyaBoutros2020-UltraLight.woff2") format("woff2"),
+  url("https://23423423423jkhjkhjk.s3-us-west-2.amazonaws.com/coralcss/alarabiyaBoutros2020-UltraLight.woff2") format("woff");
   font-style: normal;
   font-weight: 100;
 }
@@ -41,19 +41,7 @@
   outline: none;
 }
 
-.Tab-streamPrimary-788f1d302542d0297b23c1040eae710a.Tab-active-c7162dccdcf7f0eceb82b59dc555281d {
-  z-index: 10;
-  background-color: transparent;
-  border-bottom: 0;
-  border-radius: 0;
-  color: #151515;
-}
-
-.Tab-streamPrimary-788f1d302542d0297b23c1040eae710a.Tab-active-c7162dccdcf7f0eceb82b59dc555281d:before {
-  display: none;
-}
-
-.Tab-streamPrimary-788f1d302542d0297b23c1040eae710a {
+.coral.coral-tabBar {
   margin: 0 10px 0;
   padding: 10px;
   background: transparent;
