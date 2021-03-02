@@ -64,7 +64,7 @@
 .coral.coral-tabBar-tab.coral-tabBar-tab-active {
   color: #151515;
   font-family: "alarabiyaBold";
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .coral.coral-tabBar-tab.coral-tabBar-tab-active::before {
@@ -83,6 +83,10 @@
   font-size: 22px;
   line-height: 100%;
   font-weight: normal;
+}
+.coral-viewerBox-username {
+  font-family: "alarabiyaBold";
+  font-weight: bold;
 }
 
 .coral.coral-createComment {
