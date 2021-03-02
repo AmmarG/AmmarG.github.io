@@ -61,7 +61,7 @@
   border: none;
 }
 
-.coral-stream .coral.coral-tabBar-tab.coral-tabBar-tab-active {
+.coral-stream .coral.coral-tabBar-tab.coral-tabBar-tab-active span {
   color: #151515;
   font-family: "alarabiyaBold";
 }
