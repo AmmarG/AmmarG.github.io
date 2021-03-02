@@ -70,3 +70,14 @@
 .coral.coral-tabBar-tab.coral-tabBar-tab-active::before {
   display: none;
 }
+
+.coral.coral-viewerBox {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  display: flex;
+}
+
+.coral.coral-viewerBox div {
+  padding-left: 10px;
+}
