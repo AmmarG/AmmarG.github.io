@@ -84,7 +84,7 @@
   font-family: "alarabiyaLight";
   font-weight: normal;
 }
-.coral-viewerBox-username {
+.coral.coral-viewerBox .coral-viewerBox-username {
   font-family: "alarabiyaBold";
   font-weight: bold;
 }
