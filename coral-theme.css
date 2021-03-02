@@ -39,6 +39,7 @@
 
 .coral-stream * {
   outline: none;
+  font-family: "alarabiyaLight";
 }
 
 .coral.coral-tabBar {
@@ -80,4 +81,5 @@
 
 .coral.coral-viewerBox div {
   padding-left: 10px;
+  font-size: 22px;
 }
