@@ -63,8 +63,7 @@
 
 .coral.coral-tabBar-tab.coral-tabBar-tab-active {
   color: #151515;
-  font-family: "alarabiyaBold";
-  font-weight: bold;
+  font-family: "alarabiyaBold" !important;
 }
 
 .coral.coral-tabBar-tab.coral-tabBar-tab-active::before {
@@ -86,7 +85,6 @@
 }
 .coral-viewerBox-username {
   font-family: "alarabiyaBold";
-  font-weight: bold;
 }
 
 .coral.coral-createComment {
