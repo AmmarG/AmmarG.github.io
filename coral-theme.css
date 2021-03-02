@@ -39,7 +39,6 @@
 
 .coral-stream * {
   outline: none;
-  xfont-family: "alarabiyaLight";
 }
 
 .coral.coral-tabBar {
@@ -55,6 +54,7 @@
   background: none;
   padding: 0 10px 0 0;
   margin: 0 10px 0 0;
+  font-family: "alarabiyaLight";
 }
 
 .coral.coral-tabBar li:last-child .coral.coral-tabBar-tab:last-child {
@@ -81,7 +81,7 @@
   padding-left: 2px;
   font-size: 22px;
   line-height: 100%;
-  font-weight: normal;
+  font-family: "alarabiyaLight";
 }
 .coral-viewerBox-username {
   font-family: "alarabiyaBold";
