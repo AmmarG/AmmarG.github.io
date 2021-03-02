@@ -61,9 +61,9 @@
   border: none;
 }
 
-.coral.coral-tabBar-tab.coral-tabBar-tab-active {
+.coral-stream .coral.coral-tabBar-tab.coral-tabBar-tab-active {
   color: #151515;
-  font-family: "alarabiyaBold" !important;
+  font-family: "alarabiyaBold";
 }
 
 .coral.coral-tabBar-tab.coral-tabBar-tab-active::before {
