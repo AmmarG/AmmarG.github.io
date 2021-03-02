@@ -39,7 +39,7 @@
 
 .coral-stream * {
   outline: none;
-  xfont-family: "alarabiyaLight";
+  font-family: "alarabiyaLight";
 }
 
 .coral.coral-tabBar {
@@ -82,7 +82,7 @@
   padding-left: 2px;
   font-size: 22px;
   line-height: 100%;
-  font-family: "alarabiyaLight";
+  font-weight: normal;
 }
 
 .coral.coral-createComment {
