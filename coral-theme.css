@@ -49,7 +49,6 @@
 }
 
 .coral.coral-tabBar-tab {
-  font-family: "alarabiyaLight";
   font-size: 23px;
   border: solid 1px #e5e5e5;
   border-width: 0 1px 0 0;
@@ -80,6 +79,7 @@
 }
 
 .coral.coral-viewerBox div {
-  padding-left: 5px;
+  padding-left: 2px;
   font-size: 22px;
+  line-height: 100%;
 }
