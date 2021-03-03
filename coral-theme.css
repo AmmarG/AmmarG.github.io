@@ -194,7 +194,7 @@
   color: #151515;
 }
 
-.coral.coral-createReplyComment-replyTo {
+.coral.coral-createReplyComment-replyTo span {
   font-family: "alarabiyaLight";
   font-size: 23px;
   font-weight: normal;
