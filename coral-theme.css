@@ -283,7 +283,7 @@
 .coral.coral-indent-8 .coral.coral-comment-topBar,
 .coral.coral-indent-9 .coral.coral-comment-topBar,
 .coral.coral-indent-10 .coral.coral-comment-topBar {
-  margin-top: 5px;
+  padding-top: 10px;
 }
 
 .coral-createReplyComment-replyTo {
