@@ -145,11 +145,6 @@
   border-color: #e5e5e5;
 }
 
-.coral.coral-allComments * {
-  font-family: "alarabiyaLight";
-  font-size: 23px;
-}
-
-.coral.coral-allComments .coral.coral-reactButton i {
-  font-family: var(--font-family-primary);
+.coral.coral-allComments {
+  
 }
