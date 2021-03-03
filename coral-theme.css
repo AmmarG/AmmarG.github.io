@@ -292,8 +292,8 @@
   border: none;
   border-radius: 4px 4px 0 0;
 }
-.coral.coral-comment [data-testid="report-comment-form"] form {
-  background: #e5e5e5;
+.coral.coral-comment [data-testid="report-comment-form"] {
+  background: rgba(229, 229, 229, 0.2);
 }
 
 .coral.coral-comment [data-testid="report-comment-form"] form * {
