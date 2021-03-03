@@ -151,5 +151,5 @@
 }
 
 .coral.coral-reactButton i {
-
+  font-family: var(--font-family-primary);
 }
