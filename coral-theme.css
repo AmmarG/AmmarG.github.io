@@ -110,8 +110,16 @@
   border: none;
   font-family: "alarabiyaLight";
   font-weight: normal;
+  font-size: 23px;
 }
 
 .coral.coral-createComment-submit:disabled {
   background-color: #e5e5e5 !important;
+}
+
+.coral-tabBarComments-allComments {
+  color: #2b3347;
+  border-color: #2b3347;
+  font-family: "alarabiyaBold";
+  font-size: 23px;
 }
