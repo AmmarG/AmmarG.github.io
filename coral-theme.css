@@ -257,6 +257,7 @@
   border-radius: 3rem 0;
   content: " ";
   margin-right: 10px;
+  background: #e5e5e5;
 }
 
 .coral-createReplyComment-replyTo {
