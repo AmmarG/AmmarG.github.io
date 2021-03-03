@@ -293,6 +293,6 @@
   border-radius: 4px 4px 0 0;
 }
 
-.coral.coral-reportPopover {
+.coral.coral-comment [data-testid="report-comment-form"] {
   background: red;
 }
