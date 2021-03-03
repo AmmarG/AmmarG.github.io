@@ -100,10 +100,11 @@
 
 .coral.coral-rte-content {
   font-family: "alarabiyaLight";
+  font-size: 23px;
 }
 
 .coral.coral-createComment-submit {
   border-radius: 4px;
-  background-color: #2b3347;
+  background-color: #2b3347 !important;
   text-transform: unset;
 }
