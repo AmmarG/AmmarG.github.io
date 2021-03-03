@@ -96,7 +96,7 @@
 .coral.coral-commentForm {
   border-radius: 4px;
   border: solid 1px #e5e5e5;
-  background-color: rgba(229, 229, 229, 0.2);
+  background-color: rgba(229, 229, 229, 0.2) !important;
 }
 
 .coral.coral-rte-content {
@@ -114,7 +114,7 @@
   font-size: 23px;
   padding: 5px 10px;
   width: 100%;
-  margin-top: 16px;
+  margin-top: 16px !important;
 }
 
 .coral.coral-createComment-submit:disabled {
