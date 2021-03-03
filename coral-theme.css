@@ -146,9 +146,13 @@
 }
 
 .coral.coral-timestamp.coral-comment-timestamp,
-.coral.coral-username.coral-comment-username span,
 .coral.coral-content.coral-comment-content {
   font-family: "alarabiyaLight";
   font-size: 23px;
   font-weight: normal;
+}
+
+.coral.coral-username.coral-comment-username span {
+  font-family: "alarabiyaBold";
+  font-size: 23px;
 }
