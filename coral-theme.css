@@ -242,7 +242,6 @@
 
 .coral.coral-indent {
   border: none;
-  display: flex;
 }
 
 .coral.coral-indent-1::before,
@@ -260,6 +259,7 @@
   border-radius: 3rem 0;
   content: " ";
   margin-right: 10px;
+  display: flex;
 }
 
 .coral.coral-indent-1,
