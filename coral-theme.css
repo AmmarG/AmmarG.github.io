@@ -213,6 +213,7 @@
 
 .coral.coral-indent {
   border: none;
+  display: flex;
 }
 
 .coral.coral-indent::before {
