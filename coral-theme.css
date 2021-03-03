@@ -173,7 +173,8 @@
   height: 35px;
 }
 
-.coral.coral-comment-replyButton i {
+.coral.coral-comment-replyButton i,
+.coral.coral-createReplyComment-replyTo i {
   background: url("icons/icon-reply.svg") center no-repeat;
   background-size: contain;
   font-size: 0;
@@ -191,4 +192,14 @@
 
 .coral-reactedButton.coral-comment-reactedButton span {
   color: #151515;
+}
+
+.coral.coral-createReplyComment-replyTo {
+  font-family: "alarabiyaLight";
+  font-size: 23px;
+  font-weight: normal;
+}
+
+.coral.coral-createReplyComment-replyTo i {
+  filter: invert(1) contrast(3);
 }
