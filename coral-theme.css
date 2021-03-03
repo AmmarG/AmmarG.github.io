@@ -120,7 +120,7 @@
 
 .coral-tabBarComments-allComments {
   color: #151515 !important;
-  border: none;
+  border: none !important;
   font-family: "alarabiyaBold";
   font-size: 23px;
 }
@@ -129,7 +129,7 @@
   font-family: "alarabiyaBold";
   font-size: 23px;
   background: none;
-  color: #2b3347;
+  color: #2b3347 !important;
 }
 
 .coral.coral-sortMenu label {
