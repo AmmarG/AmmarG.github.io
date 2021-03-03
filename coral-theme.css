@@ -150,6 +150,6 @@
   font-size: 23px;
 }
 
-.coral.coral-reactButton i {
+.coral.coral-allComments .coral.coral-reactButton i {
   font-family: var(--font-family-primary);
 }
