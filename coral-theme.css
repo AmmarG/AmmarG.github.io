@@ -196,8 +196,8 @@
   background: url("icons/icon-report.svg") center no-repeat;
   background-size: contain;
   font-size: 0;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 }
 
 .coral-reactedButton.coral-comment-reactedButton span {
