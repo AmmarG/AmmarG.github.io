@@ -112,10 +112,13 @@
   font-weight: normal;
   font-size: 23px;
   padding: 5px 10px;
+  width: 100%;
 }
 
 .coral.coral-createComment-submit:disabled {
-  background-color: #e5e5e5 !important;
+  background-color: #FFF !important;
+  color: #151515 !important;
+  border-color: solid 1px #151515 !important;
 }
 
 .coral-tabBarComments-allComments {
