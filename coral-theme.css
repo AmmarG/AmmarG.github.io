@@ -210,3 +210,7 @@
 .coral.coral-allComments {
   padding-top: 20px;
 }
+
+.coral.coral-indent {
+  border-color: red;
+}
