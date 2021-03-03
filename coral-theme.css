@@ -122,10 +122,10 @@
   color: #151515 !important;
   border: none !important;
   font-family: "alarabiyaBold";
-  font-size: 23px;
+  font-size: 24px;
 }
 
-.coral.coral-counter {
+.coral.coral-counter span {
   font-family: "alarabiyaBold";
   font-size: 23px;
   background: none;
