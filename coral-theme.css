@@ -210,7 +210,7 @@
 }
 
 .coral.coral-reportButton.coral-comment-reportButton:active i {
-  filter: invert(1) contrast(1);
+  filter: invert(1) contrast(1) !important;
 }
 
 .coral-reactedButton.coral-comment-reactedButton span {
