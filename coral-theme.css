@@ -107,4 +107,9 @@
   border-radius: 4px;
   background-color: #2b3347 !important;
   text-transform: unset;
+  border: none;
+}
+
+.coral.coral-createComment-submit:disabled {
+  background-color: #e5e5e5 !important;
 }
