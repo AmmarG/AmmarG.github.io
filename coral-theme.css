@@ -269,7 +269,8 @@
 .coral.coral-indent-8,
 .coral.coral-indent-9,
 .coral.coral-indent-10 {
-  background: #e5e5e5;
+  background-color: rgba(229, 229, 229, 0.2);
+  padding: 0;
 }
 
 .coral-createReplyComment-replyTo {
