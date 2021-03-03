@@ -258,3 +258,7 @@
   content: " ";
   margin-right: 10px;
 }
+
+.coral-createReplyComment-replyTo {
+  background-color: #2b3347;
+}
