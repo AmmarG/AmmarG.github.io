@@ -165,21 +165,24 @@
 }
 
 .coral.coral-reactButton.coral-comment-reactButton i {
-  background: url("icons/icon-like.svg");
+  background: url("icons/icon-like.svg") center no-repeat;
+  background-size: contain;
   font-size: 0;
   width: 30px;
   height: 30px;
 }
 
 .coral.coral-comment-replyButton i {
-  background: url("icons/icon-reply.svg");
+  background: url("icons/icon-reply.svg") center no-repeat;
+  background-size: contain;
   font-size: 0;
   width: 30px;
   height: 30px;
 }
 
 .coral.coral-comment-shareButton i {
-  background: url("icons/icon-share.svg");
+  background: url("icons/icon-share.svg") center no-repeat;
+  background-size: contain;
   font-size: 0;
   width: 30px;
   height: 30px;
