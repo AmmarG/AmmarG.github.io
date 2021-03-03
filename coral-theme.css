@@ -212,5 +212,7 @@
 }
 
 .coral.coral-indent {
-  border-color: red;
+  border-color: #2b3347;
+  border-width: 0 0 0 4px;
+  border-radius: 3rem 0;
 }
