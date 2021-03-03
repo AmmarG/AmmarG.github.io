@@ -211,8 +211,12 @@
   padding-top: 20px;
 }
 
+.coral.coral-indent {
+  border: none;
+}
+
 .coral.coral-indent::before {
-  border-color: #2b3347;
+  border: solid 1px #2b3347;
   border-width: 0 0 0 4px;
   border-radius: 3rem 0;
   content: " ";
