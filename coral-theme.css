@@ -185,7 +185,8 @@
 }
 
 .coral.coral-comment-replyButton i,
-.coral.coral-createReplyComment-replyTo i {
+.coral.coral-createReplyComment-replyTo i,
+.coral-comment-inReplyTo {
   background: url("icons/icon-reply.svg") center no-repeat;
   background-size: contain;
   font-size: 0;
@@ -207,12 +208,6 @@
   font-size: 0;
   width: 23px;
   height: 23px;
-}
-
-.coral.coral-reactButton.coral-comment-reactButton[aria-pressed="true"] i {
-  filter: invert(1) contrast(1) !important;
-  border-radius: 100%;
-  background-color: #2b3347;
 }
 
 .coral.coral-reportButton.coral-comment-reportButton[aria-pressed="true"] i {
