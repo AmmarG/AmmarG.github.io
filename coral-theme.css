@@ -108,9 +108,10 @@
   background-color: #2b3347 !important;
   text-transform: unset;
   border: none;
-  font-family: "alarabiyaLight";
+  font-family: "alarabiyaBold";
   font-weight: normal;
   font-size: 23px;
+  padding: 5px 10px;
 }
 
 .coral.coral-createComment-submit:disabled {
@@ -127,6 +128,8 @@
 .coral.coral-counter {
   font-family: "alarabiyaBold";
   font-size: 23px;
+  padding: 0px 5px;
+  line-height: 100%;
 }
 
 .coral.coral-sortMenu label {
@@ -140,4 +143,9 @@
 }
 .coral.coral-sortMenu .coral.coral-sortMenu select {
   border-color: #e5e5e5;
+}
+
+.coral.coral-allComments {
+  font-family: "alarabiyaLight";
+  font-size: 23px;
 }
