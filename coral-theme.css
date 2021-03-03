@@ -192,7 +192,7 @@
   height: 25px;
 }
 
-.coral.coral-reportButton.coral-comment-reportButton {
+.coral.coral-reportButton.coral-comment-reportButton i {
   background: url("icons/icon-report.svg") center no-repeat;
   background-size: contain;
   font-size: 0;
