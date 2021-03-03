@@ -145,6 +145,7 @@
 .coral.coral-sortMenu label {
   font-family: "alarabiyaLight";
   font-size: 22px;
+  width: 50%;
 }
 
 .coral.coral-sortMenu .coral.coral-sortMenu {
