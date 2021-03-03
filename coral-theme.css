@@ -143,6 +143,7 @@
 }
 .coral.coral-sortMenu .coral.coral-sortMenu select {
   border-color: #e5e5e5;
+  font-weight: normal;
 }
 
 .coral.coral-username.coral-comment-username span {
@@ -161,4 +162,8 @@
   font-family: "alarabiyaLight";
   font-size: 23px;
   font-weight: normal;
+}
+
+.coral.coral-reactButton.coral-comment-reactButton i {
+  background: url("icons/icon-like.svg");
 }
