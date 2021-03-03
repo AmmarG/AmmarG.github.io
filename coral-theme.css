@@ -209,7 +209,7 @@
   height: 23px;
 }
 
-.coral.coral-reportButton.coral-comment-reportButton[aria-pressed="true"] {
+.coral.coral-reportButton.coral-comment-reportButton[aria-pressed="true"] i {
   filter: invert(1) contrast(1) !important;
 }
 
