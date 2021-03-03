@@ -118,8 +118,8 @@
 }
 
 .coral-tabBarComments-allComments {
-  color: #2b3347;
-  border-color: #2b3347;
+  color: #2b3347 !important;
+  border-color: #2b3347 !important;
   font-family: "alarabiyaBold";
   font-size: 23px;
 }
