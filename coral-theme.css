@@ -186,7 +186,7 @@
 
 .coral.coral-comment-replyButton i,
 .coral.coral-createReplyComment-replyTo i,
-.coral-comment-inReplyTo {
+.coral-comment-inReplyTo i {
   background: url("icons/icon-reply.svg") center no-repeat;
   background-size: contain;
   font-size: 0;
