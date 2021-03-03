@@ -224,7 +224,16 @@
   display: flex;
 }
 
-.coral.coral-comment-collapse-toggle-indent .coral.coral-indent::before {
+.coral-indent-1 .coral.coral-indent::before,
+.coral-indent-2 .coral.coral-indent::before,
+.coral-indent-3 .coral.coral-indent::before,
+.coral-indent-4 .coral.coral-indent::before,
+.coral-indent-5 .coral.coral-indent::before,
+.coral-indent-6 .coral.coral-indent::before,
+.coral-indent-7 .coral.coral-indent::before,
+.coral-indent-8 .coral.coral-indent::before,
+.coral-indent-9 .coral.coral-indent::before,
+.coral-indent-10 .coral.coral-indent::before {
   border: solid 1px #2b3347;
   border-width: 0 0 0 4px;
   border-radius: 3rem 0;
