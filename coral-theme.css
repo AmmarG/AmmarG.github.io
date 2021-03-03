@@ -209,6 +209,10 @@
   height: 23px;
 }
 
+.coral.coral-reportButton.coral-comment-reportButton:active i {
+  filter: invert(1) contrast(1);
+}
+
 .coral-reactedButton.coral-comment-reactedButton span {
   color: #151515;
 }
