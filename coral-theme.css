@@ -171,6 +171,20 @@
   height: 30px;
 }
 
+.coral.coral-comment-replyButton i {
+  background: url("icons/icon-reply.svg");
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.coral.coral-comment-shareButton i {
+  background: url("icons/icon-share.svg");
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+}
+
 .coral-reactedButton.coral-comment-reactedButton span {
   color: #151515;
 }
