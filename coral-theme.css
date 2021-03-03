@@ -162,6 +162,7 @@
   font-family: "alarabiyaLight";
   font-size: 23px;
   font-weight: normal;
+  line-height: 120%;
 }
 
 .coral.coral-reactButton.coral-comment-reactButton i {
