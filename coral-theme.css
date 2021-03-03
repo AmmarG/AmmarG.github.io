@@ -209,7 +209,7 @@
   height: 23px;
 }
 
-.coral.coral-reportButton.coral-comment-reportButton:focus i,
+.coral.coral-reportButton.coral-comment-reportButton:focus span i,
 .coral.coral-reportButton.coral-comment-reportButton:active span i {
   filter: invert(1) contrast(1) !important;
 }
