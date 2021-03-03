@@ -145,7 +145,8 @@
   border-color: #e5e5e5;
 }
 
-.coral.coral-comment-topBar,
+.coral.coral-timestamp.coral-comment-timestamp,
+.coral.coral-username.coral-comment-username,
 .coral.coral-content.coral-comment-content {
   font-family: "alarabiyaLight";
   font-size: 23px;
