@@ -166,4 +166,11 @@
 
 .coral.coral-reactButton.coral-comment-reactButton i {
   background: url("icons/icon-like.svg");
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.coral.coral-reactButton.coral-comment-reactButton:active {
+  color: #151515;
 }
