@@ -296,6 +296,10 @@
   background: rgba(229, 229, 229, 0.2);
 }
 
+.coral.coral-comment [data-testid="report-comment-form"] form {
+  background: none;
+}
+
 .coral.coral-comment [data-testid="report-comment-form"] form * {
   font-family: "alarabiyaLight";
   border-radius: 4px;
