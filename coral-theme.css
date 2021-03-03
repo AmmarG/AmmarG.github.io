@@ -145,14 +145,20 @@
   border-color: #e5e5e5;
 }
 
-.coral.coral-timestamp.coral-comment-timestamp,
+.coral.coral-username.coral-comment-username span {
+  font-family: "alarabiyaBold";
+  font-size: 23px;
+}
+
+.coral.coral-timestamp.coral-comment-timestamp {
+  font-family: "alarabiyaLight";
+  font-size: 18px;
+  font-weight: normal;
+  color: #c4c4c4;
+}
+
 .coral.coral-content.coral-comment-content {
   font-family: "alarabiyaLight";
   font-size: 23px;
   font-weight: normal;
-}
-
-.coral.coral-username.coral-comment-username span {
-  font-family: "alarabiyaBold";
-  font-size: 23px;
 }
