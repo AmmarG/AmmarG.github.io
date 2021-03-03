@@ -172,5 +172,5 @@
 }
 
 .coral.coral-reactButton.coral-comment-reactButton:active span {
-  color: #151515;
+  color: #151515 !important;
 }
