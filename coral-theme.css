@@ -224,7 +224,16 @@
   display: flex;
 }
 
-.coral.coral-indent-1::before {
+.coral.coral-indent-1::before,
+.coral.coral-indent-2::before,
+.coral.coral-indent-3::before,
+.coral.coral-indent-4::before,
+.coral.coral-indent-5::before,
+.coral.coral-indent-6::before,
+.coral.coral-indent-7::before,
+.coral.coral-indent-8::before,
+.coral.coral-indent-9::before,
+.coral.coral-indent-10::before {
   border: solid 1px #2b3347;
   border-width: 0 0 0 4px;
   border-radius: 3rem 0;
