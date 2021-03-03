@@ -143,16 +143,16 @@
 }
 
 .coral.coral-sortMenu label {
-  font-family: "alarabiyaBold";
-  font-size: 23px;
+  font-family: "alarabiyaLight";
+  font-size: 22px;
 }
 
 .coral.coral-sortMenu .coral.coral-sortMenu {
-  font-family: "alarabiyaLight";
-  font-size: 23px;
+  font-family: "alarabiyaBold";
+  font-size: 22px;
 }
 .coral.coral-sortMenu .coral.coral-sortMenu select {
-  border-color: #e5e5e5;
+  border: none;
   font-weight: normal;
 }
 
