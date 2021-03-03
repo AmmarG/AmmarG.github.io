@@ -171,6 +171,6 @@
   height: 30px;
 }
 
-.coral.coral-reactButton.coral-comment-reactButton:active {
+.coral.coral-reactButton.coral-comment-reactButton:active span {
   color: #151515;
 }
