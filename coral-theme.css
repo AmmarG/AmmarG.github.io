@@ -108,6 +108,8 @@
   background-color: #2b3347 !important;
   text-transform: unset;
   border: none;
+  font-family: "alarabiyaLight";
+  font-weight: normal;
 }
 
 .coral.coral-createComment-submit:disabled {
