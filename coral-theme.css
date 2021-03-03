@@ -101,3 +101,9 @@
 .coral.coral-rte-content {
   font-family: "alarabiyaLight";
 }
+
+.coral.coral-createComment-submit {
+  border-radius: 4px;
+  background-color: #2b3347;
+  text-transform: unset;
+}
