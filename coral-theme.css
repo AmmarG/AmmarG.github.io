@@ -202,4 +202,6 @@
 
 .coral.coral-createReplyComment-replyTo i {
   filter: invert(1) contrast(3);
+  width: 35px;
+  height: 35px;
 }
