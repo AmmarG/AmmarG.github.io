@@ -312,6 +312,10 @@
   padding-top: 10px;
 }
 
+.coral.coral-comment-collapse-toggle .coral.coral-comment-topBar {
+  padding-top: 0;
+}
+
 @media (max-width: 639px) {
   .coral.coral-viewerBox {
     top: 53px;
