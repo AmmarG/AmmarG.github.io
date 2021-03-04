@@ -359,7 +359,3 @@ button.coral.coral-emailNotifications-updateButton:not(:disabled) {
     height: 25px;
   }
 }
-
-:root {
-  --palette-background-input-disabled: red;
-}
