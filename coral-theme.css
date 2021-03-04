@@ -320,12 +320,17 @@
 }
 
 .coral.coral-preferences i {
-  font-family: 'Material Icons' !important;
+  font-family: 'Material Icons';
   font-size: 19px;
 }
 
 .coral.coral-preferences button {
   text-transform: unset;
+}
+
+.coral.coral-preferences fieldset label::before {
+  background-color: #2b3347;
+  border-color: #2b3347;
 }
 
 .coral.coral-myComment-viewConversationButton {
