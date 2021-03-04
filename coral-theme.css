@@ -308,12 +308,14 @@
   color: #151515;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 639px) {
   .coral.coral-viewerBox {
     top: 53px;
   }
   .coral.coral-tabBar-tab.coral-tabBar-comments i {
     font-size: 0;
     background: url("icons/icon-comment.svg") center no-repeat;
+    width: 23px;
+    height: 23px;
   }
 }
