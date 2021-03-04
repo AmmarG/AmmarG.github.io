@@ -216,6 +216,11 @@
   filter: invert(1) contrast(1) !important;
 }
 
+.coral.coral-reportButton.coral-comment-reportButton[aria-pressed="true"] {
+  background-color: #2b3347;
+  border: none;
+}
+
 .coral-reactedButton.coral-comment-reactedButton span {
   color: #151515;
 }
@@ -291,11 +296,6 @@
   font-family: "alarabiyaLight";
   border-radius: 4px;
   font-size: 20px;
-}
-
-.coral.coral-reportButton.coral-comment-reportButton {
-  background-color: #2b3347;
-  border: none;
 }
 
 .coral.coral-reportPopover-cancelButton,
