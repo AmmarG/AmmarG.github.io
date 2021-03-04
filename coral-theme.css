@@ -306,7 +306,7 @@
   padding-bottom: 8px;
 }
 
-.coral.coral-myProfile .coral.coral-tabBarSecondary.coral-tabBarMyProfile,
+.coral.coral-myProfile .coral.coral-tabBarSecondary.coral-tabBarMyProfile *,
 .coral.coral-myProfile .coral.coral-myComment-commentOn,
 .coral.coral-myProfile .coral.coral-myComment-story,
 .coral.coral-myProfile .coral.coral-myComment-content,
@@ -314,6 +314,11 @@
 .coral.coral-myProfile .coral.coral-myComment-viewConversationButton span {
   font-family: "alarabiyaLight";
   font-size: 23px;
+}
+
+.coral.coral-myComment-viewConversationButton {
+  height: 53px;
+  font-weight: normal;
 }
 
 .coral.coral-comment-actionBar {
