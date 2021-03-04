@@ -300,7 +300,8 @@
   padding-top: 0;
 }
 
-.coral.coral-tabBarSecondary-tab.coral-tabBarMyProfile-myComments.coral-tabBarSecondary-tab-active {
+.coral.coral-tabBarSecondary-tab.coral-tabBarMyProfile-myComments.coral-tabBarSecondary-tab-active,
+.coral.coral-tabBarSecondary-tab.coral-tabBarMyProfile-preferences.coral-tabBarSecondary-tab-active {
   border: none;
   color: #151515;
   padding-bottom: 8px;
@@ -314,6 +315,7 @@
 .coral.coral-myProfile .coral.coral-myComment-viewConversationButton span {
   font-family: "alarabiyaLight";
   font-size: 23px;
+  line-height: 120%;
 }
 
 .coral.coral-myComment-viewConversationButton {
