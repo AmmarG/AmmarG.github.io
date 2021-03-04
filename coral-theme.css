@@ -329,8 +329,12 @@
 }
 
 .coral.coral-preferences fieldset input[value="true"] + label::before {
-  background-color: #2b3347;
-  border-color: #2b3347;
+  background-color: #2b3347 !important;
+  border-color: #2b3347 !important;
+}
+
+.coral.coral-emailNotifications-updateButtonnot:not(:disabled) {
+  background-color: #2b3347 !important;
 }
 
 .coral.coral-myComment-viewConversationButton {
