@@ -304,6 +304,7 @@
   text-transform: unset;
 }
 
-.coral.coral-tabBar-tab.coral-tabBar-comments.coral-tabBar-tab-active {
+.coral.coral-tabBar-tab.coral-tabBar-comments.coral-tabBar-tab-active,
+.coral.coral-tabBar-tab.coral-tabBar-myProfile.coral-tabBar-tab-active {
   color: #151515;
 }
