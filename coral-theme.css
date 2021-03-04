@@ -147,12 +147,12 @@
 .coral.coral-sortMenu label {
   font-family: "alarabiyaLight";
   font-size: 22px;
-  width: 50%;
 }
 
 .coral.coral-sortMenu .coral.coral-sortMenu {
   font-family: "alarabiyaBold";
   font-size: 22px;
+  width: 50%;
 }
 .coral.coral-sortMenu .coral.coral-sortMenu select {
   border: none;
@@ -290,10 +290,16 @@
 .coral.coral-comment [data-testid="report-comment-form"] form * {
   font-family: "alarabiyaLight";
   border-radius: 4px;
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .coral.coral-reportButton.coral-comment-reportButton {
   background-color: #2b3347;
   border: none;
+}
+
+.coral.coral-reportPopover-cancelButton,
+.coral.coral-reportPopover-submitButton {
+  padding: 5px 10px;
+  text-transform: unset;
 }
