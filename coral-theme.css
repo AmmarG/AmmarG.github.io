@@ -334,7 +334,8 @@
 }
 
 button.coral.coral-emailNotifications-updateButton:not(:disabled) {
-  background-color: #2b3347 !important;
+  background-color: #2b3347;
+  border-color: #2b3347;
 }
 
 .coral.coral-myComment-viewConversationButton {
