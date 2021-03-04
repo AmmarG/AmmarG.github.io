@@ -315,7 +315,8 @@
   .coral.coral-tabBar-tab.coral-tabBar-comments i {
     font-size: 0;
     background: url("icons/icon-comment.svg") center no-repeat;
-    width: 23px;
-    height: 23px;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
   }
 }
