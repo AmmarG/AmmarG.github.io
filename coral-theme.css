@@ -124,8 +124,8 @@
 
 .coral.coral-createComment-submit:disabled {
   background-color: #FFF !important;
-  color: #151515 !important;
-  border: solid 1px #151515 !important;
+  color: #c4c4c4 !important;
+  border: solid 1px #e5e5e5 !important;
 }
 
 .coral-tabBarComments-allComments {
