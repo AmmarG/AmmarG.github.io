@@ -292,3 +292,8 @@
   border-radius: 4px;
   font-size: 23px;
 }
+
+.coral.coral-reportButton.coral-comment-reportButton {
+  background-color: #2b3347;
+  border: none;
+}
