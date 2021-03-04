@@ -324,6 +324,10 @@
   font-size: 19px;
 }
 
+.coral.coral-preferences button {
+  text-transform: unset;
+}
+
 .coral.coral-myComment-viewConversationButton {
   height: 53px;
   font-weight: normal;
