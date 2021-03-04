@@ -316,6 +316,11 @@
   padding-top: 0;
 }
 
+.coral.coral-tabBarSecondary-tab.coral-tabBarMyProfile-myComments.coral-tabBarSecondary-tab-active {
+  border: none;
+  color: #151515;
+}
+
 @media (max-width: 639px) {
   .coral.coral-viewerBox {
     top: 53px;
