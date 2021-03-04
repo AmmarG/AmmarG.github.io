@@ -361,6 +361,5 @@ button.coral.coral-emailNotifications-updateButton:not(:disabled) {
 }
 
 :root {
-  --font-family-primary: 'Verdana';
-  --round-corners: 10px;
+  --palette-background-input-disabled: red;
 }
