@@ -312,7 +312,7 @@
   .coral.coral-viewerBox {
     top: 53px;
   }
-  .coral.coral-tabBar-tab.coral-tabBar-comments i {
+  .coral.coral-tabBar-tab.coral-tabBar-comments div i {
     font-size: 0;
     background: url("icons/icon-comment.svg") center no-repeat;
   }
