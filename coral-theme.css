@@ -77,6 +77,12 @@
   display: flex;
 }
 
+@media (max-width: 500px) {
+  .coral.coral-viewerBox {
+    top: 53px;
+  }
+}
+
 .coral.coral-viewerBox div {
   padding-left: 2px;
   font-size: 22px;
@@ -152,7 +158,6 @@
 .coral.coral-sortMenu .coral.coral-sortMenu {
   font-family: "alarabiyaBold";
   font-size: 22px;
-  width: 50%;
 }
 .coral.coral-sortMenu .coral.coral-sortMenu select {
   border: none;
