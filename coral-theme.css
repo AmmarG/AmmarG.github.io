@@ -324,8 +324,8 @@
 }
 
 .coral.coral-myProfile * {
-  xfont-family: "alarabiyaLight";
-  xfont-size: 23px;
+  font-family: "alarabiyaLight";
+  font-size: 23px;
 }
 
 @media (max-width: 639px) {
