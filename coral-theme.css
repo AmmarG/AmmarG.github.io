@@ -321,6 +321,7 @@
 
 .coral.coral-preferences select.coral-selectField i {
   font-family: 'Material Icons' !important;
+  font-size: 0;
 }
 
 .coral.coral-myComment-viewConversationButton {
