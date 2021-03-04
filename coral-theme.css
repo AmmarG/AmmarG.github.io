@@ -320,7 +320,7 @@
 }
 
 .coral.coral-preferences .coral-selectField span i {
-  font-family: 'Material Icons';
+  font-family: 'Material Icons' !important;
 }
 
 .coral.coral-myComment-viewConversationButton {
