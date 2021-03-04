@@ -77,12 +77,6 @@
   display: flex;
 }
 
-@media (max-width: 500px) {
-  .coral.coral-viewerBox {
-    top: 53px;
-  }
-}
-
 .coral.coral-viewerBox div {
   padding-left: 2px;
   font-size: 22px;
@@ -312,4 +306,14 @@
 .coral.coral-tabBar-tab.coral-tabBar-comments.coral-tabBar-tab-active,
 .coral.coral-tabBar-tab.coral-tabBar-myProfile.coral-tabBar-tab-active {
   color: #151515;
+}
+
+@media (max-width: 500px) {
+  .coral.coral-viewerBox {
+    top: 53px;
+  }
+  .coral.coral-tabBar-tab.coral-tabBar-comments i {
+    font-size: 0;
+    background: url("icons/icon-comment.svg") center no-repeat;
+  }
 }
