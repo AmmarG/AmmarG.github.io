@@ -323,7 +323,7 @@
   padding-bottom: 8px;
 }
 
-.coral.coral-myProfile {
+.coral.coral-myProfile * {
   font-family: "alarabiyaLight";
   font-size: 23px;
 }
