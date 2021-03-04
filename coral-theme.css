@@ -328,7 +328,7 @@
   text-transform: unset;
 }
 
-.coral.coral-preferences fieldset label::before {
+.coral.coral-preferences fieldset input[value="true"] + label::before {
   background-color: #2b3347;
   border-color: #2b3347;
 }
