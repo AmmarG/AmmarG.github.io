@@ -319,7 +319,7 @@
   line-height: 120%;
 }
 
-.coral.coral-preferences .coral-selectField span i {
+.coral.coral-preferences select.coral-selectField i {
   font-family: 'Material Icons' !important;
 }
 
