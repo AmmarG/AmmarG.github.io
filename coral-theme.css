@@ -313,7 +313,7 @@
 .coral.coral-myProfile .coral.coral-myComment-content,
 .coral.coral-myProfile button time span,
 .coral.coral-myProfile .coral.coral-myComment-viewConversationButton span,
-.coral.coral-preferences * {
+.coral.coral-preferences {
   font-family: "alarabiyaLight";
   font-size: 23px;
   line-height: 120%;
