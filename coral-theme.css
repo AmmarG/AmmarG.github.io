@@ -306,7 +306,11 @@
   padding-bottom: 8px;
 }
 
-.coral.coral-myProfile * {
+.coral.coral-myProfile .coral.coral-tabBarSecondary.coral-tabBarMyProfile,
+.coral.coral-myProfile .coral.coral-myComment-story,
+.coral.coral-myProfile .coral.coral-myComment-conten,
+.coral.coral-myProfile button,
+.coral.coral-myProfile .coral.coral-myComment-viewConversationButton span {
   font-family: "alarabiyaLight";
   font-size: 23px;
 }
