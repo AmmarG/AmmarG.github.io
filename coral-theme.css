@@ -333,7 +333,7 @@
   border-color: #2b3347 !important;
 }
 
-.coral.coral-emailNotifications-update button:enabled {
+button.coral.coral-emailNotifications-updateButton:enabled {
   background-color: #2b3347 !important;
 }
 
