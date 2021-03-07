@@ -300,7 +300,7 @@
 }
 
 .coral-tabBarComments-allComments {
-  color: var(--palette-text-900);
+  color: var(--palette-text-900) !important;
 }
 
 
