@@ -34,7 +34,7 @@
 
 .coral.coral-viewerBox {
   position: absolute;
-  top: 10px;
+  top: 20px;
   right: 0;
   display: flex;
 }
@@ -269,6 +269,10 @@
 
 .coral.coral-tabBar-tab {
   font-family: var(--font-family-primary);
+}
+
+.coral.coral-tabBar-tab,
+.coral.coral-tabBarSecondary-tab.coral-tabBarSecondary-tab-active {
   color: var(--palette-grey-900);
 }
 
