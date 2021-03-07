@@ -316,3 +316,7 @@ button.coral.coral-emailNotifications-updateButton:not(:disabled) {
 .coral.coral-tabBarSecondary.coral-tabBarComments .coral.coral-counter {
   font-size: var(--font-size-4);
 }
+
+.coral.coral-username.coral-comment-username {
+  font-size: var(--font-size-2);
+}
