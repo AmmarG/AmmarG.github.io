@@ -54,7 +54,6 @@
   background: none;
   padding: 0 10px 0 0;
   margin: 0 10px 0 0;
-  font-family: "alarabiyaLight";
 }
 
 .coral.coral-tabBar li:last-child .coral.coral-tabBar-tab:last-child {
@@ -81,7 +80,6 @@
   padding-left: 2px;
   font-size: 22px;
   line-height: 100%;
-  font-family: "alarabiyaLight";
   font-weight: normal;
 }
 .coral.coral-viewerBox .coral-viewerBox-username,
@@ -97,7 +95,6 @@
 }
 
 .coral.coral-commentForm {
-  border-radius: 4px;
   border: solid 1px #e5e5e5;
 }
 
@@ -106,16 +103,13 @@
 }
 
 .coral.coral-rte-content {
-  font-family: "alarabiyaLight";
   font-size: 23px;
 }
 
 .coral.coral-createComment-submit {
-  border-radius: 4px;
   background-color: #2b3347 !important;
   text-transform: unset;
   border: none;
-  font-family: "alarabiyaLight";
   font-weight: normal;
   font-size: 23px;
   padding: 5px 10px;
@@ -146,7 +140,6 @@
 }
 
 .coral.coral-sortMenu label {
-  font-family: "alarabiyaLight";
   font-size: 22px;
 }
 
@@ -165,14 +158,12 @@
 }
 
 .coral.coral-timestamp.coral-comment-timestamp {
-  font-family: "alarabiyaLight";
   font-size: 18px;
   font-weight: normal;
   color: #c4c4c4;
 }
 
 .coral.coral-content.coral-comment-content {
-  font-family: "alarabiyaLight";
   font-size: 23px;
   font-weight: normal;
   line-height: 120%;
@@ -267,7 +258,6 @@
 .coral-createReplyComment-replyTo {
   background-color: #2b3347;
   border: none;
-  border-radius: 4px 4px 0 0;
 }
 
 .coral.coral-comment [data-testid="report-comment-form"],
@@ -276,8 +266,6 @@
 }
 
 .coral.coral-comment [data-testid="report-comment-form"] form * {
-  font-family: "alarabiyaLight";
-  border-radius: 4px;
   font-size: 20px;
 }
 
@@ -314,7 +302,6 @@
 .coral.coral-myProfile button time span,
 .coral.coral-myProfile .coral.coral-myComment-viewConversationButton span,
 .coral.coral-preferences * {
-  font-family: "alarabiyaLight";
   font-size: 23px;
   line-height: 120%;
 }
@@ -367,4 +354,11 @@ button.coral.coral-emailNotifications-updateButton:not(:disabled) {
     width: 25px;
     height: 25px;
   }
+}
+
+
+
+:root {
+  --font-family-primary: 'alarabiyaLight';
+  --round-corners: 4px;
 }
