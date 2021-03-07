@@ -312,6 +312,7 @@ button.coral.coral-emailNotifications-updateButton:not(:disabled) {
   font-family: var(--font-family-secondary);
 }
 
-.coral.coral-tabBarSecondary.coral-tabBarComments {
-  font-size: var(--font-size-3);
+.coral.coral-tabBarSecondary.coral-tabBarComments,
+.coral.coral-tabBarSecondary.coral-tabBarComments .coral.coral-counter {
+  font-size: var(--font-size-4);
 }
