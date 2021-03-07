@@ -185,6 +185,10 @@
   min-height: 50px;
 }
 
+.coral.coral-tabBar {
+  padding: 15px 0;
+}
+
 @media (max-width: 639px) {
   .coral.coral-viewerBox {
     top: 53px;
