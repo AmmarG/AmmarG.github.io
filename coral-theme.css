@@ -241,11 +241,11 @@
 
   /** Palette Text **/
   --palette-text-000: #FFFFFF;
-  --palette-text-100: #65696B;
-  --palette-text-500: #353F44;
+  --palette-text-100: #7F7F7F;
+  --palette-text-500: #383838;
   --palette-text-900: #151515;
-  --palette-text-placeholder: #9FA4A6;
-  --palette-text-input-disabled: #9FA4A6;
+  --palette-text-placeholder: #A1A1A1;
+  --palette-text-input-disabled: #A1A1A1;
 
   /** Palette Background **/
   --palette-background-body: #FFFFFF;
@@ -264,14 +264,6 @@
 
 
 
-.coral.coral-tabBar {
-  border-color: var(--palette-divider) !important;
-}
-
-.coral.coral-tabBar-tab {
-  //font-family: var(--font-family-primary);
-  border-color: var(--palette-divider) !important;
-}
 
 .coral.coral-tabBar-tab.coral-tabBar-tab-active,
 .coral.coral-tabBarSecondary-tab.coral-tabBarSecondary-tab-active,
@@ -292,99 +284,4 @@
 
 .coral.coral-createComment-submit {
   font-size: var(--font-size-3);
-}
-
-.coral.coral-content.coral-comment-content a,
-.coral.coral-counter span {
-  color: var(--palette-primary-900);
-}
-
-.coral-tabBarComments-allComments,
-.coral.coral-tabBar-tab.coral-tabBar-comments.coral-tabBar-tab-active,
-.coral.coral-tabBar-tab.coral-tabBar-myProfile.coral-tabBar-tab-active {
-  color: var(--palette-text-900) !important;
-}
-
-
-
-
-
-
-
-
-
-.coral.coral-viewerBox .coral-viewerBox-username,
-.coral.coral-username.coral-comment-username {
-  xcolor: #2b3347;
-}
-
-.coral.coral-commentForm {
-  xborder: solid 1px #e5e5e5;
-}
-
-.coral.coral-rte-toolbar {
-  xbackground-color: rgba(229, 229, 229, 0.2) !important;
-}
-
-.coral.coral-createComment-submit:disabled {
-  xbackground-color: #FFF !important;
-  xcolor: #c4c4c4 !important;
-  xborder: solid 1px #e5e5e5 !important;
-}
-
-.coral.coral-timestamp.coral-comment-timestamp {
-  xcolor: #c4c4c4;
-}
-
-.coral.coral-reportButton.coral-comment-reportButton[aria-pressed="true"] {
-  xbackground-color: #2b3347;
-}
-
-.coral-reactedButton.coral-comment-reactedButton span {
-  xcolor: #151515;
-}
-
-.coral.coral-indent-1,
-.coral.coral-indent-2,
-.coral.coral-indent-3,
-.coral.coral-indent-4,
-.coral.coral-indent-5,
-.coral.coral-indent-6,
-.coral.coral-indent-7,
-.coral.coral-indent-8,
-.coral.coral-indent-9,
-.coral.coral-indent-10 {
-  xbackground-color: rgba(229, 229, 229, 0.2);
-}
-
-.coral-createReplyComment-replyTo {
-  xbackground-color: #2b3347;
-}
-
-.coral.coral-tabBarSecondary-tab.coral-tabBarMyProfile-myComments.coral-tabBarSecondary-tab-active,
-.coral.coral-tabBarSecondary-tab.coral-tabBarMyProfile-preferences.coral-tabBarSecondary-tab-active {
-  xcolor: #151515;
-}
-
-.coral.coral-preferences fieldset input[value="true"] + label::before {
-  xbackground-color: #2b3347 !important;
-  xborder-color: #2b3347 !important;
-}
-
-button.coral.coral-emailNotifications-updateButton:not(:disabled) {
-  xbackground-color: #2b3347;
-  xborder-color: #2b3347;
-}
-
-.coral.coral-comment-actionBar {
-  xborder-top: solid 1px #e5e5e5;
-}
-
-.coral.coral-createComment-signIn {
-  xbackground: #2b3347 !important;
-  xborder-color: #2b3347 !important;
-}
-
-.coral.coral-streamFooter * {
-  xcolor: #2b3347;
 }
