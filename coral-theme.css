@@ -186,7 +186,7 @@
 }
 
 .coral.coral-tabBar {
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 @media (max-width: 639px) {
@@ -288,4 +288,8 @@
 
 .coral.coral-createComment-submit {
   font-size: var(--font-size-3);
+}
+
+.coral.coral-tabBar {
+  border-color: var(--palette-divider);
 }
