@@ -48,7 +48,6 @@
 }
 
 .coral.coral-tabBar-tab {
-  font-size: 23px;
   border: solid 1px #e5e5e5;
   border-width: 0 1px 0 0;
   background: none;
@@ -78,7 +77,6 @@
 
 .coral.coral-viewerBox div {
   padding-left: 2px;
-  font-size: 22px;
   line-height: 100%;
   font-weight: normal;
 }
@@ -86,7 +84,6 @@
 .coral.coral-username.coral-comment-username {
   font-family: "alarabiyaBold";
   font-weight: bold;
-  font-size: 23px;
   color: #2b3347;
 }
 
@@ -102,16 +99,10 @@
   background-color: rgba(229, 229, 229, 0.2) !important;
 }
 
-.coral.coral-rte-content {
-  font-size: 23px;
-}
-
 .coral.coral-createComment-submit {
   background-color: #2b3347 !important;
   text-transform: unset;
   border: none;
-  font-weight: normal;
-  font-size: 23px;
   padding: 5px 10px;
   width: 100%;
   margin-top: 16px !important;
@@ -127,25 +118,18 @@
   color: #151515 !important;
   border: none !important;
   font-family: "alarabiyaBold";
-  font-size: 24px;
 }
 
 .coral.coral-counter {
   font-family: "alarabiyaBold";
-  font-size: 23px;
   background: none !important;
 }
 .coral.coral-counter span {
   color: #2b3347 !important;
 }
 
-.coral.coral-sortMenu label {
-  font-size: 22px;
-}
-
 .coral.coral-sortMenu .coral.coral-sortMenu {
   font-family: "alarabiyaBold";
-  font-size: 22px;
 }
 .coral.coral-sortMenu .coral.coral-sortMenu select {
   border: none;
@@ -154,17 +138,14 @@
 
 .coral.coral-username.coral-comment-username span {
   font-family: "alarabiyaBold";
-  font-size: 23px;
 }
 
 .coral.coral-timestamp.coral-comment-timestamp {
-  font-size: 18px;
   font-weight: normal;
   color: #c4c4c4;
 }
 
 .coral.coral-content.coral-comment-content {
-  font-size: 23px;
   font-weight: normal;
   line-height: 120%;
 }
@@ -218,7 +199,6 @@
 
 .coral.coral-createReplyComment-replyTo span {
   font-family: "alarabiyaBold";
-  font-size: 23px;
 }
 
 .coral.coral-createReplyComment-replyTo i {
@@ -265,10 +245,6 @@
   background: none;
 }
 
-.coral.coral-comment [data-testid="report-comment-form"] form * {
-  font-size: 20px;
-}
-
 .coral.coral-reportPopover-cancelButton,
 .coral.coral-reportPopover-submitButton {
   padding: 5px 10px;
@@ -302,7 +278,6 @@
 .coral.coral-myProfile button time span,
 .coral.coral-myProfile .coral.coral-myComment-viewConversationButton span,
 .coral.coral-preferences * {
-  font-size: 23px;
   line-height: 120%;
 }
 
