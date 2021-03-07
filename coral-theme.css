@@ -311,3 +311,7 @@ button.coral.coral-emailNotifications-updateButton:not(:disabled) {
 .coral.coral-sortMenu label {
   font-family: var(--font-family-secondary);
 }
+
+.coral.coral-tabBarSecondary.coral-tabBarComments {
+  font-size: var(--font-size-3);
+}
