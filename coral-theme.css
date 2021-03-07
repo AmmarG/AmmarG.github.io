@@ -265,12 +265,12 @@
 
 
 .coral.coral-tabBar {
-  border-color: var(--palette-divider);
+  border-color: var(--palette-divider) !important;
 }
 
 .coral.coral-tabBar-tab {
-  font-family: var(--font-family-primary);
-  border-color: var(--palette-divider);
+  //font-family: var(--font-family-primary);
+  border-color: var(--palette-divider) !important;
 }
 
 .coral.coral-tabBar-tab.coral-tabBar-tab-active,
