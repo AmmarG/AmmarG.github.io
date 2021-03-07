@@ -16,18 +16,7 @@
   font-weight: 300;
 }
 
-.coral-stream * {
-  outline: none;
-}
-
-.coral.coral-tabBar {
-  padding: 15px 0;
-  margin: 16px 0;
-  border-bottom: solid 1px #e5e5e5;
-}
-
 .coral.coral-tabBar-tab {
-  border: solid 1px #e5e5e5;
   border-width: 0 1px 0 0;
   background: none;
   padding: 0 10px 0 0;
@@ -48,7 +37,7 @@
 
 .coral.coral-viewerBox {
   position: absolute;
-  top: 36px;
+  top: 0;
   right: 0;
   display: flex;
 }
@@ -57,25 +46,12 @@
   padding-left: 3px;
   line-height: 80%;
 }
-.coral.coral-viewerBox .coral-viewerBox-username,
-.coral.coral-username.coral-comment-username {
-  color: #2b3347;
-}
 
 .coral.coral-createComment {
   margin-top: -20px;
 }
 
-.coral.coral-commentForm {
-  border: solid 1px #e5e5e5;
-}
-
-.coral.coral-rte-toolbar {
-  background-color: rgba(229, 229, 229, 0.2) !important;
-}
-
 .coral.coral-createComment-submit {
-  background-color: #2b3347 !important;
   text-transform: unset;
   border: none;
   padding: 5px 10px;
@@ -83,31 +59,17 @@
   margin-top: 16px !important;
 }
 
-.coral.coral-createComment-submit:disabled {
-  background-color: #FFF !important;
-  color: #c4c4c4 !important;
-  border: solid 1px #e5e5e5 !important;
-}
-
 .coral-tabBarComments-allComments {
-  color: #151515 !important;
   border: none !important;
 }
 
 .coral.coral-counter {
   background: none !important;
 }
-.coral.coral-counter span {
-  color: #2b3347 !important;
-}
 
 .coral.coral-sortMenu .coral.coral-sortMenu select {
   border: none;
   padding: 0 10px 0 0;
-}
-
-.coral.coral-timestamp.coral-comment-timestamp {
-  color: #c4c4c4;
 }
 
 .coral.coral-reactButton.coral-comment-reactButton i {
@@ -149,12 +111,7 @@
 }
 
 .coral.coral-reportButton.coral-comment-reportButton[aria-pressed="true"] {
-  background-color: #2b3347;
   border: none;
-}
-
-.coral-reactedButton.coral-comment-reactedButton span {
-  color: #151515;
 }
 
 .coral.coral-createReplyComment-replyTo i {
@@ -182,13 +139,11 @@
 .coral.coral-indent-8,
 .coral.coral-indent-9,
 .coral.coral-indent-10 {
-  background-color: rgba(229, 229, 229, 0.2);
   padding: 0;
   margin-left: 0;
 }
 
 .coral-createReplyComment-replyTo {
-  background-color: #2b3347;
   border: none;
 }
 
@@ -203,11 +158,6 @@
   text-transform: unset;
 }
 
-.coral.coral-tabBar-tab.coral-tabBar-comments.coral-tabBar-tab-active,
-.coral.coral-tabBar-tab.coral-tabBar-myProfile.coral-tabBar-tab-active {
-  color: #151515;
-}
-
 .coral.coral-comment-topBar {
   padding-top: 10px;
 }
@@ -219,70 +169,23 @@
 .coral.coral-tabBarSecondary-tab.coral-tabBarMyProfile-myComments.coral-tabBarSecondary-tab-active,
 .coral.coral-tabBarSecondary-tab.coral-tabBarMyProfile-preferences.coral-tabBarSecondary-tab-active {
   border: none;
-  color: #151515;
   padding-bottom: 8px;
-}
-
-.coral.coral-myProfile .coral.coral-tabBarSecondary.coral-tabBarMyProfile *,
-.coral.coral-myProfile .coral.coral-myComment-commentOn,
-.coral.coral-myProfile .coral.coral-myComment-story,
-.coral.coral-myProfile .coral.coral-myComment-content,
-.coral.coral-myProfile button time span,
-.coral.coral-myProfile .coral.coral-myComment-viewConversationButton span,
-.coral.coral-preferences * {
-  line-height: 120%;
-}
-
-.coral.coral-preferences i {
-  font-family: 'Material Icons';
-  font-size: 19px;
 }
 
 .coral.coral-preferences button {
   text-transform: unset;
 }
 
-.coral.coral-preferences fieldset input[value="true"] + label::before {
-  background-color: #2b3347 !important;
-  border-color: #2b3347 !important;
-}
-
-button.coral.coral-emailNotifications-updateButton:not(:disabled) {
-  background-color: #2b3347;
-  border-color: #2b3347;
-}
-
 .coral.coral-myComment-viewConversationButton {
   height: 53px;
-}
-
-.coral.coral-comment-actionBar {
-  border-top: solid 1px #e5e5e5;
-}
-
-.coral.coral-createComment-signIn {
-  background: #2b3347 !important;
-  border-color: #2b3347 !important;
-}
-
-.coral.coral-myProfile {
-  min-height: 200px;
 }
 
 .coral.coral-content.coral-comment-content {
   line-height: 120%;
 }
 
-.coral.coral-content.coral-comment-content a {
-  color: #2b3347;
-}
-
 .coral.coral-streamFooter {
   min-height: 50px;
-}
-
-.coral.coral-streamFooter * {
-  color: #2b3347;
 }
 
 @media (max-width: 639px) {
@@ -337,4 +240,109 @@ button.coral.coral-emailNotifications-updateButton:not(:disabled) {
 
 .coral.coral-createComment-submit {
   font-size: var(--font-size-3);
+}
+
+
+
+
+
+
+
+
+
+.coral.coral-viewerBox .coral-viewerBox-username,
+.coral.coral-username.coral-comment-username {
+  color: #2b3347;
+}
+
+.coral.coral-commentForm {
+  border: solid 1px #e5e5e5;
+}
+
+.coral.coral-rte-toolbar {
+  background-color: rgba(229, 229, 229, 0.2) !important;
+}
+
+.coral.coral-createComment-submit:disabled {
+  background-color: #FFF !important;
+  color: #c4c4c4 !important;
+  border: solid 1px #e5e5e5 !important;
+}
+
+.coral-tabBarComments-allComments {
+  color: #151515 !important;
+}
+
+.coral.coral-counter span {
+  color: #2b3347 !important;
+}
+
+.coral.coral-timestamp.coral-comment-timestamp {
+  color: #c4c4c4;
+}
+
+.coral.coral-reportButton.coral-comment-reportButton[aria-pressed="true"] {
+  background-color: #2b3347;
+}
+
+.coral-reactedButton.coral-comment-reactedButton span {
+  color: #151515;
+}
+
+.coral.coral-indent-1,
+.coral.coral-indent-2,
+.coral.coral-indent-3,
+.coral.coral-indent-4,
+.coral.coral-indent-5,
+.coral.coral-indent-6,
+.coral.coral-indent-7,
+.coral.coral-indent-8,
+.coral.coral-indent-9,
+.coral.coral-indent-10 {
+  background-color: rgba(229, 229, 229, 0.2);
+}
+
+.coral-createReplyComment-replyTo {
+  background-color: #2b3347;
+}
+
+.coral.coral-tabBar-tab.coral-tabBar-comments.coral-tabBar-tab-active,
+.coral.coral-tabBar-tab.coral-tabBar-myProfile.coral-tabBar-tab-active {
+  color: #151515;
+}
+
+.coral.coral-tabBarSecondary-tab.coral-tabBarMyProfile-myComments.coral-tabBarSecondary-tab-active,
+.coral.coral-tabBarSecondary-tab.coral-tabBarMyProfile-preferences.coral-tabBarSecondary-tab-active {
+  color: #151515;
+}
+
+.coral.coral-preferences fieldset input[value="true"] + label::before {
+  background-color: #2b3347 !important;
+  border-color: #2b3347 !important;
+}
+
+button.coral.coral-emailNotifications-updateButton:not(:disabled) {
+  background-color: #2b3347;
+  border-color: #2b3347;
+}
+
+.coral.coral-comment-actionBar {
+  border-top: solid 1px #e5e5e5;
+}
+
+.coral.coral-createComment-signIn {
+  background: #2b3347 !important;
+  border-color: #2b3347 !important;
+}
+
+.coral.coral-content.coral-comment-content a {
+  color: #2b3347;
+}
+
+.coral.coral-streamFooter * {
+  color: #2b3347;
+}
+
+.coral.coral-tabBar-tab {
+  border: solid 1px #e5e5e5;
 }
