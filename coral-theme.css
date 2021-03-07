@@ -73,7 +73,8 @@
   font-family: var(--font-family-primary);
 }
 .coral.coral-tabBar-tab,
-.coral.coral-tabBarSecondary-tab.coral-tabBarSecondary-tab-active {
+.coral.coral-tabBarSecondary-tab.coral-tabBarSecondary-tab-active,
+.coral.coral-reactButton.coral-comment-reactButton[aria-pressed="true"] {
   color: var(--palette-grey-900);
 }
 .coral.coral-tabBar-tab.coral-tabBar-tab-active,
