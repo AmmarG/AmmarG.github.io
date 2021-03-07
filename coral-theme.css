@@ -215,7 +215,59 @@
 
   --round-corners: 4px;
   --font-size-icon-md: 1rem;
+
+
+
+
+
+  /** Palette Divider **/
+  --palette-divider: rgba(0, 0, 0, 0.12);
+
+  /** Palette Primary **/
+  --palette-primary-100: #caccd1;
+  --palette-primary-200: #caccd1;
+  --palette-primary-300: #caccd1;
+  --palette-primary-400: #caccd1;
+  --palette-primary-500: #aaadb5;
+  --palette-primary-600: #8b8f9a;
+  --palette-primary-700: #6a707e;
+  --palette-primary-800: #4b5162;
+  --palette-primary-900: #2b3347;
+
+  /** Palette Background **/
+  --palette-background-body: #FFFFFF;
+  --palette-background-popover: #FFFFFF;
+  --palette-background-tooltip: #65696B;
+  --palette-background-input: #FFFFFF;
+  --palette-background-input-disabled: #EFEFEF;
+
+  /** Palette Text **/
+  --palette-text-000: #FFFFFF;
+  --palette-text-100: #65696B;
+  --palette-text-500: #353F44;
+  --palette-text-900: #14171A;
+  --palette-text-placeholder: #9FA4A6;
+  --palette-text-input-disabled: #9FA4A6;
+
+  /** Palette Grey **/
+  --palette-grey-100: #F4F7F7;
+  --palette-grey-200: #EAEFF0;
+  --palette-grey-300: #CBD1D2;
+  --palette-grey-400: #9FA4A6;
+  --palette-grey-500: #65696B;
+  --palette-grey-600: #49545C;
+  --palette-grey-700: #32404D;
+  --palette-grey-800: #202E3E;
+  --palette-grey-900: #132033;
 }
+
+
+
+
+
+
+
+
 
 .coral.coral-tabBar-tab {
   font-family: var(--font-family-primary);
