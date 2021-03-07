@@ -299,6 +299,10 @@
   color: var(--palette-primary-900);
 }
 
+.coral-tabBarComments-allComments {
+  color: var(--palette-text-900);
+}
+
 
 
 
@@ -324,10 +328,6 @@
   xbackground-color: #FFF !important;
   xcolor: #c4c4c4 !important;
   xborder: solid 1px #e5e5e5 !important;
-}
-
-.coral-tabBarComments-allComments {
-  xcolor: #151515 !important;
 }
 
 .coral.coral-timestamp.coral-comment-timestamp {
