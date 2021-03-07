@@ -288,7 +288,7 @@ button.coral.coral-emailNotifications-updateButton:not(:disabled) {
 
 
 :root {
-  font-size: 23px;
+  font-size: 22px;
   --font-family-primary: 'alarabiyaLight';
   --font-family-secondary: 'alarabiyaBold';
   --font-weight-primary-regular: normal;
