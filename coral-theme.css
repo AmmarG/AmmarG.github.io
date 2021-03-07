@@ -92,7 +92,7 @@
 }
 .coral.coral-createComment-submit {
   font-size: var(--font-size-3);
-  border-color: var(--palette-grey-300) !important;
+  border-color: var(--palette-grey-200) !important;
   background-color: var(--palette-grey-100) !important;
 }
 .coral.coral-tabBar,
@@ -143,7 +143,7 @@
   text-transform: unset;
   padding: 5px 10px;
   width: 100%;
-  margin-top: 0 !important;
+  margin-top: 5 !important;
 }
 .coral-tabBarComments-allComments {
   border: none !important;
