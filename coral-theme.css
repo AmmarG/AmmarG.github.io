@@ -269,7 +269,7 @@ button.coral.coral-emailNotifications-updateButton:not(:disabled) {
 }
 
 .coral.coral-content.coral-comment-content {
-  line-height: 100%;
+  line-height: 120%;
 }
 
 @media (max-width: 639px) {
