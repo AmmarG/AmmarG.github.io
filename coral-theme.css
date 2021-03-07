@@ -53,6 +53,10 @@
   display: flex;
 }
 
+.coral.coral-viewerBox .coral-viewerBox-username {
+  padding-left: 2px;
+  line-height: 80%;
+}
 .coral.coral-viewerBox .coral-viewerBox-username,
 .coral.coral-username.coral-comment-username {
   color: #2b3347;
