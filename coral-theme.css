@@ -310,6 +310,7 @@ button.coral.coral-emailNotifications-updateButton:not(:disabled) {
   --font-weight-secondary-bold: normal;
 
   --round-corners: 4px;
+  --font-size-icon-md: 1rem;
 }
 
 .coral.coral-tabBar-tab {
