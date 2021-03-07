@@ -267,7 +267,9 @@
 
 
 
-
+.coral.coral-tabBar-tab {
+  font-family: var(--font-family-primary);
+}
 
 .coral.coral-tabBar-tab.coral-tabBar-tab-active,
 .coral.coral-tabBarSecondary-tab.coral-tabBarSecondary-tab-active,
@@ -290,6 +292,7 @@
   font-size: var(--font-size-3);
 }
 
-.coral.coral-tabBar {
-  border-color: var(--palette-divider);
+.coral.coral-tabBar,
+.coral.coral-tabBar-tab {
+  border-color: var(--palette-divider) !important;
 }
