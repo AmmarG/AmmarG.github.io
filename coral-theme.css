@@ -295,8 +295,8 @@
 
 .coral.coral-createComment-submit {
   font-size: var(--font-size-3);
-  border-color: var(--palette-grey-300);
-  background-color: var(--palette-grey-100);
+  border-color: var(--palette-grey-300) !important;
+  background-color: var(--palette-grey-100) !important;
 }
 
 .coral.coral-tabBar,
