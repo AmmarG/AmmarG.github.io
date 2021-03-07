@@ -35,7 +35,8 @@
   font-family: var(--font-family-primary);
 }
 
-.coral.coral-tabBar-tab.coral-tabBar-tab-active {
+.coral.coral-tabBar-tab.coral-tabBar-tab-active,
+.coral.coral-tabBarSecondary-tab.coral-tabBarSecondary-tab-active {
   font-family: var(--font-family-secondary);
 }
 
