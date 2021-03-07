@@ -103,11 +103,7 @@
 
 .coral.coral-sortMenu .coral.coral-sortMenu select {
   border: none;
-  padding: 0;
-}
-
-.coral.coral-sortMenu .coral.coral-sortMenu span i {
-  margin-left: 10px;
+  padding: 0 10px 0 0;
 }
 
 .coral.coral-timestamp.coral-comment-timestamp {
