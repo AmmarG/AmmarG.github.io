@@ -294,6 +294,11 @@
   font-size: var(--font-size-3);
 }
 
+.coral.coral-content.coral-comment-content a,
+.coral.coral-counter span {
+  color: var(--palette-primary-900);
+}
+
 
 
 
@@ -323,10 +328,6 @@
 
 .coral-tabBarComments-allComments {
   xcolor: #151515 !important;
-}
-
-.coral.coral-counter span {
-  xcolor: #2b3347 !important;
 }
 
 .coral.coral-timestamp.coral-comment-timestamp {
@@ -385,10 +386,6 @@ button.coral.coral-emailNotifications-updateButton:not(:disabled) {
 .coral.coral-createComment-signIn {
   xbackground: #2b3347 !important;
   xborder-color: #2b3347 !important;
-}
-
-.coral.coral-content.coral-comment-content a {
-  xcolor: #2b3347;
 }
 
 .coral.coral-streamFooter * {
