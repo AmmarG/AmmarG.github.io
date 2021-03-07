@@ -347,6 +347,11 @@ button.coral.coral-emailNotifications-updateButton:not(:disabled) {
   border-top: solid 1px #e5e5e5;
 }
 
+.coral.coral-createComment-signIn {
+  background: #2b3347;
+  border-color: #2b3347;
+}
+
 @media (max-width: 639px) {
   .coral.coral-viewerBox {
     top: 53px;
