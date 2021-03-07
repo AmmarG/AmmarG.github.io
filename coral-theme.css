@@ -61,7 +61,6 @@
 
 .coral-stream .coral.coral-tabBar-tab.coral-tabBar-tab-active span {
   color: #151515;
-  font-family: "alarabiyaBold";
 }
 
 .coral.coral-tabBar-tab.coral-tabBar-tab-active::before {
@@ -82,8 +81,6 @@
 }
 .coral.coral-viewerBox .coral-viewerBox-username,
 .coral.coral-username.coral-comment-username {
-  font-family: "alarabiyaBold";
-  font-weight: bold;
   color: #2b3347;
 }
 
@@ -117,27 +114,18 @@
 .coral-tabBarComments-allComments {
   color: #151515 !important;
   border: none !important;
-  font-family: "alarabiyaBold";
 }
 
 .coral.coral-counter {
-  font-family: "alarabiyaBold";
   background: none !important;
 }
 .coral.coral-counter span {
   color: #2b3347 !important;
 }
 
-.coral.coral-sortMenu .coral.coral-sortMenu {
-  font-family: "alarabiyaBold";
-}
 .coral.coral-sortMenu .coral.coral-sortMenu select {
   border: none;
   font-weight: normal;
-}
-
-.coral.coral-username.coral-comment-username span {
-  font-family: "alarabiyaBold";
 }
 
 .coral.coral-timestamp.coral-comment-timestamp {
@@ -195,10 +183,6 @@
 
 .coral-reactedButton.coral-comment-reactedButton span {
   color: #151515;
-}
-
-.coral.coral-createReplyComment-replyTo span {
-  font-family: "alarabiyaBold";
 }
 
 .coral.coral-createReplyComment-replyTo i {
@@ -335,7 +319,7 @@ button.coral.coral-emailNotifications-updateButton:not(:disabled) {
 
 :root {
   --font-family-primary: 'alarabiyaLight';
-  --font-family-secondary: 'alarabiyaLight';
+  --font-family-secondary: 'alarabiyaBold';
   --font-weight-primary-regular: normal;
   --font-weight-primary-bold: bold;
   --font-weight-primary-semi-bold: bold;
