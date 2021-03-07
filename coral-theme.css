@@ -95,7 +95,8 @@
   border-color: var(--palette-grey-200) !important;
   background-color: var(--palette-grey-100) !important;
 }
-.coral.coral-createComment-submit {
+.coral.coral-createComment-submit,
+.coral.coral-reportButton.coral-comment-reportButton[aria-pressed="true"] {
   background-color: var(--palette-primary-900) !important;
   border-color: var(--palette-primary-900) !important;
 }
