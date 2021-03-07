@@ -9,32 +9,11 @@
   font-weight: 500;
 }
 @font-face {
-  font-family: "alarabiyaExtraBold";
-  src: url("https://23423423423jkhjkhjk.s3-us-west-2.amazonaws.com/coralcss/alarabiyaBoutros2020-ExtraBold.woff2") format("woff2"),
-  url("https://23423423423jkhjkhjk.s3-us-west-2.amazonaws.com/coralcss/alarabiyaBoutros2020-ExtraBold.woff2") format("woff");
-  font-style: normal;
-  font-weight: 700;
-}
-@font-face {
   font-family: "alarabiyaLight";
   src: url("https://23423423423jkhjkhjk.s3-us-west-2.amazonaws.com/coralcss/alarabiyaBoutros2020-Light.woff2") format("woff2"),
   url("https://23423423423jkhjkhjk.s3-us-west-2.amazonaws.com/coralcss/alarabiyaBoutros2020-Light.woff2") format("woff");
   font-style: normal;
   font-weight: 300;
-}
-@font-face {
-  font-family: "alarabiya";
-  src: url("https://23423423423jkhjkhjk.s3-us-west-2.amazonaws.com/coralcss/alarabiyaBoutros2020-Regular.woff2") format("woff2"),
-  url("https://23423423423jkhjkhjk.s3-us-west-2.amazonaws.com/coralcss/alarabiyaBoutros2020-Regular.woff2") format("woff");
-  font-style: normal;
-  font-weight: 400;
-}
-@font-face {
-  font-family: "alarabiyaUltraLight";
-  src: url("https://23423423423jkhjkhjk.s3-us-west-2.amazonaws.com/coralcss/alarabiyaBoutros2020-UltraLight.woff2") format("woff2"),
-  url("https://23423423423jkhjkhjk.s3-us-west-2.amazonaws.com/coralcss/alarabiyaBoutros2020-UltraLight.woff2") format("woff");
-  font-style: normal;
-  font-weight: 100;
 }
 
 .coral-stream * {
@@ -77,7 +56,6 @@
 .coral.coral-viewerBox div {
   padding-left: 2px;
   line-height: 100%;
-  font-weight: normal;
 }
 .coral.coral-viewerBox .coral-viewerBox-username,
 .coral.coral-username.coral-comment-username {
@@ -125,17 +103,10 @@
 
 .coral.coral-sortMenu .coral.coral-sortMenu select {
   border: none;
-  font-weight: normal;
 }
 
 .coral.coral-timestamp.coral-comment-timestamp {
-  font-weight: normal;
   color: #c4c4c4;
-}
-
-.coral.coral-content.coral-comment-content {
-  font-weight: normal;
-  line-height: 120%;
 }
 
 .coral.coral-reactButton.coral-comment-reactButton i {
@@ -286,7 +257,6 @@ button.coral.coral-emailNotifications-updateButton:not(:disabled) {
 
 .coral.coral-myComment-viewConversationButton {
   height: 53px;
-  font-weight: normal;
 }
 
 .coral.coral-comment-actionBar {
