@@ -35,6 +35,7 @@
 }
 
 .coral.coral-tabBar li:last-child .coral.coral-tabBar-tab:last-child {
+  font-family: var(--font-family-primary);
   border: none;
 }
 
