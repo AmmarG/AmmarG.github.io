@@ -272,6 +272,10 @@ button.coral.coral-emailNotifications-updateButton:not(:disabled) {
   line-height: 120%;
 }
 
+.coral.coral-content.coral-comment-content a {
+  color: #2b3347;
+}
+
 @media (max-width: 639px) {
   .coral.coral-viewerBox {
     top: 53px;
