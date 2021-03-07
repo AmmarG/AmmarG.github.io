@@ -1,0 +1,366 @@
+/** Coral 6.8.1 **/
+
+
+@font-face {
+  font-family: "alarabiyaBold";
+  src: url("https://23423423423jkhjkhjk.s3-us-west-2.amazonaws.com/coralcss/alarabiyaBoutros2020-Bold.woff2") format("woff2"),
+  url("https://23423423423jkhjkhjk.s3-us-west-2.amazonaws.com/coralcss/alarabiyaBoutros2020-Bold.woff2") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "alarabiyaExtraBold";
+  src: url("https://23423423423jkhjkhjk.s3-us-west-2.amazonaws.com/coralcss/alarabiyaBoutros2020-ExtraBold.woff2") format("woff2"),
+  url("https://23423423423jkhjkhjk.s3-us-west-2.amazonaws.com/coralcss/alarabiyaBoutros2020-ExtraBold.woff2") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "alarabiyaLight";
+  src: url("https://23423423423jkhjkhjk.s3-us-west-2.amazonaws.com/coralcss/alarabiyaBoutros2020-Light.woff2") format("woff2"),
+  url("https://23423423423jkhjkhjk.s3-us-west-2.amazonaws.com/coralcss/alarabiyaBoutros2020-Light.woff2") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "alarabiya";
+  src: url("https://23423423423jkhjkhjk.s3-us-west-2.amazonaws.com/coralcss/alarabiyaBoutros2020-Regular.woff2") format("woff2"),
+  url("https://23423423423jkhjkhjk.s3-us-west-2.amazonaws.com/coralcss/alarabiyaBoutros2020-Regular.woff2") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "alarabiyaUltraLight";
+  src: url("https://23423423423jkhjkhjk.s3-us-west-2.amazonaws.com/coralcss/alarabiyaBoutros2020-UltraLight.woff2") format("woff2"),
+  url("https://23423423423jkhjkhjk.s3-us-west-2.amazonaws.com/coralcss/alarabiyaBoutros2020-UltraLight.woff2") format("woff");
+  font-style: normal;
+  font-weight: 100;
+}
+
+.coral-stream * {
+  outline: none;
+}
+
+.coral.coral-tabBar {
+  padding: 15px 0;
+  margin: 16px 0;
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.coral.coral-tabBar-tab {
+  font-size: 23px;
+  border: solid 1px #e5e5e5;
+  border-width: 0 1px 0 0;
+  background: none;
+  padding: 0 10px 0 0;
+  margin: 0 10px 0 0;
+  font-family: "alarabiyaLight";
+}
+
+.coral.coral-tabBar li:last-child .coral.coral-tabBar-tab:last-child {
+  border: none;
+}
+
+.coral-stream .coral.coral-tabBar-tab.coral-tabBar-tab-active span {
+  color: #151515;
+  font-family: "alarabiyaBold";
+}
+
+.coral.coral-tabBar-tab.coral-tabBar-tab-active::before {
+  display: none;
+}
+
+.coral.coral-viewerBox {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  display: flex;
+}
+
+.coral.coral-viewerBox div {
+  padding-left: 2px;
+  font-size: 22px;
+  line-height: 100%;
+  font-family: "alarabiyaLight";
+  font-weight: normal;
+}
+.coral.coral-viewerBox .coral-viewerBox-username,
+.coral.coral-username.coral-comment-username {
+  font-family: "alarabiyaBold";
+  font-weight: bold;
+  font-size: 23px;
+  color: #2b3347;
+}
+
+.coral.coral-createComment {
+  margin-top: -20px;
+}
+
+.coral.coral-commentForm {
+  border-radius: 4px;
+  border: solid 1px #e5e5e5;
+}
+
+.coral.coral-rte-toolbar {
+  background-color: rgba(229, 229, 229, 0.2) !important;
+}
+
+.coral.coral-rte-content {
+  font-family: "alarabiyaLight";
+  font-size: 23px;
+}
+
+.coral.coral-createComment-submit {
+  border-radius: 4px;
+  background-color: #2b3347 !important;
+  text-transform: unset;
+  border: none;
+  font-family: "alarabiyaLight";
+  font-weight: normal;
+  font-size: 23px;
+  padding: 5px 10px;
+  width: 100%;
+  margin-top: 16px !important;
+}
+
+.coral.coral-createComment-submit:disabled {
+  background-color: #FFF !important;
+  color: #c4c4c4 !important;
+  border: solid 1px #e5e5e5 !important;
+}
+
+.coral-tabBarComments-allComments {
+  color: #151515 !important;
+  border: none !important;
+  font-family: "alarabiyaBold";
+  font-size: 24px;
+}
+
+.coral.coral-counter {
+  font-family: "alarabiyaBold";
+  font-size: 23px;
+  background: none !important;
+}
+.coral.coral-counter span {
+  color: #2b3347 !important;
+}
+
+.coral.coral-sortMenu label {
+  font-family: "alarabiyaLight";
+  font-size: 22px;
+}
+
+.coral.coral-sortMenu .coral.coral-sortMenu {
+  font-family: "alarabiyaBold";
+  font-size: 22px;
+}
+.coral.coral-sortMenu .coral.coral-sortMenu select {
+  border: none;
+  font-weight: normal;
+}
+
+.coral.coral-username.coral-comment-username span {
+  font-family: "alarabiyaBold";
+  font-size: 23px;
+}
+
+.coral.coral-timestamp.coral-comment-timestamp {
+  font-family: "alarabiyaLight";
+  font-size: 18px;
+  font-weight: normal;
+  color: #c4c4c4;
+}
+
+.coral.coral-content.coral-comment-content {
+  font-family: "alarabiyaLight";
+  font-size: 23px;
+  font-weight: normal;
+  line-height: 120%;
+}
+
+.coral.coral-reactButton.coral-comment-reactButton i {
+  background: url("icons/icon-like.svg") center no-repeat;
+  background-size: contain;
+  font-size: 0;
+  width: 35px;
+  height: 35px;
+}
+
+.coral.coral-comment-replyButton i,
+.coral.coral-createReplyComment-replyTo i,
+.coral-comment-inReplyTo i {
+  background: url("icons/icon-reply.svg") center no-repeat;
+  background-size: contain;
+  font-size: 0;
+  width: 45px;
+  height: 45px;
+}
+
+.coral.coral-comment-shareButton i {
+  background: url("icons/icon-share.svg") center no-repeat;
+  background-size: contain;
+  font-size: 0;
+  width: 25px;
+  height: 25px;
+}
+
+.coral.coral-reportButton.coral-comment-reportButton i {
+  background: url("icons/icon-report.svg") center no-repeat;
+  background-size: contain;
+  font-size: 0;
+  width: 23px;
+  height: 23px;
+}
+
+.coral.coral-reportButton.coral-comment-reportButton[aria-pressed="true"] i {
+  filter: invert(1) contrast(1) !important;
+}
+
+.coral.coral-reportButton.coral-comment-reportButton[aria-pressed="true"] {
+  background-color: #2b3347;
+  border: none;
+}
+
+.coral-reactedButton.coral-comment-reactedButton span {
+  color: #151515;
+}
+
+.coral.coral-createReplyComment-replyTo span {
+  font-family: "alarabiyaBold";
+  font-size: 23px;
+}
+
+.coral.coral-createReplyComment-replyTo i {
+  filter: invert(1) contrast(3);
+  width: 35px;
+  height: 35px;
+}
+
+.coral-comment-inReplyTo i {
+  width: 35px;
+  height: 35px;
+}
+
+.coral.coral-allComments {
+  padding-top: 20px;
+}
+
+.coral.coral-indent {
+  border: none;
+}
+
+.coral.coral-indent-1,
+.coral.coral-indent-2,
+.coral.coral-indent-3,
+.coral.coral-indent-4,
+.coral.coral-indent-5,
+.coral.coral-indent-6,
+.coral.coral-indent-7,
+.coral.coral-indent-8,
+.coral.coral-indent-9,
+.coral.coral-indent-10 {
+  background-color: rgba(229, 229, 229, 0.2);
+  padding: 0;
+  margin-left: 0;
+}
+
+.coral-createReplyComment-replyTo {
+  background-color: #2b3347;
+  border: none;
+  border-radius: 4px 4px 0 0;
+}
+
+.coral.coral-comment [data-testid="report-comment-form"],
+.coral.coral-comment [data-testid="report-comment-form"] form {
+  background: none;
+}
+
+.coral.coral-comment [data-testid="report-comment-form"] form * {
+  font-family: "alarabiyaLight";
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.coral.coral-reportPopover-cancelButton,
+.coral.coral-reportPopover-submitButton {
+  padding: 5px 10px;
+  text-transform: unset;
+}
+
+.coral.coral-tabBar-tab.coral-tabBar-comments.coral-tabBar-tab-active,
+.coral.coral-tabBar-tab.coral-tabBar-myProfile.coral-tabBar-tab-active {
+  color: #151515;
+}
+
+.coral.coral-comment-topBar {
+  padding-top: 10px;
+}
+
+.coral.coral-comment-collapse-toggle .coral.coral-comment-topBar {
+  padding-top: 0;
+}
+
+.coral.coral-tabBarSecondary-tab.coral-tabBarMyProfile-myComments.coral-tabBarSecondary-tab-active,
+.coral.coral-tabBarSecondary-tab.coral-tabBarMyProfile-preferences.coral-tabBarSecondary-tab-active {
+  border: none;
+  color: #151515;
+  padding-bottom: 8px;
+}
+
+.coral.coral-myProfile .coral.coral-tabBarSecondary.coral-tabBarMyProfile *,
+.coral.coral-myProfile .coral.coral-myComment-commentOn,
+.coral.coral-myProfile .coral.coral-myComment-story,
+.coral.coral-myProfile .coral.coral-myComment-content,
+.coral.coral-myProfile button time span,
+.coral.coral-myProfile .coral.coral-myComment-viewConversationButton span,
+.coral.coral-preferences * {
+  font-family: "alarabiyaLight";
+  font-size: 23px;
+  line-height: 120%;
+}
+
+.coral.coral-preferences i {
+  font-family: 'Material Icons';
+  font-size: 19px;
+}
+
+.coral.coral-preferences button {
+  text-transform: unset;
+}
+
+.coral.coral-preferences fieldset input[value="true"] + label::before {
+  background-color: #2b3347 !important;
+  border-color: #2b3347 !important;
+}
+
+button.coral.coral-emailNotifications-updateButton:not(:disabled) {
+  background-color: #2b3347;
+  border-color: #2b3347;
+}
+
+.coral.coral-myComment-viewConversationButton {
+  height: 53px;
+  font-weight: normal;
+}
+
+.coral.coral-comment-actionBar {
+  border-top: solid 1px #e5e5e5;
+}
+
+.coral.coral-createComment-signIn {
+  background: #2b3347 !important;
+  border-color: #2b3347 !important;
+}
+
+@media (max-width: 639px) {
+  .coral.coral-viewerBox {
+    top: 53px;
+  }
+  .coral.coral-tabBar-tab.coral-tabBar-comments i {
+    font-size: 0;
+    background: url("icons/icon-comment.svg") center no-repeat;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+  }
+}
