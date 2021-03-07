@@ -348,8 +348,8 @@ button.coral.coral-emailNotifications-updateButton:not(:disabled) {
 }
 
 .coral.coral-createComment-signIn {
-  background: #2b3347;
-  border-color: #2b3347;
+  background: #2b3347 !important;
+  border-color: #2b3347 !important;
 }
 
 @media (max-width: 639px) {
