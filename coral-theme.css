@@ -276,6 +276,14 @@ button.coral.coral-emailNotifications-updateButton:not(:disabled) {
   color: #2b3347;
 }
 
+.coral.coral-streamFooter {
+  min-height: 50px;
+}
+
+.coral.coral-streamFooter * {
+  color: #2b3347;
+}
+
 @media (max-width: 639px) {
   .coral.coral-viewerBox {
     top: 53px;
