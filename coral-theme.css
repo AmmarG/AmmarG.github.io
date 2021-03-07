@@ -269,6 +269,7 @@
 
 .coral.coral-tabBar-tab {
   font-family: var(--font-family-primary);
+  color: var(--palette-grey-900);
 }
 
 .coral.coral-tabBar-tab.coral-tabBar-tab-active,
