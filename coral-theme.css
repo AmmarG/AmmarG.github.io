@@ -317,6 +317,6 @@ button.coral.coral-emailNotifications-updateButton:not(:disabled) {
   font-size: var(--font-size-4);
 }
 
-.coral.coral-username.coral-comment-username {
+.coral.coral-username.coral-comment-username span {
   font-size: var(--font-size-2);
 }
