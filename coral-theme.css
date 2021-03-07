@@ -296,7 +296,6 @@ button.coral.coral-emailNotifications-updateButton:not(:disabled) {
   --font-weight-primary-semi-bold: normal;
   --font-weight-secondary-regular: normal;
   --font-weight-secondary-bold: normal;
-  x--font-size-4: 1.625rem;
 
   --round-corners: 4px;
 }
