@@ -302,3 +302,7 @@
 .coral.coral-commentForm {
   border-color: var(--palette-divider) !important;
 }
+
+.coral.coral-tabBarSecondary.coral-tabBarComments .coral.coral-counter {
+  color: var(--palette-primary-900);
+}
