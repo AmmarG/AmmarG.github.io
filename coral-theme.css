@@ -352,6 +352,10 @@ button.coral.coral-emailNotifications-updateButton:not(:disabled) {
   border-color: #2b3347 !important;
 }
 
+.coral.coral-myProfile {
+  min-height: 200px;
+}
+
 @media (max-width: 639px) {
   .coral.coral-viewerBox {
     top: 53px;
