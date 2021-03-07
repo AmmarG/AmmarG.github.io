@@ -113,8 +113,8 @@
   background: url("icons/icon-like.svg") center no-repeat;
   background-size: contain;
   font-size: 0;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
 }
 
 .coral.coral-comment-replyButton i,
@@ -123,24 +123,24 @@
   background: url("icons/icon-reply.svg") center no-repeat;
   background-size: contain;
   font-size: 0;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
 }
 
 .coral.coral-comment-shareButton i {
   background: url("icons/icon-share.svg") center no-repeat;
   background-size: contain;
   font-size: 0;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 }
 
 .coral.coral-reportButton.coral-comment-reportButton i {
   background: url("icons/icon-report.svg") center no-repeat;
   background-size: contain;
   font-size: 0;
-  width: 23px;
-  height: 23px;
+  width: 20px;
+  height: 20px;
 }
 
 .coral.coral-reportButton.coral-comment-reportButton[aria-pressed="true"] i {
@@ -158,17 +158,13 @@
 
 .coral.coral-createReplyComment-replyTo i {
   filter: invert(1) contrast(3);
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
 }
 
 .coral-comment-inReplyTo i {
-  width: 35px;
-  height: 35px;
-}
-
-.coral.coral-allComments {
-  padding-top: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 .coral.coral-indent {
