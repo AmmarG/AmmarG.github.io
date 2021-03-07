@@ -305,6 +305,7 @@ button.coral.coral-emailNotifications-updateButton:not(:disabled) {
 .coral.coral-tabBar-tab.coral-tabBar-tab-active,
 .coral.coral-tabBarSecondary-tab.coral-tabBarSecondary-tab-active,
 .coral.coral-counter span,
-.coral-reactedButton.coral-comment-reactedButton[aria-pressed="true"] span {
+.coral-reactedButton.coral-comment-reactedButton[aria-pressed="true"] span,
+.coral.coral-sortMenu label {
   font-family: var(--font-family-secondary);
 }
