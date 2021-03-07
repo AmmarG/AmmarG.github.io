@@ -17,6 +17,7 @@
 }
 
 .coral.coral-tabBar-tab {
+  border: solid 1px;
   border-width: 0 1px 0 0;
   background: none;
   padding: 0 10px 0 0;
@@ -25,10 +26,6 @@
 
 .coral.coral-tabBar li:last-child .coral.coral-tabBar-tab:last-child {
   border: none;
-}
-
-.coral-stream .coral.coral-tabBar-tab.coral-tabBar-tab-active span {
-  color: #151515;
 }
 
 .coral.coral-tabBar-tab.coral-tabBar-tab-active::before {
@@ -267,10 +264,13 @@
 
 
 
-
+.coral.coral-tabBar {
+  border-color: var(--palette-divider);
+}
 
 .coral.coral-tabBar-tab {
   font-family: var(--font-family-primary);
+  border-color: var(--palette-divider);
 }
 
 .coral.coral-tabBar-tab.coral-tabBar-tab-active,
@@ -390,8 +390,4 @@ button.coral.coral-emailNotifications-updateButton:not(:disabled) {
 
 .coral.coral-streamFooter * {
   xcolor: #2b3347;
-}
-
-.coral.coral-tabBar-tab {
-  xborder: solid 1px #e5e5e5;
 }
