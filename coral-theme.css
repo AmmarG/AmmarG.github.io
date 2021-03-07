@@ -333,3 +333,7 @@ button.coral.coral-emailNotifications-updateButton:not(:disabled) {
 .coral.coral-username.coral-comment-username span {
   font-size: var(--font-size-3);
 }
+
+.coral.coral-createComment-submit {
+  font-size: var(--font-size-3);
+}
