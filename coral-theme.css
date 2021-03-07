@@ -299,7 +299,9 @@
   color: var(--palette-primary-900);
 }
 
-.coral-tabBarComments-allComments {
+.coral-tabBarComments-allComments,
+.coral.coral-tabBar-tab.coral-tabBar-comments.coral-tabBar-tab-active,
+.coral.coral-tabBar-tab.coral-tabBar-myProfile.coral-tabBar-tab-active {
   color: var(--palette-text-900) !important;
 }
 
@@ -357,11 +359,6 @@
 
 .coral-createReplyComment-replyTo {
   xbackground-color: #2b3347;
-}
-
-.coral.coral-tabBar-tab.coral-tabBar-comments.coral-tabBar-tab-active,
-.coral.coral-tabBar-tab.coral-tabBar-myProfile.coral-tabBar-tab-active {
-  xcolor: #151515;
 }
 
 .coral.coral-tabBarSecondary-tab.coral-tabBarMyProfile-myComments.coral-tabBarSecondary-tab-active,
