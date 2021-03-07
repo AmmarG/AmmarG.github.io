@@ -97,6 +97,7 @@
 }
 .coral.coral-createComment-submit {
   background-color: var(--palette-primary-900) !important;
+  border-color: var(--palette-primary-900) !important;
 }
 .coral.coral-tabBar,
 .coral.coral-tabBar-tab,
