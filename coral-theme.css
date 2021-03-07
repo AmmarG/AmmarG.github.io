@@ -304,41 +304,41 @@
 
 .coral.coral-viewerBox .coral-viewerBox-username,
 .coral.coral-username.coral-comment-username {
-  color: #2b3347;
+  xcolor: #2b3347;
 }
 
 .coral.coral-commentForm {
-  border: solid 1px #e5e5e5;
+  xborder: solid 1px #e5e5e5;
 }
 
 .coral.coral-rte-toolbar {
-  background-color: rgba(229, 229, 229, 0.2) !important;
+  xbackground-color: rgba(229, 229, 229, 0.2) !important;
 }
 
 .coral.coral-createComment-submit:disabled {
-  background-color: #FFF !important;
-  color: #c4c4c4 !important;
-  border: solid 1px #e5e5e5 !important;
+  xbackground-color: #FFF !important;
+  xcolor: #c4c4c4 !important;
+  xborder: solid 1px #e5e5e5 !important;
 }
 
 .coral-tabBarComments-allComments {
-  color: #151515 !important;
+  xcolor: #151515 !important;
 }
 
 .coral.coral-counter span {
-  color: #2b3347 !important;
+  xcolor: #2b3347 !important;
 }
 
 .coral.coral-timestamp.coral-comment-timestamp {
-  color: #c4c4c4;
+  xcolor: #c4c4c4;
 }
 
 .coral.coral-reportButton.coral-comment-reportButton[aria-pressed="true"] {
-  background-color: #2b3347;
+  xbackground-color: #2b3347;
 }
 
 .coral-reactedButton.coral-comment-reactedButton span {
-  color: #151515;
+  xcolor: #151515;
 }
 
 .coral.coral-indent-1,
@@ -351,50 +351,50 @@
 .coral.coral-indent-8,
 .coral.coral-indent-9,
 .coral.coral-indent-10 {
-  background-color: rgba(229, 229, 229, 0.2);
+  xbackground-color: rgba(229, 229, 229, 0.2);
 }
 
 .coral-createReplyComment-replyTo {
-  background-color: #2b3347;
+  xbackground-color: #2b3347;
 }
 
 .coral.coral-tabBar-tab.coral-tabBar-comments.coral-tabBar-tab-active,
 .coral.coral-tabBar-tab.coral-tabBar-myProfile.coral-tabBar-tab-active {
-  color: #151515;
+  xcolor: #151515;
 }
 
 .coral.coral-tabBarSecondary-tab.coral-tabBarMyProfile-myComments.coral-tabBarSecondary-tab-active,
 .coral.coral-tabBarSecondary-tab.coral-tabBarMyProfile-preferences.coral-tabBarSecondary-tab-active {
-  color: #151515;
+  xcolor: #151515;
 }
 
 .coral.coral-preferences fieldset input[value="true"] + label::before {
-  background-color: #2b3347 !important;
-  border-color: #2b3347 !important;
+  xbackground-color: #2b3347 !important;
+  xborder-color: #2b3347 !important;
 }
 
 button.coral.coral-emailNotifications-updateButton:not(:disabled) {
-  background-color: #2b3347;
-  border-color: #2b3347;
+  xbackground-color: #2b3347;
+  xborder-color: #2b3347;
 }
 
 .coral.coral-comment-actionBar {
-  border-top: solid 1px #e5e5e5;
+  xborder-top: solid 1px #e5e5e5;
 }
 
 .coral.coral-createComment-signIn {
-  background: #2b3347 !important;
-  border-color: #2b3347 !important;
+  xbackground: #2b3347 !important;
+  xborder-color: #2b3347 !important;
 }
 
 .coral.coral-content.coral-comment-content a {
-  color: #2b3347;
+  xcolor: #2b3347;
 }
 
 .coral.coral-streamFooter * {
-  color: #2b3347;
+  xcolor: #2b3347;
 }
 
 .coral.coral-tabBar-tab {
-  border: solid 1px #e5e5e5;
+  xborder: solid 1px #e5e5e5;
 }
