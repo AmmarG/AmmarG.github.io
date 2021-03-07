@@ -32,12 +32,6 @@
   background: none;
   padding: 0 10px 0 0;
   margin: 0 10px 0 0;
-  font-family: var(--font-family-primary);
-}
-
-.coral.coral-tabBar-tab.coral-tabBar-tab-active,
-.coral.coral-tabBarSecondary-tab.coral-tabBarSecondary-tab-active {
-  font-family: var(--font-family-secondary);
 }
 
 .coral.coral-tabBar li:last-child .coral.coral-tabBar-tab:last-child {
@@ -302,4 +296,14 @@ button.coral.coral-emailNotifications-updateButton:not(:disabled) {
   --font-weight-secondary-regular: normal;
   --font-weight-secondary-bold: normal;
   --round-corners: 4px;
+}
+
+.coral.coral-tabBar-tab {
+  font-family: var(--font-family-primary);
+}
+
+.coral.coral-tabBar-tab.coral-tabBar-tab-active,
+.coral.coral-tabBarSecondary-tab.coral-tabBarSecondary-tab-active,
+.coral.coral-counter span {
+  font-family: var(--font-family-secondary);
 }
