@@ -298,6 +298,7 @@
 }
 
 .coral.coral-tabBar,
-.coral.coral-tabBar-tab {
+.coral.coral-tabBar-tab,
+.coral.coral-commentForm {
   border-color: var(--palette-divider) !important;
 }
