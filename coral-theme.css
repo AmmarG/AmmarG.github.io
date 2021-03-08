@@ -131,6 +131,7 @@
 }
 .coral.coral-comment [data-testid="report-comment-form"] form textarea:focus {
   border: none;
+  outline: none;
 }
 .coral.coral-comment [data-testid="report-comment-form"] form textarea + div div {
   font-family: var(--font-family-primary);
