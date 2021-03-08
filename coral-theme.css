@@ -174,7 +174,8 @@
 .coral.coral-tabBar-tab.coral-tabBar-tab-active div {
   font-family: var(--font-family-secondary);
 }
-.coral.coral-streamFooter-link {
+.coral.coral-streamFooter-link,
+.coral.coral-myComment-viewConversationButton span {
   color: var(--palette-primary-900);
 }
 
