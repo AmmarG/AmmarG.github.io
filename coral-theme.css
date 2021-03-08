@@ -122,9 +122,9 @@
   border-color: var(--palette-primary-900);
 }
 .coral.coral-reportPopover-cancelButton:hover {
-  background-color: var(--palette-grey-300);
-  border-color: var(--palette-grey-300);
-  color: var(--palette-text-500);
+  background-color: var(--palette-grey-200);
+  border-color: var(--palette-grey-200);
+  color: var(--palette-text-100);
 }
 
 
