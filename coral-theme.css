@@ -197,7 +197,7 @@
 .coral.coral-ignoredComments-manageButton:hover {
   color: var(--palette-text-000) !important;
 }
-.coral.coral-ignoredCommenters + div {
+.coral.coral-ignoredCommenters > div:first-child {
   font-family: var(--font-family-secondary);
 }
 hr {
