@@ -175,7 +175,7 @@
   font-family: var(--font-family-secondary);
 }
 .coral.coral-streamFooter-link,
-.coral.coral-permalink-viewFullDiscussionButton,
+.coral.coral-permalink-viewFullDiscussionButton a,
 .coral.coral-myComment-viewConversationButton * {
   color: var(--palette-primary-900);
 }
