@@ -16,6 +16,7 @@
   font-weight: 300;
 }
 
+/**************************************/
 :root {
   font-size: 22px;
   --font-family-primary: 'alarabiyaLight';
@@ -68,7 +69,9 @@
   /** Palette Divider **/
   --palette-divider: #E5E5E5;
 }
+/**************************************/
 
+/**************************************/
 .coral.coral-tabBar-tab,
 .coral.coral-tabBar-tab.coral-tabBar-comments div,
 .coral.coral-tabBar-tab.coral-tabBar-myProfile div,
@@ -197,7 +200,9 @@ hr,
   color: var(--palette-grey-500);
   background-color: var(--palette-text-000);
 }
+/**************************************/
 
+/**************************************/
 .coral.coral-tabBar-tab {
   border: solid 1px;
   border-width: 0 1px 0 0;
@@ -354,6 +359,7 @@ hr,
   padding: 1px 5px;
   margin-left: 2px;
 }
+/**************************************/
 
 @media (max-width: 639px) {
   .coral.coral-viewerBox {
