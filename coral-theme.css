@@ -208,6 +208,10 @@
 hr {
   border-color: var(--palette-divider);
 }
+.coral.coral-myComment-reactions {
+  background-color: var(--palette-primary-900);
+  border-radius: var(--round-corners);
+}
 
 
 
