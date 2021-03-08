@@ -117,7 +117,7 @@
 .coral.coral-comment [data-testid="report-comment-form"] form li label::after {
   background: var(--palette-primary-900);
 }
-.coral.coral-reportPopover-submitButton {
+.coral.coral-reportPopover-submitButton:not(:disabled) {
   background-color: var(--palette-primary-900);
   border-color: var(--palette-primary-900);
 }
