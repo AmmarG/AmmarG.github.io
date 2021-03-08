@@ -128,7 +128,6 @@
 }
 .coral.coral-comment [data-testid="report-comment-form"] form textarea {
   border-color: var(--palette-divider);
-  outline: none;
 }
 .coral.coral-comment [data-testid="report-comment-form"] form textarea + div div {
   font-family: var(--font-family-primary);
@@ -300,6 +299,10 @@
 }
 .coral.coral-tabBar {
   padding: 10px 0;
+}
+.coral.coral-comment [data-testid="report-comment-form"] form textarea {
+  outline: none;
+  resize: none;
 }
 
 @media (max-width: 639px) {
