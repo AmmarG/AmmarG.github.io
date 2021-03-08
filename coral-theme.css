@@ -191,6 +191,9 @@
   background-color: var(--palette-primary-900) !important;
   border-color: var(--palette-primary-900) !important;
 }
+.coral.coral-ignoredComments-manageButton {
+  color: var(--palette-text-900);
+}
 .coral.coral-ignoredCommenters > div {
   font-family: var(--font-family-secondary);
 }
