@@ -111,9 +111,11 @@
 .coral.coral-tabBarSecondary.coral-tabBarComments .coral.coral-counter span {
   color: var(--palette-primary-900);
 }
-
 .coral.coral-comment [data-testid="report-comment-form"] form div > div {
   font-family: var(--font-family-secondary);
+}
+.coral.coral-comment [data-testid="report-comment-form"] form li label::after {
+  background: var(--palette-primary-900);
 }
 
 
