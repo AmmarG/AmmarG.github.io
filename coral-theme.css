@@ -140,6 +140,7 @@
   color: var(--palette-text-000);
   border-radius: var(--round-corners);
   font-family: var(--font-family-primary);
+  font-size: var(--font-size-2);
 }
 .coral.coral-indent-1,
 .coral.coral-indent-2,
