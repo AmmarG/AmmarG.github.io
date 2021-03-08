@@ -186,9 +186,14 @@
   font-family: var(--font-family-secondary);
 }
 .coral.coral-emailNotifications form input:checked + label::before,
-.coral.coral-emailNotifications-updateButton:not(:disabled)  {
+.coral.coral-emailNotifications-updateButton:not(:disabled),
+.coral.coral-ignoredComments-manageButton:hover {
   background-color: var(--palette-primary-900) !important;
   border-color: var(--palette-primary-900) !important;
+}
+
+.coral.coral-ignoredCommenters > div {
+  font-family: var(--font-family-secondary);
 }
 
 
