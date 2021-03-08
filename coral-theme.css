@@ -148,6 +148,7 @@
 .coral.coral-indent-9,
 .coral.coral-indent-10 {
   background-color: var(--palette-grey-100);
+  border-radius: var(--round-corners);
 }
 
 
@@ -260,6 +261,7 @@
 .coral.coral-indent-10 {
   padding: 0;
   margin-left: 0;
+  margin-left: 30px;
 }
 .coral-createReplyComment-replyTo {
   border: none;
