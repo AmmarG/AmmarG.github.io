@@ -182,7 +182,7 @@
 .coral.coral-comment-highlight {
   background-color: var(--palette-grey-100);
 }
-.coral.coral-emailNotifications form div + div  {
+.coral.coral-emailNotifications form div > div  {
   font-family: var(--font-family-secondary);
 }
 .coral.coral-emailNotifications form input:checked + label::before,
@@ -194,10 +194,10 @@
 .coral.coral-ignoredComments-manageButton {
   color: var(--palette-text-900) !important;
 }
-.coral.coral-ignoredComments-manageButton {
+.coral.coral-ignoredComments-manageButton:hover {
   color: var(--palette-text-000) !important;
 }
-.coral.coral-ignoredCommenters > div {
+.coral.coral-ignoredCommenters + div {
   font-family: var(--font-family-secondary);
 }
 hr {
