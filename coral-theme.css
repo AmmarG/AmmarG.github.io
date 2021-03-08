@@ -167,6 +167,10 @@
   border-color: var(--palette-grey-200);
   color: var(--palette-text-100);
 }
+.coral.coral-tabBar-tab.coral-tabBar-comments,
+.coral.coral-tabBar-tab.coral-tabBar-myProfile {
+  font-family: var(--font-family-primary);
+}
 
 
 
@@ -343,5 +347,8 @@
     background-size: contain;
     width: 25px;
     height: 25px;
+  }
+  .coral.coral-tabBar-tab.coral-tabBar-myProfile i {
+    font-size: var(--font-size-icon-md);
   }
 }
