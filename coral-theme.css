@@ -182,6 +182,9 @@
 .coral.coral-comment-highlight {
   background-color: var(--palette-grey-100);
 }
+.coral.coral-emailNotifications form div > div  {
+  font-family: var(--font-family-secondary);
+}
 
 
 
