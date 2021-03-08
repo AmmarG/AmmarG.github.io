@@ -92,7 +92,7 @@
   font-size: var(--font-size-3);
 }
 .coral.coral-createComment-submit:disabled {
-  font-size: var(--font-size-3);
+  font-size: var(--font-size-4);
   border-color: var(--palette-grey-200) !important;
   background-color: var(--palette-grey-100) !important;
 }
