@@ -133,6 +133,9 @@
 .coral.coral-comment [data-testid="report-comment-form"] form textarea + div div {
   font-family: var(--font-family-primary);
 }
+.coral.coral-content.coral-comment-content a {
+  color: var(--palette-primary-800);
+}
 
 
 
