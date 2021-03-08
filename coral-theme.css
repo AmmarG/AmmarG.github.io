@@ -178,6 +178,9 @@
 .coral.coral-myComment-viewConversationButton * {
   color: var(--palette-primary-900);
 }
+.coral.coral-comment-highlight {
+  background-color: var(--palette-grey-200);
+}
 
 
 
