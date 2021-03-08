@@ -175,7 +175,7 @@
   font-family: var(--font-family-secondary);
 }
 .coral.coral-streamFooter-link,
-.coral.coral-myComment-viewConversationButton span {
+.coral.coral-myComment-viewConversationButton * {
   color: var(--palette-primary-900);
 }
 
