@@ -69,7 +69,11 @@
   --palette-divider: #E5E5E5;
 }
 
-.coral.coral-tabBar-tab {
+.coral.coral-tabBar-tab,
+.coral.coral-tabBar-tab.coral-tabBar-comments div,
+.coral.coral-tabBar-tab.coral-tabBar-myProfile div,
+.coral.coral-comment [data-testid="report-comment-form"] form textarea + div div,
+.coral.coral-comment-inReplyToUsername {
   font-family: var(--font-family-primary);
 }
 .coral.coral-tabBar-tab,
@@ -81,66 +85,25 @@
 .coral.coral-tabBarSecondary-tab.coral-tabBarSecondary-tab-active,
 .coral.coral-counter span,
 .coral-reactedButton.coral-comment-reactedButton[aria-pressed="true"] span,
-.coral.coral-sortMenu label {
+.coral.coral-sortMenu label,
+.coral.coral-comment [data-testid="report-comment-form"] form div > div,
+.coral.coral-ignoredCommenters > div:first-child,
+.coral.coral-emailNotifications form div > div,
+.coral.coral-tabBar-tab.coral-tabBar-tab-active div {
   font-family: var(--font-family-secondary);
 }
 .coral.coral-tabBarSecondary.coral-tabBarComments,
-.coral.coral-tabBarSecondary.coral-tabBarComments .coral.coral-counter {
+.coral.coral-tabBarSecondary.coral-tabBarComments .coral.coral-counter,
+.coral.coral-createComment-submit {
   font-size: var(--font-size-4);
 }
 .coral.coral-username.coral-comment-username span {
   font-size: var(--font-size-3);
 }
-.coral.coral-createComment-submit {
-  font-size: var(--font-size-4);
-}
-.coral.coral-createComment-submit:disabled {
+.coral.coral-createComment-submit:disabled,
+.coral.coral-reportPopover-cancelButton:hover,
+.coral.coral-createReplyComment-cancel:hover {
   border-color: var(--palette-grey-200) !important;
-  background-color: var(--palette-grey-100) !important;
-}
-.coral.coral-createComment-submit,
-.coral.coral-reportButton.coral-comment-reportButton[aria-pressed="true"] {
-  background-color: var(--palette-primary-900) !important;
-  border-color: var(--palette-primary-900) !important;
-}
-.coral.coral-tabBar,
-.coral.coral-tabBar-tab,
-.coral.coral-commentForm {
-  border-color: var(--palette-divider) !important;
-}
-.coral.coral-tabBarSecondary.coral-tabBarComments .coral.coral-counter span {
-  color: var(--palette-primary-900);
-}
-.coral.coral-comment [data-testid="report-comment-form"] form div > div {
-  font-family: var(--font-family-secondary);
-}
-.coral.coral-comment [data-testid="report-comment-form"] form li label::after {
-  background: var(--palette-primary-900);
-}
-.coral.coral-reportPopover-submitButton:not(:disabled) {
-  background-color: var(--palette-primary-900);
-  border-color: var(--palette-primary-900);
-}
-.coral.coral-reportPopover-cancelButton:hover {
-  background-color: var(--palette-grey-200);
-  border-color: var(--palette-grey-200);
-  color: var(--palette-text-100);
-}
-.coral.coral-comment [data-testid="report-comment-form"] form textarea {
-  border-color: var(--palette-divider);
-}
-.coral.coral-comment [data-testid="report-comment-form"] form textarea + div div {
-  font-family: var(--font-family-primary);
-}
-.coral.coral-content.coral-comment-content a {
-  color: var(--palette-primary-800);
-}
-.coral.coral-comment-inReplyToUsername {
-  background: var(--palette-primary-900);
-  color: var(--palette-text-000);
-  border-radius: var(--round-corners);
-  font-family: var(--font-family-primary);
-  font-size: var(--font-size-2);
 }
 .coral.coral-indent-1,
 .coral.coral-indent-2,
@@ -151,77 +114,89 @@
 .coral.coral-indent-7,
 .coral.coral-indent-8,
 .coral.coral-indent-9,
-.coral.coral-indent-10 {
-  background-color: var(--palette-grey-100);
-  border-radius: var(--round-corners);
+.coral.coral-indent-10,
+.coral.coral-createComment-submit:disabled,
+.coral.coral-comment-highlight {
+  background-color: var(--palette-grey-100) !important;
 }
-.coral.coral-createReplyComment-replyTo {
-  background: var(--palette-primary-900);
+.coral.coral-createComment-submit,
+.coral.coral-reportButton.coral-comment-reportButton[aria-pressed="true"],
+.coral.coral-reportPopover-submitButton:not(:disabled),
+.coral.coral-createReplyComment-submit:not(:disabled),
+.coral.coral-emailNotifications form input:checked + label::before,
+.coral.coral-emailNotifications-updateButton:not(:disabled),
+.coral.coral-ignoredComments-manageButton:hover {
+  border-color: var(--palette-primary-900) !important;
 }
-.coral.coral-createReplyComment-submit:not(:disabled) {
-  background-color: var(--palette-primary-900);
-  border-color: var(--palette-primary-900);
+hr,
+.coral.coral-tabBar,
+.coral.coral-tabBar-tab,
+.coral.coral-commentForm,
+.coral.coral-comment [data-testid="report-comment-form"] form textarea {
+  border-color: var(--palette-divider) !important;
 }
-.coral.coral-createReplyComment-cancel:hover {
-  background-color: var(--palette-grey-200);
-  border-color: var(--palette-grey-200);
-  color: var(--palette-text-100);
-}
-.coral.coral-tabBar-tab.coral-tabBar-comments div,
-.coral.coral-tabBar-tab.coral-tabBar-myProfile div {
-  font-family: var(--font-family-primary);
-}
-.coral.coral-tabBar-tab.coral-tabBar-tab-active div {
-  font-family: var(--font-family-secondary);
-}
+.coral.coral-tabBarSecondary.coral-tabBarComments .coral.coral-counter span,
 .coral.coral-streamFooter-link,
 .coral.coral-permalink-viewFullDiscussionButton:not(:disabled),
 .coral.coral-myComment-viewConversationButton * {
   color: var(--palette-primary-900);
 }
-.coral.coral-comment-highlight {
-  background-color: var(--palette-grey-100);
+.coral.coral-createReplyComment-replyTo,
+.coral.coral-comment [data-testid="report-comment-form"] form li label::after,
+.coral.coral-comment-inReplyToUsername {
+  background: var(--palette-primary-900);
 }
-.coral.coral-emailNotifications form div > div  {
-  font-family: var(--font-family-secondary);
+.coral.coral-reportPopover-cancelButton:hover,
+.coral.coral-createReplyComment-cancel:hover {
+  background-color: var(--palette-grey-200);
+  color: var(--palette-text-100);
 }
+.coral.coral-content.coral-comment-content a {
+  color: var(--palette-primary-800);
+}
+.coral.coral-indent-1,
+.coral.coral-indent-2,
+.coral.coral-indent-3,
+.coral.coral-indent-4,
+.coral.coral-indent-5,
+.coral.coral-indent-6,
+.coral.coral-indent-7,
+.coral.coral-indent-8,
+.coral.coral-indent-9,
+.coral.coral-indent-10,
+.coral.coral-comment-inReplyToUsername,
+.coral.coral-myComment-reactions,
+.coral.coral-myComment-reactions:hover {
+  border-radius: var(--round-corners);
+}
+.coral.coral-comment-inReplyToUsername,
+.coral.coral-myComment-reactions,
+.coral.coral-myComment-reactions:hover,
+.coral.coral-ignoredComments-manageButton:hover {
+  color: var(--palette-text-000) !important;
+}
+.coral.coral-myComment-reactions,
+.coral.coral-myComment-reactions:hover,
+.coral.coral-createComment-submit,
+.coral.coral-reportButton.coral-comment-reportButton[aria-pressed="true"],
+.coral.coral-reportPopover-submitButton:not(:disabled),
+.coral.coral-createReplyComment-submit:not(:disabled),
 .coral.coral-emailNotifications form input:checked + label::before,
 .coral.coral-emailNotifications-updateButton:not(:disabled),
 .coral.coral-ignoredComments-manageButton:hover {
   background-color: var(--palette-primary-900) !important;
-  border-color: var(--palette-primary-900) !important;
+}
+.coral.coral-comment-inReplyToUsername {
+  font-size: var(--font-size-2);
 }
 .coral.coral-ignoredComments-manageButton {
   color: var(--palette-text-900) !important;
-}
-.coral.coral-ignoredComments-manageButton:hover {
-  color: var(--palette-text-000) !important;
 }
 .coral.coral-ignoredComments-manageButton:not(:disabled) {
   border-color: var(--palette-grey-500);
   color: var(--palette-grey-500);
   background-color: var(--palette-text-000);
 }
-.coral.coral-ignoredCommenters > div:first-child {
-  font-family: var(--font-family-secondary);
-}
-hr {
-  border-color: var(--palette-divider);
-}
-.coral.coral-myComment-reactions,
-.coral.coral-myComment-reactions:hover {
-  background-color: var(--palette-primary-900);
-  border-radius: var(--round-corners);
-  color: var(--palette-text-000);
-}
-
-
-
-
-
-
-
-
 
 .coral.coral-tabBar-tab {
   border: solid 1px;
