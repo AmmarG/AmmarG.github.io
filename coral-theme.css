@@ -191,9 +191,11 @@
   background-color: var(--palette-primary-900) !important;
   border-color: var(--palette-primary-900) !important;
 }
-
 .coral.coral-ignoredCommenters > div {
   font-family: var(--font-family-secondary);
+}
+hr {
+  border-color: var(--palette-divider);
 }
 
 
