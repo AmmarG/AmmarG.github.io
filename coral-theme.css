@@ -268,6 +268,18 @@
   margin-left: 0;
   margin-left: 30px;
 }
+.coral.coral-indent-1 .coral.coral-createReplyComment,
+.coral.coral-indent-2 .coral.coral-createReplyComment,
+.coral.coral-indent-3 .coral.coral-createReplyComment,
+.coral.coral-indent-4 .coral.coral-createReplyComment,
+.coral.coral-indent-5 .coral.coral-createReplyComment,
+.coral.coral-indent-6 .coral.coral-createReplyComment,
+.coral.coral-indent-7 .coral.coral-createReplyComment,
+.coral.coral-indent-8 .coral.coral-createReplyComment,
+.coral.coral-indent-9 .coral.coral-createReplyComment,
+.coral.coral-indent-10 .coral.coral-createReplyComment {
+  margin-left: 30px;
+}
 .coral-createReplyComment-replyTo {
   border: none;
 }
@@ -311,7 +323,7 @@
   resize: none;
 }
 .coral.coral-comment-inReplyToUsername {
-  padding: 0 5px;
+  padding: 1px 5px;
 }
 
 @media (max-width: 639px) {
