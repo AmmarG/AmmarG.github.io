@@ -185,7 +185,7 @@
 .coral.coral-emailNotifications form div > div  {
   font-family: var(--font-family-secondary);
 }
-.coral.coral-emailNotifications form label:checked::before  {
+.coral.coral-emailNotifications form input:checked label::before  {
   background-color: var(--palette-primary-900);
   border-color: var(--palette-primary-900);;
 }
