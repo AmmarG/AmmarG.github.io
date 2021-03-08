@@ -187,7 +187,7 @@
 }
 .coral.coral-emailNotifications form input:checked + label::before  {
   background-color: var(--palette-primary-900);
-  border-color: var(--palette-primary-900);;
+  border-color: var(--palette-primary-900);
 }
 
 
