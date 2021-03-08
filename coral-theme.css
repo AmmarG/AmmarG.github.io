@@ -211,6 +211,7 @@ hr {
 .coral.coral-myComment-reactions {
   background-color: var(--palette-primary-900);
   border-radius: var(--round-corners);
+  color: var(--palette-text-000);
 }
 
 
