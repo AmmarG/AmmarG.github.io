@@ -128,9 +128,6 @@
 }
 .coral.coral-comment [data-testid="report-comment-form"] form textarea {
   border-color: var(--palette-divider);
-}
-.coral.coral-comment [data-testid="report-comment-form"] form textarea:focus {
-  border: none;
   outline: none;
 }
 .coral.coral-comment [data-testid="report-comment-form"] form textarea + div div {
