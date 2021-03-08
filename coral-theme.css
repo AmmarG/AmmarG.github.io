@@ -197,6 +197,11 @@
 .coral.coral-ignoredComments-manageButton:hover {
   color: var(--palette-text-000) !important;
 }
+.coral.coral-ignoredComments-manageButton:not(:disabled) {
+  border-color: var(--palette-grey-500);
+  color: var(--palette-grey-500);
+  background-color: var(--palette-text-000);
+}
 .coral.coral-ignoredCommenters > div:first-child {
   font-family: var(--font-family-secondary);
 }
