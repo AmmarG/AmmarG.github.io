@@ -172,7 +172,7 @@
   font-family: var(--font-family-primary);
 }
 .coral.coral-tabBar-tab.coral-tabBar-tab-active {
-  xfont-family: var(--font-family-secondary);
+  font-family: var(--font-family-secondary);
 }
 
 
