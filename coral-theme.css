@@ -158,6 +158,10 @@
 .coral.coral-createReplyComment-replyTo {
   background: var(--palette-primary-900);
 }
+.coral.coral-createReplyComment-submit:not(:disabled) {
+  background-color: var(--palette-primary-900);
+  border-color: var(--palette-primary-900);
+}
 
 
 
