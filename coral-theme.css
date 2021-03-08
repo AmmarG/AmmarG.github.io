@@ -155,6 +155,9 @@
   background-color: var(--palette-grey-100);
   border-radius: var(--round-corners);
 }
+.coral.coral-createReplyComment-replyTo {
+  background: var(--palette-primary-900);
+}
 
 
 
@@ -278,6 +281,9 @@
 .coral.coral-comment [data-testid="report-comment-form"] form {
   background: none;
 }
+.coral.coral-comment [data-testid="report-comment-form"] form {
+  padding-left: 20px;
+}
 .coral.coral-reportPopover-cancelButton,
 .coral.coral-reportPopover-submitButton {
   padding: 5px 10px;
@@ -315,6 +321,7 @@
 }
 .coral.coral-comment-inReplyToUsername {
   padding: 1px 5px;
+  margin-left: 2px;
 }
 
 @media (max-width: 639px) {
