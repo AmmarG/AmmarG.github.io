@@ -185,7 +185,7 @@
 .coral.coral-emailNotifications form div > div  {
   font-family: var(--font-family-secondary);
 }
-.coral.coral-emailNotifications form div input label::before  {
+.coral.coral-emailNotifications form label::before  {
   color: var(--palette-primary-900);
 }
 
