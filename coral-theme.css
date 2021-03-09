@@ -377,7 +377,7 @@ hr,
   }
 }
 
-.night-theme:root {
+.night-theme {
     font-size: 22px;
     --font-family-primary: 'alarabiyaLight';
     --font-family-secondary: 'alarabiyaBold';
