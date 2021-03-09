@@ -39,7 +39,6 @@
   --palette-primary-700: #6a707e;
   --palette-primary-800: #4b5162;
   --palette-primary-900: #2b3347;
-  --palette-night-primary-900: red;
 
   /** Palette Grey **/
   --palette-grey-100: #F5F5F5;
@@ -378,8 +377,56 @@ hr,
   }
 }
 
-
-
-.night-theme .coral.coral-comment-inReplyToUsername {
-  background-color: var(--palette-night-primary-900) !important;
+.night-theme :root {
+    font-size: 22px;
+    --font-family-primary: 'alarabiyaLight';
+    --font-family-secondary: 'alarabiyaBold';
+    --font-weight-primary-regular: normal;
+    --font-weight-primary-bold: normal;
+    --font-weight-primary-semi-bold: normal;
+    --font-weight-secondary-regular: normal;
+    --font-weight-secondary-bold: normal;
+    --round-corners: 4px;
+    --font-size-icon-md: 1rem;
+  
+    /** Palette Primary **/
+    --palette-primary-100: red;
+    --palette-primary-200: red;
+    --palette-primary-300: red;
+    --palette-primary-400: red;
+    --palette-primary-500: red;
+    --palette-primary-600: red;
+    --palette-primary-700: red;
+    --palette-primary-800: red;
+    --palette-primary-900: red;
+  
+    /** Palette Grey **/
+    --palette-grey-100: #F5F5F5;
+    --palette-grey-200: #E5E5E5;
+    --palette-grey-300: #C4C4C4;
+    --palette-grey-400: #A1A1A1;
+    --palette-grey-500: #7F7F7F;
+    --palette-grey-600: #5B5B5B;
+    --palette-grey-700: #383838;
+    --palette-grey-800: #151515;
+    --palette-grey-900: #151515;
+  
+    /** Palette Text **/
+    --palette-text-000: #FFFFFF;
+    --palette-text-100: #7F7F7F;
+    --palette-text-500: #383838;
+    --palette-text-900: #151515;
+    --palette-text-placeholder: #A1A1A1;
+    --palette-text-input-disabled: #A1A1A1;
+  
+    /** Palette Background **/
+    --palette-background-body: #FFFFFF;
+    --palette-background-popover: #FFFFFF;
+    --palette-background-tooltip: rgba(#373c59, 0.8);
+    --palette-background-input: #FFFFFF;
+    --palette-background-input-disabled: rgba(#373c59, 0.8);
+  
+    /** Palette Divider **/
+    --palette-divider: #E5E5E5;
+  /**************************************/
 }
