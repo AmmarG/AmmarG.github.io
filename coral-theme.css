@@ -378,27 +378,6 @@ hr,
 }
 
 .night-theme {
-    font-size: 22px;
-    --font-family-primary: 'alarabiyaLight';
-    --font-family-secondary: 'alarabiyaBold';
-    --font-weight-primary-regular: normal;
-    --font-weight-primary-bold: normal;
-    --font-weight-primary-semi-bold: normal;
-    --font-weight-secondary-regular: normal;
-    --font-weight-secondary-bold: normal;
-    --round-corners: 4px;
-    --font-size-icon-md: 1rem;
-  
-    /** Palette Primary **/
-    --palette-primary-100: red;
-    --palette-primary-200: red;
-    --palette-primary-300: red;
-    --palette-primary-400: red;
-    --palette-primary-500: red;
-    --palette-primary-600: red;
-    --palette-primary-700: red;
-    --palette-primary-800: red;
-    --palette-primary-900: red;
   
     /** Palette Grey **/
     --palette-grey-100: #F5F5F5;
@@ -420,7 +399,7 @@ hr,
     --palette-text-input-disabled: #A1A1A1;
   
     /** Palette Background **/
-    --palette-background-body: #FFFFFF;
+    --palette-background-body: #2b3347;
     --palette-background-popover: #FFFFFF;
     --palette-background-tooltip: rgba(#373c59, 0.8);
     --palette-background-input: #FFFFFF;
@@ -428,5 +407,4 @@ hr,
   
     /** Palette Divider **/
     --palette-divider: #E5E5E5;
-  /**************************************/
 }
