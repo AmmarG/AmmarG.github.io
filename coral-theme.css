@@ -381,5 +381,5 @@ hr,
 
 
 .night-theme .coral.coral-comment-inReplyToUsername {
-  background-color: var(--palette-night-primary-900);
+  background-color: var(--palette-night-primary-900) !important;
 }
