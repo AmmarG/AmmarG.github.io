@@ -17,7 +17,7 @@
 }
 
 /**************************************/
-:root {
+.light-theme :root {
   font-size: 22px;
   --font-family-primary: 'alarabiyaLight';
   --font-family-secondary: 'alarabiyaBold';
