@@ -433,7 +433,8 @@ hr,
 .night-theme .coral.coral-comment-shareButton i,
 .night-theme .coral.coral-reportButton.coral-comment-reportButton i,
 .night-theme .coral.coral-createReplyComment-replyTo i,
-.night-theme .coral.coral-sortMenu i {
+.night-theme .coral.coral-sortMenu i,
+.night-theme .coral.coral-emailNotifications form span i {
   filter: invert(1) contrast(3);
 }
 
@@ -441,7 +442,8 @@ hr,
   filter: none;
 }
 
-.night-theme .coral.coral-username.coral-comment-username span {
+.night-theme .coral.coral-username.coral-comment-username span,
+.night-theme .coral.coral-emailNotifications form span i {
   color: var(--palette-text-000);
 }
 
@@ -449,12 +451,9 @@ hr,
   color: var(--palette-grey-900);
 }
 
-.night-theme .coral.coral-ignoredComments-manageButton {
-  color: var(--palette-primary-900) !important;
-}
-
+.night-theme .coral.coral-ignoredComments-manageButton,
 .night-theme .coral.coral-createComment-signIn {
-  color: var(--palette-primary-900);
+  color: var(--palette-primary-900) !important;
 }
 .night-theme .coral.coral-createComment-signIn:hover {
   background-color: var(--palette-grey-200);
