@@ -539,3 +539,6 @@ hr,
   background: var(--palette-grey-900);
   color: #151515;
 }
+.dark-theme .coral.coral-content.coral-comment-content a {
+  color: var(--palette-primary-700);
+}
