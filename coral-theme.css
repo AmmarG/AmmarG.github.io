@@ -378,6 +378,17 @@ hr,
 }
 
 .night-theme {
+
+    /** Palette Primary **/
+    --palette-primary-100: #caccd1;
+    --palette-primary-200: #caccd1;
+    --palette-primary-300: #caccd1;
+    --palette-primary-400: #caccd1;
+    --palette-primary-500: #aaadb5;
+    --palette-primary-600: #8b8f9a;
+    --palette-primary-700: #6a707e;
+    --palette-primary-800: #6a707e;
+    --palette-primary-900: #6a707e;
   
     /** Palette Grey **/
     --palette-grey-100: #4B5162;
