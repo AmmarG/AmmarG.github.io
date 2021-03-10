@@ -454,3 +454,11 @@ hr,
 .coral.coral-ignoredComments-manageButton {
   color: var(--palette-primary-900) !important;
 }
+
+.coral.coral-createComment-signIn:not(:disabled) {
+  color: var(--palette-primary-900);
+}
+.coral.coral-createComment-signIn:hover {
+  background-color: var(--palette-grey-100);
+  color: var(--palette-text-000);
+}
