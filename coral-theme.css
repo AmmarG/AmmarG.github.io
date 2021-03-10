@@ -428,6 +428,7 @@ hr,
 .coral.coral-reportButton.coral-comment-reportButton i,
 .coral.coral-createReplyComment-replyTo i,
 .coral.coral-sortMenu i,
+.coral.coral-emailNotifications form span i,
 .coral.coral-emailNotifications form select:disabled + i {
   filter: invert(1) contrast(3);
 }
@@ -442,4 +443,8 @@ hr,
 
 .coral.coral-emailNotifications form input:checked + label::after {
   color: var(--palette-grey-900);
+}
+
+.coral.coral-ignoredComments-manageButton {
+  color: var(--palette-primary-900) !important;
 }
