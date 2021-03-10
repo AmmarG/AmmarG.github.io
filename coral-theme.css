@@ -423,3 +423,7 @@ hr,
 .night-theme i {
   filter: invert(1) contrast(3);
 }
+
+.night-theme .coral.coral-streamFooter i {
+  filter: none;
+}
