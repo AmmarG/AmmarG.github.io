@@ -522,9 +522,12 @@ hr,
 }
 .dark-theme .coral.coral-emailNotifications form input:checked + label::after {
   color: var(--palette-grey-900);
-} 
-.dark-theme .coral.coral-ignoredComments-manageButton,
+}
 .dark-theme .coral.coral-createComment-signIn {
+  color: var(--palette-background-body) !important;
+}
+.dark-theme .coral.coral-ignoredComments-manageButton,
+.dark-theme .coral.coral-createComment-signIn:hover {
   color: var(--palette-primary-900) !important;
 }
 .dark-theme .coral.coral-createComment-signIn:hover {
