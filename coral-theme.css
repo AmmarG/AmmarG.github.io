@@ -16,7 +16,7 @@
   font-weight: 300;
 }
 
-/**************************************/
+/************************ Light Theme ************************/
 :root {
   font-size: 22px;
   --font-family-primary: 'alarabiyaLight';
@@ -69,9 +69,6 @@
   /** Palette Divider **/
   --palette-divider: #E5E5E5;
 }
-/**************************************/
-
-/**************************************/
 .coral.coral-tabBar-tab,
 .coral.coral-tabBar-tab.coral-tabBar-comments div,
 .coral.coral-tabBar-tab.coral-tabBar-myProfile div,
@@ -206,9 +203,80 @@ hr,
 .coral.coral-createComment-signIn:hover {
   background-color: var(--palette-grey-700);
 }
-/**************************************/
 
-/**************************************/
+/************************ Night Theme ************************/
+.night-theme {
+  /** Palette Primary **/
+  --palette-primary-100: #caccd1;
+  --palette-primary-200: #caccd1;
+  --palette-primary-300: #caccd1;
+  --palette-primary-400: #caccd1;
+  --palette-primary-500: #aaadb5;
+  --palette-primary-600: #8b8f9a;
+  --palette-primary-700: #8b8f9a;
+  --palette-primary-800: #8b8f9a;
+  --palette-primary-900: #4b5162;
+
+  /** Palette Grey **/
+  --palette-grey-100: rgba(255, 255, 255, 0.03);
+  --palette-grey-200: rgba(255, 255, 255, 0.08);
+  --palette-grey-300: rgba(255, 255, 255, 0.03);
+  --palette-grey-400: #AAADB5;
+  --palette-grey-500: #8B8F9A;
+  --palette-grey-600: #FFFFFF;
+  --palette-grey-700: #FFFFFF;
+  --palette-grey-800: #FFFFFF;
+  --palette-grey-900: #FFFFFF;
+
+  /** Palette Text **/
+  --palette-text-000: #FFFFFF;
+  --palette-text-100: #8B8F9A;
+  --palette-text-500: #FFFFFF;
+  --palette-text-900: #FFF;
+  --palette-text-placeholder: #8B8F9A;
+  --palette-text-input-disabled: #8B8F9A;
+
+  /** Palette Background **/
+  --palette-background-body: #2b3347;
+  --palette-background-popover: #4b5162;
+  --palette-background-tooltip: rgba(255, 255, 255, 0.03);
+  --palette-background-input: rgba(255, 255, 255, 0.03);
+  --palette-background-input-disabled: rgba(255, 255, 255, 0.03);
+
+  /** Palette Divider **/
+  --palette-divider: rgba(255, 255, 255, 0.05);
+}
+.night-theme .coral.coral-reactButton.coral-comment-reactButton i,
+.night-theme .coral.coral-comment-replyButton i,
+.night-theme .coral.coral-createReplyComment-replyTo i,
+.night-theme .coral-comment-inReplyTo i,
+.night-theme .coral.coral-comment-shareButton i,
+.night-theme .coral.coral-reportButton.coral-comment-reportButton i,
+.night-theme .coral.coral-createReplyComment-replyTo i,
+.night-theme .coral.coral-sortMenu i {
+  filter: invert(1) contrast(3);
+}
+.night-theme .coral.coral-streamFooter i {
+  filter: none;
+}
+.night-theme .coral.coral-username.coral-comment-username span,
+.night-theme .coral.coral-emailNotifications form span i {
+  color: var(--palette-text-000);
+}
+.night-theme .coral.coral-emailNotifications form input:checked + label::after {
+  color: var(--palette-grey-900);
+} 
+.night-theme .coral.coral-ignoredComments-manageButton,
+.night-theme .coral.coral-createComment-signIn {
+  color: var(--palette-primary-900) !important;
+}
+.night-theme .coral.coral-createComment-signIn:hover {
+  background-color: var(--palette-grey-200);
+  color: var(--palette-text-000);
+}
+
+
+/************************ Styles ************************/
 .coral.coral-tabBar-tab {
   border: solid 1px;
   border-width: 0 1px 0 0;
@@ -365,8 +433,8 @@ hr,
   padding: 1px 5px;
   margin-left: 2px;
 }
-/**************************************/
 
+/************************ Responsive Mobile ************************/
 @media (max-width: 639px) {
   .coral.coral-viewerBox {
     top: 40px;
@@ -381,81 +449,4 @@ hr,
   .coral.coral-tabBar-tab.coral-tabBar-myProfile i {
     font-size: var(--font-size-icon-md);
   }
-}
-
-.night-theme {
-
-    /** Palette Primary **/
-    --palette-primary-100: #caccd1;
-    --palette-primary-200: #caccd1;
-    --palette-primary-300: #caccd1;
-    --palette-primary-400: #caccd1;
-    --palette-primary-500: #aaadb5;
-    --palette-primary-600: #8b8f9a;
-    --palette-primary-700: #8b8f9a;
-    --palette-primary-800: #8b8f9a;
-    --palette-primary-900: #4b5162;
-  
-    /** Palette Grey **/
-    --palette-grey-100: rgba(255, 255, 255, 0.03);
-    --palette-grey-200: rgba(255, 255, 255, 0.08);
-    --palette-grey-300: rgba(255, 255, 255, 0.03);
-    --palette-grey-400: #AAADB5;
-    --palette-grey-500: #8B8F9A;
-    --palette-grey-600: #FFFFFF;
-    --palette-grey-700: #FFFFFF;
-    --palette-grey-800: #FFFFFF;
-    --palette-grey-900: #FFFFFF;
-  
-    /** Palette Text **/
-    --palette-text-000: #FFFFFF;
-    --palette-text-100: #8B8F9A;
-    --palette-text-500: #FFFFFF;
-    --palette-text-900: #FFF;
-    --palette-text-placeholder: #8B8F9A;
-    --palette-text-input-disabled: #8B8F9A;
-  
-    /** Palette Background **/
-    --palette-background-body: #2b3347;
-    --palette-background-popover: #4b5162;
-    --palette-background-tooltip: rgba(255, 255, 255, 0.03);
-    --palette-background-input: rgba(255, 255, 255, 0.03);
-    --palette-background-input-disabled: rgba(255, 255, 255, 0.03);
-  
-    /** Palette Divider **/
-    --palette-divider: rgba(255, 255, 255, 0.05);
-}
-
-.night-theme .coral.coral-reactButton.coral-comment-reactButton i,
-.night-theme .coral.coral-comment-replyButton i,
-.night-theme .coral.coral-createReplyComment-replyTo i,
-.night-theme .coral-comment-inReplyTo i,
-.night-theme .coral.coral-comment-shareButton i,
-.night-theme .coral.coral-reportButton.coral-comment-reportButton i,
-.night-theme .coral.coral-createReplyComment-replyTo i,
-.night-theme .coral.coral-sortMenu i,
-.night-theme .coral.coral-emailNotifications form span i {
-  filter: invert(1) contrast(3);
-}
-
-.night-theme .coral.coral-streamFooter i {
-  filter: none;
-}
-
-.night-theme .coral.coral-username.coral-comment-username span,
-.night-theme .coral.coral-emailNotifications form span i {
-  color: var(--palette-text-000);
-}
-
-.night-theme .coral.coral-emailNotifications form input:checked + label::after {
-  color: var(--palette-grey-900);
-}
-
-.night-theme .coral.coral-ignoredComments-manageButton,
-.night-theme .coral.coral-createComment-signIn {
-  color: var(--palette-primary-900) !important;
-}
-.night-theme .coral.coral-createComment-signIn:hover {
-  background-color: var(--palette-grey-200);
-  color: var(--palette-text-000);
 }
