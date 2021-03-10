@@ -274,6 +274,9 @@ hr,
   background-color: var(--palette-grey-200);
   color: var(--palette-text-000);
 }
+.night-theme .coral.coral-ignoredComments-manageButton:hover {
+  color: var(--palette-text-000);
+}
 .night-theme textarea,
 .night-theme .coral.coral-rte-content {
   background: var(--palette-grey-900);
@@ -534,11 +537,14 @@ hr,
   background-color: var(--palette-grey-200);
   color: var(--palette-text-000);
 }
+.dark-theme .coral.coral-content.coral-comment-content a {
+  color: var(--palette-primary-700);
+}
+.dark-theme .coral.coral-ignoredComments-manageButton:hover {
+  color: var(--palette-text-000);
+}
 .dark-theme textarea,
 .dark-theme .coral.coral-rte-content {
   background: var(--palette-grey-900);
   color: #151515;
-}
-.dark-theme .coral.coral-content.coral-comment-content a {
-  color: var(--palette-primary-700);
 }
