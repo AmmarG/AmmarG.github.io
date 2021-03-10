@@ -419,3 +419,7 @@ hr,
     /** Palette Divider **/
     --palette-divider: #4B5162;
 }
+
+.night-theme i {
+  filter: invert(1) contrast(3);
+}
