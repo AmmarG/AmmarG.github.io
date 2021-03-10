@@ -403,11 +403,11 @@ hr,
   
     /** Palette Text **/
     --palette-text-000: #FFFFFF;
-    --palette-text-100: #7F7F7F;
+    --palette-text-100: #8B8F9A;
     --palette-text-500: #FFFFFF;
-    --palette-text-900: #A1A1A1;
-    --palette-text-placeholder: #A1A1A1;
-    --palette-text-input-disabled: #A1A1A1;
+    --palette-text-900: #8B8F9A;
+    --palette-text-placeholder: #8B8F9A;
+    --palette-text-input-disabled: #8B8F9A;
   
     /** Palette Background **/
     --palette-background-body: #2b3347;
