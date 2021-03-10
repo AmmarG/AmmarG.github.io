@@ -427,7 +427,8 @@ hr,
 .coral.coral-comment-shareButton i,
 .coral.coral-reportButton.coral-comment-reportButton i,
 .coral.coral-createReplyComment-replyTo i,
-.coral-selectField i {
+.coral.coral-sortMenu i,
+.coral.coral-emailNotifications i {
   filter: invert(1) contrast(3);
 }
 
