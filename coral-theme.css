@@ -426,16 +426,16 @@ hr,
     --palette-divider: rgba(255, 255, 255, 0.05);
 }
 
-.coral.coral-reactButton.coral-comment-reactButton i,
-.coral.coral-comment-replyButton i,
-.coral.coral-createReplyComment-replyTo i,
-.coral-comment-inReplyTo i,
-.coral.coral-comment-shareButton i,
-.coral.coral-reportButton.coral-comment-reportButton i,
-.coral.coral-createReplyComment-replyTo i,
-.coral.coral-sortMenu i,
-.coral.coral-emailNotifications form span i,
-.coral.coral-emailNotifications form select:disabled + i {
+.night-theme .coral.coral-reactButton.coral-comment-reactButton i,
+.night-theme .coral.coral-comment-replyButton i,
+.night-theme .coral.coral-createReplyComment-replyTo i,
+.night-theme .coral-comment-inReplyTo i,
+.night-theme .coral.coral-comment-shareButton i,
+.night-theme .coral.coral-reportButton.coral-comment-reportButton i,
+.night-theme .coral.coral-createReplyComment-replyTo i,
+.night-theme .coral.coral-sortMenu i,
+.night-theme .coral.coral-emailNotifications form span i,
+.night-theme .coral.coral-emailNotifications form select:disabled + i {
   filter: invert(1) contrast(3);
 }
 
@@ -443,22 +443,22 @@ hr,
   filter: none;
 }
 
-.coral.coral-username.coral-comment-username span {
+.night-theme .coral.coral-username.coral-comment-username span {
   color: var(--palette-text-000);
 }
 
-.coral.coral-emailNotifications form input:checked + label::after {
+.night-theme .coral.coral-emailNotifications form input:checked + label::after {
   color: var(--palette-grey-900);
 }
 
-.coral.coral-ignoredComments-manageButton {
+.night-theme .coral.coral-ignoredComments-manageButton {
   color: var(--palette-primary-900) !important;
 }
 
-.coral.coral-createComment-signIn:not(:disabled) {
+.night-theme .coral.coral-createComment-signIn:not(:disabled) {
   color: var(--palette-primary-900);
 }
-.coral.coral-createComment-signIn:hover {
+.night-theme .coral.coral-createComment-signIn:hover {
   background-color: var(--palette-grey-100);
   color: var(--palette-text-000);
 }
