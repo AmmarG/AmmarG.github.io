@@ -243,7 +243,7 @@ hr,
 }
 .coral.coral-sortMenu .coral.coral-sortMenu select {
   border: none;
-  padding: 0 10px 0 0;
+  padding: 0 0 0 10px;
 }
 .coral.coral-reactButton.coral-comment-reactButton i {
   background: url("icons/icon-like.svg") center no-repeat;
@@ -417,7 +417,7 @@ hr,
     --palette-background-input-disabled: rgba(255, 255, 255, 0.03);
   
     /** Palette Divider **/
-    --palette-divider: #4B5162;
+    --palette-divider: rgba(255, 255, 255, 0.03);
 }
 
 .coral.coral-reactButton.coral-comment-reactButton i,
