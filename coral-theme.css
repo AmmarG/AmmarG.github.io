@@ -541,7 +541,7 @@ hr,
   color: var(--palette-primary-700);
 }
 .dark-theme .coral.coral-ignoredComments-manageButton:hover {
-  color: var(--palette-text-000);
+  color: var(--palette-text-000) !important;
 }
 .dark-theme textarea,
 .dark-theme .coral.coral-rte-content {
