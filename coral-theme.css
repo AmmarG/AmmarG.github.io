@@ -274,6 +274,7 @@ hr,
   background-color: var(--palette-grey-200);
   color: var(--palette-text-000);
 }
+textarea,
 .night-theme .coral.coral-rte-content {
   background: var(--palette-grey-900);
   color: #151515;
