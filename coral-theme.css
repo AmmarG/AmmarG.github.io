@@ -438,3 +438,7 @@ hr,
 .coral.coral-username.coral-comment-username span {
   color: var(--palette-text-000);
 }
+
+.coral.coral-emailNotifications form input:checked + label::after {
+  color: var(--palette-grey-900);
+}
