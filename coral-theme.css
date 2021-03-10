@@ -434,3 +434,7 @@ hr,
 .night-theme .coral.coral-streamFooter i {
   filter: none;
 }
+
+.coral.coral-username.coral-comment-username span {
+  color: var(--palette-text-000);
+}
