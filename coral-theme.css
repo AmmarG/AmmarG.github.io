@@ -283,6 +283,91 @@ hr,
   color: #151515;
 }
 
+/************************ Dark Theme ************************/
+.dark-theme {
+  /** Palette Primary **/
+  --palette-primary-100: #c4c4c4;
+  --palette-primary-200: #c4c4c4;
+  --palette-primary-300: #c4c4c4;
+  --palette-primary-400: #c4c4c4;
+  --palette-primary-500: #a1a1a1;
+  --palette-primary-600: #7f7f7f;
+  --palette-primary-700: #5b5b5b;
+  --palette-primary-800: #383838;
+  --palette-primary-900: #55ccbe;
+
+  /** Palette Grey **/
+  --palette-grey-100: rgba(255, 255, 255, 0.03);
+  --palette-grey-200: rgba(255, 255, 255, 0.08);
+  --palette-grey-300: rgba(255, 255, 255, 0.03);
+  --palette-grey-400: #AAADB5;
+  --palette-grey-500: #8B8F9A;
+  --palette-grey-600: #FFFFFF;
+  --palette-grey-700: #FFFFFF;
+  --palette-grey-800: #FFFFFF;
+  --palette-grey-900: #FFFFFF;
+
+  /** Palette Text **/
+  --palette-text-000: #FFFFFF;
+  --palette-text-100: #8B8F9A;
+  --palette-text-500: #FFFFFF;
+  --palette-text-900: #FFF;
+  --palette-text-placeholder: #8B8F9A;
+  --palette-text-input-disabled: #8B8F9A;
+
+  /** Palette Background **/
+  --palette-background-body: #151515;
+  --palette-background-popover: #4b5162;
+  --palette-background-tooltip: rgba(255, 255, 255, 0.03);
+  --palette-background-input: rgba(255, 255, 255, 0.03);
+  --palette-background-input-disabled: rgba(255, 255, 255, 0.03);
+
+  /** Palette Divider **/
+  --palette-divider: rgba(255, 255, 255, 0.05);
+}
+.dark-theme .coral.coral-reactButton.coral-comment-reactButton i,
+.dark-theme .coral.coral-comment-replyButton i,
+.dark-theme .coral.coral-createReplyComment-replyTo i,
+.dark-theme .coral-comment-inReplyTo i,
+.dark-theme .coral.coral-comment-shareButton i,
+.dark-theme .coral.coral-reportButton.coral-comment-reportButton i,
+.dark-theme .coral.coral-createReplyComment-replyTo i,
+.dark-theme .coral.coral-sortMenu i {
+  filter: invert(1) contrast(3);
+}
+.dark-theme .coral.coral-streamFooter i {
+  filter: none;
+}
+.dark-theme .coral.coral-username.coral-comment-username span,
+.dark-theme .coral.coral-emailNotifications form span i {
+  color: var(--palette-text-000);
+}
+.dark-theme .coral.coral-emailNotifications form input:checked + label::after {
+  color: var(--palette-grey-900);
+}
+.dark-theme .coral.coral-createComment-signIn {
+  color: var(--palette-background-body) !important;
+}
+.dark-theme .coral.coral-ignoredComments-manageButton,
+.dark-theme .coral.coral-createComment-signIn:hover {
+  color: var(--palette-primary-900) !important;
+}
+.dark-theme .coral.coral-createComment-signIn:hover {
+  background-color: var(--palette-grey-200);
+  color: var(--palette-text-000);
+}
+.dark-theme .coral.coral-content.coral-comment-content a {
+  color: var(--palette-primary-700);
+}
+.dark-theme .coral.coral-ignoredComments-manageButton:hover {
+  color: var(--palette-text-000) !important;
+}
+.dark-theme textarea,
+.dark-theme .coral.coral-rte-content {
+  background: var(--palette-grey-900);
+  color: #151515;
+}
+
 
 /************************ Styles ************************/
 .coral.coral-tabBar-tab {
@@ -457,94 +542,4 @@ hr,
   .coral.coral-tabBar-tab.coral-tabBar-myProfile i {
     font-size: var(--font-size-icon-md);
   }
-}
-
-
-
-
-
-
-/************************ Dark Theme ************************/
-.dark-theme {
-  /** Palette Primary **/
-  --palette-primary-100: #c4c4c4;
-  --palette-primary-200: #c4c4c4;
-  --palette-primary-300: #c4c4c4;
-  --palette-primary-400: #c4c4c4;
-  --palette-primary-500: #a1a1a1;
-  --palette-primary-600: #7f7f7f;
-  --palette-primary-700: #5b5b5b;
-  --palette-primary-800: #383838;
-  --palette-primary-900: #55ccbe;
-
-  /** Palette Grey **/
-  --palette-grey-100: rgba(255, 255, 255, 0.03);
-  --palette-grey-200: rgba(255, 255, 255, 0.08);
-  --palette-grey-300: rgba(255, 255, 255, 0.03);
-  --palette-grey-400: #AAADB5;
-  --palette-grey-500: #8B8F9A;
-  --palette-grey-600: #FFFFFF;
-  --palette-grey-700: #FFFFFF;
-  --palette-grey-800: #FFFFFF;
-  --palette-grey-900: #FFFFFF;
-
-  /** Palette Text **/
-  --palette-text-000: #FFFFFF;
-  --palette-text-100: #8B8F9A;
-  --palette-text-500: #FFFFFF;
-  --palette-text-900: #FFF;
-  --palette-text-placeholder: #8B8F9A;
-  --palette-text-input-disabled: #8B8F9A;
-
-  /** Palette Background **/
-  --palette-background-body: #151515;
-  --palette-background-popover: #4b5162;
-  --palette-background-tooltip: rgba(255, 255, 255, 0.03);
-  --palette-background-input: rgba(255, 255, 255, 0.03);
-  --palette-background-input-disabled: rgba(255, 255, 255, 0.03);
-
-  /** Palette Divider **/
-  --palette-divider: rgba(255, 255, 255, 0.05);
-}
-.dark-theme .coral.coral-reactButton.coral-comment-reactButton i,
-.dark-theme .coral.coral-comment-replyButton i,
-.dark-theme .coral.coral-createReplyComment-replyTo i,
-.dark-theme .coral-comment-inReplyTo i,
-.dark-theme .coral.coral-comment-shareButton i,
-.dark-theme .coral.coral-reportButton.coral-comment-reportButton i,
-.dark-theme .coral.coral-createReplyComment-replyTo i,
-.dark-theme .coral.coral-sortMenu i {
-  filter: invert(1) contrast(3);
-}
-.dark-theme .coral.coral-streamFooter i {
-  filter: none;
-}
-.dark-theme .coral.coral-username.coral-comment-username span,
-.dark-theme .coral.coral-emailNotifications form span i {
-  color: var(--palette-text-000);
-}
-.dark-theme .coral.coral-emailNotifications form input:checked + label::after {
-  color: var(--palette-grey-900);
-}
-.dark-theme .coral.coral-createComment-signIn {
-  color: var(--palette-background-body) !important;
-}
-.dark-theme .coral.coral-ignoredComments-manageButton,
-.dark-theme .coral.coral-createComment-signIn:hover {
-  color: var(--palette-primary-900) !important;
-}
-.dark-theme .coral.coral-createComment-signIn:hover {
-  background-color: var(--palette-grey-200);
-  color: var(--palette-text-000);
-}
-.dark-theme .coral.coral-content.coral-comment-content a {
-  color: var(--palette-primary-700);
-}
-.dark-theme .coral.coral-ignoredComments-manageButton:hover {
-  color: var(--palette-text-000) !important;
-}
-.dark-theme textarea,
-.dark-theme .coral.coral-rte-content {
-  background: var(--palette-grey-900);
-  color: #151515;
 }
