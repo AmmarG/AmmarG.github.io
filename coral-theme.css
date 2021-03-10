@@ -459,6 +459,6 @@ hr,
   color: var(--palette-primary-900);
 }
 .night-theme .coral.coral-createComment-signIn:hover {
-  background-color: var(--palette-grey-100);
+  background-color: var(--palette-grey-200);
   color: var(--palette-text-000);
 }
