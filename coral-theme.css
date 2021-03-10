@@ -427,7 +427,7 @@ hr,
 .coral.coral-comment-shareButton i,
 .coral.coral-reportButton.coral-comment-reportButton i,
 .coral.coral-createReplyComment-replyTo i,
-.coral.coral-sortMenu i {
+.coral-selectField i {
   filter: invert(1) contrast(3);
 }
 
