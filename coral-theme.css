@@ -391,7 +391,7 @@ hr,
     --palette-primary-900: #6a707e;
   
     /** Palette Grey **/
-    --palette-grey-100: #4B5162;
+    --palette-grey-100: rgba(255, 255, 255, 0.03);
     --palette-grey-200: #6A707E;
     --palette-grey-300: #8B8F9A;
     --palette-grey-400: #AAADB5;
@@ -412,9 +412,9 @@ hr,
     /** Palette Background **/
     --palette-background-body: #2b3347;
     --palette-background-popover: #FFFFFF;
-    --palette-background-tooltip: rgba(#373c59, 0.8);
-    --palette-background-input: rgba(#fff, 0.8);;
-    --palette-background-input-disabled: rgba(#373c59, 0.8);
+    --palette-background-tooltip: rgba(255, 255, 255, 0.03);
+    --palette-background-input: rgba(255, 255, 255, 0.03);
+    --palette-background-input-disabled: rgba(255, 255, 255, 0.03);
   
     /** Palette Divider **/
     --palette-divider: #4B5162;
