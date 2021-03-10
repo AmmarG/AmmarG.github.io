@@ -433,8 +433,7 @@ hr,
 .night-theme .coral.coral-comment-shareButton i,
 .night-theme .coral.coral-reportButton.coral-comment-reportButton i,
 .night-theme .coral.coral-createReplyComment-replyTo i,
-.night-theme .coral.coral-sortMenu i,
-.night-theme .coral.coral-emailNotifications form span i {
+.night-theme .coral.coral-sortMenu i {
   filter: invert(1) contrast(3);
 }
 
