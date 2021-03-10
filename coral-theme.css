@@ -455,7 +455,7 @@ hr,
   color: var(--palette-primary-900) !important;
 }
 
-.night-theme .coral.coral-createComment-signIn:not(:disabled) {
+.night-theme .coral.coral-createComment-signIn {
   color: var(--palette-primary-900);
 }
 .night-theme .coral.coral-createComment-signIn:hover {
