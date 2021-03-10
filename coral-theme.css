@@ -420,7 +420,13 @@ hr,
     --palette-divider: #4B5162;
 }
 
-.night-theme i {
+.coral.coral-reactButton.coral-comment-reactButton i,
+.coral.coral-comment-replyButton i,
+.coral.coral-createReplyComment-replyTo i,
+.coral-comment-inReplyTo i,
+.coral.coral-comment-shareButton i,
+.coral.coral-reportButton.coral-comment-reportButton i,
+.coral.coral-createReplyComment-replyTo i {
   filter: invert(1) contrast(3);
 }
 
