@@ -274,7 +274,7 @@ hr,
   background-color: var(--palette-grey-200);
   color: var(--palette-text-000);
 }
-textarea,
+.dark-theme textarea,
 .night-theme .coral.coral-rte-content {
   background: var(--palette-grey-900);
   color: #151515;
@@ -503,36 +503,36 @@ textarea,
   /** Palette Divider **/
   --palette-divider: rgba(255, 255, 255, 0.05);
 }
-.night-theme .coral.coral-reactButton.coral-comment-reactButton i,
-.night-theme .coral.coral-comment-replyButton i,
-.night-theme .coral.coral-createReplyComment-replyTo i,
-.night-theme .coral-comment-inReplyTo i,
-.night-theme .coral.coral-comment-shareButton i,
-.night-theme .coral.coral-reportButton.coral-comment-reportButton i,
-.night-theme .coral.coral-createReplyComment-replyTo i,
-.night-theme .coral.coral-sortMenu i {
+.dark-theme .coral.coral-reactButton.coral-comment-reactButton i,
+.dark-theme .coral.coral-comment-replyButton i,
+.dark-theme .coral.coral-createReplyComment-replyTo i,
+.dark-theme .coral-comment-inReplyTo i,
+.dark-theme .coral.coral-comment-shareButton i,
+.dark-theme .coral.coral-reportButton.coral-comment-reportButton i,
+.dark-theme .coral.coral-createReplyComment-replyTo i,
+.dark-theme .coral.coral-sortMenu i {
   filter: invert(1) contrast(3);
 }
-.night-theme .coral.coral-streamFooter i {
+.dark-theme .coral.coral-streamFooter i {
   filter: none;
 }
-.night-theme .coral.coral-username.coral-comment-username span,
-.night-theme .coral.coral-emailNotifications form span i {
+.dark-theme .coral.coral-username.coral-comment-username span,
+.dark-theme .coral.coral-emailNotifications form span i {
   color: var(--palette-text-000);
 }
-.night-theme .coral.coral-emailNotifications form input:checked + label::after {
+.dark-theme .coral.coral-emailNotifications form input:checked + label::after {
   color: var(--palette-grey-900);
 } 
-.night-theme .coral.coral-ignoredComments-manageButton,
-.night-theme .coral.coral-createComment-signIn {
+.dark-theme .coral.coral-ignoredComments-manageButton,
+.dark-theme .coral.coral-createComment-signIn {
   color: var(--palette-primary-900) !important;
 }
-.night-theme .coral.coral-createComment-signIn:hover {
+.dark-theme .coral.coral-createComment-signIn:hover {
   background-color: var(--palette-grey-200);
   color: var(--palette-text-000);
 }
-textarea,
-.night-theme .coral.coral-rte-content {
+.dark-theme textarea,
+.dark-theme .coral.coral-rte-content {
   background: var(--palette-grey-900);
   color: #151515;
 }
