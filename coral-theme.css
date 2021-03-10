@@ -275,7 +275,7 @@ hr,
   color: var(--palette-text-000);
 }
 .night-theme .coral.coral-ignoredComments-manageButton:hover {
-  color: var(--palette-text-000);
+  color: var(--palette-text-000) !important;
 }
 .night-theme textarea,
 .night-theme .coral.coral-rte-content {
