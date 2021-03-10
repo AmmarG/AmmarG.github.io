@@ -200,6 +200,11 @@ hr,
   color: var(--palette-grey-500);
   background-color: var(--palette-text-000);
 }
+.coral.coral-createComment-signIn:disabled {
+  background-color: var(--palette-text-900);
+}
+.coral.coral-createComment-signIn {
+  background-color: var(--palette-grey-700);
 /**************************************/
 
 /**************************************/
