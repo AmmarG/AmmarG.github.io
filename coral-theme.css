@@ -543,10 +543,3 @@ hr,
     font-size: var(--font-size-icon-md);
   }
 }
-
-
-
-
-.chat-username {
-  border-color: red;
-}
