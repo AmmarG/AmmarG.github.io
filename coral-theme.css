@@ -279,11 +279,10 @@ hr,
 }
 .night-theme textarea,
 .night-theme .coral.coral-rte-content {
-  background: var(--palette-grey-400);
+  background: var(--palette-grey-900);
   color: #151515;
 }
-
-.coral.coral-comment [data-testid="report-comment-form"] form li label::after {
+.night-theme .coral.coral-comment [data-testid="report-comment-form"] form li label::after {
   background: var(--palette-text-000);
 }
 
@@ -368,7 +367,7 @@ hr,
 }
 .dark-theme textarea,
 .dark-theme .coral.coral-rte-content {
-  background: var(--palette-grey-400);
+  background: var(--palette-grey-900);
   color: #151515;
 }
 
