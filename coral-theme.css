@@ -546,4 +546,8 @@ hr,
   .coral.coral-tabBar-tab.coral-tabBar-myProfile i {
     font-size: var(--font-size-icon-md);
   }
+  .night-theme .coral.coral-tabBar-tab.coral-tabBar-comments i,
+  .dark-theme .coral.coral-tabBar-tab.coral-tabBar-comments i {
+    filter: invert(1) contrast(3);
+  }
 }
