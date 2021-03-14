@@ -283,6 +283,10 @@ hr,
   color: #151515;
 }
 
+.coral.coral-comment [data-testid="report-comment-form"] form li label::after {
+  background: var(--palette-text-000);
+}
+
 /************************ Dark Theme ************************/
 .dark-theme {
   /** Palette Primary **/
