@@ -279,7 +279,7 @@ hr,
 }
 .night-theme textarea,
 .night-theme .coral.coral-rte-content {
-  background: var(--palette-grey-900);
+  background: var(--palette-grey-400);
   color: #151515;
 }
 
@@ -368,7 +368,7 @@ hr,
 }
 .dark-theme textarea,
 .dark-theme .coral.coral-rte-content {
-  background: var(--palette-grey-900);
+  background: var(--palette-grey-400);
   color: #151515;
 }
 
