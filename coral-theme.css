@@ -530,6 +530,10 @@ hr,
   margin-left: 2px;
 }
 
+button.coral.coral-createComment-signIn {
+  display: none;
+}
+
 /************************ Responsive Mobile ************************/
 @media (max-width: 639px) {
   .coral.coral-viewerBox {
