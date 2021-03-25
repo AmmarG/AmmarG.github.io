@@ -391,10 +391,14 @@ hr,
   top: 20px;
   right: 0;
   display: flex;
+  align-items: center;
 }
 .coral.coral-viewerBox .coral-viewerBox-username {
   padding-left: 3px;
   line-height: 80%;
+}
+.coral.coral-viewerBox span {
+  padding-bottom: 0;
 }
 .coral.coral-createComment {
   margin-top: -20px;
