@@ -397,7 +397,7 @@ hr,
   padding-left: 3px;
   line-height: 80%;
 }
-.coral.coral-viewerBox span {
+.coral.coral-viewerBox div {
   padding-bottom: 0 !important;
 }
 .coral.coral-createComment {
