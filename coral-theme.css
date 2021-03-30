@@ -478,7 +478,6 @@ hr,
 .coral.coral-indent-9,
 .coral.coral-indent-10 {
   padding: 0;
-  margin-left: 0;
   margin-left: 30px;
 }
 .coral.coral-createReplyComment {
@@ -600,4 +599,19 @@ button.coral.coral-createComment-signIn {
 :root[lang="ar-AR"] .coral.coral-comment-inReplyToUsername {
   margin-left: unset;
   margin-right: 2px;
+}
+
+:root[lang="ar-AR"] .coral.coral-indent-1,
+:root[lang="ar-AR"] .coral.coral-indent-2,
+:root[lang="ar-AR"] .coral.coral-indent-3,
+:root[lang="ar-AR"] .coral.coral-indent-4,
+:root[lang="ar-AR"] .coral.coral-indent-5,
+:root[lang="ar-AR"] .coral.coral-indent-6,
+:root[lang="ar-AR"] .coral.coral-indent-7,
+:root[lang="ar-AR"] .coral.coral-indent-8,
+:root[lang="ar-AR"] .coral.coral-indent-9,
+:root[lang="ar-AR"] .coral.coral-indent-10,
+:root[lang="ar-AR"] .coral.coral-createReplyComment {
+  margin-left: unset;
+  margin-right: 30px;
 }
