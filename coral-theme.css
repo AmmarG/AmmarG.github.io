@@ -645,6 +645,11 @@ button.coral.coral-createComment-signIn {
   margin: 0 0 0 var(--spacing-1) !important;
 }
 
+:root[lang="ar-AR"] .coral.coral-emailNotifications form fieldset div label {
+  padding-left: 0 !important;
+  padding-right: 10px !important;
+}
+
 :root[lang="ar-AR"] .coral.coral-emailNotifications form fieldset div label::before {
   left: unset !important;
   right: 0 !important;
