@@ -567,3 +567,8 @@ button.coral.coral-createComment-signIn {
 :root[lang="ar-AR"] {
   direction: rtl;
 }
+
+:root[lang="ar-AR"] .coral.coral-viewerBox {
+  right: unset;
+  left: 0;
+}
