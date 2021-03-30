@@ -632,3 +632,8 @@ button.coral.coral-createComment-signIn {
 :root[lang="ar-AR"] .coral.coral-createReplyComment-cancel {
   margin: 0 0 0 var(--spacing-1) !important;
 }
+
+:root[lang="ar-AR"] .coral.coral-comment [data-testid="report-comment-form"] li label::before {
+  margin-right: 0 !important;
+  margin-left: 10px !important;
+}
