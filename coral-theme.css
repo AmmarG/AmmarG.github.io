@@ -615,3 +615,12 @@ button.coral.coral-createComment-signIn {
   margin-left: unset;
   margin-right: 30px;
 }
+
+:root[lang="ar-AR"] .coral.coral-sharePopover-copyButotn.coral-sharePopover-copyButton i {
+  margin-right: unset !important;
+  margin-left: var(--spacing-1) !important;
+}
+
+:root[lang="ar-AR"] .coral.coral-createReplyComment form .gutter {
+  margin: 0 0 0 var(--spacing-1) !important;
+}
