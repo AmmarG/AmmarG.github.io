@@ -572,3 +572,9 @@ button.coral.coral-createComment-signIn {
   right: unset;
   left: 0;
 }
+
+:root[lang="ar-AR"] .coral.coral-tabBar-tab {
+  border-width: 0 0 0 1px;
+  padding: 0 0 0 10px;
+  margin: 0 0 0 10px;
+}
