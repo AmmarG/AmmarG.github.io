@@ -629,6 +629,6 @@ button.coral.coral-createComment-signIn {
   margin-left: var(--spacing-1) !important;
 }
 
-:root[lang="ar-AR"] .coral.coral-createReplyComment form .gutter {
+:root[lang="ar-AR"] .coral.coral-createReplyComment form .gutter .coral.coral-createReplyComment-cancel {
   margin: 0 0 0 var(--spacing-1) !important;
 }
