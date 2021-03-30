@@ -654,3 +654,7 @@ button.coral.coral-createComment-signIn {
   left: unset !important;
   right: 0 !important;
 }
+
+:root[lang="ar-AR"] .coral.coral-emailNotifications form fieldset div label .coral.coral-checkbox-label {
+  padding-right: 10px;
+}
