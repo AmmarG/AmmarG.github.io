@@ -598,7 +598,8 @@ button.coral.coral-createComment-signIn {
 :root[lang="ar-AR"] .coral.coral-comment-replyButton i,
 :root[lang="ar-AR"] .coral.coral-createReplyComment-replyTo i,
 :root[lang="ar-AR"] .coral-comment-inReplyTo i,
-:root[lang="ar-AR"] .coral.coral-reportButton.coral-comment-reportButton i {
+:root[lang="ar-AR"] .coral.coral-reportButton.coral-comment-reportButton i,
+:root[lang="ar-AR"] .coral.coral-comment-shareButton i {
   margin-right: 0 !important;
   margin-left: var(--spacing-1) !important;
 }
