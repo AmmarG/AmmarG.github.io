@@ -638,3 +638,9 @@ button.coral.coral-createComment-signIn {
   margin-right: 0 !important;
   margin-left: 10px !important;
 }
+
+:root[lang="ar-AR"] .coral.coral-streamFooter i {
+  padding-right: 0 !important;
+  padding-left: var(--spacing-1) !important;
+  margin: 0 0 0 var(--spacing-1) !important;
+}
