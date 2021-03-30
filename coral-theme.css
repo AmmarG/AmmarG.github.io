@@ -564,6 +564,6 @@ button.coral.coral-createComment-signIn {
 
 /******************** RTL *********************/
 
-#coral_thread [lang="ar-AR"] {
+:root[lang="ar-AR"] {
   direction: rtl;
 }
