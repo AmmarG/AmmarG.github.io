@@ -558,3 +558,12 @@ button.coral.coral-createComment-signIn {
     filter: invert(1) contrast(3);
   }
 }
+
+
+
+
+/******************** RTL *********************/
+
+#coral_thread [lang="ar-AR"] {
+  direction: rtl;
+}
