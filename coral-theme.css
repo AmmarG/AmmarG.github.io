@@ -578,3 +578,12 @@ button.coral.coral-createComment-signIn {
   padding: 0 0 0 10px;
   margin: 0 0 0 10px;
 }
+
+:root[lang="ar-AR"] .coral.coral-sortMenu .coral.coral-sortMenu select {
+  padding: 0 10px 0 0;
+}
+
+:root[lang="ar-AR"] .coral.coral-sortMenu .coral.coral-sortMenu select span {
+  right: unset;
+  left: auto;
+}
