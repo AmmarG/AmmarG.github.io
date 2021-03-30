@@ -537,6 +537,13 @@ button.coral.coral-createComment-signIn {
   display: none;
 }
 
+.coral.coral-rte-container {
+  padding: 10px;
+}
+.coral.coral-rte-container .coral.coral-rte-content {
+  padding: 0;
+}
+
 /************************ Responsive Mobile ************************/
 @media (max-width: 639px) {
   .coral.coral-viewerBox {
