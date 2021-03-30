@@ -584,6 +584,6 @@ button.coral.coral-createComment-signIn {
 }
 
 :root[lang="ar-AR"] .coral.coral-sortMenu .coral.coral-sortMenu span {
-  right: unset;
-  left: auto;
+  right: unset !important;
+  left: auto !important;
 }
