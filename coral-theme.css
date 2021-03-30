@@ -644,3 +644,8 @@ button.coral.coral-createComment-signIn {
   padding-left: var(--spacing-1) !important;
   margin: 0 0 0 var(--spacing-1) !important;
 }
+
+:root[lang="ar-AR"] .coral.coral-emailNotifications form label::before {
+  left: unset !important;
+  right: 0 !important;
+}
