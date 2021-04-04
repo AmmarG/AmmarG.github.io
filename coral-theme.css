@@ -663,3 +663,9 @@ button.coral.coral-createComment-signIn {
 :root[lang="ar-AR"] .coral.coral-emailNotifications form fieldset div label .coral.coral-checkbox-label {
   padding-right: 10px;
 }
+
+:root[lang="ar-AR"] .coral.coral-comment-replyButton i,
+:root[lang="ar-AR"] .coral.coral-createReplyComment-replyTo i,
+:root[lang="ar-AR"] .coral-comment-inReplyTo i {
+  transform: scaleX(-1);
+}
