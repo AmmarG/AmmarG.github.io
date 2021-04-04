@@ -432,8 +432,8 @@ hr,
   background: url("icons/icon-reply.svg") center no-repeat;
   background-size: contain;
   font-size: 0;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 .coral.coral-comment-shareButton i {
   background: url("icons/icon-share.svg") center no-repeat;
