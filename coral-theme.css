@@ -536,7 +536,6 @@ hr,
 button.coral.coral-createComment-signIn {
   display: none;
 }
-
 .coral.coral-rte-container {
   padding: 10px;
 }
@@ -566,34 +565,27 @@ button.coral.coral-createComment-signIn {
 }
 
 
-
-
 /******************** RTL *********************/
 
 :root[lang="ar-AR"] {
   direction: rtl;
 }
-
 :root[lang="ar-AR"] .coral.coral-viewerBox {
   right: unset;
   left: 0;
 }
-
 :root[lang="ar-AR"] .coral.coral-tabBar-tab {
   border-width: 0 0 0 1px;
   padding: 0 0 0 10px;
   margin: 0 0 0 10px;
 }
-
 :root[lang="ar-AR"] .coral.coral-sortMenu .coral.coral-sortMenu select {
   padding: 0 10px 0 0;
 }
-
 :root[lang="ar-AR"] .coral.coral-sortMenu .coral.coral-sortMenu span {
   right: unset !important;
   left: 0 !important;
 }
-
 :root[lang="ar-AR"] .coral.coral-reactButton.coral-comment-reactButton i,
 :root[lang="ar-AR"] .coral.coral-comment-replyButton i,
 :root[lang="ar-AR"] .coral.coral-createReplyComment-replyTo i,
@@ -603,12 +595,10 @@ button.coral.coral-createComment-signIn {
   margin-right: 0 !important;
   margin-left: var(--spacing-1) !important;
 }
-
 :root[lang="ar-AR"] .coral.coral-comment-inReplyToUsername {
   margin-left: unset;
   margin-right: 2px;
 }
-
 :root[lang="ar-AR"] .coral.coral-indent-1,
 :root[lang="ar-AR"] .coral.coral-indent-2,
 :root[lang="ar-AR"] .coral.coral-indent-3,
@@ -623,49 +613,48 @@ button.coral.coral-createComment-signIn {
   margin-left: unset;
   margin-right: 30px;
 }
-
 :root[lang="ar-AR"] .coral.coral-sharePopover-copyButotn.coral-sharePopover-copyButton i {
   margin-right: unset !important;
   margin-left: var(--spacing-1) !important;
 }
-
 :root[lang="ar-AR"] .coral.coral-createReplyComment-cancel,
 :root[lang="ar-AR"] [data-testid="report-comment-form"] form .coral.coral-reportPopover-cancelButton {
   margin: 0 0 0 var(--spacing-1) !important;
 }
-
 :root[lang="ar-AR"] .coral.coral-comment [data-testid="report-comment-form"] li label::before {
   margin-right: 0 !important;
   margin-left: 10px !important;
 }
-
 :root[lang="ar-AR"] .coral.coral-streamFooter-link i {
   padding-right: 0 !important;
   padding-left: var(--spacing-1) !important;
   margin: 0 0 0 var(--spacing-1) !important;
 }
-
 :root[lang="ar-AR"] .coral.coral-emailNotifications form fieldset div label {
   padding-left: 0 !important;
   padding-right: 10px !important;
 }
-
 :root[lang="ar-AR"] .coral.coral-emailNotifications form fieldset div label::before {
   left: unset !important;
   right: 0 !important;
 }
-
 :root[lang="ar-AR"] .coral.coral-emailNotifications form fieldset div label::after {
   left: unset !important;
   right: 10px !important;
 }
-
 :root[lang="ar-AR"] .coral.coral-emailNotifications form fieldset div label .coral.coral-checkbox-label {
   padding-right: 10px;
 }
-
 :root[lang="ar-AR"] .coral.coral-comment-replyButton i,
 :root[lang="ar-AR"] .coral.coral-createReplyComment-replyTo i,
 :root[lang="ar-AR"] .coral-comment-inReplyTo i {
   transform: scaleX(-1);
+}
+:root[lang="ar-AR"] .coral.coral-preferences fieldset div label {
+  padding-left: 0;
+  padding-right: 10px;
+}
+:root[lang="ar-AR"] .coral.coral-preferences fieldset div label::before {
+  left: unset;
+  right: 0;
 }
