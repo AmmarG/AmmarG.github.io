@@ -652,7 +652,7 @@ button.coral.coral-createComment-signIn {
 }
 :root[lang="ar-AR"] .coral.coral-preferences fieldset div label {
   padding-left: 0;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 :root[lang="ar-AR"] .coral.coral-preferences fieldset div label::before {
   left: unset;
